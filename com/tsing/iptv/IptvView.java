@@ -27,13 +27,13 @@ public class IptvView extends JFrame implements ViewInterface {
 
   private int tested = 0; // to record the number of products tested
   private int passed = 0;
-  private int skipped = 0
+  private int skipped = 0;
   private int failed = 0;
   private double passRate = 0;
 
   public IptvView() {
     xmlParser = new IptvXmlParser(); // initialize xmlParser 
-    dbConnector = new DBConnector(); //~~ DBConnector unimplemented yet 
+    dbConnector = new IptvDBConnector(); //~~ DBConnector unimplemented yet 
     macWriter = new MacWriter(xmlParser, dbConnector); // initialize macWriter
     
     xmlWriter = new IptvXmlWriter(); //initialize xmlWriter 
@@ -242,7 +242,7 @@ public class IptvView extends JFrame implements ViewInterface {
   JTextField passRateField;
   private void setInfoPanel() {
     JLabel testedLabel = new JLabel("Tested:");
-    tested.setForeground(Color.BLUE);
+    testedField.setForeground(Color.BLUE);
     testedField = new JTextField(6);
     testedField.setForeground(Color.BLUE);
     testedField.setEditable(false);
@@ -296,35 +296,38 @@ public class IptvView extends JFrame implements ViewInterface {
   }
 
 	public void macWritingPerformed(MacWritingEvent e) {
+		System.out.println(">>>>>>UI informed");
     String cmd = e.getCmd();
     String status = e.getStatus();
     String sn = e.getSN(); 
 
     if (showRet)
-      showInfo(e.getRet(), Color.CYAN);
+      showInfo(e.getRetXml(), Color.CYAN);
 
     showInfo(cmd, status);
 
-    if ((cmd.equals("write_mac_to_stb") && e.getStatus().equals("pass")) 
-        || status.contains("fail") 
-        || status.contains("invalid")
-        || status.contains("skip")) // test terminates in eigher case
+    if (status.equals("PASS") 
+        || status.equals("FAIL") 
+        || status.equals("invalid")
+        || status.equals("skip")) // test terminates in eigher case
     {
-      if (status.contains("pass")) {
+      if (status.equals("PASS")) {
         resultLabel.setForeground(Color.GREEN);
-        showInfo(String.format("\nSN\t\t\t\t%s", sn), Color.GREEN);
-        passed += 1;
-      } else if (status.contains("skip") {
+        showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.GREEN);
+        passed++;
+      } else if (status.contains("skip")) {
         resultLabel.setForeground(Color.YELLOW);
-        showInfo(String.format("\nSN\t\t\t\t%s", sn), Color.YELLOW);
-        skipped += 1;
+        showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.YELLOW);
+        skipped++;
       } else { //invalid or fail
         resultLabel.setForeground(Color.RED);
-        showInfo(String.format("\nSN\t\t\t\t%s", sn), Color.RED);
-        failed += 1;
+        showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.RED);
+        failed++;
       }
 
-      resultLabel.setText(status.toUpperCase());
+			tested++;
+
+      resultLabel.setText(status);
       updateInfoPanel();
       
       snField.requestFocus(true);
@@ -332,22 +335,30 @@ public class IptvView extends JFrame implements ViewInterface {
       macField.setBorder(null);
       snField.setText("");
       macField.setText("");
-    }
+
+			showInfo("\nTest Ended\n", Color.WHITE, 24);
+    } else {
+			System.out.println("update UI failed");
+			System.out.println(status);
+		}
+
+		System.out.println("<<<<<<<<<UI updated");
   }
 
   private void showInfo(String cmd, String status) {
-    String info = String.format("\n%s\t\t\t\t%s\n", cmd, status);
+    String info = String.format("\n%20s\t\t\t\t%20s\n", cmd, status);
     Document doc = infoArea.getDocument();
     SimpleAttributeSet attrSet = new SimpleAttributeSet();
     try {
-      if (status.contains("pass")) {
+			status = status.toLowerCase();
+      if (status.equals("pass")) {
         StyleConstants.setForeground(attrSet, Color.GREEN);
-      } else if (status.contains("fail")) {
+      } else if (status.equals("fail")) {
         StyleConstants.setForeground(attrSet, Color.RED);
-      } else if (status.contains("skip")) {
+      } else if (status.equals("skip")) {
         StyleConstants.setForeground(attrSet, Color.YELLOW);
       } else {
-        StyleConstants.setForeground(attrSet, Color.BLUE);
+        StyleConstants.setForeground(attrSet, Color.CYAN);
       }
 
       doc.insertString(doc.getLength(), info, attrSet);
@@ -357,16 +368,27 @@ public class IptvView extends JFrame implements ViewInterface {
   }
 
   private void showInfo(String str, Color color) {
-    String info = str;
     Document doc = infoArea.getDocument();
     SimpleAttributeSet attrSet = new SimpleAttributeSet();
     try {
       StyleConstants.setForeground(attrSet, color);
-      doc.insertString(doc.getLength(), info, attrSet);
+      doc.insertString(doc.getLength(), str, attrSet);
     } catch (Exception ex) {
       ex.printStackTrace();
     }
   }
+
+	private void showInfo(String str, Color color, int fontSize) {
+		Document doc = infoArea.getDocument();
+		SimpleAttributeSet attrSet = new SimpleAttributeSet();
+		try {
+			StyleConstants.setForeground(attrSet, color);
+			StyleConstants.setFontSize(attrSet, fontSize);
+			doc.insertString(doc.getLength(), str, attrSet);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
 
   private void updateInfoPanel() {
     testedField.setText(tested + "");
@@ -385,11 +407,11 @@ public class IptvView extends JFrame implements ViewInterface {
 			inputPanel.setLayout(new GridLayout(2, 2, 0, 10));
 
 			JLabel snLabel = new JLabel("Input SN: ", SwingConstants.CENTER);
-			snField = new JTextField(40);
+			snField = new JTextField(25);
 			snField.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
 
 			JLabel macLabel = new JLabel("Input mac: ", SwingConstants.CENTER);
-			macField = new JTextField(40);
+			macField = new JTextField(25);
 			
 			inputPanel.add(snLabel);
 			inputPanel.add(snField);
@@ -418,7 +440,7 @@ public class IptvView extends JFrame implements ViewInterface {
 			public void actionPerformed(ActionEvent e) {
 				sn = snField.getText().trim();
 
-				if (sn == null || sn.length() < 20) {
+				if (sn == null || sn.length() != 20) {
 					JOptionPane.showMessageDialog(InputDialog.this,
 							"Invalid SN, please check!",
 							"Wrong SN",
@@ -441,17 +463,19 @@ public class IptvView extends JFrame implements ViewInterface {
         sn = snField.getText();
         mac = macField.getText().trim();
 
-        if (mac == null || mac.length() < 12) {
+        if (mac == null || mac.length() != 12) {
           JOptionPane.showMessageDialog(InputDialog.this,
               "Invalid Mac, please check!",
               "Wrong Mac",
               JOptionPane.WARNING_MESSAGE);
           return;
-        } // else { not implemented yet } 
+        } 
 
         macField.setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
         
         infoArea.setText("");
+
+				showInfo("Test Start...\n", Color.WHITE, 24);
 
         resultLabel.setForeground(Color.BLUE);
         resultLabel.setText("Testing...");
@@ -463,12 +487,12 @@ public class IptvView extends JFrame implements ViewInterface {
     }
 
     class WriteThread implements Runnable {
-      String mac;
       String sn;
+      String mac;
 
-      public WriteThread(String mac, String sn) {
-        this.mac = mac;
+      public WriteThread(String sn, String mac) {
         this.sn = sn;
+        this.mac = mac;
       }
 
       public void run() {

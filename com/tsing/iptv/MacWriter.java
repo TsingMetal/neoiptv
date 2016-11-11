@@ -40,13 +40,6 @@ public class MacWriter {
   public MacWriter(XmlParser parser, DBConnector connector) {
     xmlParser = parser;
     dbConnector = connector;
-    try {
-      ADDR = InetAddress.getByName("225.0.0.1"); // broadcast address
-      socket = new DatagramSocket(1301); // use UDP socket; bind port 1301
-      socket.setSoTimeout(1000); // set time for timeout as 1 sec;
-    } catch (Exception ex) {
-      ex.printStackTrace();
-    }
   }
 
   /**
@@ -75,7 +68,14 @@ public class MacWriter {
 		
 		String cmdXml = CmdXml.CHECK_ADV_XML;
 		String retXml = getRet(cmdXml); // send request to stb and get result
-		xmlParser.parse(retXml);  // parse result returned from stb;
+
+		if (retXml == null) {
+			result.put("status", "FAIL"); // test needs restart
+			processEvent(new MacWritingEvent(this, result));
+			return false;
+		}
+
+		xmlParser.parse(retXml);  // parse result returned from stb
 		String advSecurity = xmlParser.getValue("adv_security"); // get value
 		if (advSecurity.equals("enable")) {
 			result.put("status", "pass");
@@ -84,7 +84,15 @@ public class MacWriter {
 		} else {
 			result.put("status", "fail");
 			processEvent(new MacWritingEvent(this, result));
-			return false;
+			if (setAdv()) { // if adv not enabled, enable it
+				result.put("status", "pass");
+				processEvent(new MacWritingEvent(this, result));
+				return true; 
+			} else { // enable adv failed
+				result.put("status", "FAIL");
+				processEvent(new MacWritingEvent(this, result));
+			  return false;
+			}
 		}
   } ///^ untested
   
@@ -95,6 +103,13 @@ public class MacWriter {
 
 		String cmdXml = CmdXml.SET_ADV_XML;
 		String retXml = getRet(cmdXml); // send cmd and get returned data
+		
+		if (retXml == null) {
+			result.put("status", "FAIL");
+			processEvent(new MacWritingEvent(this, result));
+			return false;
+		}
+
 		xmlParser.parse(retXml); // parse result returned from stb;
 		String status = xmlParser.getValue("result");
 		if (status.equals("ok")) {
@@ -102,7 +117,7 @@ public class MacWriter {
 			processEvent(new MacWritingEvent(this, result));
 			return true;
 		} else { // if status.equals("failure")
-			result.put("status", "fail");
+			result.put("status", "FAIL");
 			result.put("err_info", xmlParser.getValue("error"));
 			processEvent(new MacWritingEvent(this, result));
 			return false;
@@ -118,7 +133,7 @@ public class MacWriter {
   public boolean checkSN(String sn) { 
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		result.put("cmd", "check_sn");
-    result.put("sn", sn);
+    result.put("sn", sn);   // record sn here
     String status = dbConnector.checkSN(sn);
 
     if (status.equals("used")) {
@@ -150,7 +165,7 @@ public class MacWriter {
       String sn = getSN();
 
       if (sn == null) {
-        result.put("status", "fail");
+        result.put("status", "FAIL");
         processEvent(new MacWritingEvent(this, result));
         return false;
       }
@@ -158,19 +173,19 @@ public class MacWriter {
       result.put("sn", sn);
       if (dbConnector.checkSN(sn).equals("used")) {
         // inform DB to recircle mac mapping this sn 
-        if (!dbConnector.validate("sn"));
-        result.put("status", "fail"); // UI show "fail" if not recircled
-        processEvent(new MacWritingEvent(this, result));
-        return false;
+        if (!dbConnector.validate("sn")) {
+        	result.put("status", "FAIL"); // UI show "fail" if not recircled
+					processEvent(new MacWritingEvent(this, result));
+					return false;
+				}
       }
     }
     //----
 
-		// erase even not successfully recircled; need to solve
 		String cmdXml = CmdXml.ERASE_XML;
 		String retXml = getRet(cmdXml);
     if (retXml == null) {
-      result.put("status", "fail");
+      result.put("status", "FAIL");
       processEvent(new MacWritingEvent(this, result));
       return false;
     }
@@ -182,7 +197,7 @@ public class MacWriter {
 			processEvent(new MacWritingEvent(this, result));
 			return true;
 		} else {
-			result.put("status", "fail");
+			result.put("status", "FAIL");
 			processEvent(new MacWritingEvent(this, result));
 			return false;
 		}
@@ -193,7 +208,6 @@ public class MacWriter {
    * needed before erase mac and sn from STB
    */
   public String getSN() { 
-    // unimplemented
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		result.put("cmd", "get_sn_from_stb");
 
@@ -226,22 +240,22 @@ public class MacWriter {
 	 * THE MOST IMPORTANT PART OF THE WHOLE TEST;
    * return true if writing successfully;
 	 * arguments are passed in through UI's JTextField using barcode scanner;
-	 * @param mac String
 	 * @param sn String
+	 * @param mac String
    */
-  public boolean setMac(String mac, String sn) {
+  public boolean setMac(String sn, String mac) {
     // unimplemented
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		result.put("cmd", "write_mac_to_stb");
 
-		String macCRC = getCRC(mac);
 		String snCRC = getCRC(sn);
+		String macCRC = getCRC(mac);
 
     String cmdXml = String.format(CmdXml.SET_XML, mac, macCRC, sn, snCRC);
     String retXml = getRet(cmdXml);
 
     if (retXml == null) {
-      result.put("status", "fail");
+      result.put("status", "FAIL");
       processEvent(new MacWritingEvent(this, result));
       return false;
     }
@@ -249,7 +263,7 @@ public class MacWriter {
     xmlParser.parse(retXml);
 
     if (xmlParser.getValue("result").equals("ok")) {
-      result.put("status", "write_pass");
+      result.put("status", "pass");
       result.put("mac", mac);
       result.put("mac_crc", macCRC);
       result.put("sn", sn);
@@ -258,17 +272,17 @@ public class MacWriter {
 
       // inform DB the sn has been successfully used:
       if (dbConnector.SNUsed(sn)) {
-        result.put("status", "pass");
+        result.put("status", "PASS"); // all steps passes 
         processEvent(new MacWritingEvent(this, result));
         //rebootSTB();
 				return true;
 			} else {
-				result.put("status", "update_db_fail");
+				result.put("status", "FAIL");
 				processEvent(new MacWritingEvent(this, result));
 				return false;
 			}
 		} else {
-      result.put("status", "write_fail");
+      result.put("status", "FAIL");
       processEvent(new MacWritingEvent(this, result));
       return false;
     }
@@ -292,22 +306,30 @@ public class MacWriter {
    */
   public String getRet(String cmdXml) {
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
-    // sapces ares intended here and will be trimed when logging:
-    result.put("cmd", "   connect_to_stb");
+    result.put("cmd", "*connect_to_stb");
     int retry = 0; //record retry times;
+
+    try {
+      ADDR = InetAddress.getByName("255.255.255.255"); // broadcast address
+      socket = new DatagramSocket(RECVPORT); // use UDP socket; bind port 1301
+      socket.setSoTimeout(1000); // set time for timeout as 1 sec;
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
 
     DatagramPacket dp = new DatagramPacket(cmdXml.getBytes(),
        cmdXml.length(), ADDR, STBPORT);
+		byte[] buff = new byte[1024];
+		DatagramPacket recvDp = new DatagramPacket(buff, 1024);
+
     for (int i = 0; i < 5; i++) { // if fails, retry 5 times
       try {
         socket.send(dp); // send cmd xml to STB by multicasting
         System.out.println("dp sent"); /* for debugging */
 
         // get result from STB:
-        byte[] buff = new byte[1024];
-        DatagramPacket recvDp = new DatagramPacket(buff, 1024);
         socket.receive(recvDp);
-        String ret = new String(buff);
+        String ret = new String(buff).trim(); // remove white spaces
         result.put("ret_xml", ret);
         result.put("status", "pass");
         processEvent(new MacWritingEvent(this, result));
@@ -318,7 +340,7 @@ public class MacWriter {
         System.out.println("retry+" + retry); // for debugging
         result.put("status", "retry+"+new Integer(retry).toString());
         processEvent(new MacWritingEvent(this, result));
-      }
+      } 
     } 
 
     result.put("status", "fail");
