@@ -25,8 +25,8 @@ public class MacWritingEvent extends java.util.EventObject {
   }
 
   public String getSN() {
-    return (result.containsKey("stb_sn"))?
-      result.get("stb_sn") : "N/A";
+    return (result.containsKey("sn"))?
+      result.get("sn") : "N/A";
   }
 
   public String getStbMac() {

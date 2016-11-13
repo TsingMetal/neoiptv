@@ -151,6 +151,23 @@ public class MacWriter {
 		}
   } ///^ untested
 
+	public boolean checkMac(String sn, String mac) {
+		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
+		result.put("cmd", "check_mac");
+		result.put("sn", sn);
+
+		String dbMac = dbConnector.getMac(sn);
+		if (mac.equals(dbMac)) {
+			result.put("status", "pass");
+			processEvent(new MacWritingEvent(this, result));
+			return true;
+		} else {
+			result.put("status", "FAIL");
+			processEvent(new MacWritingEvent(this, result));
+			return false;
+		}
+	}
+
   /**
    * erase Mac and SN from STB;
    * if successfully erased, return true, else return false
@@ -251,9 +268,14 @@ public class MacWriter {
 		String snCRC = getCRC(sn);
 		String macCRC = getCRC(mac);
 
+		result.put("mac", mac);
+		result.put("mac_crc", macCRC);
+		result.put("sn", sn);
+		result.put("sn_crc", snCRC);
+
     String cmdXml = String.format(CmdXml.SET_XML, mac, macCRC, sn, snCRC);
     String retXml = getRet(cmdXml);
-
+		
     if (retXml == null) {
       result.put("status", "FAIL");
       processEvent(new MacWritingEvent(this, result));
@@ -264,10 +286,6 @@ public class MacWriter {
 
     if (xmlParser.getValue("result").equals("ok")) {
       result.put("status", "pass");
-      result.put("mac", mac);
-      result.put("mac_crc", macCRC);
-      result.put("sn", sn);
-      result.put("sn_crc", snCRC);
       processEvent(new MacWritingEvent(this, result));
 
       // inform DB the sn has been successfully used:

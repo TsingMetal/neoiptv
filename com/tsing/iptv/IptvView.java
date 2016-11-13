@@ -296,6 +296,7 @@ public class IptvView extends JFrame implements ViewInterface {
       failedField.setText("");
       passRateField.setText("");
     });
+		infoPanel.add(resetButton);
   }
 
 	public void macWritingPerformed(MacWritingEvent e) {
@@ -317,15 +318,15 @@ public class IptvView extends JFrame implements ViewInterface {
       {
         if (status.equals("PASS")) {
           resultLabel.setForeground(Color.GREEN);
-          showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.GREEN);
+          showInfo(String.format("\n%20s\t\t\t\t%20s", "SN", sn), Color.GREEN);
           passed++;
         } else if (status.contains("skip")) {
           resultLabel.setForeground(Color.YELLOW);
-          showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.YELLOW);
+          showInfo(String.format("\n%20s\t\t\t\t%20s", "SN", sn), Color.YELLOW);
           skipped++;
         } else { //invalid or fail
           resultLabel.setForeground(Color.RED);
-          showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.RED);
+          showInfo(String.format("\n%20s\t\t\t\t%20s", "SN", sn), Color.RED);
           failed++;
         }
 
@@ -399,7 +400,7 @@ public class IptvView extends JFrame implements ViewInterface {
     testedField.setText(tested + "");
     passedField.setText(passed + "");
     skippedField.setText(skipped + "");
-    failedField.setText(skipped + "");
+    failedField.setText(failed + "");
     passRateField.setText((new Double(passed) / tested) + "%");
   }
 
@@ -501,7 +502,22 @@ public class IptvView extends JFrame implements ViewInterface {
       }
 
       public void run() {
-        macWriter.setMac(sn, mac);
+				boolean nextStep = true;
+
+				// 1st step: check if sn is valid
+				nextStep = macWriter.checkSN(sn);
+				if (nextStep == false) return;
+
+				// 2nd step: check mac
+				nextStep = macWriter.checkMac(sn, mac);
+				if (nextStep == false) return;
+
+				// 3rd step: check and ennable adv-security
+				nextStep = macWriter.checkAdv();
+				if (nextStep == false) return;
+
+				// 4th step: write mac to stb
+				nextStep = macWriter.setMac(sn, mac);
       }
     }
   }
