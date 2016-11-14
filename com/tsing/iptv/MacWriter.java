@@ -322,7 +322,7 @@ public class MacWriter {
 		byte[] buff = new byte[1024];
 		DatagramPacket recvDp = new DatagramPacket(buff, 1024);
 
-    for (int i = 0; i < 5; i++) { // if fails, retry 5 times
+    for (int i = 0; i < 4; i++) { // if fails, retry 5 times
       try {
         socket.send(dp); // send cmd xml to STB by multicasting
         System.out.println("dp sent"); /* for debugging */
@@ -350,7 +350,8 @@ public class MacWriter {
 
 	/** get a string's crc */
 	public String getCRC(String str) { 
-		return CRC16.getCRC(str);
+		// return CRC16.getCRC(str);
+    return "abcd";
 	}
 
   /** add a listener */

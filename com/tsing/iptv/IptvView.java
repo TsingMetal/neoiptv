@@ -60,6 +60,7 @@ public class IptvView extends JFrame implements ViewInterface {
     setMainPanel();
     setToolBar();
     setMenuBar();
+    setInfoPanel();
 		
 		inputDialog = new InputDialog(this, false);
 
@@ -105,21 +106,21 @@ public class IptvView extends JFrame implements ViewInterface {
     JButton getButton = new JButton("Get Mac");
     getButton.setToolTipText("get SN and Mac from STB");
     getButton.addActionListener(event -> {
-      getSN();
+      macWriter.getSN();
     });
     toolBar.add(getButton);
 
     JButton getAdvButton = new JButton("Get Adv");
     getAdvButton.setToolTipText("get adv-security from STB");
     getAdvButton.addActionListener(event -> {
-      checkAdv();
+      macWriter.checkAdv();
     });
     toolBar.add(getAdvButton);
 
     JButton setAdvButton = new JButton("Enable Adv");
     setAdvButton.setToolTipText("Enable adv-security");
     setAdvButton.addActionListener(event -> {
-      setAdv();
+      macWriter.setAdv();
     });
     toolBar.add(setAdvButton);
 
@@ -134,14 +135,14 @@ public class IptvView extends JFrame implements ViewInterface {
     JButton eraseButton = new JButton("Erase Mac");
     eraseButton.setToolTipText("Erase mac from STB");
     eraseButton.addActionListener(event -> {
-      eraseMac();
+      macWriter.eraseMac();
     });
     toolBar.add(eraseButton);
 
     JButton rebootSTBButton = new JButton("Reboot STB");
     rebootSTBButton.setToolTipText("Reboot STB");
     rebootSTBButton.addActionListener(event -> {
-      rebootSTB();
+      macWriter.rebootSTB();
     });
     toolBar.add(rebootSTBButton);
 
@@ -164,7 +165,7 @@ public class IptvView extends JFrame implements ViewInterface {
     JCheckBox showRetBox = new JCheckBox("Show Ret");
     showRetBox.setToolTipText("show ret XML in the infamation area");
     showRetBox.addActionListener(event -> {
-      showRet(showRetBox.isSelected());
+      showRet = (showRetBox.isSelected());
     });
     toolBar.add(showRetBox);
 
@@ -242,7 +243,7 @@ public class IptvView extends JFrame implements ViewInterface {
   JTextField passRateField;
   private void setInfoPanel() {
     JLabel testedLabel = new JLabel("Tested:");
-    testedField.setForeground(Color.BLUE);
+    testedLabel.setForeground(Color.BLUE);
     testedField = new JTextField(6);
     testedField.setForeground(Color.BLUE);
     testedField.setEditable(false);
@@ -286,10 +287,12 @@ public class IptvView extends JFrame implements ViewInterface {
     resetButton.addActionListener(event -> {
       tested = 0;
       passed = 0;
+      skipped = 0;
       failed = 0;
       passRate = 0;
       testedField.setText("");
       passedField.setText("");
+      skippedField.setText("");
       failedField.setText("");
       passRateField.setText("");
     });
@@ -338,11 +341,11 @@ public class IptvView extends JFrame implements ViewInterface {
 
 			showInfo("\nTest Ended\n", Color.WHITE, 24);
     } else {
-			System.out.println("update UI failed");
+			System.out.println("Other status");
 			System.out.println(status);
 		}
 
-		System.out.println("<<<<<<<<<UI updated");
+		System.out.println("<<<<<<UI updated");
   }
 
   private void showInfo(String cmd, String status) {
