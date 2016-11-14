@@ -304,46 +304,48 @@ public class IptvView extends JFrame implements ViewInterface {
     String status = e.getStatus();
     String sn = e.getSN(); 
 
-    if (showRet)
-      showInfo(e.getRetXml(), Color.CYAN);
+    EventQueue.invokeLater(() -> {
+      if (showRet)
+        showInfo(e.getRetXml(), Color.CYAN);
 
-    showInfo(cmd, status);
+      showInfo(cmd, status);
 
-    if (status.equals("PASS") 
-        || status.equals("FAIL") 
-        || status.equals("invalid")
-        || status.equals("skip")) // test terminates in eigher case
-    {
-      if (status.equals("PASS")) {
-        resultLabel.setForeground(Color.GREEN);
-        showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.GREEN);
-        passed++;
-      } else if (status.contains("skip")) {
-        resultLabel.setForeground(Color.YELLOW);
-        showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.YELLOW);
-        skipped++;
-      } else { //invalid or fail
-        resultLabel.setForeground(Color.RED);
-        showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.RED);
-        failed++;
+      if (status.equals("PASS") 
+          || status.equals("FAIL") 
+          || status.equals("invalid")
+          || status.equals("skip")) // test terminates in eigher case
+      {
+        if (status.equals("PASS")) {
+          resultLabel.setForeground(Color.GREEN);
+          showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.GREEN);
+          passed++;
+        } else if (status.contains("skip")) {
+          resultLabel.setForeground(Color.YELLOW);
+          showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.YELLOW);
+          skipped++;
+        } else { //invalid or fail
+          resultLabel.setForeground(Color.RED);
+          showInfo(String.format("\nSN\t\t\t\t%20s", sn), Color.RED);
+          failed++;
+        }
+
+        tested++;
+
+        resultLabel.setText(status);
+        updateInfoPanel();
+        
+        snField.requestFocus(true);
+        snField.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
+        macField.setBorder(null);
+        snField.setText("");
+        macField.setText("");
+
+        showInfo("\nTest Ended\n", Color.WHITE, 24);
+      } else {
+        System.out.println("Other status");
+        System.out.println(status);
       }
-
-			tested++;
-
-      resultLabel.setText(status);
-      updateInfoPanel();
-      
-      snField.requestFocus(true);
-      snField.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
-      macField.setBorder(null);
-      snField.setText("");
-      macField.setText("");
-
-			showInfo("\nTest Ended\n", Color.WHITE, 24);
-    } else {
-			System.out.println("Other status");
-			System.out.println(status);
-		}
+    });
 
 		System.out.println("<<<<<<UI updated");
   }
@@ -483,7 +485,7 @@ public class IptvView extends JFrame implements ViewInterface {
         resultLabel.setForeground(Color.BLUE);
         resultLabel.setText("Testing...");
         
-        WriteThread thread = new WriteThread(mac, sn);
+        WriteThread thread = new WriteThread(sn, mac);
         Thread writeThread = new Thread(thread);
         writeThread.start();
       }
@@ -499,7 +501,7 @@ public class IptvView extends JFrame implements ViewInterface {
       }
 
       public void run() {
-        macWriter.setMac(mac, sn);
+        macWriter.setMac(sn, mac);
       }
     }
   }

@@ -343,6 +343,7 @@ public class MacWriter {
       } 
     } 
 
+    System.out.println("outside of catch");
     result.put("status", "fail");
     processEvent(new MacWritingEvent(this, result));
     return null;
