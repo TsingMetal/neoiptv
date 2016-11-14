@@ -311,9 +311,10 @@ public class IptvView extends JFrame implements ViewInterface {
 
     EventQueue.invokeLater(() -> {
       String ret = e.getRetXml();
-      if (showRet && !ret.equals("N/A"))
+      if (showRet && !ret.equals("N/A")) {
         String info = String.format("\n%20s\t\t\t%20s\n", "ret", ret);
         showInfo(info, Color.BLUE);
+      }
 
       showInfo(cmd, status);
 

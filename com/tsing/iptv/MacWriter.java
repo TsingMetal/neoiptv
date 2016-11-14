@@ -83,7 +83,7 @@ public class MacWriter {
 			processEvent(new MacWritingEvent(this, result));
 			return true;
 		} else {
-			result.put("status", "fail");
+			result.put("status", "disabled");
 			processEvent(new MacWritingEvent(this, result));
 			if (setAdv()) { // if adv not enabled, enable it
 				result.put("status", "pass");
