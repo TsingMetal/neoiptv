@@ -50,7 +50,7 @@ public class IptvView extends JFrame implements ViewInterface {
   }
 
   private void setUI() {
-    setTitle("Iptv Mac Writer"); // set frame title
+    setTitle("Iptv Mac Writer  mode: MP"); // set frame title
     
     Toolkit kit = Toolkit.getDefaultToolkit();
     Dimension screenSize = kit.getScreenSize();
@@ -109,6 +109,7 @@ public class IptvView extends JFrame implements ViewInterface {
     JButton getButton = new JButton("Get Mac");
     getButton.setToolTipText("get SN and Mac from STB");
     getButton.addActionListener(event -> {
+      infoArea.setText("");
       macWriter.getSN();
     });
     toolBar.add(getButton);
@@ -116,6 +117,7 @@ public class IptvView extends JFrame implements ViewInterface {
     JButton getAdvButton = new JButton("Get Adv");
     getAdvButton.setToolTipText("get adv-security from STB");
     getAdvButton.addActionListener(event -> {
+      infoArea.setText("");
       macWriter.checkAdv();
     });
     toolBar.add(getAdvButton);
@@ -123,6 +125,7 @@ public class IptvView extends JFrame implements ViewInterface {
     JButton setAdvButton = new JButton("Enable Adv");
     setAdvButton.setToolTipText("Enable adv-security");
     setAdvButton.addActionListener(event -> {
+      infoArea.setText("");
       macWriter.setAdv();
     });
     toolBar.add(setAdvButton);
@@ -138,6 +141,7 @@ public class IptvView extends JFrame implements ViewInterface {
     JButton eraseButton = new JButton("Erase Mac");
     eraseButton.setToolTipText("Erase mac from STB");
     eraseButton.addActionListener(event -> {
+      infoArea.setText("");
       macWriter.eraseMac();
     });
     toolBar.add(eraseButton);
@@ -145,6 +149,7 @@ public class IptvView extends JFrame implements ViewInterface {
     JButton rebootSTBButton = new JButton("Reboot STB");
     rebootSTBButton.setToolTipText("Reboot STB");
     rebootSTBButton.addActionListener(event -> {
+      infoArea.setText("");
       macWriter.rebootSTB();
     });
     toolBar.add(rebootSTBButton);
@@ -182,6 +187,8 @@ public class IptvView extends JFrame implements ViewInterface {
         if (password.equals("tsing")) { 
           macWriter.setRepairMode(repairMode.isSelected());
           toolBar.setVisible(macWriter.isRepairMode());
+          setTitle("Mac Writer  mode: " + 
+              repairMode.isSelected().toString());
         } else {
           JOptionPane.showMessageDialog(operationMenu, "Wrong password!");
           repairMode.setSelected(false);
@@ -190,6 +197,8 @@ public class IptvView extends JFrame implements ViewInterface {
       } else {
         macWriter.setRepairMode(false);
         toolBar.setVisible(false);
+        setTitle("Mac Writer  mode: " + 
+            repairMode.isSelected().toString());
       }
     });
 
@@ -296,14 +305,15 @@ public class IptvView extends JFrame implements ViewInterface {
   }
 
 	public void macWritingPerformed(MacWritingEvent e) {
-		System.out.println(">>>>>>UI informed");
     String cmd = e.getCmd();
     String status = e.getStatus();
     String sn = e.getSN(); 
 
     EventQueue.invokeLater(() -> {
-      if (showRet && !e.getRetXml().equals("N/A"))
-        showInfo(e.getRetXml(), Color.BLUE);
+      String ret = e.getRetXml();
+      if (showRet && !ret.equals("N/A"))
+        String info = String.format("\n%20s\t\t\t%20s\n", "ret", ret);
+        showInfo(info, Color.BLUE);
 
       showInfo(cmd, status);
 
@@ -339,13 +349,8 @@ public class IptvView extends JFrame implements ViewInterface {
 
         showInfo("\n\nTest Ended\t\t\t", Color.WHITE, 24);
         showInfo(new Date().toLocaleString(), Color.WHITE, 18);
-      } else {
-        System.out.println("Other status");
-        System.out.println(status);
-      }
+      } 
     });
-
-		System.out.println("<<<<<<UI updated");
   }
 
   private void showInfo(String cmd, String status) {
@@ -438,7 +443,6 @@ public class IptvView extends JFrame implements ViewInterface {
 
 		class SnListener implements ActionListener {
 			String sn;
-			String mac;
 
 			public void actionPerformed(ActionEvent e) {
 				sn = snField.getText().trim();
@@ -448,6 +452,7 @@ public class IptvView extends JFrame implements ViewInterface {
 							"Invalid SN: " + sn + ",\n please check!",
 							"Wrong SN",
 							JOptionPane.WARNING_MESSAGE);
+          snField.setText("");
 					return;
 				}
 
@@ -471,6 +476,7 @@ public class IptvView extends JFrame implements ViewInterface {
               "Invalid Mac: " + mac + ",\n please check!",
               "Wrong Mac",
               JOptionPane.WARNING_MESSAGE);
+          macField.setText("");
           return;
         } 
 

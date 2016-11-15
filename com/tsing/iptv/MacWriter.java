@@ -28,6 +28,7 @@ public class MacWriter {
   private DatagramSocket socket;
   private XmlParser xmlParser; // xmlParser is responsible for parsing cmd xml
   private DBConnector dbConnector;
+
   private ArrayList<MacWritingListener> listenerList;
 
   /**
@@ -290,11 +291,13 @@ public class MacWriter {
 
       // inform DB the sn has been successfully used:
       if (dbConnector.SNUsed(sn)) {
+        result.put("cmd", "update_db");
         result.put("status", "PASS"); // all steps passes 
         processEvent(new MacWritingEvent(this, result));
         //rebootSTB();
 				return true;
 			} else {
+        result.put("cmd", "update_db");
 				result.put("status", "FAIL");
 				processEvent(new MacWritingEvent(this, result));
 				return false;
@@ -310,9 +313,8 @@ public class MacWriter {
    * reboot STB 
    */
   public boolean rebootSTB() {
-    // unimplemented
-    LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
-    processEvent(new MacWritingEvent(this, result));
+    String cmdXml = CmdXml.REBOOT_XML;
+    getRet(cmdXml);
     return true;
   }
 
@@ -340,10 +342,9 @@ public class MacWriter {
 		byte[] buff = new byte[1024];
 		DatagramPacket recvDp = new DatagramPacket(buff, 1024);
 
-    for (int i = 0; i < 4; i++) { // if fails, retry 5 times
+    for (int i = 0; i < 5; i++) { // if fails, retry 5 times
       try {
         socket.send(dp); // send cmd xml to STB by multicasting
-        System.out.println("dp sent"); /* for debugging */
 
         // get result from STB:
         socket.receive(recvDp);
@@ -355,13 +356,13 @@ public class MacWriter {
       } catch (Exception ex) {
         ex.printStackTrace();
         retry += 1;
-        System.out.println("retry+" + retry); // for debugging
         result.put("status", "retry+"+new Integer(retry).toString());
         processEvent(new MacWritingEvent(this, result));
-      } 
+      } finally {
+        socket.close(); // close socket mannully; it's neccessary here
+      }
     } 
 
-    System.out.println("outside of catch");
     result.put("status", "fail");
     processEvent(new MacWritingEvent(this, result));
     return null;
@@ -369,8 +370,7 @@ public class MacWriter {
 
 	/** get a string's crc */
 	public String getCRC(String str) { 
-		// return CRC16.getCRC(str);
-    return "abcd";
+    return CRC16.getCRC(str);
 	}
 
   /** add a listener */
