@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.text.*;
 
+import java.util.Date;
+
 public class IptvView extends JFrame implements ViewInterface {
   
   private JDialog inputDialog; // to receive input
@@ -54,7 +56,7 @@ public class IptvView extends JFrame implements ViewInterface {
     Dimension screenSize = kit.getScreenSize();
     int screenWidth = screenSize.width; // get screen width;
     int screenHeight = screenSize.height; // get screen height;
-    setSize(screenWidth*3 / 5, screenHeight*3 / 4); // set frame size;
+    setSize(screenWidth*5 / 7, screenHeight*3 / 4); // set frame size;
     setLocation(screenWidth*1 / 8, screenHeight*1 / 8); //set initial position;
 
     setMainPanel();
@@ -80,7 +82,8 @@ public class IptvView extends JFrame implements ViewInterface {
         BorderFactory.createTitledBorder("Test Information Area"));
     
     infoPanel = new JPanel();
-		infoPanel.setBackground(Color.CYAN);
+
+		infoPanel.setBackground(Color.GRAY);
     infoPanel.setBorder( BorderFactory.createTitledBorder("Yield Status"));
     infoPanel.setVisible(false); // default not show infoPanel;
 
@@ -147,13 +150,6 @@ public class IptvView extends JFrame implements ViewInterface {
     toolBar.add(rebootSTBButton);
 
     toolBar.addSeparator();
-
-    JCheckBox showInfoPanel = new JCheckBox("Show Yield");
-    showInfoPanel.setToolTipText("Show Yield Infomation");
-    showInfoPanel.addActionListener(event -> {
-      infoPanel.setVisible(showInfoPanel.isSelected());
-    });
-    toolBar.add(showInfoPanel);
 
     JCheckBox showInputDialog = new JCheckBox("Show Input Dialog");
     showInputDialog.setToolTipText("Display the SN and Mac input dialog");
@@ -306,8 +302,8 @@ public class IptvView extends JFrame implements ViewInterface {
     String sn = e.getSN(); 
 
     EventQueue.invokeLater(() -> {
-      if (showRet)
-        showInfo(e.getRetXml(), Color.CYAN);
+      if (showRet && !e.getRetXml().equals("N/A"))
+        showInfo(e.getRetXml(), Color.BLUE);
 
       showInfo(cmd, status);
 
@@ -341,7 +337,8 @@ public class IptvView extends JFrame implements ViewInterface {
         snField.setText("");
         macField.setText("");
 
-        showInfo("\nTest Ended\n", Color.WHITE, 24);
+        showInfo("\n\nTest Ended\t\t\t", Color.WHITE, 24);
+        showInfo(new Date().toLocaleString(), Color.WHITE, 18);
       } else {
         System.out.println("Other status");
         System.out.println(status);
@@ -448,7 +445,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
 				if (sn == null || sn.length() != 20) {
 					JOptionPane.showMessageDialog(InputDialog.this,
-							"Invalid SN, please check!",
+							"Invalid SN: " + sn + ",\n please check!",
 							"Wrong SN",
 							JOptionPane.WARNING_MESSAGE);
 					return;
@@ -471,7 +468,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
         if (mac == null || mac.length() != 12) {
           JOptionPane.showMessageDialog(InputDialog.this,
-              "Invalid Mac, please check!",
+              "Invalid Mac: " + mac + ",\n please check!",
               "Wrong Mac",
               JOptionPane.WARNING_MESSAGE);
           return;
@@ -481,7 +478,7 @@ public class IptvView extends JFrame implements ViewInterface {
         
         infoArea.setText("");
 
-				showInfo("Test Start...\n", Color.WHITE, 24);
+				showInfo("Test Start...\n\n", Color.WHITE, 24);
 
         resultLabel.setForeground(Color.BLUE);
         resultLabel.setText("Testing...");
@@ -504,16 +501,16 @@ public class IptvView extends JFrame implements ViewInterface {
       public void run() {
 				boolean nextStep = true;
 
-				// 1st step: check if sn is valid
+				// 1st step: check and ennable adv-security
+				nextStep = macWriter.checkAdv();
+				if (nextStep == false) return;
+
+				// 2nd step: check if sn is valid
 				nextStep = macWriter.checkSN(sn);
 				if (nextStep == false) return;
 
-				// 2nd step: check mac
+				// 3rd step: check mac
 				nextStep = macWriter.checkMac(sn, mac);
-				if (nextStep == false) return;
-
-				// 3rd step: check and ennable adv-security
-				nextStep = macWriter.checkAdv();
 				if (nextStep == false) return;
 
 				// 4th step: write mac to stb
