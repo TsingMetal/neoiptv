@@ -50,7 +50,7 @@ public class IptvView extends JFrame implements ViewInterface {
   }
 
   private void setUI() {
-    setTitle("Iptv Mac Writer  mode: MP"); // set frame title
+    setTitle("Iptv Mac Writer  repair mode: false"); // set frame title
     
     Toolkit kit = Toolkit.getDefaultToolkit();
     Dimension screenSize = kit.getScreenSize();
@@ -187,8 +187,8 @@ public class IptvView extends JFrame implements ViewInterface {
         if (password.equals("tsing")) { 
           macWriter.setRepairMode(repairMode.isSelected());
           toolBar.setVisible(macWriter.isRepairMode());
-          setTitle("Mac Writer  mode: " + 
-              repairMode.isSelected().toString());
+          setTitle("Mac Writer  repair mode: " + 
+            (new Boolean(repairMode.isSelected()).toString()));
         } else {
           JOptionPane.showMessageDialog(operationMenu, "Wrong password!");
           repairMode.setSelected(false);
@@ -197,8 +197,8 @@ public class IptvView extends JFrame implements ViewInterface {
       } else {
         macWriter.setRepairMode(false);
         toolBar.setVisible(false);
-        setTitle("Mac Writer  mode: " + 
-            repairMode.isSelected().toString());
+        setTitle("Mac Writer  repair mode: " + 
+           new Boolean(repairMode.isSelected()).toString());
       }
     });
 

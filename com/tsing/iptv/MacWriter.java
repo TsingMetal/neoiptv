@@ -41,6 +41,14 @@ public class MacWriter {
   public MacWriter(XmlParser parser, DBConnector connector) {
     xmlParser = parser;
     dbConnector = connector;
+
+    try {
+      ADDR = InetAddress.getByName("255.255.255.255"); // broadcast address
+      socket = new DatagramSocket(RECVPORT); // use UDP socket; bind port 1301
+      socket.setSoTimeout(1000); // set time for timeout as 1 sec;
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
   }
 
   /**
@@ -266,8 +274,8 @@ public class MacWriter {
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		result.put("cmd", "write_mac_to_stb");
 
-		String snCRC = getCRC(sn);
-		String macCRC = getCRC(mac);
+		String snCRC = crc16(sn);
+		String macCRC = crc16(mac);
 
 		result.put("mac", mac);
 		result.put("mac_crc", macCRC);
@@ -329,14 +337,6 @@ public class MacWriter {
     result.put("cmd", "*connect_to_stb");
     int retry = 0; //record retry times;
 
-    try {
-      ADDR = InetAddress.getByName("255.255.255.255"); // broadcast address
-      socket = new DatagramSocket(RECVPORT); // use UDP socket; bind port 1301
-      socket.setSoTimeout(1000); // set time for timeout as 1 sec;
-    } catch (Exception ex) {
-      ex.printStackTrace();
-    }
-
     DatagramPacket dp = new DatagramPacket(cmdXml.getBytes(),
        cmdXml.length(), ADDR, STBPORT);
 		byte[] buff = new byte[1024];
@@ -356,10 +356,11 @@ public class MacWriter {
       } catch (Exception ex) {
         ex.printStackTrace();
         retry += 1;
+        System.out.println("retry+" + retry);
         result.put("status", "retry+"+new Integer(retry).toString());
         processEvent(new MacWritingEvent(this, result));
       } finally {
-        socket.close(); // close socket mannully; it's neccessary here
+        //socket.close(); // close socket mannully; it's neccessary here
       }
     } 
 
@@ -369,8 +370,8 @@ public class MacWriter {
   }///~ tested OK; date: Wed  2 Nov 08:40:17 CST 2016
 
 	/** get a string's crc */
-	public String getCRC(String str) { 
-    return CRC16.getCRC(str);
+	public String crc16(String str) { 
+    return CRC16.crc16(str);
 	}
 
   /** add a listener */
