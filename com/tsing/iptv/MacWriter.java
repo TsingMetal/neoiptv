@@ -41,14 +41,6 @@ public class MacWriter {
   public MacWriter(XmlParser parser, DBConnector connector) {
     xmlParser = parser;
     dbConnector = connector;
-
-    try {
-      ADDR = InetAddress.getByName("255.255.255.255"); // broadcast address
-      socket = new DatagramSocket(RECVPORT); // use UDP socket; bind port 1301
-      socket.setSoTimeout(1000); // set time for timeout as 1 sec;
-    } catch (Exception ex) {
-      ex.printStackTrace();
-    }
   }
 
   /**
@@ -337,6 +329,14 @@ public class MacWriter {
     result.put("cmd", "*connect_to_stb");
     int retry = 0; //record retry times;
 
+    try {
+      ADDR = InetAddress.getByName("255.255.255.255"); // broadcast address
+      socket = new DatagramSocket(RECVPORT); // use UDP socket; bind port 1301
+      socket.setSoTimeout(1000); // set time for timeout as 1 sec;
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+
     DatagramPacket dp = new DatagramPacket(cmdXml.getBytes(),
        cmdXml.length(), ADDR, STBPORT);
 		byte[] buff = new byte[1024];
@@ -360,7 +360,7 @@ public class MacWriter {
         result.put("status", "retry+"+new Integer(retry).toString());
         processEvent(new MacWritingEvent(this, result));
       } finally {
-        //socket.close(); // close socket mannully; it's neccessary here
+        socket.close(); // close socket mannully; it's neccessary here
       }
     } 
 

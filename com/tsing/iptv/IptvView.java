@@ -35,7 +35,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
   public IptvView() {
     xmlParser = new IptvXmlParser(); // initialize xmlParser 
-    dbConnector = new IptvDBConnector(); //~~ DBConnector unimplemented yet 
+    dbConnector = new IptvDBConnector(); 
     macWriter = new MacWriter(xmlParser, dbConnector); // initialize macWriter
     
     xmlWriter = new IptvXmlWriter(); //initialize xmlWriter 
@@ -404,7 +404,8 @@ public class IptvView extends JFrame implements ViewInterface {
     passedField.setText(passed + "");
     skippedField.setText(skipped + "");
     failedField.setText(failed + "");
-    passRateField.setText((new Double(passed) / tested) + "%");
+    passRateField.setText(
+        String.format("%6.4f", (double)passed/tested));
   }
 
 	public class InputDialog extends JDialog {
