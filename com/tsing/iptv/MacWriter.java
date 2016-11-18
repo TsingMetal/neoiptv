@@ -59,6 +59,14 @@ public class MacWriter {
   public boolean isRepairMode() {
     return repairMode;
   }
+  
+  /**
+   * set dbConnector:
+   * use local DB or SFC
+   */
+  public void setConnector(DBConnector connector) {
+    dbConnector = connector;
+  }
 
   /**
    * check advanced sercurity before testing
@@ -127,7 +135,7 @@ public class MacWriter {
 
   /** 
    * compare Mac and SN with DB; 
-   * to check if both and crc of each are validate;
+   * to check if both are validate;
    * return true if all of those are validate, false if not;
 	 * @param sn String
    */
@@ -143,6 +151,10 @@ public class MacWriter {
       return false;
     } else if (status.equals("invalid")) {
       result.put("status", "invalid");
+      processEvent(new MacWritingEvent(this, result));
+      return false;
+    } else if (status == null) {
+      result.put("status", "connect_to_SFC_FAIL");
       processEvent(new MacWritingEvent(this, result));
       return false;
     } else { // status == "valid"
