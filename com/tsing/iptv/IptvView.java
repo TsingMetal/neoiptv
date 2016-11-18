@@ -35,7 +35,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
   public IptvView() {
     xmlParser = new IptvXmlParser(); // initialize xmlParser 
-    dbConnector = new IptvDBConnector(); //~~ DBConnector unimplemented yet 
+    dbConnector = new IptvDBConnector(); 
     macWriter = new MacWriter(xmlParser, dbConnector); // initialize macWriter
     
     xmlWriter = new IptvXmlWriter(); //initialize xmlWriter 
@@ -50,7 +50,7 @@ public class IptvView extends JFrame implements ViewInterface {
   }
 
   private void setUI() {
-    setTitle("Iptv Mac Writer  mode: MP"); // set frame title
+    setTitle("Iptv Mac Writer  repair mode: false"); // set frame title
     
     Toolkit kit = Toolkit.getDefaultToolkit();
     Dimension screenSize = kit.getScreenSize();
@@ -187,8 +187,8 @@ public class IptvView extends JFrame implements ViewInterface {
         if (password.equals("tsing")) { 
           macWriter.setRepairMode(repairMode.isSelected());
           toolBar.setVisible(macWriter.isRepairMode());
-          setTitle("Mac Writer  mode: " + 
-              repairMode.isSelected().toString());
+          setTitle("Mac Writer  repair mode: " + 
+            (new Boolean(repairMode.isSelected()).toString()));
         } else {
           JOptionPane.showMessageDialog(operationMenu, "Wrong password!");
           repairMode.setSelected(false);
@@ -197,8 +197,8 @@ public class IptvView extends JFrame implements ViewInterface {
       } else {
         macWriter.setRepairMode(false);
         toolBar.setVisible(false);
-        setTitle("Mac Writer  mode: " + 
-            repairMode.isSelected().toString());
+        setTitle("Mac Writer  repair mode: " + 
+           new Boolean(repairMode.isSelected()).toString());
       }
     });
 
@@ -404,7 +404,8 @@ public class IptvView extends JFrame implements ViewInterface {
     passedField.setText(passed + "");
     skippedField.setText(skipped + "");
     failedField.setText(failed + "");
-    passRateField.setText((new Double(passed) / tested) + "%");
+    passRateField.setText(
+        String.format("%6.4f", (double)passed/tested));
   }
 
 	public class InputDialog extends JDialog {
