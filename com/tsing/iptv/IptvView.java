@@ -22,7 +22,8 @@ public class IptvView extends JFrame implements ViewInterface {
   private MacWriter macWriter;
   private XmlParser xmlParser;
   private Logger logger;
-  private DBConnector dbConnector;
+  private DBConnector localConnector;
+  private DBConnector sfcConnector;
   private XmlWriter xmlWriter;
 
   private boolean showRet = false; //default not show ret XML in infoArea
@@ -35,8 +36,8 @@ public class IptvView extends JFrame implements ViewInterface {
 
   public IptvView() {
     xmlParser = new IptvXmlParser(); // initialize xmlParser 
-    dbConnector = new IptvDBConnector(); 
-    macWriter = new MacWriter(xmlParser, dbConnector); // initialize macWriter
+    localConnector = new IptvDBConnector(); 
+    macWriter = new MacWriter(xmlParser, localConnector); // initialize macWriter
     
     xmlWriter = new IptvXmlWriter(); //initialize xmlWriter 
     logger = new IptvLogger(xmlWriter); //initialize logger 
@@ -205,7 +206,42 @@ public class IptvView extends JFrame implements ViewInterface {
     JMenuItem exitItem = new JMenuItem("Exit");
     exitItem.addActionListener(event -> System.exit(0));
 
+    JRadioButtonMenuItem dbItem = 
+      new JRadioButtonMenuItem("Connect to Local DB");
+    dbItem.addActionListener(event -> {
+      String password = JOptionPane.showInputDialog(menuBar,
+          "Enter password to authenrize yourself:");
+      if (password.equals("tsing")) {
+        if (localConnector == null)
+          localConnector = new IptvDBConnector();
+        macWriter.setConnector(localConnector);
+      } else {
+        dbItem.setSelected(false);
+      }
+    });
+
+    JRadioButtonMenuItem sfcItem = 
+      new JRadioButtonMenuItem("Connect to SFC");
+    sfcItem.addActionListener(event -> {
+      String password = JOptionPane.showInputDialog(menuBar,
+          "Enter password to authenrize yourself:");
+      if (password.equals("tsing")) {
+        if (sfcConnector == null) 
+          sfcConnector = new SFCConnector();
+        macWriter.setConnector(sfcConnector);
+      } else {
+        sfcItem.setSelected(false);
+      }
+    });
+
+    ButtonGroup group = new ButtonGroup();
+    group.add(dbItem);
+    group.add(sfcItem);
+
     operationMenu.add(repairMode);
+    operationMenu.addSeparator();
+    operationMenu.add(dbItem);
+    operationMenu.add(sfcItem);
     operationMenu.addSeparator();
     operationMenu.add(exitItem);
 
