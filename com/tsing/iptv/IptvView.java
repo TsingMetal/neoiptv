@@ -208,6 +208,10 @@ public class IptvView extends JFrame implements ViewInterface {
 
     JRadioButtonMenuItem dbItem = 
       new JRadioButtonMenuItem("Connect to Local DB");
+    JRadioButtonMenuItem sfcItem = 
+      new JRadioButtonMenuItem("Connect to SFC");
+    sfcItem.setSelected(true);
+
     dbItem.addActionListener(event -> {
       String password = JOptionPane.showInputDialog(menuBar,
           "Enter password to authenrize yourself:");
@@ -216,12 +220,11 @@ public class IptvView extends JFrame implements ViewInterface {
           localConnector = new IptvDBConnector();
         macWriter.setConnector(localConnector);
       } else {
-        dbItem.setSelected(false);
+        JOptionPane.showMessageDialog(operationMenu, "Wrong password!");
+        sfcItem.setSelected(true);
       }
     });
 
-    JRadioButtonMenuItem sfcItem = 
-      new JRadioButtonMenuItem("Connect to SFC");
     sfcItem.addActionListener(event -> {
       String password = JOptionPane.showInputDialog(menuBar,
           "Enter password to authenrize yourself:");
@@ -230,7 +233,8 @@ public class IptvView extends JFrame implements ViewInterface {
           sfcConnector = new SFCConnector();
         macWriter.setConnector(sfcConnector);
       } else {
-        sfcItem.setSelected(false);
+        JOptionPane.showMessageDialog(operationMenu, "Wrong password!");
+        dbItem.setSelected(true);
       }
     });
 
