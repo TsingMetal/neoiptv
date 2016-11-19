@@ -100,7 +100,7 @@ public class SFCConnector implements DBConnector {
       Thread.sleep(200);
     } catch (Exception ex) {
       ex.printStackTrace();
-    } finally {
+    } finally { // delete files
       new File(outFile).delete();
       new File(batFile).delete();
     }
@@ -119,7 +119,7 @@ public class SFCConnector implements DBConnector {
     } catch (Exception ex) {
       ex.printStackTrace();
       return "N/A";
-    } finally {
+    } finally { // delete file
       new File(inFile).delete();
     }
   }
