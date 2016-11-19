@@ -36,8 +36,8 @@ public class IptvView extends JFrame implements ViewInterface {
 
   public IptvView() {
     xmlParser = new IptvXmlParser(); // initialize xmlParser 
-    localConnector = new IptvDBConnector(); 
-    macWriter = new MacWriter(xmlParser, localConnector); // initialize macWriter
+    sfcConnector = new SFCConnector(); 
+    macWriter = new MacWriter(xmlParser, sfcConnector); // initialize macWriter
     
     xmlWriter = new IptvXmlWriter(); //initialize xmlWriter 
     logger = new IptvLogger(xmlWriter); //initialize logger 
