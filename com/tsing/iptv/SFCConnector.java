@@ -86,58 +86,41 @@ public class SFCConnector implements DBConnector {
     String outFile = WRITE_PATH + sn + ".txt";
     String batFile = WRITE_PATH + sn + ".bat";
 
-    DataOutputStream out = null;
-    DataOutputStream outToBat = null;
+    PrintWriter out = null;
+    PrintWriter outToBat = null;
 
     try {
-      out = new DataOutputStream(
-          new FileOutputStream(outFile));
-      out.writeUTF(message);
-      outToBat = new DataOutputStream(
-          new FileOutputStream(batFile));
-      outToBat.writeUTF(message);
+      out = new PrintWriter(outFile);
+      out.print(message);
+      outToBat = new PrintWriter(batFile);
+      outToBat.print(message);
+      out.close();
+      outToBat.close();
 
       Thread.sleep(200);
     } catch (Exception ex) {
       ex.printStackTrace();
     } finally {
-      try {
-        if (out != null) {
-          out.close();
-          new File(outFile).delete();
-        }
-        if (outToBat != null) {
-          outToBat.close();
-          new File(batFile).delete();
-        }
-      } catch (Exception ex) {
-        ex.printStackTrace();
-      }
+      new File(outFile).delete();
+      new File(batFile).delete();
     }
   }
 
   private String readMessage() {
     String inFile = READ_PATH + sn + ".txt";
 
-    DataInputStream in = null;
+    BufferedReader in = null;
 
     try {
-      in = new DataInputStream(
-          new FileInputStream(inFile));
-      String result = in.readUTF();
+      in = new BufferedReader(
+          new FileReader(inFile));
+      String result = in.readLine();
       return result;
     } catch (Exception ex) {
       ex.printStackTrace();
       return "N/A";
     } finally {
-      try {
-        if (in != null) {
-          in.close();
-          new File(inFile).delete();
-        }
-      } catch (Exception ex) {
-        ex.printStackTrace();
-      }
+      new File(inFile).delete();
     }
   }
 }
