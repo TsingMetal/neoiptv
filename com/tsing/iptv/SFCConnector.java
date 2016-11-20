@@ -44,14 +44,14 @@ public class SFCConnector implements DBConnector {
     sendMessage(message);
 
     String result = readMessage();
-    String[] data = result.split(";");
-    mac = data[1]; // mac get initialized here
 
     if (result.contains("USED")) {
       return "used";
     } else if (result.contains("INVALID")) {
       return "invalid";
     } else if (result.contains("VALID")) {
+      String[] data = result.split(";");
+      mac = data[1]; // mac get initialized here
       return "valid";
     } else {
       return null;

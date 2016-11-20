@@ -11,15 +11,18 @@ public class IptvLogger implements Logger, MacWritingListener {
 
   @Override
   public void macWritingPerformed(MacWritingEvent e) {
-    if ((e.getCmd() == "write_mac_to_stb" && e.getStatus() == "pass") 
-        || e.getStatus() == "fail")
-    {
-      LinkedHashMap<String, String> map = 
-		  e.getResultMap(); // map initialized here
-      log(map);
-    } else {
-      // do nothing;
-    }
+    Runnable r = () -> {
+      if (e.getCmd().equals("FAIL") || e.getStatus().equals("PASS")) {
+        LinkedHashMap<String, String> map = 
+        e.getResultMap(); // map initialized here
+        log(map);
+      } else {
+        // do nothing;
+      }
+    };
+
+    Thread thread = new Thread(r);
+    thread.start();
   }
 
   @Override

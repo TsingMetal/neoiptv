@@ -453,6 +453,8 @@ public class IptvView extends JFrame implements ViewInterface {
 		public InputDialog(Frame parent, boolean modal) {
 			super(parent, modal);
 
+      this.setResizable(false);
+
 			JPanel inputPanel = new JPanel();
 			inputPanel.setLayout(new GridLayout(2, 2, 0, 10));
 
