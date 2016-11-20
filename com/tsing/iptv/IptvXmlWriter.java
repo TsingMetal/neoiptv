@@ -43,9 +43,9 @@ public class IptvXmlWriter implements XmlWriter {
   }
 
 	public void write(LinkedHashMap<String, String> map) {
-    // generate path by yy/mm/date
+    // generate path by yy-mm-date
     SimpleDateFormat pathFormat = 
-      new SimpleDateFormat("yyyy/MM/dd/");
+      new SimpleDateFormat("yyyy-MM-dd/");
     String datePath = pathFormat.format(new Date());
 
     // generate filename: etc 20161120162400#sn.xml
@@ -62,7 +62,7 @@ public class IptvXmlWriter implements XmlWriter {
     File file = new File(absFilename);
 
     Document document = createXML(map);
-    // printXML(document); // for debugging
+    printXML(document); // for debugging
 
     XMLWriter out = null;
     try { // suppose path exists
@@ -71,7 +71,7 @@ public class IptvXmlWriter implements XmlWriter {
       out.flush();
       out.close();
     } catch (IOException ex) { //if path doesn't exit, create path
-      ex.printStackTrace();
+      System.out.println("New Folder Created");
       new File(logPath + datePath).mkdirs();
       try {
         out = new XMLWriter(new FileWriter(file));
@@ -99,6 +99,7 @@ public class IptvXmlWriter implements XmlWriter {
     }
 
     String strXML = strWriter.toString();
+    System.out.println("XML for log:\n");
     System.out.println(strXML);
   }
 }

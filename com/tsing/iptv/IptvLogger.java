@@ -11,8 +11,10 @@ public class IptvLogger implements Logger, MacWritingListener {
 
   @Override
   public void macWritingPerformed(MacWritingEvent e) {
+    System.out.println("logger informed");
     Runnable r = () -> {
-      if (e.getCmd().equals("FAIL") || e.getStatus().equals("PASS")) {
+      System.out.println("in logging thread");
+      if (e.getStatus().equals("FAIL") || e.getStatus().equals("PASS")) {
         LinkedHashMap<String, String> map = 
         e.getResultMap(); // map initialized here
         log(map);
@@ -23,6 +25,7 @@ public class IptvLogger implements Logger, MacWritingListener {
 
     Thread thread = new Thread(r);
     thread.start();
+    System.out.println("logger logged");
   }
 
   @Override

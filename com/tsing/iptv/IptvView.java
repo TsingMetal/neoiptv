@@ -34,6 +34,8 @@ public class IptvView extends JFrame implements ViewInterface {
   private int failed = 0;
   private double passRate = 0;
 
+  private boolean keepHistory = true; // don't clear infoArea after each test
+
   public IptvView() {
     xmlParser = new IptvXmlParser(); // initialize xmlParser 
     sfcConnector = new SFCConnector(); 
@@ -119,7 +121,7 @@ public class IptvView extends JFrame implements ViewInterface {
     getAdvButton.setToolTipText("get adv-security from STB");
     getAdvButton.addActionListener(event -> {
       infoArea.setText("");
-      macWriter.checkAdv();
+      macWriter.checkAdv("N/A in repair mode");
     });
     toolBar.add(getAdvButton);
 
@@ -127,7 +129,7 @@ public class IptvView extends JFrame implements ViewInterface {
     setAdvButton.setToolTipText("Enable adv-security");
     setAdvButton.addActionListener(event -> {
       infoArea.setText("");
-      macWriter.setAdv();
+      macWriter.setAdv("N/A in repair mode");
     });
     toolBar.add(setAdvButton);
 
@@ -262,15 +264,25 @@ public class IptvView extends JFrame implements ViewInterface {
       infoPanel.setVisible(showInfoPanel.isSelected());
     });
 
+    JCheckBoxMenuItem keepHistoryItem =
+      new JCheckBoxMenuItem("Keep Test History");
+    keepHistoryItem.setSelected(true);
+    keepHistoryItem.addActionListener(event -> {
+      keepHistory = keepHistoryItem.isSelected();
+    });
+
     settingMenu.add(onTop);
+    settingMenu.addSeparator();
     settingMenu.add(showInfoPanel);
+    settingMenu.add(keepHistoryItem);
     
     //set Help menu
     JMenu helpMenu = new JMenu("Help");
     JMenuItem aboutItem = new JMenuItem("About");
     aboutItem.addActionListener(event -> {
       JOptionPane.showMessageDialog(helpMenu,
-          "Mac Writer\nversion 1.0.0.0\nAuthor Tsing\n" + "Tel: 15285647630");
+          "Mac Writer\nVersion: 1.0.0.0\nAuthor: Tsing\n" + 
+          "Tel: 15285647630\n" + "Find me at: https://github.com/TsingMetal");
     });
     helpMenu.add(aboutItem);
 
@@ -379,7 +391,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
         tested++;
 
-        resultLabel.setText(status);
+        resultLabel.setText(status.toUpperCase());
         updateInfoPanel();
         
         snField.requestFocus(true);
@@ -389,7 +401,7 @@ public class IptvView extends JFrame implements ViewInterface {
         macField.setText("");
 
         showInfo("\n\nTest Ended\t\t\t", Color.WHITE, 24);
-        showInfo(new Date().toLocaleString(), Color.WHITE, 18);
+        showInfo(new Date().toLocaleString()+ "\n\n", Color.WHITE, 18);
       } 
     });
   }
@@ -526,9 +538,11 @@ public class IptvView extends JFrame implements ViewInterface {
 
         macField.setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
         
-        infoArea.setText("");
+        if (keepHistory == false)
+          infoArea.setText("");
 
-				showInfo("Test Start...\n\n", Color.WHITE, 24);
+				showInfo("Test Start...\t\t", Color.WHITE, 24);
+        showInfo("No." + (tested + 1) + "\n\n", Color.WHITE, 18);
 
         resultLabel.setForeground(Color.BLUE);
         resultLabel.setText("Testing...");
@@ -552,7 +566,7 @@ public class IptvView extends JFrame implements ViewInterface {
 				boolean nextStep = true;
 
 				// 1st step: check and ennable adv-security
-				nextStep = macWriter.checkAdv();
+				nextStep = macWriter.checkAdv(sn);
 				if (nextStep == false) return;
 
 				// 2nd step: check if sn is valid
