@@ -160,6 +160,7 @@ public class IptvView extends JFrame implements ViewInterface {
     toolBar.addSeparator();
 
     JCheckBox showInputDialog = new JCheckBox("Show Input Dialog");
+    showInputDialog.setSelected(true);
     showInputDialog.setToolTipText("Display the SN and Mac input dialog");
     showInputDialog.addActionListener(event -> {
       inputDialog.setVisible(showInputDialog.isSelected());
@@ -176,6 +177,8 @@ public class IptvView extends JFrame implements ViewInterface {
     add(toolBar, BorderLayout.NORTH); //add toolbar to frame
   }
 
+  JRadioButtonMenuItem dbItem;
+  JRadioButtonMenuItem sfcItem;
   private void setMenuBar() {
     JMenuBar menuBar = new JMenuBar();
 
@@ -190,16 +193,22 @@ public class IptvView extends JFrame implements ViewInterface {
         if (password.equals("tsing")) { 
           macWriter.setRepairMode(repairMode.isSelected());
           toolBar.setVisible(macWriter.isRepairMode());
+          dbItem.setEnabled(repairMode.isSelected());
+          sfcItem.setEnabled(repairMode.isSelected());
           setTitle("Mac Writer  repair mode: " + 
             (new Boolean(repairMode.isSelected()).toString()));
         } else {
           JOptionPane.showMessageDialog(operationMenu, "Wrong password!");
           repairMode.setSelected(false);
           macWriter.setRepairMode(false);
+          dbItem.setEnabled(false);
+          sfcItem.setEnabled(false);
         }
       } else {
         macWriter.setRepairMode(false);
         toolBar.setVisible(false);
+        dbItem.setEnabled(false);
+        sfcItem.setEnabled(false);
         setTitle("Mac Writer  repair mode: " + 
            new Boolean(repairMode.isSelected()).toString());
       }
@@ -208,36 +217,24 @@ public class IptvView extends JFrame implements ViewInterface {
     JMenuItem exitItem = new JMenuItem("Exit");
     exitItem.addActionListener(event -> System.exit(0));
 
-    JRadioButtonMenuItem dbItem = 
+    dbItem = 
       new JRadioButtonMenuItem("Connect to Local DB");
-    JRadioButtonMenuItem sfcItem = 
+    dbItem.setEnabled(false);
+    sfcItem = 
       new JRadioButtonMenuItem("Connect to SFC");
     sfcItem.setSelected(true);
+    sfcItem.setEnabled(false);
 
     dbItem.addActionListener(event -> {
-      String password = JOptionPane.showInputDialog(menuBar,
-          "Enter password to authorize yourself:");
-      if (password.equals("tsing")) {
-        if (localConnector == null)
-          localConnector = new IptvDBConnector();
-        macWriter.setConnector(localConnector);
-      } else {
-        JOptionPane.showMessageDialog(operationMenu, "Wrong password!");
-        sfcItem.setSelected(true);
-      }
+      if (localConnector == null)
+        localConnector = new IptvDBConnector();
+      macWriter.setConnector(localConnector);
     });
 
     sfcItem.addActionListener(event -> {
-      String password = JOptionPane.showInputDialog(menuBar,
-          "Enter password to authorize yourself:");
-      if (password.equals("tsing")) {
-        if (sfcConnector == null) 
-          sfcConnector = new SFCConnector();
-        macWriter.setConnector(sfcConnector);
-      } else {
-        JOptionPane.showMessageDialog(operationMenu, "Wrong password!");
-        dbItem.setSelected(true);
-      }
+      if (sfcConnector == null) 
+        sfcConnector = new SFCConnector();
+      macWriter.setConnector(sfcConnector);
     });
 
     ButtonGroup group = new ButtonGroup();
@@ -414,7 +411,9 @@ public class IptvView extends JFrame implements ViewInterface {
 			status = status.toLowerCase();
       if (status.equals("pass")) {
         StyleConstants.setForeground(attrSet, Color.GREEN);
-      } else if (status.equals("fail") || status.equals("CHANGE_DB")) {
+      } else if (status.equals("fail")) {
+        StyleConstants.setForeground(attrSet, Color.RED);
+      } else if (cmd.equals("CHANGE_DB")) {
         StyleConstants.setForeground(attrSet, Color.RED);
       } else if (status.equals("skip")) {
         StyleConstants.setForeground(attrSet, Color.YELLOW);
@@ -541,7 +540,7 @@ public class IptvView extends JFrame implements ViewInterface {
         if (keepHistory == false)
           infoArea.setText("");
 
-				showInfo("Test Start...\t\t", Color.WHITE, 24);
+				showInfo("\nTest Start...\t\t\t", Color.WHITE, 24);
         showInfo("No." + (tested + 1) + "\n\n", Color.WHITE, 18);
 
         resultLabel.setForeground(Color.BLUE);

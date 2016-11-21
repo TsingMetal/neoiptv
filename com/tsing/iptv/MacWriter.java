@@ -75,9 +75,10 @@ public class MacWriter {
   /**
    * check advanced sercurity before testing
    */
-  public boolean checkAdv() {
+  public boolean checkAdv(String sn) {
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		result.put("cmd", "check_adv_security");
+    result.put("sn", sn);
 		
 		String cmdXml = CmdXml.CHECK_ADV_XML;
 		String retXml = getRet(cmdXml); // send request to stb and get result
@@ -97,7 +98,7 @@ public class MacWriter {
 		} else {
 			result.put("status", "disabled");
 			processEvent(new MacWritingEvent(this, result));
-			if (setAdv()) { // if adv not enabled, enable it
+			if (setAdv(sn)) { // if adv not enabled, enable it
 				result.put("status", "pass");
 				processEvent(new MacWritingEvent(this, result));
 				return true; 
@@ -110,9 +111,10 @@ public class MacWriter {
   } ///^ untested
   
 	/** enable advanced security function of stb */
-	public boolean setAdv() {
+	public boolean setAdv(String sn) {
 		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		result.put("cmd", "enable_adv_security");
+    result.put("sn", sn);
 
 		String cmdXml = CmdXml.SET_ADV_XML;
 		String retXml = getRet(cmdXml); // send cmd and get returned data
@@ -345,21 +347,15 @@ public class MacWriter {
     result.put("cmd", "*connect_to_stb");
     int retry = 0; //record retry times;
 
-    try {
-      ADDR = InetAddress.getByName("255.255.255.255"); // broadcast address
-      socket = new DatagramSocket(RECVPORT); // use UDP socket; bind port 1301
-      socket.setSoTimeout(1000); // set time for timeout as 1 sec;
-    } catch (Exception ex) {
-      ex.printStackTrace();
-    }
-
-    DatagramPacket dp = new DatagramPacket(cmdXml.getBytes(),
-       cmdXml.length(), ADDR, STBPORT);
-		byte[] buff = new byte[1024];
-		DatagramPacket recvDp = new DatagramPacket(buff, 1024);
-
     for (int i = 0; i < 5; i++) { // if fails, retry 5 times
       try {
+        DatagramPacket dp = new DatagramPacket(cmdXml.getBytes(),
+           cmdXml.length(), ADDR, STBPORT);
+        byte[] buff = new byte[1024];
+        DatagramPacket recvDp = new DatagramPacket(buff, 1024);
+        ADDR = InetAddress.getByName("255.255.255.255"); // broadcast address
+        socket = new DatagramSocket(RECVPORT); // use UDP socket; bind port 1301
+        socket.setSoTimeout(1000); // set time for timeout as 1 sec;
         socket.send(dp); // send cmd xml to STB by multicasting
 
         // get result from STB:
