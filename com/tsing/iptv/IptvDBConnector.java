@@ -17,6 +17,11 @@ public class IptvDBConnector implements DBConnector {
       ex.printStackTrace();
     }
   }
+  
+  @Override
+  public String toString() {
+    return "LOCAL_DB";
+  }
 
   @Override
   public String checkSN(String sn) {

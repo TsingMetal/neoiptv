@@ -186,7 +186,7 @@ public class IptvView extends JFrame implements ViewInterface {
     repairMode.addActionListener(event -> {
       if (repairMode.isSelected()) {
         String password = JOptionPane.showInputDialog(menuBar,
-            "Enter password to authenrize yourself:");
+            "Enter password to authorize yourself:");
         if (password.equals("tsing")) { 
           macWriter.setRepairMode(repairMode.isSelected());
           toolBar.setVisible(macWriter.isRepairMode());
@@ -216,7 +216,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
     dbItem.addActionListener(event -> {
       String password = JOptionPane.showInputDialog(menuBar,
-          "Enter password to authenrize yourself:");
+          "Enter password to authorize yourself:");
       if (password.equals("tsing")) {
         if (localConnector == null)
           localConnector = new IptvDBConnector();
@@ -229,7 +229,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
     sfcItem.addActionListener(event -> {
       String password = JOptionPane.showInputDialog(menuBar,
-          "Enter password to authenrize yourself:");
+          "Enter password to authorize yourself:");
       if (password.equals("tsing")) {
         if (sfcConnector == null) 
           sfcConnector = new SFCConnector();
@@ -414,7 +414,7 @@ public class IptvView extends JFrame implements ViewInterface {
 			status = status.toLowerCase();
       if (status.equals("pass")) {
         StyleConstants.setForeground(attrSet, Color.GREEN);
-      } else if (status.equals("fail")) {
+      } else if (status.equals("fail") || status.equals("CHANGE_DB")) {
         StyleConstants.setForeground(attrSet, Color.RED);
       } else if (status.equals("skip")) {
         StyleConstants.setForeground(attrSet, Color.YELLOW);

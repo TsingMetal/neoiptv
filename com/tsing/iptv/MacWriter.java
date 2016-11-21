@@ -39,12 +39,6 @@ public class MacWriter {
    * @param  connector DBConnector
    */
   public MacWriter(XmlParser parser, DBConnector connector) {
-    try {
-      ADDR = InetAddress.getByName("255.255.255.255"); // broadcast address
-    } catch (Exception ex) {
-      ex.printStackTrace();
-    }
-
     xmlParser = parser;
     dbConnector = connector;
   }
@@ -71,16 +65,19 @@ public class MacWriter {
    * use local DB or SFC
    */
   public void setConnector(DBConnector connector) {
+    LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
+    result.put("cmd", "CHANGE_DB");
     dbConnector = connector;
+    result.put("status", "DB_CHANGED_TO_" + connector.toString());
+    processEvent(new MacWritingEvent(this, result));
   }
 
   /**
    * check advanced sercurity before testing
    */
-  public boolean checkAdv(String sn) {
+  public boolean checkAdv() {
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		result.put("cmd", "check_adv_security");
-    result.put("sn", sn);
 		
 		String cmdXml = CmdXml.CHECK_ADV_XML;
 		String retXml = getRet(cmdXml); // send request to stb and get result
@@ -100,7 +97,7 @@ public class MacWriter {
 		} else {
 			result.put("status", "disabled");
 			processEvent(new MacWritingEvent(this, result));
-			if (setAdv(sn)) { // if adv not enabled, enable it
+			if (setAdv()) { // if adv not enabled, enable it
 				result.put("status", "pass");
 				processEvent(new MacWritingEvent(this, result));
 				return true; 
@@ -113,10 +110,9 @@ public class MacWriter {
   } ///^ untested
   
 	/** enable advanced security function of stb */
-	public boolean setAdv(String sn) {
+	public boolean setAdv() {
 		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		result.put("cmd", "enable_adv_security");
-    result.put("sn", sn);
 
 		String cmdXml = CmdXml.SET_ADV_XML;
 		String retXml = getRet(cmdXml); // send cmd and get returned data
@@ -349,6 +345,13 @@ public class MacWriter {
     result.put("cmd", "*connect_to_stb");
     int retry = 0; //record retry times;
 
+    try {
+      ADDR = InetAddress.getByName("255.255.255.255"); // broadcast address
+      socket = new DatagramSocket(RECVPORT); // use UDP socket; bind port 1301
+      socket.setSoTimeout(1000); // set time for timeout as 1 sec;
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
 
     DatagramPacket dp = new DatagramPacket(cmdXml.getBytes(),
        cmdXml.length(), ADDR, STBPORT);
@@ -357,8 +360,6 @@ public class MacWriter {
 
     for (int i = 0; i < 5; i++) { // if fails, retry 5 times
       try {
-        socket = new DatagramSocket(RECVPORT); // use UDP socket; bind port 1301
-        socket.setSoTimeout(1000); // set time for timeout as 1 sec;
         socket.send(dp); // send cmd xml to STB by multicasting
 
         // get result from STB:

@@ -37,6 +37,11 @@ public class SFCConnector implements DBConnector {
   }
 
   @Override
+  public String toString() {
+    return "SFC";
+  }
+
+  @Override
   public String checkSN(String sn) {
     this.sn = sn; // sn get initialized here
 
