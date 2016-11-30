@@ -13,6 +13,10 @@ public class SFCConnector implements DBConnector {
   private String sn;
   private String mac;
 
+  private String outFile;
+  private String batFile;
+  private String inFile;
+
   public SFCConnector() {
     // get the IP required by SFC:
     try {
@@ -52,11 +56,11 @@ public class SFCConnector implements DBConnector {
 
     if (result.contains("USED")) {
       return "used";
-    } else if (result.contains("INVALID")) {
+    } else if (result.contains("NO FOUND")) {
       return "invalid";
     } else if (result.contains("VALID")) {
       String[] data = result.split(";");
-      mac = data[1]; // mac get initialized here
+      mac = data[3]; // mac gets initialized here
       return "valid";
     } else {
       return null;
@@ -74,7 +78,7 @@ public class SFCConnector implements DBConnector {
     sendMessage(message);
 
     String result = readMessage();
-    if (result.contains("OK")) {
+    if (result.contains("2;OK")) {
       return true;
     } else {
        return false;
@@ -88,8 +92,8 @@ public class SFCConnector implements DBConnector {
   }
 
   private void sendMessage(String message) {
-    String outFile = WRITE_PATH + sn + ".txt";
-    String batFile = WRITE_PATH + sn + ".bat";
+    outFile = WRITE_PATH + sn + ".txt";
+    batFile = WRITE_PATH + sn + ".bat";
 
     PrintWriter out = null;
     PrintWriter outToBat = null;
@@ -102,7 +106,7 @@ public class SFCConnector implements DBConnector {
       out.close();
       outToBat.close();
 
-      Thread.sleep(200);
+      Thread.sleep(1000);
     } catch (Exception ex) {
       ex.printStackTrace();
     } finally { // delete files
@@ -112,11 +116,12 @@ public class SFCConnector implements DBConnector {
   }
 
   private String readMessage() {
-    String inFile = READ_PATH + sn + ".txt";
+    inFile = READ_PATH + sn + ".txt";
 
     BufferedReader in = null;
 
     try {
+      Thread.sleep(200);
       in = new BufferedReader(
           new FileReader(inFile));
       String result = in.readLine();
@@ -125,7 +130,7 @@ public class SFCConnector implements DBConnector {
       ex.printStackTrace();
       return "N/A";
     } finally { // delete file
-      new File(inFile).delete();
+      // new File(inFile).delete();
     }
   }
 }

@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.text.*;
+import javax.swing.event.*;
 
 import java.util.Date;
 
@@ -95,6 +96,7 @@ public class IptvView extends JFrame implements ViewInterface {
 		resultLabel.setForeground(Color.BLUE);
 
 		JScrollPane scrollPane = new JScrollPane(infoArea);
+    scrollPane.setAutoscrolls(true);
     panel.add(scrollPane, BorderLayout.CENTER);
 		panel.add(resultLabel, BorderLayout.SOUTH);
     panel.add(infoPanel, BorderLayout.NORTH);
@@ -368,9 +370,9 @@ public class IptvView extends JFrame implements ViewInterface {
       showInfo(cmd, status);
 
       if (status.equals("PASS") 
-          || status.equals("FAIL") 
+          || status.contains("FAIL") // to include other "FAILS"
           || status.equals("invalid")
-          || status.equals("skip")) // test terminates in eigher case
+          || status.equals("used")) // test terminates in eigher case
       {
         if (status.equals("PASS")) {
           resultLabel.setForeground(Color.GREEN);
@@ -415,7 +417,7 @@ public class IptvView extends JFrame implements ViewInterface {
         StyleConstants.setForeground(attrSet, Color.RED);
       } else if (cmd.equals("CHANGE_DB")) {
         StyleConstants.setForeground(attrSet, Color.RED);
-      } else if (status.equals("skip")) {
+      } else if (status.equals("used")) {
         StyleConstants.setForeground(attrSet, Color.YELLOW);
       } else {
         StyleConstants.setForeground(attrSet, Color.CYAN);
@@ -475,26 +477,72 @@ public class IptvView extends JFrame implements ViewInterface {
 
 			JLabel macLabel = new JLabel("Input mac: ", SwingConstants.CENTER);
 			macField = new JTextField(25);
+
+      addDocumentListeners(); // add document listeners 
 			
 			inputPanel.add(snLabel);
 			inputPanel.add(snField);
 			inputPanel.add(macLabel);
 			inputPanel.add(macField);
 			
-			JButton closeButton = new JButton("X");
-			closeButton.addActionListener(event -> {
-				this.setVisible(false);
-			});
-
 			this.setLayout(new BorderLayout());
 			this.add(inputPanel, BorderLayout.CENTER);
-			this.add(closeButton, BorderLayout.SOUTH);
 
 			this.pack();
 			
 			snField.addActionListener(new SnListener());
 			macField.addActionListener(new MacListener());
 		}
+
+    private void addDocumentListeners() {
+      Document snDoc = snField.getDocument();
+      snDoc.addDocumentListener(new DocumentListener() {
+        public void insertUpdate(DocumentEvent e) {
+          int textLength = snDoc.getLength();
+          if (textLength == 20) {
+            snField.setBorder(
+                BorderFactory.createLineBorder(Color.GREEN, 5));
+            snField.setForeground(Color.GREEN);
+          } else {
+            snField.setBorder(
+                BorderFactory.createLineBorder(Color.RED, 5));
+            snField.setForeground(Color.RED);
+          }
+        }
+
+        public void removeUpdate(DocumentEvent e) {
+          insertUpdate(e);
+        }
+
+        public void changedUpdate(DocumentEvent e) {
+          insertUpdate(e);
+        }
+      });
+
+      Document macDoc = macField.getDocument();
+      macDoc.addDocumentListener(new DocumentListener() {
+        public void insertUpdate(DocumentEvent e) {
+          int textLength = macDoc.getLength();
+          if (textLength == 15) {
+            macField.setBorder(
+                BorderFactory.createLineBorder(Color.GREEN, 5));
+            macField.setForeground(Color.GREEN);
+          } else {
+            macField.setBorder(
+                BorderFactory.createLineBorder(Color.RED, 5));
+            macField.setForeground(Color.RED);
+          }
+        }
+
+        public void removeUpdate(DocumentEvent e) {
+          insertUpdate(e);
+        }
+
+        public void changedUpdate(DocumentEvent e) {
+          insertUpdate(e);
+        }
+      });
+    }
 
 		class SnListener implements ActionListener {
 			String sn;
@@ -511,7 +559,6 @@ public class IptvView extends JFrame implements ViewInterface {
 					return;
 				}
 
-        snField.setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
 				macField.setFocusable(true);
 				macField.requestFocus(true);
         macField.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
@@ -535,8 +582,6 @@ public class IptvView extends JFrame implements ViewInterface {
           return;
         } 
 
-        macField.setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
-        
         if (keepHistory == false)
           infoArea.setText("");
 

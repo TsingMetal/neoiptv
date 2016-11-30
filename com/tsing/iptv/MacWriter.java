@@ -160,7 +160,7 @@ public class MacWriter {
       processEvent(new MacWritingEvent(this, result));
       return false;
     } else if (status == null) {
-      result.put("status", "connect_to_SFC_FAIL");
+      result.put("status", "connect_to_DB_FAIL");
       processEvent(new MacWritingEvent(this, result));
       return false;
     } else { // status == "valid"
