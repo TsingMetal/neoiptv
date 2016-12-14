@@ -84,8 +84,6 @@ public class MacWriter {
 		String retXml = getRet(cmdXml); // send request to stb and get result
 
 		if (retXml == null) {
-			result.put("status", "FAIL"); // test needs restart
-			processEvent(new MacWritingEvent(this, result));
 			return false;
 		}
 
@@ -120,8 +118,6 @@ public class MacWriter {
 		String retXml = getRet(cmdXml); // send cmd and get returned data
 		
 		if (retXml == null) {
-			result.put("status", "FAIL");
-			processEvent(new MacWritingEvent(this, result));
 			return false;
 		}
 
@@ -221,8 +217,6 @@ public class MacWriter {
 		String cmdXml = CmdXml.ERASE_XML;
 		String retXml = getRet(cmdXml);
     if (retXml == null) {
-      result.put("status", "FAIL");
-      processEvent(new MacWritingEvent(this, result));
       return false;
     }
 
@@ -296,8 +290,6 @@ public class MacWriter {
     String retXml = getRet(cmdXml);
 		
     if (retXml == null) {
-      result.put("status", "FAIL");
-      processEvent(new MacWritingEvent(this, result));
       return false;
     }
 
@@ -376,7 +368,7 @@ public class MacWriter {
       }
     } 
 
-    result.put("status", "fail");
+    result.put("status", "FAIL");
     processEvent(new MacWritingEvent(this, result));
     return null;
   }///~ tested OK; date: Wed  2 Nov 08:40:17 CST 2016

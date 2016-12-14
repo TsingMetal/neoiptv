@@ -571,7 +571,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
       public void actionPerformed(ActionEvent e) { 
         sn = snField.getText();
-        mac = macField.getText().trim();
+        mac = macField.getText().trim().substring(3, 15);
 
         if (mac == null || mac.length() != 12) {
           JOptionPane.showMessageDialog(InputDialog.this,

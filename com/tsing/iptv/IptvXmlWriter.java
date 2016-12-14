@@ -34,7 +34,7 @@ public class IptvXmlWriter implements XmlWriter {
     }
     
     SimpleDateFormat format = 
-      new SimpleDateFormat("yyyy/MM/dd/HH/mm/ss");
+      new SimpleDateFormat("yyyy/MM/dd/HH:mm:ss");
     String timeStamp = format.format(new Date());
     Element element = root.addElement("date");
     element.addText(timeStamp);
@@ -71,7 +71,6 @@ public class IptvXmlWriter implements XmlWriter {
       out.flush();
       out.close();
     } catch (IOException ex) { //if path doesn't exit, create path
-      System.out.println("New Folder Created");
       new File(logPath + datePath).mkdirs();
       try {
         out = new XMLWriter(new FileWriter(file));
@@ -94,7 +93,7 @@ public class IptvXmlWriter implements XmlWriter {
     XMLWriter xmlWriter = new XMLWriter(strWriter, format);
     try {
       xmlWriter.write(document);
-    } catch (IOException ex) { //if path doesn't exit, create path
+    } catch (IOException ex) {
       ex.printStackTrace();
     }
 

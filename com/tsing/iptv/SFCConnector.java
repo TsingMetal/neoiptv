@@ -49,7 +49,7 @@ public class SFCConnector implements DBConnector {
   public String checkSN(String sn) {
     this.sn = sn; // sn get initialized here
 
-    String message = sn + ";;1;OK;" + IP + ";;;";
+    String message = sn + ";1;OK;" + IP + ";;;";
     sendMessage(message);
 
     String result = readMessage();
@@ -74,7 +74,7 @@ public class SFCConnector implements DBConnector {
 
   @Override
   public boolean SNUsed(String sn) {
-    String message = sn + ";;2;OK;" + IP + ";;;";
+    String message = sn + ";2;OK;" + IP + ";;;";
     sendMessage(message);
 
     String result = readMessage();
