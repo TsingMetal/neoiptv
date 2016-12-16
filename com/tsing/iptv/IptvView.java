@@ -463,7 +463,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
 	public class InputDialog extends JDialog {
 
-		public InputDialog(Frame parent, boolean modal) {
+		public InputDialog(JFrame parent, boolean modal) {
 			super(parent, modal);
 
       this.setResizable(false);
