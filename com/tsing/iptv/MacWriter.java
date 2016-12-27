@@ -197,8 +197,6 @@ public class MacWriter {
       String sn = getSN();
 
       if (sn == null) {
-        result.put("status", "FAIL");
-        processEvent(new MacWritingEvent(this, result));
         return false;
       }
 
@@ -245,8 +243,6 @@ public class MacWriter {
 		String retXml = getRet(cmdXml);
     
     if (retXml == null) {
-      result.put("status", "fail");
-      processEvent(new MacWritingEvent(this, result));
       return null;
     }
 

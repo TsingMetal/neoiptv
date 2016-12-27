@@ -21,7 +21,7 @@ public class SFCConnector implements DBConnector {
     // get the IP required by SFC:
     try {
       Enumeration<NetworkInterface> interfaces = 
-        NetworkInterface.getNetworkInterfaces();
+          NetworkInterface.getNetworkInterfaces();
       while (interfaces.hasMoreElements()) {
         NetworkInterface ni = interfaces.nextElement();
         Enumeration<InetAddress> addrs = ni.getInetAddresses();
@@ -106,7 +106,7 @@ public class SFCConnector implements DBConnector {
       out.close();
       outToBat.close();
 
-      Thread.sleep(1000);
+      Thread.sleep(1000); // wait 1 sec for SFC to respond
     } catch (Exception ex) {
       ex.printStackTrace();
     } finally { // delete files
@@ -122,9 +122,9 @@ public class SFCConnector implements DBConnector {
 
     try {
       Thread.sleep(200);
-      in = new BufferedReader(
-          new FileReader(inFile));
+      in = new BufferedReader(new FileReader(inFile));
       String result = in.readLine();
+      in.close();
       return result;
     } catch (Exception ex) {
       ex.printStackTrace();

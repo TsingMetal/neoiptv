@@ -54,7 +54,7 @@ public class IptvView extends JFrame implements ViewInterface {
   }
 
   private void setUI() {
-    setTitle("Iptv Mac Writer  repair mode: false"); // set frame title
+    setTitle("Iptv Mac Writer  repair mode: false"); 
     
     Toolkit kit = Toolkit.getDefaultToolkit();
     Dimension screenSize = kit.getScreenSize();
@@ -378,7 +378,7 @@ public class IptvView extends JFrame implements ViewInterface {
           resultLabel.setForeground(Color.GREEN);
           showInfo(String.format("\n%20s\t\t\t\t%20s", "SN", sn), Color.GREEN);
           passed++;
-        } else if (status.contains("skip")) {
+        } else if (status.contains("used")) {
           resultLabel.setForeground(Color.YELLOW);
           showInfo(String.format("\n%20s\t\t\t\t%20s", "SN", sn), Color.YELLOW);
           skipped++;
@@ -401,6 +401,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
         showInfo("\n\nTest Ended\t\t\t", Color.WHITE, 24);
         showInfo(new Date().toLocaleString()+ "\n\n", Color.WHITE, 18);
+        inputDialog.setVisible(true);
       } 
     });
   }
@@ -475,8 +476,9 @@ public class IptvView extends JFrame implements ViewInterface {
 			snField = new JTextField(25);
 			snField.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
 
-			JLabel macLabel = new JLabel("Input mac: ", SwingConstants.CENTER);
+			JLabel macLabel = new JLabel("Input Mac: ", SwingConstants.CENTER);
 			macField = new JTextField(25);
+      macField.setEditable(false);
 
       addDocumentListeners(); // add document listeners 
 			
@@ -559,6 +561,7 @@ public class IptvView extends JFrame implements ViewInterface {
 					return;
 				}
 
+        macField.setEditable(true);
 				macField.setFocusable(true);
 				macField.requestFocus(true);
         macField.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
@@ -571,9 +574,9 @@ public class IptvView extends JFrame implements ViewInterface {
 
       public void actionPerformed(ActionEvent e) { 
         sn = snField.getText();
-        mac = macField.getText().trim().substring(3, 15);
+        mac = macField.getText().trim();
 
-        if (mac == null || mac.length() != 12) {
+        if (mac == null || mac.length() != 15) {
           JOptionPane.showMessageDialog(InputDialog.this,
               "Invalid Mac: " + mac + ",\n please check!",
               "Wrong Mac",
@@ -581,6 +584,9 @@ public class IptvView extends JFrame implements ViewInterface {
           macField.setText("");
           return;
         } 
+
+        macField.setEditable(false);
+        inputDialog.setVisible(false);
 
         if (keepHistory == false)
           infoArea.setText("");
@@ -591,6 +597,7 @@ public class IptvView extends JFrame implements ViewInterface {
         resultLabel.setForeground(Color.BLUE);
         resultLabel.setText("Testing...");
         
+        mac = mac.substring(3, 15);
         WriteThread thread = new WriteThread(sn, mac);
         Thread writeThread = new Thread(thread);
         writeThread.start();
