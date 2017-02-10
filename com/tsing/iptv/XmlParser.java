@@ -1,4 +1,4 @@
-package com.tsing.iptv;
+package tsing.iptv;
 
 public interface XmlParser {
 	public void parse(String strXML);

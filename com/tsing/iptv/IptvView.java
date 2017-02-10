@@ -1,4 +1,4 @@
-package com.tsing.iptv;
+package tsing.iptv;
 
 import javax.swing.*;
 import java.awt.*;
@@ -346,11 +346,11 @@ public class IptvView extends JFrame implements ViewInterface {
       skipped = 0;
       failed = 0;
       passRate = 0;
-      testedField.setText("");
-      passedField.setText("");
-      skippedField.setText("");
-      failedField.setText("");
-      passRateField.setText("");
+      testedField.setText("0");
+      passedField.setText("0");
+      skippedField.setText("0");
+      failedField.setText("0");
+      passRateField.setText("0");
     });
 		infoPanel.add(resetButton);
   }

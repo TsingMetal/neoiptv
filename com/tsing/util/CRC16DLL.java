@@ -1,4 +1,4 @@
-package com.tsing.util;
+package tsing.util;
 
 import com.sun.jna.win32.StdCallLibrary;
 import com.sun.jna.Native;

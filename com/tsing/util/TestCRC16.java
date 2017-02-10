@@ -1,3 +1,5 @@
+package tsing.util;
+
 public class TestCRC16 {
   public static int CRC16(String str) {
     byte[] buffer = str.getBytes();

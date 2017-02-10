@@ -1,4 +1,4 @@
-package com.tsing.iptv;
+package tsing.iptv;
 
 import java.io.*;
 import java.net.*;
