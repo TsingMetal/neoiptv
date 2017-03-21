@@ -1,4 +1,4 @@
-package tsing.iptv;
+package com.tsing.iptv;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +15,7 @@ public class IptvView extends JFrame implements ViewInterface {
   private JTextField macField; // to receive Mac input
 
   private JTextPane infoArea; // to show test infomation
-  private JPanel infoPanel; // to show xml string return from STB
+  private JPanel infoPanel; // to show pass rate etc.
 	private JLabel resultLabel; // to show test result(fail or pass)
 
   private JToolBar toolBar;
@@ -597,7 +597,7 @@ public class IptvView extends JFrame implements ViewInterface {
         resultLabel.setForeground(Color.BLUE);
         resultLabel.setText("Testing...");
         
-        mac = mac.substring(3, 15);
+        // mac = mac.substring(3, 15);
         WriteThread thread = new WriteThread(sn, mac);
         Thread writeThread = new Thread(thread);
         writeThread.start();
@@ -629,6 +629,7 @@ public class IptvView extends JFrame implements ViewInterface {
 				if (nextStep == false) return;
 
 				// 4th step: write mac to stb
+        mac = mac.substring(3, 15);
 				nextStep = macWriter.setMac(sn, mac);
       }
     }

@@ -1,4 +1,4 @@
-package tsing.util;
+package com.tsing.util;
 
 import java.io.File;
 import java.io.FileWriter;

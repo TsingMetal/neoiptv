@@ -1,4 +1,4 @@
-package tsing.iptv;
+package com.tsing.iptv;
 
 public interface CmdXml {
 

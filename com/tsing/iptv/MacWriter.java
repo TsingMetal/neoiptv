@@ -1,4 +1,4 @@
-package tsing.iptv;
+package com.tsing.iptv;
 
 import java.net.*;
 import java.util.LinkedHashMap;

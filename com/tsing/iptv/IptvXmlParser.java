@@ -1,4 +1,4 @@
-package tsing.iptv;
+package com.tsing.iptv;
 
 import org.dom4j.Document;
 import org.dom4j.Element;
