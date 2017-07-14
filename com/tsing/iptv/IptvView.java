@@ -16,7 +16,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
   private JTextPane infoArea; // to show test infomation
   private JPanel infoPanel; // to show pass rate etc.
-	private JLabel resultLabel; // to show test result(fail or pass)
+  private JLabel resultLabel; // to show test result(fail or pass)
 
   private JToolBar toolBar;
 
@@ -68,11 +68,11 @@ public class IptvView extends JFrame implements ViewInterface {
     setMenuBar();
     setInfoPanel();
 		
-		inputDialog = new InputDialog(this, false);
+    inputDialog = new InputDialog(this, false);
 
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setVisible(true);
-		inputDialog.setVisible(true);
+    inputDialog.setVisible(true);
   }
 
   private void setMainPanel() {
