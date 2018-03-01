@@ -47,7 +47,7 @@ public class IptvView extends JFrame implements ViewInterface {
 
     macWriter.addMacWritingListener(this); // register IptvView with macWriter
     macWriter.addMacWritingListener(logger); // register logger with macWriter
-		
+    
     EventQueue.invokeLater(() -> {
       setUI();
     });
@@ -67,7 +67,7 @@ public class IptvView extends JFrame implements ViewInterface {
     setToolBar();
     setMenuBar();
     setInfoPanel();
-		
+    
     inputDialog = new InputDialog(this, false);
 
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -80,25 +80,25 @@ public class IptvView extends JFrame implements ViewInterface {
     JPanel panel = new JPanel(new BorderLayout(5, 10));
 
     infoArea = new JTextPane();
-		infoArea.setEditable(false);
-		infoArea.setBackground(Color.BLACK);
+    infoArea.setEditable(false);
+    infoArea.setBackground(Color.BLACK);
     infoArea.setBorder(
         BorderFactory.createTitledBorder("Test Information Area"));
     
     infoPanel = new JPanel();
 
-		infoPanel.setBackground(Color.GRAY);
+    infoPanel.setBackground(Color.GRAY);
     infoPanel.setBorder( BorderFactory.createTitledBorder("Yield Status"));
     infoPanel.setVisible(false); // default not show infoPanel;
 
-		resultLabel = new JLabel("WAIT...", SwingConstants.CENTER);
-		resultLabel.setFont(new Font("Serif", Font.BOLD, 48));
-		resultLabel.setForeground(Color.BLUE);
+    resultLabel = new JLabel("WAIT...", SwingConstants.CENTER);
+    resultLabel.setFont(new Font("Serif", Font.BOLD, 48));
+    resultLabel.setForeground(Color.BLUE);
 
-		JScrollPane scrollPane = new JScrollPane(infoArea);
+    JScrollPane scrollPane = new JScrollPane(infoArea);
     scrollPane.setAutoscrolls(true);
     panel.add(scrollPane, BorderLayout.CENTER);
-		panel.add(resultLabel, BorderLayout.SOUTH);
+    panel.add(resultLabel, BorderLayout.SOUTH);
     panel.add(infoPanel, BorderLayout.NORTH);
 
     add(panel, BorderLayout.CENTER);  // add panel to frame
@@ -352,10 +352,10 @@ public class IptvView extends JFrame implements ViewInterface {
       failedField.setText("0");
       passRateField.setText("0");
     });
-		infoPanel.add(resetButton);
+    infoPanel.add(resetButton);
   }
 
-	public void macWritingPerformed(MacWritingEvent e) {
+  public void macWritingPerformed(MacWritingEvent e) {
     String cmd = e.getCmd();
     String status = e.getStatus();
     String sn = e.getSN(); 
@@ -411,7 +411,7 @@ public class IptvView extends JFrame implements ViewInterface {
     Document doc = infoArea.getDocument();
     SimpleAttributeSet attrSet = new SimpleAttributeSet();
     try {
-			status = status.toLowerCase();
+      status = status.toLowerCase();
       if (status.equals("pass")) {
         StyleConstants.setForeground(attrSet, Color.GREEN);
       } else if (status.equals("fail")) {
@@ -441,17 +441,17 @@ public class IptvView extends JFrame implements ViewInterface {
     }
   }
 
-	private void showInfo(String str, Color color, int fontSize) {
-		Document doc = infoArea.getDocument();
-		SimpleAttributeSet attrSet = new SimpleAttributeSet();
-		try {
-			StyleConstants.setForeground(attrSet, color);
-			StyleConstants.setFontSize(attrSet, fontSize);
-			doc.insertString(doc.getLength(), str, attrSet);
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-	}
+  private void showInfo(String str, Color color, int fontSize) {
+    Document doc = infoArea.getDocument();
+    SimpleAttributeSet attrSet = new SimpleAttributeSet();
+    try {
+      StyleConstants.setForeground(attrSet, color);
+      StyleConstants.setFontSize(attrSet, fontSize);
+      doc.insertString(doc.getLength(), str, attrSet);
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+  }
 
   private void updateInfoPanel() {
     testedField.setText(tested + "");
@@ -462,39 +462,39 @@ public class IptvView extends JFrame implements ViewInterface {
         String.format("%6.4f", (double)passed/tested));
   }
 
-	public class InputDialog extends JDialog {
+  public class InputDialog extends JDialog {
 
-		public InputDialog(JFrame parent, boolean modal) {
-			super(parent, modal);
+    public InputDialog(JFrame parent, boolean modal) {
+      super(parent, modal);
 
       this.setResizable(false);
 
-			JPanel inputPanel = new JPanel();
-			inputPanel.setLayout(new GridLayout(2, 2, 0, 10));
+      JPanel inputPanel = new JPanel();
+      inputPanel.setLayout(new GridLayout(2, 2, 0, 10));
 
-			JLabel snLabel = new JLabel("Input SN: ", SwingConstants.CENTER);
-			snField = new JTextField(25);
-			snField.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
+      JLabel snLabel = new JLabel("Input SN: ", SwingConstants.CENTER);
+      snField = new JTextField(25);
+      snField.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
 
-			JLabel macLabel = new JLabel("Input Mac: ", SwingConstants.CENTER);
-			macField = new JTextField(25);
+      JLabel macLabel = new JLabel("Input Mac: ", SwingConstants.CENTER);
+      macField = new JTextField(25);
       macField.setEditable(false);
 
       addDocumentListeners(); // add document listeners 
-			
-			inputPanel.add(snLabel);
-			inputPanel.add(snField);
-			inputPanel.add(macLabel);
-			inputPanel.add(macField);
-			
-			this.setLayout(new BorderLayout());
-			this.add(inputPanel, BorderLayout.CENTER);
+      
+      inputPanel.add(snLabel);
+      inputPanel.add(snField);
+      inputPanel.add(macLabel);
+      inputPanel.add(macField);
+      
+      this.setLayout(new BorderLayout());
+      this.add(inputPanel, BorderLayout.CENTER);
 
-			this.pack();
-			
-			snField.addActionListener(new SnListener());
-			macField.addActionListener(new MacListener());
-		}
+      this.pack();
+      
+      snField.addActionListener(new SnListener());
+      macField.addActionListener(new MacListener());
+    }
 
     private void addDocumentListeners() {
       Document snDoc = snField.getDocument();
@@ -546,27 +546,27 @@ public class IptvView extends JFrame implements ViewInterface {
       });
     }
 
-		class SnListener implements ActionListener {
-			String sn;
+    class SnListener implements ActionListener {
+      String sn;
 
-			public void actionPerformed(ActionEvent e) {
-				sn = snField.getText().trim();
+      public void actionPerformed(ActionEvent e) {
+        sn = snField.getText().trim();
 
-				if (sn == null || sn.length() != 20) {
-					JOptionPane.showMessageDialog(InputDialog.this,
-							"Invalid SN: " + sn + ",\n please check!",
-							"Wrong SN",
-							JOptionPane.WARNING_MESSAGE);
+        if (sn == null || sn.length() != 20) {
+          JOptionPane.showMessageDialog(InputDialog.this,
+              "Invalid SN: " + sn + ",\n please check!",
+              "Wrong SN",
+              JOptionPane.WARNING_MESSAGE);
           snField.setText("");
-					return;
-				}
+          return;
+        }
 
         macField.setEditable(true);
-				macField.setFocusable(true);
-				macField.requestFocus(true);
+        macField.setFocusable(true);
+        macField.requestFocus(true);
         macField.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
-			}
-		}
+      }
+    }
 
     class MacListener implements ActionListener {
       String sn;
@@ -591,7 +591,7 @@ public class IptvView extends JFrame implements ViewInterface {
         if (keepHistory == false)
           infoArea.setText("");
 
-				showInfo("\nTest Start...\t\t\t", Color.WHITE, 24);
+        showInfo("\nTest Start...\t\t\t", Color.WHITE, 24);
         showInfo("No." + (tested + 1) + "\n\n", Color.WHITE, 18);
 
         resultLabel.setForeground(Color.BLUE);
@@ -614,28 +614,28 @@ public class IptvView extends JFrame implements ViewInterface {
       }
 
       public void run() {
-				boolean nextStep = true;
+        boolean nextStep = true;
 
-				// 1st step: check and ennable adv-security
-				nextStep = macWriter.checkAdv(sn);
-				if (nextStep == false) return;
+        // 1st step: check and ennable adv-security
+        nextStep = macWriter.checkAdv(sn);
+        if (nextStep == false) return;
 
-				// 2nd step: check if sn is valid
-				nextStep = macWriter.checkSN(sn);
-				if (nextStep == false) return;
+        // 2nd step: check if sn is valid
+        nextStep = macWriter.checkSN(sn);
+        if (nextStep == false) return;
 
-				// 3rd step: check mac
-				nextStep = macWriter.checkMac(sn, mac);
-				if (nextStep == false) return;
+        // 3rd step: check mac
+        nextStep = macWriter.checkMac(sn, mac);
+        if (nextStep == false) return;
 
-				// 4th step: write mac to stb
+        // 4th step: write mac to stb
         mac = mac.substring(3, 15);
-				nextStep = macWriter.setMac(sn, mac);
+        nextStep = macWriter.setMac(sn, mac);
       }
     }
   }
 
-	public static void main(String[] args) {
-		IptvView view = new IptvView();
-	}
+  public static void main(String[] args) {
+    IptvView view = new IptvView();
+  }
 }

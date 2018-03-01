@@ -54,7 +54,7 @@ public class MacWritingEvent extends java.util.EventObject {
       result.get("ret_xml") : "N/A";
   }
 
-	public LinkedHashMap<String, String> getResultMap() {
-		return result;
-	}
+  public LinkedHashMap<String, String> getResultMap() {
+    return result;
+  }
 }

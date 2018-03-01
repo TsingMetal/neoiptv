@@ -42,7 +42,7 @@ public class IptvXmlWriter implements XmlWriter {
     return document;
   }
 
-	public void write(LinkedHashMap<String, String> map) {
+  public void write(LinkedHashMap<String, String> map) {
     // generate path by yy-mm-date
     SimpleDateFormat pathFormat = 
       new SimpleDateFormat("yyyy-MM-dd/");
@@ -81,7 +81,7 @@ public class IptvXmlWriter implements XmlWriter {
         _ex.printStackTrace();
       }
     } 
-	}
+  }
 
   /**
    * for debugging

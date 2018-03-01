@@ -77,73 +77,73 @@ public class MacWriter {
    */
   public boolean checkAdv(String sn) {
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
-		result.put("cmd", "check_adv_security");
+    result.put("cmd", "check_adv_security");
     result.put("sn", sn);
-		
-		String cmdXml = CmdXml.CHECK_ADV_XML;
-		String retXml = getRet(cmdXml); // send request to stb and get result
+    
+    String cmdXml = CmdXml.CHECK_ADV_XML;
+    String retXml = getRet(cmdXml); // send request to stb and get result
 
-		if (retXml == null) {
-			return false;
-		}
+    if (retXml == null) {
+      return false;
+    }
 
-		xmlParser.parse(retXml);  // parse result returned from stb
-		String advSecurity = xmlParser.getValue("adv_security"); // get value
-		if (advSecurity.equals("enable")) {
-			result.put("status", "pass");
-			processEvent(new MacWritingEvent(this, result));
-			return true;
-		} else {
-			result.put("status", "disabled");
-			processEvent(new MacWritingEvent(this, result));
-			if (setAdv(sn)) { // if adv not enabled, enable it
-				result.put("status", "pass");
-				processEvent(new MacWritingEvent(this, result));
-				return true; 
-			} else { // enable adv failed
-				result.put("status", "FAIL");
-				processEvent(new MacWritingEvent(this, result));
-			  return false;
-			}
-		}
+    xmlParser.parse(retXml);  // parse result returned from stb
+    String advSecurity = xmlParser.getValue("adv_security"); // get value
+    if (advSecurity.equals("enable")) {
+      result.put("status", "pass");
+      processEvent(new MacWritingEvent(this, result));
+      return true;
+    } else {
+      result.put("status", "disabled");
+      processEvent(new MacWritingEvent(this, result));
+      if (setAdv(sn)) { // if adv not enabled, enable it
+        result.put("status", "pass");
+        processEvent(new MacWritingEvent(this, result));
+        return true; 
+      } else { // enable adv failed
+        result.put("status", "FAIL");
+        processEvent(new MacWritingEvent(this, result));
+        return false;
+      }
+    }
   } ///^ untested
   
-	/** enable advanced security function of stb */
-	public boolean setAdv(String sn) {
-		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
-		result.put("cmd", "enable_adv_security");
+  /** enable advanced security function of stb */
+  public boolean setAdv(String sn) {
+    LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
+    result.put("cmd", "enable_adv_security");
     result.put("sn", sn);
 
-		String cmdXml = CmdXml.SET_ADV_XML;
-		String retXml = getRet(cmdXml); // send cmd and get returned data
-		
-		if (retXml == null) {
-			return false;
-		}
+    String cmdXml = CmdXml.SET_ADV_XML;
+    String retXml = getRet(cmdXml); // send cmd and get returned data
+    
+    if (retXml == null) {
+      return false;
+    }
 
-		xmlParser.parse(retXml); // parse result returned from stb;
-		String status = xmlParser.getValue("result");
-		if (status.equals("ok")) {
-			result.put("status", "pass");
-			processEvent(new MacWritingEvent(this, result));
-			return true;
-		} else { // if status.equals("failure")
-			result.put("status", "FAIL");
-			result.put("err_info", xmlParser.getValue("error"));
-			processEvent(new MacWritingEvent(this, result));
-			return false;
-		}
-	} ///^ untested
+    xmlParser.parse(retXml); // parse result returned from stb;
+    String status = xmlParser.getValue("result");
+    if (status.equals("ok")) {
+      result.put("status", "pass");
+      processEvent(new MacWritingEvent(this, result));
+      return true;
+    } else { // if status.equals("failure")
+      result.put("status", "FAIL");
+      result.put("err_info", xmlParser.getValue("error"));
+      processEvent(new MacWritingEvent(this, result));
+      return false;
+    }
+  } ///^ untested
 
   /** 
    * compare Mac and SN with DB; 
    * to check if both are validate;
    * return true if all of those are validate, false if not;
-	 * @param sn String
+   * @param sn String
    */
   public boolean checkSN(String sn) { 
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
-		result.put("cmd", "check_sn");
+    result.put("cmd", "check_sn");
     result.put("sn", sn);   // record sn here
     String status = dbConnector.checkSN(sn);
 
@@ -163,25 +163,25 @@ public class MacWriter {
       result.put("status", "pass");
       processEvent(new MacWritingEvent(this, result));
       return true;
-		}
+    }
   } ///^ untested
 
-	public boolean checkMac(String sn, String mac) {
-		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
-		result.put("cmd", "check_mac");
-		result.put("sn", sn);
+  public boolean checkMac(String sn, String mac) {
+    LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
+    result.put("cmd", "check_mac");
+    result.put("sn", sn);
 
-		String dbMac = dbConnector.getMac(sn);
-		if (mac.equals(dbMac)) {
-			result.put("status", "pass");
-			processEvent(new MacWritingEvent(this, result));
-			return true;
-		} else {
-			result.put("status", "FAIL");
-			processEvent(new MacWritingEvent(this, result));
-			return false;
-		}
-	}
+    String dbMac = dbConnector.getMac(sn);
+    if (mac.equals(dbMac)) {
+      result.put("status", "pass");
+      processEvent(new MacWritingEvent(this, result));
+      return true;
+    } else {
+      result.put("status", "FAIL");
+      processEvent(new MacWritingEvent(this, result));
+      return false;
+    }
+  }
 
   /**
    * erase Mac and SN from STB;
@@ -204,32 +204,32 @@ public class MacWriter {
       if (dbConnector.checkSN(sn).equals("used")) {
         // inform DB to recircle mac mapping this sn 
         if (!dbConnector.validate("sn")) {
-        	result.put("status", "FAIL"); // UI show "fail" if not recircled
-					processEvent(new MacWritingEvent(this, result));
-					return false;
-				}
+          result.put("status", "FAIL"); // UI show "fail" if not recircled
+          processEvent(new MacWritingEvent(this, result));
+          return false;
+        }
       }
     }
     //----
 
-		String cmdXml = CmdXml.ERASE_XML;
-		String retXml = getRet(cmdXml);
+    String cmdXml = CmdXml.ERASE_XML;
+    String retXml = getRet(cmdXml);
     if (retXml == null) {
       return false;
     }
 
-		xmlParser.parse(retXml);
-		String status = xmlParser.getValue("result");
-		if (status.equals("ok")) {
-			result.put("status", "pass");
-			processEvent(new MacWritingEvent(this, result));
-			return true;
-		} else {
-			result.put("status", "FAIL");
-			processEvent(new MacWritingEvent(this, result));
-			return false;
-		}
-	} ///^ untested
+    xmlParser.parse(retXml);
+    String status = xmlParser.getValue("result");
+    if (status.equals("ok")) {
+      result.put("status", "pass");
+      processEvent(new MacWritingEvent(this, result));
+      return true;
+    } else {
+      result.put("status", "FAIL");
+      processEvent(new MacWritingEvent(this, result));
+      return false;
+    }
+  } ///^ untested
   
   /**
    * get Mac and SN from STB;
@@ -237,54 +237,54 @@ public class MacWriter {
    */
   public String getSN() { 
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
-		result.put("cmd", "get_sn_from_stb");
+    result.put("cmd", "get_sn_from_stb");
 
-		String cmdXml = CmdXml.GET_XML;
-		String retXml = getRet(cmdXml);
+    String cmdXml = CmdXml.GET_XML;
+    String retXml = getRet(cmdXml);
     
     if (retXml == null) {
       return null;
     }
 
-		xmlParser.parse(retXml);
-		if (xmlParser.getValue("sn") != null && 
-				xmlParser.getValue("mac") != null) {
-			String sn = xmlParser.getValue("sn");
-			result.put("status", "pass");
-			processEvent(new MacWritingEvent(this, result));
+    xmlParser.parse(retXml);
+    if (xmlParser.getValue("sn") != null && 
+        xmlParser.getValue("mac") != null) {
+      String sn = xmlParser.getValue("sn");
+      result.put("status", "pass");
+      processEvent(new MacWritingEvent(this, result));
       return sn;
-		} else {
-			result.put("status", "fail");
-			processEvent(new MacWritingEvent(this, result));
-			return null;
-		}
-	} ///^ untested
+    } else {
+      result.put("status", "fail");
+      processEvent(new MacWritingEvent(this, result));
+      return null;
+    }
+  } ///^ untested
 
   /**
    * write Mac and SN to STB;
    * Mac will be Checked before writing
-	 * THE MOST IMPORTANT PART OF THE WHOLE TEST;
+   * THE MOST IMPORTANT PART OF THE WHOLE TEST;
    * return true if writing successfully;
-	 * arguments are passed in through UI's JTextField using barcode scanner;
-	 * @param sn String
-	 * @param mac String
+   * arguments are passed in through UI's JTextField using barcode scanner;
+   * @param sn String
+   * @param mac String
    */
   public boolean setMac(String sn, String mac) {
     // unimplemented
     LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
-		result.put("cmd", "write_mac_to_stb");
+    result.put("cmd", "write_mac_to_stb");
 
-		String snCRC = crc16(sn);
-		String macCRC = crc16(mac);
+    String snCRC = crc16(sn);
+    String macCRC = crc16(mac);
 
-		result.put("mac", mac);
-		result.put("mac_crc", macCRC);
-		result.put("sn", sn);
-		result.put("sn_crc", snCRC);
+    result.put("mac", mac);
+    result.put("mac_crc", macCRC);
+    result.put("sn", sn);
+    result.put("sn_crc", snCRC);
 
     String cmdXml = String.format(CmdXml.SET_XML, mac, macCRC, sn, snCRC);
     String retXml = getRet(cmdXml);
-		
+    
     if (retXml == null) {
       return false;
     }
@@ -301,14 +301,14 @@ public class MacWriter {
         result.put("status", "PASS"); // all steps passes 
         processEvent(new MacWritingEvent(this, result));
         //rebootSTB();
-				return true;
-			} else {
+        return true;
+      } else {
         result.put("cmd", "update_db");
-				result.put("status", "FAIL");
-				processEvent(new MacWritingEvent(this, result));
-				return false;
-			}
-		} else {
+        result.put("status", "FAIL");
+        processEvent(new MacWritingEvent(this, result));
+        return false;
+      }
+    } else {
       result.put("status", "FAIL");
       processEvent(new MacWritingEvent(this, result));
       return false;
@@ -369,10 +369,10 @@ public class MacWriter {
     return null;
   }///~ tested OK; date: Wed  2 Nov 08:40:17 CST 2016
 
-	/** get a string's crc */
-	public String crc16(String str) { 
+  /** get a string's crc */
+  public String crc16(String str) { 
     return CRC16.crc16(str);
-	}
+  }
 
   /** add a listener */
   public void addMacWritingListener(MacWritingListener listener) {
