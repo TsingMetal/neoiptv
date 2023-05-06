@@ -1,1 +1,517 @@
-[{"ModuleName":"Table/题库","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/阅卷表","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/预置评语配置","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/预置评语配置表2","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/小测上传","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/_4题试卷上传","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/_5题试卷上传","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/考号档案","ModuleType":7,"ExclusiveType":0},{"ModuleName":"TableView/用户信息视图","ModuleType":23,"ExclusiveType":0},{"ModuleName":"Pages/内建页面","ModuleType":6},{"ModuleName":"PCPage/FGC_401页面","ModuleType":1},{"ModuleName":"PCPage/FGC_修改密码","ModuleType":1},{"ModuleName":"PCPage/FGC_忘记密码","ModuleType":1},{"ModuleName":"PCPage/FGC_邮件订阅","ModuleType":1},{"ModuleName":"PCPage/FGC_维护中","ModuleType":1},{"ModuleName":"PCPage/FGC_两步验证_扫码页面","ModuleType":1},{"ModuleName":"PCPage/FGC_两步验证_验证页面","ModuleType":1},{"ModuleName":"PCPage/FGC_修改用户信息","ModuleType":1},{"ModuleName":"PCPage/FGC_重置密码","ModuleType":1},{"ModuleName":"PCPage/FGC_重置密码发送邮件成功","ModuleType":1},{"ModuleName":"PCPage/FGC_登录","ModuleType":1},{"ModuleName":"Pages/内建手机页面","ModuleType":6},{"ModuleName":"MobilePage/FGC_401页面_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_修改密码_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_忘记密码_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_邮件订阅_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_维护中_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_两步验证_扫码页面_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_两步验证_验证页面_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_修改用户信息_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_重置密码发送邮件成功_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_重置密码_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_登录_手机版","ModuleType":2},{"ModuleName":"Pages/首页","ModuleType":6},{"ModuleName":"PCPage/index","ModuleType":1},{"ModuleName":"Pages/上传试卷","ModuleType":6},{"ModuleName":"PCPage/小测上传列表","ModuleType":1},{"ModuleName":"PCPage/请批量选择小测题卡进行上传","ModuleType":1},{"ModuleName":"PCPage/4题试卷上传列表","ModuleType":1},{"ModuleName":"PCPage/请批量选择4题试卷进行上传-1","ModuleType":1},{"ModuleName":"PCPage/5题试卷上传列表","ModuleType":1},{"ModuleName":"PCPage/请批量选择4题试卷进行上传","ModuleType":1},{"ModuleName":"PCPage/查看准考证号","ModuleType":1},{"ModuleName":"Pages/题库管理","ModuleType":6},{"ModuleName":"PCPage/题库管理详情","ModuleType":1},{"ModuleName":"PCPage/题库列表页面","ModuleType":1},{"ModuleName":"Pages/开始阅卷","ModuleType":6},{"ModuleName":"PCPage/阅卷详情页面","ModuleType":1},{"ModuleName":"PCPage/批改试卷页面","ModuleType":1},{"ModuleName":"PCPage/未阅卷管理页面","ModuleType":1},{"ModuleName":"PCPage/已阅卷管理页面","ModuleType":1},{"ModuleName":"Pages/考号导入","ModuleType":6},{"ModuleName":"PCPage/考号导入","ModuleType":1},{"ModuleName":"Pages/学员查询","ModuleType":6},{"ModuleName":"PCPage/二维码","ModuleType":1},{"ModuleName":"MobilePage/申论阅卷查询","ModuleType":2},{"ModuleName":"MobilePage/查询结果","ModuleType":2},{"ModuleName":"MobilePage/试卷详情信息","ModuleType":2},{"ModuleName":"Pages/修改阅卷明细","ModuleType":6},{"ModuleName":"PCPage/查看阅卷详情","ModuleType":1},{"ModuleName":"PCPage/修改未阅卷明细","ModuleType":1},{"ModuleName":"PCPage/查看已阅卷明细","ModuleType":1},{"ModuleName":"Pages/iPad端","ModuleType":6},{"ModuleName":"PCPage/iPadIndex","ModuleType":1},{"ModuleName":"PCPage/iPad阅卷详情页面","ModuleType":1},{"ModuleName":"PCPage/iPad批改试卷页面","ModuleType":1},{"ModuleName":"PCPage/iPad未阅卷管理页面","ModuleType":1},{"ModuleName":"PCPage/iPad已阅卷管理页面","ModuleType":1},{"ModuleName":"PCPage/ipad考号导入","ModuleType":1},{"ModuleName":"PCPage/iPad端回收站","ModuleType":1},{"ModuleName":"Pages/回收站","ModuleType":6},{"ModuleName":"PCPage/所有回收站","ModuleType":1},{"ModuleName":"PCPage/回收站","ModuleType":1},{"ModuleName":"MasterPCPage/FGC_母版页","ModuleType":3},{"ModuleName":"MasterPCPage/母版页1","ModuleType":3},{"ModuleName":"MasterPCPage/母版页2","ModuleType":3},{"ModuleName":"ServerCommand/uploadFiveExam","ModuleType":15},{"ModuleName":"ServerCommand/uploadFourExam","ModuleType":15},{"ModuleName":"ServerCommand/uploadOneExam","ModuleType":15},{"ModuleName":"ServerCommand/addExam","ModuleType":15},{"ModuleName":"ServerCommandPrivate/实时刷新数据命令","ModuleType":27},{"ModuleName":"ServerCommand/导出CSV数据","ModuleType":15},{"ModuleName":"ServerCommand/getExamInfo","ModuleType":15},{"ModuleName":"ServerCommand/addExamToJdy","ModuleType":15},{"ModuleName":"ServerCommand/deleteJdyExam","ModuleType":15},{"ModuleName":"ServerCommand/batchAddExamToJdy","ModuleType":15},{"ModuleName":"TaskScheduler/数据库新增数据","ModuleType":16},{"ModuleName":"TaskScheduler/数据库更新数据","ModuleType":16},{"ModuleName":"TaskScheduler/数据库删除数据","ModuleType":16},{"ModuleName":"Notification/实时刷新数据","ModuleType":34},{"ModuleName":"ApplicationSetting","ModuleType":8},{"ModuleName":"Theme","ModuleType":9},{"ModuleName":"image/内置图片","ModuleType":37},{"ModuleName":"Image/fgc_loading.gif","ModuleType":38},{"ModuleName":"Image/fgc_logo_dark.png","ModuleType":38},{"ModuleName":"Image/fgc_logo_light.png","ModuleType":38},{"ModuleName":"Image/28A手指.png","ModuleType":38},{"ModuleName":"Image/logo.png","ModuleType":38},{"ModuleName":"Image/微信图片_20210128110953.png","ModuleType":38},{"ModuleName":"UserService","ModuleType":11},{"ModuleName":"CustomLibrary","ModuleType":12},{"ModuleName":"MapJsonFile","ModuleType":14},{"ModuleName":"DataContectionSet","ModuleType":25},{"ModuleName":"Upload","ModuleType":26}]
+[
+  {
+    "ModuleName": "Table/题库",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-06T14:11:47.9809685+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\题库.json",
+      "ForguncyDB.sqlite3"
+    ],
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/阅卷表",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-06T14:11:47.9809716+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\阅卷表.json",
+      "ForguncyDB.sqlite3"
+    ],
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/预置评语配置",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-06T14:11:47.9809729+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\预置评语配置.json",
+      "ForguncyDB.sqlite3"
+    ],
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/预置评语配置表2",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-06T14:11:47.9809747+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\预置评语配置表2.json",
+      "ForguncyDB.sqlite3"
+    ],
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/小测上传",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-06T14:11:47.9809756+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\小测上传.json",
+      "ForguncyDB.sqlite3"
+    ],
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/_4题试卷上传",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-06T14:11:47.9809766+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\_4题试卷上传.json",
+      "ForguncyDB.sqlite3"
+    ],
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/_5题试卷上传",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-06T14:11:47.9808903+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\_5题试卷上传.json",
+      "ForguncyDB.sqlite3"
+    ],
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/考号档案",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-06T14:11:47.9809776+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\考号档案.json",
+      "ForguncyDB.sqlite3"
+    ],
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/用户信息视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-06T14:11:47.9809789+08:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\用户信息视图.json",
+      "ForguncyDB.sqlite3"
+    ],
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Pages/内建页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/FGC_401页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_修改密码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_忘记密码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_邮件订阅",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_维护中",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_两步验证_扫码页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_两步验证_验证页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_修改用户信息",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_重置密码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_重置密码发送邮件成功",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_登录",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/内建手机页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/FGC_401页面_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_修改密码_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_忘记密码_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_邮件订阅_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_维护中_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_两步验证_扫码页面_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_两步验证_验证页面_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_修改用户信息_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_重置密码发送邮件成功_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_重置密码_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_登录_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/首页",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/index",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/上传试卷",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/小测上传列表",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/请批量选择小测题卡进行上传",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/4题试卷上传列表",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/请批量选择4题试卷进行上传-1",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/5题试卷上传列表",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/请批量选择4题试卷进行上传",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/查看准考证号",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/题库管理",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/题库管理详情",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/题库列表页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/开始阅卷",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/阅卷详情页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/批改试卷页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/未阅卷管理页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/已阅卷管理页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/考号导入",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/考号导入",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/学员查询",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/二维码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MobilePage/申论阅卷查询",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/查询结果",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/试卷详情信息",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/修改阅卷明细",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/查看阅卷详情",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/修改未阅卷明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/查看已阅卷明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/iPad端",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/iPadIndex",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/iPad阅卷详情页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/iPad批改试卷页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/iPad未阅卷管理页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/iPad已阅卷管理页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/ipad考号导入",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/iPad端回收站",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/回收站",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/所有回收站",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/回收站",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MasterPCPage/FGC_母版页",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterPCPage/母版页1",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterPCPage/母版页2",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "ServerCommand/uploadFiveExam",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/uploadFourExam",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/uploadOneExam",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/addExam",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/实时刷新数据命令",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommand/导出CSV数据",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/getExamInfo",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/addExamToJdy",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/deleteJdyExam",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/batchAddExamToJdy",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "TaskScheduler/数据库新增数据",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/数据库更新数据",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/数据库删除数据",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "Notification/实时刷新数据",
+    "ModuleType": 34
+  },
+  {
+    "ModuleName": "ApplicationSetting",
+    "ModuleType": 8
+  },
+  {
+    "ModuleName": "Theme",
+    "ModuleType": 9
+  },
+  {
+    "ModuleName": "image/内置图片",
+    "ModuleType": 37
+  },
+  {
+    "ModuleName": "Image/fgc_loading.gif",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_logo_dark.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_logo_light.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/28A手指.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/logo.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/微信图片_20210128110953.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "UserService",
+    "ModuleType": 11
+  },
+  {
+    "ModuleName": "CustomLibrary",
+    "ModuleType": 12
+  },
+  {
+    "ModuleName": "MapJsonFile",
+    "ModuleType": 14
+  },
+  {
+    "ModuleName": "DataContectionSet",
+    "ModuleType": 25
+  },
+  {
+    "ModuleName": "Upload",
+    "ModuleType": 26
+  }
+]
