@@ -238,7 +238,8 @@
     "21,14": "题2阅卷老师：",
     "23,14": "题3阅卷老师：",
     "25,14": "题4阅卷老师：",
-    "28,18": "上传",
+    "27,14": "题5阅卷老师：",
+    "29,18": "上传",
     "30,0": "上传老师",
     "30,3": "%CurrentUser.UserName%"
   },
@@ -1070,7 +1071,177 @@
         "IgnoreBlank": false
       }
     },
-    "28,18": {
+    "27,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第五题",
+        "GUID": "5a09c1b7-aa33-4459-b009-dae8d717c9b8"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "题库",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题号",
+                "GUID": "3a7c2389-6d41-43ae-9bf3-28770d8f2ce8"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题目名称",
+                "GUID": "3a09b714-49b6-4e50-ab9e-52c64d1b1a89"
+              },
+              "ColumnName": "label"
+            }
+          ]
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "27,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "题5阅卷老师",
+        "GUID": "9517f02c-377d-4a84-964b-4ab117dac4dd"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "用户信息视图",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "ea09d113-6e53-4b4d-ac16-377d3410e4fb"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "7b35bb01-ae09-44a3-a737-27f952b2f582"
+              },
+              "ColumnName": "label"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "用户信息视图",
+              "ColumnName": "角色",
+              "GUID": "0ccebcdf-8548-457b-95c0-65744abeb779"
+            },
+            "Value": "阅卷老师"
+          }
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "29,18": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -1084,55 +1255,66 @@
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "班级",
-                  "GUID": "baa6bd90-e350-4e69-9d8f-bb2d3772f569"
+                  "GUID": "3592658b-fe53-4f48-b647-451ab3c81e5e"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!D18"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!D18"
                 }
               },
               {
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "第一题",
-                  "GUID": "fa81808a-4a83-485c-a82f-e3af4d5460a4"
+                  "GUID": "1da2762f-9adb-4f0c-a408-90a5771a9e7f"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!H20"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!H20"
                 }
               },
               {
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "第二题",
-                  "GUID": "71f865ad-5223-4422-97f2-9843803136da"
+                  "GUID": "e9218198-d954-4db6-a3f7-d765a688ab54"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!H22"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!H22"
                 }
               },
               {
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "第三题",
-                  "GUID": "df614768-227a-4698-9649-e1fa51f6ce43"
+                  "GUID": "ee270431-79a2-4821-acfa-c5466e548773"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!H24"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!H24"
                 }
               },
               {
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "第四题",
-                  "GUID": "4d67f364-4391-438f-8177-07410e382ca2"
+                  "GUID": "3fd198b5-cb45-4b0e-a7c5-a8bf22741a9f"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!H26"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!H26"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "_5题试卷上传",
+                  "ColumnName": "第五题",
+                  "GUID": "65ab3ad4-a653-4a10-82f2-fcf4243d7d9d"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!H28"
                 }
               }
             ]
@@ -1151,7 +1333,7 @@
                 "ParamName": "className",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!D18"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!D18"
                 }
               },
               {
@@ -1159,7 +1341,7 @@
                 "ParamName": "imgArr",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!B2"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!B2"
                 }
               },
               {
@@ -1167,7 +1349,7 @@
                 "ParamName": "questionNumberOne",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!H20"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!H20"
                 }
               },
               {
@@ -1175,7 +1357,7 @@
                 "ParamName": "questionTeacherOne",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!R20"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!R20"
                 }
               },
               {
@@ -1183,7 +1365,7 @@
                 "ParamName": "questionNumberTwo",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!H22"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!H22"
                 }
               },
               {
@@ -1191,7 +1373,7 @@
                 "ParamName": "questionTeacherTwo",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!R22"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!R22"
                 }
               },
               {
@@ -1199,7 +1381,7 @@
                 "ParamName": "questionNumberThree",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!H24"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!H24"
                 }
               },
               {
@@ -1207,7 +1389,7 @@
                 "ParamName": "questionTeacherThree",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!R24"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!R24"
                 }
               },
               {
@@ -1215,7 +1397,7 @@
                 "ParamName": "questionNumberFour",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!H26"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!H26"
                 }
               },
               {
@@ -1223,7 +1405,7 @@
                 "ParamName": "questionTeacherFour",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!R26"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!R26"
                 }
               },
               {
@@ -1231,7 +1413,7 @@
                 "ParamName": "userName",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!D31"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!D31"
                 }
               },
               {
@@ -1239,7 +1421,7 @@
                 "ParamName": "examName",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=请批量选择4题试卷进行上传!R18"
+                  "SerializeProperty": "=请批量选择5题试卷进行上传!R18"
                 }
               }
             ],
@@ -1338,11 +1520,15 @@
       "26,13": 0,
       "26,14": 0,
       "26,15": 0,
-      "28,18": 3,
+      "27,7": 0,
+      "27,14": 0,
+      "27,15": 0,
+      "27,16": 0,
+      "27,17": 0,
       "29,18": 3,
-      "29,19": 3,
-      "29,20": 3,
-      "29,21": 3
+      "29,19": 0,
+      "29,20": 0,
+      "29,21": 0
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -1364,12 +1550,15 @@
     "21,17,1,5",
     "23,17,1,5",
     "25,17,1,5",
-    "28,18,1,4",
     "1,1,15,21",
     "30,0,1,3",
     "30,3,1,6",
     "17,14,1,3",
-    "17,17,1,5"
+    "17,17,1,5",
+    "29,18,1,4",
+    "27,7,1,6",
+    "27,14,1,3",
+    "27,17,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1395,4 +1584,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//fwuZTtNSE8+idgJy2vklR7i/zncKm2+g636oPDF8h5SzroOiGSNnNY5nTfznnEm8xeQNQP96WkO3L1i0FvzMdTrmExKc4vX1d2JZxSetRps9p5wd+uXbu3kXrRuXbaJJ5s1SKL+mdGzYQepEgARTHEhkIfT6/33AcEJzb/8lv2SHdzg83V+fvboJbEt/1rHMNu4XQQQOplebVN8evr6IzOOeBMEkOMhUZoJQQwR8DQRa7q8wly6i21kdkMtHyaW5e1ywbCLOaTWCAQGaHc9S1aee8/2UDmtDs3cIBCGNqUv7b2ot5onHIzWYZpoUI0LBCrqvfwrm3yA16YlOiTZ1eOkopSZL1VrVkYeT93Qz7fE5sxkmeb3NrFSy0FLKkwkooPhIuTpbmBgASqvQgg0ES7dThS0P8GJGoH2ornPQ/UwEVPAOV4ea91baHHM44IFWZzOQGniVo8KlnTYNsS0owLHTEktrw6stzyIP36f6iec2DY5+RBUhTpgfaB3FcJfGW6lcECNepALxwCHHb+CI/7/F6mhNTKYODYSArKiIb34lW9cN9XLRssh5bqSKpQZIBjcQihtMOlMKVmjmmigfeCzPmcqMRDN7meZe2iYIf/dr93YY8bk6lX4CRRKk0Y062zesQup/99p8KlXHUiZjKjKvdBLRh0feSXiGTQiYnRGKjW7ZiDHMsuqAaMtC1khhmVYsPIRDTuooJ4xmibv2ciqWMGWJlxMBsmVYc81PHLn2ySzQfSh3pBIppq5ugQjmJwVIjRkGqQiMefEAoZMAOmqHdpUMoiRrBQNOSSExuZ7Ab2ZtTY3jffK6h7f0BM8bIfCFXyGVJoH9cWMAQeAXxAEXv2qf3uEDzDujlocYH6Vam7n/atKzG9slY36IWIbjq0YcuBmgfw9K9tMbBC8h0g==|920
+}//9q9ON2jB8LpkaKPcF+bEbsoCercCkVaQXPFWlEJhsg/pcAp2wavJKexl69PcfQ0msx3j+guBbIOnYOK46nEhB8Hgt1MouXVWOWnleBzNUJZk5YrLfoV8kGsQAAweAjyPOUKMmbf1aL6rnTEkALNCMVmxM44pDw4ElOnURsU0NPJJzMHgU4wgEFBEnLTxFofE7zGuy1E59h4PtwQHawL+AeIn4w1xUa9jpGCTUMUF/Xk74noZBmWeekVCpIGspN4BPK7m+nQRB1Us4aZ6yksqIkW+7O/itjXjgCAL3V6so/JlIPSzK8vtgtzorrMRpJn2KWYOAvak3eZr3zIrYf5oBkDm9Pdf+AGRPr3r2DDBae1K2WZ7P+R5b+qLSLKyQXYUAgelRR9EpC1GSkUSfu39lvAFwd7V3f8CKzwfQKZM0bZVQOoBm+f+9Z9mUJcr2Grrrm2INJZW/h7lkKGjmApqH5i9Oz9e2QqfHUtGcY771Sy/ZQJWoBBr5VlW9+IWI99NjCkhS8ekBu0zj74AMh7FAskZH0SRArnDIT2MKIDjesooo/jYJMT6hi0r8nV2UbsyRnYsvE3jFGiUhx2u3wmmov1e5ynoHuIq6H9S47SlmYytdUZKjR9oLymR5PCfGcFd8fIC2ZTBmFU+B66iYMO8XeqMneS736xQ1yhbKjxv9qD0ayXBisY6mFIfqyYyVYR6J/e3OGJjneiDftVbTK1/OeVLxbLf6akEj9KkKxBkvyKsUnKetHJdmOL/GfhInV3fu9Mvb5rMqh1qEkt7YAE5aAY924RYm6gZDf5wHGStY8OL5+rAk4FLT5xAl9qULB502U3J5l3JD0d8PDMvz5BxBzV7nXjzkYy8V4DGVgmhhvS1P7MpQ3te87ScjHVjobNZ1y7Uj7X1/3gj5b7fTxNoEQ==|920
