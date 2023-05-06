@@ -1,0 +1,267 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      }
+    },
+    "Count": 30
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 47
+  },
+  "Values": {
+    "5,12": "修改密码",
+    "9,18": "*",
+    "10,17": "原密码",
+    "13,18": "*",
+    "14,17": "新密码",
+    "17,18": "*",
+    "18,17": "确认新密码",
+    "22,25": "修改密码",
+    "22,31": "取消修改"
+  },
+  "AttachInfos": {
+    "9,20": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "ForguncyAttribute": "ChangePassword_OldPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "13,20": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "ForguncyAttribute": "ChangePassword_NewPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "17,20": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "ForguncyAttribute": "ChangePassword_ConfirmPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "22,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "修改密码",
+        "AutoExecute": true,
+        "TemplateKey": "样式6",
+        "ForguncyAttribute": "ChangePassword_Button"
+      }
+    },
+    "22,31": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "取消修改"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 37.33333206176758,
+        "Foreground": 0
+      },
+      {
+        "Foreground": 1
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "FontSize": 14.0,
+        "Foreground": 3,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontSize": 14.0,
+        "FontWeight": 5
+      },
+      {
+        "FontSize": 14.0,
+        "FontWeight": 5,
+        "Foreground": 6,
+        "HorizontalAlignment": 7
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 25",
+        "#FFFF0000",
+        "@",
+        "Text 1 35",
+        "Right",
+        "Bold",
+        "Accent 1 0",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "5,12": 0,
+      "9,18": 1,
+      "9,20": 2,
+      "10,17": 3,
+      "13,18": 1,
+      "13,20": 2,
+      "14,17": 3,
+      "17,18": 1,
+      "17,20": 2,
+      "18,17": 3,
+      "22,25": 4,
+      "22,31": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 8,
+      "Underline": false,
+      "Strikethrough": false
+    }
+  },
+  "Spans": [
+    "5,12,3,23",
+    "22,25,2,6",
+    "22,31,2,5",
+    "17,20,3,15",
+    "13,20,3,15",
+    "9,20,3,15",
+    "9,18,2,1",
+    "13,18,2,1",
+    "17,18,2,1"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "FGC_母版页",
+    "MobilePageName": "FGC_修改密码_手机版",
+    "Title": "修改密码",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_Anonymous"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "97a1df71-4c5e-45ca-8c9d-75cfbc4c5568.png",
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "200,80",
+      "Size": "540,360"
+    }
+  ]
+}//Ivu/tIU5QEDUxBbBCUIqDzULJFiQhv6bynygmjcJb8b4EIYav0LgyE7Iiornb6qH3dsdLrT2/pRcOoxoHoGhRSbskevNPb+FRdH6lW/cTuKAJHHJW5lRKfmqupuLc9kxQJ6dIc3TV3+0kdzur8yt79dITQJCggnvc955DJklcIkkI+Px1ID+W4jvxCln/N5BqxtVKWBUQc2QA5uhSRo08OSrqKJxYeqtk6XN7EHL+JWJrwUNvBW4aWBDSK0Q60/rz2l+hZarE7Z0aOlyLjNPx378Sm8PElCGrSNT7lqaPg93VIombiB8nWHrMGUIzM9DwzUnWS1iKaKLH9UB7G5jdF5WDZQ2NQAtZr+cDDUobGRYxek+X0+JMurExtCvoMJoGMK9dK+UP6p89xXbTCUIAhdSac9yzFoOssZWjaM6UR6WF8A7ddZN9eI4MbC1SpotwH3VGbqWzr8kIC8wKGstnuY3Ldr1aMDfBCEaT5Cjcm/y0jx/aZrI7VprlRYBonaHqGH/bsZjyoLbupOf7qE6zWEQNyKRMKot7uTsf8aRbbnmYVtWKDj5E53wGNPRq72uvndOeuARkRmrvyOUn1/FK9ryXBDh3+pP3qRtJxHaORgvaWOE9cA+TXApU/bcRDqD4M/XFTsnzhLuZx3HcDu+kLAznvvwViTADvGImruazo+D8wSLcCGa4wWUerIC/ob8JzdXQDaiSaW7kG0ucuj7PtDaE3eyn36SvCPNqElybEPAGpyj3H6srMeY9fSPAdrJY3hxwx6t6tGgBf0BKy0bhyVP78ZPufbKeUT1sLHuKiCH5z0ByjNZNitqsDyE3QOC6UepCFw3aaf9lnYoW+Xd05g2VqQfrNDpEtFypnigEVHMZ2fBuYWaMuK2bzjnA1rP8Wp7YmeAPBY+x6jnkLlgFg==|920

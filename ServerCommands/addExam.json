@@ -1,0 +1,184 @@
+{
+  "Name": "addExam",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser",
+                "FGC_Anonymous"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "studentName"
+        },
+        {
+          "Name": "className"
+        },
+        {
+          "Name": "questionNumber"
+        },
+        {
+          "Name": "examNumber"
+        },
+        {
+          "Name": "examLink"
+        },
+        {
+          "Name": "teacherName"
+        },
+        {
+          "Name": "originalExamLink"
+        },
+        {
+          "Name": "uuid"
+        },
+        {
+          "Name": "userName"
+        },
+        {
+          "Name": "examName"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "阅卷表",
+      "UpdateType": "add",
+      "ShowConfirm": false,
+      "UpdateBindingValues": [
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "学员姓名",
+            "GUID": "0c709cac-0dee-4ad9-ba4e-a15cf6b46ff0"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=studentName"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "学员班级",
+            "GUID": "6fa4590a-b202-49b1-8858-936651b23d0d"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=className"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "题号",
+            "GUID": "c382025e-ca7a-4959-9669-3056ff46ebdf"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=questionNumber"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "准考证号",
+            "GUID": "4be20009-204f-4518-b4c6-73bade170355"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=examNumber"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "试卷",
+            "GUID": "d1cad5d2-25fd-4d9a-ae21-f803ee72707c"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=examLink"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "阅卷老师",
+            "GUID": "adcf42f8-d227-4ca9-89e0-5f417c3fbde0"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=teacherName"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "准考证图片",
+            "GUID": "2457fa30-1fb8-44e2-9001-46ea13cc7624"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=originalExamLink"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "唯一标识",
+            "GUID": "87dc4663-dc0d-4717-a100-c82337ad11bc"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=uuid"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "上传老师",
+            "GUID": "87280e45-9ba6-4909-b20f-cd05358f94ee"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=userName"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "考试名称",
+            "GUID": "cfed228a-1ee4-4ce3-a7cb-2c31a5dafeab"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=examName"
+          }
+        }
+      ],
+      "ParamNameToSaveNewRowValue": "result"
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "code"
+    }
+  ]
+}

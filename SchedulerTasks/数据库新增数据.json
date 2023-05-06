@@ -1,0 +1,23 @@
+{
+  "Name": "数据库新增数据",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.EndDBInsertTrigger, ServerDesignerCommon",
+      "DataParamName": "变更数据",
+      "TableNameParamName": "表名",
+      "PrimaryKeyParamName": "主键",
+      "OperatorParamName": "操作人",
+      "OperationTimeParamName": "操作时间",
+      "SelectAllTable": true
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+      "ServerCommandName": "实时刷新数据命令",
+      "RefreshAfterFinish": true,
+      "CheckDataValidation": true
+    }
+  ]
+}

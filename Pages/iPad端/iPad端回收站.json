@@ -1,0 +1,949 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 29
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      26,
+      28,
+      29,
+      30,
+      31,
+      32,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "Count": 62
+  },
+  "Values": {
+    "1,16": "查询",
+    "1,49": "还原",
+    "7,53": "删除",
+    "13,53": "暂无数据",
+    "26,53": 2,
+    "27,1": 100,
+    "27,3": "条/页",
+    "27,53": "最近时间：",
+    "28,53": "最早时间："
+  },
+  "Formulas": {
+    "28,57": "ODATA(\"阅卷表?$select=ID&$filter=批改时间 ne null&$top=1&$orderby=批改时间 asc\")",
+    "27,57": "ODATA(\"阅卷表?$select=ID&$filter=批改时间 ne null&$top=1&$orderby=批改时间 desc\")",
+    "3,53": "COUNTA(K5)"
+  },
+  "AttachInfos": {
+    "0,53": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证图片",
+        "GUID": "30dc391d-56d2-495d-bacf-00b21193d97c",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/044_search_5.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "样式3",
+        "WaterMark": "请输入学员姓名/准考证号/题号/班级/阅卷老师查找数据"
+      }
+    },
+    "1,16": {
+      "CssName": "",
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "阅卷表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "学员姓名",
+                    "GUID": "f9c2fe85-b4a6-43b3-8f36-dae01e46ea3d"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=iPad端回收站!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "学员班级",
+                    "GUID": "446f2e88-4317-4ef2-bced-2297666e840c"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=iPad端回收站!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "准考证号",
+                    "GUID": "b4adfd35-5493-43c8-980d-aa61f7ef5c7a"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=iPad端回收站!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "阅卷老师",
+                    "GUID": "2819ec37-3ee5-4b6d-84c0-1f4d192c240f"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=iPad端回收站!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "题号",
+                    "GUID": "2c5e01be-c114-44d4-ac88-dd393885bb8d"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=iPad端回收站!B2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "8a6a1e3e8b12460cbac8ace2e8e6a57e"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=iPad端回收站!BB4"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                    "SourceCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=iPad端回收站!BB14"
+                    },
+                    "CellLocation": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=iPad端回收站!B5:AZ24"
+                    }
+                  }
+                ],
+                "ID": "a2a59f1c-e1f0-4462-b1b6-d6db0b5cc070"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                    "SourceCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=iPad端回收站!BB14"
+                    },
+                    "CellLocation": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=iPad端回收站!BB5:BJ13"
+                    }
+                  }
+                ],
+                "ID": "b7ffdc7c-ffbc-469f-94dd-34d99c41ea23"
+              }
+            ]
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "样式6"
+      }
+    },
+    "1,49": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=iPad端回收站!B26"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "至少选择一条数据"
+                  }
+                ],
+                "ID": "cce09297-8f36-4013-b362-8dad4556282e"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "阅卷表",
+                    "ShowConfirm": true,
+                    "ConfirmText": "是否确定还原选中的数据吗？",
+                    "RowsToUpdate": 2,
+                    "RowsToUpdateListViewName": "表格1",
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "阅卷表",
+                          "ColumnName": "状态",
+                          "GUID": "d3dad967-1d8b-4c22-b171-0c543bc38c40"
+                        },
+                        "Value": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "batchAddExamToJdy",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
+                        "ParamName": "ids",
+                        "ListviewName": "表格1",
+                        "Scope": 1,
+                        "Columns": [
+                          {
+                            "ArrayItemName": "id",
+                            "Column": "ID"
+                          }
+                        ]
+                      }
+                    ],
+                    "ReturnPropertiesTo": [
+                      {
+                        "ResultPropertyName": "code"
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  }
+                ],
+                "ID": "0fa36026-c36a-4d65-9112-e7dfad9c4388"
+              }
+            ]
+          }
+        ],
+        "Text": "还原",
+        "TemplateKey": "样式6"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "阅卷表",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 21,
+        "ColumnCount": 51,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "状态",
+                "GUID": "1a9726eb-87ce-4000-93b9-65a9636e6d70"
+              },
+              "Value": "0"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "阅卷老师",
+                "GUID": "23dc31cc-4515-4784-96ac-518b7b3bc24d"
+              },
+              "Value": "%CurrentUser.UserName%"
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "批改时间",
+                "GUID": "0f91f0ed-9b9a-4939-8a57-73e6e00ad97f"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,2": {
+      "NameUsedInJavaScript": "学员姓名",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "学员姓名",
+        "GUID": "9d6e2a2b-77c5-4006-b907-929d3b1b8b36"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "4,5": {
+      "NameUsedInJavaScript": "准考证号",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证号",
+        "GUID": "7baede18-62a7-4e7c-98c8-7c0d62c6a064"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "4,10": {
+      "NameUsedInJavaScript": "学员班级",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "学员班级",
+        "GUID": "8485ff45-2d08-4869-843d-5414553efd46"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "4,14": {
+      "NameUsedInJavaScript": "题号",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题号",
+        "GUID": "340ffc16-355f-46de-ac9c-326c2a383a02"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "4,16": {
+      "NameUsedInJavaScript": "满分",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题号",
+        "GUID": "3f2ee1b1-df11-4275-a9f0-5250e414b7ea",
+        "RelationBinding": {
+          "RelatedTable": "题库",
+          "RelatedColumn": "题号",
+          "DisplayColumn": "满分"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,18": {
+      "NameUsedInJavaScript": "试卷",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "试卷",
+        "GUID": "6e56bf43-e3e3-4b4f-98bc-8a0aa6cf5aeb",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=iPad端回收站!BB5"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
+      }
+    },
+    "4,21": {
+      "NameUsedInJavaScript": "得分",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "得分",
+        "GUID": "4dffc8c6-c34f-4215-8ae3-d0b82b472bcc"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,23": {
+      "NameUsedInJavaScript": "准考证图片",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证图片",
+        "GUID": "2cae619b-0964-4534-bf76-b4a6247f065d",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=iPad端回收站!BB1"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
+      }
+    },
+    "4,26": {
+      "NameUsedInJavaScript": "百分制得分",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "百分制得分",
+        "GUID": "4ba1a136-3695-4f0c-a290-0a3a6c59bd6f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,27": {
+      "NameUsedInJavaScript": "问题",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "问题",
+        "GUID": "920d7849-6cd9-4e5b-8285-10deb21ba85a"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,28": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "ID",
+        "GUID": "c85357d7-078d-4d3c-b0c4-d08084defacd"
+      }
+    },
+    "4,29": {
+      "NameUsedInJavaScript": "优点",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "优点",
+        "GUID": "af53802a-588c-430f-a280-19b41f2ea6a1"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,33": {
+      "NameUsedInJavaScript": "自定义评语",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "自定义评语",
+        "GUID": "f866e97e-fecc-4581-9dc2-60646517dea0"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,37": {
+      "NameUsedInJavaScript": "批改时间",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "批改时间",
+        "GUID": "f72f4482-83a2-4d7d-bee7-1318634c0738"
+      }
+    },
+    "4,42": {
+      "NameUsedInJavaScript": "创建日期",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "FGC_CreateDate",
+        "GUID": "93825998-daf4-4713-b643-be097521a218"
+      }
+    },
+    "4,48": {
+      "NameUsedInJavaScript": "阅卷老师",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "阅卷老师",
+        "GUID": "f89d4aa8-17df-4c86-bc0c-b8fe184c88ce"
+      }
+    },
+    "4,53": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "试卷",
+        "GUID": "6d737cc9-f88f-47f5-834a-288810487baa",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "7,53": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "阅卷表",
+            "UpdateType": "delete",
+            "ShowConfirm": true,
+            "ConfirmText": "您确定要删除吗？",
+            "RowsToUpdate": 2,
+            "RowsToUpdateListViewName": "表格1"
+          }
+        ],
+        "Text": "删除",
+        "TemplateKey": "样式6",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "25,1": {
+      "CellType": {
+        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
+        "HeaderTemplate": "已选择{{COUNT}}条数据",
+        "HeaderTemplateForNoSelection": "",
+        "ListViewName": "表格1"
+      }
+    },
+    "27,27": {
+      "CellType": {
+        "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
+        "ListviewName": "表格1",
+        "pageSize": 100,
+        "pagerCount": 5,
+        "layout": [
+          {
+            "layoutItem": "prev"
+          },
+          {
+            "layoutItem": "pager"
+          },
+          {
+            "layoutItem": "next"
+          },
+          {
+            "layoutItem": "jumper"
+          },
+          {
+            "layoutItem": "->"
+          },
+          {
+            "layoutItem": "total"
+          }
+        ],
+        "pageSizes": [
+          {},
+          {
+            "value": 20
+          },
+          {
+            "value": 30
+          },
+          {
+            "value": 40
+          },
+          {
+            "value": 50
+          },
+          {
+            "value": 100
+          }
+        ],
+        "prevText": "上一页",
+        "nextText": "下一页",
+        "small": true,
+        "background": true
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Formatter": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "Foreground": 5,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Background": 6,
+        "HorizontalAlignment": 2
+      },
+      {
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body",
+        "Center",
+        "yyyy/mm/dd hh:mm:ss",
+        "[AUTO]General",
+        "#FF999999",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,49": 1,
+      "1,50": 1,
+      "1,51": 1,
+      "4,2": 2,
+      "4,5": 2,
+      "4,10": 3,
+      "4,14": 3,
+      "4,15": 1,
+      "4,16": 3,
+      "4,17": 1,
+      "4,18": 4,
+      "4,21": 3,
+      "4,22": 1,
+      "4,23": 4,
+      "4,24": 1,
+      "4,25": 1,
+      "4,26": 3,
+      "4,27": 3,
+      "4,28": 1,
+      "4,29": 3,
+      "4,33": 3,
+      "4,34": 1,
+      "4,35": 1,
+      "4,36": 1,
+      "4,37": 5,
+      "4,42": 6,
+      "4,48": 4,
+      "4,49": 1,
+      "4,50": 1,
+      "4,51": 1,
+      "7,53": 7,
+      "7,54": 1,
+      "7,55": 1,
+      "13,53": 8,
+      "26,53": 9,
+      "27,1": 10,
+      "27,27": 1,
+      "27,57": 10,
+      "28,57": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,1,1,14",
+    "4,2,1,3",
+    "3,53,1,9",
+    "13,53,10,9",
+    "4,5,1,5",
+    "27,27,1,25",
+    "0,53,3,9",
+    "4,14,1,2",
+    "4,16,1,2",
+    "4,21,1,2",
+    "4,23,1,3",
+    "4,29,1,4",
+    "4,33,1,4",
+    "1,16,1,3",
+    "4,37,1,5",
+    "27,1,1,2",
+    "26,53,1,2",
+    "27,53,1,4",
+    "28,53,1,4",
+    "27,57,1,5",
+    "28,57,1,5",
+    "4,53,3,9",
+    "4,10,1,4",
+    "4,18,1,3",
+    "4,48,1,4",
+    "4,42,1,6",
+    "7,53,1,3",
+    "5,1,19,51",
+    "25,1,1,5",
+    "1,49,1,3",
+    "3,2,1,3",
+    "3,5,1,5",
+    "3,10,1,4",
+    "3,14,1,2",
+    "3,16,1,2",
+    "3,18,1,3",
+    "3,21,1,2",
+    "3,23,1,3",
+    "3,29,1,4",
+    "3,33,1,4",
+    "3,37,1,5",
+    "3,42,1,6",
+    "3,48,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "母版页2",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=iPad端回收站!BB4"
+                  }
+                ]
+              },
+              "value": "0"
+            },
+            "CommandList": [
+              {
+                "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=iPad端回收站!BB14"
+                },
+                "CellLocation": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=iPad端回收站!B5:AZ24"
+                }
+              }
+            ],
+            "ID": "05b0d35d-6105-413a-af7d-472687240446"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "阅卷表",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//WMctQNvFBYps+ElnOZGbAtgtS05X3z5EMpEi6Vi8ReiG/4b1b6cWEecE5Egt0Rsfrp6QgWcEjLPRYOkXz+BHQpGNyk/7NzxNdIVm4b0XlTahz6HeLGhZLTOJZ9xp1BQVB2ouw1WnbccXpmFtT6qCzhh6YN2J6E6Ih7WBxhJCixoX2KAzMEAXpzVkuGcpr7z+xOHcGmJU/NoRX8CIvewZ/zp+u2JIvQ9SDFTvZEG9Ucmw7tsWBrLrf3DRFXBiu54DSMQjvHH8e7br1CyQljqisz4b2+peq0ET7LzswQJ4R/4jFJaFtNRCOdQQPH/yjdkIwW2DQBkxY57i+d31t8FKwIec2HVCKQVU9ZFB87ZdSqIWxV34e9ctHbgKAo4YzE6UBpAmhn71Xl2bTxgy2R37C2YNoqnGAuNzP6gjtTYa+EZ5VUqtZOMeqvMYc+Zc6b6Es+gwsx3fZlT2uNWDMZgsnRatdj5xhvtWIIL84MsT3MoxRFyU/4zFHCfsHUFr+MYZihqtcpGyf6Cz99GMIT+UfcuQWGRtRLXwnSZlBCsd0xMlj3qg7udMkscTAapVyGxbgs0zqxNhJwbTVLSfpvbJO56MqwTXyGmVel2Jj2/iT7Qs9DrT/W/rhaalSMRlGTMV/fvgqJ0NxnQVaXF/iOblrMOQSaLZP6MpUP76P4JyjM1S/QiBgjo9w17wyhCulkc0+nfdImSlVg8sNppAumjhH9y8M/zr+izqYQR3XxCyeFf5xTtGV0iFJa7rNxEhDsMBguTmqYYqUTVqLeNo5EFA36+w8U+cAgohq8o4D1sRv46Lf9+S81rW7Hjmkovyfmt7N4+2nGirtrvJD4C4CWrqWgxrCreIwB8TF7dPCJ8PTk58pQp3ljPa/GYyZLMnkV/LZGvJxljd/oMJ/nWOVdGJpA==|920

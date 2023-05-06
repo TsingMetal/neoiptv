@@ -1,0 +1,2187 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 249.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 258.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 359.0
+        }
+      },
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      48,
+      49
+    ],
+    "Count": 50
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "50": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "51": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "53": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "54": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "55": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "58": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "59": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "60": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "61": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "62": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "63": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "64": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "65": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "66": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "67": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "68": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "69": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "70": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "71": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "72": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "73": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "74": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "80": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "81": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "82": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "83": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "84": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 85,
+    "DefaultSize": 18.0
+  },
+  "Values": {
+    "1,1": "学员姓名：",
+    "1,18": "题号：",
+    "1,26": "问题：",
+    "1,49": "优点：",
+    "1,72": "关闭",
+    "3,0": "  ",
+    "3,1": "准考证号：",
+    "3,18": "满分：",
+    "5,1": "学员班级：",
+    "5,18": "得分：",
+    "7,1": "自定义评语：",
+    "17,3": 12345,
+    "48,4": "未阅表：",
+    "48,14": "已阅表：",
+    "49,4": "id：",
+    "49,12": "最大的id：",
+    "49,23": "最小的id：",
+    "49,35": "批改时间：",
+    "49,49": "最近时间：",
+    "49,62": "最早时间："
+  },
+  "AttachInfos": {
+    "1,6": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "学员姓名",
+        "GUID": "92857b25-0537-475b-bdfe-ff08eb6432ad"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "ReadOnly": true
+      }
+    },
+    "1,20": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题号",
+        "GUID": "03b327aa-86ef-45f8-805d-7936b25732ad"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "ReadOnly": true
+      }
+    },
+    "1,28": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "问题",
+        "GUID": "be09e60f-f525-4406-95d6-d6cfd63f14b0"
+      },
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "LayoutMode": 1,
+        "IsBounding": true,
+        "DataSource": "预置评语配置",
+        "ValueColumnBindingInfo": {
+          "TableName": "预置评语配置",
+          "ColumnName": "问题",
+          "GUID": "66cc816e-6672-4e6c-858c-117fd7cdc77c"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "预置评语配置",
+          "ColumnName": "问题",
+          "GUID": "2d65f5ef-4f64-48be-a6fb-957785e19690"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "预置评语配置",
+            "ColumnName": "题号",
+            "GUID": "3279d407-c9e0-4b73-afde-b90d6c314216"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=查看阅卷详情!U2"
+          }
+        },
+        "ReadOnly": true
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "1,51": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "优点",
+        "GUID": "fa5340c6-42b0-4264-81c3-56e005ab41da"
+      },
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "LayoutMode": 1,
+        "IsBounding": true,
+        "DataSource": "预置评语配置表2",
+        "ValueColumnBindingInfo": {
+          "TableName": "预置评语配置表2",
+          "ColumnName": "优点",
+          "GUID": "d1f9774a-bf04-472f-b072-a15f8fa541d9"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "预置评语配置表2",
+          "ColumnName": "优点",
+          "GUID": "28767e7c-1048-4539-8f1f-002d29bd6492"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "预置评语配置表2",
+            "ColumnName": "题号",
+            "GUID": "d00a1db3-b217-4306-94a1-3c9ff5fe6eb0"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=查看阅卷详情!U2"
+          }
+        },
+        "ReadOnly": true
+      }
+    },
+    "1,72": {
+      "CssName": "save",
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "样式6"
+      }
+    },
+    "3,6": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证号",
+        "GUID": "efde2e23-66bf-4c72-b1e6-3698efa6922a"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "ReadOnly": true
+      }
+    },
+    "3,20": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题号",
+        "GUID": "23b924fb-5f8f-4896-8bf7-85373bfbdc8b",
+        "RelationBinding": {
+          "RelatedTable": "题库",
+          "RelatedColumn": "题号",
+          "DisplayColumn": "满分"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "ReadOnly": true
+      }
+    },
+    "3,72": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证图片",
+        "GUID": "a092df0f-f807-466b-8bf2-1067581156ff",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=查看阅卷详情!BY49"
+            }
+          }
+        ]
+      }
+    },
+    "5,6": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "学员班级",
+        "GUID": "63677eaa-2332-4399-ba84-3bb8a71ff2c1"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "ReadOnly": true
+      }
+    },
+    "5,20": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "得分",
+        "GUID": "d381f413-0c7e-4785-9d21-238986ea2e06"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "ReadOnly": true
+      }
+    },
+    "7,6": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "自定义评语",
+        "GUID": "4e890ad8-a3cc-4267-a1c2-97f94e4f1004"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "样式3",
+        "ReadOnly": true
+      }
+    },
+    "17,0": {
+      "CssName": "pre",
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=查看阅卷详情!I49"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=查看阅卷详情!G50"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=查看阅卷详情!Q50"
+                          }
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "这是第一张试卷"
+                          }
+                        ],
+                        "ID": "9df4bcdc-0e31-4dca-b5fc-45564e2e0571"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+                            "TableName": "阅卷表",
+                            "TargetRecord": 0
+                          }
+                        ],
+                        "ID": "d494e846-e476-49e2-89ee-69771a0006c7"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e3d50840-cf89-4746-b594-ebdb3109481d"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=查看阅卷详情!AN50"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=查看阅卷详情!BB50"
+                          }
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "这是第一张已批改的试卷"
+                          }
+                        ],
+                        "ID": "b7af4610-c701-4043-b8b4-a3c0c7af3f10"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+                            "TableName": "阅卷表",
+                            "TargetRecord": 0
+                          }
+                        ],
+                        "ID": "6aa4a718-ef29-43ad-9ba0-f2502a331c7e"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "a4f152b0-6859-4aac-83a6-a4640279f2c3"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "样式6",
+        "Icon": {
+          "Name": "Arrow/291_left_arrow_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 60.0
+      }
+    },
+    "17,3": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "试卷",
+        "GUID": "aadfdac8-3c94-4ee1-a526-24c35605e211"
+      },
+      "CellType": {
+        "$type": "ImageEditor.ImageEditor, ImageEditor",
+        "SaveCommand": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [],
+          "ParamProperties": {}
+        },
+        "Menu": [
+          {},
+          {
+            "Name": 1
+          },
+          {
+            "Name": 2
+          },
+          {
+            "Name": 3
+          },
+          {
+            "Name": 4
+          },
+          {
+            "Name": 5
+          },
+          {
+            "Name": 6
+          }
+        ],
+        "ControlButtons": [
+          {
+            "Name": 2
+          }
+        ],
+        "DefaultValueSettings": {
+          "DrawThickness": 10,
+          "ShapeThickness": 20,
+          "TextSize": 100,
+          "DrawColor": "#FFFF0000",
+          "TextColor": "#FFFF0000",
+          "IconColor": "#FFFF0000",
+          "ShapeColor": "#FFFF0000"
+        },
+        "UploadSettings": {
+          "Quality": 0.8
+        },
+        "MenuBarPosition": 3
+      }
+    },
+    "17,82": {
+      "CssName": "next",
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=查看阅卷详情!I49"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=查看阅卷详情!G50"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=查看阅卷详情!AB50"
+                          }
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "这是最后一张试卷"
+                          }
+                        ],
+                        "ID": "40d2e911-5257-4e13-a78c-e37d7ac28a82"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+                            "TableName": "阅卷表"
+                          }
+                        ],
+                        "ID": "1f6c261f-49bd-437b-ab01-e745a97f4a6f"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "69a6f336-47c9-4537-9a8b-f97b1f75b36f"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=查看阅卷详情!AN50"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=查看阅卷详情!BO50"
+                          }
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "这是最后一张已批改的试卷"
+                          }
+                        ],
+                        "ID": "e2ff0039-554b-42b8-a0ea-db7240c9ed87"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+                            "TableName": "阅卷表"
+                          }
+                        ],
+                        "ID": "8077d132-726d-4163-877f-f6f2726ad7f3"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "201dfa0c-1237-45a9-92b1-bc0644432005"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "样式6",
+        "RightIcon": {
+          "Name": "Arrow/292_move_next_3.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 60.0
+      }
+    },
+    "48,76": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证图片",
+        "GUID": "0b6dd202-0af1-43a5-97cb-fafe30f71dbf",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "49,6": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "ID",
+        "GUID": "318a16e6-2037-452b-a22f-3f1724057ab9"
+      }
+    },
+    "49,16": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "样式3",
+        "ReadOnly": true
+      }
+    },
+    "49,27": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "样式3",
+        "ReadOnly": true
+      }
+    },
+    "49,39": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "批改时间",
+        "GUID": "98bb9c3a-0609-4cf7-8126-6390457b2ee8"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 3,
+        "VerticalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "VerticalAlignment": 4,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 3,
+        "Formatter": 2,
+        "VerticalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 1,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "VerticalAlignment": 4
+      },
+      {
+        "Foreground": 3
+      },
+      {
+        "Formatter": 0,
+        "VerticalAlignment": 4,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 0,
+        "VerticalAlignment": 4,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 7
+      },
+      {
+        "VerticalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "Foreground": 3,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 1,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 9,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body",
+        "[AUTO]General",
+        "#FFFF6E0A",
+        "Top",
+        "#FFCCCCCC",
+        "Center",
+        "0_);[Red](0)",
+        "#FF999999",
+        "yyyy/m/d h:mm"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        },
+        {
+          "Color": 8
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,6": 0,
+      "1,18": 1,
+      "1,19": 2,
+      "1,20": 3,
+      "1,26": 4,
+      "1,27": 2,
+      "1,28": 5,
+      "1,29": 6,
+      "1,30": 6,
+      "1,31": 6,
+      "1,32": 6,
+      "1,33": 6,
+      "1,34": 6,
+      "1,35": 6,
+      "1,36": 6,
+      "1,37": 6,
+      "1,38": 6,
+      "1,39": 6,
+      "1,40": 6,
+      "1,41": 6,
+      "1,42": 6,
+      "1,43": 6,
+      "1,44": 6,
+      "1,45": 6,
+      "1,46": 6,
+      "1,47": 7,
+      "1,49": 8,
+      "1,50": 2,
+      "1,51": 5,
+      "1,52": 6,
+      "1,53": 6,
+      "1,54": 6,
+      "1,55": 6,
+      "1,56": 6,
+      "1,57": 6,
+      "1,58": 6,
+      "1,59": 6,
+      "1,60": 6,
+      "1,61": 6,
+      "1,62": 6,
+      "1,63": 6,
+      "1,64": 6,
+      "1,65": 6,
+      "1,66": 6,
+      "1,67": 6,
+      "1,68": 6,
+      "1,69": 6,
+      "1,70": 7,
+      "1,72": 9,
+      "1,73": 2,
+      "1,74": 2,
+      "1,75": 2,
+      "1,76": 2,
+      "1,77": 2,
+      "2,18": 2,
+      "2,19": 2,
+      "2,20": 2,
+      "2,21": 2,
+      "2,22": 2,
+      "2,23": 2,
+      "2,24": 2,
+      "2,26": 2,
+      "2,27": 2,
+      "2,28": 10,
+      "2,29": 2,
+      "2,30": 2,
+      "2,31": 2,
+      "2,32": 2,
+      "2,33": 2,
+      "2,34": 2,
+      "2,35": 2,
+      "2,36": 2,
+      "2,37": 2,
+      "2,38": 2,
+      "2,39": 2,
+      "2,40": 2,
+      "2,41": 2,
+      "2,42": 2,
+      "2,43": 2,
+      "2,44": 2,
+      "2,45": 2,
+      "2,46": 2,
+      "2,47": 11,
+      "2,49": 2,
+      "2,50": 2,
+      "2,51": 10,
+      "2,52": 2,
+      "2,53": 2,
+      "2,54": 2,
+      "2,55": 2,
+      "2,56": 2,
+      "2,57": 2,
+      "2,58": 2,
+      "2,59": 2,
+      "2,60": 2,
+      "2,61": 2,
+      "2,62": 2,
+      "2,63": 2,
+      "2,64": 2,
+      "2,65": 2,
+      "2,66": 2,
+      "2,67": 2,
+      "2,68": 2,
+      "2,69": 2,
+      "2,70": 11,
+      "2,75": 12,
+      "2,76": 12,
+      "2,77": 12,
+      "2,78": 12,
+      "2,79": 12,
+      "3,1": 1,
+      "3,6": 3,
+      "3,18": 1,
+      "3,19": 2,
+      "3,20": 3,
+      "3,26": 2,
+      "3,27": 2,
+      "3,28": 10,
+      "3,29": 2,
+      "3,30": 2,
+      "3,31": 2,
+      "3,32": 2,
+      "3,33": 2,
+      "3,34": 2,
+      "3,35": 2,
+      "3,36": 2,
+      "3,37": 2,
+      "3,38": 2,
+      "3,39": 2,
+      "3,40": 2,
+      "3,41": 2,
+      "3,42": 2,
+      "3,43": 2,
+      "3,44": 2,
+      "3,45": 2,
+      "3,46": 2,
+      "3,47": 11,
+      "3,49": 2,
+      "3,50": 2,
+      "3,51": 10,
+      "3,52": 2,
+      "3,53": 2,
+      "3,54": 2,
+      "3,55": 2,
+      "3,56": 2,
+      "3,57": 2,
+      "3,58": 2,
+      "3,59": 2,
+      "3,60": 2,
+      "3,61": 2,
+      "3,62": 2,
+      "3,63": 2,
+      "3,64": 2,
+      "3,65": 2,
+      "3,66": 2,
+      "3,67": 2,
+      "3,68": 2,
+      "3,69": 2,
+      "3,70": 11,
+      "4,18": 2,
+      "4,19": 2,
+      "4,20": 2,
+      "4,21": 2,
+      "4,22": 2,
+      "4,23": 2,
+      "4,24": 2,
+      "4,26": 2,
+      "4,27": 2,
+      "4,28": 10,
+      "4,29": 2,
+      "4,30": 2,
+      "4,31": 2,
+      "4,32": 2,
+      "4,33": 2,
+      "4,34": 2,
+      "4,35": 2,
+      "4,36": 2,
+      "4,37": 2,
+      "4,38": 2,
+      "4,39": 2,
+      "4,40": 2,
+      "4,41": 2,
+      "4,42": 2,
+      "4,43": 2,
+      "4,44": 2,
+      "4,45": 2,
+      "4,46": 2,
+      "4,47": 11,
+      "4,49": 2,
+      "4,50": 2,
+      "4,51": 10,
+      "4,52": 2,
+      "4,53": 2,
+      "4,54": 2,
+      "4,55": 2,
+      "4,56": 2,
+      "4,57": 2,
+      "4,58": 2,
+      "4,59": 2,
+      "4,60": 2,
+      "4,61": 2,
+      "4,62": 2,
+      "4,63": 2,
+      "4,64": 2,
+      "4,65": 2,
+      "4,66": 2,
+      "4,67": 2,
+      "4,68": 2,
+      "4,69": 2,
+      "4,70": 11,
+      "5,1": 2,
+      "5,6": 3,
+      "5,18": 1,
+      "5,19": 2,
+      "5,20": 3,
+      "5,26": 2,
+      "5,27": 2,
+      "5,28": 10,
+      "5,29": 2,
+      "5,30": 2,
+      "5,31": 2,
+      "5,32": 2,
+      "5,33": 2,
+      "5,34": 2,
+      "5,35": 2,
+      "5,36": 2,
+      "5,37": 2,
+      "5,38": 2,
+      "5,39": 2,
+      "5,40": 2,
+      "5,41": 2,
+      "5,42": 2,
+      "5,43": 2,
+      "5,44": 2,
+      "5,45": 2,
+      "5,46": 2,
+      "5,47": 11,
+      "5,49": 2,
+      "5,50": 2,
+      "5,51": 10,
+      "5,52": 2,
+      "5,53": 2,
+      "5,54": 2,
+      "5,55": 2,
+      "5,56": 2,
+      "5,57": 2,
+      "5,58": 2,
+      "5,59": 2,
+      "5,60": 2,
+      "5,61": 2,
+      "5,62": 2,
+      "5,63": 2,
+      "5,64": 2,
+      "5,65": 2,
+      "5,66": 2,
+      "5,67": 2,
+      "5,68": 2,
+      "5,69": 2,
+      "5,70": 11,
+      "6,26": 2,
+      "6,27": 2,
+      "6,28": 10,
+      "6,29": 2,
+      "6,30": 2,
+      "6,31": 2,
+      "6,32": 2,
+      "6,33": 2,
+      "6,34": 2,
+      "6,35": 2,
+      "6,36": 2,
+      "6,37": 2,
+      "6,38": 2,
+      "6,39": 2,
+      "6,40": 2,
+      "6,41": 2,
+      "6,42": 2,
+      "6,43": 2,
+      "6,44": 2,
+      "6,45": 2,
+      "6,46": 2,
+      "6,47": 11,
+      "6,49": 2,
+      "6,50": 2,
+      "6,51": 10,
+      "6,52": 2,
+      "6,53": 2,
+      "6,54": 2,
+      "6,55": 2,
+      "6,56": 2,
+      "6,57": 2,
+      "6,58": 2,
+      "6,59": 2,
+      "6,60": 2,
+      "6,61": 2,
+      "6,62": 2,
+      "6,63": 2,
+      "6,64": 2,
+      "6,65": 2,
+      "6,66": 2,
+      "6,67": 2,
+      "6,68": 2,
+      "6,69": 2,
+      "6,70": 11,
+      "7,1": 13,
+      "7,6": 14,
+      "7,26": 2,
+      "7,27": 2,
+      "7,28": 10,
+      "7,29": 2,
+      "7,30": 2,
+      "7,31": 2,
+      "7,32": 2,
+      "7,33": 2,
+      "7,34": 2,
+      "7,35": 2,
+      "7,36": 2,
+      "7,37": 2,
+      "7,38": 2,
+      "7,39": 2,
+      "7,40": 2,
+      "7,41": 2,
+      "7,42": 2,
+      "7,43": 2,
+      "7,44": 2,
+      "7,45": 2,
+      "7,46": 2,
+      "7,47": 11,
+      "7,49": 2,
+      "7,50": 2,
+      "7,51": 10,
+      "7,52": 2,
+      "7,53": 2,
+      "7,54": 2,
+      "7,55": 2,
+      "7,56": 2,
+      "7,57": 2,
+      "7,58": 2,
+      "7,59": 2,
+      "7,60": 2,
+      "7,61": 2,
+      "7,62": 2,
+      "7,63": 2,
+      "7,64": 2,
+      "7,65": 2,
+      "7,66": 2,
+      "7,67": 2,
+      "7,68": 2,
+      "7,69": 2,
+      "7,70": 11,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 10,
+      "8,29": 2,
+      "8,30": 2,
+      "8,31": 2,
+      "8,32": 2,
+      "8,33": 2,
+      "8,34": 2,
+      "8,35": 2,
+      "8,36": 2,
+      "8,37": 2,
+      "8,38": 2,
+      "8,39": 2,
+      "8,40": 2,
+      "8,41": 2,
+      "8,42": 2,
+      "8,43": 2,
+      "8,44": 2,
+      "8,45": 2,
+      "8,46": 2,
+      "8,47": 11,
+      "8,49": 2,
+      "8,50": 2,
+      "8,51": 10,
+      "8,52": 2,
+      "8,53": 2,
+      "8,54": 2,
+      "8,55": 2,
+      "8,56": 2,
+      "8,57": 2,
+      "8,58": 2,
+      "8,59": 2,
+      "8,60": 2,
+      "8,61": 2,
+      "8,62": 2,
+      "8,63": 2,
+      "8,64": 2,
+      "8,65": 2,
+      "8,66": 2,
+      "8,67": 2,
+      "8,68": 2,
+      "8,69": 2,
+      "8,70": 11,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 10,
+      "9,29": 2,
+      "9,30": 2,
+      "9,31": 2,
+      "9,32": 2,
+      "9,33": 2,
+      "9,34": 2,
+      "9,35": 2,
+      "9,36": 2,
+      "9,37": 2,
+      "9,38": 2,
+      "9,39": 2,
+      "9,40": 2,
+      "9,41": 2,
+      "9,42": 2,
+      "9,43": 2,
+      "9,44": 2,
+      "9,45": 2,
+      "9,46": 2,
+      "9,47": 11,
+      "9,49": 2,
+      "9,50": 2,
+      "9,51": 10,
+      "9,52": 2,
+      "9,53": 2,
+      "9,54": 2,
+      "9,55": 2,
+      "9,56": 2,
+      "9,57": 2,
+      "9,58": 2,
+      "9,59": 2,
+      "9,60": 2,
+      "9,61": 2,
+      "9,62": 2,
+      "9,63": 2,
+      "9,64": 2,
+      "9,65": 2,
+      "9,66": 2,
+      "9,67": 2,
+      "9,68": 2,
+      "9,69": 2,
+      "9,70": 11,
+      "10,26": 2,
+      "10,27": 2,
+      "10,28": 10,
+      "10,29": 2,
+      "10,30": 2,
+      "10,31": 2,
+      "10,32": 2,
+      "10,33": 2,
+      "10,34": 2,
+      "10,35": 2,
+      "10,36": 2,
+      "10,37": 2,
+      "10,38": 2,
+      "10,39": 2,
+      "10,40": 2,
+      "10,41": 2,
+      "10,42": 2,
+      "10,43": 2,
+      "10,44": 2,
+      "10,45": 2,
+      "10,46": 2,
+      "10,47": 11,
+      "10,49": 2,
+      "10,50": 2,
+      "10,51": 10,
+      "10,52": 2,
+      "10,53": 2,
+      "10,54": 2,
+      "10,55": 2,
+      "10,56": 2,
+      "10,57": 2,
+      "10,58": 2,
+      "10,59": 2,
+      "10,60": 2,
+      "10,61": 2,
+      "10,62": 2,
+      "10,63": 2,
+      "10,64": 2,
+      "10,65": 2,
+      "10,66": 2,
+      "10,67": 2,
+      "10,68": 2,
+      "10,69": 2,
+      "10,70": 11,
+      "11,26": 2,
+      "11,27": 2,
+      "11,28": 10,
+      "11,29": 2,
+      "11,30": 2,
+      "11,31": 2,
+      "11,32": 2,
+      "11,33": 2,
+      "11,34": 2,
+      "11,35": 2,
+      "11,36": 2,
+      "11,37": 2,
+      "11,38": 2,
+      "11,39": 2,
+      "11,40": 2,
+      "11,41": 2,
+      "11,42": 2,
+      "11,43": 2,
+      "11,44": 2,
+      "11,45": 2,
+      "11,46": 2,
+      "11,47": 11,
+      "11,49": 2,
+      "11,50": 2,
+      "11,51": 10,
+      "11,52": 2,
+      "11,53": 2,
+      "11,54": 2,
+      "11,55": 2,
+      "11,56": 2,
+      "11,57": 2,
+      "11,58": 2,
+      "11,59": 2,
+      "11,60": 2,
+      "11,61": 2,
+      "11,62": 2,
+      "11,63": 2,
+      "11,64": 2,
+      "11,65": 2,
+      "11,66": 2,
+      "11,67": 2,
+      "11,68": 2,
+      "11,69": 2,
+      "11,70": 11,
+      "12,26": 2,
+      "12,27": 2,
+      "12,28": 10,
+      "12,29": 2,
+      "12,30": 2,
+      "12,31": 2,
+      "12,32": 2,
+      "12,33": 2,
+      "12,34": 2,
+      "12,35": 2,
+      "12,36": 2,
+      "12,37": 2,
+      "12,38": 2,
+      "12,39": 2,
+      "12,40": 2,
+      "12,41": 2,
+      "12,42": 2,
+      "12,43": 2,
+      "12,44": 2,
+      "12,45": 2,
+      "12,46": 2,
+      "12,47": 11,
+      "12,49": 2,
+      "12,50": 2,
+      "12,51": 10,
+      "12,52": 2,
+      "12,53": 2,
+      "12,54": 2,
+      "12,55": 2,
+      "12,56": 2,
+      "12,57": 2,
+      "12,58": 2,
+      "12,59": 2,
+      "12,60": 2,
+      "12,61": 2,
+      "12,62": 2,
+      "12,63": 2,
+      "12,64": 2,
+      "12,65": 2,
+      "12,66": 2,
+      "12,67": 2,
+      "12,68": 2,
+      "12,69": 2,
+      "12,70": 11,
+      "13,26": 2,
+      "13,27": 2,
+      "13,28": 10,
+      "13,29": 2,
+      "13,30": 2,
+      "13,31": 2,
+      "13,32": 2,
+      "13,33": 2,
+      "13,34": 2,
+      "13,35": 2,
+      "13,36": 2,
+      "13,37": 2,
+      "13,38": 2,
+      "13,39": 2,
+      "13,40": 2,
+      "13,41": 2,
+      "13,42": 2,
+      "13,43": 2,
+      "13,44": 2,
+      "13,45": 2,
+      "13,46": 2,
+      "13,47": 11,
+      "13,49": 2,
+      "13,50": 2,
+      "13,51": 10,
+      "13,52": 2,
+      "13,53": 2,
+      "13,54": 2,
+      "13,55": 2,
+      "13,56": 2,
+      "13,57": 2,
+      "13,58": 2,
+      "13,59": 2,
+      "13,60": 2,
+      "13,61": 2,
+      "13,62": 2,
+      "13,63": 2,
+      "13,64": 2,
+      "13,65": 2,
+      "13,66": 2,
+      "13,67": 2,
+      "13,68": 2,
+      "13,69": 2,
+      "13,70": 11,
+      "14,26": 2,
+      "14,27": 2,
+      "14,28": 15,
+      "14,29": 16,
+      "14,30": 16,
+      "14,31": 16,
+      "14,32": 16,
+      "14,33": 16,
+      "14,34": 16,
+      "14,35": 16,
+      "14,36": 16,
+      "14,37": 16,
+      "14,38": 16,
+      "14,39": 16,
+      "14,40": 16,
+      "14,41": 16,
+      "14,42": 16,
+      "14,43": 16,
+      "14,44": 16,
+      "14,45": 16,
+      "14,46": 16,
+      "14,47": 17,
+      "14,49": 2,
+      "14,50": 2,
+      "14,51": 15,
+      "14,52": 16,
+      "14,53": 16,
+      "14,54": 16,
+      "14,55": 16,
+      "14,56": 16,
+      "14,57": 16,
+      "14,58": 16,
+      "14,59": 16,
+      "14,60": 16,
+      "14,61": 16,
+      "14,62": 16,
+      "14,63": 16,
+      "14,64": 16,
+      "14,65": 16,
+      "14,66": 16,
+      "14,67": 16,
+      "14,68": 16,
+      "14,69": 16,
+      "14,70": 17,
+      "15,14": 18,
+      "15,23": 19,
+      "15,24": 19,
+      "15,25": 19,
+      "15,26": 19,
+      "15,27": 19,
+      "15,28": 19,
+      "15,29": 19,
+      "15,30": 19,
+      "15,31": 19,
+      "15,32": 19,
+      "15,33": 19,
+      "15,34": 19,
+      "15,35": 19,
+      "15,36": 19,
+      "15,37": 19,
+      "15,38": 19,
+      "15,39": 19,
+      "15,40": 19,
+      "15,41": 19,
+      "15,42": 19,
+      "15,43": 19,
+      "15,44": 19,
+      "15,45": 19,
+      "15,46": 19,
+      "15,47": 19,
+      "15,48": 19,
+      "15,49": 19,
+      "15,50": 19,
+      "15,51": 19,
+      "15,52": 19,
+      "15,53": 2,
+      "15,54": 2,
+      "15,55": 2,
+      "15,57": 9,
+      "15,58": 9,
+      "15,59": 9,
+      "15,60": 9,
+      "15,61": 9,
+      "15,62": 9,
+      "15,63": 20,
+      "15,64": 20,
+      "15,65": 21,
+      "15,66": 21,
+      "15,67": 21,
+      "15,68": 2,
+      "15,69": 2,
+      "15,70": 2,
+      "15,71": 2,
+      "15,72": 2,
+      "15,73": 2,
+      "15,74": 2,
+      "15,75": 2,
+      "15,76": 2,
+      "15,77": 2,
+      "15,78": 2,
+      "15,79": 2,
+      "15,80": 2,
+      "15,81": 19,
+      "17,0": 2,
+      "17,1": 2,
+      "17,2": 2,
+      "17,82": 2,
+      "17,83": 2,
+      "17,84": 2,
+      "18,0": 2,
+      "18,1": 2,
+      "18,2": 2,
+      "18,82": 2,
+      "18,83": 2,
+      "18,84": 2,
+      "19,0": 2,
+      "19,1": 2,
+      "19,2": 2,
+      "19,82": 2,
+      "19,83": 2,
+      "19,84": 2,
+      "20,0": 2,
+      "20,1": 2,
+      "20,2": 2,
+      "20,82": 2,
+      "20,83": 2,
+      "20,84": 2,
+      "21,0": 2,
+      "21,1": 2,
+      "21,2": 2,
+      "21,82": 2,
+      "21,83": 2,
+      "21,84": 2,
+      "22,0": 2,
+      "22,1": 2,
+      "22,2": 2,
+      "22,82": 2,
+      "22,83": 2,
+      "22,84": 2,
+      "23,0": 2,
+      "23,1": 2,
+      "23,2": 2,
+      "23,82": 2,
+      "23,83": 2,
+      "23,84": 2,
+      "24,0": 2,
+      "24,1": 2,
+      "24,2": 2,
+      "24,82": 2,
+      "24,83": 2,
+      "24,84": 2,
+      "25,0": 2,
+      "25,1": 2,
+      "25,2": 2,
+      "25,82": 2,
+      "25,83": 2,
+      "25,84": 2,
+      "26,0": 2,
+      "26,1": 2,
+      "26,2": 2,
+      "26,82": 2,
+      "26,83": 2,
+      "26,84": 2,
+      "27,0": 2,
+      "27,1": 2,
+      "27,2": 2,
+      "27,82": 2,
+      "27,83": 2,
+      "27,84": 2,
+      "28,0": 2,
+      "28,1": 2,
+      "28,2": 2,
+      "28,82": 2,
+      "28,83": 2,
+      "28,84": 2,
+      "29,0": 2,
+      "29,1": 2,
+      "29,2": 2,
+      "29,82": 2,
+      "29,83": 2,
+      "29,84": 2,
+      "30,0": 2,
+      "30,1": 2,
+      "30,2": 2,
+      "30,82": 2,
+      "30,83": 2,
+      "30,84": 2,
+      "31,0": 2,
+      "31,1": 2,
+      "31,2": 2,
+      "31,82": 2,
+      "31,83": 2,
+      "31,84": 2,
+      "32,0": 2,
+      "32,1": 2,
+      "32,2": 2,
+      "32,82": 2,
+      "32,83": 2,
+      "32,84": 2,
+      "47,29": 22,
+      "47,30": 22,
+      "47,31": 22,
+      "47,32": 22,
+      "47,33": 22,
+      "47,34": 22,
+      "47,35": 22,
+      "47,36": 22,
+      "47,37": 22,
+      "47,38": 22,
+      "47,39": 22,
+      "47,40": 22,
+      "47,41": 22,
+      "47,42": 22,
+      "47,43": 22,
+      "47,44": 22,
+      "47,45": 22,
+      "47,46": 22,
+      "47,47": 22,
+      "47,48": 22,
+      "47,49": 22,
+      "47,50": 22,
+      "47,51": 22,
+      "47,52": 2,
+      "47,53": 2,
+      "47,54": 22,
+      "47,55": 22,
+      "47,56": 22,
+      "47,57": 22,
+      "47,58": 22,
+      "47,59": 22,
+      "47,60": 22,
+      "47,61": 22,
+      "47,62": 22,
+      "47,63": 22,
+      "47,64": 22,
+      "47,65": 22,
+      "47,66": 22,
+      "47,67": 22,
+      "47,68": 22,
+      "48,4": 1,
+      "48,5": 2,
+      "48,6": 2,
+      "48,7": 2,
+      "48,8": 23,
+      "48,9": 24,
+      "48,10": 24,
+      "48,11": 25,
+      "48,14": 1,
+      "48,15": 2,
+      "48,16": 2,
+      "48,17": 2,
+      "48,18": 26,
+      "48,19": 27,
+      "48,20": 27,
+      "48,21": 25,
+      "48,29": 22,
+      "48,30": 22,
+      "48,31": 22,
+      "48,32": 22,
+      "48,33": 22,
+      "48,34": 22,
+      "48,35": 22,
+      "48,36": 22,
+      "48,37": 22,
+      "48,38": 22,
+      "48,39": 22,
+      "48,40": 22,
+      "48,41": 22,
+      "48,42": 22,
+      "48,43": 22,
+      "48,44": 22,
+      "48,45": 22,
+      "48,46": 22,
+      "48,47": 22,
+      "48,48": 22,
+      "48,49": 22,
+      "48,50": 22,
+      "48,51": 22,
+      "48,52": 2,
+      "48,53": 2,
+      "48,54": 22,
+      "48,55": 22,
+      "48,56": 22,
+      "48,57": 22,
+      "48,58": 22,
+      "48,59": 22,
+      "48,60": 22,
+      "48,61": 22,
+      "48,62": 22,
+      "48,63": 22,
+      "48,64": 22,
+      "48,65": 22,
+      "48,66": 22,
+      "48,67": 22,
+      "48,68": 22,
+      "49,6": 26,
+      "49,7": 27,
+      "49,8": 27,
+      "49,9": 27,
+      "49,10": 25,
+      "49,12": 1,
+      "49,13": 2,
+      "49,14": 2,
+      "49,15": 2,
+      "49,16": 19,
+      "49,17": 2,
+      "49,18": 2,
+      "49,19": 2,
+      "49,20": 2,
+      "49,21": 2,
+      "49,22": 2,
+      "49,23": 1,
+      "49,24": 2,
+      "49,25": 2,
+      "49,26": 2,
+      "49,27": 19,
+      "49,28": 2,
+      "49,29": 2,
+      "49,30": 2,
+      "49,31": 2,
+      "49,32": 2,
+      "49,35": 1,
+      "49,36": 2,
+      "49,37": 2,
+      "49,38": 2,
+      "49,39": 28,
+      "49,40": 27,
+      "49,41": 27,
+      "49,42": 27,
+      "49,43": 27,
+      "49,44": 27,
+      "49,45": 27,
+      "49,46": 27,
+      "49,47": 25,
+      "49,48": 2,
+      "49,49": 1,
+      "49,50": 2,
+      "49,51": 2,
+      "49,52": 2,
+      "49,53": 28,
+      "49,54": 27,
+      "49,55": 27,
+      "49,56": 27,
+      "49,57": 27,
+      "49,58": 27,
+      "49,59": 27,
+      "49,60": 25,
+      "49,61": 2,
+      "49,62": 1,
+      "49,63": 2,
+      "49,64": 2,
+      "49,65": 2,
+      "49,66": 28,
+      "49,67": 27,
+      "49,68": 27,
+      "49,69": 27,
+      "49,70": 27,
+      "49,71": 27,
+      "49,72": 27,
+      "49,73": 25
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,1,1,5",
+    "1,6,1,9",
+    "1,18,1,2",
+    "1,20,1,5",
+    "3,1,1,5",
+    "3,6,1,9",
+    "3,18,1,2",
+    "3,20,1,5",
+    "5,1,1,5",
+    "5,6,1,9",
+    "5,18,1,2",
+    "5,20,1,5",
+    "7,1,1,5",
+    "7,6,8,19",
+    "17,0,16,3",
+    "17,3,28,79",
+    "17,82,16,3",
+    "48,4,1,4",
+    "48,8,1,4",
+    "48,14,1,4",
+    "48,18,1,4",
+    "49,4,1,2",
+    "49,6,1,5",
+    "49,12,1,4",
+    "49,16,1,6",
+    "49,23,1,4",
+    "49,27,1,6",
+    "49,35,1,4",
+    "49,39,1,9",
+    "49,49,1,4",
+    "49,53,1,8",
+    "49,62,1,4",
+    "49,66,1,8",
+    "1,26,1,2",
+    "1,28,14,20",
+    "1,49,1,2",
+    "1,51,14,20",
+    "1,72,1,6",
+    "3,72,12,12",
+    "48,76,2,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+        "JavaScript": "//上一页按钮\r\nvar pre = document.querySelector('.pre');\r\npre.style.position= 'fixed';\r\npre.style.width= '60px';\r\npre.style.height= '418px';\r\npre.title = '上一张试卷'\r\n//下一页按钮\r\nvar next = document.querySelector('.next');\r\nnext.style.position= 'fixed';\r\nnext.style.width= '60px';\r\nnext.style.height= '418px';\r\nnext.title = '下一张试卷'",
+        "ID": "72c92f40efbd4a87baf8fd44bb30ea12"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "阅卷表",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "id",
+      "Formula": "查看阅卷详情!$BX$2"
+    },
+    {
+      "Name": "save",
+      "Formula": "查看阅卷详情!$BU$2"
+    },
+    {
+      "Name": "tip",
+      "Formula": "查看阅卷详情!$CC$17"
+    }
+  ]
+}//Eb/NsXSYfFpprgmD8RGAX42yotokrOJrCTIKyi8onraUr/QlKjR/aROwQU+F98p3m3w46bRFL4O4UnMNIUYw7KUeLUu9/+o0LixpRYyAGOPExO+sXZI+8c/uOL02NHMnT+dM4L2mD5ISHbo5YqAzb0f3+TjZ1POSc3hNtc+vNPsz/zIEuYF3/+5Dp7NQi/LgZOt+gjgugypANnNpu2+aaILW1NcWaIzBxVTChJCqyPObmm6985RRq/zC6I1p70BhuOy5M38sDmrNnDB49KwoV8dzsecO2klICKlF2tz+/WiTrEjstqVK1nO6szfKwD4K/8OyvwrfEQAKnM0Qvx77aT31e2IYcUEKLlnO6K21ZoMuHKbkFkELX+rBDHP/NVs181FY/uwKkZOzNLe6Rq/ezYcqTkqakZ+Eh2U7YT+yK7brGgno1pjs6bY8/+awrJLN5afSZmlBmhXD+i+dmqNrDO88bnYrj4YV74sYvtORJh94BgKeasGOHnOrXy59VQBBJw3nc/fCQ2IbjxkyWbnor+92Sg1iHNcdO6TDO7BNQksFBsNOM+N4nMP4M5aGBRQJm5h2wWM8KcFt7gSJeX0HK161fRBCjtS1gG/WjonEz7gGA/+758gLWKajAxYkd+PmnFTT3826lXwFpDtWSn2N+LJrdR7O80MQGU0YYD83y48NpeJYo8LS+TwkrOmSMf1sn4blnWNaLlIROU+VYgH8PwucMLa7sIxltTiq8QX07AIIXUYV4d0hVDpjD4rQzkk7OdiOD8K6uDBL1XmsjdGTNWyiX2CIHWYe+Ltd68pDV4+Zho80iNuj5RD5Aw11KoRde628I1IGVtXlA9Z0sNM0tPXK9x8+LHb7Zxd5AWy4yoDaumfHrlevkFyUZtuuRIvu4rC375AKLAPf4K9n29VkVw==|920

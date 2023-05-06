@@ -1,0 +1,67 @@
+{
+  "Name": "getExamInfo",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser",
+                "FGC_Anonymous",
+                "Administrator"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "id"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {
+        "id": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=id"
+          },
+          "Item2": 16
+        }
+      },
+      "SqlStatement": "SELECT \"ID\",\"学员姓名\",\"学员班级\",\"考试名称\",\"题目名称\",\"题号\",\"准考证号\",\"试卷\",\"准考证图片\",\"批改时间\",\"阅卷老师\",\"得分\",\"问题\",\"优点\",\"自定义评语\",\"满分\",\"百分制得分\",\"唯一标识\",\"上传老师\"  FROM \"阅卷表\" WHERE \"ID\"==@id;",
+      "ReturnsName": "data",
+      "ID": "fa556abaee3f4f3faff674c71da34551"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "data",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=data"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "data"
+    }
+  ]
+}

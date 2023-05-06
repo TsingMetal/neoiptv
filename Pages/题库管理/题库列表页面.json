@@ -1,0 +1,506 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 27
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "Count": 64
+  },
+  "Values": {
+    "1,1": "添加",
+    "4,45": "删除",
+    "4,48": "修改信息或预置评语",
+    "5,55": "暂无数据",
+    "25,1": 20,
+    "25,3": "条/页"
+  },
+  "Formulas": {
+    "4,55": "COUNTA(C5)"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "题库管理详情",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=题库管理详情!P37"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加",
+        "TemplateKey": "样式6"
+      }
+    },
+    "1,42": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/044_search_5.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "样式3",
+        "WaterMark": "请输入题号/题目名称查询数据"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "题库",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 21,
+        "ColumnCount": 53,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题号",
+                "GUID": "c57afb6f-495e-4ece-8455-9ec2de3d7a86"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=题库列表页面!AQ2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题目名称",
+                "GUID": "80ad25da-6a09-4f34-a841-f13547698419"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=题库列表页面!AQ2"
+              }
+            }
+          ],
+          "RelationType": 1
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题号",
+                "GUID": "9bbcbe2b-227f-4fa2-8959-43fba92a4508"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,2": {
+      "BindingInfo": {
+        "TableName": "题库",
+        "ColumnName": "题号",
+        "GUID": "abbdb0fb-07c7-4355-8311-173a7c83ae8a"
+      }
+    },
+    "4,6": {
+      "BindingInfo": {
+        "TableName": "题库",
+        "ColumnName": "题目名称",
+        "GUID": "66454bdb-6dd1-43b0-b783-7cbdf93a39ee"
+      }
+    },
+    "4,11": {
+      "BindingInfo": {
+        "TableName": "题库",
+        "ColumnName": "材料",
+        "GUID": "e03684e8-6f0b-474f-a3be-bde23dec7f0a"
+      }
+    },
+    "4,21": {
+      "BindingInfo": {
+        "TableName": "题库",
+        "ColumnName": "题型",
+        "GUID": "0927acad-edf2-4b91-b816-e39631373d8a"
+      }
+    },
+    "4,29": {
+      "BindingInfo": {
+        "TableName": "题库",
+        "ColumnName": "满分",
+        "GUID": "b266c7b0-7fc0-48b3-977e-58a679c4226f"
+      }
+    },
+    "4,33": {
+      "BindingInfo": {
+        "TableName": "题库",
+        "ColumnName": "题干",
+        "GUID": "5d5041e5-d25c-46f8-86b9-681c4f789b4f"
+      }
+    },
+    "4,40": {
+      "BindingInfo": {
+        "TableName": "题库",
+        "ColumnName": "参考答案",
+        "GUID": "9d53dc21-b7b8-4d6c-99e3-d3b9596afe1d"
+      }
+    },
+    "4,45": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "题库管理详情",
+            "PassValues": [
+              {
+                "Source": "删除",
+                "TargetCell": {
+                  "SerializeProperty": "=题库管理详情!P37"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "4,48": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "题库管理详情",
+            "PassValues": [
+              {
+                "Source": "修改",
+                "TargetCell": {
+                  "SerializeProperty": "=题库管理详情!P37"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "修改信息或预置评语",
+        "ClickMode": 1
+      }
+    },
+    "25,27": {
+      "CellType": {
+        "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
+        "ListviewName": "表格1",
+        "pageSize": 20,
+        "pagerCount": 5,
+        "layout": [
+          {
+            "layoutItem": "prev"
+          },
+          {
+            "layoutItem": "pager"
+          },
+          {
+            "layoutItem": "next"
+          },
+          {
+            "layoutItem": "jumper"
+          },
+          {
+            "layoutItem": "->"
+          },
+          {
+            "layoutItem": "total"
+          }
+        ],
+        "pageSizes": [
+          {},
+          {
+            "value": 20
+          },
+          {
+            "value": 30
+          },
+          {
+            "value": 40
+          },
+          {
+            "value": 50
+          },
+          {
+            "value": 100
+          }
+        ],
+        "prevText": "上一页",
+        "nextText": "下一页",
+        "small": true,
+        "background": true
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Foreground": 3,
+        "HorizontalAlignment": 2,
+        "Underline": true
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "Foreground": 4,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "Center",
+        "Blue",
+        "#FF999999"
+      ]
+    },
+    "CellStyles": {
+      "1,42": 0,
+      "4,2": 1,
+      "4,6": 1,
+      "4,11": 2,
+      "4,12": 3,
+      "4,13": 3,
+      "4,14": 3,
+      "4,15": 3,
+      "4,16": 3,
+      "4,17": 3,
+      "4,18": 3,
+      "4,19": 3,
+      "4,20": 3,
+      "4,21": 2,
+      "4,22": 3,
+      "4,23": 3,
+      "4,24": 3,
+      "4,25": 3,
+      "4,26": 3,
+      "4,27": 3,
+      "4,28": 3,
+      "4,29": 2,
+      "4,30": 3,
+      "4,31": 3,
+      "4,32": 3,
+      "4,33": 2,
+      "4,34": 3,
+      "4,35": 3,
+      "4,36": 3,
+      "4,37": 3,
+      "4,38": 3,
+      "4,39": 3,
+      "4,40": 2,
+      "4,41": 3,
+      "4,42": 3,
+      "4,43": 3,
+      "4,44": 3,
+      "4,45": 4,
+      "4,48": 4,
+      "4,55": 3,
+      "4,56": 3,
+      "4,57": 3,
+      "4,58": 3,
+      "4,59": 3,
+      "4,60": 3,
+      "4,61": 3,
+      "4,62": 3,
+      "4,63": 3,
+      "5,55": 5,
+      "25,1": 1,
+      "25,27": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,1,1,3",
+    "4,2,1,4",
+    "4,6,1,5",
+    "4,11,1,10",
+    "4,21,1,8",
+    "4,29,1,4",
+    "4,33,1,7",
+    "4,40,1,5",
+    "4,45,1,3",
+    "4,48,1,6",
+    "25,27,1,27",
+    "1,42,1,12",
+    "5,1,19,53",
+    "5,55,10,9",
+    "4,55,1,9",
+    "25,1,1,2",
+    "3,2,1,4",
+    "3,6,1,5",
+    "3,11,1,10",
+    "3,21,1,8",
+    "3,29,1,4",
+    "3,33,1,7",
+    "3,40,1,5",
+    "3,45,1,3",
+    "3,48,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "母版页1",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SubscribeNotificationCommand, ServerDesignerCommon",
+        "Name": "实时刷新数据",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            }
+          }
+        ],
+        "ID": "f83a8357f8c041e5a286865319eefcfb"
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=题库列表页面!BD5"
+                  }
+                ]
+              },
+              "value": "0"
+            },
+            "CommandList": [
+              {
+                "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=题库列表页面!BD6"
+                },
+                "CellLocation": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=题库列表页面!B5:BB24"
+                }
+              }
+            ],
+            "ID": "925a53b4-c8ab-4874-b6b7-401a91fac615"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//k1aGAc/lw6Q26j1dqPTCc10FPqnvkYb4FoE3/QSdtuJriB+0KgmhhyQwnsPdipnI4QVo288xtpxl2soEDXDLuhfwDs371HJQ/2RskTEgzSFxBgp+/q9LR5cafD6dbsEGtJEulQYABYNfnkEA/jQXQfEvDaEgqcNYyyWz1W/KWxmOirz6FrP9Naj0pZLuh8UMOQbFepD8mR0SxwPYFxOgHCvRLIldiS+d29CnVpurlUMy3yrWlucJEITM3U877rsIVedhgpa6lvnR9N3xYKaQaVv2hp2Hk9HgF7Ws4E3EbFMEAmuWgC51d3ONJKuG246Iq6tv59Yb7DHBWW6yz1+b6XGSH7yAcNV+3iuuV5k1/WsYHgttjBM4ClazEnxd6H36+KWK6oxy3M2uTrbfMphovuqO0uEzzZNJu1rutxrySqErhazPbJ9TOI4HAqxnM2N2GA1RZQbd0WMxaiCRlwuG4kSMlvmLhoD2U9CxqBSRE9OwAVXYf88NEw3ZOKy3k3iCez+a04LWlDE5AILyzW8d+GzjXq23rq/gZyY+JZVWB1f2z44N5LjSTslAwv2iA5NNhsqNlT4oWaMPbSRlvwki8AVS55U5b5rnalrqejDKTynSnwYLOE0wsHcBCfRNcJcSWUf11733HsrPzFuPMKlBJauvMysO5X2ouOrEUokgJUaxiScPO+EGusi2SPoqEVu52PjTOFCPg+f4oKOrC75M6c2R1Z0IlN8posoEnn/3TaRksxK/hwn4Ak1DZ5MhZzKU8DG7+P63Y7VP0VJiQJqKXXH4iuwgDtzYwfvE14c58VUDh+oUqcax6Ya5jLlqQMjOh3fHUPOeyH6lLDTTLPzk79qdpoVMqN8QpRKLxAKwBakwd/4Xf4ieBKT8vsFY0OFz0zUL3b5LMc0VQN8AFNb9aA==|920

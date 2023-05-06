@@ -1,0 +1,179 @@
+{
+  "Name": "导出CSV数据",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "C:\\Huozige\\csv\\阅卷数据.csv",
+      "TableName": "阅卷表",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "学员姓名",
+            "GUID": "328f6cad-538b-40c8-be64-3a78d7f4a311"
+          },
+          "CSVColumnNameOrIndex": "学员姓名"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "学员班级",
+            "GUID": "b1dc0d1f-1fdd-40d8-a20b-871d042d6f6b"
+          },
+          "CSVColumnNameOrIndex": "学员班级"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "题号",
+            "GUID": "b82c677f-e527-4c06-be6a-7645c9b119c6"
+          },
+          "CSVColumnNameOrIndex": "题号",
+          "Formatter": "@"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "准考证号",
+            "GUID": "0440a525-d664-445c-a4e3-548b6a9cc446"
+          },
+          "CSVColumnNameOrIndex": "准考证号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "试卷",
+            "GUID": "dbf11450-a190-44ca-8616-f1c882b01c04"
+          },
+          "CSVColumnNameOrIndex": "试卷"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "准考证图片",
+            "GUID": "86614371-5d4c-4baf-8ab6-7789c2f0a5b4"
+          },
+          "CSVColumnNameOrIndex": "准考证图片"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "批改时间",
+            "GUID": "aeb8a516-bfff-4627-a854-579a66b19b47"
+          },
+          "CSVColumnNameOrIndex": "批改时间"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "阅卷老师",
+            "GUID": "649d0596-5096-4773-a187-ead5f37ca3e9"
+          },
+          "CSVColumnNameOrIndex": "阅卷老师"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "得分",
+            "GUID": "ab5d31c4-672d-439f-8037-bd4c2b08c3f6"
+          },
+          "CSVColumnNameOrIndex": "得分"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "问题",
+            "GUID": "7e5e4319-1096-4a2d-8602-509d04e142f5"
+          },
+          "CSVColumnNameOrIndex": "问题"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "优点",
+            "GUID": "c60f38c2-1dfb-4ded-8538-dedf9c9de6e6"
+          },
+          "CSVColumnNameOrIndex": "优点"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "自定义评语",
+            "GUID": "23dcef18-279a-4909-b017-a93664e86c41"
+          },
+          "CSVColumnNameOrIndex": "自定义评语"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "满分",
+            "GUID": "c1cfca53-2152-412c-91d9-ff44882fae97"
+          },
+          "CSVColumnNameOrIndex": "满分"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "百分制得分",
+            "GUID": "779b1b31-5d5b-4239-a5aa-ea64013e9b25"
+          },
+          "CSVColumnNameOrIndex": "百分制得分"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "唯一标识",
+            "GUID": "641e33e3-8381-4b48-b19c-ea4656a6b092"
+          },
+          "CSVColumnNameOrIndex": "唯一标识"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "阅卷表",
+            "ColumnName": "上传老师",
+            "GUID": "1b202ca7-75a1-4c3d-944a-82e74c2249d1"
+          },
+          "CSVColumnNameOrIndex": "上传老师"
+        }
+      ],
+      "QueryCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "CompareType": 1,
+        "ColumnBindingInfo": {
+          "TableName": "阅卷表",
+          "ColumnName": "批改时间",
+          "GUID": "6c238a4a-44c9-4e65-ab46-09595b373c37"
+        },
+        "Value": "%Null%"
+      }
+    },
+    {
+      "$type": "OperateFilesCommand.DownloadFileCommand, OperateFilesCommand",
+      "FilePath": "C:\\Huozige\\csv\\阅卷数据.csv",
+      "DownloadFileName": "已阅卷数据"
+    }
+  ]
+}

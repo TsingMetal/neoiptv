@@ -1,0 +1,17 @@
+{
+  "Name": "实时刷新数据命令",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.InvokeTrigger, ServerDesignerCommon"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.NotificationMessageCommand, ServerDesignerCommon",
+      "NotificationName": "实时刷新数据",
+      "Params": [],
+      "ID": "70822240822a432396abfa2e0acce3d5"
+    }
+  ]
+}

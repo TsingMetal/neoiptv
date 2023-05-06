@@ -1,0 +1,574 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 494.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 16
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      }
+    },
+    "Count": 44,
+    "DefaultSize": 27.0
+  },
+  "Values": {
+    "1,40": "完成批改",
+    "3,0": 12345
+  },
+  "AttachInfos": {
+    "1,0": {
+      "CssName": "myPos",
+      "CellType": {
+        "$type": "Forguncy.RecordNavigationCellType, ServerDesignerCommon",
+        "RecordDataTable": "阅卷表",
+        "FirstImage": {
+          "Name": "Arrow/347_move_first.svg",
+          "BuiltIn": true,
+          "Color": "#FF9BC944"
+        },
+        "LastImage": {
+          "Name": "Arrow/348_move_last.svg",
+          "BuiltIn": true,
+          "Color": "#FF9BC944"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/349_left_arrow.svg",
+          "BuiltIn": true,
+          "Color": "#FF9BC944"
+        },
+        "NextImage": {
+          "Name": "Arrow/350_right_arrow.svg",
+          "BuiltIn": true,
+          "Color": "#FF9BC944"
+        },
+        "ImageSize": 30,
+        "Space": 60
+      }
+    },
+    "1,40": {
+      "CssName": "myPos2",
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=iPad批改试卷页面!A16"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "iPad未阅卷管理页面",
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "6adbabe3-0ef4-4cf1-b655-37c2bf094102"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "iPad已阅卷管理页面",
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "b30de2af-a6a6-4263-bc01-bcd7101f13d8"
+              }
+            ]
+          }
+        ],
+        "Text": "完成批改",
+        "TemplateKey": "样式6"
+      }
+    },
+    "3,0": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "试卷",
+        "GUID": "3c183841-4f18-49e6-be3e-6f2057d2fb7a"
+      },
+      "CellType": {
+        "$type": "ImageEditor.ImageEditor, ImageEditor",
+        "SaveCommand": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "阅卷表",
+              "ShowConfirm": false,
+              "CheckDataValidation": false
+            },
+            {
+              "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+              "PageName": "iPad阅卷详情页面",
+              "PassValues": [
+                {
+                  "Source": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=iPad批改试卷页面!A16"
+                  },
+                  "TargetCell": {
+                    "SerializeProperty": "=iPad阅卷详情页面!AJ29"
+                  }
+                }
+              ],
+              "LoadBindingDataOption": 1
+            }
+          ],
+          "ParamProperties": {}
+        },
+        "Menu": [
+          {},
+          {
+            "Name": 1
+          },
+          {
+            "Name": 2
+          },
+          {
+            "Name": 3
+          },
+          {
+            "Name": 4
+          },
+          {
+            "Name": 5
+          },
+          {
+            "Name": 6
+          }
+        ],
+        "ControlButtons": [
+          {
+            "Name": 2
+          }
+        ],
+        "DefaultValueSettings": {
+          "DrawThickness": 10,
+          "ShapeThickness": 20,
+          "TextSize": 100,
+          "DrawColor": "#FFFF0000",
+          "TextColor": "#FFFF0000",
+          "IconColor": "#FFFF0000",
+          "ShapeColor": "#FFFF0000"
+        },
+        "UploadSettings": {
+          "AutoCompress": true,
+          "Quality": 0.6
+        },
+        "MenuBarPosition": 3
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "VerticalAlignment": 2,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "Top",
+        "Center",
+        "[AUTO]General",
+        "Accent 4 0"
+      ]
+    },
+    "CellStyles": {
+      "0,14": 0,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 1,
+      "0,26": 1,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "0,30": 1,
+      "0,31": 1,
+      "0,32": 1,
+      "0,33": 1,
+      "0,34": 1,
+      "0,35": 1,
+      "0,36": 1,
+      "0,37": 1,
+      "0,38": 1,
+      "0,39": 1,
+      "0,40": 1,
+      "0,41": 1,
+      "0,42": 1,
+      "0,43": 1,
+      "1,0": 2,
+      "1,40": 3,
+      "1,41": 4,
+      "1,42": 4,
+      "1,43": 4,
+      "3,0": 4,
+      "14,0": 4,
+      "14,1": 4,
+      "14,2": 4,
+      "14,3": 4,
+      "14,4": 4,
+      "14,5": 4,
+      "14,6": 4,
+      "14,7": 4,
+      "14,8": 4,
+      "14,9": 4,
+      "14,10": 4,
+      "14,11": 4,
+      "14,12": 4,
+      "14,13": 4,
+      "14,14": 4,
+      "14,15": 4,
+      "14,16": 4,
+      "14,17": 4,
+      "14,18": 4,
+      "14,19": 4,
+      "14,20": 4,
+      "14,21": 4,
+      "14,22": 4,
+      "14,23": 4,
+      "14,24": 4,
+      "14,25": 4,
+      "14,26": 4,
+      "14,27": 4,
+      "14,28": 4,
+      "14,29": 4,
+      "14,30": 4,
+      "14,31": 4,
+      "14,32": 4,
+      "14,33": 4,
+      "14,34": 4,
+      "14,35": 4,
+      "14,36": 4,
+      "14,37": 4,
+      "14,38": 4,
+      "14,39": 4,
+      "14,40": 4,
+      "14,41": 4,
+      "14,42": 4,
+      "14,43": 4,
+      "15,0": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,0,11,44",
+    "15,0,1,2",
+    "1,40,1,4",
+    "1,0,1,38"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "阅卷表",
+    "PageResponsiveMode": 5
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "id",
+      "Formula": "iPad批改试卷页面!$AP$2"
+    },
+    {
+      "Name": "btn",
+      "Formula": "iPad批改试卷页面!$AO$2"
+    },
+    {
+      "Name": "title",
+      "Formula": "#REF!"
+    }
+  ]
+}//O4kFP0dqpWDItB+M3hh/NsfFzKJ38tcpszVaZvjxqR55n9CYVdzFjkQVxCwRk/PaV+iw2Hf+2R5EBkopMv2hgLqeyI2U9AiOjOt2ZPnNDl6uAis+d7GefCr7EDGYoI0O3NwQ9pyq6Mn/pSW3u9MhldyATcs80ZpcrbrJuML4deqHLRKmqBuftfhNAouxQNebjtZ7+zW60hbK29YtBNxgvBVz/MeTr0hode79zUi/HD2gqNYPPzVrQwj5v37dFIGYt+eJYiYmnb2XmtzEpmXKDSkr8I3obnSfiy7FUFvGN48VdDnqm3Us/EBZQ/M2469i+IdlQx+TXS67g0/JV4DUYYuR83ysjYjjy3sKXryPg8JI00sMi52gNLNA9lPeRNbepaRdYNlpT5dy2em5YXO2lPie8vrAyWMyz1QkymreQssPuzBlrRjXJDCVF/xk4MbEFfdmUMMRcW/nlJDG/qk+LvyoGxbStHjW3rHl/IUcCuPE5LKbeLRkwXZ6BjFybzIDmq0ZMcSFO49aOzyAYgsNyyDPTYvUkl4wWJ/Hao2QscY5bWu91HRPYiWm1N364yZy5Tqr6ffsInngG44hDDlp/OaVcVxrYGeRkAeOT/DUqD6A0H7YrKC8E3zA/UKEwnYBp4OVrG2dgz1gSyy4Q3X9M19+BxHe9adheI+OFpNHWv+deBq4HxXhixYeB0vPrNqcPzNghRAiVTdkVbNim1JxorpoA7k5JKX6Gojfv2w/fX6+5f4I3b3KUCaeP0DX7i0W4mUKXtOzGuwSKD4je3A6su5nOFf9zc6k/1cg0zzmTmwUBMIHySAFwqHPCKzE2gfcGpHUNGlWkGldAhR1PaAZ3EpXTkREoRvHgSlKMgb5eQD8YluMdtN8F1iNUDVjIqqp20oY6JOJwLEfhrsuNAq82g==|920

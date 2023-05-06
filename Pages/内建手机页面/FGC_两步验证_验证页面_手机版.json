@@ -1,0 +1,176 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 29
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "0,0": "  ",
+    "7,3": "两步验证",
+    "9,3": "请输入您在身份验证器APP中看到的6位数验证码。",
+    "12,3": "验证码",
+    "20,3": "验证"
+  },
+  "AttachInfos": {
+    "13,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式4",
+        "WaterMark": "",
+        "ForguncyAttribute": "MFA_VerifyCode_Inputbox"
+      },
+      "DataValidationInfo": {
+        "NumberType": 6,
+        "CompareParamType": 2,
+        "FirstParamValue": "6",
+        "IgnoreBlank": false,
+        "ErrorMessage": "请输入6位数验证码。"
+      }
+    },
+    "16,3": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "在此设备上不再询问",
+        "Style": 1,
+        "ForguncyAttribute": "MFA_VerifyCode_TrustDevice"
+      }
+    },
+    "20,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "验证",
+        "AutoExecute": true,
+        "TemplateKey": "样式8",
+        "ForguncyAttribute": "MFA_VerifyCode_SubmitButton"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 2,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "Foreground": 4,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "Formatter": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Background 1 0",
+        "Center",
+        "#FFFFFFFF",
+        "[AUTO]General",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "7,3": 0,
+      "9,3": 1,
+      "12,3": 2,
+      "13,3": 3,
+      "16,3": 1,
+      "20,3": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,4,3,10",
+    "20,3,2,12",
+    "13,3,2,12",
+    "16,3,2,13",
+    "7,3,2,12",
+    "9,3,2,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "两步验证",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "Pictures": [
+    {
+      "Name": "a7bd965f-ab77-48a2-833e-e6c88fcbe484.png",
+      "ForguncyPictureName": "微信图片_20210128110953.png",
+      "ForguncyPictureSourceType": 0,
+      "Stretch": 2,
+      "Location": "76,63",
+      "Size": "204,56"
+    }
+  ],
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Name": "BackgroundPicture0",
+      "DisplayName": "背景图1",
+      "ForguncyPictureName": "MobileLoginBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "360,540"
+    }
+  ]
+}//wTBxG5in1WZp3yurSWWqnFS8LiAuL/6lUjPji9RXeOCrw1v84dAZbW0Ts31cEjy4o/+8uvq5lRPFQekb8gZSxrAArGzYOpfc8TB1B3xN0WSPeuT6nUBrR4ml+CQbpmX/NpVjzwuhw2cl0wbdOKDCYIMyLUQSFYDOJ67XyjsgZ3oHqeNT15kapnv4XBKW5HL9nM5unZiMhWKPw/GaeV++R1Fh/8i/o3kF+5T2v+KSBizXhn/80QMTin+KstluSqKi3/2cdRUCj4WSWXIuY1MozAPK59j6wbDdVZ/0fETEHa+NQFRYQGDK/21u/UQM9C2uIqdHG6TG7b2MUwabOj/EIAVGRsqoRkTuIs0UDcGQPy267dXpeFMXU779xD6T8ZG4nNW2jWrfnRw7t1R+sWnXYsnfztw2gs+4Vtf/nV6X5kb0R+rAroA+rogcMZZ0gDcrMTV6+bJ936fcHcUv8vLeXlX8AX/cMAQpKA+7/keN0+d87+AK3x0h7R6fCyp7veZjOVHc+559UVUjuHbiH9QwH5DORpqA6raKyjCQmell2OLiK4768a3C707EultfQQK4u1rk2NaWN22BnH74cMzOTmQBdUDuCC5ulGE4T1YmE2jPgFQr41iP/qUSD+oCwzc8rIssgDgseCHCN0ALHfk8BpPr9crdRGlYYoquyw44z7Gy/xFv2QQH09+lGsADssHP3h2IePFE+1AJuT0BQuz2AJ/xbxNXapQzq6NDEeJgP+puAiGhqEP4SKtWMbOtoTsNxwZHZjwbg4oi3V5hyKAVf6dwchGpVJRqJ7VC4XhBCCX2ZtBhhHE9x9ecq2RFY+yeX17jnyFtn+1qIt7Qko398Pp2sBo9+hmKSYYZcQa3G/CUdrsuWq6uGEsbb+4zVj05JlbcTU4ik1m1cbDywxlkkw==|920

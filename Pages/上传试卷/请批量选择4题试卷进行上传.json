@@ -1,0 +1,1398 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      30
+    ],
+    "Count": 31,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 23,
+    "DefaultSize": 30.0
+  },
+  "Values": {
+    "17,1": "班级：",
+    "17,14": "考试名称：",
+    "19,1": "请依次选择1-4题题号：",
+    "19,14": "题1阅卷老师：",
+    "21,14": "题2阅卷老师：",
+    "23,14": "题3阅卷老师：",
+    "25,14": "题4阅卷老师：",
+    "28,18": "上传",
+    "30,0": "上传老师",
+    "30,3": "%CurrentUser.UserName%"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "试卷",
+        "GUID": "b7ff1aa3-5622-414f-9cb8-01be6d01f2d1"
+      },
+      "CellType": {
+        "$type": "FilePreviewer.FilePreviewer, FilePreviewer",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp,",
+          "MaxWidth": 1920.0,
+          "MaxHeight": 1920.0
+        },
+        "Folder": "%CurrentUser%",
+        "KKFileViewExtensions": "(doc|docx|xls|xlsx|ppt|pptx)"
+      }
+    },
+    "17,3": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "班级",
+        "GUID": "200f0f44-0ab1-4a60-b0bf-69d68c7a9b70"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "考号档案",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "考号档案",
+                "ColumnName": "班级",
+                "GUID": "81b0e786-484d-413e-8586-192139e43c12"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "考号档案",
+                "ColumnName": "班级",
+                "GUID": "3af06b43-8ee1-4680-bcb0-5ddffc0fd013"
+              },
+              "ColumnName": "label"
+            }
+          ],
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "考号档案",
+                  "ColumnName": "班级",
+                  "GUID": "8102685c-5050-48a4-85b2-db98881cf701"
+                },
+                "Order": 1
+              }
+            ]
+          }
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterable": true,
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "17,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "考试名称",
+        "GUID": "9f140ee0-fc0c-4393-9097-eae126960713"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3"
+      },
+      "DataValidationInfo": {}
+    },
+    "19,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第一题",
+        "GUID": "8fe98708-1747-45eb-a978-0532703a326d"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "题库",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题号",
+                "GUID": "e4017459-242b-4570-8fa1-864c98ebeb5b"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题目名称",
+                "GUID": "a1ed2447-122c-4e79-8ac4-f932e0bfd6ea"
+              },
+              "ColumnName": "label"
+            }
+          ]
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "19,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "题1阅卷老师",
+        "GUID": "9839f8b7-c1e5-4818-bce2-18fd6987aa8d"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "用户信息视图",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "b50b7569-63e7-4209-a603-1d9192b31373"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "d29bfd58-322e-4c0b-90bb-7903e1b683ce"
+              },
+              "ColumnName": "label"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "用户信息视图",
+              "ColumnName": "角色",
+              "GUID": "7177c952-4e04-4e6b-b743-6b366836a80a"
+            },
+            "Value": "阅卷老师"
+          }
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "21,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第二题",
+        "GUID": "c5fba904-5324-472d-9a1a-183dc8f4155b"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "题库",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题号",
+                "GUID": "46576a6c-115d-4ed9-b5b3-0b99599b4a03"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题目名称",
+                "GUID": "22e13ba9-23bb-44a0-8eef-8870c90c9ba0"
+              },
+              "ColumnName": "label"
+            }
+          ]
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "21,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "题2阅卷老师",
+        "GUID": "91423045-5e1c-4a0e-b7d7-2246634edb58"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "用户信息视图",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "98734e12-0a6a-4be5-84d5-0b7813e021d7"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "a28866c0-c11b-4d34-be6a-2128e92955eb"
+              },
+              "ColumnName": "label"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "用户信息视图",
+              "ColumnName": "角色",
+              "GUID": "653e50e5-9d06-4df7-8d58-0138226cc020"
+            },
+            "Value": "阅卷老师"
+          }
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "23,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第三题",
+        "GUID": "7ffcbc53-ec54-49f2-bf1e-8720bbea92a6"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "题库",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题号",
+                "GUID": "2fc7da6e-b016-4974-84e6-ab7f53697aac"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题目名称",
+                "GUID": "426b742a-42f2-425d-8a44-a549f8c06122"
+              },
+              "ColumnName": "label"
+            }
+          ]
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "23,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "题3阅卷老师",
+        "GUID": "a5f78b32-5c57-4252-8cca-087356e3a7ed"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "用户信息视图",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "f4c1b185-5c4b-4d76-8aa6-cd235d5ab32d"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "4ee7f8a2-56de-4c3f-a4fc-d5168b0b72e2"
+              },
+              "ColumnName": "label"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "用户信息视图",
+              "ColumnName": "角色",
+              "GUID": "9f2b9079-d55f-4c04-b254-edd604c9e619"
+            },
+            "Value": "阅卷老师"
+          }
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "25,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第四题",
+        "GUID": "9c5ec2bd-f5a3-4490-b4bf-34e0f0e98c65"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "题库",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题号",
+                "GUID": "c7e9d425-de69-4029-b17b-937bf693961a"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "题库",
+                "ColumnName": "题目名称",
+                "GUID": "46365227-7276-4858-a3f1-af2a37bb0f4d"
+              },
+              "ColumnName": "label"
+            }
+          ]
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "25,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "题4阅卷老师",
+        "GUID": "ce05f059-2d11-407d-8ee4-d949c5625ec1"
+      },
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "用户信息视图",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "2265f81a-af30-47cb-8915-14c28dae9937"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "用户信息视图",
+                "ColumnName": "用户名",
+                "GUID": "9eb2aa58-1b74-447d-8852-faa7481484a7"
+              },
+              "ColumnName": "label"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "用户信息视图",
+              "ColumnName": "角色",
+              "GUID": "f438ca34-d934-4cfc-a7bf-836a262b145c"
+            },
+            "Value": "阅卷老师"
+          }
+        },
+        "placeholder": "请选择",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "28,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "_5题试卷上传",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "_5题试卷上传",
+                  "ColumnName": "班级",
+                  "GUID": "baa6bd90-e350-4e69-9d8f-bb2d3772f569"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!D18"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "_5题试卷上传",
+                  "ColumnName": "第一题",
+                  "GUID": "fa81808a-4a83-485c-a82f-e3af4d5460a4"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!H20"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "_5题试卷上传",
+                  "ColumnName": "第二题",
+                  "GUID": "71f865ad-5223-4422-97f2-9843803136da"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!H22"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "_5题试卷上传",
+                  "ColumnName": "第三题",
+                  "GUID": "df614768-227a-4698-9649-e1fa51f6ce43"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!H24"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "_5题试卷上传",
+                  "ColumnName": "第四题",
+                  "GUID": "4d67f364-4391-438f-8177-07410e382ca2"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!H26"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "正在上传处理图片，请耐心等待！",
+            "LoadingTextColor": "#FFFFC000"
+          },
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "uploadFiveExam",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "className",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!D18"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "imgArr",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!B2"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionNumberOne",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!H20"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionTeacherOne",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!R20"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionNumberTwo",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!H22"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionTeacherTwo",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!R22"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionNumberThree",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!H24"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionTeacherThree",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!R24"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionNumberFour",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!H26"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionTeacherFour",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!R26"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "userName",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!D31"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "examName",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=请批量选择4题试卷进行上传!R18"
+                }
+              }
+            ],
+            "ResultErrorCodeTo": {
+              "SerializeProperty": "result"
+            },
+            "ReturnPropertiesTo": [
+              {
+                "ResultPropertyName": "result"
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ReloadData": true
+          }
+        ],
+        "Text": "上传",
+        "TemplateKey": "样式5"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "Foreground": 1,
+        "Formatter": 2
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FF000000",
+        "@",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "17,1": 0,
+      "17,2": 0,
+      "17,3": 0,
+      "17,17": 1,
+      "18,3": 0,
+      "18,4": 0,
+      "18,5": 0,
+      "18,9": 2,
+      "18,10": 2,
+      "18,11": 2,
+      "18,12": 2,
+      "18,13": 2,
+      "18,14": 2,
+      "18,15": 2,
+      "21,7": 0,
+      "22,7": 0,
+      "22,8": 0,
+      "22,9": 0,
+      "22,10": 0,
+      "22,11": 0,
+      "22,12": 0,
+      "22,13": 0,
+      "22,14": 0,
+      "22,15": 0,
+      "23,7": 0,
+      "24,7": 0,
+      "24,8": 0,
+      "24,9": 0,
+      "24,10": 0,
+      "24,11": 0,
+      "24,12": 0,
+      "24,13": 0,
+      "24,14": 0,
+      "24,15": 0,
+      "25,7": 0,
+      "26,7": 0,
+      "26,8": 0,
+      "26,9": 0,
+      "26,10": 0,
+      "26,11": 0,
+      "26,12": 0,
+      "26,13": 0,
+      "26,14": 0,
+      "26,15": 0,
+      "28,18": 3,
+      "29,18": 3,
+      "29,19": 3,
+      "29,20": 3,
+      "29,21": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "19,1,1,5",
+    "17,1,1,2",
+    "19,7,1,6",
+    "21,7,1,6",
+    "23,7,1,6",
+    "25,7,1,6",
+    "19,14,1,3",
+    "21,14,1,3",
+    "23,14,1,3",
+    "25,14,1,3",
+    "17,3,1,10",
+    "19,17,1,5",
+    "21,17,1,5",
+    "23,17,1,5",
+    "25,17,1,5",
+    "28,18,1,4",
+    "1,1,15,21",
+    "30,0,1,3",
+    "30,3,1,6",
+    "17,14,1,3",
+    "17,17,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "_5题试卷上传"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//fwuZTtNSE8+idgJy2vklR7i/zncKm2+g636oPDF8h5SzroOiGSNnNY5nTfznnEm8xeQNQP96WkO3L1i0FvzMdTrmExKc4vX1d2JZxSetRps9p5wd+uXbu3kXrRuXbaJJ5s1SKL+mdGzYQepEgARTHEhkIfT6/33AcEJzb/8lv2SHdzg83V+fvboJbEt/1rHMNu4XQQQOplebVN8evr6IzOOeBMEkOMhUZoJQQwR8DQRa7q8wly6i21kdkMtHyaW5e1ywbCLOaTWCAQGaHc9S1aee8/2UDmtDs3cIBCGNqUv7b2ot5onHIzWYZpoUI0LBCrqvfwrm3yA16YlOiTZ1eOkopSZL1VrVkYeT93Qz7fE5sxkmeb3NrFSy0FLKkwkooPhIuTpbmBgASqvQgg0ES7dThS0P8GJGoH2ornPQ/UwEVPAOV4ea91baHHM44IFWZzOQGniVo8KlnTYNsS0owLHTEktrw6stzyIP36f6iec2DY5+RBUhTpgfaB3FcJfGW6lcECNepALxwCHHb+CI/7/F6mhNTKYODYSArKiIb34lW9cN9XLRssh5bqSKpQZIBjcQihtMOlMKVmjmmigfeCzPmcqMRDN7meZe2iYIf/dr93YY8bk6lX4CRRKk0Y062zesQup/99p8KlXHUiZjKjKvdBLRh0feSXiGTQiYnRGKjW7ZiDHMsuqAaMtC1khhmVYsPIRDTuooJ4xmibv2ciqWMGWJlxMBsmVYc81PHLn2ySzQfSh3pBIppq5ugQjmJwVIjRkGqQiMefEAoZMAOmqHdpUMoiRrBQNOSSExuZ7Ab2ZtTY3jffK6h7f0BM8bIfCFXyGVJoH9cWMAQeAXxAEXv2qf3uEDzDujlocYH6Vam7n/atKzG9slY36IWIbjq0YcuBmgfw9K9tMbBC8h0g==|920

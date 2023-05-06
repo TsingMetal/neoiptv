@@ -1,0 +1,40 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "hQd@jC9dM1o7"
+  },
+  "ListviewLoadingIndicatorSettings": {},
+  "GlobalProperties": [],
+  "WebSitePort": 61362,
+  "UserServicePort": 27919,
+  "NotAllowQueryDatabaseByJsApi": false,
+  "StartPage": "index",
+  "StartDateFiscalYear": 1,
+  "CellTypeSpinInfos": [
+    {
+      "CellTypeFullName": "Forguncy.DropDownListCellType"
+    },
+    {
+      "CellTypeFullName": "Forguncy.NumberCellType"
+    },
+    {
+      "CellTypeFullName": "Forguncy.DateCellType"
+    },
+    {
+      "CellTypeFullName": "Forguncy.TimeCellType"
+    },
+    {
+      "CellTypeFullName": "Forguncy.UserCellType"
+    }
+  ],
+  "PageLoadingMode": 2,
+  "AuditingList": {
+    "题库": 15,
+    "阅卷表": 15,
+    "预置评语配置": 15,
+    "预置评语配置表2": 15,
+    "小测上传": 15,
+    "_4题试卷上传": 15,
+    "_5题试卷上传": 15,
+    "考号档案": 15
+  }
+}

@@ -1,0 +1,1131 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 29
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      23,
+      24,
+      25,
+      28,
+      29,
+      30,
+      31,
+      32,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "Count": 65
+  },
+  "Values": {
+    "0,56": 1,
+    "1,16": "查询",
+    "1,42": "批量删除",
+    "1,47": "查询准考证号是?的数据",
+    "1,56": "均分：",
+    "4,51": "批改/查看",
+    "13,56": "暂无数据",
+    "26,56": "%CurrentUser.UserName%",
+    "27,1": 20,
+    "27,3": "条/页",
+    "27,56": "最大的id：",
+    "28,56": "最小的id："
+  },
+  "Formulas": {
+    "1,58": "AVERAGE(AA5)",
+    "23,56": "COUNTA(AU5)",
+    "27,60": "ODATA(\"阅卷表?$select=ID&$filter=阅卷老师 eq \"&IF(ISBLANK(BE27),\"null\",\"'\"&BE27&\"'\")&\" and 批改时间 eq null&$top=1&$orderby=ID desc\")",
+    "28,60": "ODATA(\"阅卷表?$select=ID&$filter=阅卷老师 eq \"&IF(ISBLANK(BE27),\"null\",\"'\"&BE27&\"'\")&\" and 批改时间 eq null&$top=1&$orderby=ID asc\")"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/044_search_5.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "样式3",
+        "WaterMark": "请输入准考证号/班级/题目名称查找数据"
+      }
+    },
+    "1,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "阅卷表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "学员班级",
+                    "GUID": "c696c394-c8c7-4b09-9df2-34b99753d111"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=未阅卷管理页面!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "准考证号",
+                    "GUID": "a07e31d3-d276-4368-9598-98a5dc713343"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=未阅卷管理页面!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "题号",
+                    "GUID": "5dec24c4-6bac-44e9-a509-3dea2b0a50e6",
+                    "RelationBinding": {
+                      "RelatedTable": "题库",
+                      "RelatedColumn": "题号",
+                      "DisplayColumn": "题目名称"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=未阅卷管理页面!B2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "407145524ebe4733b0f53c1a40af670f"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=未阅卷管理页面!BE24"
+                      }
+                    ]
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                    "SourceCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=未阅卷管理页面!BE14"
+                    },
+                    "CellLocation": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=未阅卷管理页面!B5:BC24"
+                    }
+                  }
+                ],
+                "ID": "255f4f52-f2f6-4f57-ba00-933984b5586b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                    "SourceCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=未阅卷管理页面!BE14"
+                    },
+                    "CellLocation": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=未阅卷管理页面!BE3:BM9"
+                    }
+                  }
+                ],
+                "ID": "19292141-c2df-4cea-ae4b-6be8e63b47f7"
+              }
+            ]
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "样式6"
+      }
+    },
+    "1,42": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=未阅卷管理页面!B26"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "至少选择一条数据"
+                  }
+                ],
+                "ID": "15315f5e-81ed-45cc-aea4-7ab130d9647b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "阅卷表",
+                    "ShowConfirm": true,
+                    "ConfirmText": "您确定要删除选中的记录吗？",
+                    "RowsToUpdate": 2,
+                    "RowsToUpdateListViewName": "表格1",
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "阅卷表",
+                          "ColumnName": "状态",
+                          "GUID": "78769e54-3ed9-4c14-91d2-a365fd9cce16"
+                        },
+                        "Value": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "deleteJdyExam",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
+                        "ParamName": "ids",
+                        "ListviewName": "表格1",
+                        "Scope": 1,
+                        "Columns": [
+                          {
+                            "ArrayItemName": "id",
+                            "Column": "ID"
+                          }
+                        ]
+                      }
+                    ],
+                    "ReturnPropertiesTo": [
+                      {
+                        "ResultPropertyName": "code"
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true,
+                    "Disabled": true
+                  }
+                ],
+                "ID": "704bd13f-5e2a-4bf3-bf79-abdd224c5121"
+              }
+            ]
+          }
+        ],
+        "Text": "批量删除",
+        "TemplateKey": "样式6"
+      }
+    },
+    "1,47": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "阅卷表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "准考证号",
+                "GUID": "e4e6ecb3-ff5c-4dfa-b18e-0b19af0a0a7e"
+              },
+              "Value": "？"
+            },
+            "ID": "20078bfbb3914327b4a2eb4cde13644a"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=未阅卷管理页面!BE24"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                    "SourceCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=未阅卷管理页面!BE14"
+                    },
+                    "CellLocation": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=未阅卷管理页面!B5:BC24"
+                    }
+                  }
+                ],
+                "ID": "ab323a40-aaf0-4210-99dd-c26eb9c32d06"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                    "SourceCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=未阅卷管理页面!BE14"
+                    },
+                    "CellLocation": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=未阅卷管理页面!BH1:BM1"
+                    }
+                  }
+                ],
+                "ID": "e6ce0ca6-8375-4ee9-8819-08ef6c1d875a"
+              }
+            ]
+          }
+        ],
+        "Text": "查询准考证号是?的数据",
+        "TemplateKey": "样式6"
+      }
+    },
+    "1,58": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "样式3"
+      }
+    },
+    "2,56": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证图片",
+        "GUID": "ad1d6987-ccaa-47dd-9067-25430c1f8d7e",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "阅卷表",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 21,
+        "ColumnCount": 54,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "阅卷老师",
+                "GUID": "b406e480-11ce-4d9b-a9c1-c5d77e4eada6"
+              },
+              "Value": "%CurrentUser.UserName%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "批改时间",
+                "GUID": "ff1be021-ae39-4b47-abf3-4be15def5b1c"
+              },
+              "Value": "%Null%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "状态",
+                "GUID": "f5a04c0d-f285-46e1-8742-f3cacd34ddba"
+              },
+              "Value": "1"
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "FGC_CreateDate",
+                "GUID": "25336afd-4530-49b2-98b3-928a7e430311"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,2": {
+      "NameUsedInJavaScript": "学员姓名",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "学员姓名",
+        "GUID": "43e12d26-9e9d-4b53-a7be-c0cdd9dd8d0a"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,5": {
+      "NameUsedInJavaScript": "准考证号",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证号",
+        "GUID": "a4de2298-3827-4214-81ff-c1413b054b62"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,10": {
+      "NameUsedInJavaScript": "学员班级",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "学员班级",
+        "GUID": "e143d04e-67b8-4d84-b388-fa133ab180fa"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,15": {
+      "NameUsedInJavaScript": "题号",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题号",
+        "GUID": "37ccbe33-b55c-4bcc-b2a7-2a189d3a8b77"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,18": {
+      "NameUsedInJavaScript": "题目名称",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题号",
+        "GUID": "3fe752a4-47f6-4cf9-9f0b-39d44a3112af",
+        "RelationBinding": {
+          "RelatedTable": "题库",
+          "RelatedColumn": "题号",
+          "DisplayColumn": "题目名称"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "4,21": {
+      "NameUsedInJavaScript": "满分",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题号",
+        "GUID": "9e922348-16c2-4d22-bef5-36692759af63",
+        "RelationBinding": {
+          "RelatedTable": "题库",
+          "RelatedColumn": "题号",
+          "DisplayColumn": "满分"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,23": {
+      "NameUsedInJavaScript": "试卷",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "试卷",
+        "GUID": "b9f3a7fe-0a9c-4177-a2f7-01d8a42733d7",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=未阅卷管理页面!BE8"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
+      }
+    },
+    "4,26": {
+      "NameUsedInJavaScript": "得分",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "得分",
+        "GUID": "28363924-fb96-43dd-a40e-146d71382c14"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,28": {
+      "NameUsedInJavaScript": "百分制得分",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "百分制得分",
+        "GUID": "1af955e8-b8d6-4178-ae7e-88f8b013d479"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,29": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "ID",
+        "GUID": "7772cc88-e72d-4d2b-ad09-822f7216652b"
+      }
+    },
+    "4,30": {
+      "NameUsedInJavaScript": "准考证图片",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证图片",
+        "GUID": "2ba8251f-71bf-4fb2-8a49-0b26457afe53",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=未阅卷管理页面!BE3"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
+      }
+    },
+    "4,33": {
+      "NameUsedInJavaScript": "问题",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "问题",
+        "GUID": "b3aee293-477a-48d5-a0c0-646f9ab1e1c5"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,38": {
+      "NameUsedInJavaScript": "优点",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "优点",
+        "GUID": "0b7df22e-71d8-43ec-bde4-f55a723a5efe"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,42": {
+      "NameUsedInJavaScript": "自定义评语",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "自定义评语",
+        "GUID": "34606727-958f-45a5-9b86-92523dff5957"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "4,46": {
+      "NameUsedInJavaScript": "创建日期",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "FGC_CreateDate",
+        "GUID": "e0572da2-184d-4fa5-acee-1a5ee07393e4"
+      }
+    },
+    "4,51": {
+      "NameUsedInJavaScript": "批改_查看",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 3,
+            "DrawerDirection": 3,
+            "PageName": "批改试卷页面",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=未阅卷管理页面!BE1"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=批改试卷页面!I35"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=未阅卷管理页面!BI28"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=批改试卷页面!Q36"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=未阅卷管理页面!BI29"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=批改试卷页面!AB36"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "批改/查看",
+        "ClickMode": 1
+      }
+    },
+    "7,56": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "试卷",
+        "GUID": "a00d74be-91c6-4435-85b1-b5f4208f840b",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "25,1": {
+      "CellType": {
+        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
+        "HeaderTemplate": "已选择{{COUNT}}条数据",
+        "HeaderTemplateForNoSelection": "",
+        "ListViewName": "表格1"
+      }
+    },
+    "27,27": {
+      "CellType": {
+        "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
+        "ListviewName": "表格1",
+        "pageSize": 20,
+        "pagerCount": 5,
+        "layout": [
+          {
+            "layoutItem": "prev"
+          },
+          {
+            "layoutItem": "pager"
+          },
+          {
+            "layoutItem": "next"
+          },
+          {
+            "layoutItem": "jumper"
+          },
+          {
+            "layoutItem": "->"
+          },
+          {
+            "layoutItem": "total"
+          }
+        ],
+        "pageSizes": [
+          {},
+          {
+            "value": 20
+          },
+          {
+            "value": 30
+          },
+          {
+            "value": 40
+          },
+          {
+            "value": 50
+          },
+          {
+            "value": 100
+          }
+        ],
+        "prevText": "上一页",
+        "nextText": "下一页",
+        "small": true,
+        "background": true
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "FontWeight": 5,
+        "Foreground": 6,
+        "HorizontalAlignment": 7
+      },
+      {
+        "Formatter": 2,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 2,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 3,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 8,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 9,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 3,
+        "Foreground": 10,
+        "HorizontalAlignment": 1,
+        "Underline": true
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "Foreground": 11,
+        "HorizontalAlignment": 1
+      },
+      {
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "Center",
+        "@",
+        "Body",
+        "[AUTO]General",
+        "Bold",
+        "#FFFF6E0A",
+        "Left",
+        "0.00;[Red]0.00",
+        "yyyy/mm/dd hh:mm:ss",
+        "#FF00B050",
+        "#FF999999"
+      ]
+    },
+    "CellStyles": {
+      "0,56": 0,
+      "1,1": 1,
+      "1,42": 2,
+      "1,43": 3,
+      "1,44": 3,
+      "1,45": 3,
+      "1,46": 3,
+      "1,47": 2,
+      "1,48": 3,
+      "1,49": 3,
+      "1,50": 3,
+      "1,51": 3,
+      "1,52": 3,
+      "1,53": 3,
+      "1,54": 3,
+      "1,56": 3,
+      "1,57": 3,
+      "1,58": 4,
+      "1,59": 3,
+      "1,60": 3,
+      "1,61": 3,
+      "1,62": 3,
+      "2,56": 3,
+      "4,2": 5,
+      "4,5": 5,
+      "4,10": 6,
+      "4,11": 3,
+      "4,12": 3,
+      "4,13": 3,
+      "4,14": 3,
+      "4,15": 6,
+      "4,16": 3,
+      "4,17": 3,
+      "4,18": 1,
+      "4,21": 6,
+      "4,22": 3,
+      "4,23": 7,
+      "4,26": 6,
+      "4,27": 3,
+      "4,28": 8,
+      "4,29": 7,
+      "4,33": 6,
+      "4,38": 6,
+      "4,39": 3,
+      "4,40": 3,
+      "4,41": 3,
+      "4,42": 6,
+      "4,43": 3,
+      "4,44": 3,
+      "4,45": 3,
+      "4,46": 9,
+      "4,47": 3,
+      "4,48": 3,
+      "4,49": 3,
+      "4,50": 3,
+      "4,51": 10,
+      "4,52": 3,
+      "4,53": 3,
+      "4,54": 3,
+      "7,56": 3,
+      "13,56": 11,
+      "23,56": 3,
+      "23,57": 3,
+      "23,58": 3,
+      "23,59": 3,
+      "23,60": 3,
+      "23,61": 3,
+      "23,62": 3,
+      "23,63": 3,
+      "23,64": 3,
+      "24,56": 3,
+      "24,57": 3,
+      "24,58": 3,
+      "24,59": 3,
+      "24,60": 3,
+      "24,61": 3,
+      "24,62": 3,
+      "24,63": 3,
+      "24,64": 3,
+      "25,56": 3,
+      "25,57": 3,
+      "25,58": 3,
+      "25,59": 3,
+      "25,60": 3,
+      "25,61": 3,
+      "25,62": 3,
+      "25,63": 3,
+      "25,64": 3,
+      "26,56": 3,
+      "27,1": 12,
+      "27,27": 3,
+      "27,60": 3,
+      "28,60": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "1,1,1,14",
+    "1,16,1,3",
+    "1,56,1,2",
+    "1,58,1,5",
+    "13,56,10,9",
+    "27,27,1,28",
+    "4,2,1,3",
+    "4,5,1,5",
+    "4,10,1,5",
+    "4,15,1,3",
+    "4,21,1,2",
+    "4,46,1,5",
+    "4,51,1,4",
+    "26,56,1,9",
+    "27,56,1,4",
+    "27,60,1,5",
+    "28,56,1,4",
+    "28,60,1,5",
+    "0,56,1,2",
+    "4,42,1,4",
+    "4,23,1,3",
+    "2,56,5,9",
+    "7,56,6,9",
+    "23,56,1,9",
+    "4,26,1,2",
+    "27,1,1,2",
+    "1,47,1,8",
+    "1,42,1,4",
+    "4,38,1,4",
+    "4,33,1,5",
+    "4,30,1,3",
+    "4,18,1,3",
+    "5,1,19,54",
+    "25,1,1,5",
+    "3,2,1,3",
+    "3,5,1,5",
+    "3,10,1,5",
+    "3,15,1,3",
+    "3,18,1,3",
+    "3,21,1,2",
+    "3,23,1,3",
+    "3,26,1,2",
+    "3,30,1,3",
+    "3,33,1,5",
+    "3,38,1,4",
+    "3,42,1,4",
+    "3,46,1,5",
+    "3,51,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "母版页1",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=未阅卷管理页面!BE24"
+                  }
+                ]
+              },
+              "value": "0"
+            },
+            "CommandList": [
+              {
+                "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=未阅卷管理页面!BE14"
+                },
+                "CellLocation": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=未阅卷管理页面!B5:BC24"
+                }
+              }
+            ],
+            "ID": "fdd56969-cf60-47ba-846f-4ac07b426579"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//9sJewMCDX5DdFCjB2N0JL6C1lVOraqWG29fxGBaGrCE9qFJKhUUX0xdDBa+ugtgdCVF4E28YPMnDb3Np2FEO3csioJattNbfPcY5cfeq2iOKU+RdYcEj+vi3Fb2ZG1JMpbsCP+8cFr0etZgtOjJH5u4iV0blSSDz9CRj2TFNRajbgMJDjqO8cata3ol+kxkvT9LPvmxJA2wGqkg3m73PMKO1o9BXCN+CX5Td+WJH+q2LCB5zZPDVzv0rmT3FsF8BlWDfH20UBQh/InQN9lgsN7zCD9A/MSUqUFnyXObXN+S/gKhI7YfEHQvobLnY2ryWc12s4XyTohSFmgtaWf5dVFm6ATpSrNYD7I9Bt1RM1Eh5t9V0PzoZPLGwmlNhr/JluWtUioUar4FXLll9TFrIAjVeh+kdnt+Hw/SznxomyApcvlLWjHI4R1TMkRc1T93Bel3fPFfOq2ck4GxkBjhI654eFTOrBUk7jFI+kdWfwidM/8LeUZE3bEoWywOfg0nMEYn+wkODuKyNI7yUbvECdeCrsE6wjWuH2NpSvyp4Uo/wMasj1McKbNljPWOOZitOwgnDNxl1clSJCLMy6h+Eu+ZmQocL4iaPHg9CUjmwObPFcpO8qYdMHHdeXDi/GQsNIeGtSjA53IdEPrW1JCOS3ETu14ICH4iYHaZD1sp3uXOIgNGbDl0hF9eCNkjaRs8LGQZ40504up3uq9nOQAOINlavySLZN1VFZ0NAsA+gtlwjARd32qDo+jttBiawQeWA5AlOboHFXlsRDhdMDLMGI9oa2/E8uyU2M2Bxal9OYP4yHUxp2qa3Ws772gZZnaP4ovxXWtGxM1pb4FbaOivIlhTPpw6sKlZwM/RSc2FxixAHXfe6roJ4hAjwAJT6cHmKMcdvyvLSKKaB/UPfmVSQWQ==|920

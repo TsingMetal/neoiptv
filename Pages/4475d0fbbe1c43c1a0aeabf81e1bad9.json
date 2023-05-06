@@ -1,0 +1,131 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      7,
+      8
+    ],
+    "Count": 9
+  },
+  "Cols": {
+    "Count": 19
+  },
+  "Values": {
+    "1,8": "得分：",
+    "2,8": "考试时间：",
+    "3,8": "批改时间：",
+    "4,8": "批改老师："
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      },
+      "TemplateCellSource": "试卷"
+    },
+    "1,10": {
+      "TemplateCellSource": "得分"
+    },
+    "2,12": {
+      "TemplateCellSource": "创建日期"
+    },
+    "3,12": {
+      "TemplateCellSource": "批改时间"
+    },
+    "4,12": {
+      "TemplateCellSource": "阅卷老师"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "Foreground": 1
+      },
+      {
+        "Foreground": 1,
+        "Formatter": 2
+      },
+      {
+        "Foreground": 1,
+        "Formatter": 2,
+        "VerticalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FF999999",
+        "yyyy/mm/dd hh:mm",
+        "Top"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "1,8": 1,
+      "1,10": 1,
+      "2,8": 1,
+      "2,12": 2,
+      "3,8": 1,
+      "3,12": 3,
+      "4,8": 4,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 4,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "4,16": 0,
+      "4,17": 0,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 1,
+      "6,11": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "6,14": 1,
+      "6,15": 1,
+      "6,16": 1,
+      "6,17": 1,
+      "7,8": 1,
+      "7,9": 1,
+      "7,10": 1,
+      "7,11": 1,
+      "7,12": 1,
+      "7,13": 1,
+      "7,14": 1,
+      "7,15": 1,
+      "7,16": 1,
+      "7,17": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,8,1,2",
+    "1,10,1,6",
+    "3,12,1,7",
+    "3,8,1,4",
+    "0,0,7,7",
+    "2,8,1,4",
+    "4,8,1,4",
+    "4,12,1,6",
+    "2,12,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "查询结果",
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//sdV9Aqi/8IxvHEOY+FnJJsw7Ojn7EKLQmibGVP/27IYSEF3KJG0qpcuyJiiPAc5amM8b0nQYZP0PDJ9dsXIRQ7iCWq1od07ONfGM80jpIRGMZY75El96VP0ncfxLV5QW2p+jgfQsZtLWfNj/O1s/OgCJpFOK/xwl2c8j+dfI2OiUQ2jCQqg3ir6iUYDBk2XKm+0Qn3GmEpsDIblAyY4Q4ge8k3wB9rptNHPUrFpuaZZSYiWyUOjcuuL4mejkqD+3IUccct7wwPv46RzmT6QTIhMuLh6XJr/wLlNq3BXJlFPAcnmFVzC9nkr/GttGwmOVsBiTL4GU9wVBQyVMF/InNPHSNC1K0TXmOHkNwS7KiqfNWipP27SDpzgj+6dxKV55bXGvMg+p2OMiz3HX1sAYC5+ZFy8mDEiirKHSzxgMzryvdaTGINmSKSCsM44qqdW7h7mBIwzAWsMQwu35O17A3dRPzwvrqIqktSowmxu5lKgoKu90jx0x5z7NRk0c4vcHIOq453CyNddDFrhz349auSBgxxSXwuk5Xq5f5j6Y6P9VzS/uqTioEV5gfq2werrSg52oZz5b2/CwnkHiBm+zHoGC+CcAcQkituxs3sepyhzBc0OSuqzCp3qodvuoQfj2aKpAqKFt9cWIYgcvcz7YpO6Ts6wZKrnwmGTCONG4kcBGKwYAQ/bpaF79+VuXBBuUpf6WA56PB1rECqvtKA8cQZPN5F5on/5P6I+cbZiT/7U6oEyd1Jou1r6uQIf1o3egQhaBP/aRkKBdZPxfn8KNAfU3pU2cYqYGan6KAvy889aqbHT+uI/ZTnAajqsaDvpAXH9RZQcTQQEz/G1QVd7Xx3ub0b8JsP0qpSvu/iKq7+FhXgHme7eWJ0o9RpW0fQf+3TEhYNUDtBY7QzIn49b6ZA==|920

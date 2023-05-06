@@ -1,0 +1,600 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 36
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 64
+  },
+  "Values": {
+    "2,11": true
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "微信图片_20210128110953.png"
+      }
+    },
+    "1,58": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "2,11": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "CellDefaultValue": true,
+        "Style": 2,
+        "PrimaryColor": "#FF5C84B2",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=母版页1!A:I"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=母版页1!L3"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "7,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "样式1",
+        "Items": [
+          {
+            "Value": "阅卷管理",
+            "Text": "阅卷管理",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "Expand": true,
+            "CanVisitRoleList": [
+              "FGC_Anonymous",
+              "Administrator"
+            ],
+            "SubItems": [
+              {
+                "Value": "首页",
+                "Text": "首页",
+                "IconPath": "Application/132_title_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "index",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous",
+                  "FGC_LoginUser"
+                ]
+              },
+              {
+                "Value": "考号管理",
+                "Text": "考号管理",
+                "IconPath": "Application/015_add_user_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "考号导入",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "Administrator"
+                ]
+              },
+              {
+                "Value": "题库管理",
+                "Text": "题库管理",
+                "IconPath": "Application/148_copy_2.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "题库列表页面",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser",
+                  "Administrator"
+                ]
+              },
+              {
+                "Value": "开始阅卷",
+                "Text": "开始阅卷",
+                "IconPath": "Mobile/468_edit_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "Expand": true,
+                "CanVisitRoleList": [
+                  "FGC_LoginUser",
+                  "Administrator"
+                ],
+                "SubItems": [
+                  {
+                    "Value": "未阅卷管理",
+                    "Text": "未阅卷管理",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "未阅卷管理页面",
+                        "DeleteCachedQuery": true
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "Value": "已阅卷管理",
+                    "Text": "已阅卷管理",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "已阅卷管理页面",
+                        "DeleteCachedQuery": true
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              },
+              {
+                "Value": "上传试卷",
+                "Text": "上传试卷",
+                "IconPath": "Application/105_upload_5.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "Administrator"
+                ],
+                "SubItems": [
+                  {
+                    "Value": "试卷（4题）",
+                    "Text": "试卷（4题）",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "5题试卷上传列表",
+                        "DeleteCachedQuery": true
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "Administrator"
+                    ]
+                  },
+                  {
+                    "Value": "查看准考证号",
+                    "Text": "查看准考证号",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "查看准考证号",
+                        "DeleteCachedQuery": true
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              },
+              {
+                "Value": "学员查询",
+                "Text": "学员查询",
+                "IconPath": "Application/044_search_5.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "Administrator"
+                ],
+                "SubItems": [
+                  {
+                    "Value": "二维码",
+                    "Text": "二维码",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "二维码"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "Administrator"
+                    ]
+                  },
+                  {
+                    "Value": "成绩查询",
+                    "Text": "成绩查询",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "申论阅卷查询",
+                        "DeleteCachedQuery": true
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "Administrator"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "阅卷明细管理",
+            "Text": "阅卷明细管理",
+            "IconPath": "Mobile/383_file_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "修改未阅卷明细",
+                "Text": "修改未阅卷明细",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "修改未阅卷明细",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "查看已阅卷明细",
+                "Text": "查看已阅卷明细",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "查看已阅卷明细",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "所有回收站",
+                "Text": "所有回收站",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "所有回收站",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "回收站",
+            "Text": "回收站",
+            "IconPath": "Mobile/419_share_1.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "回收站",
+                "DeleteCachedQuery": true
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "MenuLevelsStyle": [
+          {
+            "Height": 45.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "Height": 32.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "Height": 32.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "7,9": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 2 0"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,58": 2,
+      "1,59": 1,
+      "1,60": 1,
+      "1,61": 1,
+      "1,62": 1,
+      "1,63": 1,
+      "2,1": 1,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,58": 1,
+      "2,59": 1,
+      "2,60": 1,
+      "2,61": 1,
+      "2,62": 1,
+      "2,63": 1,
+      "3,1": 1,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,58": 1,
+      "3,59": 1,
+      "3,60": 1,
+      "3,61": 1,
+      "3,62": 1,
+      "3,63": 1,
+      "4,1": 1,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,58": 1,
+      "4,59": 1,
+      "4,60": 1,
+      "4,61": 1,
+      "4,62": 1,
+      "4,63": 1,
+      "5,1": 1,
+      "5,2": 1,
+      "5,3": 1,
+      "5,4": 1,
+      "5,5": 1,
+      "5,6": 1,
+      "5,7": 1,
+      "5,8": 1,
+      "5,58": 1,
+      "5,59": 1,
+      "5,60": 1,
+      "5,61": 1,
+      "5,62": 1,
+      "5,63": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "7,0,29,9",
+    "7,9,29,55",
+    "1,1,5,8",
+    "2,11,3,3",
+    "1,58,5,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "a0212117-67a3-4093-9b4e-6e0ac4ef44ad",
+      "DisplayName": "背景图2",
+      "ForguncyPictureName": "PCMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1280,55"
+    }
+  ]
+}//WiNHsp5RuwgnugRys469CmJqiqmD1sio/6YJXAdJdt34fzEjbYtN7bGETmi5XTS3XX/uT/GH9BcDmyNLJadR/a8vh1iVeIoDGIXo8EeKn0+le7+7xgKreXy7n9c1A7Nmovpce/T/6ifat9huQFq0MX+znBtk4liUrhMppuMxxN3bjnP7Xznrw6qiJa58Y52DDSPN+HA2S8oro3vTSIDkW+wlxBNnVOYL+yLe5gKXbNUQWoEOApLZNrVO7JiOJTUcBTBkr9p2TDpXiNzirJ3/ds2iUoFn/6Vy4F8W/lAu7LmC+QVhPSns6E0SJmhwEdomNwNNPS6vjpVD/VrSC3ORqz1jhVHCOvwVRqWI/aFd6qhfZj3s0cEEBqQmwZdQU5D+J0HEWp55/ASiG1846xT1AWC1T97qPkYIDClAQRS4zefgbnIeBJnyk8HY05+l1y7rcVqjupUI6uIctXJgvDMtRh6YHifFNPOEFagCH/vdSowgnqzlWwOmiCKsu2DqEs6U0iPq69xB3O8rtuBChF0+5yvBv0/glFA57Q4LR0bZ+CriDIk7v3zCOi6Gg2ejDf6zGNA2bnpxhMPMUiA6hufWr23EA7fPKDAS97GgLLVMpOhXIiNyBrSaq2Gsr2Z+XjH5x9GnEWr/oOSSMesacj3xBll52niUSZVS46/a0rlmLK1zXM5tfkzfT+6zQ+MqZeOgDtBgdHTXJqzEgEoMLk00NbDyyy7qXeZ/TU6gOMGZUoWOlqel+GNImPxL537XXFDDJyfv8/VMIOdfNc9zkWuOq23QPnpG9xQqLC7+kb1oRFCptjSHAkgn9llEbsk1JcX4Cj6X/w5fs0KJaQ89FOrPyyDxciY4saLE8ahCqzqhMLxU72vWv2dElaxzOplsHYFCE4GqQwDEVwidI6kp00mSlA==|920

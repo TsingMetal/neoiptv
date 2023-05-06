@@ -1,0 +1,65 @@
+{
+  "Rows": {
+    "Count": 38
+  },
+  "Cols": {
+    "Count": 55
+  },
+  "Values": {
+    "30,4": "这是活字格的内建页面，为了和你的应用程序匹配，你可以修改这个页面"
+  },
+  "AttachInfos": {
+    "4,4": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0,
+        "Foreground": 0,
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 50",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "30,4": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "Underline": false,
+      "Strikethrough": false
+    }
+  },
+  "Spans": [
+    "4,4,26,47",
+    "30,4,2,47"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "9d382752-f3ea-48a3-bb53-d6d47ed4c55a.png",
+      "DisplayName": "背景图1",
+      "StyleInfo": {
+        "Fill": "Accent 1 0"
+      },
+      "IsAutomaticFill": false,
+      "Location": "80,0",
+      "Size": "940,60"
+    }
+  ]
+}//qr9bdj30fxThzLelpp7VCDe3TWNB7EVExkONLQ9AvB3atM+oemkjEm1qEr7s21loryonjljky+8YS4xcxnChUzTIc0EndN00JnrzvU+97bQ8ksEebry0zT0IPzasdpTGlkRpu5soIC9EgPsdSpkThAeW7MCPuoCmBxSF277/SP9NjAXbf2q6hoD/24pFZaqbZrSL9vCx+JAEWlHwTfrANpcERPd3uBjYykFvupL4ZO9c/PieKzsHfrs8gEPg3RvoSYpXdn0SvoHFryq/yYVeZVmSfEHNmr6B3z2bL1n6j7tKDPPQunFMmAOz9F3lWBhEhfd10vtf66oQ401+OuKZD5sQ6himiN/JI1h2NhY/Y9Jm6YkECsDOBfhUN198nucA+50VqfrdqKVz8LqTSN4QmCdY54tmFnbAyPg/nehUD4OiGl26nxgWxSX9h4DD82ejWClpkAjZqaZzg/GNmgMu0Da0MeMfD7JfWnRIROvcaPEKxIuYNyuNKkmvteiaUkJKZ75mTrfCUeLVSMF4DjW/ZLDjOKd7NoucJs6CsDFB1lwsBkQ9MMSdCIh5ATFIKYRE3Bc6fkCFaDL/uw55ds6kzGKnFDxIYM5xngpLqoyT3TgVnQVt8f16QU4WAbsXs7a+ANZwi+0xn7BZMmE5GHge62CUXqJ1xFD7OeaVsFFP4A7zc16ClmILDzUhB7ntrQ8Y1S+0Q2cLOn8G1hg9QfuqmaFjznLQSfS4xZ29oWWfJt3RiI3ZReHaW4gKCR1LRvgsfb0bnXjx/oIgELD5nCK5QIhdEEQiCByAUOBwmhZeCttS7jtRbMGBVukKPZ68pL55mAMmEiYpem+3QW2JqR2elOxQnvmqlqwhAwx2g6LRGMAoaPYvIgcvqS8OK8RI37F73GqMgn8W+K+hq+hPdqKdBw==|920

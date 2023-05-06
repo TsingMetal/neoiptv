@@ -1,0 +1,153 @@
+{
+  "Rows": {
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "2,1": "页面未授权",
+    "5,1": "你没有权限访问目标页面",
+    "7,1": "可能的原因：",
+    "9,1": "目标页面只有属于特定用户组的用户才能访问",
+    "12,1": "解决方法：",
+    "14,1": 1,
+    "14,2": "登出，并使用其他账号重新登录",
+    "16,1": 2,
+    "16,2": "单击浏览器的后退按钮跳转到前一个页面，再选择其他链接浏览",
+    "19,1": 3,
+    "19,2": "联系网站管理员申请权限"
+  },
+  "AttachInfos": {
+    "14,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "Text": "登出，并使用其他账号重新登录",
+        "ForguncyAttribute": "401Login"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 21.33333396911621,
+        "Foreground": 0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "FontWeight": 5,
+        "Foreground": 6,
+        "Formatter": 1
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 1,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "Foreground": 4,
+        "Formatter": 1,
+        "HorizontalAlignment": 7
+      },
+      {
+        "Foreground": 8,
+        "Formatter": 1,
+        "Underline": true
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "Foreground": 4,
+        "Formatter": 1,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 9
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 1,
+        "VerticalAlignment": 9,
+        "WordWrap": true
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1 -50",
+        "[AUTO]General",
+        "Center",
+        "Bottom",
+        "#FF3F3F3F",
+        "Bold",
+        "#FF7F7F7F",
+        "Left",
+        "#FF0070C0",
+        "Top",
+        "Body",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0,
+      "5,1": 1,
+      "7,1": 2,
+      "9,1": 3,
+      "12,1": 2,
+      "14,1": 4,
+      "14,2": 5,
+      "16,1": 6,
+      "16,2": 7,
+      "19,1": 4,
+      "19,2": 8
+    },
+    "SheetStyle": {
+      "FontFamily": 10,
+      "FontSize": 13.333333015441895,
+      "Foreground": 11
+    }
+  },
+  "Spans": [
+    "5,1,1,16",
+    "7,1,2,16",
+    "9,1,2,17",
+    "12,1,2,16",
+    "16,2,2,15",
+    "2,1,2,16"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "401页面",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_Anonymous"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//nvikMBhjV87WZ0HLXQQmonsrMGhLp6S3ulcNX1AcTdadSCseNmuPtVMohT/AInTIVUhcJX0lI8umhKcOAwm+mSCrXbL5PerJGcRyYouCMDmhPDvBRUkpweA7f5PpvK2aiWCCqLvbmsQ0E5wAMrrP7G8NyGJXXViSGJHqmaeDqpjUjzGdTXJdhuWRGf0C7LpmiuSJ/F4+mKkjFdm6CPhHF4MiKYUMu86JVx1aOUBb5FV3zPS7b6AlufU05R2uyfve41b/GjD3oIlCNo2I6o+u/FIQ6h2Fe6KKDwa6xX1u7VOMtutpryn3HWByZhvVtgKOPpnuOZST/7EtRYiJxR+CyHdCKpF6eevHh0473S/t0cQmai2f3h6QiAsVnkShbP2h08uPy6JqeU39e52LLg9lfeWaRA7HPCjZy7IKC+87njBj0eM29ATh+FOl7oFcMwtE2XDaVKDbhqQtXaV3ie5YQkn9B4xn/KU/yR8eqc5iBugr7LpqUT1K1FDsDxyjy6ZSWbAC3X7mybNKpqRMiYoafTHphetgQc9XabydFiVpJ7GCSqFsSBFPDlvNbx2QxIafyX299Ca9a8GKJ+pNunNG46x4PMOHrpqd3ntM9uyuAhx9eGMH6/ih2RMXsud/GNQRAiBhT+2L+JOiqYCQjYzn1FU9IdiMjfaSYiqMDMUMmST3jMfd9JOPqp4YJEenStGeoKEAsho9o6coCYrkU9QHSW5Q4x9+HmphL0gBKUJABUIGjV8wXcJFN/w6MVj/ZxAT4ceTqzs17UVZ6b+r/jWoPjkTBIIdKwpHsAT8D9W1MVOGLgYebjg7tZ+aDrVsTZR5hppjnmH/Lm0Mv2Gaitm+rKsLARHi/fkoQrP4cCdwbcaiwzZRYpz8skkBTk7Qah7rcxrCgqnPOMOzt4oQWVPWNQ==|920

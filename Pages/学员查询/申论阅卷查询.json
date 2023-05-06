@@ -1,0 +1,247 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      1,
+      2
+    ],
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "1,1": "姓        名：",
+    "3,1": "准考证号：",
+    "5,1": "题       型：",
+    "5,5": "概括题,对策题,综合分析,应用文写作,议论文写作",
+    "23,0": "查询"
+  },
+  "AttachInfos": {
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "WaterMark": "请输入姓名"
+      }
+    },
+    "3,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式3",
+        "WaterMark": "请输入准考证号"
+      }
+    },
+    "5,5": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "CellDefaultValue": "概括题,对策题,综合分析,应用文写作,议论文写作",
+        "Style": 1,
+        "IsBounding": true,
+        "DataSource": "题库",
+        "ValueColumnBindingInfo": {
+          "TableName": "题库",
+          "ColumnName": "题型",
+          "GUID": "996c9ea6-6102-49b6-a7af-207f33d8de05"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "题库",
+          "ColumnName": "题型",
+          "GUID": "e43a7478-0dbc-4ccc-a876-00431efc6593"
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "23,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=申论阅卷查询!F4"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=申论阅卷查询!F6"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请输入准考证号以及题型"
+                  }
+                ],
+                "ID": "5a99e801-0c13-4dcb-81fd-bfbc62516d31"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "查询结果",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申论阅卷查询!F4"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=查询结果!F65"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申论阅卷查询!F6"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=查询结果!B65"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d7eb3956-b98a-4ebb-a7b0-886779874205"
+              }
+            ]
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "样式6"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "Foreground": 0,
+        "VerticalAlignment": 2
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "Foreground": 0,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 2,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF999999",
+        "@",
+        "Top",
+        "General",
+        "Left",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,5": 1,
+      "3,1": 0,
+      "3,5": 1,
+      "5,1": 2,
+      "5,5": 3,
+      "23,0": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 5
+    }
+  },
+  "Spans": [
+    "23,0,2,18",
+    "1,1,1,4",
+    "1,5,1,12",
+    "3,1,1,4",
+    "3,5,1,12",
+    "5,1,1,4",
+    "5,5,3,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true,
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//QJsI4ClANfcaNFSG3uXdcxNLER6GZK3PNkVSCwhxvkyAAy822r5DNMvzq1qf0KcFK7CFbMnrhN7IKmPu4zVkVd74yCKIEKuaWZTC7EomIOo3qmSs75QaMzexDM/X8okDnZ2Kx7KVmzJxSYqPB+yaG6OOaw9aV4P+RWa9e279akqeKZWVgScPxEeliJqJpJIDYTlh5TR8vMaSS4jX6qIAnmuIgD3p+//IRVs86XoMQpdOUyOMvEKXvlgIoOCghlfl8d+ZkNA5Ga0bnqq2raxgA2EQNkIDPn2P8PnDud9N6gLV7Y/8MtmtzDVnaCJvwuZ+A2In8bkAkh63GUcGfX7ufC+tYH0a7qGg1w7Yg6u1lGu7zBNvuvm0pPbV6EBMXS/V8FdgUNYgYLKbSjiz5SQ4ZYTr1S6Z303U3NEAcr6wrmVEFTXwL9cHM8iXw5E4fjFEvCqqLJcREJu4ycNu9iEIF/vuStxrxYWIPxAhsfp7sy4Szjbp401YOCEg0YsA9vgIwX4jvGxBgVpaLpEUZlJmS7wPq/jH0JKkjuuCyutujp7H+w+U+i5NEJ5PVvtmljRq0pEIeykbW3jm1Bzl7pnOZokVeTEJUvCHN3mn4GwkjZSen/wA1yY9szJZXhdC4pO7lvJxq7aEnBwvErtuZHJ5tw0jT8E8UgwgdcaYPQVX4meo0G3CgkR5Nmj12jTdQAyYUOgBGY12Nh5tflEMjRbrSeYDhNw8RuHZNBQ4/gbU6pitoilrRJh1lmU36hzP3g3ftucrIf2rguLt5eiMYk47/3GSItvDM7enBxtQWDQSxsBUFdXDSDFtd6Qc9NUZc5OoSAq1bOc2zpugECyA3rjnwPR0++Nma4wY1IoYLVV9nL9VYU6A/ywqsVuo2wkMVwXqB3UgMcZmjt36s5BjjKOIQw==|920

@@ -1,0 +1,37 @@
+﻿.save {
+    position: relative !important;
+}
+.save:hover:after{
+    position:absolute !important;
+    top:41px !important;
+    right:0 !important;
+    padding: 0 5px !important;
+    content:'点击完成批改按钮后会对之前批改的全部试卷进行更新' !important;
+    /*在这里设内置好title出现的位容置就好了*/
+    width: 400px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    color:#ffffff !important;
+    border:1px solid #7F7F7F !important;
+    border-radius:3px !important;
+    background-color:#7F7F7F !important;
+}
+.myPos{
+    width:75% !important;
+    height: 50px !important;
+    position:fixed !important;
+    top:0px !important;
+    left:10px !important;
+    z-index:999 !important;
+}
+.myPos2{
+    width: 15% !important;
+    height: 50px !important;
+    position:fixed !important;
+    top:0px !important;
+    right:120px !important;
+    z-index:999 !important;
+}
+.drawArea{
+    width: 100% !important;
+}

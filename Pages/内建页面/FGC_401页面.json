@@ -1,0 +1,143 @@
+{
+  "Rows": {
+    "Count": 26
+  },
+  "Cols": {
+    "Count": 47
+  },
+  "Values": {
+    "5,12": "页面未授权",
+    "8,12": "你没有权限访问目标页面",
+    "10,12": "可能的原因：",
+    "12,12": "目标页面只有属于特定用户组的用户才能访问",
+    "14,12": "解决方法：",
+    "16,11": "1.",
+    "16,13": "登出，并使用其他账号重新登录",
+    "18,11": "2.",
+    "18,13": "单击浏览器的后退按钮跳转到前一个页面，再选择其他链接浏览",
+    "20,11": "3.",
+    "20,13": "联系网站管理员申请权限"
+  },
+  "AttachInfos": {
+    "16,13": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "Text": "登出，并使用其他账号重新登录",
+        "ForguncyAttribute": "401Login"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 37.33333206176758,
+        "VerticalAlignment": 0
+      },
+      {
+        "VerticalAlignment": 0
+      },
+      {
+        "FontSize": 18.0,
+        "FontWeight": 1,
+        "VerticalAlignment": 0
+      },
+      {
+        "FontSize": 14.0,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 0
+      },
+      {
+        "FontSize": 14.0,
+        "Foreground": 3,
+        "VerticalAlignment": 0,
+        "Underline": true
+      },
+      {
+        "FontSize": 14.0,
+        "VerticalAlignment": 0,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Top",
+        "Bold",
+        "Right",
+        "#FF0070C0",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "5,12": 0,
+      "8,12": 1,
+      "10,12": 2,
+      "12,12": 1,
+      "14,12": 2,
+      "16,11": 3,
+      "16,13": 4,
+      "18,11": 3,
+      "18,13": 5,
+      "20,11": 3,
+      "20,13": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 4,
+      "Underline": false,
+      "Strikethrough": false
+    }
+  },
+  "Spans": [
+    "16,11,2,2",
+    "18,11,2,2",
+    "20,11,1,2",
+    "18,13,2,23",
+    "20,13,1,23",
+    "16,13,2,23",
+    "8,12,2,24",
+    "5,12,3,24",
+    "14,12,2,24",
+    "12,12,2,24",
+    "10,12,2,24"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "FGC_母版页",
+    "MobilePageName": "FGC_401页面_手机版",
+    "Title": "401页面",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_Anonymous"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "2e7e546e-a7f1-4e86-b8d4-dcb02575df77.png",
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "200,80",
+      "Size": "540,360"
+    }
+  ]
+}//OpsjyIWIkzeOpHPTW13wmH2aC5bkgZktDa61LBYvtlRe/BELvlTGvAaXNs54wISovgS1zdAPCy1mncqA8RhIJeQy+l6vTt4vgZ44rUFPPk/4OCZBUESqMmJZDOIEPZsW35DkFZ7h1hG9trubMY6xCpDIKP5YVpCjAK2seehcdaAxftfg8QC+9rMuwCB4eRk+QiibHTZJmJGd3zOBqHgxN0vLcFhRriZwVMy1KszGTjLzvQ0CdIyBeiMFAfcehuOFYi/g2hsP7YKl/a3ZOUZtYK4I9nW1asvZYnwiwNJbBYoxpKBovsflDnr2yAzvsjNSGvI6ZodVdgIw9UQBJcEVgTnvkRyaA3d8t26+t95tSYjgxKWXp6zQaYBtPGPOMZeo5m3fP7qoJwtFu/K3mIUyznciu0Jkq/LBfTsa+GhE9ri4WdmTIVLsSxP7b0CryxRreBuEpWiqH8JWGVuSHxioiBv/eHfdbZgANkD3xco9OHM6MgyCL2tyzYjZDwdbUgbXkDQceDlksoyNyyzl+YLkDEht9+uYszGnOWBBCNRqCB6x2xJ5ge6uFysbvWCCNsDPR/bDemxJdc0A9K0meKGuAjuOhi98deAmB8w7V1pzgwm7jFcopwRAn+dil3uBulqehjJVInoyUslx7KwdRj/5JLlUb1c2xqYzl2nH3IQC+OqZp2OQ33/IwYUUbjxtPlZ3dbEAVMubWw6KKM3YQX+mhlA+KlVRG9V91auNOU5sbvvf6LTutHx70D00f7EzFzCpfXtf1oqoLGKZh449qyPkTjcnKXJt889lmRtbKKl/hKJbo12mBLztNJRj7OyZc4OMIwUmoKW/t8uWYMTUANfCwa47p5zqHa7vBcLes1hQX8iiPVuyEapCelcS9NMBxOuCrwzIZppn8v0Sl+u1p1qBSQ==|920
