@@ -1,0 +1,91 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "5,10": "班级：",
+    "5,24": "考试名称："
+  },
+  "AttachInfos": {
+    "5,16": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "考号档案",
+        "ValueColumnBindingInfo": {
+          "TableName": "考号档案",
+          "ColumnName": "班级",
+          "GUID": "2f5cad12-b1e0-4498-9d73-9b35174938e5"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "考号档案",
+          "ColumnName": "班级",
+          "GUID": "9c2e85d2-c604-46a2-89c9-8eda2027e5dd"
+        }
+      }
+    },
+    "5,30": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "题库"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "5,16": 0,
+      "5,17": 0,
+      "5,18": 0,
+      "5,19": 0,
+      "5,20": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "5,24,1,5",
+    "5,16,1,5",
+    "5,10,1,5",
+    "5,30,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//0be5yAzJwJY5+gIcQyJWUBvYih53/Fxf/ViEx8TEanCYy4dSJ8KRMkhhs//iSBf1favTQcmmHxo4REHL2EOW3IuuygrJwVZEbg5PPO3hd6ElwCcs5VcvBDEuMctnPcX9+VcIpmyfChhFhVL8FYaciRUh/uawEAb+yEDcpmASuFwttMWhZYL39g+cgGy63c1pMeTT1wP7PNMlC83AyndoetUz6U6l2Rs+KZyTBgjtraHs2zDFPpdi7b2ELkZG9X7DfTHBZIt4/MRIrK2fFbyHZzjn5PPg09llN4uhqJ3eIWlu9yT3m3UTQRXZPh5FxssVJCtiUHj9Bh9zhtlSxORLhYA370R89e+A9m2Y7OcR4e9z+KJzcom2EhS9hXY0poeOPst3M1/a1B2CvKTLM97VkOwN8/oqcOYxwfs9dzxJ/OUbWaJByL7DuLcJmOL1SPvYeGUM0OToZhGogyCMH8mLq4GEUuEvSKqScloU97zephOFiufplhoIJ3fCjpdsXpt1jHN/ncexnEyIpH5uSLmDnf0rYMC9eb9iaSyGklCJSweW7dw2o7+CEgexdon0x+R4pYH3qmMki6GUMEikqro5UyQ+eCZNAXWb0HmYXcpV/PpZYDTOTiUPjGCJD0OcI16Ic3BscPcySwqZKSQvZs+VZN+DcYfxrCATUTCqHCkvXxZbpDFx+my17X6o0GlytcM7LHER2Qbu+IsHEI604DxKGNohqJqdL1cwh+5vKuiKWqxLbpYX7ezjNCgkXfkBPk08/IvGAqGGkD2g+8Ds1StU2fAIhu+zYvQubD32MHzSpyr3CA/TF8kiB0KgOx5lxGXBEv0gvkggkL6DRKrfDOa9z5ZCUeHv7G+yZ/Ccjet51Qi6lIAGEjRDZGX4eHXO81ALpvjA/vwxCYkC2JdFaZTejg==|920
