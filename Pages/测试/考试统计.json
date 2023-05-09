@@ -1,0 +1,476 @@
+{
+  "Rows": {
+    "Count": 34
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 176.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 176.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 176.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 176.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 108.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 108.0
+        }
+      }
+    },
+    "Count": 60
+  },
+  "Values": {
+    "1,9": "题目标号",
+    "1,11": "总分"
+  },
+  "Formulas": {
+    "2,9": "RIGHT(I3,2)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "阅卷表",
+        "RowIndex": 1,
+        "ColumnIndex": 2,
+        "RowCount": 11,
+        "ColumnCount": 20,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试名称",
+                "GUID": "04678fbe-602c-46ed-876b-67340c3f9dcc"
+              },
+              "Value": "%Null%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "学员姓名",
+                "GUID": "d00392f0-ecd4-4ed2-99cf-8609502c5060"
+              },
+              "Value": "%Null%"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsTotalRowVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,2": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证号",
+        "GUID": "79067dce-aab0-4b76-8846-2900d5ae62d8",
+        "RelationBinding": {
+          "RelatedTable": "考号档案",
+          "RelatedColumn": "准考证号",
+          "DisplayColumn": "学员姓名"
+        }
+      }
+    },
+    "2,6": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "考试名称",
+        "GUID": "ac4a1c84-c9ec-46aa-87cd-695702953c8b"
+      }
+    },
+    "2,7": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "考试日期",
+        "GUID": "7123a017-9fc1-4824-aca6-4f2f5fbdb446"
+      }
+    },
+    "2,8": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题目名称",
+        "GUID": "101d2caf-f814-48fb-aef0-c7eb6ad803d4"
+      }
+    },
+    "2,10": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "得分",
+        "GUID": "ad3de8fc-b644-487d-b9ef-b67a846704a3"
+      }
+    },
+    "2,11": {
+      "TotalRowSetting": {}
+    },
+    "14,4": {
+      "CellType": {
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
+        "PivotTableSetting": {
+          "SelectedListViewName": "表格1",
+          "Rows": [
+            {
+              "DatabaseColumnName": "学员姓名",
+              "DisplayName": "学员姓名",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!C3"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "考试名称",
+              "DisplayName": "考试名称",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!G3"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "考试日期",
+              "DisplayName": "考试日期",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!H3"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Cols": [
+            {
+              "DatabaseColumnName": "题目标号",
+              "DisplayName": "题目标号",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!J3"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Values": [
+            {
+              "DatabaseColumnName": "得分",
+              "DisplayName": "得分",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!K3"
+              },
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            }
+          ],
+          "DatabaseColumns": [
+            {
+              "DatabaseColumnName": "学员姓名",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!C3"
+              }
+            },
+            {
+              "DatabaseColumnName": "考试名称",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!G3"
+              }
+            },
+            {
+              "DatabaseColumnName": "考试日期",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!H3"
+              }
+            },
+            {
+              "DatabaseColumnName": "题目名称",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!I3"
+              }
+            },
+            {
+              "DatabaseColumnName": "题目标号",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!J3"
+              }
+            },
+            {
+              "DatabaseColumnName": "得分",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!K3"
+              }
+            },
+            {
+              "DatabaseColumnName": "总分",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=考试统计!L3"
+              }
+            }
+          ],
+          "ColumnMaster": "表格1",
+          "RowMaster": "表格1",
+          "ForceFrozenRowHeader": true
+        },
+        "ShowSubtotal": false,
+        "ShowColsTotal": false,
+        "PivotTableConditionalFormatSetting": {
+          "Conditions": [
+            {
+              "Label": "得分",
+              "DataConditionFormatRulesCollection": {
+                "Rules": [
+                  {
+                    "$type": "Forguncy.ConditionFormat.Top10Rule, ServerDesignerCommon",
+                    "Rank": 3,
+                    "StyleInfo": {
+                      "FontWeight": "Bold",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "PivotTableStyle": {
+          "UseSimpleBar": true
+        },
+        "ShowBandedRows": true,
+        "PivotTableClickCommand": {
+          "RowHeaderList": [
+            {
+              "Label": "学员姓名"
+            },
+            {
+              "Label": "考试名称"
+            },
+            {
+              "Label": "考试日期"
+            }
+          ],
+          "ColumnHeaderList": [
+            {
+              "Label": "题目标号"
+            }
+          ],
+          "CellValueList": [
+            {
+              "Label": "单元格值"
+            }
+          ],
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+              "PageName": "查询结果",
+              "PassValues": [
+                {
+                  "Source": "概括题",
+                  "TargetCell": {
+                    "SerializeProperty": "=查询结果!B69"
+                  }
+                },
+                {
+                  "Source": "202301011330",
+                  "TargetCell": {
+                    "SerializeProperty": "=查询结果!F69"
+                  }
+                }
+              ],
+              "LoadBindingDataOption": 1
+            }
+          ]
+        },
+        "PivotTableID": "a3c2a905-e9dd-44f1-87e9-555f773f2d6d",
+        "TemplateKey": "样式1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1",
+        "Body",
+        "yyyy/MM/dd"
+      ]
+    },
+    "CellStyles": {
+      "1,7": 0,
+      "2,7": 1,
+      "6,2": 1,
+      "6,3": 1,
+      "6,4": 1,
+      "6,5": 1,
+      "6,6": 1,
+      "6,11": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "6,14": 1,
+      "6,15": 1,
+      "6,16": 1,
+      "6,17": 1,
+      "6,18": 1,
+      "6,19": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "7,2": 1,
+      "7,3": 1,
+      "7,4": 1,
+      "7,5": 1,
+      "7,6": 1,
+      "7,11": 1,
+      "7,12": 1,
+      "7,13": 1,
+      "7,14": 1,
+      "7,15": 1,
+      "7,16": 1,
+      "7,17": 1,
+      "7,18": 1,
+      "7,19": 1,
+      "7,20": 1,
+      "7,21": 1,
+      "8,2": 1,
+      "8,3": 1,
+      "8,4": 1,
+      "8,5": 1,
+      "8,6": 1,
+      "8,11": 1,
+      "8,12": 1,
+      "8,13": 1,
+      "8,14": 1,
+      "8,15": 1,
+      "8,16": 1,
+      "8,17": 1,
+      "8,18": 1,
+      "8,19": 1,
+      "8,20": 1,
+      "8,21": 1,
+      "9,2": 1,
+      "9,3": 1,
+      "9,4": 1,
+      "9,5": 1,
+      "9,6": 1,
+      "9,11": 1,
+      "9,12": 1,
+      "9,13": 1,
+      "9,14": 1,
+      "9,15": 1,
+      "9,16": 1,
+      "9,17": 1,
+      "9,18": 1,
+      "9,19": 1,
+      "9,20": 1,
+      "9,21": 1,
+      "10,2": 1,
+      "10,3": 1,
+      "10,4": 1,
+      "10,5": 1,
+      "10,6": 1,
+      "10,11": 1,
+      "10,12": 1,
+      "10,13": 1,
+      "10,14": 1,
+      "10,15": 1,
+      "10,16": 1,
+      "10,17": 1,
+      "10,18": 1,
+      "10,19": 1,
+      "10,20": 1,
+      "10,21": 1,
+      "11,2": 1,
+      "11,3": 1,
+      "11,4": 1,
+      "11,5": 1,
+      "11,6": 1,
+      "11,11": 1,
+      "11,12": 1,
+      "11,13": 1,
+      "11,14": 1,
+      "11,15": 1,
+      "11,16": 1,
+      "11,17": 1,
+      "11,18": 1,
+      "11,19": 1,
+      "11,20": 1,
+      "11,21": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "2,12,1,4",
+    "3,2,9,20",
+    "14,4,17,19",
+    "2,2,1,4",
+    "1,2,1,4",
+    "1,12,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "阅卷表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//N1L5SVDY0zRijp6KJNYq6Vjg0ViccmPQMItnO3N03gZtUxDVdXPM5cNBW+hnqKrQaEPeDQIqjeOW4qY4RFKmMW9Fw3dnv2C/QbR55GmOgCJp1SH0F21jLgdk8atBgAFk+F6x1VZstsP6kV0Jo+Orn7HJVGU+WSFWNDP063UCKb8gMgBeIHJdcwC5XXT8ZUgP29/TvrKJq9nggLfuWOQzC2FcH/bppq7XuPpkDDvjqpS1S7fIayM5ZH/RDFpkz2rsaDXT589tTCUKFKWL3WMjlpFttQmnvRUE2/sxwZ1sWUKxenb1GkkQ+acmlHk235Q5/z9c9JdqUI89TMzw97H5tIlGrHdnK7lV11adGYwN55AfKah+EInT3NCGv/QH+VkCG6LO9ZfMKK9n6hj0cTPB/I5X5xWiYqRpeQgYOTPWEOS6hDXad9IAFod6C3FOqqygBZ5+tv+tCNyjTmfSX1Ghvb++kXLeS54junu775n4f55m/nuvFcG4dcxNbRiMgPHl7mYqaaGVJGNctCySFXXAxj2TgHllEh2JFgY9sFPG3mWzI2rOwArOvQokiJC7/vGdIoILsXJgBaY2SUduCm9ykX9t/HSiJU8exUAjfm98vJBQ45ah0u7pOaWEZsAC49S2WdsgSo7qOBu/9NQFgSZWapc80Lc64/TEV46R8APEnZB0gJRoSFAnCRxcqIM23dXzqQUJ4amA5iwO7reTmiqSsc/iBQrVG+Ho7+WQ14kk64wT0fVcJG/sF7DRBZ3mUhdtNwHyYPDRrlR28F72StI0K42/4M/WZGPNOFTvozosH8cbiWqGpyaqysyg5GLgtUQG1pkQNwSV0ezLquXTDx6xMB6FxNSKVc220hx7OjXhq4HoA554bPqSe/73AXgpmsgZsKDymTDyaA2nKLnix0Jwiw==|920

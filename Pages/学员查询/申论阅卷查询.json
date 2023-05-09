@@ -124,7 +124,7 @@
                     "MessageFormula": "请输入准考证号以及题型"
                   }
                 ],
-                "ID": "5a99e801-0c13-4dcb-81fd-bfbc62516d31"
+                "ID": "d6e85162-648d-4d56-bc9f-b8abd98731b7"
               },
               {
                 "CommandList": [
@@ -138,7 +138,7 @@
                           "SerializeProperty": "=申论阅卷查询!F4"
                         },
                         "TargetCell": {
-                          "SerializeProperty": "=查询结果!F65"
+                          "SerializeProperty": "=查询结果!B69"
                         }
                       },
                       {
@@ -147,13 +147,13 @@
                           "SerializeProperty": "=申论阅卷查询!F6"
                         },
                         "TargetCell": {
-                          "SerializeProperty": "=查询结果!B65"
+                          "SerializeProperty": "=查询结果!F69"
                         }
                       }
                     ]
                   }
                 ],
-                "ID": "d7eb3956-b98a-4ebb-a7b0-886779874205"
+                "ID": "3ba1e1dc-6b9e-463e-b2e7-a4e5e431b41d"
               }
             ]
           }
@@ -244,4 +244,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//QJsI4ClANfcaNFSG3uXdcxNLER6GZK3PNkVSCwhxvkyAAy822r5DNMvzq1qf0KcFK7CFbMnrhN7IKmPu4zVkVd74yCKIEKuaWZTC7EomIOo3qmSs75QaMzexDM/X8okDnZ2Kx7KVmzJxSYqPB+yaG6OOaw9aV4P+RWa9e279akqeKZWVgScPxEeliJqJpJIDYTlh5TR8vMaSS4jX6qIAnmuIgD3p+//IRVs86XoMQpdOUyOMvEKXvlgIoOCghlfl8d+ZkNA5Ga0bnqq2raxgA2EQNkIDPn2P8PnDud9N6gLV7Y/8MtmtzDVnaCJvwuZ+A2In8bkAkh63GUcGfX7ufC+tYH0a7qGg1w7Yg6u1lGu7zBNvuvm0pPbV6EBMXS/V8FdgUNYgYLKbSjiz5SQ4ZYTr1S6Z303U3NEAcr6wrmVEFTXwL9cHM8iXw5E4fjFEvCqqLJcREJu4ycNu9iEIF/vuStxrxYWIPxAhsfp7sy4Szjbp401YOCEg0YsA9vgIwX4jvGxBgVpaLpEUZlJmS7wPq/jH0JKkjuuCyutujp7H+w+U+i5NEJ5PVvtmljRq0pEIeykbW3jm1Bzl7pnOZokVeTEJUvCHN3mn4GwkjZSen/wA1yY9szJZXhdC4pO7lvJxq7aEnBwvErtuZHJ5tw0jT8E8UgwgdcaYPQVX4meo0G3CgkR5Nmj12jTdQAyYUOgBGY12Nh5tflEMjRbrSeYDhNw8RuHZNBQ4/gbU6pitoilrRJh1lmU36hzP3g3ftucrIf2rguLt5eiMYk47/3GSItvDM7enBxtQWDQSxsBUFdXDSDFtd6Qc9NUZc5OoSAq1bOc2zpugECyA3rjnwPR0++Nma4wY1IoYLVV9nL9VYU6A/ywqsVuo2wkMVwXqB3UgMcZmjt36s5BjjKOIQw==|920
+}//8IUB/cTdh4bsw0cbFSNIhfrgYkpK4V22xQ1neuzxGcamymfPkRST3w8pyuG48lJ1jBti5KX5zoh0wd558r49QUZ3Bj/hK26bgwAloqyLuQtkuKNzqvUmAKXkpCeK88EOvOjUN1K6MMowW9SxaL18r/TUP7dpP7SyGWcfza8Px/L9yMtOR7QwYkvXba4NWCo/KrCFzm9WMFbOOaCs5H7fLZNCLBX5xpvwBBAsJ1VURckYXQDalm+4QVRqUZ3qXKAWow9sA5m6/rjJQGwsSBlBBkk7T/9fVTc6VVlL/5NaWEItFa/kgmutsioB49AvOwZRP0qxiki4MyQ13PFIJUrzqxnDqbEuPOEANhqYlMR0jCt5NBtI6QSP0KDApjsRyLoY3h6rIU0zOiuat6AFMGiKbe24pRJCRlks7GtvGdx1ejK6mTljdAiBTfXaBXibjzYPqsTWzFU88nHxpnv5sajfR25XIgyYuuSAvVTJHzwKZCkeJ1CireqbcdkOb8RPHVxGh6jT/bBSU/PtgQfHmcB68OxTog/nXWKGh0nNtHHDHn+LklqmMOKzkOgt8g+D0Bmuw8apG2w2Flv4NCUi4OHP5VdAuRQt6bnnutkU5uWcMO/VE6ZkiN4sgdqhpfci11ByDt0mNSFhN738DXZGrml1dd+fppwO8FXkTuHtcxbilYcLqzU8lPZz5yGZGEiSi+90a0n+50geijMMz83POLmly7xW8mMBItx7pzF7Y+6/Mx7RUoLb/OxMvfADHj/DRh/F7mOjO16fOBdJevGbry5UWXkCR4B/w8Cm+mLaL11xsB13d00R/x5SzyWQgZsK81OiiC2atcDpJWodGWV3SaugxBPxWkBJ5dJmb8/0xqGNIgNSJvXlgTJ9qUxhDmqaPGexNcr3wgT3j/TG63hvGwN41Q==|920
