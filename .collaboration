@@ -226,11 +226,30 @@
   },
   {
     "ModuleName": "MobilePage/申论阅卷查询",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-09T10:32:35.6571515+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\学员查询\\申论阅卷查询.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/查询结果",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-09T10:32:35.6570773+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\学员查询\\查询结果.json",
+      "Pages\\4475d0fbbe1c43c1a0aeabf81e1bad9.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/试卷详情信息",
