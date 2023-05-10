@@ -456,6 +456,16 @@
   },
   {
     "ModuleName": "MobilePage/考试成绩总览",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-10T14:38:49.0766579+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\测试\\考试成绩总览.json",
+      "Pages\\8f1ce32aeded4052866e76c50d5300c.json"
+    ]
   }
 ]
