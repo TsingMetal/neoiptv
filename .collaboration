@@ -440,7 +440,16 @@
   },
   {
     "ModuleName": "PCPage/题目信息",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-10T09:17:51.1077142+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\测试\\题目信息.json"
+    ]
   },
   {
     "ModuleName": "PCPage/考试统计",
