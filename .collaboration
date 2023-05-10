@@ -566,26 +566,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "MasterMobilePage/FGC_页面模板_母版页_手机端",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7672854+08:00",
-    "ModuleType": 4
-  },
-  {
-    "ModuleName": "MasterPages/FGC_页面模板文件夹",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7681073+08:00",
-    "ModuleType": 24
-  },
-  {
     "ModuleName": "MobilePage/FGC_卡片列表页",
     "State": 3,
     "LockedBy": {
