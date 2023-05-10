@@ -566,56 +566,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "MobilePage/FGC_卡片列表页",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.768118+08:00",
-    "ModuleType": 2
-  },
-  {
-    "ModuleName": "Pages/FGC_页面模板文件夹",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7681571+08:00",
-    "ModuleType": 6
-  },
-  {
-    "ModuleName": "Pages/FGC_页面模板文件夹/卡片列表页_手机端",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7681584+08:00",
-    "ModuleType": 6
-  },
-  {
-    "ModuleName": "MobilePage/FGC_商品信息编辑页",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7681609+08:00",
-    "ModuleType": 2
-  },
-  {
-    "ModuleName": "MobilePage/FGC_商品信息详情页",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7681621+08:00",
-    "ModuleType": 2
-  },
-  {
     "ModuleName": "Table/FGC_对外销售商品表",
     "State": 3,
     "LockedBy": {
