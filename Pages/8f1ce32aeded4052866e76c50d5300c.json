@@ -1,0 +1,111 @@
+{
+  "Rows": {
+    "Count": 10
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "0,1": "考试名称：",
+    "2,1": "题目名称：",
+    "4,1": "考试日期：",
+    "6,1": "得分:"
+  },
+  "AttachInfos": {
+    "0,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      },
+      "TemplateCellSource": "考试名称"
+    },
+    "2,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      },
+      "TemplateCellSource": "题目名称"
+    },
+    "3,7": {
+      "TemplateCellSource": "Fgc-Listview-Selection-State-Column"
+    },
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      },
+      "TemplateCellSource": "考试日期"
+    },
+    "6,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      },
+      "TemplateCellSource": "得分"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "0,7": 0,
+      "2,7": 1,
+      "4,7": 0,
+      "6,7": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "2,1,1,4",
+    "0,7,1,7",
+    "4,1,1,4",
+    "6,1,1,4",
+    "4,7,1,7",
+    "6,7,1,7",
+    "2,7,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "考试成绩总览",
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Y3wKZduA6vHKMf7VpR6INRTw5FzKkVYs2miqByq1Prsys8m4eqs496F9xk8fZ2rY7J3AN2tf8CLnJRVqI7rsduS37gExVIrR19OTXTDHow2n8D03ekRV8ge3eoPxtWTbEDB7kxxfdUwQiAE5q9njrxzlfLsqS66Aey1v8PpJALRvjU2vmqCe4IlxNlSQqpQepcpCV81ulAsgS6GTmCNNhoYqlJ1X0JRidb6F2oB5eFLIazEdB2h94h5TbdsNVoFvVdi1xwDw5uKeA3tpQQuPVcchBbLmhrZtM1d0+kOJws8ImOwSJSWSvE7UEa6a3mmDLTpPQpGjmJV0BPCLRwL+9Djx8qBfQgi7ghm5/DV+FRLcO8rzkvrtWYei4UQnzr/gUncMl2Pja8fcNUVhsn7SDZxN6Qy507ArNVMmlEQtluPVx2tJ//8epj5q+x7u20EF1Mv4gwPESC/PTxjpueIbT3fSU7uVBNXl+xhnvKQkgHdfFD04YJ1kmEs3gclZkPSNQi7O+L+ZbCezswfikzr+EzmPcjT7VTnTgaYYPnUb/A26HG09AMY05OAKWjWgmrES/lLVN46Zk/+XXjCF2QLgHsbyfxPqvdfZi+r48IHNvx4N+CG6LtQf/20AVYr7SMKaWtUod9Q8gYxi/7+1n/EpzqUc1+U3eFK3enCNwpc5BhqRYSUq7+AilEN2bQTb2kv8v34Ou6Bzermysu2hcaOHZvEwgizC4+HS8QSTnfy0vLtPg5scUJkXPdnjPSvsN8XfHaPuNmbr2CTLnr760mDfS8OR11a19+0isuVjiFMkjXwJajiyJsNb++dXsUQFi6jxIUcEK02+Y+W1hbKf1go27zPGKkl3NqMdGBpP5jlmhdCGoIa/Dxe5+KHcVYRFsNwlw+kD6LSfkB4djMdTqe3wSA==|920

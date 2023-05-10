@@ -249,7 +249,7 @@
       },
       "26": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 57.0
+          "DesignLengthInPixel": 75.0
         }
       }
     },
@@ -260,7 +260,6 @@
       3,
       4,
       5,
-      26,
       27,
       28,
       29,
@@ -383,7 +382,12 @@
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "题号",
-        "GUID": "23835cb7-e76e-4c73-85bc-556b4a32037f"
+        "GUID": "a9091d8a-e31e-4ce3-b63e-c94a28821096",
+        "RelationBinding": {
+          "RelatedTable": "题库",
+          "RelatedColumn": "题号",
+          "DisplayColumn": "题目名称"
+        }
       }
     },
     "4,1": {
@@ -437,7 +441,7 @@
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "题目名称",
-        "GUID": "7e6a03ef-bd99-4485-885e-b3226a95775e"
+        "GUID": "e0854ba7-3956-4e29-bdb1-29694c9ffd5c"
       }
     },
     "4,27": {
@@ -528,7 +532,7 @@
                 "SerializeProperty": "=查询结果!O36"
               }
             },
-            "ID": "1efa6046773a4668b9dac2d3319cbb11"
+            "ID": "34f5acf8f38f45e5bed4598de9b8da26"
           }
         ],
         "Text": "查询",
@@ -563,6 +567,230 @@
           }
         },
         "ListviewName": "表格1",
+        "DataSource": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "阅卷表",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "ID",
+                "GUID": "7df59149-beac-4b33-98bb-5c18683da08f"
+              },
+              "ColumnName": "ID"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "学员姓名",
+                "GUID": "1a5a546d-d6a3-4ab0-93cb-70c5a00f3b6d"
+              },
+              "ColumnName": "学员姓名"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "学员班级",
+                "GUID": "73048752-7ab4-452e-aac4-b1756c4c1262"
+              },
+              "ColumnName": "学员班级"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试名称",
+                "GUID": "a4f19bb4-88a3-4b70-aa39-8d360678365f"
+              },
+              "ColumnName": "考试名称"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "题号",
+                "GUID": "78075216-8c49-4aa8-9c97-69cbb4fbbb49"
+              },
+              "ColumnName": "题号"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "题目名称",
+                "GUID": "3eec85c5-02f7-4fd6-9b5d-fa0660c52cf5"
+              },
+              "ColumnName": "题目名称"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "准考证号",
+                "GUID": "7a0f6eb8-fa43-4798-b700-2afa7c3f427c"
+              },
+              "ColumnName": "准考证号"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "试卷",
+                "GUID": "3fd4fd42-e75d-4e6c-9ac2-373c439ad31c"
+              },
+              "ColumnName": "试卷"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "准考证图片",
+                "GUID": "3dd328be-4c5d-48c6-ae56-1c3c9acd4045"
+              },
+              "ColumnName": "准考证图片"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "批改时间",
+                "GUID": "248c412c-a861-496d-ba01-3ee00d95407c"
+              },
+              "ColumnName": "批改时间"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "阅卷老师",
+                "GUID": "e205b1a7-44dc-44d2-806d-274e5e96cf02"
+              },
+              "ColumnName": "阅卷老师"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "得分",
+                "GUID": "bd078a38-0a9a-4255-9199-a90abb1f90a4"
+              },
+              "ColumnName": "得分"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "问题",
+                "GUID": "919ea506-28ee-435c-8ac6-9d79ceb6a227"
+              },
+              "ColumnName": "问题"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "优点",
+                "GUID": "56f1e3f7-c79b-4d54-9ccf-4bf551b779dc"
+              },
+              "ColumnName": "优点"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "自定义评语",
+                "GUID": "0504c25c-98ab-49e0-8f8d-bf6f160425ab"
+              },
+              "ColumnName": "自定义评语"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "满分",
+                "GUID": "a3558bde-42aa-4e81-874a-032d04368d1a"
+              },
+              "ColumnName": "满分"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "百分制得分",
+                "GUID": "bbb21bc3-c238-4683-a041-66cecf49ebea"
+              },
+              "ColumnName": "百分制得分"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "唯一标识",
+                "GUID": "f91fa086-f45f-4b80-9b47-0c6356cd981f"
+              },
+              "ColumnName": "唯一标识"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "上传老师",
+                "GUID": "969ea5d6-33e9-490f-b948-6bbc621acbbd"
+              },
+              "ColumnName": "上传老师"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "状态",
+                "GUID": "aa89228b-fed9-4b8c-a06f-75b578e0e04f"
+              },
+              "ColumnName": "状态"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试日期",
+                "GUID": "39abd6d0-bc3f-4e2c-9f3f-014f3efad78b"
+              },
+              "ColumnName": "考试日期"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "FGC_Creator",
+                "GUID": "899cbf69-7e07-4ec7-bf0e-d82bb684c22f"
+              },
+              "ColumnName": "创建者"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "FGC_CreateDate",
+                "GUID": "83b53522-31aa-42ad-a074-311efc75ce49"
+              },
+              "ColumnName": "创建日期"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "FGC_LastModifier",
+                "GUID": "128cb884-03d1-4b80-84cc-649902f5c199"
+              },
+              "ColumnName": "最后更新者"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "FGC_LastModifyDate",
+                "GUID": "9a46a5ad-06bc-4e7d-ae43-839213ae6c05"
+              },
+              "ColumnName": "最后更新日期"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试总分",
+                "GUID": "14399d9b-188b-45c8-9a97-ef9ed6bedefe"
+              },
+              "ColumnName": "考试总分"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试人数",
+                "GUID": "ee94d856-04d9-4baa-8a8b-f48c6d8e55af"
+              },
+              "ColumnName": "考试人数"
+            }
+          ],
+          "IsListviewDataSource": true
+        },
+        "DataSourceListviewName": "图文列表表格1",
         "NoItemSetting": {
           "ImageForNoItem": {
             "Name": "Application/047_search_8.svg",
@@ -832,10 +1060,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "IsMobilePage": true
+    "IsMobilePage": true,
+    "RelatedDataTableName": "阅卷表"
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//vkr+Z8tst58YdMLCrOawnTM6fhJJZRaZJXkWeVJyp2JhINTJT4qchmdS4bgiXd5zM7vXlSXQF/ZjQMgVmpUOq5KqT56VwaZNe3mlI/XbI7CbvsIsGTR44UqJZK59w8YFdk66qJ0fjTIjVNohCMmcAbQGwdSVvHITL0kSfZ5GaG5jYau+p0AytOG95y1xXGhlQF6mFxhckiI+xVV8Gyh9Vx5I6u9BiogmkkRg37zzO0pdFu/T7M2Q+Hg9kabIn5YUVEK0nfl4jWSQwkut068Xbf/iUjUhhjjJ8fQWwaY4aLBSzgJl70GrotwMYcD4MvGZkKYPm/A4eAbzUQNSb7GXCMtpOWsVzLfoqb45/JLpufTLA3egcj3TJG6108AFCoCaftPJe0AD1WRELXTWmcL9XtaOsSQzl/zbtfPRx0waNhZE3+G03i+witl9/8zDOtGHinzni/7HdyS/km8ua8bPft25+iurud0kWcCUVwq3Ge0Jb/AWpRcNdwcrnGB7utIISBIfLSMVJtzmpxoTMIM8uAD2pVOOFy/+Gztzqh8EgIImFKEQERW7WG7NpLHYkFw77TWmSmmX1pDdNJSSz14Fa7QJIc44HV825LdKIs/76HOuHpxBZzq4wIsIEGgAPIIaa88Q4G296A+LZUS5XklIdXOE1dvGsljjp+TwS6urTnMZapiXmdQ0TY218OuttVZCGOl75xvInD4mDNBNpwuI+xYDuXrc6PlWVt0SQ9IGKluZ3GMgOwv8fhTRVeB+jckNo4Jv+62s8EnE/YD1zfrYuJesLcskJftzS7vPlcuDJ9zFKvNY70OE9ooPh1HpahCnQzOAFsgmtB1MCOiGHUoF0x6V9QkYd5CvOyL/OG95FWj0B72tNmKNKSxhCZ3+yLg9x/KxRE8eDG95oXwQFr172g==|920
+}//4JP4QX980h4jd0mwCFo/7zb2rkUOcgjGk25RmvkjD616Ho2ZRFlMdr1/Tgp9nlIdII4pSqCZzdvILvycX2p3t/RKaUJtqq/wtcbLkJBHGOp/4Ypfqg4hin3Vfb/nQdgMZPSblAMfyu+EViczbTKXCMlX3E4P/lYlF3ROkGyXljoPROI2ZJR6Oq8Len+TqoOSrZ2Ddi3Xt8y1MWiCCj9NW9j0E2RXZ0qYApCn1pug8Mo5xtQY46WfzaNYVEkPstKeHV65fyAnY3EynsXKlvJlF+F0cC2eJHVJZqPhav7f0XByeLFZi0h1UqdvHCs6oE6S1W1AxgD+OQxYeHMyUsHErcfme1g1fWv0OkjfS7BGu+FEklE2553WXKEK+lliNFq/0fKs+TGfFTYvD+GxCVzblx5Ku+i3z21XnXSkSbtvm1Ax42Y9Ys0ZR6fK0HXNj1k2lVkhz8hsU5lziJkYIwkHsSH49tvEBhS5dJ4HqEGgDMZQ0IJYsOEHyNAptpPZtLfW7YlV7rwuFGa1oZWDH5b+DPfODZSwzUtSVPDdvvb/Oi03EV6bV+HH4xLCL4n1vcGAcNgpG0QqaCJpsyGipZe+npsuog/46t2ST7orZW20x+JQ426KD7aQzuvJq9XubSIk+0jOVf4pzOj/NpUX+LQMKcjDY8XAxNxRXQMXn6xnvTdQxuSOqmz98oKDgEgapSEip+TozLCKA6vRvEWjW4ejf1SGk80Ab5QTpBwndw3rySv5cp0j0OofwYZ9jMGSnGz0g0rpbWp/9wz6hwagsz+wKRajOQYf6MQ1Sbddp2vDHGnILpjOIRf182uurgGr+umKf+n2sEo1eUCtq4EbottzzG2F2/p+4L/XtvJQKKHPvniuMQzj8OI9fOCT/MUOAhhNvg7pUxM8VS8jDPwxlYeuLw==|920

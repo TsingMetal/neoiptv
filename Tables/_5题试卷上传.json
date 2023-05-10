@@ -66,17 +66,6 @@
       "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
     {
-      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
-      "DatabaseColumnType": "System.String",
-      "Name": "文本",
-      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
-      "Name": "文本1",
-      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
       "$type": "Forguncy.Model.Tables.ImageBindingColumn, ServerDesignerCommon",
       "DatabaseColumnType": "System.String",
       "Name": "试卷",

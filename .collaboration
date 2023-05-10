@@ -1,137 +1,47 @@
 [
   {
     "ModuleName": "Table/题库",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7706663+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\题库.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/阅卷表",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7706633+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\阅卷表.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7706641+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\预置评语配置.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置表2",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7706654+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\预置评语配置表2.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/小测上传",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7706605+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\小测上传.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/_4题试卷上传",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7706571+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\_4题试卷上传.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/_5题试卷上传",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7706595+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\_5题试卷上传.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/考号档案",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7706623+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\考号档案.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/用户信息视图",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7706615+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\用户信息视图.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -320,17 +230,7 @@
   },
   {
     "ModuleName": "MobilePage/查询结果",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-09T17:52:50.2161976+08:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\学员查询\\查询结果.json",
-      "Pages\\4475d0fbbe1c43c1a0aeabf81e1bad9.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/试卷详情信息",
@@ -470,20 +370,7 @@
   },
   {
     "ModuleName": "Theme",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7708509+08:00",
-    "ModuleType": 9,
-    "ToRemoveFiles": [
-      "Theme\\CellTypeStyles",
-      "Theme\\ListViewStyles",
-      "Theme\\StyleDefaultNames",
-      "Theme\\ThemeConfig",
-      "Reports\\DefaultTheme.rdlx-theme"
-    ]
+    "ModuleType": 9
   },
   {
     "ModuleName": "image/内置图片",
@@ -531,14 +418,7 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7672633+08:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": []
+    "ModuleType": 26
   },
   {
     "ModuleName": "PCPage/请批量选择5题试卷进行上传",
@@ -549,61 +429,24 @@
     "ModuleType": 6
   },
   {
-    "ModuleName": "PCPage/题目信息",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:17:51.1077142+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\测试\\题目信息.json"
-    ]
-  },
-  {
     "ModuleName": "PCPage/考试统计",
     "ModuleType": 1
   },
   {
     "ModuleName": "Table/FGC_对外销售商品表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7705717+08:00",
     "ModuleType": 7,
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Tables/FGC_页面模板文件夹",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7705782+08:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "Tables/FGC_页面模板文件夹/卡片列表页_手机端",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:19:05.7705803+08:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "MobilePage/考试成绩总览",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T09:32:19.579058+08:00",
     "ModuleType": 2
   }
 ]
