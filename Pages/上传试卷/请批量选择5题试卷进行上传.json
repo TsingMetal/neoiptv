@@ -403,6 +403,11 @@
       "DataValidationInfo": {}
     },
     "19,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第一题",
+        "GUID": "83dc763a-e11b-4265-a1b5-938b756c9824"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -478,6 +483,11 @@
       }
     },
     "19,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "题1阅卷老师",
+        "GUID": "9ec483a0-0c52-40ca-9558-128775e88984"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -563,6 +573,11 @@
       }
     },
     "21,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第二题",
+        "GUID": "c2344196-22b4-4b76-b58e-5109292ed30f"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -638,6 +653,11 @@
       }
     },
     "21,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "题2阅卷老师",
+        "GUID": "c8c7f2a6-574f-453e-8211-eb90b6c138b2"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -723,6 +743,11 @@
       }
     },
     "23,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第三题",
+        "GUID": "e9cf1437-f30e-4c70-8421-5889f453b1ab"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -798,6 +823,11 @@
       }
     },
     "23,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "题3阅卷老师",
+        "GUID": "8973b562-73e2-474f-bb6e-9120144396b2"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -883,6 +913,11 @@
       }
     },
     "25,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第四题",
+        "GUID": "6e5f34b3-33c0-45d0-962c-2ef8a1ec9e8e"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -958,6 +993,11 @@
       }
     },
     "25,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第四题",
+        "GUID": "f6b0a5a2-2f0e-4a7f-b008-9675d2c92109"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -1043,6 +1083,11 @@
       }
     },
     "27,7": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "第五题",
+        "GUID": "1e6762b5-8da5-4220-a327-759fa2f9e73d"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -1118,6 +1163,11 @@
       }
     },
     "27,17": {
+      "BindingInfo": {
+        "TableName": "_5题试卷上传",
+        "ColumnName": "题5阅卷老师",
+        "GUID": "a71a2078-f733-4378-bcad-84130f2c1e7f"
+      },
       "CellType": {
         "$type": "ElementUI.SelectCellType, ElementUI",
         "CommandList": [],
@@ -1166,7 +1216,7 @@
               "BindingInfo": {
                 "TableName": "用户信息视图",
                 "ColumnName": "用户名",
-                "GUID": "752a3d82-261a-4c07-8f2c-20c24aa9496e"
+                "GUID": "0a75b8f0-2f6f-4a76-92bb-bdc37760a959"
               },
               "ColumnName": "value"
             },
@@ -1174,7 +1224,7 @@
               "BindingInfo": {
                 "TableName": "用户信息视图",
                 "ColumnName": "用户名",
-                "GUID": "beca04ba-0633-4624-af7b-fc7bea5bafc7"
+                "GUID": "a4ddc82c-e79d-41e3-8540-2a99a1cbffd6"
               },
               "ColumnName": "label"
             }
@@ -1185,7 +1235,7 @@
             "ColumnBindingInfo": {
               "TableName": "用户信息视图",
               "ColumnName": "角色",
-              "GUID": "521b15b7-43e9-4382-ba6d-9ba999d33858"
+              "GUID": "75a38097-2af8-4996-adbf-00b6d4ac5640"
             },
             "Value": "阅卷老师"
           }
@@ -1535,6 +1585,10 @@
       },
       {
         "FontFamily": 0,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
         "HorizontalAlignment": 3
       },
       {
@@ -1600,8 +1654,8 @@
       "27,14": 0,
       "27,15": 0,
       "27,16": 0,
-      "27,17": 0,
-      "29,18": 3,
+      "27,17": 3,
+      "29,18": 4,
       "29,19": 0,
       "29,20": 0,
       "29,21": 0,
@@ -1621,7 +1675,7 @@
       "33,14": 0,
       "33,15": 0,
       "33,16": 0,
-      "33,17": 4,
+      "33,17": 5,
       "33,18": 0,
       "33,19": 0,
       "33,20": 0,
@@ -1648,18 +1702,18 @@
     "33,3,1,10",
     "33,14,1,3",
     "33,17,1,5",
+    "17,3,1,10",
+    "17,17,1,5",
     "19,7,1,6",
     "21,7,1,6",
+    "23,7,1,6",
+    "25,7,1,6",
+    "27,7,1,6",
     "19,17,1,5",
     "21,17,1,5",
     "23,17,1,5",
     "25,17,1,5",
-    "27,17,1,5",
-    "23,7,1,6",
-    "25,7,1,6",
-    "27,7,1,6",
-    "17,3,1,10",
-    "17,17,1,5"
+    "27,17,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1678,10 +1732,11 @@
       ]
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": []
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "_5题试卷上传"
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//ToW3VzRcQST68KuXjlO3w0aL0eZsBoPtHvpFDtKE0z7VJIGPFJEkUzGNMORJEH5zK414nPz5J/VQqrsBzRm/w5yN0Z5tlorpauiOhHCK9CG9doJwZo+likqp2Izv8VUAVQt7w/FS+DZCWve23lPS0n5ne44F6mMqrfHGL1GYOoz92SK3dn6NcXFHjyTRAPg2+62wO4XCkmbMmzCTQpzcfF+T6iL5NTr8bLHmwhWLqWhjewSdOCMgYsq5vQYaGsKSCatlg1b7p5dDTYtE7MywNK49lESNouqcYW7vae5Yo6LbhdezEQ5q0aIY4Uzac/j1MfNxYz2CAMSf7UQa1DXjJwouuUsijH1t5QY5gPXSLGKJnGbJCrjL5tgn55vvXRDFFGXvNoU7noY+VeTZU6sxccnwb0YnteGSUn+rD4atWo6Rwzt03E3ZtdBczF3DGQNs4hKd9BmXmRF7vFlzX062Jj1C2db+aBEVSop+tQU0dFjvYm7hvuZPPpgyi5ptpIwx2sOwyK6HbeiZ4TKWPBHA55TF+LtNFiMwKc8pOQK7d9UgD3/lDYUnUAky/cz8iNC8hdGVR0dIv5L/NZVZ+xD0WRDAunB0kj//QDu0aca6+ifkOGAo9ANYDwXo/j9CZoXuW4nr6xkz0PqhQOrNIxmYwuaZ3/0gf2sLL3frGwlCBZjRZPCHC1V2D76p+oXKmaTNqiLHdsBONQXkH3RQaS5Tmka9HH/BIRUFiQtQ1nX4PTSPVJSkOcZ/vk7Dn5B2hRjMgks/my1ieY+kzzLb0MBPh+ROdgU2QEBRlbDGTIDNHSZwTmwnpWF9ilpSew+haONy6Lq5ECAm7x8VqPPmOESgTZ5sKMyM1aJ+epHXJ7JFetk4KF4YRqQ0lbEucrOe3NXYO9qzD/VVk68TYPVnwot3Rg==|920
+}//fRSdjoxp9eHCLpF8C5wohbhZBzh6RjErNK+q7aZ9GePmLtBqkGdKPy2YzyBzOuA9oVXJDy3E4kUK/oDqfMCyW9OvNoRe/zsC1capypfpRPdaHVv1xlGrIIdphgJwLKIV18X9VBsAuU4t1FO4uaZWT+ATuHtRsUV5ZZri9Cy7mrxuiPNinOerLrj7MrifU9hEb8A0Yj8vpSCekJNmm+3U1dFxEfkMJG7iWptSOW53p1/A4bkPjuZrf9zizWLa3b1p1d9/07fXsvGLpgthSClMlpUbukHgghEovp39s0TXy6Bq15RLB044R1JXbbqmiN1/okGyH7Wot8OPkMHS6AbL17L6aLT4MmRwfgVbw3+NCwGCLl7fQrmFmL6dj6iWmJsQD/wgCDcLjvsl8HeFZEd8tpqaGEoprMSBiXqtq4PzsLB5wM9uUsKe2B5AW2z0r2l4mgSBJwJS6bvR9I22JTNnU239djKf3UCXfuf+DmNHpsIaHRSUFP+iHgU08nIdrTJScTmyq2n7Ik+NrurWOnvn+1vHKR287RRkBdQtzp6TwQe5DWrbPKvTVRVsgjBNxaMetvU/NYBbJpnXqm3iIGMr9TSzXFMQVCmA6ngvLVRzSruam7yju7fA2x2RGZX9GtpPlR6hoZs+ABKvvgoHAaM/n6snYp0NN883XWUiFvBJU3RntQQWuMIEeujq9KMt+GlZK0Dn998uLJYJ5Vj7XBEidDTVJf4dJrD+CZeJGHgmKlK7a7SpA/3UpMXIPV2mNELBWO9X/Hkpj0oslUEPUpPPCiWgY3/MhL4wVY910XjRt/DKOqlqk4vP4R8y3RO9u/Ht3auHKXtVo6lWoMORfq3vnV4JYt1T08QYCHctUyc5qb2oHk9oR0v42BGRZYQDSRzStoJsqV0vB8Qc/AZFt1lK8A==|920

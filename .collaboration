@@ -234,16 +234,7 @@
   },
   {
     "ModuleName": "MobilePage/试卷详情信息",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T16:03:36.628269+08:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\学员查询\\试卷详情信息.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Pages/修改阅卷明细",
@@ -431,16 +422,7 @@
   },
   {
     "ModuleName": "PCPage/请批量选择5题试卷进行上传",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T14:21:01.2894288+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\上传试卷\\请批量选择5题试卷进行上传.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/测试",
@@ -465,26 +447,10 @@
   },
   {
     "ModuleName": "MobilePage/考试成绩总览",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-10T14:38:49.0766579+08:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\测试\\考试成绩总览.json",
-      "Pages\\8f1ce32aeded4052866e76c50d5300c.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "PCPage/分数排名测试",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-11T11:24:56.3976536+08:00",
     "ModuleType": 1
   }
 ]

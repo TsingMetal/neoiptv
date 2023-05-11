@@ -1,0 +1,185 @@
+{
+  "Rows": {
+    "Count": 15
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "1,2": "考试名称",
+    "3,2": "考试时间",
+    "5,2": "考试得分",
+    "7,2": "班级考试人数",
+    "9,2": "全体考试人数",
+    "11,2": "班级排名",
+    "13,2": "整体排名"
+  },
+  "AttachInfos": {
+    "1,8": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "考试名称"
+    },
+    "3,8": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "考试日期"
+    },
+    "5,8": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "总分"
+    },
+    "7,8": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "班级参考人数"
+    },
+    "9,8": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "全体参考人数"
+    },
+    "11,8": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "班级参考人数"
+    },
+    "13,8": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3
+      },
+      {
+        "Formatter": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "@",
+        "yyyy/MM/dd"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,8": 2,
+      "3,8": 3,
+      "5,8": 4,
+      "7,2": 1,
+      "7,8": 2,
+      "9,8": 4,
+      "11,8": 2,
+      "13,8": 2,
+      "13,9": 1,
+      "13,10": 1,
+      "13,11": 1,
+      "13,12": 1,
+      "13,13": 1,
+      "13,14": 1,
+      "13,15": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,2,1,4",
+    "1,8,1,8",
+    "7,8,1,8",
+    "9,2,1,5",
+    "11,2,1,5",
+    "13,2,1,5",
+    "13,8,1,8",
+    "9,8,1,8",
+    "3,8,1,8",
+    "11,8,1,8",
+    "5,8,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "考试成绩总览",
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}///Lxu2rMTvEdxOB1NsAL+6h5We+91Us6dd0evmyR1SOZOLtQ2lcgvPNd0Fs8HJ1SAAW/lBvz+FnxsLaDyM9G0c01QWBTbuXtSiVXFlQD6fjQQGmgQjsWklaJBG9u6KoWfsuj00/ANtmC9dMOLBtTxveozW3GNlOWlPLM4LarL9uMnObw2w1h2FMwQ2/5FzZpEg8s1H2uk9MzfjNGdAyzwO5ITvcLZCkCtoxj+IcshkODsdiyt4dalKu+19l0SdKy/6tZkh0FffDa+bWhgFinVbOXRYWA5Ig5XdHVUOblWL1utNbecBut5veUB2OFcHfQAdpyhn25Ja/kFQLCTFA4gBWNiz7MC4JPw5wVMAtRd3YNt6vzY7m7Lfzr2S0aGTHaV0sko2HNAjPsUVHcKiHpl+4Z3Ua3KZzyBHb2dCzxW0HMvjEtG0E3TCiT7qpragtEAu8egS4YeD5wZHuMM4iorl3W6Bkr3nWsjA9blQHdgmGse86xtkcNaSztJd0RoBpde1WKEVOHpvzWXpHfq0iJ6u3nEiPnbi1gS+CtDdkMFvj0HrxmsQsAlIjnjx7djFPUh8B8OXSayjgEWhLMM22pPT5IogZE0cf41JYe896S71F1ta2Ack5sjFPyYlob0OM5EZMH4XTIa8omr6iKGxLVlIiAyXjEyEUKPfiF3a0a1zW281JJIwZ1Fvtj9IPUOo7ilVdykPiDAIRMae9qSTCKfA8ym5dVlxDH1aGY73WphZmM/0/bswxIUarp+KRMWI9LgAK1LtwR1YVz3hWFsJTEOZWtxnMVYt5S0AGgudlo2KI5V8JIRp6L4uuz2Pg3LIcx8VZUReQPjRE0RlybhOGfUIDp2a/6mtToDR7lphHlTyB/dG0fFL2OivSsdCqdYgZIHPgPIeFIO0u/HMKlGfmyzXQ==|920
