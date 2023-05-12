@@ -452,7 +452,16 @@
   },
   {
     "ModuleName": "PCPage/考试统计",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-12T15:58:05.5994672+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\测试\\考试统计.json"
+    ]
   },
   {
     "ModuleName": "Table/FGC_对外销售商品表",
