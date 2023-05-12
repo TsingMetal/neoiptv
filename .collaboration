@@ -226,16 +226,7 @@
   },
   {
     "ModuleName": "MobilePage/申论阅卷查询",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-12T11:17:23.2923632+08:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\学员查询\\申论阅卷查询.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/查询结果",
@@ -379,20 +370,7 @@
   },
   {
     "ModuleName": "Theme",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-12T10:02:37.2522942+08:00",
-    "ModuleType": 9,
-    "ToRemoveFiles": [
-      "Theme\\CellTypeStyles",
-      "Theme\\ListViewStyles",
-      "Theme\\StyleDefaultNames",
-      "Theme\\ThemeConfig",
-      "Reports\\DefaultTheme.rdlx-theme"
-    ]
+    "ModuleType": 9
   },
   {
     "ModuleName": "image/内置图片",
@@ -451,19 +429,6 @@
     "ModuleType": 6
   },
   {
-    "ModuleName": "PCPage/考试统计",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-12T15:58:05.5994672+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\测试\\考试统计.json"
-    ]
-  },
-  {
     "ModuleName": "Table/FGC_对外销售商品表",
     "ModuleType": 7,
     "ExclusiveType": 0
@@ -492,35 +457,14 @@
   },
   {
     "ModuleName": "PCPage/分数排名测试",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-11T18:14:14.897476+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\测试\\分数排名测试.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MobilePage/考试成绩总览_v1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-12T09:57:57.2150089+08:00",
     "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/成绩查询入口",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-12T15:53:54.403092+08:00",
     "ModuleType": 2
   }
 ]

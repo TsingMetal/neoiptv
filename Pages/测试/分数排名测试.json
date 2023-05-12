@@ -17,19 +17,26 @@
     "Count": 45
   },
   "Cols": {
-    "Count": 61
+    "RowColumnAttachedInfos": {
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 225.0
+        }
+      }
+    },
+    "Count": 46
   },
   "Values": {
-    "1,19": "全体排名",
-    "1,22": "排名",
-    "1,26": "考试人数",
-    "1,30": "考试人数2"
+    "2,26": "考试名称：",
+    "2,31": "申论试卷三",
+    "4,26": "考试人数",
+    "6,26": "考试平均分",
+    "8,26": "考试排名"
   },
   "Formulas": {
-    "2,30": "COUNTIFS($L$3:L3,\"=\"&L3,$H$3:H3,\"=\"&H3)",
-    "2,19": "SUMPRODUCT(($H$3:H3=H3)*($P$3:P3>P3))+1",
-    "2,26": "COUNTIFS($H$3:H3,\"=\"&H3)",
-    "2,22": "SUMPRODUCT(($H$3:H3=H3)*($L$3:L3=L3)*(P$3:P3>P3))+1"
+    "6,31": "SUMIF(H3,AF3,P3)/AF5",
+    "8,31": "COUNTIFS(H3,AF3,P3,\">80\")",
+    "4,31": "COUNTIF(H3:K37,\"=\"&AF3)"
   },
   "AttachInfos": {
     "1,3": {
@@ -39,7 +46,7 @@
         "RowIndex": 1,
         "ColumnIndex": 3,
         "RowCount": 39,
-        "ColumnCount": 32,
+        "ColumnCount": 17,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
           "SubConditions": [
@@ -124,9 +131,6 @@
         "ColumnName": "考试总分",
         "GUID": "5ab91671-4d00-40fa-8c7a-05062502880f"
       }
-    },
-    "2,19": {
-      "NameUsedInJavaScript": "考试排名"
     }
   },
   "StyleDatas": {
@@ -146,15 +150,12 @@
       ]
     },
     "CellStyles": {
-      "2,30": 0,
-      "2,31": 0,
-      "2,32": 0,
-      "2,33": 0,
-      "2,36": 0,
-      "2,37": 0,
-      "2,38": 0,
-      "2,39": 0,
-      "3,44": 1
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "3,29": 1,
+      "4,31": 0
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -164,22 +165,16 @@
     "2,3,1,4",
     "2,7,1,4",
     "2,15,1,4",
-    "2,19,1,3",
     "2,11,1,4",
-    "3,3,37,32",
-    "2,22,1,4",
+    "3,3,37,17",
+    "2,21,1,4",
     "2,26,1,4",
-    "3,44,1,4",
-    "2,36,1,4",
-    "2,30,1,4",
+    "2,31,1,5",
+    "4,31,1,5",
     "1,3,1,4",
     "1,7,1,4",
     "1,11,1,4",
-    "1,15,1,4",
-    "1,19,1,3",
-    "1,22,1,4",
-    "1,26,1,4",
-    "1,30,1,4"
+    "1,15,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -204,4 +199,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//QCqRLVageLynAK0AJPZPyQhacSGQom7TrwRb+FrR3XPy0DnSR70oCr5s6M/ZDyGJeHlkM17K2G9Xg7dg/A3DADs4gbQ5vNR/ANzuQtuMOb96tvzkbBr4nrigHxJpkZAWCURJ6tbguduAt91I+XNPuOkOoZXGMxOuJuYM6nl0BAhNsvyMKb7a9sIt94qJboRnoo8CZZGScRwO71JQ0+//X4ux21aHrVCUWjglcrPDptLpjx37qhs2PBYU8asF+yq7HghcU+ExdmdbuKOQIViO9CAiZuGojeCYniRgIhteCxkRBYHVENCyMEAvG23IXrHNrtSqar2eRnR91LnKOR1MdR/vJx75uQrWIRoE6DOHoP8JyRIt6sXvU7ZC9HLbo1HWMVqm0fTB6ZKhPrh72YfFk7qKxlWKYZfxpNvqdR8VY5BIiVQeJKvb6f1ZPjLlzkhWfzv/g+PPJPxFgu2nvt7D1xsD0ZC/GZj1IsnSU2fMpAAmOe0LIrORroOuIejo7miR7j+xntHf+fFkz57ewP8p+0yima0CIIGPiGNR+yBKl1oioIW2PakPxdvSaeDWcn8zusQEmt0iEcgaLGFudi8n3Sp1lWgz09qAwGG1Pxwpm4+VvZk1k8iMaK18sr+8LusMtg0BQRWTJKqFwhaDB+dZEuQt0F4wM7CfJ9oGh71oFJeEjjkKaef1u5soxo2oXEiwyrr6G8z205M3uhn3h6MMFZyuEoUyRqslEGjoyPc7AeA/4zUshucxYvtwMGgBhJDeZSBRUVAVrY3Py0QUr98rxdJlZyiWJkisH1W0IUWX2j8y8hfjeE+wdQYye3ep1Hhdv57oDX22pA6IgSbRn38XX6fn/omEgqVkKw/WmzaHUzJt+8API9JFJeCFV3IZFKrA6LTjWtjd4v6OPs3rqCnOuA==|920
+}//rcvATGwC73lwFwKtrCZR0JmCnuUXdZygS09o0s6ul7TUMsmL++eMrNwM6qh7crec524oDbyne1/s0fGCSfmcq5elernFTg7nW3wfIRP3u86ehkagDMzf5I30hRUFW4/UTQ6ZbpjJolCEOPJiU/o1aRfIpFUS53MiI7UVYN4GrQ1bmqJU7rO6tTeT1Wgh/V4R1tnYvggAVH3M+Ch2Im5aFJpICtkAa3xdxdj5iu8qCRKDwyKiGwNHcUQ/hNkOabQRkv2JepNuVwg7R/Q2wveNjDPVwAUqR8+veOfg+yu00GnQoZR8MJm19l+MqVPFzZYzFON2aL4g3MUilEfbU/6pk0iIMyFAEKc5xjFJ+7UNqdRcx4mJTofZF5IjgKmZa3pt5/Iq0CdXYG0nKpfrRm3Okx01DqrnlweW9lhX0q+Yvph0j4DmKvV9TZrpY3CTuxWLEoAvA5WROGHugUS9ekywRDsQJQyMFnoCv6rNY/R+nz4n6clyLCQM3aPA4ooAzTTm5zaaOX+Dm7OnVWEvgiOdw3tXe0tm55JDQ1n9fkXtkJEVlqhnL+JgFfi2N+uOux1UbOxlNtxraMgc8VziGvTrGY7U8EeQjrjHPsDHWNaV6V3GtlzVOzyNU/aQV3cyEsY3DyKEmVkdewMw8EQMM2FNRCPT7WWEEGafSCfZCsw3s3XFjoksERxqWtk3XF3n6mDRzany+USOH7jtcDuqvHjvnZ7iqvHYBHvUh7GZ6hLJLMeNLGciBMrtSgnQ7PofYf3k9SXlxZ09Z+t3ULAm6NosBFAFYTkhHvWnqCjdvx7rhzxWbSF2/l9tvSj/sqi8AtDL8PX4lJw1q9HHvcJHpT0HmAm7jP/MOwEKGQxniPhVREdcI+K3sIU2tRE93r1H25D7IwZMQteJJepCmjOQhvsYxw==|920
