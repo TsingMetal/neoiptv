@@ -5,6 +5,38 @@
   "Cols": {
     "Count": 18
   },
+  "Values": {
+    "1,1": "考试名称",
+    "3,1": "考试时间",
+    "5,1": "总分",
+    "7,1": "班级考试人数",
+    "9,1": "班级得分排名",
+    "11,1": "全校考试人数",
+    "13,1": "全校得分排名"
+  },
+  "AttachInfos": {
+    "1,7": {
+      "TemplateCellSource": "考试名称"
+    },
+    "3,7": {
+      "TemplateCellSource": "考试日期"
+    },
+    "5,7": {
+      "TemplateCellSource": "考试总分"
+    },
+    "7,7": {
+      "TemplateCellSource": "班级考试人数"
+    },
+    "9,7": {
+      "TemplateCellSource": "班级排名"
+    },
+    "11,7": {
+      "TemplateCellSource": "全体考试人数"
+    },
+    "13,7": {
+      "TemplateCellSource": "全体排名"
+    }
+  },
   "StyleDatas": {
     "Types": {
       "Strs": [
@@ -15,6 +47,21 @@
       "FontFamily": 0
     }
   },
+  "Spans": [
+    "1,1,1,4",
+    "1,7,1,7",
+    "3,1,1,4",
+    "3,7,1,7",
+    "5,1,1,4",
+    "7,7,1,7",
+    "9,1,1,5",
+    "11,1,1,5",
+    "9,7,1,7",
+    "11,7,1,7",
+    "13,1,1,5",
+    "13,7,1,7",
+    "5,7,1,7"
+  ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
     "ParentPageName": "考试成绩总览_v1",
@@ -24,4 +71,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//IVi+gqfCEXdtuB4Q0t8fJpoQo+DPv8+hqZ3fLYLPYRqh8R+0VJd6B8loyFvUQmfxTLakFq9OZuLnZKqov5HOmptqePwozSs9waeuA8rP6b68enhflDXsC/ps9wMB/JzJGSljjE155qvDGZ9WTl+Jjo/sl40y++JDO7/Tn9WFAL0SFoQJsvW5LUt6cTgg9LsZOEInnBGCQ11yahvnQAXJg5sjebXv6F2/ZsLQyE3vPsFgAqBhwZBcwJGCQ/k0O1mhy338k97gYOZcvc8gjD1wXbLaGrQKGd79zuDZoXDCCYQBNLom5hMQoxoaZuJpaYu3TytMhV7m/k2TE1lsL2G2DkzK2BxeGDhMoOBB60QM0SVHM3LaE+Nt2kjijdyk2G/ki7kKJVBWN4o3tVEil8FSStgpSiz8qtQ5FZvbp94RTDQX00B+AN3bSjL/cZpgO7ZbsQG92iy0SBrN0Ab51z5q4RB9M+Zbsm/5P8m2rhhllAPdmTLhH9xbuMm3w/QE5B1aXNHaOtiYmLrkglEyFL1OpDAE7mVtVr085fR5qQEt71rkgf9F5pEiOEBDT5yD0ySfIje73CV9DNPTV6B47olF3kDnE2w81+mKJnU6CPTQDudRj0925O7lC8kNpedcz8XVUvF9TOrRd3qO8JnnpmebrlPLM+HyEmFP5S7g4W7BgCCRBz1geRhMLZkXxmpm9kpEGCRAaXGYU2JIx7c64xmeIsbCp7R3ljyi9IfoVGXCAeYSOsoHHIkinrjFEF0SWdKAN7CfSypr3M0NwqBHgJkqApDLO4biolCSEMzGzYN4lkYPdjUVIUoiaEnMMN3BlF1abq7BhkgLm9eIF1sMz7BLbTG/74ylllEiNl0kfRn7vaXFCfHsQ5PgKzF9vW3NP45sxHucHwULqJh2++j1Gsw4Nw==|920
+}//SRXCEMrLw5AJeu/9fFy5jajcDtemmRY6M8zUfeETAEHb1/cRC72b2Ln/E3IZcJQVSeuSY2yqUBTd/pZVIHzxxqC59IyIsRRMM8Mz76xmT1TVbwGvu5drKirU8KRSEmiXHJ6hgkqwdJw8jKUJ5zdinJn+I9A6T365n9s6xAEfGy8I9JYtRII47I6tszJ9Xm0XN9bt13pZk3xdSslNdnwTz5vHGO3+rss8OuWp52rs9K/S4nL9EQvPWLwyQ2IP4/GBbwMjlVthdTKuSEKFCoT9ztXc6w3Ow3uRJZPfMIl5G+1xCUhvuv3P7j3U4QzNdcWT1RaqooFvKWvMXvHvYx4396tDIuUJqHfl55jCMlHSXNXyRb8oa0trLAttKk1UY48LYplBi8SVB1F7HhQnMlKR6B1XmZjhURrLmeM4Ax0dZq11Lz6PM7GknH8hCkCTh8yqaSqOXRWe78Frz95KPMzkslsROH3INUfIPBn09IE4OJmK54vNiy21BAn3l39H7XTcySIybjZX0M6/G74sXRTGH+qz0SpbscQKAZizzNwQCXImNPQ/ZiuurVjge51HN2cZzWab42osoCr9/uxAvSw/PsVNmnWJX17MEUzcu/TS3T/QrT/9JA1PROla05IijWIsTAeIGEByWsOW1z8BU/F9NHJaaxG/oxgz6Wve8LpAtpghW62xgQQ8teVca0vteTTSwu7s3WLe4OA2xwfiKaf7vW+DMyXV4fpGgtGN8o6i+eXVQ2+0Gl8dZqacEzdjCzptECzyHafkP9OUjrrN7HngSdX465IZuDgRxPerGAym8j7tdkCC8Ryr+6D8X6iqY9aIgXhGS2qU09VEOHhrlADnId5v938/ocKlVQV/Lg4UorPGvIBu7bPQBfngnJ6qtvx5XVi4svuBdolFhjeHURZbNA==|920

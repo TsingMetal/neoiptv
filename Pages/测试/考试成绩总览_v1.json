@@ -51,7 +51,6 @@
     "0,21": "（此为逻辑运算页面，不展示）",
     "1,21": "*当前考生考试得分汇总",
     "2,37": "考试日期",
-    "2,41": "得分",
     "2,43": "班级考试人数",
     "2,48": "班级排名",
     "2,51": "全体考试人数",
@@ -66,7 +65,7 @@
   "Formulas": {
     "3,43": "COUNTIFS(Z13,AD4,AD13,AH4)",
     "3,48": "COUNTIFS(Z13,AD4,AD13,AH4,AH13,\">\"&AP4)",
-    "3,51": "COUNTIF(AD13,AH4)",
+    "3,51": "COUNTIFS(AD13,AH4)",
     "3,56": "COUNTIFS(AD13,AH4,AH13,\">\"&AP4)"
   },
   "AttachInfos": {
@@ -100,7 +99,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "准考证号",
-                "GUID": "78536e68-2674-4d5a-bbed-7441cc5dc373"
+                "GUID": "053b0e3a-8ac0-4aa8-9301-9a754dd111d9"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -113,7 +112,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "批改时间",
-                "GUID": "f155023d-dddd-420f-adde-f396e72f91c5"
+                "GUID": "38ccac1f-3334-4c8a-ac63-1393307f5526"
               },
               "Value": "%Null%"
             },
@@ -122,9 +121,19 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "状态",
-                "GUID": "343aa792-4723-48c1-a57e-46636e8608b7"
+                "GUID": "717cad9e-27fc-4379-a4ca-4c5f81a50234"
               },
               "Value": "1"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试名称",
+                "GUID": "3f2c310f-a69d-4621-bafb-46d9056e3dc4"
+              },
+              "Value": "%Null%"
             }
           ]
         },
@@ -133,7 +142,8 @@
         "ShowColumnHeaderInDesigner": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
-        "ColumnOperation": 2
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
       }
     },
     "3,21": {
@@ -177,12 +187,24 @@
       }
     },
     "3,41": {
-      "NameUsedInJavaScript": "得分",
+      "NameUsedInJavaScript": "考试总分",
       "BindingInfo": {
         "TableName": "阅卷表",
-        "ColumnName": "得分",
-        "GUID": "4f183f9e-c7f9-4cbb-a8ae-9a905174793f"
+        "ColumnName": "考试总分",
+        "GUID": "1fbf3ba1-6aa4-4db3-999b-104c2ca6db8d"
       }
+    },
+    "3,43": {
+      "NameUsedInJavaScript": "班级考试人数"
+    },
+    "3,48": {
+      "NameUsedInJavaScript": "班级排名"
+    },
+    "3,51": {
+      "NameUsedInJavaScript": "全体考试人数"
+    },
+    "3,56": {
+      "NameUsedInJavaScript": "全体排名"
     },
     "5,8": {
       "CellType": {
@@ -220,72 +242,6 @@
         ],
         "TemplateKey": "_RS_NewLittleRoundCorner",
         "IsSelectAllOnFocus": true,
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-            "ParameterName": "学员信息",
-            "TableValue": {
-              "TableName": "考号档案",
-              "TableValueType": 1,
-              "BindingInfos": [
-                {
-                  "BindingInfo": {
-                    "TableName": "考号档案",
-                    "ColumnName": "学员姓名",
-                    "GUID": "0d4d816a-1d27-4981-9134-4fe2355c83f8"
-                  },
-                  "ColumnName": "学员姓名"
-                },
-                {
-                  "BindingInfo": {
-                    "TableName": "考号档案",
-                    "ColumnName": "班级",
-                    "GUID": "fef1b3de-4f17-4cc6-b8c8-71f18f13a97a"
-                  },
-                  "ColumnName": "班级"
-                }
-              ],
-              "SqlCondition": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "考号档案",
-                  "ColumnName": "准考证号",
-                  "GUID": "495a35f5-ec06-48c9-bc31-48331b01123a"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=考试成绩总览_v1!I10"
-                }
-              }
-            },
-            "ID": "8d7ad8e21d1040879e92e26f413cff66"
-          },
-          {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=考试成绩总览_v1!I6"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=考试成绩总览_v1!学员信息.学员姓名"
-                }
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=考试成绩总览_v1!I8"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=考试成绩总览_v1!学员信息.班级"
-                }
-              }
-            ]
-          }
-        ],
         "ReadOnly": true
       }
     },
@@ -337,6 +293,7 @@
       }
     },
     "12,21": {
+      "NameUsedInJavaScript": "准考证号",
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "准考证号",
@@ -344,6 +301,7 @@
       }
     },
     "12,25": {
+      "NameUsedInJavaScript": "学员班级",
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "学员班级",
@@ -351,6 +309,7 @@
       }
     },
     "12,29": {
+      "NameUsedInJavaScript": "考试名称",
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "考试名称",
@@ -360,15 +319,40 @@
     "12,33": {
       "BindingInfo": {
         "TableName": "阅卷表",
-        "ColumnName": "得分",
-        "GUID": "8f578916-96cd-4900-88af-3c4040527e10"
+        "ColumnName": "考试总分",
+        "GUID": "e20c8ec3-fa92-4bb1-b31a-506701114959"
       }
     },
     "13,0": {
       "CellType": {
         "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
         "TemplatePageName": "1011630f62784760b675b7a62cc874e",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+              "PageName": "试卷详情信息"
+            }
+          ],
+          "ParamProperties": {
+            "准考证号": "准考证号",
+            "学员姓名": "学员姓名",
+            "学员班级": "学员班级",
+            "考试名称": "考试名称",
+            "考试日期": "考试日期",
+            "考试总分": "考试总分",
+            "班级考试人数": "班级考试人数",
+            "班级排名": "班级排名",
+            "全体考试人数": "全体考试人数",
+            "全体排名": "全体排名"
+          }
+        },
         "ListviewName": "表格1",
+        "NoItemSetting": {
+          "NoItemImageSize": 25.0,
+          "TextForNoItem": "暂无考试信息"
+        },
         "TemplateKey": "_RS_Selectable"
       }
     }
@@ -388,10 +372,14 @@
       },
       {
         "FontFamily": 0,
-        "HorizontalAlignment": 3
+        "Formatter": 3
       },
       {
-        "Background": 4
+        "FontFamily": 0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 5
       }
     ],
     "Types": {
@@ -399,6 +387,7 @@
         "Body",
         "[AUTO]General",
         "@",
+        "yyyy\"年\"m\"月\"d\"日\"",
         "Center",
         "Background 1 -15"
       ]
@@ -701,7 +690,7 @@
       "7,5": 0,
       "7,6": 0,
       "7,7": 0,
-      "7,8": 2,
+      "7,8": 3,
       "7,17": 0,
       "7,18": 0,
       "7,19": 0,
@@ -898,7 +887,7 @@
       "12,57": 0,
       "12,58": 0,
       "12,59": 0,
-      "13,0": 3,
+      "13,0": 4,
       "13,20": 0,
       "13,48": 0,
       "13,49": 0,
@@ -942,7 +931,7 @@
       "17,34": 0
     },
     "ColStyles": {
-      "20": 4
+      "20": 5
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -960,36 +949,36 @@
     "3,29,1,4",
     "3,33,1,4",
     "4,21,5,39",
-    "2,21,1,4",
-    "2,25,1,4",
-    "2,29,1,4",
-    "2,33,1,4",
-    "2,43,1,5",
     "3,43,1,5",
-    "2,48,1,3",
     "3,48,1,3",
-    "2,51,1,5",
     "3,51,1,5",
-    "2,56,1,4",
     "3,56,1,4",
-    "2,37,1,4",
     "3,37,1,4",
-    "2,41,1,2",
-    "3,41,1,2",
     "10,21,1,8",
     "12,21,1,4",
     "12,25,1,4",
     "12,29,1,4",
-    "12,33,1,2",
     "13,21,5,14",
-    "11,21,1,4",
-    "11,25,1,4",
-    "11,29,1,4",
-    "11,33,1,2",
     "13,0,17,20",
     "5,8,1,9",
     "7,8,1,9",
-    "9,8,1,9"
+    "9,8,1,9",
+    "11,21,1,4",
+    "11,25,1,4",
+    "11,29,1,4",
+    "2,21,1,4",
+    "2,25,1,4",
+    "2,29,1,4",
+    "2,33,1,4",
+    "2,37,1,4",
+    "2,43,1,5",
+    "2,48,1,3",
+    "2,51,1,5",
+    "2,56,1,4",
+    "2,41,1,2",
+    "3,41,1,2",
+    "12,33,1,2",
+    "11,33,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1052,4 +1041,4 @@
       "Size": "400,180"
     }
   ]
-}//tcXuKE/5FWwRbUHTJHy40mXyZKvVMBIPvsqfTFjt/Z9AU/sjnw+mUR/rv4lhYI2tpUuK6N8f3f4ZMfMbdHJRhDORVBwXgA17vnFz2Tfb4kp9bDMomrMvX7ZHKgyeLoBTqoxOMGftfeXgpmwnAf8ptd/WCvRimqGYuI1zUlKOcQEgX267CxJWqrIqN3bOKlzw9/0f8EVeK0bvahaJ0g5U14G8mzG96xQw0kdOdzcMMo/l2OqEijqpV+TVnYjZ7HxagG4E1isupOKcDNXz9+ln5fn2gtFsoxNXvDPedaWwov3jFBEQo2dxIBBg5tOSXkkKsUgN9RdLWy7vDwCIUHNlnqfQCPjz9Zpg+xJdvVUSnLWgg5ABRlyko8661S6kLV2jajBIsSOe/lgU1nKhm8SYQYxh96DEv1TZROpl7s1sn8T7FFJcJLe/94Xxh//Dy5bOYRRqOMUR1x1SpFRSJ/mprtnvu/zVFqLS8na5RfmjKoZGJGVSHQY0YgRFPcm6AQcPwLotsWM7RyqENf4db51Or/tNeW8+ZfXvtX26197ecuKu9bB7EwCrpp5f8uM0s+zE/kP2M+x6M5t91/T3prRXzoOYuk3Sjb78/xv8+jcItFX6rRtM/+P8k+P2pLixg1gnYfj8cn/TT47grcXIAnJEFq3HrTs03jpW7lTEEj8Smt0eQCSg9Tkbj+wIHleGnzuuvviG2YEMv0CdbzUFwf7/Pj9a/L5Ra4Yfy0qRRP4W/lATQnM2n7jrkZDg9Kg4TZJb5mm1kq27C4OqO8FfAT0tF8LNK59ZiAbTW9ujGSmg+SYy+iJ90AZbyWKgpwz0ANSsl+1BkNjIw57qxdjKty5q+h4gUryrBtIwxQQ6DTf6p9FZ/g9onmszUMZQHwn1GZ6o4Tl7mPorzHjBB5Zd6XmChg==|920
+}//5w7Jje7KmEzfIlJWApmXNU81c61JFXjmRa4JNT4q+WoimSkCXKaV/kk5xMhBC6p0/xeGGlktoJW37PVurC2Aeahn1k3gQBsfQACGOHERNTm0Z2da2B5NJ7Uc9lCfUObLpWvFH6TkBMBhpxT4yyNSGw2Go6MeExVL/pMiqfTXeamuVTuf9wf4huYdCOA2uZKy5igmqkW+qkJDiYI65U0rENctUmyvKj3Cj0Yr+XBmLckWaZ0z9YEBWCiVosnWDO8vhqGusLgWinSQHGRXq0jSXVf3OrpQ3QrQ+yzdz3C1ZeosactNOFDQLQNE3RS1K3LjQQJUS0rLE02rJE2sV7bb2w81wUgK5PVEDC+F9piXySozpQHwbwYeEv2aqeoBDjvs/maHzUvnd6DSb19jnnEY6AM9bFDCGtvhNAXdspIADkJPRbbrVlb0ZtHJOWWgxECqypduUVjdZXOUm77ZBVoZoAybIzt2jRf6uKlD6wHT/+BI68xJwDEnz9TA1zESCvt4nzoGXC5IhHWriQXkaQDRiM3kFxqpFls3Tz45YE9/om2PNgRo9P3rvQWXzhvPBpWR2QUKMEFev2P2Q/uogAjnXE5T6hxq1aanca80tKBSMBlTS3/9UfjKc9PEe7NsQJua3zbUxLbu5icLABJBCRr8GOMwK8pdGm5dhbI+QF7lyKg4K18N0dYF3ModG6HWeCgkG0nC6wRvFqHlc8ykIksSmGXUjH8GpppfG16jucn0yslvEAf0Dy/mfEber0PvYA9T2j391awKMVl4iXUzXVX/DxSzdX2XjVfbXinf027NItTIUYFpc3r6/0QwTPMyCXMtxvumz3ZhdSEl3+v53tlzsrRITHy2+SBvjl3Bzhc66LWFJXOlUCDrjg2/BZPNsC4s98uStkYb919EHqfCsMugxA==|920
