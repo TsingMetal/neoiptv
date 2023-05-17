@@ -202,7 +202,16 @@
   },
   {
     "ModuleName": "PCPage/未阅卷管理页面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-17T17:33:45.9349033+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\开始阅卷\\未阅卷管理页面.json"
+    ]
   },
   {
     "ModuleName": "PCPage/已阅卷管理页面",
