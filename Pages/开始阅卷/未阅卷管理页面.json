@@ -173,7 +173,7 @@
               ],
               "RelationType": 1
             },
-            "ID": "407145524ebe4733b0f53c1a40af670f"
+            "ID": "35f9801965404050ad2d5a6b77ccebb2"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -203,7 +203,7 @@
                     }
                   }
                 ],
-                "ID": "255f4f52-f2f6-4f57-ba00-933984b5586b"
+                "ID": "917f6e62-81b1-4526-822a-05544a22f13c"
               },
               {
                 "CommandList": [
@@ -219,7 +219,7 @@
                     }
                   }
                 ],
-                "ID": "19292141-c2df-4cea-ae4b-6be8e63b47f7"
+                "ID": "67c031c1-c336-4074-92d8-03bad791d507"
               }
             ]
           }
@@ -254,7 +254,7 @@
                     "MessageFormula": "至少选择一条数据"
                   }
                 ],
-                "ID": "15315f5e-81ed-45cc-aea4-7ab130d9647b"
+                "ID": "8c532ded-49fd-42e3-8c3b-c7226f1a8741"
               },
               {
                 "CommandList": [
@@ -303,7 +303,7 @@
                     "Disabled": true
                   }
                 ],
-                "ID": "704bd13f-5e2a-4bf3-bf79-abdd224c5121"
+                "ID": "91e10d2d-be35-42b9-9328-50610b683cc6"
               }
             ]
           }
@@ -328,7 +328,7 @@
               },
               "Value": "？"
             },
-            "ID": "20078bfbb3914327b4a2eb4cde13644a"
+            "ID": "7fc536e3338747a996b371c8918f049b"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -359,7 +359,7 @@
                     }
                   }
                 ],
-                "ID": "ab323a40-aaf0-4210-99dd-c26eb9c32d06"
+                "ID": "c07f52c7-b90c-4518-bf12-b46778505feb"
               },
               {
                 "CommandList": [
@@ -375,7 +375,7 @@
                     }
                   }
                 ],
-                "ID": "e6ce0ca6-8375-4ee9-8819-08ef6c1d875a"
+                "ID": "7e408762-eda8-430e-832d-9b0a94970a62"
               }
             ]
           }
@@ -853,50 +853,53 @@
         "Formatter": 2
       },
       {
-        "FontFamily": 3,
-        "Formatter": 4
+        "Background": 3
       },
       {
-        "FontFamily": 3
+        "FontFamily": 4,
+        "Formatter": 5
       },
       {
-        "FontFamily": 3,
-        "FontWeight": 5,
-        "Foreground": 6,
-        "HorizontalAlignment": 7
+        "FontFamily": 4
+      },
+      {
+        "FontFamily": 4,
+        "FontWeight": 6,
+        "Foreground": 7,
+        "HorizontalAlignment": 8
       },
       {
         "Formatter": 2,
         "HorizontalAlignment": 1
       },
       {
-        "FontFamily": 3,
+        "FontFamily": 4,
         "Formatter": 2,
         "HorizontalAlignment": 1
       },
       {
-        "FontFamily": 3,
+        "FontFamily": 4,
         "HorizontalAlignment": 1
       },
       {
-        "FontFamily": 3,
-        "Formatter": 8,
-        "HorizontalAlignment": 1
-      },
-      {
-        "FontFamily": 3,
+        "FontFamily": 4,
         "Formatter": 9,
         "HorizontalAlignment": 1
       },
       {
-        "FontFamily": 3,
-        "Foreground": 10,
+        "FontFamily": 4,
+        "Formatter": 10,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 4,
+        "Foreground": 11,
         "HorizontalAlignment": 1,
         "Underline": true
       },
       {
         "FontSize": 21.333333333333332,
-        "Foreground": 11,
+        "Foreground": 12,
         "HorizontalAlignment": 1
       },
       {
@@ -908,6 +911,7 @@
         "#FFFFFF00",
         "Center",
         "@",
+        "#FF7030A0",
         "Body",
         "[AUTO]General",
         "Bold",
@@ -922,100 +926,101 @@
     "CellStyles": {
       "0,56": 0,
       "1,1": 1,
-      "1,42": 2,
-      "1,43": 3,
-      "1,44": 3,
-      "1,45": 3,
-      "1,46": 3,
-      "1,47": 2,
-      "1,48": 3,
-      "1,49": 3,
-      "1,50": 3,
-      "1,51": 3,
-      "1,52": 3,
-      "1,53": 3,
-      "1,54": 3,
-      "1,56": 3,
-      "1,57": 3,
-      "1,58": 4,
-      "1,59": 3,
-      "1,60": 3,
-      "1,61": 3,
-      "1,62": 3,
-      "2,56": 3,
-      "4,2": 5,
-      "4,5": 5,
-      "4,10": 6,
-      "4,11": 3,
-      "4,12": 3,
-      "4,13": 3,
-      "4,14": 3,
-      "4,15": 6,
-      "4,16": 3,
-      "4,17": 3,
+      "1,16": 2,
+      "1,42": 3,
+      "1,43": 4,
+      "1,44": 4,
+      "1,45": 4,
+      "1,46": 4,
+      "1,47": 3,
+      "1,48": 4,
+      "1,49": 4,
+      "1,50": 4,
+      "1,51": 4,
+      "1,52": 4,
+      "1,53": 4,
+      "1,54": 4,
+      "1,56": 4,
+      "1,57": 4,
+      "1,58": 5,
+      "1,59": 4,
+      "1,60": 4,
+      "1,61": 4,
+      "1,62": 4,
+      "2,56": 4,
+      "4,2": 6,
+      "4,5": 6,
+      "4,10": 7,
+      "4,11": 4,
+      "4,12": 4,
+      "4,13": 4,
+      "4,14": 4,
+      "4,15": 7,
+      "4,16": 4,
+      "4,17": 4,
       "4,18": 1,
-      "4,21": 6,
-      "4,22": 3,
-      "4,23": 7,
-      "4,26": 6,
-      "4,27": 3,
-      "4,28": 8,
-      "4,29": 7,
-      "4,33": 6,
-      "4,38": 6,
-      "4,39": 3,
-      "4,40": 3,
-      "4,41": 3,
-      "4,42": 6,
-      "4,43": 3,
-      "4,44": 3,
-      "4,45": 3,
-      "4,46": 9,
-      "4,47": 3,
-      "4,48": 3,
-      "4,49": 3,
-      "4,50": 3,
-      "4,51": 10,
-      "4,52": 3,
-      "4,53": 3,
-      "4,54": 3,
-      "7,56": 3,
-      "13,56": 11,
-      "23,56": 3,
-      "23,57": 3,
-      "23,58": 3,
-      "23,59": 3,
-      "23,60": 3,
-      "23,61": 3,
-      "23,62": 3,
-      "23,63": 3,
-      "23,64": 3,
-      "24,56": 3,
-      "24,57": 3,
-      "24,58": 3,
-      "24,59": 3,
-      "24,60": 3,
-      "24,61": 3,
-      "24,62": 3,
-      "24,63": 3,
-      "24,64": 3,
-      "25,56": 3,
-      "25,57": 3,
-      "25,58": 3,
-      "25,59": 3,
-      "25,60": 3,
-      "25,61": 3,
-      "25,62": 3,
-      "25,63": 3,
-      "25,64": 3,
-      "26,56": 3,
-      "27,1": 12,
-      "27,27": 3,
-      "27,60": 3,
-      "28,60": 3
+      "4,21": 7,
+      "4,22": 4,
+      "4,23": 8,
+      "4,26": 7,
+      "4,27": 4,
+      "4,28": 9,
+      "4,29": 8,
+      "4,33": 7,
+      "4,38": 7,
+      "4,39": 4,
+      "4,40": 4,
+      "4,41": 4,
+      "4,42": 7,
+      "4,43": 4,
+      "4,44": 4,
+      "4,45": 4,
+      "4,46": 10,
+      "4,47": 4,
+      "4,48": 4,
+      "4,49": 4,
+      "4,50": 4,
+      "4,51": 11,
+      "4,52": 4,
+      "4,53": 4,
+      "4,54": 4,
+      "7,56": 4,
+      "13,56": 12,
+      "23,56": 4,
+      "23,57": 4,
+      "23,58": 4,
+      "23,59": 4,
+      "23,60": 4,
+      "23,61": 4,
+      "23,62": 4,
+      "23,63": 4,
+      "23,64": 4,
+      "24,56": 4,
+      "24,57": 4,
+      "24,58": 4,
+      "24,59": 4,
+      "24,60": 4,
+      "24,61": 4,
+      "24,62": 4,
+      "24,63": 4,
+      "24,64": 4,
+      "25,56": 4,
+      "25,57": 4,
+      "25,58": 4,
+      "25,59": 4,
+      "25,60": 4,
+      "25,61": 4,
+      "25,62": 4,
+      "25,63": 4,
+      "25,64": 4,
+      "26,56": 4,
+      "27,1": 13,
+      "27,27": 4,
+      "27,60": 4,
+      "28,60": 4
     },
     "SheetStyle": {
-      "FontFamily": 3
+      "FontFamily": 4
     }
   },
   "Spans": [
@@ -1101,7 +1106,7 @@
                 }
               }
             ],
-            "ID": "fdd56969-cf60-47ba-846f-4ac07b426579"
+            "ID": "12c71cd4-9331-4b65-8344-35b1df277a56"
           }
         ]
       }
@@ -1128,4 +1133,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//9sJewMCDX5DdFCjB2N0JL6C1lVOraqWG29fxGBaGrCE9qFJKhUUX0xdDBa+ugtgdCVF4E28YPMnDb3Np2FEO3csioJattNbfPcY5cfeq2iOKU+RdYcEj+vi3Fb2ZG1JMpbsCP+8cFr0etZgtOjJH5u4iV0blSSDz9CRj2TFNRajbgMJDjqO8cata3ol+kxkvT9LPvmxJA2wGqkg3m73PMKO1o9BXCN+CX5Td+WJH+q2LCB5zZPDVzv0rmT3FsF8BlWDfH20UBQh/InQN9lgsN7zCD9A/MSUqUFnyXObXN+S/gKhI7YfEHQvobLnY2ryWc12s4XyTohSFmgtaWf5dVFm6ATpSrNYD7I9Bt1RM1Eh5t9V0PzoZPLGwmlNhr/JluWtUioUar4FXLll9TFrIAjVeh+kdnt+Hw/SznxomyApcvlLWjHI4R1TMkRc1T93Bel3fPFfOq2ck4GxkBjhI654eFTOrBUk7jFI+kdWfwidM/8LeUZE3bEoWywOfg0nMEYn+wkODuKyNI7yUbvECdeCrsE6wjWuH2NpSvyp4Uo/wMasj1McKbNljPWOOZitOwgnDNxl1clSJCLMy6h+Eu+ZmQocL4iaPHg9CUjmwObPFcpO8qYdMHHdeXDi/GQsNIeGtSjA53IdEPrW1JCOS3ETu14ICH4iYHaZD1sp3uXOIgNGbDl0hF9eCNkjaRs8LGQZ40504up3uq9nOQAOINlavySLZN1VFZ0NAsA+gtlwjARd32qDo+jttBiawQeWA5AlOboHFXlsRDhdMDLMGI9oa2/E8uyU2M2Bxal9OYP4yHUxp2qa3Ws772gZZnaP4ovxXWtGxM1pb4FbaOivIlhTPpw6sKlZwM/RSc2FxixAHXfe6roJ4hAjwAJT6cHmKMcdvyvLSKKaB/UPfmVSQWQ==|920
+}//NJCUGQfbusFUOfgWHJW9+qu3mmB/uS3D33MnxrvkxRRwfOsXRetBhOQsdjj2sRCmx5DXrluYu3lHKqzLu8VfCmCrG+3LbcRXRJOtda0lWGT7di7jNXPPYCj8GBPoTK5uhJoc4hqvwggJtkjPBNJErp0yPXx3Nyl6iPTx8Ej0o1JMTGvtRXPBRXRP0FV58UQ3+oF5TBon2RBSQ/feWY3+nq9f6AuXK/QXICH5BsvHeJba1o/GpPAXmJaZArBb6nAHLSNKmZNIB7XZySUDao8rl6qgAN3MnbNwSS0sd3kKuJI71MYLt4DSLGkcfdpd+OJtoy6B10rYoiqESwafltA/OEBNjGIlOTLdN+6tpYBkQCwvQ+MKOHgiVAEn27Me0U11/tFCaX+Oz1PErOlo3NylWH8yz5pezgOddmcVqiiXSJGgLsIBu04XXs4CAng9tuzI4P9uGYx2xwvcrGYgIKiTyfc5tD1D0aTDcQgjhMAcavvpRoEMhsMQxNPAXHml/4yp+8RTfA1bYR4RR2ZzA0OXVDvCGQkcUrAzIJuE+W4RZw8upOL6NCdx9R3DWy9ZbUcC1SBv9WKO6kE9SRZEQEBySs3uFfAff3qlJ6tiuUySibN/ayBVJwMwbMbwDrd5+B5jpQxqUosJjgijmQU2tkv7XxMnF6HBhlL2ui7wKf6q17zT1QgHCkus0P2siywBRmnorFpMyp1BBiU/cr/F6tNlhKV+hhVlTTyv+QQS9OsnHohMunfvKRuFK2/e/6f8MvdS4F1TAZvc6tf7Fso2PNX41Cm/zlCwefS66ayVWcxDIjgkvzAahgNNTbOGb05Ta1RY3L1EGGvdqNmqw0gY4yRo0oEH1HuiLuhMKxz6XZXW6thIJLrPsPsc12yXyYqJAAPHuO2NoNCNSOJPM49ERSQZbQ==|920

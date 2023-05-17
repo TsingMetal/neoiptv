@@ -37,7 +37,7 @@
         }
       }
     },
-    "Count": 36
+    "Count": 38
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -90,7 +90,8 @@
     "Count": 64
   },
   "Values": {
-    "2,11": true
+    "2,9": "",
+    "37,2": "是否隐藏菜单栏"
   },
   "AttachInfos": {
     "1,1": {
@@ -109,29 +110,13 @@
         }
       }
     },
-    "2,11": {
+    "2,9": {
       "CellType": {
-        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
-        "CellDefaultValue": true,
-        "Style": 2,
-        "PrimaryColor": "#FF5C84B2",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
-              {
-                "Location": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=母版页1!A:I"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=母版页1!L3"
-                }
-              }
-            ]
-          }
-        ]
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": "是否/开启隐藏菜单栏",
+        "ImagePath": "Navigation/131_list_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1"
       }
     },
     "7,0": {
@@ -140,8 +125,29 @@
         "TemplateKey": "样式1",
         "Items": [
           {
+            "Value": "首页",
+            "Text": "首页",
+            "IconPath": "Application/132_title_1.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "index",
+                "DeleteCachedQuery": true
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous",
+              "FGC_LoginUser"
+            ]
+          },
+          {
             "Value": "阅卷管理",
             "Text": "阅卷管理",
+            "IconPath": "Application/029_edit_9.svg",
             "SelectedIconColor": "Background 1",
             "SelectedIconColorUseItemColor": true,
             "IconColorUseItemColor": true,
@@ -152,26 +158,6 @@
               "Administrator"
             ],
             "SubItems": [
-              {
-                "Value": "首页",
-                "Text": "首页",
-                "IconPath": "Application/132_title_1.svg",
-                "SelectedIconColor": "Background 1",
-                "SelectedIconColorUseItemColor": true,
-                "IconColorUseItemColor": true,
-                "IsOldMenuPath": false,
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "index",
-                    "DeleteCachedQuery": true
-                  }
-                ],
-                "CanVisitRoleList": [
-                  "FGC_Anonymous",
-                  "FGC_LoginUser"
-                ]
-              },
               {
                 "Value": "考号管理",
                 "Text": "考号管理",
@@ -487,12 +473,22 @@
       {
         "FontFamily": 0,
         "Foreground": 1
+      },
+      {
+        "Background": 2,
+        "FontFamily": 0,
+        "Foreground": 2
+      },
+      {
+        "Background": 3
       }
     ],
     "Types": {
       "Strs": [
         "Body",
-        "Text 2 0"
+        "Text 2 0",
+        "Background 1 0",
+        "Accent 1 -50"
       ]
     },
     "CellStyles": {
@@ -518,6 +514,7 @@
       "2,6": 1,
       "2,7": 1,
       "2,8": 1,
+      "2,9": 3,
       "2,58": 1,
       "2,59": 1,
       "2,60": 1,
@@ -567,6 +564,13 @@
       "5,62": 1,
       "5,63": 1
     },
+    "RowStyles": {
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4
+    },
     "SheetStyle": {
       "FontFamily": 0
     }
@@ -574,9 +578,10 @@
   "Spans": [
     "7,0,29,9",
     "7,9,29,55",
-    "1,1,5,8",
-    "2,11,3,3",
-    "1,58,5,6"
+    "1,58,5,6",
+    "2,9,3,2",
+    "37,2,1,6",
+    "1,1,5,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
@@ -596,5 +601,11 @@
       "Stretch": 3,
       "Size": "1280,55"
     }
+  ],
+  "CustomNames": [
+    {
+      "Name": "是否隐藏菜单栏",
+      "Formula": "母版页1!$C$38"
+    }
   ]
-}//WiNHsp5RuwgnugRys469CmJqiqmD1sio/6YJXAdJdt34fzEjbYtN7bGETmi5XTS3XX/uT/GH9BcDmyNLJadR/a8vh1iVeIoDGIXo8EeKn0+le7+7xgKreXy7n9c1A7Nmovpce/T/6ifat9huQFq0MX+znBtk4liUrhMppuMxxN3bjnP7Xznrw6qiJa58Y52DDSPN+HA2S8oro3vTSIDkW+wlxBNnVOYL+yLe5gKXbNUQWoEOApLZNrVO7JiOJTUcBTBkr9p2TDpXiNzirJ3/ds2iUoFn/6Vy4F8W/lAu7LmC+QVhPSns6E0SJmhwEdomNwNNPS6vjpVD/VrSC3ORqz1jhVHCOvwVRqWI/aFd6qhfZj3s0cEEBqQmwZdQU5D+J0HEWp55/ASiG1846xT1AWC1T97qPkYIDClAQRS4zefgbnIeBJnyk8HY05+l1y7rcVqjupUI6uIctXJgvDMtRh6YHifFNPOEFagCH/vdSowgnqzlWwOmiCKsu2DqEs6U0iPq69xB3O8rtuBChF0+5yvBv0/glFA57Q4LR0bZ+CriDIk7v3zCOi6Gg2ejDf6zGNA2bnpxhMPMUiA6hufWr23EA7fPKDAS97GgLLVMpOhXIiNyBrSaq2Gsr2Z+XjH5x9GnEWr/oOSSMesacj3xBll52niUSZVS46/a0rlmLK1zXM5tfkzfT+6zQ+MqZeOgDtBgdHTXJqzEgEoMLk00NbDyyy7qXeZ/TU6gOMGZUoWOlqel+GNImPxL537XXFDDJyfv8/VMIOdfNc9zkWuOq23QPnpG9xQqLC7+kb1oRFCptjSHAkgn9llEbsk1JcX4Cj6X/w5fs0KJaQ89FOrPyyDxciY4saLE8ahCqzqhMLxU72vWv2dElaxzOplsHYFCE4GqQwDEVwidI6kp00mSlA==|920
+}//2vYDn7AV5TSGo5kN+SFTiN5z0uf/DGBrPfDjJZ/PvmqlKxxuKACRtJTDzFV6/ihTMZpBoK+H9f/4O/jawFWIZ+57go80Tc4zYzv7IfkX8lM1iMRQb5nRi3xGpbIvSndHdIPT3L8hbQpeusf13LGJH8iSAvntmPpgpw3eGdJFnlgh3bj3Hk29QZDOx1YS6Ru/Mfst3E/sckERhrVuklIbPmY0UVWeIewn4XBKT91SLQDmgwX1aBQ4N9oA8IfDfQ1CHNJfCJOylXqXqmlkXvavhyCh9JK/y22uER0XGYg8HNo0kFzv7FCebf6/zWuY9GDomYhODAdPFhKX4hlE1SeQGXhe8AWP81km3opp9iJHbB2teT+0cVybxwhfQUI32suJi9VhC2SiZP8TTWgtHS6AxKyiqgVu0DbNJCqsEcv82YjZi0dYPzeFiXMmjHGF4pm1EWi2G++1JyVH1mRosCNyv3nzVg1wdxv1wZSYULXSNWAS5daRL2w4IP/10tDUU+SiyrhVeARArBR0gkD1xnnBvAynLurg1lp7UocvafvLjO2BMW8PO0+i7V6uSudBKt3YLenx9YfLD9jwlDw9iAf7tlxhx+wLWp8H+mtLW2KTOiwavv0yLJTHk2aRJOox9aRdCP2xLADRxAndpx0mwKkFwrEMYOmQdkEib6D3Rb15s/iCEdQqNwhlBKQUUsM8oe+fJoQgzVY8vxMxIWm+CpRNI+xSDtyymPRRRAd5Ry5c6HHmDA4WwJ/W1C7dZGaSCZa9cBbbQXbejvOIOSHJn7c8rZhj3uCmUUwCbBFbAyNI127NFbMQ49OE5YSF45otN4BQdGXVl2BQ6XHJ0dk6H7TUUVBdleHXxyH3/UStVFi56RU9sTk+jkcKi5DchgG0o2757cjMzfu5deIy8i1GssaZkQ==|920

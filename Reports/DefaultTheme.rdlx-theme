@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><Theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Colors><Dark1>#000000</Dark1><Dark2>#042531</Dark2><Light1>#FFFFFF</Light1><Light2>#EAEBDE</Light2><Accent1>#59A926</Accent1><Accent2>#1890FF</Accent2><Accent3>#EBC54B</Accent3><Accent4>#EA772A</Accent4><Accent5>#D03736</Accent5><Accent6>#904DA0</Accent6><Hyperlink>#FFFFFF</Hyperlink><HyperlinkFollowed>#FFFFFF</HyperlinkFollowed></Colors><Fonts><MajorFont><Family>微软雅黑</Family><Style>Normal</Style><Size>10pt</Size><Weight>Normal</Weight></MajorFont><MinorFont><Family>微软雅黑</Family><Style>Normal</Style><Size>10pt</Size><Weight>Normal</Weight></MinorFont></Fonts><Images /><Constants /></Theme>
+<?xml version="1.0" encoding="utf-8"?>
+<Theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Colors>
+    <Dark1>#000000</Dark1>
+    <Dark2>#4F271C</Dark2>
+    <Light1>#FFFFFF</Light1>
+    <Light2>#E7DEC9</Light2>
+    <Accent1>#3891A7</Accent1>
+    <Accent2>#FEB80A</Accent2>
+    <Accent3>#C32D2E</Accent3>
+    <Accent4>#7030A0</Accent4>
+    <Accent5>#964305</Accent5>
+    <Accent6>#475A8D</Accent6>
+    <Hyperlink>#FFFFFF</Hyperlink>
+    <HyperlinkFollowed>#FFFFFF</HyperlinkFollowed>
+  </Colors>
+  <Fonts>
+    <MajorFont>
+      <Family>微软雅黑</Family>
+      <Style>Normal</Style>
+      <Size>10pt</Size>
+      <Weight>Normal</Weight>
+    </MajorFont>
+    <MinorFont>
+      <Family>微软雅黑</Family>
+      <Style>Normal</Style>
+      <Size>10pt</Size>
+      <Weight>Normal</Weight>
+    </MinorFont>
+  </Fonts>
+  <Images />
+  <Constants />
+</Theme>

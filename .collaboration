@@ -202,16 +202,7 @@
   },
   {
     "ModuleName": "PCPage/未阅卷管理页面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-17T17:33:45.9349033+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\开始阅卷\\未阅卷管理页面.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/已阅卷管理页面",
@@ -311,16 +302,7 @@
   },
   {
     "ModuleName": "MasterPCPage/母版页1",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-17T18:08:15.5148707+08:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\母版页1.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/母版页2",
@@ -388,20 +370,7 @@
   },
   {
     "ModuleName": "Theme",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-17T17:23:40.397254+08:00",
-    "ModuleType": 9,
-    "ToRemoveFiles": [
-      "Theme\\CellTypeStyles",
-      "Theme\\ListViewStyles",
-      "Theme\\StyleDefaultNames",
-      "Theme\\ThemeConfig",
-      "Reports\\DefaultTheme.rdlx-theme"
-    ]
+    "ModuleType": 9
   },
   {
     "ModuleName": "image/内置图片",
