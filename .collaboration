@@ -507,16 +507,6 @@
     "ModuleType": 2
   },
   {
-    "ModuleName": "PCPage/题目得分列表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-18T14:00:33.6920207+08:00",
-    "ModuleType": 1
-  },
-  {
     "ModuleName": "Pages/学员查询V1",
     "State": 3,
     "LockedBy": {
