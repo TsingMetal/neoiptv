@@ -435,7 +435,16 @@
   },
   {
     "ModuleName": "Pages/测试",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-18T14:00:33.6916278+08:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\测试"
+    ]
   },
   {
     "ModuleName": "Table/FGC_对外销售商品表",
@@ -452,12 +461,12 @@
   },
   {
     "ModuleName": "MobilePage/考试成绩总览_v1",
-    "State": 1,
+    "State": 4,
     "LockedBy": {
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-05-18T09:24:28.792849+08:00",
+    "LockDateTime": "2023-05-18T14:00:33.6918201+08:00",
     "ModuleType": 2,
     "ToRemoveFiles": [
       "Pages\\测试\\考试成绩总览_v1.json",
@@ -466,7 +475,16 @@
   },
   {
     "ModuleName": "MobilePage/成绩查询入口",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-18T14:00:33.6918813+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\测试\\成绩查询入口.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/题目得分详情",
@@ -475,7 +493,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-05-18T10:11:04.7602624+08:00",
+    "LockDateTime": "2023-05-18T14:00:33.6919902+08:00",
     "ModuleType": 2
   },
   {
@@ -485,7 +503,17 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-05-18T11:15:15.7232332+08:00",
+    "LockDateTime": "2023-05-18T14:00:33.6920207+08:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/学员查询V1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-18T14:00:33.691635+08:00",
+    "ModuleType": 6
   }
 ]
