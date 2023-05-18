@@ -542,5 +542,15 @@
     },
     "LockDateTime": "2023-05-18T14:00:33.691635+08:00",
     "ModuleType": 6
+  },
+  {
+    "ModuleName": "Image/madecard-index.png",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-18T17:42:58.5126494+08:00",
+    "ModuleType": 38
   }
 ]
