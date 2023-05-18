@@ -56,7 +56,6 @@
   "Values": {
     "0,56": 2,
     "1,16": "查询",
-    "1,49": "均分：",
     "4,51": "批改/查看",
     "13,56": "暂无数据",
     "24,56": "%CurrentUser.UserName%",
@@ -67,7 +66,6 @@
   },
   "Formulas": {
     "3,56": "COUNTA(AU5)",
-    "1,51": "AVERAGE(AA5)",
     "25,60": "ODATA(\"阅卷表?$select=批改时间&$filter=阅卷老师 eq \"&IF(ISBLANK(BE25),\"null\",\"'\"&BE25&\"'\")&\" and 批改时间 ne null&$top=1&$orderby=批改时间 desc\")",
     "26,60": "ODATA(\"阅卷表?$select=批改时间&$filter=阅卷老师 eq \"&IF(ISBLANK(BE25),\"null\",\"'\"&BE25&\"'\")&\" and 批改时间 ne null&$top=1&$orderby=批改时间 asc\")"
   },
@@ -141,7 +139,7 @@
               ],
               "RelationType": 1
             },
-            "ID": "567d1afb93e044cfbd574639968dbedc"
+            "ID": "f368635598a34d25bcb2281c8c5f93f9"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -172,7 +170,7 @@
                     }
                   }
                 ],
-                "ID": "fae03bf2-ade6-433c-b5ca-8c13dec291f2"
+                "ID": "de85dbf8-0225-4aff-becd-41861e59ece1"
               },
               {
                 "CommandList": [
@@ -188,20 +186,13 @@
                     }
                   }
                 ],
-                "ID": "f0a55d12-37fe-41f3-9067-fdff0c6745fc"
+                "ID": "761b436a-4575-4db9-91cd-60d1188bffc4"
               }
             ]
           }
         ],
         "Text": "查询",
         "TemplateKey": "样式6"
-      }
-    },
-    "1,51": {
-      "CellType": {
-        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
-        "TemplateKey": "样式3",
-        "ReadOnly": true
       }
     },
     "3,1": {
@@ -703,8 +694,6 @@
   },
   "Spans": [
     "1,1,1,14",
-    "1,49,1,2",
-    "1,51,1,4",
     "3,56,1,9",
     "4,2,1,3",
     "4,5,1,5",
@@ -777,7 +766,7 @@
                 }
               }
             ],
-            "ID": "1a44acca-f1ec-4ba7-bc2a-b93bb9079650"
+            "ID": "2caf5fd9-238c-4b45-a83e-0a51225386d7"
           }
         ]
       }
@@ -805,4 +794,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//HyoGuOjVVSc6LGokQnH+CtTT8mAuib8mrfMAySMfWhZqnm6YVOQsR1KvjCEC/7ZSbvPg54VS/mD3QZ53KSa4f868g8aebAGkGtyJz3aRs2Hcwuw4Zu1q/bMAMXJuuKZzyAw5wisCq0OacuAy2a418YMYIncZLcN3IjfFR2hmOpms06muFRhb0yM/MQMHvPubEBZqNEjW4hFpOCwoPgVMLonKDp75URhpiR2GtBf7EYAE7jHYxiKVw290ED/FEYy/8DF+Fp4NZ9YTFFJ+yXhBepkWI7R6qL9Yvhq8V2oXMgJzJ+hgJ/s7dqTq1VeXzyQRw0iUHQR4ZMy0NRMDkxRgKbfeHA/LkDRr/ne6uBP6NKmMM9V4Jo4pSC+ACkH3qjo7+zCj/mVyMZea2Eh8rNbUkscoRrQumYk+tDLHrAeTziSky0JbniZpnjQ07z7cQnBipGK2LqNfa326KjNxPvx6jNrkurcFZBKl3j9xOzjiqlI2UlqI1UrE16JqVaQOx50ws/EVyu3uaVckiaANUm49+J9hXxtPmFVIcbSbS12BLQYsiDexNXox0yB18xAVHRoRbPhZm/ba8ZVgX8hjWVLniTtURYq98Pe5AnJKsD/8wa9yb6HcbSY7xAu1jQ/lmW1wtZz4icUL/T9peRQR665ZHMKeqkz3UHTXGDayDq1hBCJBqvCRm4Tjli5OXPIVv48UB61ksTj5bEa+7xA5IRRDXOJIeBEOOsaR9wLXPDphXxSxqpAmJdT9hr7s9WqG2tEFck9RQA8CdKV6EqQRsfgo/EncE6RwYa6tfyJkTntH2HQMUbNCw1GPx5Z1VSq92c8tSonp5PLoMrpjSTziybCtQ/sn63aGJhNUE2pKadLuUwIoptmR0NST+rxfBek8WtpBOEtKBhJ9O8qHjAHL8raLoA==|920
+}//YjIJJrm4FKXwmvjx3o/z6eX2y2DIDyVREeu1q6JMItnG88+8uNDh4+x1EULgn5aQaCkaoNI8xKfX7K4kDF05VfuPg42VSabfeZghtHIjN8Y6RhynGK9jXcn/sfMFyCzmZ+jWoywV3yjUHOzBm+ya5ykmC9lnCO60JxMfkIOAmMCIJYt8uy8WTyd0fj9ys5OiVpbaC1YzWyeFWcmKeWfsIl2LL+EmAJ4wc2a/hLFjy/YuI+C+jB76bSYZ+wMwav2gQtHjxDJK/lz2cIsG8J7kLBJy2H1Ugs+H/5nr0S0FzTMD1nlH+Ic9bzv5ikWJT0GbevukWjIe8y4oqVtGGd3olG2z61zXL6lYqgTtDFAErq/ZQHmjOzujQqQN4/ONU/NCgm/NSGbiEWILnnlHivwrPG/K78vdk8XIAWnnJN9/9+dzEbpVhRQuO+YOuO2IRlD4/VMGR3rTIfQ/5WtyI+HAToOa5O4K16wL6MeVpyaB9oH4rdI9+djFsCLg9N37OUtAcANcYJE7maF2KGwC7MkEy7xYVUvQcgSe4I3IfOlqBFi70xGfWyDmHS1tuSIv8+Eeer4/i5Vre7QtlDiiwi5//IPrRXgzMZvYewpro2LHw8HyBYC19gLhYFl8RwFoUlVus4Dz5dCAv6pz2iBeLZl7lvNm0vY1RKxGsswsgrrsrwHZDHzTlJvTMPgvbbDnHltpcf5hkycK9vBwMvPc9DF8Ij25trZtXrvZiOBwbuzWXvddb4D11hFkRY5EPkSXIw5lh2hwzH++EtjQaLOyHA+SfEhclMtStuiny8uWVZOavifloLzZ3ournqYM7XQyfaRGf3bYwhPlgAKqJJIBMNwHEk4dUACyuEU4e85WlHzrwLEcTPsUNDvUK3QWyVMP/0OQwRADtiRSbnhjBrN1/yKzUA==|920

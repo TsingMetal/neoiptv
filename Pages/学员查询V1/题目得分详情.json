@@ -1,0 +1,517 @@
+{
+  "Rows": {
+    "Count": 28
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "Count": 48
+  },
+  "Values": {
+    "0,18": "*逻辑占位区",
+    "1,19": "准考证号：",
+    "3,0": "考试名称：",
+    "3,19": "考试名称：",
+    "6,40": "考试人数",
+    "6,43": "本题排名"
+  },
+  "Formulas": {
+    "7,40": "COUNTIFS(T17,T8)",
+    "7,43": "COUNTIFS(T17,T8,W17,\">\"&Z8)",
+    "3,4": "Y4"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImageSizeMode": 2,
+        "ImagePath": "logo.png"
+      }
+    },
+    "4,0": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "TemplatePageName": "c8f5a319ce694bdeba18465fb7e3763",
+        "ListviewName": "表格1",
+        "TemplateKey": "_RS_Selectable"
+      }
+    },
+    "6,19": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "阅卷表",
+        "RowIndex": 6,
+        "ColumnIndex": 19,
+        "RowCount": 7,
+        "ColumnCount": 28,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "准考证号",
+                "GUID": "8318105c-1bd3-439d-ac35-6e99db821ae0"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=题目得分详情!Y2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试名称",
+                "GUID": "1fed640a-029f-49c0-b3db-8d4d7324bc51"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=题目得分详情!Y4"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "题目名称",
+                "GUID": "8219f5ea-b4da-4a34-a677-dd1718742582"
+              },
+              "Value": "%Null%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "状态",
+                "GUID": "0aa7c12d-1e61-47aa-b566-9a7dbe090381"
+              },
+              "Value": "1"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "批改时间",
+                "GUID": "33ab0c42-e340-4580-bd94-577bf51e0b84"
+              },
+              "Value": "%Null%"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "7,19": {
+      "NameUsedInJavaScript": "题目名称",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题目名称",
+        "GUID": "f0db87dc-4b64-4901-afe1-dcc7d3adcb9c"
+      }
+    },
+    "7,23": {
+      "NameUsedInJavaScript": "满分",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "满分",
+        "GUID": "2d0578a5-04d0-432e-bc2a-43fdbcb93756"
+      }
+    },
+    "7,25": {
+      "NameUsedInJavaScript": "得分",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "得分",
+        "GUID": "40715f1f-b31e-4f06-a7cb-51b0c2432d2d"
+      }
+    },
+    "7,27": {
+      "NameUsedInJavaScript": "问题",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "问题",
+        "GUID": "7f7d4fc3-a3ae-45bd-bdde-16aa87c50636"
+      }
+    },
+    "7,29": {
+      "NameUsedInJavaScript": "优点",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "优点",
+        "GUID": "5a4dd4a5-75c9-48fb-ad55-8e5739fba2cf"
+      }
+    },
+    "7,31": {
+      "NameUsedInJavaScript": "自定义评语",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "自定义评语",
+        "GUID": "fe43dc63-cc3e-4979-b086-ce486eb8d76a"
+      }
+    },
+    "7,35": {
+      "NameUsedInJavaScript": "试卷",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "试卷",
+        "GUID": "100487fb-2a14-41f0-8560-4a21015e7524"
+      }
+    },
+    "7,37": {
+      "NameUsedInJavaScript": "阅卷老师",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "阅卷老师",
+        "GUID": "44a0e466-54bc-4ab3-a787-ba449992a2fc"
+      }
+    },
+    "7,40": {
+      "NameUsedInJavaScript": "考试人数"
+    },
+    "7,43": {
+      "NameUsedInJavaScript": "本题排名"
+    },
+    "15,19": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "阅卷表",
+        "RowIndex": 15,
+        "ColumnIndex": 19,
+        "RowCount": 5,
+        "ColumnCount": 13,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试名称",
+                "GUID": "ddb26a83-47cb-4384-b61f-5b2f25f1802d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=题目得分详情!Y4"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "题目名称",
+                "GUID": "0845a782-be85-42c8-859b-5c836d851762"
+              },
+              "Value": "%Null%"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "16,19": {
+      "NameUsedInJavaScript": "题目名称",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题目名称",
+        "GUID": "e18b62b7-cf48-4ca7-a0bc-96a132461da4"
+      }
+    },
+    "16,22": {
+      "NameUsedInJavaScript": "得分",
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "得分",
+        "GUID": "ca4f7660-2e79-4e56-880c-774601d849f6"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "1,37": 0,
+      "1,38": 0,
+      "1,39": 0,
+      "1,40": 0,
+      "1,41": 0,
+      "1,42": 0,
+      "1,43": 0,
+      "1,44": 0,
+      "1,45": 0,
+      "1,46": 0,
+      "1,47": 0,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 0,
+      "2,40": 0,
+      "2,41": 0,
+      "2,42": 0,
+      "2,43": 0,
+      "2,44": 0,
+      "2,45": 0,
+      "2,46": 0,
+      "2,47": 0,
+      "3,0": 1,
+      "3,1": 1,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,19": 2,
+      "3,20": 0,
+      "3,21": 0,
+      "3,22": 0,
+      "3,23": 0,
+      "3,24": 0,
+      "3,25": 0,
+      "3,26": 0,
+      "3,27": 0,
+      "3,28": 0,
+      "3,29": 0,
+      "3,30": 0,
+      "3,31": 0,
+      "3,32": 0,
+      "3,37": 0,
+      "3,38": 0,
+      "3,39": 0,
+      "3,40": 0,
+      "3,41": 0,
+      "3,42": 0,
+      "3,43": 0,
+      "3,44": 0,
+      "3,45": 0,
+      "3,46": 0,
+      "3,47": 0,
+      "4,0": 3,
+      "4,37": 0,
+      "4,38": 0,
+      "4,39": 0,
+      "4,40": 0,
+      "4,41": 0,
+      "4,42": 0,
+      "4,43": 0,
+      "4,44": 0,
+      "4,45": 0,
+      "4,46": 0,
+      "4,47": 0,
+      "5,19": 2,
+      "5,20": 0,
+      "5,21": 0,
+      "5,22": 0,
+      "5,23": 0,
+      "5,24": 0,
+      "5,25": 0,
+      "5,26": 0,
+      "5,27": 0,
+      "5,28": 0,
+      "5,29": 0,
+      "5,30": 0,
+      "5,31": 0,
+      "5,32": 0,
+      "27,0": 0,
+      "27,1": 0,
+      "27,2": 0,
+      "27,3": 0,
+      "27,4": 0,
+      "27,5": 0,
+      "27,6": 0,
+      "27,7": 0,
+      "27,8": 0,
+      "27,9": 0,
+      "27,10": 0,
+      "27,11": 0,
+      "27,12": 0,
+      "27,13": 0,
+      "27,14": 0,
+      "27,15": 0,
+      "27,16": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,19,1,4",
+    "1,24,1,9",
+    "3,19,1,4",
+    "3,24,1,9",
+    "7,19,1,4",
+    "7,23,1,2",
+    "7,25,1,2",
+    "7,27,1,2",
+    "7,29,1,2",
+    "7,31,1,4",
+    "8,19,5,28",
+    "7,35,1,2",
+    "7,37,1,3",
+    "17,19,3,13",
+    "7,40,1,3",
+    "7,43,1,4",
+    "16,19,1,3",
+    "16,22,1,2",
+    "4,0,23,17",
+    "0,0,3,17",
+    "3,4,1,6",
+    "6,19,1,4",
+    "6,23,1,2",
+    "6,25,1,2",
+    "6,27,1,2",
+    "6,29,1,2",
+    "6,31,1,4",
+    "6,35,1,2",
+    "6,37,1,3",
+    "6,40,1,3",
+    "6,43,1,4",
+    "15,19,1,3",
+    "15,22,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true,
+    "RelatedDataTableName": "阅卷表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "80485754-a514-430e-9b5a-57ab5be54d6a.png",
+      "DisplayName": "背景图1",
+      "StyleInfo": {
+        "Fill": "Background 1 -15"
+      },
+      "IsAutomaticFill": false,
+      "Location": "340,0",
+      "Size": "20,560"
+    },
+    {
+      "Name": "b3149d9b-541f-4f29-85ce-0d8153fbd3be.png",
+      "DisplayName": "背景图2",
+      "StyleInfo": {
+        "Fill": "Background 1 -15"
+      },
+      "IsAutomaticFill": false,
+      "Location": "0,60",
+      "Size": "340,20"
+    },
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "BackgroundPicture2",
+      "DisplayName": "背景图3",
+      "ForguncyPictureName": "RepeatBackground/Sources/02.png",
+      "ForguncyPictureSourceType": 3,
+      "Stretch": 0,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Location": "740,20",
+      "Size": "45.32766342163086,45.32766342163086"
+    },
+    {
+      "Name": "248a1784-6c78-4999-b62a-cacd4e6e08c7.png",
+      "DisplayName": "背景图4",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Location": "340,0",
+      "Size": "20,560"
+    },
+    {
+      "Name": "1b73b538-0bfa-4974-8454-ade2a5da3ea6.png",
+      "DisplayName": "背景图5",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Location": "0,60",
+      "Size": "340,20"
+    }
+  ]
+}//dXdorfFbOioe+m/mwNfki5lzl24VLLmZ/K9I2qsyTeqzf8ucLErDYNAOhF2R9xIbR3CEuuUbUHYB+oPoqOG7QiUQnDvIUpZ7c6dr2aRGxoKH3iIMRU2xlSdQoBVQt8Kq14wA+LjhsuRhQEA8yu7j9NpKDbsP+HkbMhbNkyBroxZJPxGhc/emU8EspEu+dnU0Av8/cOwr3hvrqTVTV0Ayc+wbJMXUu/mFK+yWRemJx2nJrZTPDKuel+Bc/2Tz4O+xZPFtNi37W1T5wv4jYtP3gYkrlWoh5/N1P2VoTiUBmWMXOAl88fHREVJ+O56sPCVFS6PYhdA4jsaBmtYdFko9uGPY5nme65ZvLTXx7yqCZGt29I+UOEwyAfMgZdFe8AFy6959NFf4HEFFfvimiFxX6V/2OD4BCxAWR9ghX4+GSzEYgaaPS3Ia2tsWsCdqwcHCSfQJG1c1JoQdhFoyn5JWpfTV2Gj202xuvUDJIQ0347mjOCpOh5BfDEfVFbgGBTVxFxrjWYAK/aXTOXuSQ7hh70iV/SfKbXFTp9dfemB2BSshUzZktaV/x7OPMbTMbOIGw7bTNX8ciAvpZA8M85wMX4dVZih1jB0Fm5waYHo+xk37O70kf8WjF7BdDNIONeuFxwi4sl2C5gMZ6YcLFz1FOgYRxbqsFt4PUWYXmUVgHkDNwT4NdgC1sIfdsZVUmvaKs0YRsmPY//IIhFBZDzbW71OYzPDGT8svqbEaDH6tNITPxbqRdrlO5V5KLo2nhFbBu3sB3kHrVF1Mk6iVCJXPmYiu+LX4C9UgfSg+1/U+EB45TlZkOKUAwUPGl29CmI1joZxyFjLUB+/qHwW8lZsubbjcJ8XsohPwel+Uw521v0Ycnj18QQ62w1se4ddZMIK37QrT52jvIrOy1ktbhQbNSg==|920
