@@ -7,7 +7,7 @@
         }
       }
     },
-    "Count": 24
+    "Count": 29
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -41,41 +41,41 @@
     "Count": 63
   },
   "Values": {
-    "11,4": "考号导入",
-    "11,17": "上传试卷",
-    "11,30": "题库管理",
-    "11,43": "开始阅卷",
-    "15,6": "进入",
-    "15,19": "进入",
-    "15,32": "进入",
-    "15,45": "进入"
+    "14,4": "考号导入",
+    "14,17": "上传试卷",
+    "14,30": "题库管理",
+    "14,43": "开始阅卷",
+    "18,6": "进入",
+    "18,19": "进入",
+    "18,32": "进入",
+    "18,45": "进入"
   },
   "AttachInfos": {
-    "5,3": {
+    "8,3": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "ImagePath": "southeast.jpg"
       }
     },
-    "5,16": {
+    "8,16": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "ImagePath": "madecard-index.png"
       }
     },
-    "5,29": {
+    "8,29": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "ImagePath": "题库.png"
       }
     },
-    "5,42": {
+    "8,42": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "ImagePath": "marking-index.png"
       }
     },
-    "15,6": {
+    "18,6": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -88,7 +88,7 @@
         "TemplateKey": "_RS_Main1"
       }
     },
-    "15,19": {
+    "18,19": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -101,7 +101,7 @@
         "TemplateKey": "_RS_Main1"
       }
     },
-    "15,32": {
+    "18,32": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -114,7 +114,7 @@
         "TemplateKey": "_RS_Main1"
       }
     },
-    "15,45": {
+    "18,45": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -161,70 +161,49 @@
       ]
     },
     "CellStyles": {
-      "4,15": 0,
-      "4,16": 0,
-      "4,17": 0,
-      "4,18": 0,
-      "4,19": 0,
-      "4,20": 0,
-      "4,21": 0,
-      "4,22": 0,
-      "4,23": 0,
-      "4,24": 0,
-      "4,25": 0,
-      "4,28": 0,
-      "4,29": 0,
-      "4,30": 0,
-      "4,31": 0,
-      "4,32": 0,
-      "4,33": 0,
-      "4,34": 0,
-      "4,35": 0,
-      "4,36": 0,
-      "4,37": 0,
-      "4,38": 0,
-      "4,41": 0,
-      "4,42": 0,
-      "4,43": 0,
-      "4,44": 0,
-      "4,45": 0,
-      "4,46": 0,
-      "4,47": 0,
-      "4,48": 0,
-      "4,49": 0,
-      "4,50": 0,
-      "4,51": 0,
-      "4,52": 0,
-      "5,3": 0,
-      "5,15": 0,
-      "5,16": 0,
-      "5,25": 0,
-      "5,28": 0,
-      "5,29": 0,
-      "5,38": 0,
-      "5,41": 0,
-      "5,42": 0,
-      "5,51": 0,
-      "5,52": 0,
-      "6,15": 0,
-      "6,25": 0,
-      "6,28": 0,
-      "6,38": 0,
-      "6,41": 0,
-      "6,51": 0,
-      "6,52": 0,
       "7,15": 0,
+      "7,16": 0,
+      "7,17": 0,
+      "7,18": 0,
+      "7,19": 0,
+      "7,20": 0,
+      "7,21": 0,
+      "7,22": 0,
+      "7,23": 0,
+      "7,24": 0,
       "7,25": 0,
       "7,28": 0,
+      "7,29": 0,
+      "7,30": 0,
+      "7,31": 0,
+      "7,32": 0,
+      "7,33": 0,
+      "7,34": 0,
+      "7,35": 0,
+      "7,36": 0,
+      "7,37": 0,
       "7,38": 0,
       "7,41": 0,
+      "7,42": 0,
+      "7,43": 0,
+      "7,44": 0,
+      "7,45": 0,
+      "7,46": 0,
+      "7,47": 0,
+      "7,48": 0,
+      "7,49": 0,
+      "7,50": 0,
       "7,51": 0,
       "7,52": 0,
+      "8,3": 0,
       "8,15": 0,
+      "8,16": 0,
       "8,25": 0,
       "8,28": 0,
+      "8,29": 0,
       "8,38": 0,
       "8,41": 0,
+      "8,42": 0,
       "8,51": 0,
       "8,52": 0,
       "9,15": 0,
@@ -235,106 +214,24 @@
       "9,51": 0,
       "9,52": 0,
       "10,15": 0,
-      "10,16": 0,
-      "10,17": 0,
-      "10,18": 0,
-      "10,19": 0,
-      "10,20": 0,
-      "10,21": 0,
-      "10,22": 0,
-      "10,23": 0,
-      "10,24": 0,
       "10,25": 0,
       "10,28": 0,
-      "10,29": 0,
-      "10,30": 0,
-      "10,31": 0,
-      "10,32": 0,
-      "10,33": 0,
-      "10,34": 0,
-      "10,35": 0,
-      "10,36": 0,
-      "10,37": 0,
       "10,38": 0,
       "10,41": 0,
-      "10,42": 0,
-      "10,43": 0,
-      "10,44": 0,
-      "10,45": 0,
-      "10,46": 0,
-      "10,47": 0,
-      "10,48": 0,
-      "10,49": 0,
-      "10,50": 0,
       "10,51": 0,
       "10,52": 0,
-      "11,4": 1,
       "11,15": 0,
-      "11,16": 0,
-      "11,17": 2,
-      "11,18": 0,
-      "11,19": 0,
-      "11,20": 0,
-      "11,21": 0,
-      "11,22": 0,
-      "11,23": 0,
-      "11,24": 0,
       "11,25": 0,
       "11,28": 0,
-      "11,29": 0,
-      "11,30": 3,
-      "11,31": 0,
-      "11,32": 0,
-      "11,33": 0,
-      "11,34": 0,
-      "11,35": 0,
-      "11,36": 0,
-      "11,37": 0,
       "11,38": 0,
       "11,41": 0,
-      "11,42": 0,
-      "11,43": 3,
-      "11,44": 0,
-      "11,45": 0,
-      "11,46": 0,
-      "11,47": 0,
-      "11,48": 0,
-      "11,49": 0,
-      "11,50": 0,
       "11,51": 0,
       "11,52": 0,
       "12,15": 0,
-      "12,16": 0,
-      "12,17": 0,
-      "12,18": 0,
-      "12,19": 0,
-      "12,20": 0,
-      "12,21": 0,
-      "12,22": 0,
-      "12,23": 0,
-      "12,24": 0,
       "12,25": 0,
       "12,28": 0,
-      "12,29": 0,
-      "12,30": 0,
-      "12,31": 0,
-      "12,32": 0,
-      "12,33": 0,
-      "12,34": 0,
-      "12,35": 0,
-      "12,36": 0,
-      "12,37": 0,
       "12,38": 0,
       "12,41": 0,
-      "12,42": 0,
-      "12,43": 0,
-      "12,44": 0,
-      "12,45": 0,
-      "12,46": 0,
-      "12,47": 0,
-      "12,48": 0,
-      "12,49": 0,
-      "12,50": 0,
       "12,51": 0,
       "12,52": 0,
       "13,15": 0,
@@ -371,9 +268,10 @@
       "13,50": 0,
       "13,51": 0,
       "13,52": 0,
+      "14,4": 1,
       "14,15": 0,
       "14,16": 0,
-      "14,17": 0,
+      "14,17": 2,
       "14,18": 0,
       "14,19": 0,
       "14,20": 0,
@@ -384,7 +282,7 @@
       "14,25": 0,
       "14,28": 0,
       "14,29": 0,
-      "14,30": 0,
+      "14,30": 3,
       "14,31": 0,
       "14,32": 0,
       "14,33": 0,
@@ -395,7 +293,7 @@
       "14,38": 0,
       "14,41": 0,
       "14,42": 0,
-      "14,43": 0,
+      "14,43": 3,
       "14,44": 0,
       "14,45": 0,
       "14,46": 0,
@@ -409,7 +307,9 @@
       "15,16": 0,
       "15,17": 0,
       "15,18": 0,
-      "15,19": 4,
+      "15,19": 0,
+      "15,20": 0,
+      "15,21": 0,
       "15,22": 0,
       "15,23": 0,
       "15,24": 0,
@@ -418,7 +318,9 @@
       "15,29": 0,
       "15,30": 0,
       "15,31": 0,
-      "15,32": 4,
+      "15,32": 0,
+      "15,33": 0,
+      "15,34": 0,
       "15,35": 0,
       "15,36": 0,
       "15,37": 0,
@@ -427,7 +329,9 @@
       "15,42": 0,
       "15,43": 0,
       "15,44": 0,
-      "15,45": 4,
+      "15,45": 0,
+      "15,46": 0,
+      "15,47": 0,
       "15,48": 0,
       "15,49": 0,
       "15,50": 0,
@@ -505,9 +409,7 @@
       "18,16": 0,
       "18,17": 0,
       "18,18": 0,
-      "18,19": 0,
-      "18,20": 0,
-      "18,21": 0,
+      "18,19": 4,
       "18,22": 0,
       "18,23": 0,
       "18,24": 0,
@@ -516,9 +418,7 @@
       "18,29": 0,
       "18,30": 0,
       "18,31": 0,
-      "18,32": 0,
-      "18,33": 0,
-      "18,34": 0,
+      "18,32": 4,
       "18,35": 0,
       "18,36": 0,
       "18,37": 0,
@@ -527,32 +427,132 @@
       "18,42": 0,
       "18,43": 0,
       "18,44": 0,
-      "18,45": 0,
-      "18,46": 0,
-      "18,47": 0,
+      "18,45": 4,
       "18,48": 0,
       "18,49": 0,
       "18,50": 0,
       "18,51": 0,
-      "18,52": 0
+      "18,52": 0,
+      "19,15": 0,
+      "19,16": 0,
+      "19,17": 0,
+      "19,18": 0,
+      "19,19": 0,
+      "19,20": 0,
+      "19,21": 0,
+      "19,22": 0,
+      "19,23": 0,
+      "19,24": 0,
+      "19,25": 0,
+      "19,28": 0,
+      "19,29": 0,
+      "19,30": 0,
+      "19,31": 0,
+      "19,32": 0,
+      "19,33": 0,
+      "19,34": 0,
+      "19,35": 0,
+      "19,36": 0,
+      "19,37": 0,
+      "19,38": 0,
+      "19,41": 0,
+      "19,42": 0,
+      "19,43": 0,
+      "19,44": 0,
+      "19,45": 0,
+      "19,46": 0,
+      "19,47": 0,
+      "19,48": 0,
+      "19,49": 0,
+      "19,50": 0,
+      "19,51": 0,
+      "19,52": 0,
+      "20,15": 0,
+      "20,16": 0,
+      "20,17": 0,
+      "20,18": 0,
+      "20,19": 0,
+      "20,20": 0,
+      "20,21": 0,
+      "20,22": 0,
+      "20,23": 0,
+      "20,24": 0,
+      "20,25": 0,
+      "20,28": 0,
+      "20,29": 0,
+      "20,30": 0,
+      "20,31": 0,
+      "20,32": 0,
+      "20,33": 0,
+      "20,34": 0,
+      "20,35": 0,
+      "20,36": 0,
+      "20,37": 0,
+      "20,38": 0,
+      "20,41": 0,
+      "20,42": 0,
+      "20,43": 0,
+      "20,44": 0,
+      "20,45": 0,
+      "20,46": 0,
+      "20,47": 0,
+      "20,48": 0,
+      "20,49": 0,
+      "20,50": 0,
+      "20,51": 0,
+      "20,52": 0,
+      "21,15": 0,
+      "21,16": 0,
+      "21,17": 0,
+      "21,18": 0,
+      "21,19": 0,
+      "21,20": 0,
+      "21,21": 0,
+      "21,22": 0,
+      "21,23": 0,
+      "21,24": 0,
+      "21,25": 0,
+      "21,28": 0,
+      "21,29": 0,
+      "21,30": 0,
+      "21,31": 0,
+      "21,32": 0,
+      "21,33": 0,
+      "21,34": 0,
+      "21,35": 0,
+      "21,36": 0,
+      "21,37": 0,
+      "21,38": 0,
+      "21,41": 0,
+      "21,42": 0,
+      "21,43": 0,
+      "21,44": 0,
+      "21,45": 0,
+      "21,46": 0,
+      "21,47": 0,
+      "21,48": 0,
+      "21,49": 0,
+      "21,50": 0,
+      "21,51": 0,
+      "21,52": 0
     },
     "SheetStyle": {
       "FontFamily": 0
     }
   },
   "Spans": [
-    "11,17,2,7",
-    "11,30,2,7",
-    "11,43,2,7",
-    "15,6,1,3",
-    "15,19,1,3",
-    "15,32,1,3",
-    "15,45,1,3",
-    "11,4,2,7",
-    "5,16,5,9",
-    "5,42,5,9",
-    "5,29,5,9",
-    "5,3,5,9"
+    "14,17,2,7",
+    "14,30,2,7",
+    "14,43,2,7",
+    "18,6,1,3",
+    "18,19,1,3",
+    "18,32,1,3",
+    "18,45,1,3",
+    "14,4,2,7",
+    "8,16,5,9",
+    "8,42,5,9",
+    "8,29,5,9",
+    "8,3,5,9"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -561,7 +561,7 @@
       {
         "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
         "JavaScript": "var page = Forguncy.Page;\nvar userInfo = page.getUserInfo();\nvar role = userInfo.Role;\nvar os = function () {\n\tvar ua = navigator.userAgent,\n\tisWindowsPhone = /(?:Windows Phone)/.test(ua),\n\tisSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,\n\tisAndroid = /(?:Android)/.test(ua),\n\tisFireFox = /(?:Firefox)/.test(ua),\n\tisChrome = /(?:Chrome|CriOS)/.test(ua),\n\tisTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox &&/(?:Tablet)/.test(ua)),\n\tisPhone = /(?:iPhone)/.test(ua) && !isTablet,\n\tisPc = !isPhone && !isAndroid && !isSymbian;\n\treturn {\n\t\tisTablet: isTablet,\n\t\tisPhone: isPhone,\n\t\tisAndroid: isAndroid,\n\t\tisPc: isPc\n\t};\n}();\nconsole.log('os', os);\nif (os.isAndroid || os.isPhone) {\n\t// 手机\n} else if (os.isTablet) {\n\t// 平板 alert('平板');\n\tif(role.indexOf(\"阅卷老师\") != -1){\n\twindow.location.href = \"https://wqianc.com/dashujiaoyu/iPadIndex\";\n\t}else{\n\talert(\"你没有权限登录iPad端的省考阅卷系统\");\n\t}\n} else if (os.isPc) {\n\t// 电脑  alert('电脑');\n}",
-        "ID": "457129dc05c944ed9234d576f6ad57a9"
+        "ID": "f083961f75044a36ba19d528a1d2e500"
       },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -602,7 +602,7 @@
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=index!AG16"
+                      "SerializeProperty": "=index!AG19"
                     },
                     "PropertyType": 0,
                     "Value": false
@@ -610,7 +610,7 @@
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=index!AT16"
+                      "SerializeProperty": "=index!AT19"
                     },
                     "PropertyType": 0,
                     "Value": false
@@ -618,7 +618,7 @@
                 ]
               }
             ],
-            "ID": "1b519fa8-a5a2-4921-917c-553ca37998f0"
+            "ID": "9df6f77b-9965-4890-bd65-f60e6229996c"
           }
         ]
       }
@@ -663,7 +663,7 @@
       },
       "IsAutomaticFill": false,
       "Location": "0,20",
-      "Size": "1081,460"
+      "Size": "1081,520"
     },
     {
       "Name": "da92379f-7527-48de-98bc-e65ca250d158.png",
@@ -673,7 +673,7 @@
       },
       "IsAutomaticFill": false,
       "Location": "0,20",
-      "Size": "1080,460"
+      "Size": "1080,520"
     },
     {
       "Name": "066bd385-4c02-4c33-afff-f60a6a177a79.png",
@@ -691,7 +691,7 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "40,80",
+      "Location": "40,140",
       "Size": "240,300"
     },
     {
@@ -701,7 +701,7 @@
         "Fill": "Accent 1 80"
       },
       "IsAutomaticFill": false,
-      "Location": "260,80",
+      "Location": "260,140",
       "Size": "20,300"
     },
     {
@@ -711,7 +711,7 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "300,80",
+      "Location": "300,140",
       "Size": "220,300"
     },
     {
@@ -721,7 +721,7 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "560,80",
+      "Location": "560,140",
       "Size": "220,300"
     },
     {
@@ -731,7 +731,7 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "820,80",
+      "Location": "820,140",
       "Size": "220,300"
     },
     {
@@ -741,7 +741,7 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "560,80",
+      "Location": "560,140",
       "Size": "220,300"
     },
     {
@@ -751,8 +751,28 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "820,80",
+      "Location": "820,140",
       "Size": "220,300"
+    },
+    {
+      "Name": "9aa26d9f-9a44-4b37-9b26-4b84b6688713.png",
+      "DisplayName": "背景图12",
+      "StyleInfo": {
+        "Fill": "Accent 1 60"
+      },
+      "IsAutomaticFill": false,
+      "Location": "0,540",
+      "Size": "1080,40"
+    },
+    {
+      "Name": "c75fbc6f-ebc5-4c04-9d2a-039ae5f2a4c5.png",
+      "DisplayName": "背景图13",
+      "StyleInfo": {
+        "Fill": "Accent 1 80"
+      },
+      "IsAutomaticFill": false,
+      "Location": "0,540",
+      "Size": "1080,40"
     }
   ]
-}//iWL81maDlZG0IQZpB7F5j8Bj9mNlzYsg3HSqxROTogUvvWwYuuKLwJB+MWI4m49AETHnGCSWC76HytO+7ztVf2j6soo2nA7FrLt7KLCZ8e6uhBBqjQpDvMeNr3IDPgJQvaXDDHogYP5VUtdag8QLDWUkA6mFNeGvIBpZiZdA/T1g/hyoZdD3MUhq623ltXaYKhMP5+9zNg06tuErw59sSIm+3HzLeqCbnv0Qlb/QOLdDzbekxup2gF0A1ai8cuNDans3v36CVanG8IOvGEFQB6cBZB36zhznVL0kelvnO7RmqQeuzaJ07GiDVFrC0KtfNm1KykDzVodM0UJu/jBNfI8Cqdx84ABwt7ccsm07vlRX3pNbJVR1MTlRK3naTuONpBxtF5nTkxtdp82su7Bvzo6ftj9HopJR8uRcTiwelu+RzQrTbceKXFGSzKzqmiACZbK7fM2uwPZNZdXQynSBeJuWpbSRWwnpGlkYXR16KW8UeFNm3jGyhEUCDwP1DADKaUt3ejWxWE7st1pNU11r+d5g43U7h7XuJXLWR1KywOci76Qg+6VgsmXk7IPA94iQkFD0OD2vw7hs6uxVdhzT17PLqqek5d8VIdTNB9E9tMe9UPQOb3se/un/AB0PskEdqaF3X4Wnfa/SK0fTd0KJJmRPDEHz19t0cLd71y7OkRW8wy9EOmt0TUkGeuYdKpZggKg3MyqCSJCAierJsyRfUE2aldPPCT7pKISz6ybAeVZYwGqzOjqdi8ySDKpdmLAdMcrjxOQiJEA/vuo6TxxbEzhJN1zBG3lSsmMo1MULG7VTdXeTdQ+JGgmXjfMuc6i08AzVCJbnB39LtOsuJ6kFQJRxDmHbQBaU53sSGaOrma5YMQleRGfLAdL/b96zeUheLHy8wbTMnJCP6T6S0k3PAQ==|920
+}//bQxTAn9IfHy1/WmEsFodaS4JGDww1I2vFUPJSXGiycT/5gmRPjPw7mfFFNDlK0MVRAb3gOGySAw6bfTEb3BChtLOlOQj9/xrsEDd1PWYSXE3uhhNGjpIW9l7J+Cr04ho41Gn/xBMx0NS8RlJ1dVmCGOjSRSqBcr7RREfwB7A8OxhAlpzEeIUj/K0dY+v49kr+FpOQJdkSYdIthKIK/7uWACSxKjIBKY5MwE4dILrm4ZgFOMEqv7maKdezFPIoEUjGmDkWdI0h9fiR8PDx9gZBc0DOcpkw/+cLdJMRCwiw5MMQFU2Jeo9INtmhY7CHRJ+8INljJEH/woaehBhe8xs3pCOQ/fs+v5ezf5Pz12J57i0dnTeBK5/nP+XCmkKRfLJLx9PkGWfOoL+wlBWok+Z1Vt0D7DqbAlyNehNl7ZrtpS/DjKJeXsn4XWFDoOiRGfouqNkwOy1nDwTuP++NEHWLaxqzzJh3us65fs67b2WFVkV74vZttxUnRZEUriYwoyLYZla8aPlNLpIFhdAclvIT/aGH7p4mTmTztK/eiuVdsywO691+puo+1u4CRorZxv599Vjc5/+l9KtnPRzzwa7DfkhzF+0Yj39J2ZKDktNKF3uWZDzf81vgEtu4FAMzdzc/FNynI1G6pxl9WXGORIuTi8oZRWAZIo+I19Jgl1qZaEpND35RnL58PwNph4MaN5Vl/Ay5SvQnBsn5P5vLom9wg4gfJuT3XYfDbTxKqh9Zb/wm2RSn4QpsaDZS73HJMbOMuEdZkdbHX1W6DHhl5eeYwDPyx/8ldf3IzQTxjs4oOUDxiegjwvL3tL8QPqMR1aHZChqGEyyoEVKUygFuQKeWkxao55+nv1jcVUoxZpHhuWhdjqmsX0ceivL3fO3/3SaXU/ooCAR+UrD+9EUgyKktw==|920

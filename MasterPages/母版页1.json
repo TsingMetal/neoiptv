@@ -1,16 +1,6 @@
 {
   "Rows": {
     "RowColumnAttachedInfos": {
-      "2": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 6.0
-        }
-      },
-      "22": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
       "0": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 22.0
@@ -19,6 +9,16 @@
       "1": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 22.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
         }
       }
     },
@@ -144,7 +144,7 @@
                     ]
                   }
                 ],
-                "ID": "59a08439-c29a-4ccf-a8dd-77753f39ca84"
+                "ID": "1b9551b6-fbbc-48f8-924d-b21b18569d63"
               },
               {
                 "CommandList": [
@@ -173,7 +173,7 @@
                     ]
                   }
                 ],
-                "ID": "37f12a79-ad85-49aa-86bc-5d20eae3827e"
+                "ID": "7acbef1a-76a9-4adb-8a05-86adba79a4f9"
               }
             ]
           }
@@ -252,7 +252,8 @@
                   }
                 ],
                 "CanVisitRoleList": [
-                  "Administrator"
+                  "Administrator",
+                  "客服老师"
                 ]
               },
               {
@@ -271,8 +272,9 @@
                   }
                 ],
                 "CanVisitRoleList": [
-                  "FGC_LoginUser",
-                  "Administrator"
+                  "Administrator",
+                  "题库管理员",
+                  "客服老师"
                 ]
               },
               {
@@ -285,8 +287,8 @@
                 "IsOldMenuPath": false,
                 "Expand": true,
                 "CanVisitRoleList": [
-                  "FGC_LoginUser",
-                  "Administrator"
+                  "Administrator",
+                  "阅卷老师"
                 ],
                 "SubItems": [
                   {
@@ -304,7 +306,12 @@
                       }
                     ],
                     "CanVisitRoleList": [
-                      "FGC_Anonymous"
+                      "FGC_Anonymous",
+                      "FGC_LoginUser",
+                      "Administrator",
+                      "题库管理员",
+                      "客服老师",
+                      "阅卷老师"
                     ]
                   },
                   {
@@ -322,7 +329,12 @@
                       }
                     ],
                     "CanVisitRoleList": [
-                      "FGC_Anonymous"
+                      "FGC_Anonymous",
+                      "FGC_LoginUser",
+                      "Administrator",
+                      "题库管理员",
+                      "客服老师",
+                      "阅卷老师"
                     ]
                   }
                 ]
@@ -354,7 +366,8 @@
                       }
                     ],
                     "CanVisitRoleList": [
-                      "Administrator"
+                      "Administrator",
+                      "客服老师"
                     ]
                   },
                   {
@@ -372,7 +385,8 @@
                       }
                     ],
                     "CanVisitRoleList": [
-                      "FGC_Anonymous"
+                      "Administrator",
+                      "客服老师"
                     ]
                   }
                 ]
@@ -437,7 +451,7 @@
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
-              "FGC_Anonymous"
+              "Administrator"
             ],
             "SubItems": [
               {
@@ -695,11 +709,11 @@
   },
   "Spans": [
     "0,58,2,6",
-    "3,0,29,9",
-    "3,9,29,55",
     "33,2,1,6",
     "0,0,2,8",
-    "0,14,2,16"
+    "0,14,2,16",
+    "3,0,29,9",
+    "3,9,29,55"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
@@ -833,4 +847,4 @@
       "Formula": "母版页1!$C$34"
     }
   ]
-}//QQerwF4x07v2rpgLC4H0TkpqwXrpkq1dEO9APU1zZGAy9m/NUyKR8Y8V5fLMCBJ1NaHG8G0QwrosDF4RhKkSs+XguTE1K7I7bWqMfnWjwbdR/8J4kdXAAENW35A/CHBwq5r7PtjFiAX4R0m2/W4sJrvSKJBFhGm5Pz6hY7h4zgwN80d6tv6zU57SWBnyNcbVNJDKnlAvEbt3ezlCSKvYYbNOTYJnziDpGUDum68VfjnXldjnMZFO//M0DxImVIoYMz+rEwjSymjDM/nqFdE9rOo6VF8xPTCj5AbScbCL85UA3mm9/bGXhp1SfBchz6Kgjnaq1rYM2sfkSldsZVgj/fXDFEhVoVKWrPb2QFHwoRARGmCn6LP00Gc0eVJWgwMaxrC46iKOe5aHEnTFWNzYHpjoao75p8eYMz6kIPwQkAJ3ADsRWBmxQ3gC/JKU0Ptt1EMis4bYdhL6tRWAsNW/iQl40rbQx/NXBrLKvQKENGKMmidOGI0ME+BT8ozVXAF5vaIdRxiNnCzwfkSE6SIu5A7wQLXNN1lk1ZDIECFJfwvaZUqhAf52TLFLtMfEYPReXcfHXllYATEEXcGD4UYxTwQeW3YLt2DXhIkZbp/dFcvse9KvQXpn4eM0YMVGQLkcBNkplp+En0ZWYPDz/V4wFugZYmUP0Z8QoIur7aQ1PkmQgu3Hvt23Q4I6S6t+azqI3B0SK3tzAimDXNXVHLSSVsuGa9rcg8Ay/AO9a0HLSz+wb7GrOmqwQ5eaCgqAEqS4sQe4o051IiAiYDbozSThjqd6zll4bEHG/slgFIDcJ2E7jBBlOUsNA2B2AUkPmwm1K+DEyu/JIOr/BDU4HESbSMzRnvpciYCgheBFdmuI94sJjWqxkyXDXOuoK+V6/2Js88p5Ej4GFq+iLJ54zCxkFg==|920
+}//aZizqoqrvqXf6W9Xz5HgOJmwE6wD08qJ16ppYpqOZqU0aPSiRmNCNvROLoruHX9B0mIuyKDHm/ouA6vwzGqHid9RNfrFtv554ex2iLIPtbhqfHjzPDf69NZmS8DJlWuqfSD9mg9dhJ2eG8nrT/PNnz2Jjq38foKnWF4D3skIivG6WAu9x7UkmuxtL13Usw7j97XpkPKT6LdAeC9ARREJ4ygdL4+xEjrtBzsBbocA330aPUJPLo/zmbOMmgqBCD3zjIlqYlnqxXw7znkQ1ylaxXgV5b4/52Hm61nBqC6Q5PF0vT8p+Op1Xy8nradk1puGQC8HbvPCe9x1LwbLIqe94QdvdqbPCjEpgI/0/GwfPxe8cofeBQFXYm7ypzaL6mtbjENBkJuyl9py+rKGe9fEV3hg3t5wLHDISZOFSWSj1hx/e3vZunISrZVghA8oVARINoRSPGnigwv6fWjHlP4RoMTAYQxj2632+pbHclAygSjDqHXpy+glOMpQMHbhmagtKH/aIUvdFw6FnJdbsnr1gYiCUbuB6gSZ/gmWIt17rFJt7W3EB42Mm724XAXCOXyEg3l2mvbA+0SgAt0p08n+OFdGoiCM+z4+fKgw5BhFPNPYQwKjP4nhx1GYo+MSypDJazYL+eaD7oG2l+7u+VanSb0u3wimr9GRzTjlMHWSiiz643AmB48ikKCEsqjZ/DfFHCRlfoHTLv96cWrZOIGXGsJzOCwQrkCHlf3lUvfs+RwQucLoewbzok4ZN8X0RbYVX+t5Rr2G2EtMdwmrDPB3vNZuBLiS2MdGYtCbY70RfI3bWTZBLOwUyDKzLXX17CpQ7i+7Vh6mwN1nFdy/TNEf3VfDx9yqZOb10uyUMcAMCx2ETBf1RGW8hbi3s2t8lL4D9O6yJvEKf2+OwDJWTdo8YA==|920
