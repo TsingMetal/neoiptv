@@ -158,13 +158,6 @@
       "DataColumnName": "得分",
       "Name": "考试总分",
       "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "$type": "Forguncy.Model.Tables.StatisticColumn, ServerDesignerCommon",
-      "AggregateFunction": 1,
-      "DataColumnName": "准考证号",
-      "Name": "考试人数",
-      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     }
   ],
   "PrimaryKey": [
