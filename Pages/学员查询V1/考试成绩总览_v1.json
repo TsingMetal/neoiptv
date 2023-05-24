@@ -398,13 +398,7 @@
           "Commands": [
             {
               "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-              "PageName": "题目得分详情",
-              "LoadBindingDataOption": 1,
-              "Disabled": true
-            },
-            {
-              "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-              "PageName": "得分详情_test",
+              "PageName": "得分详情",
               "PassValues": [
                 {
                   "Source": {
@@ -412,7 +406,7 @@
                     "SerializeProperty": "=考试成绩总览_v1!准考证号"
                   },
                   "TargetCell": {
-                    "SerializeProperty": "=得分详情_test!Z1"
+                    "SerializeProperty": "=得分详情!Z1"
                   }
                 },
                 {
@@ -421,7 +415,7 @@
                     "SerializeProperty": "=考试成绩总览_v1!考试名称"
                   },
                   "TargetCell": {
-                    "SerializeProperty": "=得分详情_test!Z2"
+                    "SerializeProperty": "=得分详情!Z2"
                   }
                 }
               ]
@@ -1199,4 +1193,4 @@
       "Size": "400,180"
     }
   ]
-}//bobgleJmuD38jTiC/qXcUJJJIXzGDSTVQqbmOMnVD7rYJiBAqMgntqIzzUH0nZbmiR51SrHAno7k2ak39TParnUWWJ9cxxljjyDf4RjX6iKuQxJ5C+GSi00YFEtvfrenzeXdYAL6wc4apqN+GyETMgy+Lec2sw6DVmqKZJ9YMhFE7v75zPyM7VsNv6s0t8d8gLu4+IQqNkwoXmo9GB32iMNyIcbvIYIO4hjQY2E7ECPk+DduS4QqaRBaRjVrZ8rgHk5a77Lg54tUD6QyalB2WcvzMMOvw4KTa1epyRoG6P/LkKsZqu/j7QPmJ51AEeoLSFtHAUfAsTs6ag8p3z9ovIsPd4b7VmUg19/78cOFtaxfwxRME/Xv8CAeheacJWjD0g6cBac+QFFup4MD7cFJQ1xziecjq98dLa3gqBdN9Q4faqcrETiXN87MLphmy/skLIcZ5Yfo4WXSW9kovOX6Ta7GzCx829y5v6XO2XCbk5bt0DRIk8U2asdGkbqQFIfyOD122e5CDXJFJPC00Qxa1Mdnl/PAzafNMKtBIio1KbMXUKuZC7VPuaUV3jzotIV5SuG4Vs7jLqh+kvm1KaeVhmucsXiTxOlG+BgJC9D3TgbeQVoKea2zGoAiKwpub5g+2/8oxACtmPy0Sn6MKfF0EWzeKnTtm/DLFt36di0FCy3iRvsFeFwJg522F2mp1uwLv99UG3wb0K+N8V5wS+JBdkFLAlD564st5XU8K3fmRx7HZ1Dze2riKFb9gL251uoNsN8hqnBn7k9sbcleBNFrmlHSx3C3jfsU/s8p2hRBOTL1gECelc0R8Z3AdIMmM5iM0wD/V0xN0i4+Yd8MR0Itl50CTlrRRcaHW9WmYVHnUCT/sq8VA03NrqCKfroe8MvZ26OINAYORcPbxONftNBdgA==|920
+}//v7zuysrHXwS/kCZo9dxLpaGr2AmwEUee1aMyzUIjAWJlXOloGyqWyludQrZc7SHr4Wo7VcyJsoxUi6xC/igiWci8jLqCYdazfNJiD81c3aCE37gJ8l6LfAQiI0OXTp0fL7gTrZpX8hn40lSFoqa/duLr9i2C4cPsmgBixAGC7iYuGlnVH0w9skiH8s01EsfjIr2eMWIGoThIH8BHqm5AN1Yddb8BO/lqmv3VzG5CIytZZhvH5q4H2plTHuRLN38mBUBHuogcKFfEQQkRWNtgtkI+OmJGpM6u+An5IPajKbDoNm595ppInPlD/rfdT4oWPXGbOFuRnjQTQq10pYTNbN3sb3LcAvrEFiiPsmD1xethK4dTMDP4uYVAP2Ix1qO8Q3tZMgj8mSNA4RCBxcKIijflgCrGHkC10V1XP/VLbuaPoETwXZlnfg3Z4EqGscN74dzqA6LR8yd/1N15s2fUAGPowZ1d91ovRCuQ7+mXTkSGXjYWLRqma9JNwzs5tHWDjtUFrulnkaxCJYRAIuvd3hLbHhVfMfnHp1oTxZ6EzlmHBHZGLGbftCcKJr2Iq08mGe+KNLR7LS19dSI2xSXQMpRb3EbngoEjmW0UFv/wG7AM5TfQ3WF5pqpNHgrImdbUjj8GnrXjngLb1ELRxwaM58xYaO2az6EKZT7ll2JMdGYPVJhLcaGA2l9DA4xhPCJTj3Y81OY/LHkBlaeGlPRu/umPZvOQibWqJS6sTRY9BkmDRV2yD6b1wIaLTNUrsdeeYJRZCrSzEHMY4iPtXvnme/2/mKtFSe0+KtAzq3OqULYJR1GZxsF2+QtTd6oEWmtAZr5x48z938iPUXEWGtVQWtvh1gii8+rgc9+635D8se0e/rW+afMh0x2abD3Dex9MsSQ0Z9upSZQXLSncD6nVeg==|920
