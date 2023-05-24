@@ -103,7 +103,7 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=考试成绩总览_v1!I10"
+                "SerializeProperty": "=成绩总览!I10"
               }
             },
             {
@@ -403,7 +403,7 @@
                 {
                   "Source": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=考试成绩总览_v1!准考证号"
+                    "SerializeProperty": "=成绩总览!准考证号"
                   },
                   "TargetCell": {
                     "SerializeProperty": "=得分详情!Z1"
@@ -412,7 +412,7 @@
                 {
                   "Source": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=考试成绩总览_v1!考试名称"
+                    "SerializeProperty": "=成绩总览!考试名称"
                   },
                   "TargetCell": {
                     "SerializeProperty": "=得分详情!Z2"
@@ -1193,4 +1193,4 @@
       "Size": "400,180"
     }
   ]
-}//v7zuysrHXwS/kCZo9dxLpaGr2AmwEUee1aMyzUIjAWJlXOloGyqWyludQrZc7SHr4Wo7VcyJsoxUi6xC/igiWci8jLqCYdazfNJiD81c3aCE37gJ8l6LfAQiI0OXTp0fL7gTrZpX8hn40lSFoqa/duLr9i2C4cPsmgBixAGC7iYuGlnVH0w9skiH8s01EsfjIr2eMWIGoThIH8BHqm5AN1Yddb8BO/lqmv3VzG5CIytZZhvH5q4H2plTHuRLN38mBUBHuogcKFfEQQkRWNtgtkI+OmJGpM6u+An5IPajKbDoNm595ppInPlD/rfdT4oWPXGbOFuRnjQTQq10pYTNbN3sb3LcAvrEFiiPsmD1xethK4dTMDP4uYVAP2Ix1qO8Q3tZMgj8mSNA4RCBxcKIijflgCrGHkC10V1XP/VLbuaPoETwXZlnfg3Z4EqGscN74dzqA6LR8yd/1N15s2fUAGPowZ1d91ovRCuQ7+mXTkSGXjYWLRqma9JNwzs5tHWDjtUFrulnkaxCJYRAIuvd3hLbHhVfMfnHp1oTxZ6EzlmHBHZGLGbftCcKJr2Iq08mGe+KNLR7LS19dSI2xSXQMpRb3EbngoEjmW0UFv/wG7AM5TfQ3WF5pqpNHgrImdbUjj8GnrXjngLb1ELRxwaM58xYaO2az6EKZT7ll2JMdGYPVJhLcaGA2l9DA4xhPCJTj3Y81OY/LHkBlaeGlPRu/umPZvOQibWqJS6sTRY9BkmDRV2yD6b1wIaLTNUrsdeeYJRZCrSzEHMY4iPtXvnme/2/mKtFSe0+KtAzq3OqULYJR1GZxsF2+QtTd6oEWmtAZr5x48z938iPUXEWGtVQWtvh1gii8+rgc9+635D8se0e/rW+afMh0x2abD3Dex9MsSQ0Z9upSZQXLSncD6nVeg==|920
+}//rjZ5ciiayLR058Wj0lqrerQJqh8xcib4R+/4wI4xrV2ef/9jcTUuVWRDC8FZXg1waQLXpOpu+zBHD9w8/cz72JArWKm9YI5UtBHcysO/e3jmaCDlOvfSXVKYgNeEWadBtNgLtAs3u3bAKpbMrOYuR2IV8o5lIiFDosqyiDkgzEmWvg+KPoYGYTlQ/irHO2h9wCuAxzGhFtHpHDhHWhheQ/PYUv+VgCNhYP8/zqHHhHKE0KDeJ88MJteQS3/bR0aHPiU/3ip7ahXFcx/fZAxo3Df0LofLeCAcr78Etv6AB86m8OKEl70hDbDKBbxB0d26I8QjSL5XFO1ZZ6DtgbpzJtPDuqr/TqBp553l2UTL6/VQCoEckaQ6A4ntAz0bBbwJjOpMue8/55cTf2JRI1wLrLrEzvdKNDdTRbI79gfTklUM4xaBeQTqDAG3abBb8OLBjoGrt/GLBwlKXvbP3imQllYiASu1irUn8T8AI23/9jb99Tne13+ilb6aYkCn3TrydiUrdF+iFKPoAOYx95IZUg+9rZZXKSJEj+phbTvcriWHiDCNdIyeqYk8quCeJQKIraKfsHrzY2x8TRu+nmgNCZ8Vanx2TiuhOpsxXtTvK8C32X9N+nZAUG/gng7IOryMBEUVBbLL6CmqWDXre7BNrxc5KchARn9CXfDfjhy3eWGdSVdWXjKYm1Zkkyt9pCNoIzu11g/176M6sIilEyVQo7GHJVbhVZ19pyLFHzECqXuCuO/3fPwfXboeLi8ZIvX/FaYwQDzGrQ3bwol3Wx3WYMpaHuD3NWLYtfCJTad4LLlYcNwbbVE/ScIQkyoHGWeoDo25cUD2LkUCfaNGxheVJrqHHfsua/LPgkB1wvcjlCFJ98+zNuamBz6XqYqvwRvOl6TU1AESg6Y9lvr3+6/Atg==|920

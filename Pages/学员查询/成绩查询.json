@@ -72,7 +72,7 @@
             "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
             "TargetPageElement": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=成绩查询入口!P9"
+              "SerializeProperty": "=成绩查询!P9"
             },
             "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
             "MethodName": "ExecuteCommand"
@@ -130,7 +130,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=成绩查询入口!C9"
+                            "SerializeProperty": "=成绩查询!C9"
                           }
                         ]
                       },
@@ -142,7 +142,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=成绩查询入口!AC9"
+                            "SerializeProperty": "=成绩查询!AC9"
                           }
                         ]
                       },
@@ -158,7 +158,7 @@
                     "MessageFormula": "请输入12位合法准考证号！"
                   }
                 ],
-                "ID": "3dca998c-b6f2-48ba-9abe-b7c171e0d809"
+                "ID": "3408011c-ca01-4a27-bb83-357129e73846"
               },
               {
                 "CommandList": [
@@ -203,11 +203,11 @@
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询入口!C9"
+                          "SerializeProperty": "=成绩查询!C9"
                         }
                       }
                     },
-                    "ID": "179bb9ddd42149998a9122036feed579"
+                    "ID": "0c60602a587e4d91a3cb8ba4583407f3"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -215,31 +215,31 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询入口!AC3"
+                          "SerializeProperty": "=成绩查询!AC3"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询入口!学员信息.学员姓名"
+                          "SerializeProperty": "=成绩查询!学员信息.学员姓名"
                         }
                       },
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询入口!AC5"
+                          "SerializeProperty": "=成绩查询!AC5"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询入口!学员信息.班级"
+                          "SerializeProperty": "=成绩查询!学员信息.班级"
                         }
                       },
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询入口!AC7"
+                          "SerializeProperty": "=成绩查询!AC7"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询入口!学员信息.准考证号"
+                          "SerializeProperty": "=成绩查询!学员信息.准考证号"
                         }
                       }
                     ]
@@ -254,52 +254,52 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=成绩查询入口!AC7"
+                                "SerializeProperty": "=成绩查询!AC7"
                               }
                             ]
                           },
                           "value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=成绩查询入口!C9"
+                            "SerializeProperty": "=成绩查询!C9"
                           }
                         },
                         "CommandList": [
                           {
                             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                            "PageName": "考试成绩总览_v1",
+                            "PageName": "成绩总览",
                             "PassValues": [
                               {
                                 "Source": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=成绩查询入口!AC3"
+                                  "SerializeProperty": "=成绩查询!AC3"
                                 },
                                 "TargetCell": {
-                                  "SerializeProperty": "=考试成绩总览_v1!I6"
+                                  "SerializeProperty": "=成绩总览!I6"
                                 }
                               },
                               {
                                 "Source": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=成绩查询入口!AC5"
+                                  "SerializeProperty": "=成绩查询!AC5"
                                 },
                                 "TargetCell": {
-                                  "SerializeProperty": "=考试成绩总览_v1!I8"
+                                  "SerializeProperty": "=成绩总览!I8"
                                 }
                               },
                               {
                                 "Source": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=成绩查询入口!AC7"
+                                  "SerializeProperty": "=成绩查询!AC7"
                                 },
                                 "TargetCell": {
-                                  "SerializeProperty": "=考试成绩总览_v1!I10"
+                                  "SerializeProperty": "=成绩总览!I10"
                                 }
                               }
                             ],
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "081517a7-c3ca-4f49-aa2c-e0d92bc14f63"
+                        "ID": "34febbbe-c894-4b5f-a762-c153335e3316"
                       },
                       {
                         "CommandList": [
@@ -308,12 +308,12 @@
                             "MessageFormula": "查无信息！请输入正确准考证号~"
                           }
                         ],
-                        "ID": "be3b8f96-0f24-422a-9f05-aae0beb90174"
+                        "ID": "6d9b21c0-1d90-4b17-9141-02b424b0f360"
                       }
                     ]
                   }
                 ],
-                "ID": "66747b25-04f7-4e19-b8db-56cf1fd5a931"
+                "ID": "41f4b03a-198f-4074-8ff1-8d41f843673e"
               }
             ]
           }
@@ -782,4 +782,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//xHEwT090HKQ63K+R3y4MTGZApuxN38XaKKVspOcTcyX3YC2J6+K4CxEWRfPLmRQknWblSyb9uD9WN7NMalRStTeiOEWUbxRDL9N3vXyq6gOBrZtcpHlqSpk5xXwXckQukBUlJieb46U0gY6IxV9LCVZuHd2cMdUKgEEm6Zu8nvjLXkvf40KJRLcjJML5Lt3NdEK7z0B0reDwh8Nf9wo4wou0JzN6jlDTBpwA+v7FTbT+GNZZcLlE2sveg5otTEzSXEEIsVJk9DynXuCZg/2t0iLrelDHfuyeRn/1JuQ7P4v95R0t2fLq5opHCf/hTpahmVxsrJG4g4qOouJwsDqusf+HD4fmnmraeMj63mAKmI753hP5aY280emDcTHMqHJyge3QuNWp20d2hIGBxRdDhOLtHCoLNqa/tlT9tuWvRXJjF/T1j2Ifg//3FB1QT+qsxGFQP0+5YEd8ryT8TTzhND6tN8yv72lnyRi5HD47GlzQhs3HqFa+GeRzDCjxun8eWOMXA2wGaUK/yNc7p0GfoMWyhLoHNlK607wcJ/VQvCEo0/kv4tS5KleMsQy6Fk4EQfn4Un9lFg7TNZAYc0ZbcaVE0Hgn+IWtsVRMW8nr24XNPkcLwI6pBLFrnZNoxfNg7tsXkfg5yda/JshB4NV5Ng14HTwTVJ1zKwEVCqGA436l2d5lwSmI3ZQCWEyJ4spUws0mB1osP7FRiyT60Qr588VYtZTLvKpIvKYAQ+qa6JCdwiLwUwu8mETEEqLRTzf95znff/0gYgJyF+jErraNYoBEjB+o8+TLZczOAfX/fgfUUvSf6VtuCAxwNsBtHusJHLhQ7r/I75rdBZ5d3IOF6jn8DawjFvUohtKbrP3KU0TFAKxc01E4CeZUYOS1dNfrY4ZgEeugmELoA9rxu43GDQ==|920
+}//ABgGwLfnQZIW2Pa2fNshEUuyYuKmCI8s4sSYlvnIPB/1xHk6Ak1WDs+Mq6NB0a+CKR6UwSCb8fDdI9vZ4PY2L/PWQ/XpSZttbDe35Z/OpyeI+CQKQqiRZ+WZVkqBfT/xS+FOgd6h/6+gvF6EONMMx/xjByStsdL85smlHruz/hC7pKTxQyk62H6r8PuLTLfPiUOsjTXH9kT0TSU8+Y1jMc1+rtodYoRjW8UWjeIMKuIn/1a4CMIccKcNkF019lFt89Sn2U6c0vd9goyGg7oDlJI0lJB9kLpuUXekLdKZmCSjWPY2Vqe4ABYJ7pppxyL7DPGgelIGAF1OH5iOSPmBPtsc4/omBYmEZTbCIMoxG7aNOTNSucJoHy3dKn+1JI+S5bq1FQKotE5kMUrDEHdHWTg5WpAUd0ZeTANncYze+eDzVtfGugURhGckjC2L7g3E9DUo+HFlh1QP7m5CldmZeLXwWMrb3xKZ958Hh/voAJAGFplCUV772m0njcqOkSnXOax0fcnGjGJa4EOVWTN3bnG5A5seQ9Da2oG42qcqfwwyfWICl+QTHw7Sv2Lp2OsaaSoMEWR+GRjdNPA9EBJ/Dw9Xot2ui/E5S3xzUKn2Xnh1JSJ19GT+UBpo9n2YepXApCcp++wiTPUggRxAO4uO0JAWwEOjkXr4M3naD7rQ8+Wsrsa93nDYlF29vulhmhVSPr1ut+hu1nK4JMyVhWiMYVwd6jeDcs0yTIbDgxA9id6CVCHVXr29h/Vezewe9ErvN7c72KjmEm8pgBD+f6lnUTDEtjJtElrY+GIhxs8QD+8b/s4bxRqwPInOpWDqIw7uFwZwSCHcipxD0kX1vMLQN4os2jNvHWwHbS/tA8a734rjM6+6ub2D24dSlLwVrbrJEDCVLSZQUoGlobZRBDMyfw==|920
