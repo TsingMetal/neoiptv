@@ -154,11 +154,20 @@
                 },
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "请输入12位合法准考证号！"
+                    "$type": "Vant.Commands.Dialog, Vant",
+                    "title": "无效考号",
+                    "message": "请输入12位合法考号！",
+                    "theme": "default",
+                    "confirmButtonText": "确认",
+                    "confirmButtonColor": "Accent 1",
+                    "cancelButtonText": "取消",
+                    "cancelButtonColor": "Text 1",
+                    "AdvancedSetting": {
+                      "messageAlign": "center"
+                    }
                   }
                 ],
-                "ID": "3408011c-ca01-4a27-bb83-357129e73846"
+                "ID": "a9797724-8b3e-4bb1-98e9-77494aa4cf21"
               },
               {
                 "CommandList": [
@@ -173,7 +182,7 @@
                           "BindingInfo": {
                             "TableName": "考号档案",
                             "ColumnName": "准考证号",
-                            "GUID": "0d855c69-88f4-4625-a4a6-5a53b529ce23"
+                            "GUID": "d120e38c-15a8-4ea0-b62b-3f0f7816048b"
                           },
                           "ColumnName": "准考证号"
                         },
@@ -181,7 +190,7 @@
                           "BindingInfo": {
                             "TableName": "考号档案",
                             "ColumnName": "学员姓名",
-                            "GUID": "7a94fa88-93f3-4746-ac24-142b1fd490c4"
+                            "GUID": "1369f49f-57f9-4f58-9c88-b0431f9085e4"
                           },
                           "ColumnName": "学员姓名"
                         },
@@ -189,7 +198,7 @@
                           "BindingInfo": {
                             "TableName": "考号档案",
                             "ColumnName": "班级",
-                            "GUID": "1c003eb8-a527-41d6-a84e-2324cc941809"
+                            "GUID": "88aa3e06-0d2d-406c-a50a-7f878fabe278"
                           },
                           "ColumnName": "班级"
                         }
@@ -199,7 +208,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "考号档案",
                           "ColumnName": "准考证号",
-                          "GUID": "0535be6b-4bd0-4a64-92aa-9842815d9f8c"
+                          "GUID": "4100fe94-a3a2-422e-8e54-e2bcb50d5e5f"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -207,42 +216,7 @@
                         }
                       }
                     },
-                    "ID": "0c60602a587e4d91a3cb8ba4583407f3"
-                  },
-                  {
-                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-                    "PropertyItemsList": [
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询!AC3"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询!学员信息.学员姓名"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询!AC5"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询!学员信息.班级"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询!AC7"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=成绩查询!学员信息.准考证号"
-                        }
-                      }
-                    ]
+                    "ID": "ec07142c59e149709bacce8eaecb1820"
                   },
                   {
                     "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -254,7 +228,7 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=成绩查询!AC7"
+                                "SerializeProperty": "=成绩查询!学员信息.准考证号"
                               }
                             ]
                           },
@@ -271,7 +245,7 @@
                               {
                                 "Source": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=成绩查询!AC3"
+                                  "SerializeProperty": "=成绩查询!学员信息.学员姓名"
                                 },
                                 "TargetCell": {
                                   "SerializeProperty": "=成绩总览!I6"
@@ -280,7 +254,7 @@
                               {
                                 "Source": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=成绩查询!AC5"
+                                  "SerializeProperty": "=成绩查询!学员信息.班级"
                                 },
                                 "TargetCell": {
                                   "SerializeProperty": "=成绩总览!I8"
@@ -289,7 +263,7 @@
                               {
                                 "Source": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=成绩查询!AC7"
+                                  "SerializeProperty": "=成绩查询!学员信息.准考证号"
                                 },
                                 "TargetCell": {
                                   "SerializeProperty": "=成绩总览!I10"
@@ -299,21 +273,30 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "34febbbe-c894-4b5f-a762-c153335e3316"
+                        "ID": "09a7457a-07a5-4f5c-9073-36cacd51b7c3"
                       },
                       {
                         "CommandList": [
                           {
-                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                            "MessageFormula": "查无信息！请输入正确准考证号~"
+                            "$type": "Vant.Commands.Dialog, Vant",
+                            "title": "无信息",
+                            "message": "查无信息！请输入正确准考证号。",
+                            "theme": "default",
+                            "confirmButtonText": "确认",
+                            "confirmButtonColor": "Accent 1",
+                            "cancelButtonText": "取消",
+                            "cancelButtonColor": "Text 1",
+                            "AdvancedSetting": {
+                              "messageAlign": "center"
+                            }
                           }
                         ],
-                        "ID": "6d9b21c0-1d90-4b17-9141-02b424b0f360"
+                        "ID": "fd9ee759-cc4a-457d-ab31-3134c09f2335"
                       }
                     ]
                   }
                 ],
-                "ID": "41f4b03a-198f-4074-8ff1-8d41f843673e"
+                "ID": "c6730203-01bd-4b68-9414-05b8cc0669f1"
               }
             ]
           }
@@ -782,4 +765,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//ABgGwLfnQZIW2Pa2fNshEUuyYuKmCI8s4sSYlvnIPB/1xHk6Ak1WDs+Mq6NB0a+CKR6UwSCb8fDdI9vZ4PY2L/PWQ/XpSZttbDe35Z/OpyeI+CQKQqiRZ+WZVkqBfT/xS+FOgd6h/6+gvF6EONMMx/xjByStsdL85smlHruz/hC7pKTxQyk62H6r8PuLTLfPiUOsjTXH9kT0TSU8+Y1jMc1+rtodYoRjW8UWjeIMKuIn/1a4CMIccKcNkF019lFt89Sn2U6c0vd9goyGg7oDlJI0lJB9kLpuUXekLdKZmCSjWPY2Vqe4ABYJ7pppxyL7DPGgelIGAF1OH5iOSPmBPtsc4/omBYmEZTbCIMoxG7aNOTNSucJoHy3dKn+1JI+S5bq1FQKotE5kMUrDEHdHWTg5WpAUd0ZeTANncYze+eDzVtfGugURhGckjC2L7g3E9DUo+HFlh1QP7m5CldmZeLXwWMrb3xKZ958Hh/voAJAGFplCUV772m0njcqOkSnXOax0fcnGjGJa4EOVWTN3bnG5A5seQ9Da2oG42qcqfwwyfWICl+QTHw7Sv2Lp2OsaaSoMEWR+GRjdNPA9EBJ/Dw9Xot2ui/E5S3xzUKn2Xnh1JSJ19GT+UBpo9n2YepXApCcp++wiTPUggRxAO4uO0JAWwEOjkXr4M3naD7rQ8+Wsrsa93nDYlF29vulhmhVSPr1ut+hu1nK4JMyVhWiMYVwd6jeDcs0yTIbDgxA9id6CVCHVXr29h/Vezewe9ErvN7c72KjmEm8pgBD+f6lnUTDEtjJtElrY+GIhxs8QD+8b/s4bxRqwPInOpWDqIw7uFwZwSCHcipxD0kX1vMLQN4os2jNvHWwHbS/tA8a734rjM6+6ub2D24dSlLwVrbrJEDCVLSZQUoGlobZRBDMyfw==|920
+}//AszyWFn2LaIOLA9ueBFxxG1C0V1+MlTr1MsYgIgo67ReAzWPQK+pktITwFHovvC1ZPAayWc7Az1PtO+yIEi6Vc20u6dAuTlR58mt1ymecb2GyTlWEj967n2KrKaNlXP3E+100lpiL+Xz+SVCHnOdQUBz3n1GfGkyIAJzUMy0WObOKvwAGYKlKzaNeW5Qm7ONwqtZDhol66FW8i4dyIGKPTvq+mnBIurgoupxn6sMPAYkDsMfsZT0vM/rvoVEb9ivjWhSYa7EW4OXolek9ZdwUrKcwG6N9vm9s+J0KsMynpMAlwzzwR6e7LR56fQ9FyPnXkKHVQz9i6BCxv5py9Xrw9X+v3uGdhc1Y4dbpgEIMbPBoHKLpHL3Z7rnMp27uw5vmcyyZcBwfDMIbiVhs7oqlhSHzZPvPSX/hgTm68CBf4U2TaKhaeqgGhAE1LDIMupb6v5ZwrKqdxz7NrRadaNwVCGzRqVU1j8YoFhPihSUZX0RJwwT1/52GFobBnMNZNmA6poz3P/5fwopO2BWDK7Lr1zuII3jYCKliCWw196/oWXOyBDxjeTyUEnsbbo8cZNIww71xKvqttSGm8ngYySv+fJ7aZDO1fCs+ZlY2Pz0oDsUCYZ+J+DaN+91fcLVEaBsD07L7zPvb5ruolpWBCHz4OE89UTsDdsXtOzTmHsig/Zv45m/OrsOk8Q3ZwPobxh2Ro5fY6NvmbXPaEZ4lxXqUm2CLqq8TUO79O2hb2YWTlv1O39IdKet6LS+Y3xECsindz1kB8ICaX4Z9xphJLYOdd1VPVzfkTnsCKvISO05lXu8YakOQ+ZVplnvd4ItbIORQFPCvOqe/BEESAfLmKXISZZsyGDr//mTh0ODKQSGpg64uBZQwl9c/ugvvf2q5gf/u94x36KzcOHFVt5QKviGXw==|920
