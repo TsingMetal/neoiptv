@@ -489,7 +489,16 @@
   },
   {
     "ModuleName": "Pages/学员查询V1",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-24T17:38:37.5835815+08:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\学员查询V1"
+    ]
   },
   {
     "ModuleName": "Image/madecard-index.png",
