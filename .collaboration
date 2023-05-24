@@ -222,7 +222,16 @@
   },
   {
     "ModuleName": "PCPage/二维码",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-24T17:43:38.6153474+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\学员查询\\二维码.json"
+    ]
   },
   {
     "ModuleName": "Pages/修改阅卷明细",
