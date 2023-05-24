@@ -23,7 +23,7 @@
       }
     },
     "InLogicalVisibleIndexes": [
-      33
+      36
     ],
     "Count": 37
   },
@@ -78,8 +78,8 @@
     "Count": 64
   },
   "Values": {
-    "0,14": "旺黔城在线阅卷系统",
-    "33,2": 1
+    "1,11": "%PageTitle%",
+    "36,2": 1
   },
   "AttachInfos": {
     "0,0": {
@@ -144,7 +144,7 @@
                     ]
                   }
                 ],
-                "ID": "1b9551b6-fbbc-48f8-924d-b21b18569d63"
+                "ID": "8d22b793-990e-4a43-8db4-7b37ba5ecedd"
               },
               {
                 "CommandList": [
@@ -173,11 +173,12 @@
                     ]
                   }
                 ],
-                "ID": "7acbef1a-76a9-4adb-8a05-86adba79a4f9"
+                "ID": "411493ad-c17d-49a5-b63d-aae9d09f29f8"
               }
             ]
           }
         ],
+        "ToolTip": "隐藏/展示左侧菜单栏",
         "ImagePath": "Navigation/131_list_3.svg",
         "BuiltIn": true,
         "Color": "Accent 1"
@@ -609,7 +610,6 @@
       "0,57": 0,
       "0,58": 0,
       "1,10": 0,
-      "1,12": 0,
       "1,30": 0,
       "1,31": 0,
       "1,32": 0,
@@ -701,7 +701,13 @@
       "2,60": 0,
       "2,61": 0,
       "2,62": 0,
-      "2,63": 0
+      "2,63": 0,
+      "36,2": 0,
+      "36,3": 0,
+      "36,4": 0,
+      "36,5": 0,
+      "36,6": 0,
+      "36,7": 0
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -709,11 +715,11 @@
   },
   "Spans": [
     "0,58,2,6",
-    "33,2,1,6",
     "0,0,2,8",
-    "0,14,2,16",
+    "3,9,29,55",
+    "36,2,1,6",
     "3,0,29,9",
-    "3,9,29,55"
+    "1,11,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
@@ -844,7 +850,7 @@
   "CustomNames": [
     {
       "Name": "是否隐藏菜单栏",
-      "Formula": "母版页1!$C$34"
+      "Formula": "母版页1!$C$37"
     }
   ]
-}//aZizqoqrvqXf6W9Xz5HgOJmwE6wD08qJ16ppYpqOZqU0aPSiRmNCNvROLoruHX9B0mIuyKDHm/ouA6vwzGqHid9RNfrFtv554ex2iLIPtbhqfHjzPDf69NZmS8DJlWuqfSD9mg9dhJ2eG8nrT/PNnz2Jjq38foKnWF4D3skIivG6WAu9x7UkmuxtL13Usw7j97XpkPKT6LdAeC9ARREJ4ygdL4+xEjrtBzsBbocA330aPUJPLo/zmbOMmgqBCD3zjIlqYlnqxXw7znkQ1ylaxXgV5b4/52Hm61nBqC6Q5PF0vT8p+Op1Xy8nradk1puGQC8HbvPCe9x1LwbLIqe94QdvdqbPCjEpgI/0/GwfPxe8cofeBQFXYm7ypzaL6mtbjENBkJuyl9py+rKGe9fEV3hg3t5wLHDISZOFSWSj1hx/e3vZunISrZVghA8oVARINoRSPGnigwv6fWjHlP4RoMTAYQxj2632+pbHclAygSjDqHXpy+glOMpQMHbhmagtKH/aIUvdFw6FnJdbsnr1gYiCUbuB6gSZ/gmWIt17rFJt7W3EB42Mm724XAXCOXyEg3l2mvbA+0SgAt0p08n+OFdGoiCM+z4+fKgw5BhFPNPYQwKjP4nhx1GYo+MSypDJazYL+eaD7oG2l+7u+VanSb0u3wimr9GRzTjlMHWSiiz643AmB48ikKCEsqjZ/DfFHCRlfoHTLv96cWrZOIGXGsJzOCwQrkCHlf3lUvfs+RwQucLoewbzok4ZN8X0RbYVX+t5Rr2G2EtMdwmrDPB3vNZuBLiS2MdGYtCbY70RfI3bWTZBLOwUyDKzLXX17CpQ7i+7Vh6mwN1nFdy/TNEf3VfDx9yqZOb10uyUMcAMCx2ETBf1RGW8hbi3s2t8lL4D9O6yJvEKf2+OwDJWTdo8YA==|920
+}//xE6fzzSyY1rxr2EM2MpnZdxRf0IGNeaXx9d7lcT7LR0Q1yhIuECdS8/mCDs96L+KHwmYx/dyil+LiBIilR9zTiv9xKH/1UaIhP5ON95ZWdx9cZAwiIg3rFElopvnUN2oZsVAgO/yAkaMKbpRhvPismn+piMQ5AmxZj13pXVbSeKsPbu6Lb0vnPNxMsMpJD4/dKOa/hxusHM3xtyiDHQRvQzxjo1OBg1dA3AITA1DFZ+xUUQERjm/LY3EztiI4N2ivPxRTr25EtbEjx5qmYoXX+xDZFiLUVxIriGKr1eLIU/5qWR+VPFNzGVXvyrtWGmJfym1gRI7Mu0lCKIpFhk/FlPdHh+gzVLiBJlDckrLVM/bvjSU8ppVtepDmQ03Uk3d0JtwQqSwLbSDvSrJbKSB5M24FwwL0BmMH9epFn4ldh1lRBTlujh77W77JJZe726ssR+0Y4TTyMgX2JDVWL/5Z8uc1msffjVzBXNTC5WZbrF0BjV5Me61yLr1zEnM7iBmSR00COnLAIUcgT384dGLHF0LxZ8zJk7KdbB5jJQEjQwfmzPbfk+T5ljJ4++I8k9qn5hGvRiGUU0hl+DeEt7VlspQxN07NdFNyrq4NLPutVjnCF5NybPgR6zQJmnz9cNYRe79WZpEiSv7RtAZqICwavCy8fGYm95ICPKcgxnLK7p7hvf+RABcZco9hLnnaqOdGHCREM5FYgu0hv6et3N7wo/4SCV+SrgyUnYsekEdFPBvuZLLn3zP2L2ueIXmPec2B6vTs66MwR0sNDEUafdrgwfPQ5jsX2vrUNqJsG4uL7Fkf8+Jkdp6U9hs9/X6akhgtFkpjbgaI23C73xbkMvujUjXmxOTZTGjJoavhjkY/BY+V9hAiJDhC90kGdW/9LgNQxbobj5Xrt249uFnBliV0g==|920
