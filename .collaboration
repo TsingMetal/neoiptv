@@ -509,7 +509,16 @@
   },
   {
     "ModuleName": "PCPage/请批量选择5题试卷进行上传",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-26T16:54:26.684278+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\上传试卷\\请批量选择5题试卷进行上传.json"
+    ]
   },
   {
     "ModuleName": "Table/FGC_对外销售商品表",
