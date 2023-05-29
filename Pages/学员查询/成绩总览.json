@@ -1,6 +1,20 @@
 {
   "Rows": {
-    "Count": 33
+    "RowColumnAttachedInfos": {
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 31
   },
   "Cols": {
     "InLogicalVisibleIndexes": [
@@ -143,7 +157,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "考试日期",
-                "GUID": "e42f220d-b74c-49d5-af21-4892472b1365"
+                "GUID": "4e92c4ff-0d1c-4c1a-b14c-f5d441c8d679"
               },
               "Order": 1
             }
@@ -418,7 +432,8 @@
                     "SerializeProperty": "=得分详情!Z2"
                   }
                 }
-              ]
+              ],
+              "LoadBindingDataOption": 1
             }
           ],
           "ParamProperties": {
@@ -439,7 +454,7 @@
           "NoItemImageSize": 25.0,
           "TextForNoItem": "暂无考试信息"
         },
-        "TemplateKey": "_RS_Selectable"
+        "TemplateKey": "_RS_Clickable"
       }
     }
   },
@@ -1020,67 +1035,7 @@
       "17,31": 0,
       "17,32": 0,
       "17,33": 0,
-      "17,34": 0,
-      "30,0": 4,
-      "30,1": 4,
-      "30,2": 4,
-      "30,3": 4,
-      "30,4": 4,
-      "30,5": 4,
-      "30,6": 4,
-      "30,7": 4,
-      "30,8": 4,
-      "30,9": 4,
-      "30,10": 4,
-      "30,11": 4,
-      "30,12": 4,
-      "30,13": 4,
-      "30,14": 4,
-      "30,15": 4,
-      "30,16": 4,
-      "30,17": 4,
-      "30,18": 4,
-      "30,19": 4,
-      "31,0": 4,
-      "31,1": 4,
-      "31,2": 4,
-      "31,3": 4,
-      "31,4": 4,
-      "31,5": 4,
-      "31,6": 4,
-      "31,7": 4,
-      "31,8": 4,
-      "31,9": 4,
-      "31,10": 4,
-      "31,11": 4,
-      "31,12": 4,
-      "31,13": 4,
-      "31,14": 4,
-      "31,15": 4,
-      "31,16": 4,
-      "31,17": 4,
-      "31,18": 4,
-      "31,19": 4,
-      "32,0": 4,
-      "32,1": 4,
-      "32,2": 4,
-      "32,3": 4,
-      "32,4": 4,
-      "32,5": 4,
-      "32,6": 4,
-      "32,7": 4,
-      "32,8": 4,
-      "32,9": 4,
-      "32,10": 4,
-      "32,11": 4,
-      "32,12": 4,
-      "32,13": 4,
-      "32,14": 4,
-      "32,15": 4,
-      "32,16": 4,
-      "32,17": 4,
-      "32,18": 4,
-      "32,19": 4
+      "17,34": 0
     },
     "ColStyles": {
       "20": 5
@@ -1109,14 +1064,12 @@
     "12,21,1,4",
     "12,25,1,4",
     "12,29,1,4",
-    "13,0,17,20",
     "3,41,1,2",
     "12,33,1,2",
-    "4,21,5,39",
-    "13,21,5,14",
     "5,8,1,9",
     "7,8,1,9",
     "9,8,1,9",
+    "4,21,5,39",
     "2,21,1,4",
     "2,25,1,4",
     "2,29,1,4",
@@ -1127,10 +1080,12 @@
     "2,48,1,3",
     "2,51,1,5",
     "2,56,1,4",
+    "13,21,5,14",
     "11,21,1,4",
     "11,25,1,4",
     "11,29,1,4",
-    "11,33,1,2"
+    "11,33,1,2",
+    "13,0,17,20"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1158,21 +1113,6 @@
   },
   "BackgroundPictures": [
     {
-      "FitToBrowserWidth": true,
-      "FitToBrowserHeight": true,
-      "Repeat": true,
-      "Name": "5e92c9aa-cf3a-4e68-91c2-a7b66fd9e782.png",
-      "DisplayName": "背景图2",
-      "ForguncyPictureName": "RepeatBackground/Sources/02.png",
-      "ForguncyPictureSourceType": 3,
-      "Stretch": 0,
-      "StyleInfo": {
-        "Fill": null
-      },
-      "IsAutomaticFill": false,
-      "Size": "45.32766342163086,45.32766342163086"
-    },
-    {
       "Name": "f43fa197-7f80-40d6-b16e-c29e11fc8919.png",
       "DisplayName": "背景图1",
       "StyleInfo": {
@@ -1193,4 +1133,4 @@
       "Size": "400,180"
     }
   ]
-}//rjZ5ciiayLR058Wj0lqrerQJqh8xcib4R+/4wI4xrV2ef/9jcTUuVWRDC8FZXg1waQLXpOpu+zBHD9w8/cz72JArWKm9YI5UtBHcysO/e3jmaCDlOvfSXVKYgNeEWadBtNgLtAs3u3bAKpbMrOYuR2IV8o5lIiFDosqyiDkgzEmWvg+KPoYGYTlQ/irHO2h9wCuAxzGhFtHpHDhHWhheQ/PYUv+VgCNhYP8/zqHHhHKE0KDeJ88MJteQS3/bR0aHPiU/3ip7ahXFcx/fZAxo3Df0LofLeCAcr78Etv6AB86m8OKEl70hDbDKBbxB0d26I8QjSL5XFO1ZZ6DtgbpzJtPDuqr/TqBp553l2UTL6/VQCoEckaQ6A4ntAz0bBbwJjOpMue8/55cTf2JRI1wLrLrEzvdKNDdTRbI79gfTklUM4xaBeQTqDAG3abBb8OLBjoGrt/GLBwlKXvbP3imQllYiASu1irUn8T8AI23/9jb99Tne13+ilb6aYkCn3TrydiUrdF+iFKPoAOYx95IZUg+9rZZXKSJEj+phbTvcriWHiDCNdIyeqYk8quCeJQKIraKfsHrzY2x8TRu+nmgNCZ8Vanx2TiuhOpsxXtTvK8C32X9N+nZAUG/gng7IOryMBEUVBbLL6CmqWDXre7BNrxc5KchARn9CXfDfjhy3eWGdSVdWXjKYm1Zkkyt9pCNoIzu11g/176M6sIilEyVQo7GHJVbhVZ19pyLFHzECqXuCuO/3fPwfXboeLi8ZIvX/FaYwQDzGrQ3bwol3Wx3WYMpaHuD3NWLYtfCJTad4LLlYcNwbbVE/ScIQkyoHGWeoDo25cUD2LkUCfaNGxheVJrqHHfsua/LPgkB1wvcjlCFJ98+zNuamBz6XqYqvwRvOl6TU1AESg6Y9lvr3+6/Atg==|920
+}//mcPXyVYZ3r72HmyQR95x2ygpY2PeWNh0OBchFbc7znoo2ToQZF5SYSbvVBBUq/IGEbv2vy0bX6ZImG56bMiVQI/KACSVPNyDnrHmQUpaH8uzUlExtaIBT1R4qaTffkB4qETQNrLQbnCt955VtC7PJRaMAhx1hejIjv4n3+gT189RKsWvUAujYtFvjumgXUte3fKe6OyisV5jQ3Y3dJsZc4uVOXSb6iCza7cNKhqcHQG6iH3+GxPGFOHdujU4cA8kHlgMhPcmxPwaIRG5u3DcUal3WBeG83+/Zsp4favpDsthkozZ7z8+67yqEtbjQ8wxc4u4mJIabuWWRad/o/rdTNHsccKnaPoqUNMSFkpUfosXBFsPQjlogg6ToNO9ZNyL94wdUj4lK3+vEnfBnGO6OzxIyOhmxp/4aPe8vJnx8PHNIQ2IKHJbbV4DLYKXIpEVOYDwX2PZqktUs8aMUiMGp6x+0Fq5hg44G9AsOq5aTskptoBLlxo4O2jl/bb2Rn6iXhzmDI8RBKjAP5SWpex0gsbP1zLvma6SSOtqkuHSvP2vNUy0pWYtl7KBZXu83GDh0v1h/ChnXhA2Xr8CLtnPBzXUupUMAOKLCzs8m0LSUU7FN51X3vBsHR1YsZ9VJvSs4d3v0vLCUD8t/JsQrl+PQfP6MgSyGlZVH2rm6JWeBDz8DyKZHHZtbnHAjhHyETc3hJNCfkU1Q01zoNogY4yxZc+MNJMLwAZpxIaX7BSy+Vz9sZZ28SbUV/zEVCkXoodycVQ8l4+2SiDzX+rzXx7qxfcuL5d92AhRxuRcJwzrJkStxR7jPED8k19zevKjPRnrauyYk4MlqjftOgUNVEz9jUeW7xlmpxyFG7RhMBikPzQhpsSMWf89rP3CUlJaq3d9ArElF7/5ELsoDKAiKopXzw==|920

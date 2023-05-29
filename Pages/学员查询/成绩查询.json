@@ -97,7 +97,7 @@
         ],
         "type": "text",
         "keyboardType": "text",
-        "enterkeyhint": "done",
+        "enterkeyhint": "enter",
         "maxlength": "12",
         "placeholder": "请输入12位准考证号"
       },
@@ -163,7 +163,7 @@
                     }
                   }
                 ],
-                "ID": "a9797724-8b3e-4bb1-98e9-77494aa4cf21"
+                "ID": "edea9182-b04c-44ef-b127-2723b9bbb9c6"
               },
               {
                 "CommandList": [
@@ -178,7 +178,7 @@
                           "BindingInfo": {
                             "TableName": "考号档案",
                             "ColumnName": "准考证号",
-                            "GUID": "d120e38c-15a8-4ea0-b62b-3f0f7816048b"
+                            "GUID": "ca05e240-e46e-44a5-814f-fede8031dac4"
                           },
                           "ColumnName": "准考证号"
                         },
@@ -186,7 +186,7 @@
                           "BindingInfo": {
                             "TableName": "考号档案",
                             "ColumnName": "学员姓名",
-                            "GUID": "1369f49f-57f9-4f58-9c88-b0431f9085e4"
+                            "GUID": "6874acf4-4729-4727-ba17-9cddceb994c0"
                           },
                           "ColumnName": "学员姓名"
                         },
@@ -194,7 +194,7 @@
                           "BindingInfo": {
                             "TableName": "考号档案",
                             "ColumnName": "班级",
-                            "GUID": "88aa3e06-0d2d-406c-a50a-7f878fabe278"
+                            "GUID": "3d06fc82-0d59-4e86-ab0b-df2820351f66"
                           },
                           "ColumnName": "班级"
                         }
@@ -204,7 +204,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "考号档案",
                           "ColumnName": "准考证号",
-                          "GUID": "4100fe94-a3a2-422e-8e54-e2bcb50d5e5f"
+                          "GUID": "67725712-c438-48c1-b7c7-af47ebedffdc"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -212,7 +212,7 @@
                         }
                       }
                     },
-                    "ID": "ec07142c59e149709bacce8eaecb1820"
+                    "ID": "19458151751e4542a6735e33308a5429"
                   },
                   {
                     "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -269,7 +269,7 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "09a7457a-07a5-4f5c-9073-36cacd51b7c3"
+                        "ID": "69c8f4c6-666a-4b78-abd4-bc375e0b6b06"
                       },
                       {
                         "CommandList": [
@@ -287,12 +287,12 @@
                             }
                           }
                         ],
-                        "ID": "fd9ee759-cc4a-457d-ab31-3134c09f2335"
+                        "ID": "03dbaced-f34d-434b-91c1-074c87c93012"
                       }
                     ]
                   }
                 ],
-                "ID": "c6730203-01bd-4b68-9414-05b8cc0669f1"
+                "ID": "0e503250-6b8b-4eb0-9282-b228cb549f8b"
               }
             ]
           }
@@ -317,12 +317,16 @@
       {
         "FontFamily": 0,
         "Formatter": 1
+      },
+      {
+        "Background": 2
       }
     ],
     "Types": {
       "Strs": [
         "Body",
-        "[AUTO]General"
+        "[AUTO]General",
+        "Background 1 -15"
       ]
     },
     "CellStyles": {
@@ -563,7 +567,6 @@
       "6,24": 0,
       "6,25": 0,
       "8,2": 0,
-      "8,13": 0,
       "8,14": 0,
       "8,15": 0,
       "8,16": 0,
@@ -711,6 +714,9 @@
       "25,35": 0,
       "26,35": 0
     },
+    "ColStyles": {
+      "20": 2
+    },
     "SheetStyle": {
       "FontFamily": 0
     }
@@ -725,8 +731,8 @@
     "8,22,1,4",
     "8,28,1,8",
     "0,0,4,20",
-    "8,15,1,2",
-    "8,2,2,11"
+    "8,2,1,12",
+    "8,15,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -752,4 +758,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//2yynPpiVT93HYrFiODtPVJWdplUOS72q9bxuyQM2Pf5yqcSfzX8bohtrA90OwptRGAVCYc9B2FVoCZoCm+2WLe1LVjPQTM4vDzltDahT9G1lDvJHpTttk9ROzsL95H2l/EPVi1zbUzpLp64/6DlJ+Zi3FAckWCiRh4EZJwEwp+UAXgiN9fFxJ0tcr6vKMHML+kfEhDiws8HdPRhTPceLf92ZQ9QAvTlH6rFyZdqvy6sbAkxyx479O4eJDuWiea8N01f3+FfbgyNlPQma1n1iYmAJjY0v9zPu7RtXjdwFjcj9pdMrNICLheyYCTUSpimWpYVycLSCVifOa4BQmclVzlJWDUmEjzDPQ6FUY3UP3hcCZMqe+wGzMbmDtuqV8Yw3nFRUnAvNFuB0BOQ1oYOAIrUEVzUjA14gdv74zC4qhguCCKO8amTg88J7tRH2GTIrGmlY+QnqighQKte/wWpf5Wvk9eg7dz8KQAXe1aUPKyRAD84azPVPk9XmIJflwtjAnSvZcgrOw8nAebj9tkm2BalgNfndDXp/4qfPKYDU+S84hTZSyqH0Ge4YpugQ4ifppzboal30u3HZStyENAP4rGqWy1kkiB8t+MGjq7+A5e0Sg9kmb/pumaZTPx9Use8hfjIQ+jn5qKPmm7R9OV9UOr0mp3n0ayK0o2AhrAZCnzZtO5IZlbxDxHVNt7mtwXj+jEouCKKcA115B8u+HRygG1jfXjByMe/rDl2VD+wDWsDMkBjQKCmSMkb3OeehzvyN/Visfr1Ks/3Azkx37o18KWI/RDljj7h47K0ybHgaC867Z+j8XBB2kafe1Hwzb8Laa6RtkaTNVgXhHzezdImTqVu9ecRhXfmMOgEHYhO3dRRRyVl4xAArAC09MzsKJ5TsU9Jz9bY1lgbS6It6N2xr4A==|920
+}//jyyCNsBK9+eXw7W5DZ4BH21OK8lyl8ppPFJVDaXpRKqfZrrSVley+XGpMx+XBrAcAqqR+++rj1vWEEDDhzD2jVDvpkGIcQaPotxoC31PSOXNcvfUX5SY9PnXUCeCBQZANIqs87jcAPY4Pp7ASwwkWcpfoGPb+uG63Yo4y2srb7OD/mHUsGsIfyV1Zifx7XIUqCjJvJrdtshgvcjPQ+8+/uL2XhpSy/+/FpKwBuvpeyqiqjhK5rTSj4y68zJk+Lmq2igmJXs6ROubAd9hSfn1iIhwlcEm7S7lsi4AmzaU/JOGaDc3rCK/kESsPlSOEbsG2EK/mwPEdNdPSkpUph+urokLrlVV7/MIiQ4huxMNsNjLJeiE91zsMIZcWIq42Yum7BqTO4YL8NRA1fSoXmfxy+7bw0AIH/QTM59wbO7vMXixp/Mo1e9mG+OajIhSjjQahYOtj8o+8Uu5PpqIYukqTK+cF+ZeC97Y0QvFlzo5nVCBlYNNY5oVMKzA+fJfFVaQU31bEsyvWJWV/JxoR9IRMwg0E9M5OwT0Dgn174ZvjaRQEOSz5Dgf79JCFGQvAuq9WrsEp+Y90NPEpbHQ1XKEMvRC0XKjkUFpOSCXWXk8po90putoHpDgGsPJCa/sTALbddAXUoA57OaQxP9g4Hg89LMoaNnPga+6EIng3GFLXofo9rPa938tCDwolh4QCRajodjdc4C+3qCn5zI9zVtVxP84rHWtrdwvMOYCTuRiRvQWWku194iaszI6vb52d2Hax1N8GY2Otlvuv/h0x+w5Gjt5fOVOhMcvfpYhkVKzcNfoNwSJYc3qKw3quGCpGmCd8+31lTtxOtIaKLCW1OCInEoEndMmSTIJakOYgvVVhxPFqPdSpsIbW2kRy89Hw8tPS3ZW0Kf9Zpek0wvX+i+mPA==|920
