@@ -93,7 +93,7 @@
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "题目名称",
-        "GUID": "ca85a0e8-aa52-448a-8139-b6f58f2da302"
+        "GUID": "2d3f438d-9470-4b66-bb80-ef849650bfc7"
       },
       "CellType": {
         "$type": "Vant.CellTypes.Input, Vant",
@@ -121,7 +121,7 @@
         "type": "text",
         "keyboardType": "text",
         "enterkeyhint": "enter",
-        "placeholder": "请输入",
+        "placeholder": "",
         "ReadOnly": true
       }
     },
@@ -284,7 +284,7 @@
         "type": "text",
         "keyboardType": "text",
         "enterkeyhint": "enter",
-        "placeholder": "请输入",
+        "placeholder": "",
         "ReadOnly": true
       }
     },
@@ -398,7 +398,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "题目名称",
-                "GUID": "be0d66a2-35c9-44f0-916c-90c2cba64be1"
+                "GUID": "ceb7e181-2143-42d8-962d-93ead77a6a70"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -461,7 +461,7 @@
         "type": "text",
         "keyboardType": "text",
         "enterkeyhint": "enter",
-        "placeholder": "请输入",
+        "placeholder": "",
         "ReadOnly": true
       }
     },
@@ -856,7 +856,6 @@
   },
   "Spans": [
     "3,1,1,4",
-    "3,5,1,12",
     "28,1,1,4",
     "28,5,3,12",
     "32,0,2,18",
@@ -895,7 +894,8 @@
     "5,10,1,4",
     "5,14,1,3",
     "3,33,1,3",
-    "4,33,1,3"
+    "4,33,1,3",
+    "3,5,1,12"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -944,4 +944,4 @@
       "Size": "340,20"
     }
   ]
-}//bxJckQ6akrwgVzM1JMkuz4rRmsYoMMoyfqvs+FVk/ZY4IehCvMTnt/P+iibjGQ8aEja+0pJS8CjFWxiS+r5jXphgqUYURG9YhBpC5H4FyAmmUrFfuEZsoaggUlvbiTP9CoVrQ2zWVaxwyR0zX6BIZhx823QegL2KzpBOcyUajeZMRGh3BV0Hk+hP90n962cwK1g/o9nW3O4bwoohRaXCJpizCOZlbRaMNVpbv41NhQHRW+O8f5A1uGx/+BDJyCo5yfA4lBaAF04YbNLo+WQ6Dta2yaAyZ6YXsLpPPIV1DxYponDMi/sPxxfLF6r6GG/wToHDrn+Q6sRdi2wXmos/qJp1zVG8ErgBHgiryqkSCDUyexzWv/V8IdSmoU4P2+VdO+opLq9JINPdDnh5aPg9lxb9Bht3NWm4wltikm8peEAc1HqhFpffDTsmmcmMZW9bcezr7wRzu9cGFDVB1P819tzVtozyqo5Rfz4CHlyyecyfmudRwpLlD24P1tQAB35tdv0EmmJcsZON9V1InZlwo7ri2d2Rx+B7/ku5yqDBjsBYumG+S8hX5bT/0Jo+4ERKwBcpHK+ohEsD1sgCtEtdpEsdCs2VjPCdac0N186Rjx24d8xtvGIHytLMGXhc9qH0JCl/Sjl2VFNqemsUhkwiyqp424ejPKEcOulCa6wXKI7IC1icrCb7CWrknsLmyA6THSYEABRmTSDO5d/8OHxiCFtAZf5OMHRzfDPsqSfRMA9iDySdCWMPbRSVrIa4xhYJRT5K+aoZc/kmshfZtnpSc7qI1K+QLZ5RMMftE7pgdxjJwIFuak+GV2j0qmJicayIsDijc+aTg8xTG0yx1q1n3g+RT+b+yCNvJPHfOC3FtvDaZGwisY60OxcKaIrCFpKo79PLM2oG5wYRYJKM7XUjPA==|920
+}//t673A6X6i40jGRhmkwvwPLAxhT64Ege9s3WhVp1v+TJwb35sX/y35yLWALg5q8JESo0sDofOLZKDmzN0nUtTF+Xumlst+huQMvXHWrlPvnerZCFZTr1K4r38zs4/HzZYZ5r17QZ/Sm3Tjx6eT+oa+jz2CTD82R8Zb0UCOFSbcw/QjX9sIXN6VT5YwMwwS+moc/Vm2DiWABSlmsPFCA9UXZBZDS8Fm4G88N66Z6V2MceBGAoIdtXVX47uuPIpXclMFVvEC3M+Qi8lI4GSdgGQ9RxxOYeghkWnmWQ58gjDoaM1noaTfauqFJtmnxHIhNwPQ1PeYmEm2yrTo8pjAB7FM3VV2QO16ekEcknZVzpItsk2hJXnk7jZTxAnB6ZaNAG44px/Qp3oVT7/OSkA5hzFS8+oIkWBqJnR/7GdWaJrFXoO8AchE51MwakpoTmB6fQ4boyolOrpxY+BYrFtrziBMl7xnq2C/6jEXlbtXDuEZvQlEfK3PVUNUrci8rgK4ZxRL4cgCThsPMrc6kuHK2A24ob95bDsE5EPSgBqf9aueh2/CxcJoUyH8f81/vFgDpjQmVnZHNSPivPehoG6gBRFKkei/B5KbKLBkTNcOnJQkPA7nAzZ5vkLTpZE50RTCjezwB5GjTub/5ft//nshxF6Rz7OEiQPwexysjpZuqcOgGkZmal2cvMJgI3QvYk49MNAIoMKBOUc+K0e04ISrk4reK9G3Jfje0+ke7MNOekr7oswS+gMf7i44rcTM675Zm49duCXefClcPgmUqQLGUVnIHxxdi4qAHs5HjB2cQa0ARdmNl8t9sP9APKdF4mxl0KlPqGRglIKYQBz/Xbsf7ZjwBbpBbpGcqYAVB/hx+C/3s8iVn4cMtjKg0UJRQ2g890uA7RUnhjXee+MyOPwHbQ2Fw==|920
