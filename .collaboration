@@ -640,25 +640,5 @@
     "LockDateTime": "2023-05-29T11:04:24.6977839+08:00",
     "ModuleType": 23,
     "ExclusiveType": 0
-  },
-  {
-    "ModuleName": "Pages/test",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-29T11:05:01.3623075+08:00",
-    "ModuleType": 6
-  },
-  {
-    "ModuleName": "PCPage/成绩总分列表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-29T11:07:51.1585267+08:00",
-    "ModuleType": 1
   }
 ]
