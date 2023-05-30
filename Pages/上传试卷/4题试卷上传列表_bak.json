@@ -26,28 +26,18 @@
           "DesignLengthInPixel": 20.0
         }
       },
-      "24": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "26": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "27": {
+      "25": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 30.0
         }
       },
-      "28": {
+      "26": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
       }
     },
-    "Count": 29
+    "Count": 27
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -77,16 +67,6 @@
         }
       },
       "7": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "8": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "9": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
@@ -200,111 +180,6 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
-      },
-      "32": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "33": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "34": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "35": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "36": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "37": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "38": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "39": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "40": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "41": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "42": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "43": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "44": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "45": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "46": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "47": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "48": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "49": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "50": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "51": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "52": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
       }
     },
     "InLogicalVisibleIndexes": [
@@ -315,86 +190,21 @@
       59,
       60,
       61,
-      62
+      62,
+      63
     ],
-    "Count": 63
+    "Count": 64
   },
   "Values": {
-    "1,44": "删除",
     "1,48": "上传题卡",
     "4,55": "暂无数据",
-    "27,1": 20,
-    "27,3": "条/页"
+    "25,1": 20,
+    "25,3": "条/页"
   },
   "Formulas": {
     "3,55": "COUNTA(C5)"
   },
   "AttachInfos": {
-    "1,44": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "='5题试卷上传列表'!B26"
-                      }
-                    ]
-                  },
-                  "value": "%Null%"
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "至少选择一条数据"
-                  }
-                ],
-                "ID": "59569ce7-7672-4860-ac42-c63332bf880b"
-              },
-              {
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "_5题试卷上传",
-                    "UpdateType": "delete",
-                    "ShowConfirm": true,
-                    "ConfirmText": "您确定要删除吗？",
-                    "RowsToUpdate": 2,
-                    "RowsToUpdateListViewName": "表格1"
-                  }
-                ],
-                "ID": "0b8b72ff-0ab6-4dcd-a69f-f1b53da8fe99"
-              }
-            ]
-          }
-        ],
-        "Text": "删除",
-        "TemplateKey": "样式6",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator"
-            ]
-          },
-          {
-            "Scope": 1,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator"
-            ]
-          }
-        ]
-      }
-    },
     "1,48": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
@@ -405,7 +215,7 @@
             "DrawerDirection": 3,
             "ShowDrawerHeader": true,
             "CloseWhenClickGrayArea": false,
-            "PageName": "请批量选择5题试卷进行上传"
+            "PageName": "请批量选择4题试卷进行上传-1"
           }
         ],
         "Text": "上传题卡",
@@ -420,8 +230,8 @@
     },
     "3,1": {
       "ListViewInfo": {
-        "Name": "表格1",
-        "TableName": "_5题试卷上传",
+        "Name": "_4题试卷列表",
+        "TableName": "_4题试卷上传",
         "RowIndex": 3,
         "ColumnIndex": 1,
         "RowCount": 21,
@@ -430,9 +240,9 @@
           "OrderByColumns": [
             {
               "ColumnBindingInfo": {
-                "TableName": "_5题试卷上传",
+                "TableName": "_4题试卷上传",
                 "ColumnName": "FGC_CreateDate",
-                "GUID": "1aae46af-8380-4a1a-9364-f986ccc51948"
+                "GUID": "acbe9716-38d5-479e-b104-9d9fe37dc562"
               },
               "Order": 1
             }
@@ -441,7 +251,7 @@
         "TopCondition": null,
         "ListViewStyleName": "样式1",
         "ShowColumnHeaderInDesigner": true,
-        "IsRowHeaderCheckBoxVisible": true,
+        "IsRowHeaderVisible": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "ColumnOperation": 2
@@ -449,23 +259,23 @@
     },
     "4,2": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "班级",
-        "GUID": "5c4efcff-ee81-44e9-a4b2-239f2b33dafa"
+        "GUID": "27f124bf-e01c-4223-b16f-3f5f4257f7a9"
       }
     },
-    "4,6": {
+    "4,7": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第一题",
-        "GUID": "e2ad7cd8-abb4-4d59-9c21-e4b948dcd0ad"
+        "GUID": "ae880d27-28a0-44c8-9f3f-aa051cb9608e"
       }
     },
-    "4,8": {
+    "4,10": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第一题",
-        "GUID": "c572ba77-30c8-465b-80a2-0dea25c26b67",
+        "GUID": "9e966dd3-57ee-4e4a-9678-0a077da35a3e",
         "RelationBinding": {
           "RelatedTable": "题库",
           "RelatedColumn": "题号",
@@ -473,25 +283,25 @@
         }
       }
     },
-    "4,12": {
+    "4,13": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "题1阅卷老师",
-        "GUID": "c24d7dda-d68e-43c3-8361-819cb5f94eb5"
+        "GUID": "f2b19a9f-4b7b-47ee-8131-b47f98582a36"
       }
     },
-    "4,15": {
+    "4,16": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第二题",
-        "GUID": "107d9032-164c-46d3-8151-cce1d91013ab"
+        "GUID": "3d275826-5bc3-4fb5-a052-f36e54281b37"
       }
     },
-    "4,18": {
+    "4,19": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第二题",
-        "GUID": "c8288652-df24-4374-821c-6ce974158562",
+        "GUID": "a58debc1-654e-4a42-8b06-f870864962e2",
         "RelationBinding": {
           "RelatedTable": "题库",
           "RelatedColumn": "题号",
@@ -501,23 +311,23 @@
     },
     "4,22": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "题2阅卷老师",
-        "GUID": "7ead5c1e-7231-4bfc-85d3-495b6b36e3b6"
+        "GUID": "4ce649ef-2667-4a60-92bf-ad33205d5c21"
       }
     },
     "4,25": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第三题",
-        "GUID": "acf3f9e4-2796-4431-b0c6-22fd9568380d"
+        "GUID": "ed809c6d-737d-4434-873d-6806c545f719"
       }
     },
     "4,28": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第三题",
-        "GUID": "0680c3fa-8efe-4305-9be6-7f35a9a4347f",
+        "GUID": "66632508-1cf3-4f89-9998-11f623eb9588",
         "RelationBinding": {
           "RelatedTable": "题库",
           "RelatedColumn": "题号",
@@ -525,25 +335,25 @@
         }
       }
     },
-    "4,32": {
+    "4,31": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "题3阅卷老师",
-        "GUID": "526cb120-efe9-42b8-9e32-4196f16fb77a"
+        "GUID": "ae40aacc-25e6-4887-8765-f58a59fae2f4"
       }
     },
-    "4,35": {
+    "4,34": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第四题",
-        "GUID": "a335aaae-ebe4-4b02-9eaf-91758ad62b31"
+        "GUID": "41e8f755-57a3-4860-86ec-dd3bcd781f84"
       }
     },
-    "4,38": {
+    "4,37": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第四题",
-        "GUID": "0ff91947-e8c9-4c88-ab25-aa13f74c9485",
+        "GUID": "950f808e-469e-4c94-9a26-773994f5b2ce",
         "RelationBinding": {
           "RelatedTable": "题库",
           "RelatedColumn": "题号",
@@ -551,39 +361,31 @@
         }
       }
     },
-    "4,42": {
+    "4,40": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "题4阅卷老师",
-        "GUID": "ba880c1b-0135-45d0-a432-8b706cf98c7b"
+        "GUID": "ec3106bb-9d5c-4b93-bd4b-831768168d07"
       }
     },
-    "4,45": {
+    "4,43": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "FGC_Creator",
-        "GUID": "9658d151-2e5a-44ce-8b74-198be7317bea"
+        "GUID": "b882affc-b6a8-449c-b20b-a460bba4d3a3"
       }
     },
-    "4,48": {
+    "4,47": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "FGC_CreateDate",
-        "GUID": "dc0a1221-741e-4cb3-9731-7f6a713d288a"
+        "GUID": "129f4610-6938-4746-8ce1-e9543b5dec0a"
       }
     },
-    "25,1": {
-      "CellType": {
-        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
-        "HeaderTemplate": "已选择{{COUNT}}条数据",
-        "HeaderTemplateForNoSelection": "",
-        "ListViewName": "表格1"
-      }
-    },
-    "27,27": {
+    "25,27": {
       "CellType": {
         "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
-        "ListviewName": "表格1",
+        "ListviewName": "_4题试卷列表",
         "pageSize": 20,
         "pagerCount": 5,
         "layout": [
@@ -647,12 +449,15 @@
       },
       {
         "FontFamily": 0,
+        "HorizontalAlignment": 2,
         "WordWrap": false
       },
       {
         "FontFamily": 0,
-        "HorizontalAlignment": 2,
-        "WordWrap": false
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 2
       },
       {
         "FontFamily": 0,
@@ -666,10 +471,7 @@
         "HorizontalAlignment": 2
       },
       {
-        "HorizontalAlignment": 2
-      },
-      {
-        "WordWrap": false
+        "WordWrap": true
       }
     ],
     "Types": {
@@ -688,15 +490,13 @@
       "1,5": 1,
       "1,6": 1,
       "1,7": 1,
-      "1,9": 1,
-      "1,10": 1,
       "1,11": 1,
       "1,12": 1,
       "1,13": 1,
-      "1,15": 0,
-      "1,29": 1,
-      "1,30": 1,
-      "1,31": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,17": 0,
+      "1,18": 0,
       "1,32": 1,
       "1,33": 1,
       "1,34": 1,
@@ -710,6 +510,9 @@
       "1,42": 1,
       "1,43": 1,
       "1,44": 1,
+      "1,45": 1,
+      "1,46": 1,
+      "1,47": 1,
       "1,48": 1,
       "1,54": 1,
       "1,55": 1,
@@ -720,48 +523,65 @@
       "1,60": 1,
       "1,61": 1,
       "1,62": 1,
+      "1,63": 1,
+      "3,1": 1,
+      "3,2": 1,
+      "3,8": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1,
+      "3,33": 1,
+      "3,34": 1,
+      "3,35": 1,
+      "3,40": 1,
+      "3,46": 1,
       "4,2": 2,
-      "4,3": 3,
-      "4,4": 3,
-      "4,5": 3,
-      "4,6": 4,
       "4,7": 3,
       "4,8": 4,
+      "4,9": 4,
+      "4,10": 2,
+      "4,11": 4,
       "4,12": 4,
       "4,13": 3,
-      "4,14": 3,
+      "4,14": 4,
       "4,15": 4,
       "4,16": 3,
-      "4,17": 3,
+      "4,17": 4,
       "4,18": 4,
-      "4,22": 4,
-      "4,23": 3,
-      "4,24": 3,
-      "4,25": 4,
-      "4,26": 3,
-      "4,27": 3,
-      "4,28": 4,
-      "4,29": 3,
-      "4,30": 3,
+      "4,19": 5,
+      "4,22": 3,
+      "4,23": 4,
+      "4,24": 4,
+      "4,25": 3,
+      "4,26": 4,
+      "4,27": 4,
+      "4,28": 5,
       "4,31": 3,
       "4,32": 4,
-      "4,33": 3,
+      "4,33": 4,
       "4,34": 3,
       "4,35": 4,
-      "4,36": 3,
-      "4,37": 3,
-      "4,38": 4,
-      "4,39": 3,
+      "4,36": 4,
+      "4,37": 5,
       "4,40": 3,
-      "4,41": 3,
+      "4,41": 4,
       "4,42": 4,
       "4,43": 3,
-      "4,44": 3,
+      "4,44": 4,
       "4,45": 4,
-      "4,46": 3,
-      "4,47": 3,
-      "4,48": 5,
-      "4,55": 6,
+      "4,46": 4,
+      "4,47": 6,
+      "4,48": 4,
+      "4,49": 4,
+      "4,50": 4,
+      "4,51": 4,
+      "4,52": 4,
+      "4,53": 4,
+      "4,55": 7,
       "5,1": 1,
       "5,2": 1,
       "5,3": 1,
@@ -1629,10 +1449,10 @@
       "21,49": 1,
       "21,50": 1,
       "21,51": 1,
-      "27,1": 7,
-      "27,27": 1,
-      "28,27": 1,
-      "28,28": 1
+      "25,1": 5,
+      "25,27": 1,
+      "26,30": 1,
+      "26,31": 1
     },
     "RowStyles": {
       "4": 8
@@ -1642,45 +1462,43 @@
     }
   },
   "Spans": [
-    "1,2,1,13",
+    "1,2,1,15",
     "1,48,1,6",
-    "27,27,1,27",
-    "3,55,1,8",
-    "4,55,9,8",
-    "27,1,1,2",
-    "4,8,1,4",
-    "4,12,1,3",
-    "4,15,1,3",
-    "4,18,1,4",
-    "4,22,1,3",
+    "25,27,1,27",
+    "4,47,1,7",
+    "4,43,1,4",
+    "4,40,1,3",
+    "4,37,1,3",
+    "4,34,1,3",
+    "4,31,1,3",
+    "4,28,1,3",
     "4,25,1,3",
-    "4,28,1,4",
-    "4,32,1,3",
-    "4,35,1,3",
-    "4,38,1,4",
-    "4,42,1,3",
-    "4,45,1,3",
-    "4,48,1,6",
-    "1,44,1,3",
-    "4,2,1,4",
-    "4,6,1,2",
+    "4,22,1,3",
+    "4,19,1,3",
+    "4,16,1,3",
+    "4,13,1,3",
+    "4,7,1,3",
+    "4,10,1,3",
+    "4,2,1,5",
     "5,1,19,53",
-    "25,1,1,5",
-    "3,2,1,4",
-    "3,6,1,2",
-    "3,8,1,4",
-    "3,12,1,3",
-    "3,15,1,3",
-    "3,18,1,4",
+    "3,55,1,9",
+    "4,55,8,9",
+    "25,1,1,2",
+    "3,2,1,5",
+    "3,7,1,3",
+    "3,10,1,3",
+    "3,13,1,3",
+    "3,16,1,3",
+    "3,19,1,3",
     "3,22,1,3",
     "3,25,1,3",
-    "3,28,1,4",
-    "3,32,1,3",
-    "3,35,1,3",
-    "3,38,1,4",
-    "3,42,1,3",
-    "3,45,1,3",
-    "3,48,1,6"
+    "3,28,1,3",
+    "3,31,1,3",
+    "3,34,1,3",
+    "3,37,1,3",
+    "3,40,1,3",
+    "3,43,1,4",
+    "3,47,1,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1696,7 +1514,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "='5题试卷上传列表'!BD4"
+                    "SerializeProperty": "='4题试卷上传列表_bak'!BD4"
                   }
                 ]
               },
@@ -1707,15 +1525,15 @@
                 "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='5题试卷上传列表'!BD5"
+                  "SerializeProperty": "='4题试卷上传列表_bak'!BD5"
                 },
                 "CellLocation": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='5题试卷上传列表'!B5:BB24"
+                  "SerializeProperty": "='4题试卷上传列表_bak'!B5:BB24"
                 }
               }
             ],
-            "ID": "9f438979-ec61-4a24-97ab-68ecd3205260"
+            "ID": "67f9f462-7b23-404a-9a2e-32d82ce7098b"
           }
         ]
       }
@@ -1736,11 +1554,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "_5题试卷上传",
+    "RelatedDataTableName": "小测上传",
     "PageResponsiveMode": 4
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//dl1utGqNhuQtVSG+uSWh28kRIZEsvhsqVzMGTKvHMCFER5JscO0WrpCHwyV1D/JifLoFqrGioCBv5lRfBuPY1howiLDkdmIV6fZS0yYY0zR8zsxP/zFuPpRjvDx6qNda4JuiQdGYVUJWDpPv16WwGl96ejjxzb6mM8HEV8Nh1Zu86jz3PPKXq1RLHYpG9AJyomqL8DdRpHtvlDJablwyoZuzA6c884lZUQ68S7EDRolCgUs5aG4vygtouMs2M7klNkIyAlmrC6NnLXXyjpM6fz+gnBd1j01UXDPZN7NIBuVVG4YDIdOf/Z+4om7J3CSJE1VSykiR3uygp7gefHtyva2paf4Cgn/ofxOLOClVEy7iG56umcmQLFTM/8rEymnq7waQncCo0gDP62QTIu9mZFB12a9DTlzusJSA3kIhioHeOAr6anB2HpnuK3nkHCCwOn7C11ZOPQjY4ITac874kTOkBl6rL7rqTnwjTvNrpqQREp7ZQisC1UtHVTY1gVQRc1xqPPKJdegWZwLsAWhPYpjUcxUITWa0ePtoS9LTNVdh9zPeGQKArfn/b6XdZ4mIvk1AxejZ6rz/5ihQXRwvRIJr47++5i8NC7WQXN/16WNc7XQtpfMG5yO1+fP0LrkBT0hgtqTEV9JeAVjzJgTXuPpj017rlqU/QJW39h8YlO1BMe0QpBZuTZLhAEqXl4gsxFmF9n755ivN1urgB3oULasxrqU0Zh6LPGeuOw8rVb1DqsQEtqJA2Lthyu508OK7Im28k/AqmS1YjapzDRn0Qnzr679qWFCNNGxzDEjYhL5mVYmUMmBUIOANUdJac4qOO9T/jbTq7nmMwj+9X2FwaN9OFrprZJ+TqAdl+cd3U9hPxVWTn431SIiZ1FZ7cmFJeoUq4kyp1JOXhkAHtnnBeg==|920
+}//KdXfwhXB4gK/MaQnJe1bwBZJxPWpoJ7gD58y1BzMScdOotJDP+Sp/eduqSt8W2PmotMrLhTMrZYv5pMr+B1u7uFR9scQtEHrjRbpCuzuCQ19CjygFAls+2JOtpOBS+LVGITKSk+v+a5BATm+GXCQ1TOFrTSzbh/sIkv0JjcxDAoHM+4DZgGakqNjPxnS1MiW/gQ6JEegpEWiHZUmSi2vduYWLajn6mUhfWaAQHO1UPSFI2NwSwc55jQHlwuulL8A9EPG1LBBzXEomY7VL8dAhE2p+JdJRl0wDguw1uBicYOPynZ+mMrJRaUPvWaiPsJxKMkLbXjzIo7oH9T8eOsgHIlh1xfY61KfiSPxw5qH8qkJvj7Elr9T0D5ljtR52B4u/dqcdWrMJXSWQwHJq+UgkrAcwhpkkF5SrYUV0We8kEYTAJ1Ey2WlEa0J+V95Q/UVdydqwXZByyo8DM4Re/NmDvIEpJQkNlGEQUnWdzXyMDYtynsll+T2VJtEAIuKDyHStmWfIDPJXkqkEOZJ9GZ2r1BBFaYF1nT70F0gtqrni+KYHRDndy1HxQj9BW5aFZlu8Hw3AbnzEpc8GkI3toe+6qTH0uoNdiLVkJNuMS2MSxLmLkaefWK+O3n8xBfNBwDNO7xLCYrXUAFjheuiP8e09EJlsZtyw6D9W0/xetD3fsfBx1jBiHLJ/6LFmp3WRk/HDM7jE8zWRK0ZfEpDenx9kMadLp8rCzvaeeQyLbHZzvzYdPzd3HnqoLNHt+Ih2fMeWNqembEDyO6/fKj/6z/k6Z+F+X3vUcZHHdgGtpT0Wo68uqnerJPtYKgg55o/wOvHK3nZPm4GhHMcaqUWW7T/H1BxkjU7yDOmc71CNtVCGkXAjcEMWvzbMhSBO3RYvWL2ejL194aLTBeiseEAb0ckxQ==|920

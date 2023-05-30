@@ -111,7 +111,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "请批量选择5题试卷进行上传"
+            "PageName": "请批量选择4题试卷进行上传"
           }
         ],
         "Text": "进入",
@@ -634,7 +634,7 @@
       {
         "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
         "JavaScript": "var page = Forguncy.Page;\nvar userInfo = page.getUserInfo();\nvar role = userInfo.Role;\nvar os = function () {\n\tvar ua = navigator.userAgent,\n\tisWindowsPhone = /(?:Windows Phone)/.test(ua),\n\tisSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,\n\tisAndroid = /(?:Android)/.test(ua),\n\tisFireFox = /(?:Firefox)/.test(ua),\n\tisChrome = /(?:Chrome|CriOS)/.test(ua),\n\tisTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox &&/(?:Tablet)/.test(ua)),\n\tisPhone = /(?:iPhone)/.test(ua) && !isTablet,\n\tisPc = !isPhone && !isAndroid && !isSymbian;\n\treturn {\n\t\tisTablet: isTablet,\n\t\tisPhone: isPhone,\n\t\tisAndroid: isAndroid,\n\t\tisPc: isPc\n\t};\n}();\nconsole.log('os', os);\nif (os.isAndroid || os.isPhone) {\n\t// 手机\n} else if (os.isTablet) {\n\t// 平板 alert('平板');\n\tif(role.indexOf(\"阅卷老师\") != -1){\n\twindow.location.href = \"https://wqianc.com/dashujiaoyu/iPadIndex\";\n\t}else{\n\talert(\"你没有权限登录iPad端的省考阅卷系统\");\n\t}\n} else if (os.isPc) {\n\t// 电脑  alert('电脑');\n}",
-        "ID": "26cfb9d1218847a4b2cf15ce6a5920c4"
+        "ID": "e265b3bc500d4c3d801a546394c32fbc"
       }
     ],
     "PermissionData": {
@@ -789,4 +789,4 @@
       "Size": "1080,40"
     }
   ]
-}//aZyML1K18FNeLnD2mOeRb6TtAyglWyc4RtUNmhoGtcEpFb+QQTfIm9swmuEELVFTgFEVUrQqo0imEjemptNzKwL9meeFglxhKmeLhRvuudBzwKIgNiuZrOE30GoKIGSukA1nccZJpo6hCtCFFtAeEvLBR3WaC85rypdH/Q6FNxdb3hc20eYxvDJKo18/uv/cPzsrwKAKtQcbb7gLpUqKvJKx3sWAJ9u5ooxZZm8aQryi+xK3eqay0L2mTRSNKMc7zWZ/ma657v2UTMt9j3ikVRLfewaaz8EGQS4JkHDGvQMwY8bzuORzm2adQkvFVCYwTbAnuiNsG+JW7AHo1EOYscXQ60mXTX2SYp8Y3R8wWlsKBcW7qkZN1pnuxV3mn30VMWE34xQk6CaeQhA50HkwuJTk7LBdQqsXh5z0oaGOCkKRtXAOK2rWw5pIu2pBu97fWZgl+EU/eohLQaNE4b42KUd60XMxc3Pb38uqZQULtqvKd7WY/VShpA8ZfFeqzvrToZuxlBwT03e9ZjHRg0PBeLonaGEmmiAH+fqL6PVW1/g/ofEppT2ZDzooAq/ISKYMXB8XpDa8wMa3NLYNRYIPsdHOtW5DtVEDqxmruHSrii//GxC4VzUNdNo9ZHZ69br+JBN9PRvkQ6j6QWwZ9IDjBGYQHcvi/mq2x4kV3V6PasUzXV7IpfyIuc9rPBb+rCSIpw15mGSS8517iwo/n8/Xr5ub+P8Dk7ckOhYJv81UdBDN1FFVOl4B3IUf29EG0eOVo4F2iSzSogKGQdVgNPT1fwo/tAPmdRd13gK7lUn4E3CFPSH2YzjnAMzAsQYGpz52TprJE82AREuPpghWtNAaAm/80XguLUVI13Gh2/QmQCgleXqZkUzi0kFX6GhkEOfgSdjzNz3oVUCQzgvIOTJsDQ==|920
+}//hm28rRRGjrwRMeIZfI2hvz3Klx3dAvsSFGZyrCmnuDYShjYkXYfXf7UGmK7/vCi4w1ySXJp0OaNK96jPks/TKlJHggdjZxJYKmxhJXJQlWhSHFtibXYxpVo4FqlDiWq86UbiBJmccV5TQuoXE4jCt4CqIuX5ZVPGw+7lzFoNNQma4RGhbmZWVdjwafYkiHy/hSCSndrqEAHrdRqBV/5lBFAqldAEVeJGsEnChZbj8p3F85wK1ranMSz/ZdriieLmel+Nmv7s/8kePQle6exabIMShxU+o0J+zCBBCMKRwuKaDCei0ZDlIIwubPrYHssx3IAz4Bhq0pm/QsZUANAm6u+ayZmdaLLiLDesIH2/AObXV8xB80ycWiK+T4fArTHjjunTIck57KKoE1En/ujjK6+9bQJ4CY3GpPBDhj1sKqkEqyHFl/3i+Kj20oAv8YCqclVKjHqFz8QuZ3Ud4ERFXJukKi0nM0g71EQJPuP9ydvYkdFPdsoYxyQFVmsnZ60D7J0paIDl3urG3iv3y8Qd8aJ/ouEU8U/9xMy69T/BIfa8HfXFw3gBH1J37Bqb7J0hRMFU88LOh8mtjUOP58cvZXPLeBQO4l0qKbRQw5+jSvOkKDCUlIOUkkpoAMCYRFLdSZSav0UsTmvKckVDoV6icYfy6njBcxwt5wJ0WRHIMrVjK6JedyoPll43t0iDHyF5ObMZg51PwMiC74ZKja2E4UmlzU8H0+esOF6Z5sfAwLMJllb1lDS4t9mj4KpMurIWZ6i6SHmRVjA4sCJkSCCyKYZ7ORzpNvFB/HvlLXoE/GLrWajLNKldTPABouooG+aDKhzCyip0l6yvxexCZ8ZU3Y/4Yns5HXJahAYI4+kZ/o1u/yl9IijEi24ithpEzgzFEpYuBYBNfMh4ElDRTQFZlQ==|920
