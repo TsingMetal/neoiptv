@@ -146,7 +146,16 @@
   },
   {
     "ModuleName": "PCPage/index",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-30T10:32:01.8913111+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\首页\\index.json"
+    ]
   },
   {
     "ModuleName": "Pages/上传试卷",
@@ -437,7 +446,16 @@
   },
   {
     "ModuleName": "PCPage/请批量选择5题试卷进行上传",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-30T10:32:01.8911891+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\上传试卷\\请批量选择5题试卷进行上传.json"
+    ]
   },
   {
     "ModuleName": "Image/madecard-index.png",
@@ -484,7 +502,17 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-05-30T10:31:31.8482407+08:00",
+    "LockDateTime": "2023-05-30T10:32:01.8912701+08:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/请批量选择4题试卷进行上传",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-05-30T10:32:01.8912002+08:00",
     "ModuleType": 1
   }
 ]
