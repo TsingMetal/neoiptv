@@ -171,16 +171,7 @@
   },
   {
     "ModuleName": "PCPage/4题试卷上传列表",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-05-30T10:26:00.3193913+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\上传试卷\\4题试卷上传列表.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/请批量选择4题试卷进行上传-1",
