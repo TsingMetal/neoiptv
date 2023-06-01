@@ -418,16 +418,7 @@
   },
   {
     "ModuleName": "MobilePage/得分详情",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-01T17:26:18.5148822+08:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\学员查询\\得分详情.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/成绩总览",
