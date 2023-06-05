@@ -288,12 +288,12 @@
   },
   {
     "ModuleName": "PCPage/回收站",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-05T16:59:54.3745834+08:00",
+    "LockDateTime": "2023-06-05T17:00:31.094654+08:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\回收站\\回收站.json"
@@ -310,7 +310,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-05T16:56:12.5828307+08:00",
+    "LockDateTime": "2023-06-05T17:00:31.0947411+08:00",
     "ModuleType": 3,
     "ToRemoveFiles": [
       "MasterPages\\母版页1.json"
@@ -582,6 +582,16 @@
       "Email": "744341534@qq.com"
     },
     "LockDateTime": "2023-06-05T16:56:12.5827494+08:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/RecircleBin",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T17:00:31.0946676+08:00",
     "ModuleType": 1
   }
 ]
