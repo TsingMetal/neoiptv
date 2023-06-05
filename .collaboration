@@ -499,12 +499,12 @@
   },
   {
     "ModuleName": "MobilePage/得分详情",
-    "State": 4,
+    "State": 2,
     "LockedBy": {
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-05T11:51:38.9324321+08:00",
+    "LockDateTime": "2023-06-05T11:53:05.0919922+08:00",
     "ModuleType": 2,
     "ToRemoveFiles": [
       "Pages\\学员查询\\得分详情.json"
@@ -517,7 +517,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-05T11:51:38.93251+08:00",
+    "LockDateTime": "2023-06-05T11:53:05.09208+08:00",
     "ModuleType": 2,
     "ToRemoveFiles": [
       "Pages\\学员查询\\成绩总览.json",
@@ -645,5 +645,15 @@
     },
     "LockDateTime": "2023-06-05T11:52:37.7343776+08:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "MobilePage/ScoreDetails",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T11:53:05.0920049+08:00",
+    "ModuleType": 2
   }
 ]
