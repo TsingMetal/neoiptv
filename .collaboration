@@ -279,7 +279,16 @@
   },
   {
     "ModuleName": "PCPage/回收站",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T16:59:54.3745834+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\回收站\\回收站.json"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_母版页",
