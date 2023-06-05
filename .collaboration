@@ -264,11 +264,29 @@
   },
   {
     "ModuleName": "Pages/学员查询",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T11:51:38.9322768+08:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\学员查询"
+    ]
   },
   {
     "ModuleName": "PCPage/二维码",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T11:51:38.9323495+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\学员查询\\二维码.json"
+    ]
   },
   {
     "ModuleName": "Pages/修改阅卷明细",
@@ -481,15 +499,43 @@
   },
   {
     "ModuleName": "MobilePage/得分详情",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T11:51:38.9324321+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\学员查询\\得分详情.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/成绩总览",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T11:51:38.93251+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\学员查询\\成绩总览.json",
+      "Pages\\1011630f62784760b675b7a62cc874e.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/成绩查询",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T11:51:38.9325987+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\学员查询\\成绩查询.json"
+    ]
   },
   {
     "ModuleName": "PCPage/4题试卷上传列表_bak",
@@ -579,5 +625,15 @@
     },
     "LockDateTime": "2023-06-05T11:50:54.0710881+08:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/ScoreQuery",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T11:51:38.9322787+08:00",
+    "ModuleType": 6
   }
 ]
