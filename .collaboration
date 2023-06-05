@@ -448,5 +448,15 @@
   {
     "ModuleName": "PCPage/请批量选择4题试卷进行上传",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "MasterPCPage/简约",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T11:01:15.3566036+08:00",
+    "ModuleType": 3
   }
 ]
