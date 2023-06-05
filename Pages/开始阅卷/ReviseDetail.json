@@ -180,7 +180,7 @@
             "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=阅卷详情页面!A56"
+              "SerializeProperty": "=ReviseDetail!A56"
             }
           }
         ],
@@ -233,11 +233,11 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=阅卷详情页面!G19"
+                  "SerializeProperty": "=ReviseDetail!G19"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=IFERROR(ODATA(\"考号档案?$select=学员姓名&$filter=准考证号 eq \"&IF(ISBLANK(阅卷详情页面!S19),\"null\",\"'\"&阅卷详情页面!S19&\"'\")),\"\")"
+                  "SerializeProperty": "=IFERROR(ODATA(\"考号档案?$select=学员姓名&$filter=准考证号 eq \"&IF(ISBLANK(ReviseDetail!S19),\"null\",\"'\"&ReviseDetail!S19&\"'\")),\"\")"
                 }
               }
             ]
@@ -319,7 +319,7 @@
         "FirstParamValue": "0",
         "SecondParamValue": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=阅卷详情页面!G23"
+          "SerializeProperty": "=ReviseDetail!G23"
         },
         "IgnoreBlank": false
       }
@@ -355,7 +355,7 @@
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=阅卷详情页面!G21"
+            "SerializeProperty": "=ReviseDetail!G21"
           }
         }
       },
@@ -392,7 +392,7 @@
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=阅卷详情页面!G21"
+            "SerializeProperty": "=ReviseDetail!G21"
           }
         }
       },
@@ -427,7 +427,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=阅卷详情页面!G19"
+                            "SerializeProperty": "=ReviseDetail!G19"
                           }
                         ]
                       },
@@ -439,7 +439,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=阅卷详情页面!S21"
+                            "SerializeProperty": "=ReviseDetail!S21"
                           }
                         ]
                       },
@@ -454,7 +454,7 @@
                     "MessageFormula": "1.找不到这个准考证号的学员，请联系客服老师确认一下！\r\n2.或请确认该学员是否正确填涂准考证号"
                   }
                 ],
-                "ID": "a65f05ce-b4e4-4a8c-a622-79a1da1361c2"
+                "ID": "d0d63479-8700-4950-ac1d-9dad9df1f229"
               },
               {
                 "CommandList": [
@@ -490,7 +490,7 @@
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=阅卷详情页面!G19"
+                          "SerializeProperty": "=ReviseDetail!G19"
                         }
                       },
                       {
@@ -501,7 +501,7 @@
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=阅卷详情页面!S21"
+                          "SerializeProperty": "=ReviseDetail!S21"
                         }
                       },
                       {
@@ -512,7 +512,7 @@
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=阅卷详情页面!G23"
+                          "SerializeProperty": "=ReviseDetail!G23"
                         }
                       },
                       {
@@ -523,7 +523,7 @@
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=阅卷详情页面!E58"
+                          "SerializeProperty": "=ReviseDetail!E58"
                         }
                       },
                       {
@@ -534,7 +534,7 @@
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=阅卷详情页面!S19"
+                          "SerializeProperty": "=ReviseDetail!S19"
                         }
                       }
                     ]
@@ -548,7 +548,7 @@
                         "ParamName": "id",
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=阅卷详情页面!Q58"
+                          "SerializeProperty": "=ReviseDetail!Q58"
                         }
                       }
                     ],
@@ -575,7 +575,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "34495faf-c845-4f12-9f7e-3a9df192c321"
+                "ID": "b9c63c33-fdce-4714-891e-46188152ac59"
               }
             ]
           }
@@ -1203,4 +1203,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//O0YFnw3AVfkkOVVj4CNnWGO7k4bha/i0Y7TqzQXGUata7bEnsN5xK6Aucn1BAPxFsxZvvTkKJdS2uJ+fHOk9YNUpg/6+Gbyswm4EfsQbp1nAflCG9nqHG9f3arh6y7Kbct7fbF+/WEnOy+96N8Uhi75uBK00CkmImXjFN3bgrbUMWUKazs5McxmxAZWTsH8MdfY5YlS4vAm2oVoC9DnCiFKi1j7LGIIPNsNDOuwMDKuh5o1T9xQC59YqyabRs1QE0cco9YTtB34mD+UKvIhrhuIs1EuQRMpwRMpyYqRPcN8mYlj6++w+war3+ZnzxkzmFdq+uZTfCPFmqs95p9LjIiKV49p0WY9DSxWdLZGkb1e0mrV5EWtZ9n1AeDVI0gg/YgTbNguxDTlDgbNhee4eI5miLGE+553MD73jZwm5Y6hVmJexCY2xlMTIBCkROJjaNqyYp3GxBpdjMtDpxJqaIagYFDDQ+A4zWskgzeXwm9Xd4kc//JD6POD/wHVD4Uw2ovqOyFI/WOHmA92zkyEHqrQZwGkHpvUyhE9VpUVLOksH+umK4s4YT2BJx5j/SyHKeXaDYa4jqoMYw7FNcAjLrpzVAADRPCDup3EJrmV8WPtk4XkVUl+1+23xMxtGjLyiGnU+bJQ094g3D/R4ASxzEGS0nMkxU4+3GqHYsUcqSHUW3BV4INRBXQ8Tt2LSGIwj6pJBKH1Bu96v8WaGYu3G0IsTDuqttWHwSmpj5FPNj738YjY2Qwj1TpQlcMuX1bPdlfTZLS/IKXw3Wimi0FyGHDKg7OPQOOwxwi304jkEHL9YtACX8eqL7c9Y4EMXnl6qg0GUyY/T1jDw6M0atvs/B28x2jm35ixkTngSrBTXOREluNRmqFEgeQlBZdkLN7ura+CMLwopVZNJeigYUD+lhw==|920
+}//F+y8FYk56mHxnObcslLp4Qbx2k5qTpFO6muZSEM9yFnxhGJQl7LEMMILyPTPeoM1GVIaHIf4GKDfXfepN04bW92y5J6BEHBJNtTpKgu/3eisMaGonHg37GohENrHJZcMHqphgvSfrb37FUdKfz86kmfTwArL03o1F2julsu5hZ1hulnjd3d+9YGNTdX/FV8yCszP5wnKYAqVO56WL/lQF/jhLeGwrOwP1gpRepARkr4wyXCSk3NQjexGNN6eSkwzQNHfqdZyP+ItaoKuBL8FtH6AZ4PIIkXXi/d4pMarQprC3q/DT4pfmnLPXTsNGsUaXuroqoCb6L+4tG3pYDXrFPbn4dN1S0aDJrtkltRUOCxdq8XiX/nRsEIHZ2Seq0vUJ9R+X39z7pbYpLjsw04o6AnjHcdAkVFiWPaYNCh+Fqvo/5FDYYfvyYnZ2iO6lADiLY7kgzqNPzJP46b0qaiFbvSUg/nLexHbOdFDzWmHB2LhhmYGSCY0q9JBzAZHrAZWXm3rTOCODJUTY4eDlIjGHPBbjbTa8RjYMjtNqPM1WXaQkiCYeNH6L/LJotin5ZyBYLsev/4x75kal8zCAKrVZWFKI/1wDlobaY2D149MmyQChU1kD3aTlkcqlI8/mLOEqpRMXNBeQgA4Kj1saP0OnteNySvZiYfq41FdSrkc0Sy16E0/puwM8O3FFE7IKI3kOmokmh49/kliPFvC7EkE3YUDkGI0zd2UosIT8FxOR5bFkkmTcDo1naXWbPyANEcgCFyyi0P5f8/ikfmG6Iirz7oVwm16cwFeigmkypAHMdM0H62NhZqNYkZeCip35bm7ZnPMn9xvdgn7hNnNqh9Tk8DTImsCa4h9QpGVX/8+zMg2IF/Qr4lQqBWDERM6C40j4zZk+STTttPg6wc0JhvE3g==|920

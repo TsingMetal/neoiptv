@@ -153,7 +153,7 @@
                     ]
                   }
                 ],
-                "ID": "c7e4195a-8c61-4128-8884-f19fd3ae0951"
+                "ID": "37d2f8ab-457e-4e82-b6df-60c4808801ea"
               },
               {
                 "CommandList": [
@@ -182,7 +182,7 @@
                     ]
                   }
                 ],
-                "ID": "b7998205-9c49-4041-a80c-12235f5a428e"
+                "ID": "40ffbcdb-8b93-4b5e-9d21-8fe36a3b8742"
               }
             ]
           }
@@ -311,7 +311,7 @@
                     "CommandList": [
                       {
                         "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                        "PageName": "未阅卷管理页面",
+                        "PageName": "ExamRevised",
                         "DeleteCachedQuery": true
                       }
                     ],
@@ -334,7 +334,7 @@
                     "CommandList": [
                       {
                         "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                        "PageName": "已阅卷管理页面",
+                        "PageName": "ExamToRevise",
                         "DeleteCachedQuery": true
                       }
                     ],
@@ -372,7 +372,7 @@
                     "CommandList": [
                       {
                         "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                        "PageName": "4题试卷上传",
+                        "PageName": "exam_4_list",
                         "DeleteCachedQuery": true
                       }
                     ],
@@ -391,7 +391,7 @@
                     "CommandList": [
                       {
                         "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                        "PageName": "查看准考证号",
+                        "PageName": "CheckExamNo",
                         "DeleteCachedQuery": true
                       }
                     ],
@@ -424,7 +424,7 @@
                     "CommandList": [
                       {
                         "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                        "PageName": "二维码"
+                        "PageName": "QRCode"
                       }
                     ],
                     "CanVisitRoleList": [
@@ -441,7 +441,7 @@
                     "CommandList": [
                       {
                         "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                        "PageName": "成绩查询"
+                        "PageName": "ScoreQuery"
                       }
                     ],
                     "CanVisitRoleList": [
@@ -941,4 +941,4 @@
       "Formula": "母版页1!$K$37"
     }
   ]
-}//6sWQhiQasVWCoBVvwwOenXc2G5N9z0jwAPExGx7hUHwAWOI/KQLdNaOwlMrtDse08r1XmE9PtNUH93d1ThWz4dRhhFKEaLWMRX3OV4ou+XFyAF4o2sg89ohH3o9vby9LDk2uYOZwN5zy3tTfM6RY+i60+M+ojsCPeB3XTWlBbG3/m8ePlePwlV1qAHquY4MANzfXw29hO30zcHFBxoKDTTPT5l1XLjd1UQ+NwyPSnzMwJcS6O4D+79lbo6jgo292f10U+IcreWFMw6zSvkzWzTzmthJeoYhaI+7BU3GyawyQztHjaNxbyF2XAlax7/Mm0PQzwDtyu2++z2Z+HfGkX7R1Hiv2mbgEZ69ZPDJ+HP7H9lTjiE98hH53JveUFnk2LdGT3b9LvjQYYivE8uPx5tcIJIp02NCOV2KrnOGBuJIF4x74VlceJk+JPkxf0DaOtAMljfVtqlXGlG+vRcNJbimen7cMgBUZiLtvt5gq54rmuuu5tbHA+sWbagCvFIHhywUuCGGGHLV8pni6MB633Koc/u1nv/rZHl/UIIFxcW5LJ+weq+wZklDwPQMIACR5BvbQjW22gE2HV2sXK1JAm2rPaBdnn06fRY6KcoOMyuLrKNnvHSHcKnouX4TpDBLfiWTGJqwvdFdDpeeoAuoN3gHiTRR1Qm2MwYz5qsFFbrJ4U9pnjleWnsEQg7BQE9ojWQAqmhbszr4TkVQS7cdKd/DERPwSyp9LICnxV7pxNsxN+w4yDu5gZ8HpPtnMMEVk4yOUzKt1UROCDp8CbMojI3PXEnv2YaWzwy+cbIV7A4sWJwhWHjrKl7XFn8odI1y8apBimBPY8caCZvprjs9ElAC1Sely5WUMTNdtq8Qnk0lBVH6lj0rOjLgLagZuNICCqxbBGT3xJWlcZ0SwdkPXdQ==|920
+}//4gSo+cWIxi9zCavdiKQKeQfZOs6jUnFydDwQ1K2k+eRajtfDrBipXYynh165i6Cn/OmqUT3QsKaiZe5jSf/4Aki5BZp2A9Tdk8tQNg8gzTcVsi+fIH41NRywGBrBW6IvrLHOWUPCPyt0/0y/wT31XYmNvi9Nx6qepPExD++FvR/9LmEZTff8S+TmwQygbwU1r4rGFg5mjFYZXHm2h5G/PGhkkprLFWiyHGzLLIYzZ0SgjO0ez8+EMaIB2zi1MYw8tqNudwuAQzpr8jyXamA3042ZMTwelCsiMJeIusEe2u+WQhKIrFNr5b1dJNsyGG7bkCFNsD2q0KGvPz2aALfGrhux2ez7QCybIuOnk65ENRIZ25s9bdzUEupkWPg4vyPdph9RJOQ3TGUpZGSp/RkiA2o0KIPIOrMdQAM+dO246VXK/R7pULgsxsgbSS3qsRREtUM7xfp7gjnWyvk4jUOeP5QMnyS4gw5KnKwxHUxSPBhpuTE9tYQt4mlDcG0HV2oqndW0TwWCgDiGUTmxbXzQw1fg0Qpf9gVfRYFX3Tb/FdhZOeuaLOnHIZ/cohFKKAS0AQM9kJIQ2jeezCGpf8GywAPTT6J6+78Nh4skm+dpY6fMmTcy+3yDFLKDicjE9jUwWjA5DAiV/vauUSsQD5d1tVytfIzEx1InmMp6ObMRDpbbf1gOF24RXOp0FDd7yQCxXaPUxZDAq9Owq13TxFbk8/eopDvjQeW9jtri0enSdDM6EoAUbpmRIHvWcbCGXCm68aWVEYKTQsiRnRbVwnfbwVKfnT/T1iIZNLeoKvH8/ezoFWX+7MVe+If9tWFfSb4cuSgOXk+FF46vqJPI4JxQFM6hGzSl1akGU8CxH29oqREz1Sa/+2JUYS+R63Ppb3ko97I1lxMovdbJKeSkna/Vxg==|920

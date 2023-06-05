@@ -111,7 +111,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "请批量选择4题试卷进行上传"
+            "PageName": "Exam4Upload"
           }
         ],
         "Text": "进入",
@@ -169,7 +169,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "未阅卷管理页面"
+            "PageName": "ExamRevised"
           }
         ],
         "Text": "进入",
@@ -629,12 +629,12 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MasterPageName": "母版页1",
+    "MasterPageName": "简约",
     "PageLoadedCommandList": [
       {
         "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
         "JavaScript": "var page = Forguncy.Page;\nvar userInfo = page.getUserInfo();\nvar role = userInfo.Role;\nvar os = function () {\n\tvar ua = navigator.userAgent,\n\tisWindowsPhone = /(?:Windows Phone)/.test(ua),\n\tisSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,\n\tisAndroid = /(?:Android)/.test(ua),\n\tisFireFox = /(?:Firefox)/.test(ua),\n\tisChrome = /(?:Chrome|CriOS)/.test(ua),\n\tisTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox &&/(?:Tablet)/.test(ua)),\n\tisPhone = /(?:iPhone)/.test(ua) && !isTablet,\n\tisPc = !isPhone && !isAndroid && !isSymbian;\n\treturn {\n\t\tisTablet: isTablet,\n\t\tisPhone: isPhone,\n\t\tisAndroid: isAndroid,\n\t\tisPc: isPc\n\t};\n}();\nconsole.log('os', os);\nif (os.isAndroid || os.isPhone) {\n\t// 手机\n} else if (os.isTablet) {\n\t// 平板 alert('平板');\n\tif(role.indexOf(\"阅卷老师\") != -1){\n\twindow.location.href = \"https://wqianc.com/dashujiaoyu/iPadIndex\";\n\t}else{\n\talert(\"你没有权限登录iPad端的省考阅卷系统\");\n\t}\n} else if (os.isPc) {\n\t// 电脑  alert('电脑');\n}",
-        "ID": "e265b3bc500d4c3d801a546394c32fbc"
+        "ID": "c694209dc1114793bd4bcf93aa010913"
       }
     ],
     "PermissionData": {
@@ -787,6 +787,46 @@
       "IsAutomaticFill": false,
       "Location": "0,540",
       "Size": "1080,40"
+    },
+    {
+      "Name": "ea95552b-d025-4d11-94a2-6f4307dcae1f.png",
+      "DisplayName": "背景图14",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Location": "20,120",
+      "Size": "1040,20"
+    },
+    {
+      "Name": "a29a46db-9033-4e1c-a1ce-0a302246433e.png",
+      "DisplayName": "背景图15",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Location": "20,140",
+      "Size": "20,320"
+    },
+    {
+      "Name": "94f4db66-dfac-4851-bec1-12b1aa644828.png",
+      "DisplayName": "背景图16",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Location": "40,440",
+      "Size": "1020,20"
+    },
+    {
+      "Name": "c6f156ef-bf52-4ae2-8403-cdcb6755895f.png",
+      "DisplayName": "背景图17",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Location": "1040,140",
+      "Size": "20,320"
     }
   ]
-}//hm28rRRGjrwRMeIZfI2hvz3Klx3dAvsSFGZyrCmnuDYShjYkXYfXf7UGmK7/vCi4w1ySXJp0OaNK96jPks/TKlJHggdjZxJYKmxhJXJQlWhSHFtibXYxpVo4FqlDiWq86UbiBJmccV5TQuoXE4jCt4CqIuX5ZVPGw+7lzFoNNQma4RGhbmZWVdjwafYkiHy/hSCSndrqEAHrdRqBV/5lBFAqldAEVeJGsEnChZbj8p3F85wK1ranMSz/ZdriieLmel+Nmv7s/8kePQle6exabIMShxU+o0J+zCBBCMKRwuKaDCei0ZDlIIwubPrYHssx3IAz4Bhq0pm/QsZUANAm6u+ayZmdaLLiLDesIH2/AObXV8xB80ycWiK+T4fArTHjjunTIck57KKoE1En/ujjK6+9bQJ4CY3GpPBDhj1sKqkEqyHFl/3i+Kj20oAv8YCqclVKjHqFz8QuZ3Ud4ERFXJukKi0nM0g71EQJPuP9ydvYkdFPdsoYxyQFVmsnZ60D7J0paIDl3urG3iv3y8Qd8aJ/ouEU8U/9xMy69T/BIfa8HfXFw3gBH1J37Bqb7J0hRMFU88LOh8mtjUOP58cvZXPLeBQO4l0qKbRQw5+jSvOkKDCUlIOUkkpoAMCYRFLdSZSav0UsTmvKckVDoV6icYfy6njBcxwt5wJ0WRHIMrVjK6JedyoPll43t0iDHyF5ObMZg51PwMiC74ZKja2E4UmlzU8H0+esOF6Z5sfAwLMJllb1lDS4t9mj4KpMurIWZ6i6SHmRVjA4sCJkSCCyKYZ7ORzpNvFB/HvlLXoE/GLrWajLNKldTPABouooG+aDKhzCyip0l6yvxexCZ8ZU3Y/4Yns5HXJahAYI4+kZ/o1u/yl9IijEi24ithpEzgzFEpYuBYBNfMh4ElDRTQFZlQ==|920
+}//KdeTeNX5J6eZClR7ADslLiOy57Iq8wdXc64SGaEzbenZYaUZtTh7unLR4GMH6K2DwJwkwZEABRiiQZzGLM24SJcTKc3b88w8Ck2aqZz9+tmEywXF/8cJfLydXkURKy7Y6SK/MAiKMp1L9D88qpwQgaiy+kmTwcXsHwrxqrhnzUeUlJTsKQ1nQgcpyDxQKS+5jyuW68Nr+8SLop8B0L0ulucc/CS72kH9zBbwIwWXqgfR+GdG9E0YGhThLow9kQEwr0hYIRrEEuERxmAxb4mir4OG13WJKEK+SqxP5bH1Dmx1+NoPcfita7dcNoGAAJGul9Ih/ieL85WiY7RG8WLm4ChtZ39ga3qLLiDSjgVlhsAgrEau9SG0OkwXxsZc0TVue3pKGIpEAJIe2BSxM/azA5FwnfebYh95nxXJ7lLXlV02soFTI/nTdCJwizrX9hocnEJ4MlgEpC5nSxMI0v+Xp3CxNkwzIt64BpOZkONX8XHFex0Os2THSh+jCNl/BWnQpDhnnGZn9/apdAKFTBzgLhhIlNrbjXU1svkwLF0L7kIJ6Pf154uiFFKeqMIBmtGMatzwG2VzxRfsZ8yQ+01EzXugUqVZgQjxPxGFKoEB24Th4PHrBZh2q+A2UTTmMeIn4WKKA1GFrIi2vFBxr8tlmZxAlWj90vZBvHGdSQ3fv07raNETSQlP8s8FFP3H4VRpb74nhB/ZFo1A7VuOTylWbCgatKGpE0PfQeCIUANIODFjUNf9xHzq17qbOkMl97NHi3P8/w7jbFzQxlRwpjDv1pU77bYVy7uICIvkPlDdSSDFPPu2ZTg80fCpmqa7E/H4q6r38qjtD6ctzpgWdBjMpvg4Nv2RI8Uub+dERamBBSB3ZgbUDw5dpo6g1o4maBdCAfP/yDBTy7PvIcQhkLNExA==|920

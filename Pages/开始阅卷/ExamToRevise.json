@@ -107,7 +107,7 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=已阅卷管理页面!B2"
+                    "SerializeProperty": "=ExamToRevise!B2"
                   }
                 },
                 {
@@ -120,7 +120,7 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=已阅卷管理页面!B2"
+                    "SerializeProperty": "=ExamToRevise!B2"
                   }
                 },
                 {
@@ -133,13 +133,13 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=已阅卷管理页面!B2"
+                    "SerializeProperty": "=ExamToRevise!B2"
                   }
                 }
               ],
               "RelationType": 1
             },
-            "ID": "f368635598a34d25bcb2281c8c5f93f9"
+            "ID": "3784e4eac5d04c66a38a7d2ecedf3c5e"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -151,7 +151,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=已阅卷管理页面!BE4"
+                        "SerializeProperty": "=ExamToRevise!BE4"
                       }
                     ]
                   },
@@ -162,15 +162,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=已阅卷管理页面!BE14"
+                      "SerializeProperty": "=ExamToRevise!BE14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=已阅卷管理页面!B5:BC24"
+                      "SerializeProperty": "=ExamToRevise!B5:BC24"
                     }
                   }
                 ],
-                "ID": "de85dbf8-0225-4aff-becd-41861e59ece1"
+                "ID": "b443be2d-d5b2-4084-88e7-50d4d3930eed"
               },
               {
                 "CommandList": [
@@ -178,15 +178,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=已阅卷管理页面!BE14"
+                      "SerializeProperty": "=ExamToRevise!BE14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=已阅卷管理页面!BE5:BM13"
+                      "SerializeProperty": "=ExamToRevise!BE5:BM13"
                     }
                   }
                 ],
-                "ID": "761b436a-4575-4db9-91cd-60d1188bffc4"
+                "ID": "4555cabc-faa0-4bfe-b272-4560384e3cec"
               }
             ]
           }
@@ -470,33 +470,33 @@
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PopupDisplayMode": 3,
             "DrawerDirection": 3,
-            "PageName": "批改试卷页面",
+            "PageName": "RevisePage",
             "PassValues": [
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=已阅卷管理页面!BE1"
+                  "SerializeProperty": "=ExamToRevise!BE1"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=批改试卷页面!S35"
+                  "SerializeProperty": "=RevisePage!S35"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=已阅卷管理页面!BI26"
+                  "SerializeProperty": "=ExamToRevise!BI26"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=批改试卷页面!BB36"
+                  "SerializeProperty": "=RevisePage!BB36"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=已阅卷管理页面!BI27"
+                  "SerializeProperty": "=ExamToRevise!BI27"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=批改试卷页面!BO36"
+                  "SerializeProperty": "=RevisePage!BO36"
                 }
               }
             ],
@@ -747,7 +747,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "=已阅卷管理页面!BE4"
+                    "SerializeProperty": "=ExamToRevise!BE4"
                   }
                 ]
               },
@@ -758,15 +758,15 @@
                 "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=已阅卷管理页面!BE14"
+                  "SerializeProperty": "=ExamToRevise!BE14"
                 },
                 "CellLocation": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=已阅卷管理页面!B5:BC24"
+                  "SerializeProperty": "=ExamToRevise!B5:BC24"
                 }
               }
             ],
-            "ID": "2caf5fd9-238c-4b45-a83e-0a51225386d7"
+            "ID": "9b250d21-4f4c-469d-ba6d-78856e47b56a"
           }
         ]
       }
@@ -794,4 +794,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//YjIJJrm4FKXwmvjx3o/z6eX2y2DIDyVREeu1q6JMItnG88+8uNDh4+x1EULgn5aQaCkaoNI8xKfX7K4kDF05VfuPg42VSabfeZghtHIjN8Y6RhynGK9jXcn/sfMFyCzmZ+jWoywV3yjUHOzBm+ya5ykmC9lnCO60JxMfkIOAmMCIJYt8uy8WTyd0fj9ys5OiVpbaC1YzWyeFWcmKeWfsIl2LL+EmAJ4wc2a/hLFjy/YuI+C+jB76bSYZ+wMwav2gQtHjxDJK/lz2cIsG8J7kLBJy2H1Ugs+H/5nr0S0FzTMD1nlH+Ic9bzv5ikWJT0GbevukWjIe8y4oqVtGGd3olG2z61zXL6lYqgTtDFAErq/ZQHmjOzujQqQN4/ONU/NCgm/NSGbiEWILnnlHivwrPG/K78vdk8XIAWnnJN9/9+dzEbpVhRQuO+YOuO2IRlD4/VMGR3rTIfQ/5WtyI+HAToOa5O4K16wL6MeVpyaB9oH4rdI9+djFsCLg9N37OUtAcANcYJE7maF2KGwC7MkEy7xYVUvQcgSe4I3IfOlqBFi70xGfWyDmHS1tuSIv8+Eeer4/i5Vre7QtlDiiwi5//IPrRXgzMZvYewpro2LHw8HyBYC19gLhYFl8RwFoUlVus4Dz5dCAv6pz2iBeLZl7lvNm0vY1RKxGsswsgrrsrwHZDHzTlJvTMPgvbbDnHltpcf5hkycK9vBwMvPc9DF8Ij25trZtXrvZiOBwbuzWXvddb4D11hFkRY5EPkSXIw5lh2hwzH++EtjQaLOyHA+SfEhclMtStuiny8uWVZOavifloLzZ3ournqYM7XQyfaRGf3bYwhPlgAKqJJIBMNwHEk4dUACyuEU4e85WlHzrwLEcTPsUNDvUK3QWyVMP/0OQwRADtiRSbnhjBrN1/yKzUA==|920
+}//DV3W2YCoMx4f2f6RvCQxSKtjLcAg20rMz1dEaOpa9736MBxO88axByMVIH/+tlx8UMX3NgdIbu7qLAcQ8GPrg4v4b8QC0Qrzaj5/PmQ6QjbH70sZKnfEzssttGEkaPvxAXz3YB/pxJBPQvprrMQRNBWR1MKkWPvh0p+lG8R1TONmmn+Av3TlXy2BQlpm0ENRtQoKmfke8R336WwkDzO+pqCmNm/HeTO9DlWtzaxasOrjQY8w4BYsK5wdiT4rDgctF+dD23hRGxI+2ggLchwK+VlVzCxfQ8zk4pU+R/H/UTW9vL58227d8qQ+Yy3adkIF4F/8tA27cvsT/WAlceEEzTKnvEWuVMXJFllD9nh9uapdWLM3d3NPFyGEGgyg+w1tBgcTnTNH6rBTOOYyinn4wnl+XbG37/VXCrs/Uf3axw0rbmXLqzCEyOAISkSPWvZCe9eYrvL8em/njXRC4mCREfr0PJuOoNIIXMEOpdIcgET+fZycV/AaCUuS8/YFzlDaiUgkvUk/RdBUwj5rozcL0BqgW7Sx2v0w94mx0l1HCGoYsj+YOVZ/UjGZ4U6Gypr71K4aUdIvgY3Y9wADYwCGkoZrAsR4Z/o5eFaU7MNFVlskBO9kmTUBIEk1AZzaGp+8A33JNnQI8SNqh6HA1bLGoHI0sZvbdw3nx1Cr7NH0tQGf13sB1M9Jk6+0zqeZ3KNvQkBPknMwVW6TcX4LVSUnJ4f4TtY0NuG/q+p6RFH1MuYal4u8r+lllDI95wChkoSDbRIevmjcmM5shjLVmX0t6sl+E2SVr91PpE4KkHQ6pycqCrvRRecRd5r8IR7TyvlcQZdqJgQQMTsEvStscJQTQAjAiNbWcHbe57oDMOiWonUOAi29W01irsWfyxaS0QpzjxpAbaem/o678ja3lqzoNw==|920

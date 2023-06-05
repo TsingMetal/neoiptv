@@ -361,10 +361,10 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=查看准考证号!B2"
+                "SerializeProperty": "=CheckExamNo!B2"
               }
             },
-            "ID": "6cb039253bd44a64b647b1bb0e0e0095"
+            "ID": "64551aca23b94a5a9efd8409bd380360"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -376,7 +376,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=查看准考证号!BD4"
+                        "SerializeProperty": "=CheckExamNo!BD4"
                       }
                     ]
                   },
@@ -387,15 +387,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=查看准考证号!BD5"
+                      "SerializeProperty": "=CheckExamNo!BD5"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=查看准考证号!B5:BB24"
+                      "SerializeProperty": "=CheckExamNo!B5:BB24"
                     }
                   }
                 ],
-                "ID": "06a50983-3fd7-422e-9aff-64b763c06212"
+                "ID": "0aa208df-de6e-4baf-bf08-468e80ffc836"
               },
               {
                 "CommandList": [
@@ -403,15 +403,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=查看准考证号!BD5"
+                      "SerializeProperty": "=CheckExamNo!BD5"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=查看准考证号!BD14:BK20"
+                      "SerializeProperty": "=CheckExamNo!BD14:BK20"
                     }
                   }
                 ],
-                "ID": "9b47acbb-f2dd-4ffa-a2e3-4b0448ac96ff"
+                "ID": "44ca0957-0ef1-492b-afac-dd9c6ca2c242"
               }
             ]
           }
@@ -436,7 +436,7 @@
               },
               "Value": "?"
             },
-            "ID": "a1c1b4d1f43045f2a1fa0e7ddb1f84c9"
+            "ID": "9037d278cecf45b596dc816c5e5728b8"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -448,7 +448,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=查看准考证号!BD4"
+                        "SerializeProperty": "=CheckExamNo!BD4"
                       }
                     ]
                   },
@@ -459,15 +459,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=查看准考证号!BD5"
+                      "SerializeProperty": "=CheckExamNo!BD5"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=查看准考证号!B5:BB24"
+                      "SerializeProperty": "=CheckExamNo!B5:BB24"
                     }
                   }
                 ],
-                "ID": "5038b95f-e50e-4fc8-bdf6-c3467117f3b3"
+                "ID": "b05c2098-898d-40dc-aadc-061c3b5cbf2e"
               },
               {
                 "CommandList": [
@@ -475,15 +475,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=查看准考证号!BD5"
+                      "SerializeProperty": "=CheckExamNo!BD5"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=查看准考证号!BD14:BK20"
+                      "SerializeProperty": "=CheckExamNo!BD14:BK20"
                     }
                   }
                 ],
-                "ID": "e927772c-4f45-4852-997a-3157c359a86d"
+                "ID": "262ca309-9f51-47f4-83fa-3dc9e07cc2a0"
               }
             ]
           }
@@ -565,7 +565,7 @@
             "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=查看准考证号!BD1"
+              "SerializeProperty": "=CheckExamNo!BD1"
             }
           }
         ],
@@ -588,7 +588,7 @@
             "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=查看准考证号!BD23"
+              "SerializeProperty": "=CheckExamNo!BD23"
             }
           }
         ],
@@ -838,7 +838,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "=查看准考证号!BD4"
+                    "SerializeProperty": "=CheckExamNo!BD4"
                   }
                 ]
               },
@@ -849,15 +849,15 @@
                 "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=查看准考证号!BD5"
+                  "SerializeProperty": "=CheckExamNo!BD5"
                 },
                 "CellLocation": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=查看准考证号!B5:BB24"
+                  "SerializeProperty": "=CheckExamNo!B5:BB24"
                 }
               }
             ],
-            "ID": "178cf7ca-efe4-4e38-b6b1-4fb809bc5b9f"
+            "ID": "cbef6853-b2f1-4382-8c16-5bf88d4e25c1"
           }
         ]
       }
@@ -885,4 +885,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//tYG4DnFuJb9yLt44bWfuNG3cif9SqkjFB6B3wYsWqnxv7P/Rpxe49202kfkqMIv2r+qSFuEFTsUJS1sLE69xNF+vLgqickM2iiRUI0NIH0yTdaOs6L3/MUeUhvUJLGBihvuFMIUgpZtLRLub1fPIByeyT5jmg9DLrMJ0Ds7UmFPBqlcDmXAr0auS94o9/fESz2Ih+l6fGPRED3hFDhI75qY+/dQ0M/xdFzeENkaSGdZAEDc5F2PFoZORiiQEDjC01I2buAFZjVFs4j2f3J4kKW22/AucVhn+orfJpzlcOXn8wGem0ZdjeHj222ckk5f5d2ZYlJPBwV4bDOzajQ1p9kiE0CEva9P3mNyjozOvHSDRWszS6sw698ExLoI3qfR1mJSGpqy75HWYhVotnDyDGQPaFTyRvwpOVGuU3jgSvsYdYDzqIjLF5t4wJFvXqwf7XsW/rPtD/3shbVW6jdUM8piB5zTpPobZsVFyailDNffaIfupdHd09cZQ4nXoGPPmT30+OQJU4jtVaGEuULqU09cpoyW4qvJ8MiDg9yM/0RrQsYjxdzoaQkbHlIWkLeAKSSVhhmP0ebp8TVmLR5Y32JJNSLqw+yYjp1PiSC/en4o1RzuzilQsH2Kj2CxOgp0m0KGGf1qKDwD5LnpwWYZKqAUAFtN4sVttW4UGnTcSUNh5+yOJFXAmrQT+cvVbdgbJoMLtcvSZmc+0Gy0leR1jn14e+4zKzxc1t77WAQs2IpUF3U+TAMMMeyg7kkj8qFLLd1l6lhJx2mzSTyHAFdVA/azoSCqD0K1ezLiL9NrenQ7XfTV3tG7AFuMQgdvdmX4dEn4Gk6LZB117hTCpKAZFm0i46izAgAQhMpzW1KHfNt/uUH8IvjawdW8y7ATE+9H0DjVaaWxawdYC4sWoPjFIVw==|920
+}//HsmmjzXdkrvgLQiay2mxSLuVGplRxZG2rlo8qymKOpwWfo+D0Pi6x4sWq0SXREIt20CVni5S5icxAd5/Ap6r9K3wjyeWIfoP5MUJj7cSFhR2CKQmhuJC8oTENROT1hoZKsGSG930IAUaOTxYAVdc/lr/Pi4vN4RtnI+kpDlwpT5AtXA9Fi8aU/bgaswv8ws//hPFxqqy10/dwC+IDvLuzJUVIQ5oc2Z8uc9cIT/9VAEPrEdLGE0dMjwdYYd1sgXpySZzJMwiWueTs3ecTrzg9+l/KTODLiJTA1JBEHeMvbLQCZKlLmzW8zgd7FR6xmW+jWEi4zC58jJnULV/Hz7fdXUUaYGtInqrMlUGJxrAWbdhGmjbSPOkrxFNL+j+xBBZqj4UqByS39TmzrSMLVXSqH4E99GmQFsgdsQ/0gWJAjSRw7qp0klaXO5O9oLSLEkzMWLU1BnxgTXaT7w6H+qPKtSn+oUyDyu2Hzzi6M8k9yPubOFLU/EyagIUhZEgfWvu7Y7bxM8GrCE7GSMRcg2p0n7md9IWv+x+rtrBhyYgwq9iKw27PNuAL8dlFu7GoFkZVQ0Ex7HHz6434p6IKSn+si3E6RIHVpTHlT6Yp2KwBstIo4wfHVeArkRAl8IRjyZeNlyy6D8NMZUFkbZMu+0w1k+r/y0TrLLx0QWOr2Y1O/+HGN+YJLLi8VjEjLo9uFVSE/mKW7NTrNpcWRVhHitq47WG/p2wgzH7lIXJRkcN/Lk0OfF2hBrHF1TjwT8ZbZhrnEKPVrKGCbPCfANwp402l4vgFDo/xMdISaV5ilZ91YR6PnfKlIxaNEq5pP7chg+IVsZVDUimUt7Ql5OneeMys0oxQQXH/bUOOyJOnkpRdGP2Xd0FNrnZAg4hZmNapzaQj7HKwhN4fE2+fYQQwNdJPg==|920
