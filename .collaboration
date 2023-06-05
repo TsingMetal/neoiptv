@@ -179,7 +179,16 @@
   },
   {
     "ModuleName": "PCPage/题库列表页面",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T16:47:44.0734278+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\题库管理\\题库列表页面.json"
+    ]
   },
   {
     "ModuleName": "Pages/开始阅卷",
@@ -274,7 +283,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-05T16:45:41.5007193+08:00",
+    "LockDateTime": "2023-06-05T16:47:44.0735212+08:00",
     "ModuleType": 3,
     "ToRemoveFiles": [
       "MasterPages\\母版页1.json"
@@ -489,6 +498,16 @@
       "Email": "744341534@qq.com"
     },
     "LockDateTime": "2023-06-05T16:45:41.5005471+08:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/QuestionList",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-05T16:47:44.0734436+08:00",
     "ModuleType": 1
   }
 ]
