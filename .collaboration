@@ -370,7 +370,16 @@
   },
   {
     "ModuleName": "MasterPCPage/简约",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-06T10:31:21.8159266+08:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\简约.json"
+    ]
   },
   {
     "ModuleName": "Pages/UploadExam",
