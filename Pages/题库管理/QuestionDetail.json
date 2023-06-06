@@ -400,7 +400,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=题库管理详情!P37"
+                        "SerializeProperty": "=QuestionDetail!P37"
                       }
                     ]
                   },
@@ -414,7 +414,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "5380b643-3444-48ee-89f4-81d455ad675c"
+                "ID": "a4c977c7-664d-4803-a568-a7d9561565d3"
               },
               {
                 "Condition": {
@@ -423,7 +423,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=题库管理详情!P37"
+                        "SerializeProperty": "=QuestionDetail!P37"
                       }
                     ]
                   },
@@ -436,7 +436,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "3ab0fc7c-58a3-4bab-93a4-4c37b4ac83af"
+                "ID": "58820f66-eb56-4c1b-ae84-0fd67d08e2e8"
               },
               {
                 "Condition": {
@@ -445,7 +445,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=题库管理详情!P37"
+                        "SerializeProperty": "=QuestionDetail!P37"
                       }
                     ]
                   },
@@ -467,7 +467,7 @@
                       },
                       "Value": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                        "SerializeProperty": "=题库管理详情!F8"
+                        "SerializeProperty": "=QuestionDetail!F8"
                       }
                     }
                   },
@@ -493,12 +493,12 @@
                       },
                       "Value": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                        "SerializeProperty": "=题库管理详情!F8"
+                        "SerializeProperty": "=QuestionDetail!F8"
                       }
                     }
                   }
                 ],
-                "ID": "1273a24e-4cac-4e60-9acb-f1b9797ec01b"
+                "ID": "4474a489-e42f-4a59-a632-6081a0ff4239"
               }
             ]
           },
@@ -896,4 +896,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//EcTOGDRZDFkQr36SRop5/QTl7vv00wVM9dZRHN1kazYmOyA94HmaM5nuiUEIWvVrhfG+jxP2bKebvNxJi00tDXy1nfvVzPM/kL1uZQwysWBwMBeRGpBf+ZKR39VVxt6Bp8/i5sok1CPT2VL2wCdteOZNT+15b09JHn15iIas07d2B6DCrtXOQFu3dqj9vbPTI+FX86q303uvumXHr3Ws6SOAF+oFiK9GhbuZZjkUzPrmzNf40uUI1Qz6lrp8r7F77YcYIao1WMEun5K3+6dyCfGIBZEBgZ/5lx5IFnRMHdEvNP1pjGSO8wiE7/k60lSp0hCAulvvMdcKDrDpnIa5BxRLjwOMNU2UlBGu3shjG0pQvYNCrR4Agyr/gmFRm9Lfi3Q99vXOD6VFGqv5prqtZQeokFssfyhB/Nwuq/uxmWfm7x3Bgs/+BuzshZvUJUaXk6VaP65KDDjWFsCsJuffNlPqTu2DlICz1aOIRjYT/48n9/NBOU1nTNW54sDz0/YTNwZjLUBtpGOWCVQ1TxKzS1Siuk7fs4DyNkJq3qLlVCJQn9vgy3wSNV3Od3w09q4vBmwwmeBo3LxBYBNUoRhOohqHrsysupd+pdyHWWvZoTbzuuRWs0xzl76b4LqVueFE7QA/ZI0OsFjAlvEvPpjcujZVoeZ+al3s0g9LxIP5Yx3EfsScLj68MPc6OCB7BvBwxVNFvBZRSIXUPqELeyuGMiiQYfr6vMM03T4N7iz2UB/hIU+Knxg5dGyc2IAkGL/VM5wWBe34Eh3GBGpxpV6s4R5xgwTjWqZkVu4uJiHG41KrgmEYHgoV4bFn6KKEK+o0GgMK7ek509ctvAocvv3O/Qk+sQpD4ovWnkCB12BgBfngTTzYNesFu6EfNq3+Ijk7eoMDFmB+LXtjeH8jcEh9/Q==|920
+}//AosCTYkGDtkkRSdJVP0rQPvpTv+csRgBHN1m4IMTpWDlWLcfEKxZV/hQBqHU4vVMILuU2gXRzeFqloPbjXK09Pl8iHdTFMnNv2xD0mRWxccXQhY1a95blR1qEMVLS9JGuDLoWVCc7Rj6ymfbYAZxI+byBLXflzrARC0RzLezXKg1P4J0hqu1Z8AH2ncpC61/pT34LiKy2Q69L/1p6BuElbNkkc3LWNhftnpiaaOgYoTrQrD/hn1ZBtWjuri0X65bANMThQB12IctxNvPm9K2XFwIY+cGy8RDg/eMhPcteW4necz9vCz5AXHDJTJLsKe+32EZRq2Oh52RtTZXHAfv8nQbBWNL8B7gZf2Os4DohqbPFHgrI+lYAZbceq9rXo+nGB7Vlylye+MjB7S2EDAKkltILHiTsTF3FqbM6bAt56LiO9acfTVcfNElK0roBbae6Ibz+5+fks03KpBPgFphBHu3vQyMd0fPI4ZLocpV1pIGPOa0x1LWojO5t/OT3vsAwkXHHmKhymp0RV+RcV7LHSXk2H+BrKpvLA+SqbRuH4PoO2WQYCp6Pv34b5S5FhJWyD+PPRRQ2rc7vODmGWfyr89n4a4EPrVyOK/2K1CTkMp9V5Zf9FurxIAeR+HGIyVUcy2jsL9JrxjbW+/Odau+z31QEOMAV8DbNxyCVJ35bBUqFlswrIYCLXUwMA6AbAJJbmeWXWzjyHEhFltx03KVHnDaYcrGthD2yoJCWCjs7b+heqGble6T2EueFnyWpReEIm/o9GQNaeu4mYRwPcNda/QbKsqF7rJY5mkekIge0DytKBOOrY9Vr15xwO35EQ0BH1Lf3Ze7RkRbWi49gD+AJzmD3lN7dooREPS4zLVXQt/I5KhTUJThyi64gSSrrYit316ursbclc7w77HTYLSyuA==|920

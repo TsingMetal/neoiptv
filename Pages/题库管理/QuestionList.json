@@ -66,12 +66,12 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "题库管理详情",
+            "PageName": "QuestionDetail",
             "PassValues": [
               {
                 "Source": "添加",
                 "TargetCell": {
-                  "SerializeProperty": "=题库管理详情!P37"
+                  "SerializeProperty": "=QuestionDetail!P37"
                 }
               }
             ],
@@ -120,7 +120,7 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=题库列表页面!AQ2"
+                "SerializeProperty": "=QuestionList!AQ2"
               }
             },
             {
@@ -133,7 +133,7 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=题库列表页面!AQ2"
+                "SerializeProperty": "=QuestionList!AQ2"
               }
             }
           ],
@@ -215,12 +215,12 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "题库管理详情",
+            "PageName": "QuestionDetail",
             "PassValues": [
               {
                 "Source": "删除",
                 "TargetCell": {
-                  "SerializeProperty": "=题库管理详情!P37"
+                  "SerializeProperty": "=QuestionDetail!P37"
                 }
               }
             ],
@@ -237,12 +237,12 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "题库管理详情",
+            "PageName": "QuestionDetail",
             "PassValues": [
               {
                 "Source": "修改",
                 "TargetCell": {
-                  "SerializeProperty": "=题库管理详情!P37"
+                  "SerializeProperty": "=QuestionDetail!P37"
                 }
               }
             ],
@@ -426,7 +426,8 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MasterPageName": "母版页1",
+    "MasterPageName": "简约",
+    "Title": "题目列表",
     "PageLoadedCommandList": [
       {
         "$type": "Forguncy.Model.SubscribeNotificationCommand, ServerDesignerCommon",
@@ -445,7 +446,7 @@
             }
           }
         ],
-        "ID": "f83a8357f8c041e5a286865319eefcfb"
+        "ID": "abf0d3bdab0f49bbbdb2503f128d69d0"
       },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -457,7 +458,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "=题库列表页面!BD5"
+                    "SerializeProperty": "=QuestionList!BD5"
                   }
                 ]
               },
@@ -468,15 +469,15 @@
                 "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=题库列表页面!BD6"
+                  "SerializeProperty": "=QuestionList!BD6"
                 },
                 "CellLocation": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=题库列表页面!B5:BB24"
+                  "SerializeProperty": "=QuestionList!B5:BB24"
                 }
               }
             ],
-            "ID": "925a53b4-c8ab-4874-b6b7-401a91fac615"
+            "ID": "f957359d-f429-4760-933f-c3b6628b07b9"
           }
         ]
       }
@@ -503,4 +504,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//k1aGAc/lw6Q26j1dqPTCc10FPqnvkYb4FoE3/QSdtuJriB+0KgmhhyQwnsPdipnI4QVo288xtpxl2soEDXDLuhfwDs371HJQ/2RskTEgzSFxBgp+/q9LR5cafD6dbsEGtJEulQYABYNfnkEA/jQXQfEvDaEgqcNYyyWz1W/KWxmOirz6FrP9Naj0pZLuh8UMOQbFepD8mR0SxwPYFxOgHCvRLIldiS+d29CnVpurlUMy3yrWlucJEITM3U877rsIVedhgpa6lvnR9N3xYKaQaVv2hp2Hk9HgF7Ws4E3EbFMEAmuWgC51d3ONJKuG246Iq6tv59Yb7DHBWW6yz1+b6XGSH7yAcNV+3iuuV5k1/WsYHgttjBM4ClazEnxd6H36+KWK6oxy3M2uTrbfMphovuqO0uEzzZNJu1rutxrySqErhazPbJ9TOI4HAqxnM2N2GA1RZQbd0WMxaiCRlwuG4kSMlvmLhoD2U9CxqBSRE9OwAVXYf88NEw3ZOKy3k3iCez+a04LWlDE5AILyzW8d+GzjXq23rq/gZyY+JZVWB1f2z44N5LjSTslAwv2iA5NNhsqNlT4oWaMPbSRlvwki8AVS55U5b5rnalrqejDKTynSnwYLOE0wsHcBCfRNcJcSWUf11733HsrPzFuPMKlBJauvMysO5X2ouOrEUokgJUaxiScPO+EGusi2SPoqEVu52PjTOFCPg+f4oKOrC75M6c2R1Z0IlN8posoEnn/3TaRksxK/hwn4Ak1DZ5MhZzKU8DG7+P63Y7VP0VJiQJqKXXH4iuwgDtzYwfvE14c58VUDh+oUqcax6Ya5jLlqQMjOh3fHUPOeyH6lLDTTLPzk79qdpoVMqN8QpRKLxAKwBakwd/4Xf4ieBKT8vsFY0OFz0zUL3b5LMc0VQN8AFNb9aA==|920
+}//PU30D3qN4sWHKANph3mtkqhuknymWV8g8nFlk+D0gfPVnGUsDX0Rfur9eSx8Y0Zdvoy95NGAoZqNonNmHp+jwEkuyqx7dH46zNgWOrWGGAgR1iG7i4Q9YEdRurYJx+Plu/T9DWfqVqTifFxOGPF0/hJJBQbvZxoxrsIs5cz1ErnHLCMtnPDAyG0IplToobqXpcoYfxusb5Ydl0a6R8HkIxChlX90eObM5sqt6lIjU6WAth6sbCgDMdbmR4RjVHOQK4RYUmpY6iHlhpue/uz1DW3aW/xoLRcjKALtF2zZWGzKOhty5BQq2roB3i2OZ1hQ/vyzI8+E1l5c+kzvFmycbMjYLi2vxj+6mzBwrxYLMgroGm2Z5aC/ThRKBeKvqVjIRU/4B8x20POC50gLbtz9++fdVtI5uk7tt+L6VjmK/5tYDaeI+NNts7YL8DNEmCM9uWqMZfnp63CneOTcrrMhBMeWlCZpFKfO9fxr3O/7HWx8aGeNiS0wInoWbYZiaz4NMU04cJcBPgrv7Wot8nZRqjmz7UWyx356/uY4khjjRWw1H+x6FBo/YRzr6dzFIeotunNPj9VnArQ5RHJ8zchr7ruRGc5NI5yg0oMNdiIHTqCpaTvwzeaZX6nQJ7kKvLE9BZkFSVNqsDLcBtxCHOmbMYOD+Zp4n5Fs46MnhgHDDRInaSYbdrJ7+yFSBFo4G9J+CFikSp/v/t5yvIYCFTCIa3iEVZN3rvKrTqBIybjTSmPU7GanKuO/7xDBVsq7zkeOuOVOdiG6vNzHXNaihdbrSkM4QB7CnldemXZCrqQ7qVAzNdoVr8+f0V1mVoS90Lm+FiPE/5tzTD/HzUacY5iB1S2a+z12IIgCTorqJBCCSF2axkQOAzTh0Yal0i9X5soW1RMnXZwWvt0whcQ8yI8row==|920

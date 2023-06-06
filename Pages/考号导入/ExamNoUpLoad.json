@@ -21,11 +21,6 @@
           "DesignLengthInPixel": 31.0
         }
       },
-      "23": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
       "24": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 10.0
@@ -195,116 +190,6 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
-      },
-      "31": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "32": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "33": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "34": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "35": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "36": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "37": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "38": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "39": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "40": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "41": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "42": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "43": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "44": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "45": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "46": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "47": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "48": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "49": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "50": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "51": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "52": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
       }
     },
     "InLogicalVisibleIndexes": [
@@ -315,22 +200,151 @@
       59,
       60,
       61,
-      62
+      62,
+      63
     ],
-    "Count": 63
+    "Count": 64
   },
   "Values": {
-    "1,44": "删除",
-    "1,48": "上传题卡",
-    "4,55": "暂无数据",
-    "27,1": 20,
+    "1,16": "查询",
+    "1,33": "批量删除",
+    "1,39": "下载模版",
+    "1,48": "导入考号",
+    "3,7": "手机号",
+    "5,55": "暂无数据",
+    "27,1": 100,
     "27,3": "条/页"
   },
   "Formulas": {
-    "3,55": "COUNTA(C5)"
+    "3,55": "COUNTA(AP5)"
   },
   "AttachInfos": {
-    "1,44": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/044_search_5.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "样式3",
+        "WaterMark": "输入学员姓名/手机号/准考证号查询"
+      }
+    },
+    "1,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "考号档案",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "考号档案",
+                    "ColumnName": "学员姓名",
+                    "GUID": "f1e25f3e-8c2f-4e75-8b94-99af259f7535"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamNoUpLoad!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "考号档案",
+                    "ColumnName": "手机",
+                    "GUID": "56be7b00-a05f-4804-ace9-e414f6563a66"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamNoUpLoad!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "考号档案",
+                    "ColumnName": "准考证号",
+                    "GUID": "69b10069-7332-4d9e-ba92-132dc2de8ee0"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamNoUpLoad!B2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "c159bec0064f4839996641d59fed19d8"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=ExamNoUpLoad!BD4"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                    "SourceCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ExamNoUpLoad!BD6"
+                    },
+                    "CellLocation": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ExamNoUpLoad!B5:BB24"
+                    }
+                  }
+                ],
+                "ID": "074d32ad-fbf6-4344-8105-b2dc20a5a1ef"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                    "SourceCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ExamNoUpLoad!BD6"
+                    },
+                    "CellLocation": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ExamNoUpLoad!BD16:BL23"
+                    }
+                  }
+                ],
+                "ID": "fb5094ca-4c7c-4c12-807d-e9d1e0384a53"
+              }
+            ]
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "样式6"
+      }
+    },
+    "1,33": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -344,7 +358,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=exam_4_list!B26"
+                        "SerializeProperty": "=ExamNoUpLoad!B26"
                       }
                     ]
                   },
@@ -356,13 +370,13 @@
                     "MessageFormula": "至少选择一条数据"
                   }
                 ],
-                "ID": "b099a851-fa2b-4e84-9110-4a70b967db14"
+                "ID": "ed7b1c3a-38bc-4bcb-9a37-db5108a0a061"
               },
               {
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "_5题试卷上传",
+                    "TableName": "考号档案",
                     "UpdateType": "delete",
                     "ShowConfirm": true,
                     "ConfirmText": "您确定要删除吗？",
@@ -370,29 +384,40 @@
                     "RowsToUpdateListViewName": "表格1"
                   }
                 ],
-                "ID": "e9d979ba-a6cc-4d4a-adc4-78bac77f6612"
+                "ID": "73d1bd14-734f-467a-a2b8-e3de63970c4b"
               }
             ]
           }
         ],
-        "Text": "删除",
+        "Text": "批量删除",
         "TemplateKey": "样式6",
-        "UIPermissions": [
+        "Icon": {
+          "Name": "Mobile/458_delete_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "1,39": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
           {
-            "Scope": 2,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator"
-            ]
-          },
-          {
-            "Scope": 1,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator"
-            ]
+            "$type": "Forguncy.Model.DownloadFileCommand, ServerDesignerCommon",
+            "FileName": "考号导入模版",
+            "FileGuid": "4f2f66dc380c4a90a721a87332b9f023",
+            "FileExtension": ".xlsx"
           }
-        ]
+        ],
+        "Text": "下载模版",
+        "TemplateKey": "样式3",
+        "Icon": {
+          "Name": "Navigation/183_table_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
       }
     },
     "1,48": {
@@ -400,18 +425,48 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PopupDisplayMode": 3,
-            "DrawerDirection": 3,
-            "ShowDrawerHeader": true,
-            "CloseWhenClickGrayArea": false,
-            "PageName": "Exam4Upload"
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "表格1",
+            "ImportExcelToListViewMode": 1,
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamNoUpLoad!C5"
+                },
+                "ColumnName": "学员姓名"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamNoUpLoad!H5"
+                },
+                "ColumnName": "手机"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamNoUpLoad!O5"
+                },
+                "ColumnName": "准考证号",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamNoUpLoad!W5"
+                },
+                "ColumnName": "班级"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "Excel文件导入成功！"
           }
         ],
-        "Text": "上传题卡",
-        "TemplateKey": "样式6",
+        "Text": "导入考号",
+        "TemplateKey": "样式2",
         "Icon": {
-          "Name": "Mobile/464_upload_5.svg",
+          "Name": "File/348_excel_file_1.svg",
           "BuiltIn": true,
           "Color": "Background 1",
           "UseCellTypeForeColor": true
@@ -421,7 +476,7 @@
     "3,1": {
       "ListViewInfo": {
         "Name": "表格1",
-        "TableName": "_5题试卷上传",
+        "TableName": "考号档案",
         "RowIndex": 3,
         "ColumnIndex": 1,
         "RowCount": 21,
@@ -430,9 +485,9 @@
           "OrderByColumns": [
             {
               "ColumnBindingInfo": {
-                "TableName": "_5题试卷上传",
+                "TableName": "考号档案",
                 "ColumnName": "FGC_CreateDate",
-                "GUID": "1aae46af-8380-4a1a-9364-f986ccc51948"
+                "GUID": "378c0176-acc3-4384-8f30-91d023935ab2"
               },
               "Order": 1
             }
@@ -444,132 +499,66 @@
         "IsRowHeaderCheckBoxVisible": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
         "ColumnOperation": 2
       }
     },
     "4,2": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "班级",
-        "GUID": "5c4efcff-ee81-44e9-a4b2-239f2b33dafa"
+        "TableName": "考号档案",
+        "ColumnName": "学员姓名",
+        "GUID": "c26d870f-bf76-43d1-9b1f-d362725f0ff3"
       }
     },
-    "4,6": {
+    "4,7": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "第一题",
-        "GUID": "e2ad7cd8-abb4-4d59-9c21-e4b948dcd0ad"
+        "TableName": "考号档案",
+        "ColumnName": "手机",
+        "GUID": "b51913bb-f09d-4b68-a3bf-a96dee22580e"
       }
     },
-    "4,8": {
+    "4,14": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "第一题",
-        "GUID": "c572ba77-30c8-465b-80a2-0dea25c26b67",
-        "RelationBinding": {
-          "RelatedTable": "题库",
-          "RelatedColumn": "题号",
-          "DisplayColumn": "题目名称"
-        }
-      }
-    },
-    "4,12": {
-      "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "题1阅卷老师",
-        "GUID": "c24d7dda-d68e-43c3-8361-819cb5f94eb5"
-      }
-    },
-    "4,15": {
-      "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "第二题",
-        "GUID": "107d9032-164c-46d3-8151-cce1d91013ab"
-      }
-    },
-    "4,18": {
-      "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "第二题",
-        "GUID": "c8288652-df24-4374-821c-6ce974158562",
-        "RelationBinding": {
-          "RelatedTable": "题库",
-          "RelatedColumn": "题号",
-          "DisplayColumn": "题目名称"
-        }
+        "TableName": "考号档案",
+        "ColumnName": "准考证号",
+        "GUID": "d2bde3b7-2dcf-4c1c-a4a5-924162426172"
       }
     },
     "4,22": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "题2阅卷老师",
-        "GUID": "7ead5c1e-7231-4bfc-85d3-495b6b36e3b6"
+        "TableName": "考号档案",
+        "ColumnName": "班级",
+        "GUID": "10431c4d-045b-4a82-9c51-ab24d39bdfbb"
       }
     },
-    "4,25": {
+    "4,30": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "第三题",
-        "GUID": "acf3f9e4-2796-4431-b0c6-22fd9568380d"
-      }
-    },
-    "4,28": {
-      "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "第三题",
-        "GUID": "0680c3fa-8efe-4305-9be6-7f35a9a4347f",
-        "RelationBinding": {
-          "RelatedTable": "题库",
-          "RelatedColumn": "题号",
-          "DisplayColumn": "题目名称"
-        }
-      }
-    },
-    "4,32": {
-      "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "题3阅卷老师",
-        "GUID": "526cb120-efe9-42b8-9e32-4196f16fb77a"
-      }
-    },
-    "4,35": {
-      "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "第四题",
-        "GUID": "a335aaae-ebe4-4b02-9eaf-91758ad62b31"
-      }
-    },
-    "4,38": {
-      "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "第四题",
-        "GUID": "0ff91947-e8c9-4c88-ab25-aa13f74c9485",
-        "RelationBinding": {
-          "RelatedTable": "题库",
-          "RelatedColumn": "题号",
-          "DisplayColumn": "题目名称"
-        }
-      }
-    },
-    "4,42": {
-      "BindingInfo": {
-        "TableName": "_5题试卷上传",
-        "ColumnName": "题4阅卷老师",
-        "GUID": "ba880c1b-0135-45d0-a432-8b706cf98c7b"
-      }
-    },
-    "4,45": {
-      "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "考号档案",
         "ColumnName": "FGC_Creator",
-        "GUID": "9658d151-2e5a-44ce-8b74-198be7317bea"
+        "GUID": "ee237bf0-7ed7-492e-b130-db5e66318ee3"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "ReadOnly": true
       }
     },
-    "4,48": {
+    "4,41": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "考号档案",
         "ColumnName": "FGC_CreateDate",
-        "GUID": "dc0a1221-741e-4cb3-9731-7f6a713d288a"
+        "GUID": "dbafcf20-a9ec-48db-879f-aba12d98a84c"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 1,
+        "ReadOnly": true
       }
     },
     "25,1": {
@@ -584,7 +573,7 @@
       "CellType": {
         "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
         "ListviewName": "表格1",
-        "pageSize": 20,
+        "pageSize": 100,
         "pagerCount": 5,
         "layout": [
           {
@@ -642,34 +631,26 @@
       },
       {
         "FontFamily": 0,
-        "HorizontalAlignment": 2,
-        "WordWrap": true
+        "HorizontalAlignment": 2
       },
       {
         "FontFamily": 0,
-        "WordWrap": false
-      },
-      {
-        "FontFamily": 0,
-        "HorizontalAlignment": 2,
-        "WordWrap": false
+        "Formatter": 1,
+        "HorizontalAlignment": 2
       },
       {
         "FontFamily": 0,
         "Formatter": 3,
-        "HorizontalAlignment": 2,
-        "WordWrap": false
+        "HorizontalAlignment": 2
       },
       {
         "FontSize": 21.333333333333332,
         "Foreground": 4,
+        "Formatter": 5,
         "HorizontalAlignment": 2
       },
       {
         "HorizontalAlignment": 2
-      },
-      {
-        "WordWrap": false
       }
     ],
     "Types": {
@@ -678,38 +659,35 @@
         "@",
         "Center",
         "yyyy/mm/dd hh:mm:ss",
-        "#FF999999"
+        "#FF999999",
+        "General"
       ]
     },
     "CellStyles": {
-      "1,2": 0,
+      "1,1": 0,
+      "1,2": 1,
       "1,3": 1,
       "1,4": 1,
       "1,5": 1,
       "1,6": 1,
       "1,7": 1,
+      "1,8": 1,
       "1,9": 1,
       "1,10": 1,
       "1,11": 1,
       "1,12": 1,
       "1,13": 1,
+      "1,14": 0,
       "1,15": 0,
-      "1,29": 1,
-      "1,30": 1,
-      "1,31": 1,
-      "1,32": 1,
-      "1,33": 1,
-      "1,34": 1,
-      "1,35": 1,
-      "1,36": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
       "1,37": 1,
       "1,38": 1,
       "1,39": 1,
-      "1,40": 1,
-      "1,41": 1,
-      "1,42": 1,
-      "1,43": 1,
-      "1,44": 1,
+      "1,45": 1,
+      "1,46": 1,
+      "1,47": 1,
       "1,48": 1,
       "1,54": 1,
       "1,55": 1,
@@ -720,48 +698,26 @@
       "1,60": 1,
       "1,61": 1,
       "1,62": 1,
+      "1,63": 1,
+      "3,1": 1,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,22": 1,
+      "4,1": 1,
       "4,2": 2,
-      "4,3": 3,
-      "4,4": 3,
-      "4,5": 3,
-      "4,6": 4,
-      "4,7": 3,
-      "4,8": 4,
-      "4,12": 4,
-      "4,13": 3,
-      "4,14": 3,
-      "4,15": 4,
-      "4,16": 3,
-      "4,17": 3,
-      "4,18": 4,
-      "4,22": 4,
-      "4,23": 3,
-      "4,24": 3,
-      "4,25": 4,
-      "4,26": 3,
-      "4,27": 3,
-      "4,28": 4,
-      "4,29": 3,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 2,
+      "4,14": 2,
+      "4,22": 2,
       "4,30": 3,
-      "4,31": 3,
-      "4,32": 4,
-      "4,33": 3,
-      "4,34": 3,
-      "4,35": 4,
-      "4,36": 3,
-      "4,37": 3,
-      "4,38": 4,
-      "4,39": 3,
-      "4,40": 3,
-      "4,41": 3,
-      "4,42": 4,
-      "4,43": 3,
-      "4,44": 3,
-      "4,45": 4,
-      "4,46": 3,
-      "4,47": 3,
-      "4,48": 5,
-      "4,55": 6,
+      "4,41": 4,
       "5,1": 1,
       "5,2": 1,
       "5,3": 1,
@@ -791,28 +747,7 @@
       "5,27": 1,
       "5,28": 1,
       "5,29": 1,
-      "5,30": 1,
-      "5,31": 1,
-      "5,32": 1,
-      "5,33": 1,
-      "5,34": 1,
-      "5,35": 1,
-      "5,36": 1,
-      "5,37": 1,
-      "5,38": 1,
-      "5,39": 1,
-      "5,40": 1,
-      "5,41": 1,
-      "5,42": 1,
-      "5,43": 1,
-      "5,44": 1,
-      "5,45": 1,
-      "5,46": 1,
-      "5,47": 1,
-      "5,48": 1,
-      "5,49": 1,
-      "5,50": 1,
-      "5,51": 1,
+      "5,55": 5,
       "6,1": 1,
       "6,2": 1,
       "6,3": 1,
@@ -842,28 +777,6 @@
       "6,27": 1,
       "6,28": 1,
       "6,29": 1,
-      "6,30": 1,
-      "6,31": 1,
-      "6,32": 1,
-      "6,33": 1,
-      "6,34": 1,
-      "6,35": 1,
-      "6,36": 1,
-      "6,37": 1,
-      "6,38": 1,
-      "6,39": 1,
-      "6,40": 1,
-      "6,41": 1,
-      "6,42": 1,
-      "6,43": 1,
-      "6,44": 1,
-      "6,45": 1,
-      "6,46": 1,
-      "6,47": 1,
-      "6,48": 1,
-      "6,49": 1,
-      "6,50": 1,
-      "6,51": 1,
       "7,1": 1,
       "7,2": 1,
       "7,3": 1,
@@ -893,28 +806,6 @@
       "7,27": 1,
       "7,28": 1,
       "7,29": 1,
-      "7,30": 1,
-      "7,31": 1,
-      "7,32": 1,
-      "7,33": 1,
-      "7,34": 1,
-      "7,35": 1,
-      "7,36": 1,
-      "7,37": 1,
-      "7,38": 1,
-      "7,39": 1,
-      "7,40": 1,
-      "7,41": 1,
-      "7,42": 1,
-      "7,43": 1,
-      "7,44": 1,
-      "7,45": 1,
-      "7,46": 1,
-      "7,47": 1,
-      "7,48": 1,
-      "7,49": 1,
-      "7,50": 1,
-      "7,51": 1,
       "8,1": 1,
       "8,2": 1,
       "8,3": 1,
@@ -944,28 +835,6 @@
       "8,27": 1,
       "8,28": 1,
       "8,29": 1,
-      "8,30": 1,
-      "8,31": 1,
-      "8,32": 1,
-      "8,33": 1,
-      "8,34": 1,
-      "8,35": 1,
-      "8,36": 1,
-      "8,37": 1,
-      "8,38": 1,
-      "8,39": 1,
-      "8,40": 1,
-      "8,41": 1,
-      "8,42": 1,
-      "8,43": 1,
-      "8,44": 1,
-      "8,45": 1,
-      "8,46": 1,
-      "8,47": 1,
-      "8,48": 1,
-      "8,49": 1,
-      "8,50": 1,
-      "8,51": 1,
       "9,1": 1,
       "9,2": 1,
       "9,3": 1,
@@ -995,28 +864,6 @@
       "9,27": 1,
       "9,28": 1,
       "9,29": 1,
-      "9,30": 1,
-      "9,31": 1,
-      "9,32": 1,
-      "9,33": 1,
-      "9,34": 1,
-      "9,35": 1,
-      "9,36": 1,
-      "9,37": 1,
-      "9,38": 1,
-      "9,39": 1,
-      "9,40": 1,
-      "9,41": 1,
-      "9,42": 1,
-      "9,43": 1,
-      "9,44": 1,
-      "9,45": 1,
-      "9,46": 1,
-      "9,47": 1,
-      "9,48": 1,
-      "9,49": 1,
-      "9,50": 1,
-      "9,51": 1,
       "10,1": 1,
       "10,2": 1,
       "10,3": 1,
@@ -1046,28 +893,6 @@
       "10,27": 1,
       "10,28": 1,
       "10,29": 1,
-      "10,30": 1,
-      "10,31": 1,
-      "10,32": 1,
-      "10,33": 1,
-      "10,34": 1,
-      "10,35": 1,
-      "10,36": 1,
-      "10,37": 1,
-      "10,38": 1,
-      "10,39": 1,
-      "10,40": 1,
-      "10,41": 1,
-      "10,42": 1,
-      "10,43": 1,
-      "10,44": 1,
-      "10,45": 1,
-      "10,46": 1,
-      "10,47": 1,
-      "10,48": 1,
-      "10,49": 1,
-      "10,50": 1,
-      "10,51": 1,
       "11,1": 1,
       "11,2": 1,
       "11,3": 1,
@@ -1097,28 +922,6 @@
       "11,27": 1,
       "11,28": 1,
       "11,29": 1,
-      "11,30": 1,
-      "11,31": 1,
-      "11,32": 1,
-      "11,33": 1,
-      "11,34": 1,
-      "11,35": 1,
-      "11,36": 1,
-      "11,37": 1,
-      "11,38": 1,
-      "11,39": 1,
-      "11,40": 1,
-      "11,41": 1,
-      "11,42": 1,
-      "11,43": 1,
-      "11,44": 1,
-      "11,45": 1,
-      "11,46": 1,
-      "11,47": 1,
-      "11,48": 1,
-      "11,49": 1,
-      "11,50": 1,
-      "11,51": 1,
       "12,1": 1,
       "12,2": 1,
       "12,3": 1,
@@ -1148,28 +951,6 @@
       "12,27": 1,
       "12,28": 1,
       "12,29": 1,
-      "12,30": 1,
-      "12,31": 1,
-      "12,32": 1,
-      "12,33": 1,
-      "12,34": 1,
-      "12,35": 1,
-      "12,36": 1,
-      "12,37": 1,
-      "12,38": 1,
-      "12,39": 1,
-      "12,40": 1,
-      "12,41": 1,
-      "12,42": 1,
-      "12,43": 1,
-      "12,44": 1,
-      "12,45": 1,
-      "12,46": 1,
-      "12,47": 1,
-      "12,48": 1,
-      "12,49": 1,
-      "12,50": 1,
-      "12,51": 1,
       "13,1": 1,
       "13,2": 1,
       "13,3": 1,
@@ -1199,28 +980,6 @@
       "13,27": 1,
       "13,28": 1,
       "13,29": 1,
-      "13,30": 1,
-      "13,31": 1,
-      "13,32": 1,
-      "13,33": 1,
-      "13,34": 1,
-      "13,35": 1,
-      "13,36": 1,
-      "13,37": 1,
-      "13,38": 1,
-      "13,39": 1,
-      "13,40": 1,
-      "13,41": 1,
-      "13,42": 1,
-      "13,43": 1,
-      "13,44": 1,
-      "13,45": 1,
-      "13,46": 1,
-      "13,47": 1,
-      "13,48": 1,
-      "13,49": 1,
-      "13,50": 1,
-      "13,51": 1,
       "14,1": 1,
       "14,2": 1,
       "14,3": 1,
@@ -1250,28 +1009,6 @@
       "14,27": 1,
       "14,28": 1,
       "14,29": 1,
-      "14,30": 1,
-      "14,31": 1,
-      "14,32": 1,
-      "14,33": 1,
-      "14,34": 1,
-      "14,35": 1,
-      "14,36": 1,
-      "14,37": 1,
-      "14,38": 1,
-      "14,39": 1,
-      "14,40": 1,
-      "14,41": 1,
-      "14,42": 1,
-      "14,43": 1,
-      "14,44": 1,
-      "14,45": 1,
-      "14,46": 1,
-      "14,47": 1,
-      "14,48": 1,
-      "14,49": 1,
-      "14,50": 1,
-      "14,51": 1,
       "15,1": 1,
       "15,2": 1,
       "15,3": 1,
@@ -1301,28 +1038,6 @@
       "15,27": 1,
       "15,28": 1,
       "15,29": 1,
-      "15,30": 1,
-      "15,31": 1,
-      "15,32": 1,
-      "15,33": 1,
-      "15,34": 1,
-      "15,35": 1,
-      "15,36": 1,
-      "15,37": 1,
-      "15,38": 1,
-      "15,39": 1,
-      "15,40": 1,
-      "15,41": 1,
-      "15,42": 1,
-      "15,43": 1,
-      "15,44": 1,
-      "15,45": 1,
-      "15,46": 1,
-      "15,47": 1,
-      "15,48": 1,
-      "15,49": 1,
-      "15,50": 1,
-      "15,51": 1,
       "16,1": 1,
       "16,2": 1,
       "16,3": 1,
@@ -1352,28 +1067,6 @@
       "16,27": 1,
       "16,28": 1,
       "16,29": 1,
-      "16,30": 1,
-      "16,31": 1,
-      "16,32": 1,
-      "16,33": 1,
-      "16,34": 1,
-      "16,35": 1,
-      "16,36": 1,
-      "16,37": 1,
-      "16,38": 1,
-      "16,39": 1,
-      "16,40": 1,
-      "16,41": 1,
-      "16,42": 1,
-      "16,43": 1,
-      "16,44": 1,
-      "16,45": 1,
-      "16,46": 1,
-      "16,47": 1,
-      "16,48": 1,
-      "16,49": 1,
-      "16,50": 1,
-      "16,51": 1,
       "17,1": 1,
       "17,2": 1,
       "17,3": 1,
@@ -1403,28 +1096,6 @@
       "17,27": 1,
       "17,28": 1,
       "17,29": 1,
-      "17,30": 1,
-      "17,31": 1,
-      "17,32": 1,
-      "17,33": 1,
-      "17,34": 1,
-      "17,35": 1,
-      "17,36": 1,
-      "17,37": 1,
-      "17,38": 1,
-      "17,39": 1,
-      "17,40": 1,
-      "17,41": 1,
-      "17,42": 1,
-      "17,43": 1,
-      "17,44": 1,
-      "17,45": 1,
-      "17,46": 1,
-      "17,47": 1,
-      "17,48": 1,
-      "17,49": 1,
-      "17,50": 1,
-      "17,51": 1,
       "18,1": 1,
       "18,2": 1,
       "18,3": 1,
@@ -1454,28 +1125,6 @@
       "18,27": 1,
       "18,28": 1,
       "18,29": 1,
-      "18,30": 1,
-      "18,31": 1,
-      "18,32": 1,
-      "18,33": 1,
-      "18,34": 1,
-      "18,35": 1,
-      "18,36": 1,
-      "18,37": 1,
-      "18,38": 1,
-      "18,39": 1,
-      "18,40": 1,
-      "18,41": 1,
-      "18,42": 1,
-      "18,43": 1,
-      "18,44": 1,
-      "18,45": 1,
-      "18,46": 1,
-      "18,47": 1,
-      "18,48": 1,
-      "18,49": 1,
-      "18,50": 1,
-      "18,51": 1,
       "19,1": 1,
       "19,2": 1,
       "19,3": 1,
@@ -1505,28 +1154,6 @@
       "19,27": 1,
       "19,28": 1,
       "19,29": 1,
-      "19,30": 1,
-      "19,31": 1,
-      "19,32": 1,
-      "19,33": 1,
-      "19,34": 1,
-      "19,35": 1,
-      "19,36": 1,
-      "19,37": 1,
-      "19,38": 1,
-      "19,39": 1,
-      "19,40": 1,
-      "19,41": 1,
-      "19,42": 1,
-      "19,43": 1,
-      "19,44": 1,
-      "19,45": 1,
-      "19,46": 1,
-      "19,47": 1,
-      "19,48": 1,
-      "19,49": 1,
-      "19,50": 1,
-      "19,51": 1,
       "20,1": 1,
       "20,2": 1,
       "20,3": 1,
@@ -1556,28 +1183,6 @@
       "20,27": 1,
       "20,28": 1,
       "20,29": 1,
-      "20,30": 1,
-      "20,31": 1,
-      "20,32": 1,
-      "20,33": 1,
-      "20,34": 1,
-      "20,35": 1,
-      "20,36": 1,
-      "20,37": 1,
-      "20,38": 1,
-      "20,39": 1,
-      "20,40": 1,
-      "20,41": 1,
-      "20,42": 1,
-      "20,43": 1,
-      "20,44": 1,
-      "20,45": 1,
-      "20,46": 1,
-      "20,47": 1,
-      "20,48": 1,
-      "20,49": 1,
-      "20,50": 1,
-      "20,51": 1,
       "21,1": 1,
       "21,2": 1,
       "21,3": 1,
@@ -1607,85 +1212,68 @@
       "21,27": 1,
       "21,28": 1,
       "21,29": 1,
-      "21,30": 1,
-      "21,31": 1,
-      "21,32": 1,
-      "21,33": 1,
-      "21,34": 1,
-      "21,35": 1,
-      "21,36": 1,
-      "21,37": 1,
-      "21,38": 1,
-      "21,39": 1,
-      "21,40": 1,
-      "21,41": 1,
-      "21,42": 1,
-      "21,43": 1,
-      "21,44": 1,
-      "21,45": 1,
-      "21,46": 1,
-      "21,47": 1,
-      "21,48": 1,
-      "21,49": 1,
-      "21,50": 1,
-      "21,51": 1,
-      "27,1": 7,
+      "23,60": 1,
+      "24,60": 1,
+      "25,60": 1,
+      "26,60": 1,
+      "27,1": 6,
       "27,27": 1,
-      "28,27": 1,
-      "28,28": 1
-    },
-    "RowStyles": {
-      "4": 8
+      "28,28": 1,
+      "28,29": 1
     },
     "SheetStyle": {
       "FontFamily": 0
     }
   },
   "Spans": [
-    "1,2,1,13",
+    "4,2,1,5",
+    "4,7,1,7",
+    "4,14,1,8",
+    "4,22,1,8",
     "1,48,1,6",
+    "1,39,1,6",
     "27,27,1,27",
-    "3,55,1,8",
-    "4,55,9,8",
+    "4,30,1,11",
+    "4,41,1,13",
+    "1,1,1,13",
+    "1,16,1,3",
+    "5,55,9,9",
+    "3,55,1,9",
     "27,1,1,2",
-    "4,8,1,4",
-    "4,12,1,3",
-    "4,15,1,3",
-    "4,18,1,4",
-    "4,22,1,3",
-    "4,25,1,3",
-    "4,28,1,4",
-    "4,32,1,3",
-    "4,35,1,3",
-    "4,38,1,4",
-    "4,42,1,3",
-    "4,45,1,3",
-    "4,48,1,6",
-    "1,44,1,3",
-    "4,2,1,4",
-    "4,6,1,2",
+    "1,33,1,4",
     "5,1,19,53",
     "25,1,1,5",
-    "3,2,1,4",
-    "3,6,1,2",
-    "3,8,1,4",
-    "3,12,1,3",
-    "3,15,1,3",
-    "3,18,1,4",
-    "3,22,1,3",
-    "3,25,1,3",
-    "3,28,1,4",
-    "3,32,1,3",
-    "3,35,1,3",
-    "3,38,1,4",
-    "3,42,1,3",
-    "3,45,1,3",
-    "3,48,1,6"
+    "3,2,1,5",
+    "3,7,1,7",
+    "3,14,1,8",
+    "3,22,1,8",
+    "3,30,1,11",
+    "3,41,1,13"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MasterPageName": "母版页1",
+    "MasterPageName": "简约",
+    "Title": "学员信息列表",
     "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SubscribeNotificationCommand, ServerDesignerCommon",
+        "Name": "实时刷新数据",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              }
+            }
+          }
+        ],
+        "ID": "ef99bb5a023547f4b13ce4dd781cac6c"
+      },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
         "ConditionAndCommandPairList": [
@@ -1696,7 +1284,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "=exam_4_list!BD4"
+                    "SerializeProperty": "=ExamNoUpLoad!BD4"
                   }
                 ]
               },
@@ -1707,15 +1295,15 @@
                 "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=exam_4_list!BD5"
+                  "SerializeProperty": "=ExamNoUpLoad!BD6"
                 },
                 "CellLocation": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=exam_4_list!B5:BB24"
+                  "SerializeProperty": "=ExamNoUpLoad!B5:BB24"
                 }
               }
             ],
-            "ID": "181faf99-ffcf-431c-a6f7-0316976d6c98"
+            "ID": "98b9d109-5afc-4d5d-8bd9-119bb4d31096"
           }
         ]
       }
@@ -1736,11 +1324,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "_5题试卷上传",
     "PageResponsiveMode": 4
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//NWFsvpBUrKvUSXLygFJqDsmedYUi1Z/ylHdReBDUu4HcI1IT57gQsEB2ZN5rvqAFC4xMEa4Zr7Z1+s2xzDAW5IqLbHeb4h47hSGOxnP93hnVyNXvKh7j8cKVI5EBslfE85QbRu2HK6sNxlCrLhAG1nrjSNfvj7BvkGFzwD/Orl/3kLQMeT+5nLUJxg8WdwB3cJ91EClHNNAVD3s3mKFcP2PSqMCmjoUzP9FmLzPIxIU6C+zhLHr99w0DRl22S/RDRAq7XZ/PMssPe5NNOAEaMOXdvx3za1r8SLbxZz/02I/CFhIJcDgAWFVLK1ECkPFnsozxozEdPzNIAr/vepllnWF43Oj8QWUkJmo5VIMiMRCV+mPKBpSrQ9oFf5lb/e6LSZZpwwirQFDILcmNVGga406a0nJWFot2Dbzs0R+CLXtfoTe/G9tsm5TerJkCc85Cb1A825NgdYhwx3I8M5uJlIEfnVoNLsX7WimP76E2Nu4ko9gtDWiMRXwa+CG433aEVCcsaomN04ajnKo4CqFNWoHmgiTgZ6ka3jqskVr6hkSKDsIF2qGHuJ/5zH5vpfpjZOpuYFVTBLvK6aB9pSYJbQbFyE+asswTmzvpdjnDHZwIo8MHnqP0Yx8N6vnRq5W9yDXKWQpEJkW51NpqLoT+iVCoydnA298Bpk5ot6ndXKzecQOqhDYEEDip1oslBZJH4dQ7BjSWItz3Z3rMazlFE5wT9ui/Z5OnelRyhaZu4ugC41dD3xee32nslzskT6KGYApD3aCKULxx7AzE/k0+gkdAiq4+KM+c64ymwXAIX/XZvJXsgdjNxoXlwkY3i0bIZEYDTQVWXzlmGUuw9GKCxg2Ttz0lH0/ZAf7tM1vV1bv4CJsLwlrStNIdnoM8gKIspJgjH9kE8t9R7M7In4uRJA==|920
+}//n+HH9sifrvq2kyDZZRTC82CR4+T+z+Jat3IFbhHJ+sUkZS4BwA55GkZWZV7wUXneRpxMivfx5Ll0ao33oXs95vzR7LwSJYa6h4WIqSIa+hW3WB4GepHI9ltYj4WRZFdgrf/bBg8d0EgpMQIkOTfP6eFxomogP8cMvVIdKOBJGuV8EHAcYGa4oPyAPwFBchme+yJPqJEaw4z99taQDjx+EcLk27Qqyb+Lqo2i/EYEov1fE2N3imWct6srJ49QgHZHttZHJuOxb1fVUY7CTAg6MF7dIs/3bYQiDBwDMqsNF5FByFdmWNichTqF7tcng+lxeGxXU9VtZFYXiOqjLujoMEN9kS61hKW6fYqaCOhJPQ0u+m+lQfHfODNQth4NEghsd02LO2dZLanlWjsz5DByhOoz1B+GopwW/KDBVM7uY8Wf3E6SE/oaYD/lE/iVRNRk6BQ744YSf0ZS5SfeSiqyPeKM29TBMDNCQ2/LYn3eqiE/23niWZlgrrk1ChMBUQ7lNALwq067YJ32N+VnUg1ptIrM2sG8uePpynjSgAtox+1DX90mCHXxXet1pKKexsRTUh/l57A6oSYa9vrT4Hify4WWwD90V/UyChWdJIkNZhee91stDtRFUVhzAHzo5r8FMpaDSfN+0U6CBQl6hAEUTJ1vpBVy0PllLFfkvzl5BvMXMniCu2PZ8N5Z/Ih69UNJ5TrMhzRTPjPvegQCAOATRq8GhWdaA0RYhr8YoP7x+LuGooMDvHy5JLmEOBFbU6FTN3KE5ZnSALqtqmOf2JXpUls6Sxh75e9Sr0qYgYqrHkVbAPQDlQYROzHs1tdeasC99WvvolivO1WipTYsEW/xoOSFKqx4o5EEYRRwYs3AmeyDnIoP4+l6/XopyolmGVenXf5jClabsV/ZS40wSRYIuw==|920

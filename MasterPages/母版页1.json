@@ -153,7 +153,7 @@
                     ]
                   }
                 ],
-                "ID": "37d2f8ab-457e-4e82-b6df-60c4808801ea"
+                "ID": "193cf478-9bad-4151-8d33-13eca63c68dc"
               },
               {
                 "CommandList": [
@@ -182,7 +182,7 @@
                     ]
                   }
                 ],
-                "ID": "40ffbcdb-8b93-4b5e-9d21-8fe36a3b8742"
+                "ID": "d915ac14-c51a-46c5-ab6e-a4007ffe3a66"
               }
             ]
           }
@@ -257,7 +257,7 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "考号导入",
+                    "PageName": "ExamNoUpLoad",
                     "DeleteCachedQuery": true
                   }
                 ],
@@ -277,7 +277,7 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "题库列表页面",
+                    "PageName": "QuestionList",
                     "DeleteCachedQuery": true
                   }
                 ],
@@ -372,7 +372,7 @@
                     "CommandList": [
                       {
                         "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                        "PageName": "exam_4_list",
+                        "PageName": "Exam4List",
                         "DeleteCachedQuery": true
                       }
                     ],
@@ -513,7 +513,7 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "所有回收站",
+                    "PageName": "ReCircleBinAll",
                     "DeleteCachedQuery": true
                   }
                 ],
@@ -535,7 +535,7 @@
             "CommandList": [
               {
                 "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                "PageName": "回收站",
+                "PageName": "RecircleBin",
                 "DeleteCachedQuery": true
               }
             ],
@@ -941,4 +941,4 @@
       "Formula": "母版页1!$K$37"
     }
   ]
-}//4gSo+cWIxi9zCavdiKQKeQfZOs6jUnFydDwQ1K2k+eRajtfDrBipXYynh165i6Cn/OmqUT3QsKaiZe5jSf/4Aki5BZp2A9Tdk8tQNg8gzTcVsi+fIH41NRywGBrBW6IvrLHOWUPCPyt0/0y/wT31XYmNvi9Nx6qepPExD++FvR/9LmEZTff8S+TmwQygbwU1r4rGFg5mjFYZXHm2h5G/PGhkkprLFWiyHGzLLIYzZ0SgjO0ez8+EMaIB2zi1MYw8tqNudwuAQzpr8jyXamA3042ZMTwelCsiMJeIusEe2u+WQhKIrFNr5b1dJNsyGG7bkCFNsD2q0KGvPz2aALfGrhux2ez7QCybIuOnk65ENRIZ25s9bdzUEupkWPg4vyPdph9RJOQ3TGUpZGSp/RkiA2o0KIPIOrMdQAM+dO246VXK/R7pULgsxsgbSS3qsRREtUM7xfp7gjnWyvk4jUOeP5QMnyS4gw5KnKwxHUxSPBhpuTE9tYQt4mlDcG0HV2oqndW0TwWCgDiGUTmxbXzQw1fg0Qpf9gVfRYFX3Tb/FdhZOeuaLOnHIZ/cohFKKAS0AQM9kJIQ2jeezCGpf8GywAPTT6J6+78Nh4skm+dpY6fMmTcy+3yDFLKDicjE9jUwWjA5DAiV/vauUSsQD5d1tVytfIzEx1InmMp6ObMRDpbbf1gOF24RXOp0FDd7yQCxXaPUxZDAq9Owq13TxFbk8/eopDvjQeW9jtri0enSdDM6EoAUbpmRIHvWcbCGXCm68aWVEYKTQsiRnRbVwnfbwVKfnT/T1iIZNLeoKvH8/ezoFWX+7MVe+If9tWFfSb4cuSgOXk+FF46vqJPI4JxQFM6hGzSl1akGU8CxH29oqREz1Sa/+2JUYS+R63Ppb3ko97I1lxMovdbJKeSkna/Vxg==|920
+}//2Zuhwksc0gKCGVc3dEucPXCNHFnRCYBAUIfqZplsTrhJVjSyfbAMHjhbp5oa+A6tBskxIanFZKbtg6xEs7ts03e/Ls6TDs+9uYAxhlc2Rl/F6//cb09pnn3ZmOMzeL1LYuVbM4+Bme68nEV/DeY8cIf3c1Afc7C7X4iA8GbiKaqwf4JeuMWmrEOddEdilP0jWBHQ2WjEyTNj8qmsi2Dvd/XPFqh/C0e5ozOBh/LGpVrPRJu98ZqxUxeieekurlLuzYVT8/zDC8FMkbq12WHSUywAc4/owCBXSWpfDZoIEOyPrqzY8pfaJuJUsvDhWoUK4ImLUdDKTXroUb1MPpDaRxkRyBHIbs/VFEV6JvLVddnZOHR56GbZdSpmXxT5hLSry4VUPRyjHhRQW/e7lccL5AM1p08rxWi0QPFRLP1zAZGrL+pD2ZkhGMXpc77FK53P2oLOf1mWIQbaXUGyCaU4Q2aDLdPsgCb7zVJeNOH10ayTKzZc2BPq8ncTaej8BV4w+DOObW4Wp+vaIg7SaQvpT61jP21ri5H9E0PEy24mixCpTyqVQPO88qM+RWJ6MBl7apSFftcAjqo1Q9xQu1+YW/wT+cUUMqk7CWQt3trpCR6gr0WD2oSWum7HL8hy2dLuWVZm0AJqf9luzkhwgVejuyBIe99VXmlBE6F8ien/YARlHU1Rc+NR/VLlbXzhRCvi5abeJcoEOzC3kuJrhp9sI92nXxmOdb0TTAVsbRA8PVpQLGfZhN05WWX7g2tPxdvUXJhdJWpejygTmsvFyB9GbtwT4Ra3YUYzjpJjfMtJSTmw9Dy90ZAWTBczNwG+nuos1/xSxK6xOtGms/Y0k9hXI40rPWedrP3L7gPjQWQmqmT+NIItGg88oLrX4E3AjDr79xY8KcaBI0UuxtQjyG7W4A==|920

@@ -126,7 +126,7 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=所有回收站!B2"
+                    "SerializeProperty": "=ReCircleBinAll!B2"
                   }
                 },
                 {
@@ -139,7 +139,7 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=所有回收站!B2"
+                    "SerializeProperty": "=ReCircleBinAll!B2"
                   }
                 },
                 {
@@ -152,7 +152,7 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=所有回收站!B2"
+                    "SerializeProperty": "=ReCircleBinAll!B2"
                   }
                 },
                 {
@@ -165,7 +165,7 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=所有回收站!B2"
+                    "SerializeProperty": "=ReCircleBinAll!B2"
                   }
                 },
                 {
@@ -178,13 +178,13 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=所有回收站!B2"
+                    "SerializeProperty": "=ReCircleBinAll!B2"
                   }
                 }
               ],
               "RelationType": 1
             },
-            "ID": "50adcfeed3f3454992c20bc30eac55e0"
+            "ID": "badb758356f64239a68a1119bceabc92"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -196,7 +196,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=所有回收站!BB4"
+                        "SerializeProperty": "=ReCircleBinAll!BB4"
                       }
                     ]
                   },
@@ -207,15 +207,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=所有回收站!BB14"
+                      "SerializeProperty": "=ReCircleBinAll!BB14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=所有回收站!B5:AZ24"
+                      "SerializeProperty": "=ReCircleBinAll!B5:AZ24"
                     }
                   }
                 ],
-                "ID": "f5d4d450-b4ad-40bc-8187-51a3e5ec1aa4"
+                "ID": "a8a59b56-7292-4425-af86-39b5e05c4bfd"
               },
               {
                 "CommandList": [
@@ -223,15 +223,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=所有回收站!BB14"
+                      "SerializeProperty": "=ReCircleBinAll!BB14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=所有回收站!BB5:BJ13"
+                      "SerializeProperty": "=ReCircleBinAll!BB5:BJ13"
                     }
                   }
                 ],
-                "ID": "5c1f44a1-c7d6-4785-8b38-768244bb6de9"
+                "ID": "6af7e3ab-931e-482a-9270-04c7dddc2d37"
               }
             ]
           }
@@ -254,7 +254,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=所有回收站!B26"
+                        "SerializeProperty": "=ReCircleBinAll!B26"
                       }
                     ]
                   },
@@ -266,7 +266,7 @@
                     "MessageFormula": "至少选择一条数据"
                   }
                 ],
-                "ID": "d5d256c1-effa-4098-8fd9-33cc973896a6"
+                "ID": "7b095a86-fc57-46ec-8885-3d8720a7d488"
               },
               {
                 "CommandList": [
@@ -314,7 +314,7 @@
                     "CheckDataValidation": true
                   }
                 ],
-                "ID": "ef183aa5-838b-4134-95fc-f7ed5c952cb7"
+                "ID": "1b603340-5c53-47bf-9a34-f3e2a430b13f"
               }
             ]
           }
@@ -495,7 +495,7 @@
             "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=所有回收站!BB5"
+              "SerializeProperty": "=ReCircleBinAll!BB5"
             }
           }
         ],
@@ -536,7 +536,7 @@
             "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=所有回收站!BB1"
+              "SerializeProperty": "=ReCircleBinAll!BB1"
             }
           }
         ],
@@ -878,7 +878,8 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MasterPageName": "母版页1",
+    "MasterPageName": "简约",
+    "Title": "所有回收站",
     "PageLoadedCommandList": [
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -890,7 +891,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "=所有回收站!BB4"
+                    "SerializeProperty": "=ReCircleBinAll!BB4"
                   }
                 ]
               },
@@ -901,15 +902,15 @@
                 "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=所有回收站!BB14"
+                  "SerializeProperty": "=ReCircleBinAll!BB14"
                 },
                 "CellLocation": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=所有回收站!B5:AZ24"
+                  "SerializeProperty": "=ReCircleBinAll!B5:AZ24"
                 }
               }
             ],
-            "ID": "4ae3e571-b596-468c-a7e3-269f5da8cea9"
+            "ID": "d5d6b0b0-fcba-4ac5-9fcf-bdf76cfb25c1"
           }
         ]
       }
@@ -937,4 +938,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//nNMheuRRK+SpwJi5UPEAonCXa/Cq2WqRZGKwVz6z4vz8pZqqt1Hxv9XDC21GsyJM+TotsrsBl93jMJasY0ybOFTRaF0cmMvFvYdaUIlMYfZTHXr5yhGRyL0PoQwqd4uNfkVAIoF87mbDWqIGr3l3uAUjbbF8QibDJTv2JuA3KNIg2bDDDh4R9Oxrli0tspbG6epZtSbXpxjbRyl3Z0siRoNsDYgNuqmmtar6ceNQuxr63pwlvUNcD+NqLkse52fXkh7Gi4Ptdoizya+ThJQ9ip9oAZpSFZLY/inQNI4wYVxyZjaSlecy4u4JHPV9vG357SuyluuSskAPVcEQlZ/qetdUOV84qIVBtqXvGVVYySKo52LhseTCG2zRE5KZB/4OiXbGFFnd8XlzcA5DiYmgD3Ixo+joh0Drrov0Fkd4P78lYLg+VdrGb0eBm67LS44oCeNOEiELoIe0rGN7wI8ys9q6brSWi9iLLJbUIFCzWYdWGP9zd3c7ZU+N0upVm/Sqqi1JUhjkqo72S52t/PjBco5MZ7hZI0JM2F6ucMF6ukSgc3uo3Zr9JrbtwIp5IU1PqlOKWT0zTtAOlEziAV0hHhjcgNqIpJ+ds8PZyHDWufDXHkaZcdv4q2MpxXzrp8fpq1sXL+0/dn9olqDFW/J5BH02zmGkkKFlPpmUn0Y7rKmq0Z42fRVUJrD7kI2ElLsMALvJY//m+S+ExqJovdgxl0d0qwcI1qUbvu/z29VRNghcGE6jNEnMtsLMuPGkoFnEcrBf1lsDNKwOWO6/ARZPWG6oEpOlagzW8YLtBesFVIAby4627tt+2TMiq99qhseKdvEzeBP7//c3IGneMCkbOjHU7VP6vzKr9Ps/+wP0PlRotxqIzXt3N9xRfJZDhqMicT15WHEooORV8kFVG32Rdw==|920
+}//r1QEpZ6qUnE8WmrNof69i4gVzpSoeiTFaOTAo6dBiL0CX50DVyFxWnYmoMw6RK9KkV5QjxDrETZCSw1pryGkVoGbpcdg7Db9Nk4WblsEIhAXui0D9VbUPzjPZhiKL/K8MCL8AEvBeLNR9iOhDbSExHjTdZARGuwFnfsVPoyLgrMJAlPVDGgISWUit5ZgLffG4eE1Unk1Mu7SPR6LXEw3NDHH4AzrXeNBdo32VwIf0+dC56LrzKvHYh6xXGsT1p/gAAOku9sq0+NWyVW6qyZj06hYb0TLh9tRJH2YPQxdrhrr7PEmagc9XKat8t3ak7LoR+RQBTiOmsIRtqf/RiTUOopW0qddQSia47TbOpVzs8xWr+TzRJlq0bvOo2o+GiyAUaEaez+EAIocRePv+HYFIy/Qnp6rQINCGtR+gT23caoqYnm8zdc+cWUUKBZX6KIi9FgNyjp76cFokmrC+ofmYFNYWI0zKdV27TujpBbQD9IctpHsAibNdbcla99ib4jn3qwlHWm1J3xwb+gNGaaZ7ekmgj6GnyxMP0+Xk0sTW1GX8C3PWCTY6CsuASYQ/wnYqcBB2RY3ISrpYlg7bBM9IFD4AHTu8N6Usex4rL0ClWvevO49ah/rcPJgFSaanyhUVmuvosixTRddd+GXhBVIdze4AGVBUkctPKGPYLlXfXirzG0DKrhLdBybigTN8woBBFgdp8aSWKEqxRc7io+oFVSXp8u4A69eA1G4nEeAimFxBIQBogPTZ5z1d75XkupmHtw75Gn5cbGOC9bjRsiXC/R9gKnv1QIsXphVJCNEBs2Mo9ONXXCPyllp2EbMGanb48xkNuTsupNzFIvaTmmd/gNgku6oDZsHYOwc5JbCs6TCoI0obva7M4iK0yswxC8R01IwWWNXWXHKpOckFYTzzA==|920
