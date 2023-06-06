@@ -63,14 +63,10 @@
       },
       "36": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 16.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 16.0
         }
       }
     },
-    "InLogicalVisibleIndexes": [
-      36
-    ],
     "Count": 37
   },
   "Cols": {
@@ -202,7 +198,11 @@
                 ],
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
-                ]
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=简约!G37"
+                }
               },
               {
                 "Value": "已阅卷管理",
@@ -214,7 +214,7 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "ExamRevised"
+                    "PageName": "ExamToRevised"
                   }
                 ],
                 "CanVisitRoleList": [
@@ -298,7 +298,7 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "ExamRevised"
+                    "PageName": "ExamToRevised"
                   }
                 ],
                 "CanVisitRoleList": [
@@ -3030,6 +3030,9 @@
       {
         "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
         "ServerCommandName": "getExamCntToRevise",
+        "ResultMessageTo": {
+          "SerializeProperty": "=简约!G37"
+        },
         "RefreshAfterFinish": true,
         "CheckDataValidation": true
       }
@@ -3065,4 +3068,4 @@
       "Size": "1240,2"
     }
   ]
-}//r6lMQgCrNdhaPXQusJQehO1FenI8Ls8XFZO0IsLedfVZ5h8Vo/+d31fNJNI5MsPx0v1VJltFkGDr1gejNxCieZW4WpR7xCC5N0f4uyvBV3XX5BCoEouxneKF4rYrXu6Y80cMrkzV1h9tjhqUAnYmra93nJmZC1eF0gm3mrtRihYNJsL/o3TvFH45qpyk3xGz0xg39e0DhanZ4S645f3ENalhEEJdk7kPf2Nh7LtGpN7in2crmiQPwtTMWm+XV1zMNqKCAFCFzml4+h3hbfOZ1HVwaVwcE2Qteo7ce+IEgQW2RSlEjxtMs2kXOzFJpUNBoHF6krr8w7fB6984dkHX5ACszy7wFvtmfNraxQYntJBb1W+t5URyUeeKdu/fVdAoXJlHTQPcM1i7RV0i9dfBJEIv68Xbsv8VxaTuZg53G6ZsTlNdOYI8MtQP+raiz65gLPo9Lp7/QK83wFwbAL6lrsxp7Im7WUHqGokkCJ5MBKkWKWphrgw2LrLSe7itj+l01JzTqynpjpB9fwXoLeI4dWU7/o8uTGn6OF3Us7012YWhn4Yi5FOTnCu5KW6fr/XXn3gJPMpYmJiPiezOxdwM6REfYlOhUVX4bUfn1zCzb2+Mxnyord/opxMAcY6XysDtY5gbHsDLWqPXfr3urKioYGSyoSNEcL0/fSSRwxgIlqpZlOOl3L5VIr1QskalzP481jWb+ofx9Y0bM6vVkhiQpr4GQ4ZklXWx4zzM17xQy7ttWIDBupsMXqPFueytIu3Eb2fIcoGAhlaTHyTFZUZf8NXWVNjbH5KUldQaO9f9hO5BSCtlXcB5ggawzKcJ5GBy1nix1QWurJMVR1+mHZDGFxraInLAhVYVJ9jUIdXTjoO9d5glG+f08ph1tf2EfdsFmYGj+b/thXR62vK449WpTw==|920
+}//HK8wLfFT6tA28sAmT+NGgf3tdiGmlYsDqla2dxKBG09YcX6SqGImwEUqP9LDmWp6UgnKmsJIly7RR4VkKfst66+AJPyzI+Fhjgz13CnABdrQ37abPh10HW3s9hTXAinc6TdEiOVBRf0m65TCKku0Zk6gPA7OJJQSC8hQzgO66Y3N5fmZR7yVHzvJlRI6pvTysHLwBjjyeuDfp8gYSTjI/xui37IOH7AILMQY810RFqwi8pc9Jen0LZCz76I39zfD9wgdf6EoD5VMTuentoSf241FifWDb6syJmeSIAcEU5w23Oo9B3IGOcspfHieiwERM/Jqji+wX/Ggl/EAD0ywCYewq68WFRiZJpks8kUNVzWEct7hiOwCdo3k2+/Mn7Rxf+pzJ0Deo8O4GmCjaqVMluJRjlmiqvZuOBEc4/2vpKZZ83dd0ziKa2MCG8ClJq9cwTyIcKZTgtEdb+cP4iZxTx1lzxp66BPLc8zH7tfl7Vtn3qs5XEQraGInY4HNezBxhK8OHO6w3BFPA5REu/ja2zntwgppPzbagM8SgVDeh8+rmVf+AtHLtEFGO6K0jTBilYZc5S/0EC4TZ9jvQupuxF16G8V6muLCKl76xa4xPEXEVb5um1idCQwxkqoV25H2EoE7ZwkJbkUZjrrOsLR3NJP1SBq+J9dIdOOag5c00AY4e3QSa7WCttpcaGGovo20tQ2Kt7IR49C7+Ji3Y28//vyO5Msl+9f8WuLUNJK+77g91A/2qWkIRi068K/ZJg3TTjWynQk/WUliAQDx4RP6Zr8OXtdW6ncPGBOX1oZg5ZUHQciXVIX0XtpUi6dUIy9Ln/TMAI44eW3gp0bLiKzEx0Nne61FhqNYlyiaeQZU4+l3sAe3EfC9MlDajRGWF6SRZbUnSO11QxUDe3WsoYfvMg==|920

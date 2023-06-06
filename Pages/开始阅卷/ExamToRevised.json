@@ -136,7 +136,7 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=ExamRevised!B2"
+                    "SerializeProperty": "=ExamToRevised!B2"
                   }
                 },
                 {
@@ -149,7 +149,7 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=ExamRevised!B2"
+                    "SerializeProperty": "=ExamToRevised!B2"
                   }
                 },
                 {
@@ -167,13 +167,13 @@
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=ExamRevised!B2"
+                    "SerializeProperty": "=ExamToRevised!B2"
                   }
                 }
               ],
               "RelationType": 1
             },
-            "ID": "6c23cf4abada474881abf5387fa8aa56"
+            "ID": "9b8955de0b3a4d29be1ad2d2529e6949"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -185,7 +185,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=ExamRevised!BE24"
+                        "SerializeProperty": "=ExamToRevised!BE24"
                       }
                     ]
                   }
@@ -195,15 +195,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=ExamRevised!BE14"
+                      "SerializeProperty": "=ExamToRevised!BE14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=ExamRevised!B5:BC24"
+                      "SerializeProperty": "=ExamToRevised!B5:BC24"
                     }
                   }
                 ],
-                "ID": "14bff4ea-968d-4120-8052-642b6def988e"
+                "ID": "8eadccb4-1c1f-4f71-a3d0-82d41b237e44"
               },
               {
                 "CommandList": [
@@ -211,15 +211,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=ExamRevised!BE14"
+                      "SerializeProperty": "=ExamToRevised!BE14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=ExamRevised!BE3:BM9"
+                      "SerializeProperty": "=ExamToRevised!BE3:BM9"
                     }
                   }
                 ],
-                "ID": "3ed280fe-95ee-4f8e-aba8-88ae7c339ad9"
+                "ID": "5930debe-3f73-48c9-a6cd-609c934fa244"
               }
             ]
           }
@@ -242,7 +242,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=ExamRevised!B26"
+                        "SerializeProperty": "=ExamToRevised!B26"
                       }
                     ]
                   },
@@ -254,7 +254,7 @@
                     "MessageFormula": "至少选择一条数据"
                   }
                 ],
-                "ID": "f00ddbf7-f23c-4565-93bf-7e5ca535dc7a"
+                "ID": "48899661-ebc0-4afe-b2e3-4fcf1eac23b0"
               },
               {
                 "CommandList": [
@@ -303,7 +303,7 @@
                     "Disabled": true
                   }
                 ],
-                "ID": "edf4f6fb-4c00-4aae-b198-29fe0eeb79c5"
+                "ID": "ac94b89d-4be0-497c-b1af-8a53695ce9ba"
               }
             ]
           }
@@ -328,7 +328,7 @@
               },
               "Value": "？"
             },
-            "ID": "888250c106d24274b7eb55d9cdd5b2fd"
+            "ID": "8ab4ffe492c549da991915db0eeb8da2"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -340,7 +340,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=ExamRevised!BE24"
+                        "SerializeProperty": "=ExamToRevised!BE24"
                       }
                     ]
                   },
@@ -351,15 +351,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=ExamRevised!BE14"
+                      "SerializeProperty": "=ExamToRevised!BE14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=ExamRevised!B5:BC24"
+                      "SerializeProperty": "=ExamToRevised!B5:BC24"
                     }
                   }
                 ],
-                "ID": "7b5f4d12-642c-4d76-a298-29491695c24a"
+                "ID": "d9480fac-b97e-4c20-92b1-a23e62eb0108"
               },
               {
                 "CommandList": [
@@ -367,15 +367,15 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=ExamRevised!BE14"
+                      "SerializeProperty": "=ExamToRevised!BE14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=ExamRevised!BH1:BM1"
+                      "SerializeProperty": "=ExamToRevised!BH1:BM1"
                     }
                   }
                 ],
-                "ID": "fac431a6-6c5c-4626-9cd5-112a4b57fe4a"
+                "ID": "b2201014-a9c2-405f-8ba0-427ddc06654e"
               }
             ]
           }
@@ -423,6 +423,7 @@
             },
             {
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "批改时间",
@@ -593,7 +594,7 @@
             "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=ExamRevised!BE8"
+              "SerializeProperty": "=ExamToRevised!BE8"
             }
           }
         ],
@@ -659,7 +660,7 @@
             "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=ExamRevised!BE3"
+              "SerializeProperty": "=ExamToRevised!BE3"
             }
           }
         ],
@@ -741,7 +742,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ExamRevised!BE1"
+                  "SerializeProperty": "=ExamToRevised!BE1"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=RevisePage!I35"
@@ -750,7 +751,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ExamRevised!BI28"
+                  "SerializeProperty": "=ExamToRevised!BI28"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=RevisePage!Q36"
@@ -759,7 +760,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ExamRevised!BI29"
+                  "SerializeProperty": "=ExamToRevised!BI29"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=RevisePage!AB36"
@@ -1088,7 +1089,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "=ExamRevised!BE24"
+                    "SerializeProperty": "=ExamToRevised!BE24"
                   }
                 ]
               },
@@ -1099,15 +1100,15 @@
                 "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ExamRevised!BE14"
+                  "SerializeProperty": "=ExamToRevised!BE14"
                 },
                 "CellLocation": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ExamRevised!B5:BC24"
+                  "SerializeProperty": "=ExamToRevised!B5:BC24"
                 }
               }
             ],
-            "ID": "f810986b-b1e5-4a2c-a401-3cd4c5f73c6d"
+            "ID": "71a780bd-4948-4c6b-886b-4e082d92b2ad"
           }
         ]
       }
@@ -1134,4 +1135,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//Cpb8T/6u35CKbhlUoftUPL7hvXiXQwlvizq7Z/xWBSIaaGd+HF4gCHGM9aDCmovChchIS+vYNKhXR9RXqRjKo9M/AuA8vQiphtwNUBzJAGqSswW1iw0pRni84sm0gLmufPhEYD9hUS16x78/PL78XG6kTv/scNsJN/p4G1WrLZpLwWyyJ0MnTaxGUAbdc85hdvC/IqMlz8Waq21KwGvTFegSfkeZer2kO2KopqfX9ZcTHIyNhE4REPTLqUALaXxu3Rlru3iIczj/+q8svExNkgqHUhjkCjH4OA0fCNsUf7xmMxaUHR2A6NK7UEEaXMR6U0e7UJGNJT/7OL5g58kT+emEf+yBysru/3Sz5kRGjMHzQ5CXS1rUGEshOVAczLAtHgv1iD4n9sFb8KI44ACc5sZ7PhLvb7UZ9WuUEkb6nouDZEId9uk8Bbbva24LhtF2tirTy3MjAN5EkAOLQ4/+OuDLg04XyKOqxO8jUCBIJht5/WSyc5nFpHl3QM4njov0Hcvf9D6/UmGgBlrqBEWSmZYHPLtfwJXiL9KeF/ahqkph69wM1+hWk4PaSTYuxu2nyTBJ6/VAc5z+3Nu8erX+Kx3aw1rimG7yRizTWIkZNM7E5YlEBmXDC2l9uFPtSfkP1OeXLfJVFPxxHRZC41nmyHdK/KeO9gRmwHEJg/cfM3sc/0yoLOX3JRO3ZswmW8ujZFs7bqNX8ZjJctM0O8xAt5771czgRsq6MIQUZPT4t/dC4KMAlmGeJDMK8Q8ji4LWLJ+ey2dlaFmM09TjRfhstddm2XLqF8xDzaI2tAMy/yssM9JGy6dyoK58BlO8TlJnsL7Tw6h3W6sCGB5eggghxOfRN6666umSQ3NKv1heICXZVEj/ZbCCNINlpSi1DqQTjJfdlqbEnabeszzuAJ6jjg==|920
+}//Asrf76ybEi2sBSCs9k98j47m68Z4Frw/5BVlbQxx7GabMS+dK74fzrbs8NPaAg0CcB6LklUoaGPUIxKzwtcgdVrrSiwti2/8/O+rBkWNUwqzazjMlmOVFWNZk5Nt3LqgbwJP8oLyFSWd4qGFBMEdLFCO+GxVGDoTUFjJb5gP4/AY007ZHPrGS/uOrE3IbYct2vcEf0+8lDIX9zDpEH39+Cr6k7LcEKLJxG1HP6C/o4iBucxX/FTTNE9h1EdE/0R3laAECLnlFegGgRbdvS6R8x+qFyLC7Xkbi13YecpV4esT5Kre6f1sF8cw6n/QXt40hK5Fkgnggb+3ce8YAf4exvBWEEqw2PGJzlU5jTgwkIW322Q9yOYl9IJld7tvJOTWIMttQvwvUllyQeztzKKwXze34hW81/Vv678zwQNMwypEmo15vI0MZqb13OtRNqTR0vZ1pdrakrWSJWT21G51U96QQh4XzfmZaU8HQZp7X0RimRmTNL+nLXHH2dxJw/hUM6/ko9Iz2GyOH2IAXHoDVvyEuQJZ/2dyVN1uUyCJkGDjIsvRwahCMqK7RZxUjapk+DK1x4Am3NlbUyuhbgrzj0AbNYsjB1GOAJisZsdZBfewXq1qdD2qDiLqm+9rIargljw/B7oz3EupnvsvvtDt9+XlInZbpdWYN+mb5+0xwnnTVE+Fm0crxAWp/hMdcKxj5wRfzDVUa8Rm9UoFEPcChJdFcCGk4ysvWzlE9gowPVmshTYovjv/4mSVi7ySS1BdKtzPjIOtN5F/vkSHQXm4/Kh/X3w9wWzobbh8hNllEpmZ35er9bLFfLDKwXKQzE/PZ0ahmkHBC18HNKOMaFU0pjyEnvN7tNTshN5CP5dvYIUbg8QlaihTHvvr/KbiHBCXmHao9kyFdyCqBhEB4oIS/g==|920

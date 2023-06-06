@@ -37,7 +37,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "阅卷老师",
-                "GUID": "528a5055-b33d-42a9-ac7b-8dcd3af639a7"
+                "GUID": "40b3f3b7-94f4-45d0-9a5a-a381d142cb5d"
               },
               "Value": "%CurrentUser.UserName%"
             },
@@ -46,7 +46,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "状态",
-                "GUID": "a3d7c954-409e-43b1-b253-80b35da233d9"
+                "GUID": "90635677-f1e6-434f-ba19-d68f9be65397"
               },
               "Value": "1"
             },
@@ -55,14 +55,21 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "批改时间",
-                "GUID": "be31e32e-e11d-49e2-8fb8-7f92441f2770"
+                "GUID": "aed71b5f-e17c-4449-99ec-9208a76f1d23"
               },
               "Value": "%Null%"
             }
           ]
         }
       },
-      "ID": "68bf7660de8f48d5b72e059dfbf5f4b7"
+      "ID": "36d846b8ca504765a87f163ce709774e"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "Message": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=未阅卷数"
+      }
     }
   ]
 }
