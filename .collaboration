@@ -514,16 +514,25 @@
   },
   {
     "ModuleName": "Pages/ScoreQuery",
-    "ModuleType": 6
-  },
-  {
-    "ModuleName": "PCPage/QRCode",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-05T17:56:22.6405895+08:00",
+    "LockDateTime": "2023-06-06T09:29:18.2554765+08:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\ScoreQuery"
+    ]
+  },
+  {
+    "ModuleName": "PCPage/QRCode",
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-06T09:29:18.2555958+08:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\ScoreQuery\\QRCode.json"
@@ -531,15 +540,43 @@
   },
   {
     "ModuleName": "MobilePage/ScoreDetails",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-06T09:29:18.2557271+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\ScoreQuery\\ScoreDetails.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/ScoreOverview",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-06T09:29:18.2558241+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\ScoreQuery\\ScoreOverview.json",
+      "Pages\\1011630f62784760b675b7a62cc874e.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/ScoreQuery",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-06T09:29:18.2559249+08:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\ScoreQuery\\ScoreQuery.json"
+    ]
   },
   {
     "ModuleName": "PCPage/ExamToRevise",
@@ -634,5 +671,15 @@
     },
     "LockDateTime": "2023-06-05T17:01:00.8304254+08:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/学员查询",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-06T09:29:18.2554842+08:00",
+    "ModuleType": 6
   }
 ]
