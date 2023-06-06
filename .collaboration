@@ -146,7 +146,16 @@
   },
   {
     "ModuleName": "PCPage/index",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-06T17:43:30.8244483+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\首页\\index.json"
+    ]
   },
   {
     "ModuleName": "PCPage/小测上传列表",
