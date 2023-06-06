@@ -140,7 +140,9 @@
   "Values": {
     "1,11": "、",
     "6,1": "%PageTitle%",
-    "36,1": "未阅卷数:"
+    "36,1": "未阅卷数:",
+    "36,16": "刷新未阅卷数",
+    "36,25": "刷新未阅卷数命令"
   },
   "AttachInfos": {
     "1,1": {
@@ -221,7 +223,11 @@
                   "FGC_Anonymous"
                 ]
               }
-            ]
+            ],
+            "Notification": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=简约!G37"
+            }
           },
           {
             "Value": "考号管理",
@@ -471,6 +477,76 @@
     },
     "9,1": {
       "IsPlaceHolderCell": true
+    },
+    "36,16": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "是否刷新未阅卷数",
+        "Style": 1,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=简约!Q37"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                    "TargetPageElement": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=简约!Z37"
+                    },
+                    "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                    "MethodName": "ExecuteCommand"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=简约!Q37"
+                        },
+                        "Value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "15ab042a-f34c-4e36-87a0-6f7722e540b6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "36,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "getExamCntToRevise",
+            "ResultMessageTo": {
+              "SerializeProperty": "=简约!G37"
+            },
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "Text": "刷新未阅卷数命令",
+        "TemplateKey": "_RS_Main1"
+      }
     }
   },
   "StyleDatas": {
@@ -2910,28 +2986,21 @@
       "35,63": 0,
       "36,0": 0,
       "36,1": 3,
+      "36,5": 16,
       "36,6": 16,
       "36,7": 17,
       "36,8": 17,
       "36,9": 17,
       "36,10": 17,
+      "36,11": 16,
+      "36,12": 16,
+      "36,13": 16,
+      "36,14": 16,
       "36,15": 0,
-      "36,16": 0,
-      "36,17": 0,
-      "36,18": 0,
-      "36,19": 0,
-      "36,20": 0,
-      "36,21": 0,
-      "36,22": 0,
+      "36,16": 3,
       "36,23": 0,
       "36,24": 0,
-      "36,25": 0,
-      "36,26": 0,
-      "36,27": 0,
-      "36,28": 0,
-      "36,29": 0,
-      "36,30": 0,
-      "36,31": 0,
+      "36,25": 3,
       "36,32": 0,
       "36,33": 0,
       "36,34": 0,
@@ -3022,19 +3091,21 @@
     "9,1,27,62",
     "1,11,1,39",
     "36,1,1,4",
-    "36,6,1,5"
+    "36,6,1,5",
+    "36,16,1,7",
+    "36,25,1,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
     "PageLoadedCommandList": [
       {
-        "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-        "ServerCommandName": "getExamCntToRevise",
-        "ResultMessageTo": {
-          "SerializeProperty": "=简约!G37"
+        "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+        "TargetPageElement": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=简约!Z37"
         },
-        "RefreshAfterFinish": true,
-        "CheckDataValidation": true
+        "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
+        "MethodName": "ExecuteCommand"
       }
     ],
     "PageResponsiveMode": 1
@@ -3068,4 +3139,4 @@
       "Size": "1240,2"
     }
   ]
-}//GgUYCkTcNelrwt3baKiHhMYxvUKNeCNQY6qD8pR7TUiJHNgJmyDDJu10MPQXhMc26SRPIufr4FoMFE+flT08upGlM4Zob11oXW4wJRIYuk/KNkYyd9QBdkZdz8NhMdkf4ZFQCtxuoiAJXwxJF5oKBMbdu0eJWvnooHAdip8ldr3A6aURxLn2eleCGq2vxv8zYwYfFEERcr2JVPZ7bWZ3ybWKNe4mCG8vvFa6ApeZhevBvUK4ubc5xVCVA8A7GWTOCqoNg0nxR7W886hglCCgrOwNw6YHGzIZl1uMhPD1g6p/Q/hNPt9IuXqHa3EcEA/CnVzw5hsYE9mVjVHuQTaU+X3xsvJvOTYECAwQhG9ZrvZtUt5d2FRQBiTgq1eHHyLnabDbewOelhyufredvV463ioAemCG7xMamZwMCM59m25BV2tA5lA1fK1d0lfAy78fzf+bS/ZffuL2dMXG2puGUln+c5md2yOVcZDRuoMEFGRnqRoryxtWZo0Xbak38uXLFX/P2AYhBxBypxuPKzF0Xo0jHyvFe4fuwCrrZojpR1NS1vr8E/EoVo5rWJbUM+1JseH7R4nDwO5Hsx5dUv6csnE58qBMb55qTiOuhpKl4qUpSU4zPCEPV9myk5DRd7e8mYE4nuWVTJZya1QJT4BA3FvH5sWFjhD6Ez2qyrF3+UCVJUAsQEe9pX8vz9ODdWS3yisDcJXUxclDlEWahLm+3yXiv4cFR349SWPQQeuOe3zCXLpIw9O7RqIN75tzdI2Op+hr03n2vKPFhv4HPqixeOIgnpHd0iypEeD46cfURA6eub9sM/XYJrD9HrU+8UmhSZZq20zGyjAm9laWDr1tb3HNCxi43QQ5SpVk3T0odjfNEF9Z7+XZH9E5WOOnV1viR8d4J+ah2EkLjlyQftQLnQ==|920
+}//d9xs3Gwu/HqauPb102SpYIHxz73xTaIwTEAu3BO5UhOw4Op2UC61Zk2RFjDlPO8GR/mhRUZ7EH+lbJnn8J3mI7hd2E/Qh+hYLjXS69Fwibh2sLT23v1Hag1qX0anpay5ABIc1ZibOJglsAKBoHk1BhJcK+89T4GmBrNitXADxmPGY2q5X8KjonQUO7Uf7hTjJyHnpQ85me9Auw0qYKkVYwlXVh/bBiM74S2Atq0wpdR0xctq/aH33ExazYhz7TzFomXt/qyEbv9/B5R/2hPbRBPZP2DdRUqVyWutsWPW4C6VT04bYmTgIHLslLsVGSovW7OvG1LzezOp3jx62XCBIehyLYJbUqVB4FQmE5N9vLmBu4ds+lBXE5GPH4e40rs6LOdzT3aKAsY+V4NAFwM/pVjH5QWQu9qOqwH+GThzbwzJVbBqDsqbo0xTrsz9rTPOvLr43ZTiJXOY75mZgV1SHneJx/0G4jGaL1+5Qxaer0zCAxrQ9V6EpMfndSv7TXsSyTa+pgrmgDaEh2ZO6RlQk/NTez8CO7117l1xH522GU46497/lencRD3PHfRIqk+U1cul2baXm48L1tw+s9FZeFPiDQSX3RmnGp2CLH3Sd6Yc1/OJxcQYqwHj12Mvw2JPr/fey7mErXX6Uz2DH0iX5ZrMmJzapohOsSGhlGIa9Te+2Z9q1EdFepdYNkdl0Z7PeMydiUUcpmv3hSEzFO2qYb16pDmnzAgEaTFrwZJMmYoR5Ky+hwx4CICLlqDTiAHyLYDbC9KN5NrHVbtsL5Jxj0NuzCDnUxoRSZIzLn+1EQBPCIH1YBSXEcB8E5QL56TdSQFSREEsnLTAiQb/j2sRPLAHyQYWXthqfM5qwfLyTzwpBx37qRW3R/ph7NZsO/Vj+9Q/LKA7nLStEbLb0dA4pQ==|920

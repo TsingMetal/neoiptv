@@ -678,7 +678,7 @@
       {
         "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
         "JavaScript": "var page = Forguncy.Page;\nvar userInfo = page.getUserInfo();\nvar role = userInfo.Role;\nvar os = function () {\n\tvar ua = navigator.userAgent,\n\tisWindowsPhone = /(?:Windows Phone)/.test(ua),\n\tisSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,\n\tisAndroid = /(?:Android)/.test(ua),\n\tisFireFox = /(?:Firefox)/.test(ua),\n\tisChrome = /(?:Chrome|CriOS)/.test(ua),\n\tisTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox &&/(?:Tablet)/.test(ua)),\n\tisPhone = /(?:iPhone)/.test(ua) && !isTablet,\n\tisPc = !isPhone && !isAndroid && !isSymbian;\n\treturn {\n\t\tisTablet: isTablet,\n\t\tisPhone: isPhone,\n\t\tisAndroid: isAndroid,\n\t\tisPc: isPc\n\t};\n}();\nconsole.log('os', os);\nif (os.isAndroid || os.isPhone) {\n\t// 手机\n} else if (os.isTablet) {\n\t// 平板 alert('平板');\n\tif(role.indexOf(\"阅卷老师\") != -1){\n\twindow.location.href = \"https://wqianc.com/dashujiaoyu/iPadIndex\";\n\t}else{\n\talert(\"你没有权限登录iPad端的省考阅卷系统\");\n\t}\n} else if (os.isPc) {\n\t// 电脑  alert('电脑');\n}",
-        "ID": "5cbb86dd20984ca28b03249a1bf6d657"
+        "ID": "b15a25c0dab14d109f70c9f19b745959"
       }
     ],
     "PermissionData": {
@@ -718,16 +718,18 @@
       "Name": "d15ad516-175e-43b1-91dc-e6c05357b906.png",
       "DisplayName": "背景图5",
       "StyleInfo": {
+        "CornerRadius": 20.0,
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
       "Location": "40,160",
-      "Size": "240,300"
+      "Size": "221,300"
     },
     {
       "Name": "6d613cc1-45f2-4302-8728-b09e26dc01ed.png",
       "DisplayName": "背景图7",
       "StyleInfo": {
+        "CornerRadius": 20.0,
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
@@ -738,6 +740,7 @@
       "Name": "a302c8b2-01ae-40ae-bc53-3aa11cb562ee.png",
       "DisplayName": "背景图8",
       "StyleInfo": {
+        "CornerRadius": 20.0,
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
@@ -745,19 +748,10 @@
       "Size": "220,300"
     },
     {
-      "Name": "4bbc3af4-a6f5-49eb-a218-68065802c360.png",
-      "DisplayName": "背景图9",
-      "StyleInfo": {
-        "Fill": "Background 1 0"
-      },
-      "IsAutomaticFill": false,
-      "Location": "820,160",
-      "Size": "220,300"
-    },
-    {
       "Name": "BackgroundPicture10",
       "DisplayName": "背景图11",
       "StyleInfo": {
+        "CornerRadius": 20.0,
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
@@ -815,4 +809,4 @@
       "Size": "20,300"
     }
   ]
-}///ZO+JldvkLw2W0YdgdYEKYv/SGS65WlJJPyfwJEnoRLybAMPudhpAOXO9lyI0kHdiAxf4jc4TH0+k/BU9YtnWWlwPvfV99nZLLFE927BUBV0ShKgKibo03a4rkfv/HlbsR3bM7T5aCvvoM6sHdn0Uf05yc3ChYvbgdPxpgX9l7VM1XAXA0QVdwT9mJ9aVL0BRYESHiCiUvI9O0xitzVDNE95nyEvLSEVmLfWguZ24Mh0ZJF6bgb+VzqzFCNPZxgWqtMNG5hoxiQHYe0yb9ebovAyADEN0O2ZoGXErCNMHVDphgDTjotZDqt6muUJBJM+xgVfCGswy4f81Cy6fIJ9xoh4pbvlRAv/x+oJIOm2N1l1LfulIm1HYiWBehitrDz50v0hZd0tTL1LX7IW2sZqX5B6+G6uN4kI14wUR0adaYwMSzfCzbBxlvGyrUbA35L3oLSlXiwFmhPT7H02kI5BUlxzxVFtaZSW3jGSJWliQqeF6XrvZTttuK2n2jgkRN+OC4zaZzeQ4IJP/xZ8laxOfmiLXM+x9Weea4pvWlm8UAs/NkI/Y1edXLprw8RENq3SimM/zU7EsHGYxsfDMd5ajH9I+j+vq0Eh18PzYqu0pojq/al4zKIJhIR4/swwyxv4kQNjLdGxcs14Sn8BdxtcjuyQnvYR/QtmVijFkqIQE4COUyzDwCmnazTk7v4a9vNywWIuv3UJh4PaPJLQOlomM5Qw3xji4Bsg4Qj+JykYs9btK61lnk0nOPkPIi+tdW5REMZthZpebbNZBFsgXnaxl6hZ9/L/z18XFb7as958cwMBfiJ2xzbtlVC+QIjXx8ZSJrWk/t3wUN7mh836RIuiUKfwA2PulSWPBUB/Ny7y7Tut2CuPY3FNh8rDHBAdzCZSYtjnfrRZHCqs8gGYwY0m0A==|920
+}//MrCJP50x/1g2L9rq/uj+7WRrFqdenadeGrlXXATN+bIdP30D+FapMiJcf4vXU+gZ97snsUeez3k1yHj670ppNXKmQxjIEZFUaNwYR7hHRztIjXtmY4QZx4i++g1rGSn/iCBCx3TNkKc+iKX5z1Btd+t4e6ZQhfwev1m3JSJL/zAgIAXmuFcrup0/gfcLAvFaV+oC536OMBkSYA8Ap19oo/9zNN9ej/AhMu/F2bOP8dEAwz2j8V9FJ0lsA3cppKSINvOcYSPvxIQsp+zEhgSa+ZQT1EahW9zCDTf9MbDSBwambc6Hl0NCatuXXu2Ec1VJPdjBL9Aq2tsvsY5nzzm6wZLMMrUZlwSrD59L/v40IxcgIfxnsNRW7XYLf5XIfd5tQmp76UuVI03kQIrESh/L40htmlOebLKlpToV274oUvDTNBD7U5d7zE+qR9JDLWgF12S7sihlKVuWTaZowc3p5WTQ1x13cylMO5DKxLO1CiJ8zMU3rH4W+ssAcErtQE3t9HmxdYDe3OuxfWe0qa6DDU/TX3eH+C+Mse7rNyWnNeLgJKsoFvm+0B5HwOnI/DLdCB9C1vbLBC5m7GLEd/Km02Jr7dgwN/3UxFp72VMFu9oHzeFZYdH0I1LewAcGSNwi1N9CBXc2nNwtC43qKFEy5kd1dkzqzEZmbOYEmxQSWIczsrnR+FHTyCbRkIwf5FZQ08jHJAzP9G2CnJLt6PH9Euak1YgsVX1Fi4FxuB7MpiH16BS7GuAe4VMV35ry6/WPqhsvw6eEWaCRsGfUOJGvFQayimSRtjWMDbHFUR0MFk9XOUByjEKtkiZa0Jcf7VyTTtbGKnpvC3PC90LshMm7L4OjRDMnwc/ZBnZqWjkd2jNeQcQGNJ5XjzK/hFOfXK74fqnZb4rWRrwDpkHNPBALFA==|920
