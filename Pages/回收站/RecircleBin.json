@@ -188,7 +188,7 @@
               ],
               "RelationType": 1
             },
-            "ID": "edc951c833f04317a779cf981cda717b"
+            "ID": "93b1b6f2062647adb9d958c2d41cb0b2"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -219,7 +219,7 @@
                     }
                   }
                 ],
-                "ID": "5edda012-2468-44da-baea-e7da59e2e3b6"
+                "ID": "4d4dee2e-b98d-43b4-9f4a-0cf79155de73"
               },
               {
                 "CommandList": [
@@ -235,7 +235,7 @@
                     }
                   }
                 ],
-                "ID": "80e93301-8418-4057-9629-4444b5277975"
+                "ID": "61e93768-f29a-4777-b0c9-d0ff9c312837"
               }
             ]
           }
@@ -270,7 +270,7 @@
                     "MessageFormula": "至少选择一条数据"
                   }
                 ],
-                "ID": "d9816db1-c737-4570-8d88-cd59759bef9b"
+                "ID": "a0a38027-8113-4392-8771-f44346f605c6"
               },
               {
                 "CommandList": [
@@ -318,7 +318,7 @@
                     "CheckDataValidation": true
                   }
                 ],
-                "ID": "03ba58fd-835e-4a81-ac76-883190be01b3"
+                "ID": "5c588f82-1a0f-4f03-8e6a-48d8d1ab1d5e"
               }
             ]
           }
@@ -887,7 +887,7 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MasterPageName": "简约",
+    "MasterPageName": "PC模板页",
     "Title": "回收站",
     "PageLoadedCommandList": [
       {
@@ -919,7 +919,7 @@
                 }
               }
             ],
-            "ID": "e5baf736-48f7-4f95-bc0f-872c2538cabb"
+            "ID": "585fb716-2566-4832-bc50-7ce934c060e0"
           }
         ]
       }
@@ -947,4 +947,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//OK6Li0HnRNcVfW3gU9KOP0mAleNh2YGoQizhTdh6m+lKKQqGLkFjsqBtHzPT6I3xNbyKStQ9vEmX3FIRoBWAhZRixbwDPrnNos0NCH2SSni95v547Cb71L9TWXO3VD1DkIbng8su1ta4Sh6wOlFt0V0aMrradwCmYonCf9yS4774/71HFMALSgjY8eje5Vn5jc6m1lmxDETJN2A8rDoSbVi8RFW3ZNNam8hJrVKx2c+eVi+26Rv1c8q0atWOyZ7ZeglS+hsmPSmAOKDFoRsSg3OALImoKY0aVOeun8bZ31ZHvyFbL71mn9Y0MGlXICNEygFUalqvCPryfEOqaqEctr/dxWRqFLXEgHG/aYvJjqyLNWVGS8pXdan8De3+n4ryrbKsDw9V3ixp1m7SGC77X9MnoyJA6B0KfA0zeZzsANa793opxL64fmhgDMFlheosPQRoPoctU5ow9pZUgtdViSw/+6sVYRjGyuMFF9QfNOe8PWcychg93kqp4ei8ABum35dXdt8Xb1RGBGZOL/quSXCDqXWL+uCZuIMoBNIXAkji8KgQJL97MpovXhxbQTdMwrn81ZVFC1OHd2tBZt0wYBon/i56NWfBGi2WO9hpQn9Te7ettxpurGt/Q0LTG4GvurYLorm/Nx0iw2UeJiKgjs0eJcaZCm/+45mEXZAqxYc4eQ8AKe4Pl9yT45xG6v4YNS9ZYk/RBqVwHUBkr2N9VZVyTgIdWBLZ9EuXRpW+R97Odt2VTN93PEOm59/n9bzetiQsw3m4/7G+y8uHdOuNYzQ3ecDsjWKMDibUBBBJK3lthGnK8/g+U6CVN5pho5yrMfTVtNABOjTfDbM+KH6crZMlcVLurb0IMQjWfjbXPEDnCQefRO8b2P+kkAHGzlWAYWu4WnnFdSALP72TAKKFVw==|920
+}//L1p3Yba4lvfYkBC3pAN5GDQ465MajgeE2j6slJ8RTWgerB2zVgcRluplXhERbt55xm7QLCPT6h4unc9Ixb/j3aKXou0M79ouKAkjxtXtfCzQ0d3B9AgFRQ94lTyKpd894URguOoSq8LtM0RxteoxUd1ndVZptkpicuDa9TToMQF9kn1WVK1gjwSmjlG3i/89BaPuxhtZzSUV1rSlGIobjLmPmYPlnCVDsGRPJA7LVSnrlQnP9nwunulbCinN1GqbjCR/rQAaTX+vYsvX12S+WHnSjTrwZUC7sITdnjuocuWf7+sXCdtcecooOw0rIa5mTJOj/tSXyB1AE/W/BBy/6T4rxrRRAuTNxwn2A96evDark4EiHoiIftU2L9BdGhs4wdur4JwC9RIdWcKqEa8gHitqs3RBE6Ar7i502R8nMvKc6HZjEc0WD3XXobvRI93ZXE5xEkcCMTIDlDz9ZtEKUWSGlEx2zCPW/ejKxkOgmteThUHXKc8UFYz8g8NCHP9xwUv8Dh97gF3/wXUjva+CPlmTzUdU2Y8tXB+8BoDYZX9y1Um7TWHwsoMxg4A/V3M5XK6j9/bj4YMd8Ohl+5rMKKdJFAx7CLyEJNV3USBIXxy6k9p5OWBGEsKL9IfPe3DkzGqXpL89vQ6OaaVEM82mQaz/JRBY6ZYHFJWqiKBCMoaTtLmWEZ1FIljY3uNhA/tRI6SirPRRnS5ozHIGz1FF3xjOqXLXtwJO86tMHh6isBJp8BRwCkbz45s6lt8goCXqhY5/l6A0OeJ89NdsZZj5ksKfO8a2DzCwmbrgqtaFWrQffTD+MYSCE8A5NnjFA62e2GdSI+uB1ajfn12Ha4JVbqdv82z+Z8ZIP+zzUFXEbXSkl7Cl7lZX/lhbi2jNZML2gCy65z4WdVJRI2KJnnsyJA==|920

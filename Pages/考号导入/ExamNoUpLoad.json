@@ -288,7 +288,7 @@
               ],
               "RelationType": 1
             },
-            "ID": "c159bec0064f4839996641d59fed19d8"
+            "ID": "51357442373f4a96978cb476736904d8"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -319,7 +319,7 @@
                     }
                   }
                 ],
-                "ID": "074d32ad-fbf6-4344-8105-b2dc20a5a1ef"
+                "ID": "2377f1ba-683e-4020-a021-2afb09ce4c4d"
               },
               {
                 "CommandList": [
@@ -335,7 +335,7 @@
                     }
                   }
                 ],
-                "ID": "fb5094ca-4c7c-4c12-807d-e9d1e0384a53"
+                "ID": "4d34fc03-a701-432b-8cdc-4d1d32316f2c"
               }
             ]
           }
@@ -370,7 +370,7 @@
                     "MessageFormula": "至少选择一条数据"
                   }
                 ],
-                "ID": "ed7b1c3a-38bc-4bcb-9a37-db5108a0a061"
+                "ID": "914f5125-7336-4b56-86b2-f75d0bb937b3"
               },
               {
                 "CommandList": [
@@ -384,7 +384,7 @@
                     "RowsToUpdateListViewName": "表格1"
                   }
                 ],
-                "ID": "73d1bd14-734f-467a-a2b8-e3de63970c4b"
+                "ID": "2398e5d9-c30b-4015-9814-85473c9d51a4"
               }
             ]
           }
@@ -1252,7 +1252,7 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MasterPageName": "简约",
+    "MasterPageName": "PC模板页",
     "Title": "学员信息列表",
     "PageLoadedCommandList": [
       {
@@ -1272,7 +1272,7 @@
             }
           }
         ],
-        "ID": "ef99bb5a023547f4b13ce4dd781cac6c"
+        "ID": "e1d55a95f2184ba38d2d8607a589ac91"
       },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1303,7 +1303,7 @@
                 }
               }
             ],
-            "ID": "98b9d109-5afc-4d5d-8bd9-119bb4d31096"
+            "ID": "803cea8c-2d18-4890-9f36-1ed065829c2c"
           }
         ]
       }
@@ -1330,4 +1330,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//n+HH9sifrvq2kyDZZRTC82CR4+T+z+Jat3IFbhHJ+sUkZS4BwA55GkZWZV7wUXneRpxMivfx5Ll0ao33oXs95vzR7LwSJYa6h4WIqSIa+hW3WB4GepHI9ltYj4WRZFdgrf/bBg8d0EgpMQIkOTfP6eFxomogP8cMvVIdKOBJGuV8EHAcYGa4oPyAPwFBchme+yJPqJEaw4z99taQDjx+EcLk27Qqyb+Lqo2i/EYEov1fE2N3imWct6srJ49QgHZHttZHJuOxb1fVUY7CTAg6MF7dIs/3bYQiDBwDMqsNF5FByFdmWNichTqF7tcng+lxeGxXU9VtZFYXiOqjLujoMEN9kS61hKW6fYqaCOhJPQ0u+m+lQfHfODNQth4NEghsd02LO2dZLanlWjsz5DByhOoz1B+GopwW/KDBVM7uY8Wf3E6SE/oaYD/lE/iVRNRk6BQ744YSf0ZS5SfeSiqyPeKM29TBMDNCQ2/LYn3eqiE/23niWZlgrrk1ChMBUQ7lNALwq067YJ32N+VnUg1ptIrM2sG8uePpynjSgAtox+1DX90mCHXxXet1pKKexsRTUh/l57A6oSYa9vrT4Hify4WWwD90V/UyChWdJIkNZhee91stDtRFUVhzAHzo5r8FMpaDSfN+0U6CBQl6hAEUTJ1vpBVy0PllLFfkvzl5BvMXMniCu2PZ8N5Z/Ih69UNJ5TrMhzRTPjPvegQCAOATRq8GhWdaA0RYhr8YoP7x+LuGooMDvHy5JLmEOBFbU6FTN3KE5ZnSALqtqmOf2JXpUls6Sxh75e9Sr0qYgYqrHkVbAPQDlQYROzHs1tdeasC99WvvolivO1WipTYsEW/xoOSFKqx4o5EEYRRwYs3AmeyDnIoP4+l6/XopyolmGVenXf5jClabsV/ZS40wSRYIuw==|920
+}//wnNhDw6lQzrWOSgAZCorqMzLc3MvLJ13heQijcki0uxMT1/5kSyt8RwQ2fPuMEwlqiCz441OIxXSafjZvFn4ukRIGDzILs8N4iC0PkABbxJhKz/GC0eCF3XpLRR+RBLKzmo5lfwmXbZ91Dqc9dM9xCQRW5ntZ+PET6GaEgXzZvDmYrjYuFEbx1ZKcPPm3C++A+DMeM5lisToxbGY7TDThBYfIQcM5vZeVLTRK6CqFIUL1koby/XPljS8K5KuZMrg1PSaC5A73Stcvbm1XCf5yEKFowUXo1khKitZl/WJA9isQPTobuGRr9/l/3bCEbOOKoYW05v/b7YNiXWzStUJ2UBlka0TiRZCRMslFvGFbwX9eZaEPSSN/MVhgMuUW7lyXDA/f7IiGrDFMu7bCGuAn2yB3v9ETqZB+L6aSCm871TCbO3Ol/fi4IuE3OFnbAzZCsi6dlPSDF24vFNKUWIhB5UurofvjfB7P5NQM9FduGb+CS+gyIG4esFKlcmgL2BVWNekRVoFf6eD5htYAHgFwJ9obn5gNz/A+GyXsZVcN7iW8BsU9PTKb2hUXVjZOAJ5uklTHJtw/yrZmY7hEFpIQF+LIf7aTrtsLovG8kcES52b8xvfqsdmMXfeXvhmco5P4zCPCA8sHJ3OIQHBp8H2NzNvABouWdyIPN8qZXL+pzJWlx+iKlsXcG3fBRI2Dkykd2dunOV5vQVQZkL0rPYqTboUMMtba4MIU75MlZBqKZPp5n3vYBBrBORwgFTN1ituUiD6XUoYRcUziAhXZABYsTwIY825vGq7zfwnqUZfL115Vw0v2tyVKmHDDmZC6AnsnaefIHoCpTk5w6x7s9sGQbBcd9e68FRR+YDBLM9efZmlucWb4koeHcF1kE/d7V0GrUOvDid3jjJ/YbNJPUE23Q==|920

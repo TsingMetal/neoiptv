@@ -5,6 +5,16 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
       }
     },
     "InLogicalVisibleIndexes": [
@@ -46,8 +56,6 @@
   },
   "Values": {
     "2,15": "IT服务教学",
-    "4,20": "欢迎[",
-    "5,20": "欢迎[",
     "15,4": "考号导入",
     "15,17": "上传试卷",
     "15,30": "题库管理",
@@ -60,10 +68,6 @@
     "28,6": "%CurrentUser.UserName%",
     "29,0": "用户角色：",
     "29,6": "%CurrentUser.Role%"
-  },
-  "Formulas": {
-    "4,20": "\"欢迎<\"&G29&\">登入系统\"&AD7",
-    "5,20": "\"你的角色：[\"&G30&\"]\"&AE7"
   },
   "AttachInfos": {
     "9,3": {
@@ -211,14 +215,17 @@
     "Styles": [
       {
         "FontFamily": 0,
-        "FontSize": 26.666666666666664,
-        "HorizontalAlignment": 1
-      },
-      {
+        "FontSize": 32.0,
         "HorizontalAlignment": 1
       },
       {
         "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
         "Formatter": 3,
         "HorizontalAlignment": 1
       },
@@ -255,21 +262,8 @@
     },
     "CellStyles": {
       "2,15": 0,
-      "4,20": 1,
-      "5,20": 2,
-      "5,21": 3,
-      "5,22": 3,
-      "5,23": 3,
-      "5,24": 3,
-      "5,25": 3,
-      "5,26": 3,
-      "5,27": 3,
-      "5,28": 3,
-      "5,29": 3,
-      "5,30": 3,
-      "5,31": 3,
-      "5,32": 3,
-      "5,33": 3,
+      "4,15": 1,
+      "5,15": 2,
       "8,15": 3,
       "8,16": 3,
       "8,17": 3,
@@ -663,16 +657,14 @@
     "9,29,5,9",
     "9,3,5,9",
     "2,15,2,24",
-    "4,20,1,14",
     "28,0,1,6",
     "29,0,1,6",
     "28,6,1,10",
-    "29,6,1,10",
-    "5,20,1,14"
+    "29,6,1,10"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MasterPageName": "简约",
+    "MasterPageName": "PC模板页",
     "Title": "首页",
     "PageLoadedCommandList": [
       {
@@ -711,8 +703,7 @@
         "Fill": "Background 1 -5"
       },
       "IsAutomaticFill": false,
-      "Location": "0,40",
-      "Size": "1081,520"
+      "Size": "1081,571"
     },
     {
       "Name": "d15ad516-175e-43b1-91dc-e6c05357b906.png",
@@ -722,7 +713,7 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "40,160",
+      "Location": "40,171",
       "Size": "221,300"
     },
     {
@@ -733,7 +724,7 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "300,160",
+      "Location": "300,171",
       "Size": "220,300"
     },
     {
@@ -744,7 +735,7 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "560,160",
+      "Location": "560,171",
       "Size": "220,300"
     },
     {
@@ -755,7 +746,7 @@
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "820,160",
+      "Location": "820,171",
       "Size": "220,300"
     },
     {
@@ -765,7 +756,7 @@
         "Fill": "Background 1 -5"
       },
       "IsAutomaticFill": false,
-      "Location": "20,140",
+      "Location": "20,151",
       "Size": "1040,20"
     },
     {
@@ -775,7 +766,7 @@
         "Fill": "Background 1 -5"
       },
       "IsAutomaticFill": false,
-      "Location": "20,160",
+      "Location": "20,171",
       "Size": "20,320"
     },
     {
@@ -785,7 +776,7 @@
         "Fill": "Background 1 -5"
       },
       "IsAutomaticFill": false,
-      "Location": "40,460",
+      "Location": "40,471",
       "Size": "1020,20"
     },
     {
@@ -795,7 +786,7 @@
         "Fill": "Background 1 -5"
       },
       "IsAutomaticFill": false,
-      "Location": "1040,160",
+      "Location": "1040,171",
       "Size": "20,320"
     },
     {
@@ -805,8 +796,8 @@
         "Fill": "Background 1 -5"
       },
       "IsAutomaticFill": false,
-      "Location": "260,160",
+      "Location": "260,171",
       "Size": "20,300"
     }
   ]
-}//MrCJP50x/1g2L9rq/uj+7WRrFqdenadeGrlXXATN+bIdP30D+FapMiJcf4vXU+gZ97snsUeez3k1yHj670ppNXKmQxjIEZFUaNwYR7hHRztIjXtmY4QZx4i++g1rGSn/iCBCx3TNkKc+iKX5z1Btd+t4e6ZQhfwev1m3JSJL/zAgIAXmuFcrup0/gfcLAvFaV+oC536OMBkSYA8Ap19oo/9zNN9ej/AhMu/F2bOP8dEAwz2j8V9FJ0lsA3cppKSINvOcYSPvxIQsp+zEhgSa+ZQT1EahW9zCDTf9MbDSBwambc6Hl0NCatuXXu2Ec1VJPdjBL9Aq2tsvsY5nzzm6wZLMMrUZlwSrD59L/v40IxcgIfxnsNRW7XYLf5XIfd5tQmp76UuVI03kQIrESh/L40htmlOebLKlpToV274oUvDTNBD7U5d7zE+qR9JDLWgF12S7sihlKVuWTaZowc3p5WTQ1x13cylMO5DKxLO1CiJ8zMU3rH4W+ssAcErtQE3t9HmxdYDe3OuxfWe0qa6DDU/TX3eH+C+Mse7rNyWnNeLgJKsoFvm+0B5HwOnI/DLdCB9C1vbLBC5m7GLEd/Km02Jr7dgwN/3UxFp72VMFu9oHzeFZYdH0I1LewAcGSNwi1N9CBXc2nNwtC43qKFEy5kd1dkzqzEZmbOYEmxQSWIczsrnR+FHTyCbRkIwf5FZQ08jHJAzP9G2CnJLt6PH9Euak1YgsVX1Fi4FxuB7MpiH16BS7GuAe4VMV35ry6/WPqhsvw6eEWaCRsGfUOJGvFQayimSRtjWMDbHFUR0MFk9XOUByjEKtkiZa0Jcf7VyTTtbGKnpvC3PC90LshMm7L4OjRDMnwc/ZBnZqWjkd2jNeQcQGNJ5XjzK/hFOfXK74fqnZb4rWRrwDpkHNPBALFA==|920
+}//OJugwzRgmKJcIpdXi6ocsiNmnGcyRF0jav8+0RvhfxdDrJ++wnsYUtOOmfQDjA6FbWI4A9HNAzDRRVsK1nYjtuaKKYM0VN030qMf6sPzw4Dzu6yZeThKUlI+tWjsRdoiLzcWiByB7pq5gIJ/bjD9drL59bbxtCpZPR/9LnPG1HOGBfnaAJQ99wzsDfM04DHy3M8ngEoOXrm/rfsu5IHQO82B3MJbmAiC0XNeDMSkwAk+zreoY2OwbOnkmRfTJ54PEpcbhO05zEMtGXVA/995/MVdyuB1oYXEMWQ0fyoWfEBAgB901CrU+NhVjjrKudHDH925tdFe+gAQx2bmq6IRPjl5htLj99uZeMTHcx49eyAPLrb0f3eCzwp24IFgpipGQsCnxSEQGWgcec5s/7r4jhWzJEv38QRrc2zxmApydgGiorQ3fKP5y2ij7HvhC8Liry7mgxq+/fvjgzKI/PXiIYcASzuC3zpDQY8NRAcNa0/4bsXgHd/sIoBjr8LuWdZTfxv7GUdsiNrTlhsMeyc/FZQitVl5iaoi/lZd1+FWBD5U1MNjEk7mFGwfeyDyZt+37y12Fal/h+Z5HhzRr3KozIHo1sUOGslK2mPYzUfRSaPoT4B5IRzPgYsILzddnSE5PNinCXmASe80/ADGxILaz1suo3aIxHJzaO6e7XxNKlop1ZtkWEhsfccWhGo92FgucgG1+Xv3fe1ZiYQegKvcfdzdcBI5jZVrvYjzymDX8IVA1uG+VOnbgu5atCBZY1026p0lNfwyRHdoKHM5zfVjuDFXkN3G0CsPMG74GSkt2ZmCPnMHY+vLhI/PugK3IbLexOxF7r+sDg8LvGFB0hZqbBnXlmS4Qji8OmuT3ZK2350lWJv40hdBGWEx3pNbkB1AQt7wj5FG1S5MWovpwIa2tw==|920
