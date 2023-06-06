@@ -159,7 +159,16 @@
   },
   {
     "ModuleName": "PCPage/小测上传列表",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-06T17:25:27.5846136+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\UploadExam\\小测上传列表.json"
+    ]
   },
   {
     "ModuleName": "PCPage/请批量选择小测题卡进行上传",
