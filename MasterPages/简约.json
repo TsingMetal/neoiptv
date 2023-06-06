@@ -36,6 +36,11 @@
           "DesignLengthInPixel": 24.0
         }
       },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 2.0
+        }
+      },
       "8": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 6.0
@@ -60,11 +65,6 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 16.0,
           "IsHidden": true
-        }
-      },
-      "7": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 2.0
         }
       }
     },
@@ -144,7 +144,7 @@
   "Values": {
     "1,11": "、",
     "6,1": "%PageTitle%",
-    "36,1": "获取当前用户未阅卷数:"
+    "36,1": "未阅卷数:"
   },
   "AttachInfos": {
     "1,1": {
@@ -605,10 +605,19 @@
       },
       {
         "Background": null,
+        "FontFamily": 4,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
-        "BorderRight": 0
+        "BorderRight": null
+      },
+      {
+        "Background": 12,
+        "FontFamily": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 1,
@@ -654,11 +663,6 @@
         "Top",
         "Text 1 15",
         "Background 1 -5"
-      ],
-      "Borders": [
-        {
-          "Color": 12
-        }
       ]
     },
     "CellStyles": {
@@ -2906,8 +2910,11 @@
       "35,63": 0,
       "36,0": 0,
       "36,1": 3,
-      "36,10": 16,
-      "36,11": 3,
+      "36,6": 16,
+      "36,7": 17,
+      "36,8": 17,
+      "36,9": 17,
+      "36,10": 17,
       "36,15": 0,
       "36,16": 0,
       "36,17": 0,
@@ -2959,47 +2966,47 @@
       "36,63": 0
     },
     "RowStyles": {
-      "0": 17,
-      "1": 17,
-      "2": 17,
+      "0": 18,
+      "1": 18,
+      "2": 18,
       "3": 0,
-      "4": 18,
-      "5": 18,
-      "6": 18,
-      "7": 18,
+      "4": 19,
+      "5": 19,
+      "6": 19,
+      "7": 19,
       "8": 0,
-      "9": 19,
-      "10": 19,
-      "11": 19,
-      "12": 19,
-      "13": 19,
-      "14": 19,
-      "15": 19,
-      "16": 19,
-      "17": 19,
-      "18": 19,
-      "19": 19,
-      "20": 19,
-      "21": 19,
-      "22": 19,
-      "23": 19,
-      "24": 19,
-      "25": 19,
-      "26": 19,
-      "27": 19,
-      "28": 19,
-      "29": 19,
-      "30": 19,
-      "31": 19,
-      "32": 19,
-      "33": 19,
-      "34": 19,
-      "35": 19,
-      "36": 19
+      "9": 20,
+      "10": 20,
+      "11": 20,
+      "12": 20,
+      "13": 20,
+      "14": 20,
+      "15": 20,
+      "16": 20,
+      "17": 20,
+      "18": 20,
+      "19": 20,
+      "20": 20,
+      "21": 20,
+      "22": 20,
+      "23": 20,
+      "24": 20,
+      "25": 20,
+      "26": 20,
+      "27": 20,
+      "28": 20,
+      "29": 20,
+      "30": 20,
+      "31": 20,
+      "32": 20,
+      "33": 20,
+      "34": 20,
+      "35": 20,
+      "36": 20
     },
     "ColStyles": {
-      "0": 20,
-      "63": 20
+      "0": 21,
+      "63": 21
     },
     "SheetStyle": {
       "FontFamily": 4,
@@ -3014,12 +3021,19 @@
     "1,55,1,8",
     "9,1,27,62",
     "1,11,1,39",
-    "36,1,1,9",
-    "36,11,1,4"
+    "36,1,1,4",
+    "36,6,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
-    "PageLoadedCommandList": [],
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+        "ServerCommandName": "getExamCntToRevise",
+        "RefreshAfterFinish": true,
+        "CheckDataValidation": true
+      }
+    ],
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
@@ -3051,4 +3065,4 @@
       "Size": "1240,2"
     }
   ]
-}//HvTB6e1PkUyJ30HBFQJ1I6feQiPWG9Jy1fdE/Idyx8M10sbG5kY5+7IaHZxKZMKZUd8R1S8Hk4oGhYlZeejgwBTL5ITqL8V4Nh68aLkXvnubgFQ1a2v5cDzsIyodpS/qjkhFnRugaC9X0xgm+NAGTHauyerl+xSKaZOYujuCJ9FYe80knRr+A0La+0e9bMD188H11UmBisTW8DhbqlbXJj6lucKqEIGgFTveP/WG5ffg45J+Hxy3tG8P1WmttQ2IWoUvbRJ8H7Dybi+U6hRjW9PcCOWU5P4H/wpvZ4afNjba2s9pZ/TbTMIy8T2G3GmSRZoBSYsx49+HP3gHiHTc60jLL+KxPSQVDvGq2s5/eskIhUrgwHZAc2B/eVgPmFfQcR3wzpnxX+sGFfIBRw0mpZlur1pAIkk3yh5M4kIkVFwjIqXMoOqJYuoyB5lJBjr+hv0GNBMSylgWy+7IN9TCFfDb0VhxFZWPdMhglCo30nL0XEtuQOHVgIrT0Krz7/7E/g8s0nyGEwSaTbqhyKrilPpcR4xMRqntMA1sZVmEGDYVXbDz+Q8nAmfXe/l7dQF9eYWPpzbjBXu0UKsry2PQiY+TPdLOLL8ocnzbs+alSCGbXzej4rOE+npNhs4Cf2jVbnJCUoTgVvxZYrVPiwUPp2w5JDriZMRH7u5YRPKLFm8VL+Hy2sf8bU6PqXFkA9GGBJLYE5R4gzjHumZnUBrzENSQE31vLJo03RZDhis8HbIcqFKiA9gnWDfRl4aiO2OHyxGv672mppokemGad+k1nZ6ItsstO/ZPW7WTBisY2o0Uy3+MpEqNev7zHAbGRm//PmmJpnRhj6NfBSSUv2zWMpsUJMwmzMFR5uRB3mkDh1CITvQYeB9YqJ9XQeKJ5GKCGCPNipyQREJh+0lUdajZpA==|920
+}//r6lMQgCrNdhaPXQusJQehO1FenI8Ls8XFZO0IsLedfVZ5h8Vo/+d31fNJNI5MsPx0v1VJltFkGDr1gejNxCieZW4WpR7xCC5N0f4uyvBV3XX5BCoEouxneKF4rYrXu6Y80cMrkzV1h9tjhqUAnYmra93nJmZC1eF0gm3mrtRihYNJsL/o3TvFH45qpyk3xGz0xg39e0DhanZ4S645f3ENalhEEJdk7kPf2Nh7LtGpN7in2crmiQPwtTMWm+XV1zMNqKCAFCFzml4+h3hbfOZ1HVwaVwcE2Qteo7ce+IEgQW2RSlEjxtMs2kXOzFJpUNBoHF6krr8w7fB6984dkHX5ACszy7wFvtmfNraxQYntJBb1W+t5URyUeeKdu/fVdAoXJlHTQPcM1i7RV0i9dfBJEIv68Xbsv8VxaTuZg53G6ZsTlNdOYI8MtQP+raiz65gLPo9Lp7/QK83wFwbAL6lrsxp7Im7WUHqGokkCJ5MBKkWKWphrgw2LrLSe7itj+l01JzTqynpjpB9fwXoLeI4dWU7/o8uTGn6OF3Us7012YWhn4Yi5FOTnCu5KW6fr/XXn3gJPMpYmJiPiezOxdwM6REfYlOhUVX4bUfn1zCzb2+Mxnyord/opxMAcY6XysDtY5gbHsDLWqPXfr3urKioYGSyoSNEcL0/fSSRwxgIlqpZlOOl3L5VIr1QskalzP481jWb+ofx9Y0bM6vVkhiQpr4GQ4ZklXWx4zzM17xQy7ttWIDBupsMXqPFueytIu3Eb2fIcoGAhlaTHyTFZUZf8NXWVNjbH5KUldQaO9f9hO5BSCtlXcB5ggawzKcJ5GBy1nix1QWurJMVR1+mHZDGFxraInLAhVYVJ9jUIdXTjoO9d5glG+f08ph1tf2EfdsFmYGj+b/thXR62vK449WpTw==|920
