@@ -230,16 +230,7 @@
   },
   {
     "ModuleName": "MasterPCPage/母版页1",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-06T11:09:13.4978101+08:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\母版页1.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/母版页2",
@@ -379,16 +370,7 @@
   },
   {
     "ModuleName": "MasterPCPage/简约",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-06T11:09:13.4978422+08:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\简约.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "Pages/UploadExam",
@@ -417,19 +399,6 @@
   {
     "ModuleName": "MobilePage/ScoreQuery",
     "ModuleType": 2
-  },
-  {
-    "ModuleName": "PCPage/ExamToRevise",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-06T11:09:13.4977196+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\开始阅卷\\ExamToRevise.json"
-    ]
   },
   {
     "ModuleName": "PCPage/RevisePage",
@@ -477,12 +446,6 @@
   },
   {
     "ModuleName": "PCPage/ExamRevised",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-06T11:09:13.4977334+08:00",
     "ModuleType": 1
   }
 ]
