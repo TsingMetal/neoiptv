@@ -246,7 +246,7 @@
                     "MessageFormula": "清至少选择一条数据"
                   }
                 ],
-                "ID": "5e1dd5e7-be61-4838-9fd8-6012a2762c06"
+                "ID": "17b4aaf5-bc05-4708-a1c2-9c029a49e1cf"
               },
               {
                 "CommandList": [
@@ -262,7 +262,7 @@
                         "BindingInfo": {
                           "TableName": "阅卷表",
                           "ColumnName": "状态",
-                          "GUID": "6b9a45d0-4083-41a5-baf3-79c48f53d37f"
+                          "GUID": "8679b9ac-8b31-4cda-aeb4-8569df60b9a9"
                         },
                         "Value": "0"
                       }
@@ -295,16 +295,11 @@
                     "Disabled": true
                   },
                   {
-                    "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
-                    "TargetPageElement": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=ExamToRevise!刷新未阅卷数命令"
-                    },
-                    "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
-                    "MethodName": "ExecuteCommand"
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "ExamToRevise"
                   }
                 ],
-                "ID": "9d10b554-c40e-4b59-be8f-73e2c8d46448"
+                "ID": "79f66a43-2ee8-4811-baa6-4a8ab49ff519"
               }
             ]
           }
@@ -325,11 +320,11 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "准考证号",
-                "GUID": "e4e6ecb3-ff5c-4dfa-b18e-0b19af0a0a7e"
+                "GUID": "133a06cf-0f5b-44cd-9ba5-46a5b8992cc9"
               },
               "Value": "？"
             },
-            "ID": "b18a398c6ca04ed994bfad3982796531"
+            "ID": "8bd091725972478b9da11432eef0eedd"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -360,7 +355,7 @@
                     }
                   }
                 ],
-                "ID": "b61ae113-251d-4970-aefe-18adb7c5b4e4"
+                "ID": "9c8c788d-c3d3-4a3d-a117-cf6895128b85"
               },
               {
                 "CommandList": [
@@ -376,7 +371,7 @@
                     }
                   }
                 ],
-                "ID": "c66d2ab1-2f1f-4b7c-806f-d74911d19ee1"
+                "ID": "653bd79d-3283-496c-8f18-05d23e9e8391"
               }
             ]
           }
@@ -401,7 +396,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "阅卷老师",
-                "GUID": "93a8fbcd-3397-4caa-b911-6ab9ea078cf5"
+                "GUID": "a7e987b0-6799-4f7b-aac9-cfeb62e3063c"
               },
               "Value": "%CurrentUser.UserName%"
             },
@@ -410,7 +405,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "批改时间",
-                "GUID": "d1a9a290-b962-456e-9ed6-57798a6b2ebb"
+                "GUID": "c2231d61-d3d5-4e67-bda5-d319385b9dae"
               },
               "Value": "%Null%"
             },
@@ -419,7 +414,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "状态",
-                "GUID": "b31d4ea9-0b71-4c2f-b8ad-6c1b661dfd95"
+                "GUID": "2ccb60a4-310c-4214-a6fd-ef90c0953942"
               },
               "Value": "1"
             }
@@ -431,7 +426,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "FGC_CreateDate",
-                "GUID": "e51445ac-5fc3-4e45-b2d7-2e66f163a693"
+                "GUID": "bf7faf15-9449-4252-9d91-86d20dcf57b0"
               },
               "Order": 1
             }
@@ -1055,6 +1050,7 @@
     "18,48,1,4",
     "18,52,1,5",
     "13,48,1,9",
+    "25,1,1,4",
     "3,2,1,3",
     "3,5,1,5",
     "3,10,1,5",
@@ -1066,8 +1062,7 @@
     "3,30,1,4",
     "3,34,1,4",
     "3,38,1,5",
-    "3,43,1,4",
-    "25,1,1,4"
+    "3,43,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1130,4 +1125,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//mMduALDDSDfRhhwH2ttih6/UryozsL01sUmJxkPiuNevphZAmRsSuvWbNBHltIeOFu7g/lhKOaOm6+2IGuK6uF0t2MNG7wbUzau0DrAC5wSHq+yNQPxl5gzhdybdZnmZ01u4VFO912CpI69uw+Qu4DVHZzdKBYASwHSdbUDAFJt+C7fO9zFjbw3uxZMo90TLUtDGlxCGls6W7v56nEc2e+K3xHl3FN3wqRpqF2+VU7df7dNGCyEmECFBZ5OjlKDq/1ADQB4G1axgm/ia+QyeDP6g0qsrsjMAGkAkZJwgSYxK8mnKvLIdvfirSaPIIlvwZChi27iV6+4WqXVCy4wAzc8c5NomVMSUesx/ILJlkoWWFfZSqsfDdFWUYJVKHAqXfPCQaJQQEeovch4hTzKpwBTgB8lMYU6yifpeQf1Ite2nrsJwC9qESm4dhz5rs4vnbulK2nawmRZ6p4lQyoeqY0puS2He5WluAKCzjdoZenPm3wkEi/GGevaBkp4y+8tdZ7lJGbJb152iq+oiBi7lgzPpqNp/ifbGzYqNpRDt27zo3Q6iUsSxA7LtIeFyulsiRKvvWj5xVJV09Vl0XL/dOYGhnlX7vCyZNEZqvdiCaoY6KPArYQVXwOWL+dzd3VUoKGwt7y4eEreaIx9fiR6wgIZ8P5AIYwop2kWo+Fqajfwo8w4wQ2uHut7cfn6jYGj9iFTPIt3Y9QlIo49gy7x3fT3EjKBJz2AWoNKakAskgHNujohf+/3Xf6diTz8QmCSMAcJ9M+u7h6rqUf2VIuyABGTVe7NGllfjbv2yIO1gzyYAsKYOFgDdjrqrNQMO0V8zeVDJ/kjNr4srOK5LY2Dr3hjH0LlA35YKQRoeibDeQlFhOis9I5eAQ98I9uyPNE6XSH2PsANbGrD+/t1Ry5XYbg==|920
+}//mqLgTATcgiFOuJZ3L2+NPdST0VJBejPeI6ZW+Lkc+i6CzCyo3sO5v5JLPOK89l1x9sgSXDS80iZ7LSwkzrpJmxTH1iV9OnF5Nowg+oxEkfoMy5YizQ1HCxxPzV7D1gwmsHWRYYoxIs+tNTL0lW1Kybr6YqahayLmjdQY5Wd+O+bXrTC8qwaYe+GY8qfmZWyPcvsdb8lS1hcJHKlnabPmSmm6ji7v0RNnsTy83FAsOB6s5DcdIhvpqIsjVvj3jZ3j5jn15TJQkvdb7zXNgSkPZKE4er1E3mJIYSK1/bbi/u4Ci4yPncOTw7nnSGO2nsxS947vV449HFyUS0RIYt+NwDYOM6oi5X/0V/QKvMxdxYhvfbVpfUjSFOUI9rHCsOyxtttddavqlqZisKG6Zni9IX2I+shyukg1RA63xOXh6rWJHeJTMm24deub6CyBlDRFrHf4p6AbpMimcOBjm0SwPyPetZrsWEOwfsGjxxdWvuMpCS1DUsaFTYJ9cM89hiOcAlhXmx+2UFZh3kdv0zd+hv369XdK6XGVpDRBU2zK61CV0oMBTwOetCSc4a311CF4by6vb4a5uHxXPma6pZ2OJbwg9yKhtDxbuEbX+tqTDG4p7SJoiqwm//ezHEo5SPoLiy2+J4KJcSQiC1VYT6hrbzBgn59anl3m0aGu4IbK9QuGqcdaMk0eBtRBxO1n5C/XBY3CZGlK3hoCwfYpDAlIVIjC9cz9LUB2iKw4ecM6iqchlkAtQ+Z31Iib3uV+l0LrBy4f+pg6NfRg4jwNWxCZ7SxX3EgcyYzfDGxheYQA7gYXt2QEbkQsstkmTgM332hH4fNfh8ZLTDofinTkRT8SZZwCtP3TdxHty8aV8QtY31+c7ygvuiWvs/sDVOZ8EKpxSMHG7Iq5GpIF89H7wbDKpA==|920
