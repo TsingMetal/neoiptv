@@ -454,7 +454,7 @@
                     "MessageFormula": "1.找不到这个准考证号的学员，请联系客服老师确认一下！\r\n2.或请确认该学员是否正确填涂准考证号"
                   }
                 ],
-                "ID": "f8831b0f-fe1c-48f4-8620-84f7af637176"
+                "ID": "538b69a0-02fb-449a-b7ad-5c6c6080b7dd"
               },
               {
                 "CommandList": [
@@ -467,7 +467,7 @@
                         "BindingInfo": {
                           "TableName": "阅卷表",
                           "ColumnName": "阅卷老师",
-                          "GUID": "89c59530-868d-49d8-951d-109e22cae343"
+                          "GUID": "9cdb89c6-9187-4a4f-bef7-583f2df39360"
                         },
                         "Value": "%CurrentUser%"
                       },
@@ -475,7 +475,7 @@
                         "BindingInfo": {
                           "TableName": "阅卷表",
                           "ColumnName": "批改时间",
-                          "GUID": "73f698b9-12a7-4fba-8cca-1c6037dd43f6"
+                          "GUID": "2572ccbe-dd05-4e5e-9d11-e728271e90cd"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -486,7 +486,7 @@
                         "BindingInfo": {
                           "TableName": "阅卷表",
                           "ColumnName": "学员姓名",
-                          "GUID": "8edc546e-2ee2-45e4-9618-637402908cae"
+                          "GUID": "a39ff8d9-cbc9-4583-b454-e828936a3933"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -497,7 +497,7 @@
                         "BindingInfo": {
                           "TableName": "阅卷表",
                           "ColumnName": "学员班级",
-                          "GUID": "a0c0abcb-697d-4819-b645-e0a29fb05f20"
+                          "GUID": "87a87a6e-6688-44a4-8b86-579cdabad9a1"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -508,7 +508,7 @@
                         "BindingInfo": {
                           "TableName": "阅卷表",
                           "ColumnName": "满分",
-                          "GUID": "b203ecfa-a9a9-4f10-a5e0-2a6b4aade11e"
+                          "GUID": "20507cee-54cf-4e43-9aed-4c3524716507"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -519,7 +519,7 @@
                         "BindingInfo": {
                           "TableName": "阅卷表",
                           "ColumnName": "题目名称",
-                          "GUID": "2a7b3d66-5bc2-4822-9736-700094e5f716"
+                          "GUID": "4718fd1d-d76b-4fd7-bec2-9e90b72834a6"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -530,7 +530,7 @@
                         "BindingInfo": {
                           "TableName": "阅卷表",
                           "ColumnName": "准考证号",
-                          "GUID": "fad3d5b5-f44c-4755-8cb8-9f6bb92dd283"
+                          "GUID": "10a46e7d-05ed-4614-9f2a-34144d23bbee"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -570,12 +570,24 @@
                     "CheckDataValidation": true
                   },
                   {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ReviseDetail!Q57"
+                        },
+                        "Value": "1"
+                      }
+                    ]
+                  },
+                  {
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
                     "PassValueBack": true,
                     "ReloadData": true
                   }
                 ],
-                "ID": "5d90f4d6-153f-42a8-8715-e9f9bf3f776c"
+                "ID": "8394ec01-2285-4bc6-a582-20db153799cd"
               }
             ]
           }
@@ -594,6 +606,13 @@
         ],
         "Text": "取消",
         "TemplateKey": "样式6"
+      }
+    },
+    "56,16": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "是否刷新未阅卷数",
+        "Style": 1
       }
     },
     "57,4": {
@@ -1130,10 +1149,6 @@
       "56,14": 0,
       "56,15": 0,
       "56,16": 22,
-      "56,17": 22,
-      "56,18": 22,
-      "56,19": 22,
-      "56,20": 22,
       "57,8": 0
     },
     "SheetStyle": {
@@ -1164,7 +1179,8 @@
     "57,0,1,4",
     "57,4,1,3",
     "57,16,1,5",
-    "57,22,1,5"
+    "57,22,1,5",
+    "56,16,1,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1191,4 +1207,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//0m7vIynv+Gf0MSI0y9XrQvqqrMYMQJMh0/cmyTYF3rvvrUxT8NJAchAFEBxS4clP6mw32/BHQQ3Fc/3LPyY7ONTQidLMJhZAUlxJX4J8B0mfxlyguZ9RMNHak50EDT0OCFKMdVh5TF5cyLcINPziKHFl1j4K4rEtwaoI4nKAmWYwq0QjyxabMasa1Z5nQ5J/2lRztkCizOG0d6yss9s7VQY8tWXkEUk+50VqMyEir3ovYoaYrKKdDex+7cpQS/QOiHFmNrCd1vXlUbPZvJe6jCOxm6/yd3WU0CwUTCfeOqHWLTTTbltDWzIrhPtCe6kEfg30zG83Z2jDesumj6VbWhsRLKcci1TyVHaj4RASgv/Cal5qdklSxOpb17gTlskKXX63LSlKV40MxTVn1G9nNVmf/rEnDvHfraD+KCGkgqBf1ZagLikIiNjajJnID4xS2SxGIAHUNUmaM4SkyZUprGOh9bfSgdUz5Lz/NuuJXnzXXrjyVYCOGYQG1Kns2/R1YVyH9R4fh48NitBpH9qWuImjXTijtoXHJbPH12GEN0s4Jo5IH7VkbYSl9bnt2WR5oAsivzwniUJLZFFVBbRPrAcjjf6Jb009JFb2mbzEbnY6MIH0/M8Z8QAKhGaGyBJJtLrDQ4v4fqcC6vkS9mIJTMy2D7eUja5XTWKDcSKcI8mQ9+LuxFi2cMumZWEcFFN+WZnTYLz0IvO1kj1nzAy3BJ5g1rf7t4Y5F3S3G7hjI9+bdyZ1JHYryZ/vLsZBJneaY5DNUcJiALwM5h1bryN6nwYjb9GYYKNoSKQujEObd6X8NDrxkdlw/lp+dZZRcPW3Z01hToYDIyZ25FNQGbu5k5fIV2Qaa81bn2iMobMdCtx6/0yD5Zpd7nrhz7fJGceQHd60CWWtt1HFBSP5JSdAqQ==|920
+}//r1vKXpDbS98wX8clhC0k1cqXspehH+hf98R6q80ufOLaNzFGpKdNGxRVFQ1t2U6mbKD4PwY6d/pmi0W2zMN0D5oSQzeu2AHnRWV4T3rd62PhMOgQAQJte1zkRTZ25PkpYN5/HR8Rey6wGE4jDfT9qhfLxCoZ988JKwzwEx3aMUTb7nG/cTXabckdz9idgBuzWb6pCszaQGO47SPzlSlneNL5D3AT61rIVFfUEEPf6zt8/CJXxxyUzTzpl+UkJvsAq1WMPdwz1Dgm+CaughL5AKidQ9++8HXeqnT3mZlACll5McMcr5hpqK7MQkGYLA9XF/bEXrFxSdTyc+H9B7Legg2ypQT5AZ8dPS3c2O7+OQE3GOOJdwug25JnQ2yeMgcaaOA03kedGlWxUkJkWSa/VG9sWdbmN4RRaRg5igCNUTkqd+lqR7Equxp3QE+JPNME6dGP4Nt15ZTmEUy/Xy/S0qkJyvwbhowVGCc8TOXsYEyZpjfdwC2YgDV8lZsLYJ5hzYavu+D+bh2N2MrQ5Cz3ZoeTQSWEphpH/MDRfgzs8sr7Ms8k437X0QlnCODWGRLzquIo/dlvDSj+5yQTJgDDm0AroWC1IzzXymg0TBTLVMQ27okDZAFaE2QfapO84hcIzJgqK7RnftF4roto8qNTufD/lWm3QUALU0UBmmkE9DUSeK/XjYK2saaoWENRiwMraAKkIUZviUSa1j5adFrGmiLGX5R7umrWUS+klQIpbGslV/CoDP94UUjdHq6/40HrFotptoFc0lhNTVBBR/MSkypmBwJzESRtVQ6p+c1jU+OYfQGX9ahJ50scfvw7io8qDo4aYnOwscrME537ZE35j/MPeuW3bTqmFW8nS2+IvS8WntH9Erum5VzaUvbAgiyHtqxv2jvk3Ke3rgY5IrKfUA==|920

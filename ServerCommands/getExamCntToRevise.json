@@ -37,7 +37,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "阅卷老师",
-                "GUID": "40b3f3b7-94f4-45d0-9a5a-a381d142cb5d"
+                "GUID": "4c1f4e57-0be2-4748-93d4-525b1120d9dd"
               },
               "Value": "%CurrentUser.UserName%"
             },
@@ -46,7 +46,7 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "状态",
-                "GUID": "90635677-f1e6-434f-ba19-d68f9be65397"
+                "GUID": "e31d1445-0af9-43e7-8c79-e03dc9aeee0a"
               },
               "Value": "1"
             },
@@ -55,21 +55,31 @@
               "ColumnBindingInfo": {
                 "TableName": "阅卷表",
                 "ColumnName": "批改时间",
-                "GUID": "aed71b5f-e17c-4449-99ec-9208a76f1d23"
+                "GUID": "149d58e2-607a-4d35-a1b6-1f318cdc69ae"
               },
               "Value": "%Null%"
             }
           ]
         }
       },
-      "ID": "36d846b8ca504765a87f163ce709774e"
+      "ID": "1a51b373273c4ba6ba4b49816376307d"
     },
     {
       "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
-      "Message": {
-        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-        "SerializeProperty": "=未阅卷数"
-      }
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "未阅卷数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=未阅卷数"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "未阅卷数"
     }
   ]
 }

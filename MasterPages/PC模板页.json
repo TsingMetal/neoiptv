@@ -490,18 +490,6 @@
     "8,1": {
       "IsPlaceHolderCell": true
     },
-    "35,6": {
-      "CellType": {
-        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "SavedValidators": [
-          {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
-          }
-        ],
-        "TemplateKey": "_RS_NewLittleRoundCorner",
-        "ReadOnly": true
-      }
-    },
     "35,16": {
       "CellType": {
         "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
@@ -547,7 +535,7 @@
                     ]
                   }
                 ],
-                "ID": "308cd692-fe89-4b47-a6cc-b741e50a7dbf"
+                "ID": "304a927c-34b7-4a72-990a-51cd8c88ccf1"
               }
             ]
           }
@@ -561,9 +549,14 @@
           {
             "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
             "ServerCommandName": "getExamCntToRevise",
-            "ResultMessageTo": {
-              "SerializeProperty": "=PC模板页!G36"
-            },
+            "ReturnPropertiesTo": [
+              {
+                "ResultPropertyName": "未阅卷数",
+                "ResultTo": {
+                  "SerializeProperty": "=PC模板页!G36"
+                }
+              }
+            ],
             "RefreshAfterFinish": true,
             "CheckDataValidation": true
           }
@@ -716,8 +709,7 @@
       },
       {
         "Background": null,
-        "FontFamily": 4,
-        "Formatter": 12
+        "FontFamily": 4
       },
       {
         "Background": 1,
@@ -735,7 +727,7 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 12,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -762,7 +754,6 @@
         "Bottom",
         "Text 1 50",
         "Text 1 15",
-        "@",
         "Background 1 -5"
       ]
     },
@@ -3079,5 +3070,11 @@
       "Location": "16,106",
       "Size": "1240,2"
     }
+  ],
+  "CustomNames": [
+    {
+      "Name": "是否刷新未阅卷数",
+      "Formula": "PC模板页!$Q$36"
+    }
   ]
-}//Gobi1oKZDwkGEOcGJ03khF4vTDw9Z/lEStU7EW2/wYJhg3qNwMkRYdL2bECc1v655jiNKsuHrlG3tdbom9lw2zKn5LrW0mGRFkrWJpa1UzTHZfuRUEwJuJrVdAlkswYKI7O3G1Rtseazi/Yna4px3ZO4/KPWWAjdKKBsn58o0cK23U/vtUZdRnwahxA/FtTRrVkxv4MCXrLUo8FoaGzYF3QCVjFPBVaC1pXWwFrgNrwaIHiyB9cEYd77Eh9OTuhSv6tjfP0VzGFi//3Me4iZkmu+O4kmssWPEbyMVl9H54w0XCeOlwfY4LvR9VSC/QRvfkU7lC9QhLx2sR2h3YYqETURtDGdDhMl5O20XGbKrrUAfgRto63d+45kCe7rI8EranqLa6mQcfKksH7S9Sg/1jNnvtwAENGbfyyoFu59XfV2HCtuDsRwelgofdSzQ8vvqslpcBT0rKOrnzD1Kc3A7AWFjxYQYx4hDNbVrGRkAmcpiIYV2Mq9efKSnKOWo6t0STs5jYD4+OGjtKAvM4tOK70bx2BOPDyxYIHr9OXXEydqdHiQfrZH4oK84UJfx+S7/4WctMzN7pqXuu3aBGUWe7JFj0EVWJwGxDEgc6Uz1i+3HO/9w1e9tzHUYhUzCmSnjVDMMoNDGAhZK/cNqCXsXAACvBHw/20ErX2I4nKXiS+kUUkbRbJj2JyvQPzeUIZSU8NZKi0pLYeRA4bCTCmi/aAbzCgGAn3KS65CiLxmfccQR2iWAC97NkrLNPXTdxcWusQEnZI0Ikt9kb9jk7KEglmNFa7jVB1zW9ENoQ3MZMlGvQAwu1y9KLDFoGrYa36YhWgQYuk+c8yRe1RDy5WH43Es2SyH/H611XXBwkrUPSG6Ye/546eK/Z3/rL+smUmxVh1beOsfThBbI5GjwgNFuQ==|920
+}//MzrTp4JWG/RvwSi1Zhnqv02TZynC92MFy8OxI4h2+XxPR3os0YfkWMvMjkjgH5K50nmxIwNdRtLCdkoBFDkkrwDjj2xqJpYH3cWWjSiqRZjxoyogXZeGgU1dgzKMhkrKnNQ6ZlzDg1vAcjxhB0uEpM6hlAiva5MgyiyYN6lGcFWxGiAIJN/tWtDBYLZ7aZT8gV0n7YdIYAxMRuA86qHTRj6HO2lCrTkrLxOkj43BBZfdMfTe0DBYod/OagbFeYdr32q/xHU4z7KeehS19URomYjQSmywtcso2So34gIUqcQic88B/amvMrNuuM6G8YHfVNLWgG0Wa1i4IXtDvvD8nZIM6g7UAEc3vgW1GmYr/cv1aVYOFjJ/FiRuhzJ9H0d7Ve3XsS9EABjdXYdwYQavN3QjN2YFOJCjFrLUdH/d5uFQZRfilbaNp7HT9IcwST7w9d1/Y/bxbAwH78K2s9h4wZLwmEu0Q9rxL9vzPKWuAmhzECnjvjcBHYBOZHAv3pFrTxLZUal2Dr1fjT5HICBtbbm0uawJVFm9FrNgzGzbMgSqKsE0SRlBiEeH5U3LdSviHuTXE/4505YwLQFLnR2tuNZAz8LwbbTH22cbFYhMALF5LNXzFd3Gz7aJZTuc+GNon57PFfGKAkkaWu6EpfcrSSA4VmpCnvkjF444spBZHfP1IDtcdGnW5KfgFBfc7mo53JpCQj9NiBXazg5LXnmwkbpNRSen6C2Qhv4y9G2iz8o+t/kS3N8QmIn92AL5FSFgoHhwxhhC5/dmH7sirNw+svzYq+71dCKv0rN5AW7esEA2gYEiVpjbQ+KFUP2TMOF5EnXTIr4Pwxe+ip7ZCMg5LGnuetGYlFDQHGzhJ2S2oWjo4D74IY5UVAH1ZRZ0M0Vo5bolTnLgmEpXGU1ZBz5Q1w==|920
