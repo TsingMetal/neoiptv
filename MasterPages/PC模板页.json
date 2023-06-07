@@ -44,13 +44,7 @@
       "17": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
-          "Mode": 2,
-          "MinLength": {
-            "Unit": 1
-          },
-          "MaxLength": {
-            "Value": 1.0
-          }
+          "Mode": 1
         }
       },
       "25": {
@@ -119,14 +113,7 @@
       },
       "19": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "Mode": 2,
-          "MinLength": {
-            "Unit": 1
-          },
-          "MaxLength": {
-            "Value": 1.0
-          }
+          "DesignLengthInPixel": 20.0
         }
       },
       "21": {
@@ -142,6 +129,18 @@
       "25": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
         }
       },
       "63": {
@@ -198,7 +197,8 @@
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
-              "FGC_Anonymous"
+              "Administrator",
+              "阅卷老师"
             ],
             "SubItems": [
               {
@@ -260,7 +260,8 @@
               }
             ],
             "CanVisitRoleList": [
-              "FGC_Anonymous"
+              "Administrator",
+              "客服老师"
             ]
           },
           {
@@ -278,7 +279,9 @@
               }
             ],
             "CanVisitRoleList": [
-              "FGC_Anonymous"
+              "Administrator",
+              "题库管理员",
+              "阅卷老师"
             ]
           },
           {
@@ -290,7 +293,8 @@
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
-              "FGC_Anonymous"
+              "Administrator",
+              "客服老师"
             ],
             "SubItems": [
               {
@@ -320,7 +324,7 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "ExamToRevise"
+                    "PageName": "CheckExamNo"
                   }
                 ],
                 "CanVisitRoleList": [
@@ -386,7 +390,8 @@
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
-              "FGC_Anonymous"
+              "Administrator",
+              "阅卷老师"
             ],
             "SubItems": [
               {
@@ -396,6 +401,12 @@
                 "SelectedIconColorUseItemColor": true,
                 "IconColorUseItemColor": true,
                 "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "修改未阅卷明细"
+                  }
+                ],
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
@@ -407,6 +418,12 @@
                 "SelectedIconColorUseItemColor": true,
                 "IconColorUseItemColor": true,
                 "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "查看已阅卷明细"
+                  }
+                ],
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
@@ -422,7 +439,8 @@
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
-              "FGC_Anonymous"
+              "Administrator",
+              "阅卷老师"
             ],
             "SubItems": [
               {
@@ -439,7 +457,7 @@
                   }
                 ],
                 "CanVisitRoleList": [
-                  "FGC_Anonymous"
+                  "阅卷老师"
                 ]
               },
               {
@@ -456,7 +474,7 @@
                   }
                 ],
                 "CanVisitRoleList": [
-                  "FGC_Anonymous"
+                  "Administrator"
                 ]
               }
             ]
@@ -539,7 +557,7 @@
                     ]
                   }
                 ],
-                "ID": "304a927c-34b7-4a72-990a-51cd8c88ccf1"
+                "ID": "d057a57e-00e9-4ffa-84e3-47ea3618f39a"
               }
             ]
           }
@@ -3086,4 +3104,4 @@
       "Formula": "PC模板页!$Z$36"
     }
   ]
-}//KeSlYZy0lrjhdAq1NB68AyFx2vaWYTC/BHMJb+Ycmd4uR9/szIOwUZP18Di/7bAvLKaHbrhzyL/45bOHb3XDtQMWL93N+JVjv+VcwXokl1w9ugTyKeY+xohnm1mOV2xUUoLTFfG7GY6peBNYIiPjV3MHvn4dNLo41YHXmBVD2CbaIZC/wfA2HkWl0pdP7+4xIUTM7Q5m3tsCSnD0b9fCTZcy50qq5dg6299nwQelw4SLYE9KBaC0J+8DF4BOr/I8xasacN6u7TulaWnAM9pz9QyOajpeovwRxm3lH+WT/QTG8KLmvzdhFqXl9PIX4K8iT9SI7KOaNbaaj5rfVnDZ6+PLTl4jOzM3h0K9HVkSznd4FE3I8Ozs0ANgL8BriEz77mQfEs0Fr33ilgE1s3KBel6XkprwuBmEv3UNffa4E3NXpza7Tg58e7wLytjmU6xpIvrb8CUA2esUHiE5eAkCSd3bWbKh6n8jWltM+qxmEK97BJRQg+HvZYV4Xs30fryz1VJbsAU9Tp42rqgT7PyDGoNngtYS55iHqCDP5Uzk6EQSzee2QcMa0BJrRDhaTsOQlE0Ikv5Ti1CXZ26uxR2PkIKR/4fBk6Y++qbsONNqUlw1RKo3g+z1ea9NISlAWZ1mst0IYdSupCKLUwUpBSweRZfhxiE42ET9uKmjmmWqI/3aRS7hzIby87sBcakjhPXD8jPPQdm9+obMx99yOwL2+mcbBe/8xUyjpM5a9D6p9CPhvp1KRHDAcRuGGyqPGKsgZSUbtD18KAC0WpRsfB6De9+flsez4ZLDJ/Tpr86N4bamAC1Y15U0GYo3ifl1KqLnjYrR6KbP16z+UZ83pbbYeekVj5sPi/NQ62xEJEUxAGGKEGDbXaOmnwyAfIES20MsYvDuv7cvzlo8V6Hs0kZIbA==|920
+}//1GIvbnNSaU+nbiCNd9YLZZJ44awZdPRmuL/jfFdtois4rJT/0jcN+0KA0JOlFKV5soxobaBVjPEAjqs5r4MlJPBxwE1xqMiNTJLeGEIuPOjEz94+i5hsMc7kxyMPoHKrxek9i+YRJxJiw9/m5YU/F8nCcVR1tPbI+9h+AuDgU4sqnbwci54rT9tvnUuUd7K2BJbNOwVNhFeMqEhJVfojqpvTPVXKEGY71wMg6bZalcXs2fdFjrm9UvPVWdjywxq6nluyM1Nbd/JTwVRSFvr+4eVqIk0qVI6C/bYuf37IC4P4lacFTD1B9bLgFTmn6GloXsH+ggo40xxx0YRleXNYK/grHPgSPxtHOnm367fE35JKxnOtBU/TeD9KPz850ILOU73riS1ZvIFPpD3QGXIBlaIWZcCldOsx1aIt3WYD0DD85w/+gYUZIJ1TkGWyNSwD+LP2liB8jzlqcARYuTHjqEp1QN0IEqOV/m4G5SPTPktJ871wD6j/oNEze1aRx37uphq14XOYaqFwEdIMyxM8in9+sNGJCWVKdix8JHOCdiR/EhBQNO25EqTM8hRfv+EH4tQnm77fHNieC7JWMsn8Kkp3EFAJcHvOYa/nV3DhTW/4k7Q4JczMkkABSuxniKXBPqp0CLDgZmbPkl1n0hE28rEMSkdh0ogv66GgLhiCtFshjAjuI1fQDVNllsLWlRMJfBGNVqnp2hqrugkPsMUun2YLSsL2SRdoqx9s4OXjI3LLLjC++K/VGSIr0GRbRJpPCDOzGtABRQFjmBgxFc8Ry+1hOSWnW4qfluKUybrpsAiF+s5NLxQ4CGsFEuiB56R6UjKpwMDr5xekoAy8kbk/9VLS2ddJBKT/Q9ncfK1xn9dQmjTbNADZ5ojF3b8PCdV6MBxIVd6jVxs2tzvgWzLWgg==|920

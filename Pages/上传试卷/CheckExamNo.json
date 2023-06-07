@@ -364,7 +364,7 @@
                 "SerializeProperty": "=CheckExamNo!B2"
               }
             },
-            "ID": "9894480ea3d640468fad1997d1a341e4"
+            "ID": "571b3ebdb99043458a8a33851c72d9ef"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -395,7 +395,7 @@
                     }
                   }
                 ],
-                "ID": "71ad722c-827d-406f-94a0-1ad5433a3f59"
+                "ID": "8df6585c-030b-4039-9718-4314fc244a06"
               },
               {
                 "CommandList": [
@@ -411,7 +411,7 @@
                     }
                   }
                 ],
-                "ID": "32c7807f-559a-466f-9918-01ddbfb62b2c"
+                "ID": "a5cc29d2-b3b2-441d-a66b-85a7a0de3b2c"
               }
             ]
           }
@@ -436,7 +436,7 @@
               },
               "Value": "?"
             },
-            "ID": "46df0caf79e7479fbc56a760ad0b7fa3"
+            "ID": "f6773794a55940029e90d94cb8a8edac"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -467,7 +467,7 @@
                     }
                   }
                 ],
-                "ID": "916387e6-5c1c-4e9c-81d1-21ba32ce0b7c"
+                "ID": "1143af47-03f8-4da0-95d1-639a29402787"
               },
               {
                 "CommandList": [
@@ -483,7 +483,7 @@
                     }
                   }
                 ],
-                "ID": "f5c71b70-e7d2-4c3a-bca7-20909f96306f"
+                "ID": "cfa65a22-378e-4c83-8132-4f484c3ea3a9"
               }
             ]
           }
@@ -827,6 +827,7 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "PC模板页",
+    "Title": "异常准考证号查看",
     "PageLoadedCommandList": [
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -857,7 +858,7 @@
                 }
               }
             ],
-            "ID": "06f76664-742c-4a46-b7fb-28f03729bd4c"
+            "ID": "b4f3c646-9818-43f0-b69d-bf0570dded7c"
           }
         ]
       }
@@ -885,4 +886,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//4HanQZnynLXL327Okq0NpJQlkvDBjNdBV6r59HdxhseaokJYQkfABGexc7hu+07HuFGVSA0FwkAo5a9cK0b+fg/Ljtv2/1uDjf1+2AaZL5La30AkHOXvgvy3WBXZzKQpGHBoZSstVZWwl8jgV3c4axgQlGtXT///QMBNMsi0MpUvbt0x90ZriqLikJpGmXKkYaSmvIdfnJzxGtkotGM4JAoe0yT7cK2WllqrQZkjkwmaiyM/ofPgzHqssgM1kt8yhTOf5VlCC/GHka2lChNmPEpqKn61TcpNBIiOURaGEe/RtlWBbaVKUdSQHn/h8f/cYSDyReGcRgW6ZKt1wZ8NWT4o/E869RXveomObPtzFmmuqiF9Tpd3t3g0zLvb8F9tmTzVEhcnKGAG9jryBfQsi4O0F/FV/7RfnhF2U3Urr9vFIkHMZDwVk7a2W/gOPBhr0OlEZIMvBKYlHGkxUW5yS2vTmnW28yAXiZ7dwvyQOWpt0YVjVrCHQrfd7A5oElYD/6fPoM5epra42lcrI9stZN0NP+/51IDYEcWXGdcV/5CdVm7tjfTXkyF8GS/8AQoVipmmdMiPuyEBOBPCAJVF0HfYYSQmdEo93qLDMnyJwvEP+5ePd/r50TwI/Blqs8CPydBmdvnlkNr7cphRD7TL9nQkViczBVHI1nm8pr9ev8xUbIo4RyUlHcCQLAtfnGIiAHWVpvucnkGehHsIVUGLEdSENkQ6/z0aoYbWSjqOzCNLEfxGKn7JcF3HqQyXXjl5fsxg3Xo45nywMUWb4a8BhiL9ObOUNFJn3fVw7Rw29daOdFI9vQD/lGwl0a2TVzQ/jiCjc0ku9w4Qqz3f161DrmjZxk8KCsg1kKJ4ghxIaV6ND/2lgAhgEcjXGtXM5366YR01DMeaoWafXR8BtnSf9A==|920
+}//jo3pTB9q+mawvQxkF4LgeI3fMFinefDlhDrOpixFCEmWfUAS8O+Y8+oJ7UUT4jRMP3uH7YqVxL3vqZ3GTGhXvfl5b2MvwRnZVcsm/nTxsV/OlBMHyR5XWAkwgJarl/WS0w52hS+Lp2Aq9IUUrFIhEMt+sNG/poFQOqeKXc11h4e3i/1Wj8De2P6Fk0RJ5BNTjrcjPjC8BKzJmqGtR9rnqZVjEsU6Ou1zYdZ5d/KjcvJR8x96JT9LAGX66bULJ3j2wer+QWNFx4pEXS7cn2U6B10lvUPRIlVwPQw2ju83uw/lGMF0aYMR7/1R341yV6x+NjCAWuCtvAevElxLIW8laWZlvGqPgRJ/CxMyXng+Q8+Sqd40iGwLCBKuj6BTh+W/JYF53m7HX5aY7/7YnM5ZTZADPnHQ5d/mBi/H7jyfPi58tExZ/+jrQP4772w7cD27gZ5v2XdO2igHAxkIegtMMAjXVpJcxYDcLf1wqCTu8CVmozr08K6BmY3JYkD+62hAD/+Zn+REGbz6yGfRCPAwtbITS3g/YpmJ3NurQUA412Rgm6mGkizNw/XqRk7OhZCWvuekuGxv/uNPUJtpfbiff2jWI6tIZSIQ1Fi+cShIBAFRlvWrVLVe4++YZLPC9ESSK3OE+LwnCKgpXT52ijaJdFZpuPaah5RUE+6e1raXEgOKwNuFMfboPpNt60KDbwFfGslnZVoEPY0Yebu9l4XtIrfpE6Sw0pPEXZJgIqqDGhvUnLPLTgSB8/iOvmCRYJxv4FS5/i6iRVNpcXeEu6ZjxFI+ILYNjVUHstEo0wyonGtdDaIJhlkJ7Njv69VuerPVjgrHeK9ypGt86rqQFtvFX5aXCxXZAIggu7EzIDgW7eOn6qMtYAaT5m9zvGM5bAmgtXl7enHvrzUMdmHvLBz2dQ==|920
