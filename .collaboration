@@ -159,15 +159,42 @@
   },
   {
     "ModuleName": "PCPage/小测上传列表",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-07T17:13:12.5954445+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\UploadExam\\小测上传列表.json"
+    ]
   },
   {
     "ModuleName": "PCPage/请批量选择小测题卡进行上传",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-07T17:13:12.6091426+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\UploadExam\\请批量选择小测题卡进行上传.json"
+    ]
   },
   {
     "ModuleName": "PCPage/请批量选择4题试卷进行上传-1",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-07T17:13:12.6090197+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\UploadExam\\请批量选择4题试卷进行上传-1.json"
+    ]
   },
   {
     "ModuleName": "Pages/题库管理",
@@ -367,19 +394,55 @@
   },
   {
     "ModuleName": "PCPage/4题试卷上传列表_bak",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-07T17:13:12.5954075+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\UploadExam\\4题试卷上传列表_bak.json"
+    ]
   },
   {
     "ModuleName": "Pages/UploadExam",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-07T17:13:12.5952193+08:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\UploadExam"
+    ]
   },
   {
     "ModuleName": "PCPage/CheckExamNo",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-07T17:13:12.6088154+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\UploadExam\\CheckExamNo.json"
+    ]
   },
   {
     "ModuleName": "PCPage/Exam4Upload",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-07T17:13:12.6091069+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\UploadExam\\Exam4Upload.json"
+    ]
   },
   {
     "ModuleName": "PCPage/QRCode",
@@ -419,7 +482,16 @@
   },
   {
     "ModuleName": "PCPage/Exam4List",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-07T17:13:12.5953649+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\UploadExam\\Exam4List.json"
+    ]
   },
   {
     "ModuleName": "PCPage/RecircleBin",
@@ -461,5 +533,15 @@
   {
     "ModuleName": "MasterPCPage/平板模板页",
     "ModuleType": 3
+  },
+  {
+    "ModuleName": "Pages/上传试卷",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-07T17:13:12.5952254+08:00",
+    "ModuleType": 6
   }
 ]
