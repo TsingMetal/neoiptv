@@ -554,5 +554,15 @@
     "LockDateTime": "2023-06-08T09:45:06.1624169+08:00",
     "ModuleType": 23,
     "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "PCPage/测试",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-08T09:47:30.9847623+08:00",
+    "ModuleType": 1
   }
 ]
