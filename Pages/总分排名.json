@@ -1,0 +1,240 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 51
+  },
+  "AttachInfos": {
+    "2,3": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "总分排名视图",
+        "RowIndex": 2,
+        "ColumnIndex": 3,
+        "RowCount": 20,
+        "ColumnCount": 48,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,3": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "学员姓名",
+        "GUID": "d97c2840-4eea-43b6-9a72-b5fc50debdf5"
+      }
+    },
+    "3,6": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "学员班级",
+        "GUID": "d9f01702-d39d-40be-a329-a30f14e218a6"
+      }
+    },
+    "3,11": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "准考证号",
+        "GUID": "8cca07a0-f7ac-45e5-8fd3-a9d537a1117c"
+      }
+    },
+    "3,17": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "考试名称",
+        "GUID": "d08843f0-8219-4b21-b6a2-69600809f336"
+      }
+    },
+    "3,27": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "批改时间",
+        "GUID": "168f3ea4-717d-47fc-81f6-9b70475d4bf0"
+      }
+    },
+    "3,32": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "得分",
+        "GUID": "e8b95e67-f550-4bd1-90ef-faf68577ef38"
+      }
+    },
+    "3,35": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "全体考试人数",
+        "GUID": "7d49bc37-7142-41e5-9f78-be778488a427"
+      }
+    },
+    "3,39": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "全体排名",
+        "GUID": "33480cf4-6808-4e8f-bdd7-eb22a17dfaf5"
+      }
+    },
+    "3,43": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "班级考试人数",
+        "GUID": "3442d2cb-a504-4275-9f46-4d49071ffbb9"
+      }
+    },
+    "3,47": {
+      "BindingInfo": {
+        "TableName": "总分排名视图",
+        "ColumnName": "班级排名",
+        "GUID": "76c8b121-a314-4239-8093-536e2635ea8e"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "yyyy/MM/dd"
+      ]
+    },
+    "CellStyles": {
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 1,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 1,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 1,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 1,
+      "2,33": 0,
+      "2,34": 0,
+      "2,35": 2,
+      "2,39": 2,
+      "2,43": 2,
+      "2,47": 2,
+      "3,11": 2,
+      "3,17": 2,
+      "3,27": 3,
+      "3,32": 2,
+      "3,35": 2,
+      "3,39": 2,
+      "3,43": 2,
+      "3,47": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,3,1,3",
+    "3,6,1,5",
+    "3,11,1,6",
+    "3,17,1,10",
+    "3,27,1,5",
+    "4,3,18,48",
+    "2,3,1,3",
+    "2,6,1,5",
+    "2,11,1,6",
+    "2,17,1,10",
+    "2,27,1,5",
+    "2,32,1,3",
+    "3,32,1,3",
+    "2,35,1,4",
+    "3,35,1,4",
+    "2,39,1,4",
+    "3,39,1,4",
+    "2,43,1,4",
+    "3,43,1,4",
+    "2,47,1,4",
+    "3,47,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//9J8vcd/Goi0BDbjclxNgyEWBXX1XGMtk5D9iNEz8M/y/jtM+mGA28LyLbUFgnWHYc/u/P93ssnjjcAZl5hvyn/e3C92d215AhqlRi18TF2wEVrEqGk7vakO090u82fo2k8b67IxALYJDaaba5G15W+ro5ZLD3JZ/cwBtLPVAATJrUcSunbWVRyxBWJ6CSFqfbb4Ge09f7qY0E9SOchzg4/xYT8vzpnU0C3t0tLVykUykS6tppNldHdvxl2Jq32HEBI630lTwffOz6VxLksaV92QDKak9OgGkZEXffHV6zOPIWbOgd7IM6RIEfM9oPL3U3orwtbN0rC81bbjDLhC9lU3BxQgrYaPSFV1EkTLalroB/FPW/b68mFjm2Oav3yI1THfcJnwnHN1Zou+n1WHmNkb89Y6tJH0kk3fcBkARfDihrD1IKzJILWUiM5RhoWaQXScQzVmk/n7OnKrj9QpSbz40Ur6UWiCIOE1olyDpVR7EpyMFnFUyPRo+y7MQ76KKuot0DQoO4PlvFf6DjQOBUJMt4GSYifRHw4Xw5SN6ASrN28dJ81cxIq86sDMAdW54JPG0IYPAqt4Hve5qECMZ4VMixGZBt+moD/7RUKqgS2QVFS5PrSxRWDW+zDHnNcsCqeAHnRW2GczPtZZwGIsJIuBBw8bes1LDVZgS5v0BuxafCybtVEJdT4UQbTN69lrMD0i/zpwoE2/BHkIYxZMezfM+c3quFC/EpHRJL2jifLhQT2bhRyllU6vysFT5rbT5TYvdCS+zGC1I70Vw/vNBGLrumfSzru7lGYVaSMlhVgCj7AY/uSTLwMgoXlGaxMnQPtwwOkPhsBq2oWpqbssU/N+4lDjYtQoj63qv6P2mfDnQEYQYI/O7wj7a1IE1rrALZbIrT19Da07bf8qhqtIY5A==|920
