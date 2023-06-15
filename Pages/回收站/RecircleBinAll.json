@@ -13,10 +13,105 @@
       },
       "3": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 30.0
         }
       },
       "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "23": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
@@ -40,16 +135,26 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
+      },
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
       }
     },
-    "Count": 29
+    "Count": 29,
+    "DefaultSize": 30.0
   },
   "Cols": {
     "RowColumnAttachedInfos": {
       "26": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 20.0
         }
       },
       "27": {
@@ -64,11 +169,11 @@
       }
     },
     "InLogicalVisibleIndexes": [
-      26,
-      29,
-      30,
       31,
       32,
+      33,
+      34,
+      35,
       53,
       54,
       55,
@@ -86,11 +191,11 @@
     "1,43": "还原",
     "1,48": "彻底删除",
     "13,53": "暂无数据",
-    "27,1": 100,
-    "27,3": "条/页"
+    "22,3": 100,
+    "22,5": "条/页"
   },
   "Formulas": {
-    "3,53": "COUNTA(E5)"
+    "3,53": "COUNTA(F5)"
   },
   "AttachInfos": {
     "0,53": {
@@ -200,7 +305,7 @@
               ],
               "RelationType": 1
             },
-            "ID": "3cdc35ebd66947af96f4bcd4f7f4119d"
+            "ID": "da7aa02ffbb94048a1466cad8b3610d6"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -231,7 +336,7 @@
                     }
                   }
                 ],
-                "ID": "1cc03047-3dab-45c7-9deb-d626c7adaccb"
+                "ID": "7927fe61-fcbd-47e0-927f-5c06374cc373"
               },
               {
                 "CommandList": [
@@ -247,7 +352,7 @@
                     }
                   }
                 ],
-                "ID": "2634c409-84e4-49c6-b4b3-2955fc6b8031"
+                "ID": "5f9a8307-d2c9-492e-bb47-a834ad1dd9c8"
               }
             ]
           }
@@ -303,7 +408,7 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "0609fee4-efc3-4e18-87a4-f2dca73de6a1"
+                "ID": "439a7972-d381-4ae3-8a61-53ee678a1af0"
               },
               {
                 "CommandList": [
@@ -315,7 +420,7 @@
                       "SerializeProperty": "=\"已选择\"&RecircleBinAll!选择行个数&\"条数据\""
                     },
                     "Type": "info",
-                    "ConfirmButtonText": "确定还原？",
+                    "ConfirmButtonText": "确认还原？",
                     "ShowCancelButton": true,
                     "CancelButtonText": "取消",
                     "DialogResult": "确认结果",
@@ -349,7 +454,7 @@
                                 "BindingInfo": {
                                   "TableName": "阅卷表",
                                   "ColumnName": "状态",
-                                  "GUID": "6891005a-6cfa-43d9-9075-ebac4bdca530"
+                                  "GUID": "78bd653d-3af6-49de-8343-842d37d5a4c7"
                                 },
                                 "Value": "1"
                               }
@@ -405,12 +510,12 @@
                             }
                           }
                         ],
-                        "ID": "474691c6-5143-4ffd-b6cf-04453142035d"
+                        "ID": "c3fcd271-dd31-443a-956a-888f2de049df"
                       }
                     ]
                   }
                 ],
-                "ID": "25dcb14c-bf23-4559-968e-c4b3026e04ce"
+                "ID": "b12778a3-2daa-477a-b3d8-7c57e07a143b"
               }
             ]
           }
@@ -437,22 +542,22 @@
         "TemplateKey": "_RS_Error1"
       }
     },
-    "3,1": {
+    "3,2": {
       "ListViewInfo": {
         "Name": "表格1",
         "TableName": "阅卷表",
         "RowIndex": 3,
-        "ColumnIndex": 1,
-        "RowCount": 21,
-        "ColumnCount": 51,
+        "ColumnIndex": 2,
+        "RowCount": 18,
+        "ColumnCount": 50,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "状态",
-            "GUID": "34b20eba-d159-4860-aeba-9cbdb2da0fc4"
+            "GUID": "09457a64-ae0c-4f38-8004-0c0d7e7cab4b"
           },
-          "Value": "1"
+          "Value": "0"
         },
         "TopCondition": null,
         "TableLoadOnDemandInfo": {
@@ -460,114 +565,122 @@
         },
         "ListViewStyleName": "样式1",
         "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderCheckBoxVisible": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "ColumnOperation": 2
       }
     },
-    "4,1": {
+    "4,3": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "学员姓名",
-        "GUID": "46645616-8502-4303-a2e2-2ac18c37fadd"
+        "GUID": "3728fcf8-5406-498f-8f05-b8b29e17720a"
       }
     },
-    "4,4": {
+    "4,5": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "准考证号",
-        "GUID": "0709eb59-ee6d-421e-b06c-9db0a4ec4dab"
+        "GUID": "2af13a59-7f5a-44bd-80a6-38defe233c0c"
       }
     },
-    "4,8": {
+    "4,9": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "学员班级",
-        "GUID": "4dc01bfb-157b-4be0-bf3a-b931e0129522"
+        "GUID": "41310f2d-65b7-4a64-be5f-0f673f297f53"
       }
     },
-    "4,12": {
+    "4,13": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "题号",
-        "GUID": "1e55d673-c4c6-441e-8a2c-b1428c11c817"
+        "GUID": "d5bc5508-243f-4568-b638-ca58da774729"
       }
     },
-    "4,14": {
+    "4,15": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "满分",
-        "GUID": "f01252ed-1d34-4e06-8fe6-15cdf1fce408"
+        "GUID": "7c15fdb0-0d5b-4f4d-90a6-526a01bd5f7c"
       }
     },
-    "4,16": {
+    "4,17": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "试卷",
-        "GUID": "5ceabe1a-6807-402b-a64d-05982c616ef5"
+        "GUID": "22577c35-b486-4c1f-8318-aa47dc065a51"
       }
     },
-    "4,18": {
+    "4,19": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "得分",
-        "GUID": "d89ca96b-4cf2-48f3-92fb-e02e15e530a1"
+        "GUID": "e2a1fd21-821c-4617-9225-d52a86225588"
       }
     },
-    "4,20": {
+    "4,21": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "准考证图片",
-        "GUID": "7ef88665-8a8a-4dd2-81a9-4e583e7e7be0"
+        "GUID": "254ce5eb-179e-4c0f-b00c-a85210e87591"
       }
     },
-    "4,23": {
+    "4,24": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "百分制得分",
-        "GUID": "2524c5d6-5bfc-4e4d-b8b8-764afd8aef21"
+        "GUID": "c333e8ee-55bc-4c96-ad68-96f8f9bb59d0"
       }
     },
-    "4,25": {
+    "4,26": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "问题",
-        "GUID": "6dd30c0b-5391-4ca1-81d7-d568a95f0ab9"
+        "GUID": "643b0bc2-5169-46f9-8291-9b3c030a50b9"
       }
     },
-    "4,30": {
+    "4,31": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "ID",
+        "GUID": "96596840-63c6-4718-874f-9eee15a3e44f"
+      }
+    },
+    "4,32": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "优点",
-        "GUID": "b067ec98-7701-4c3a-aa96-afda64f983d6"
+        "GUID": "be377f85-fbee-4b44-a225-e42481b41f98"
       }
     },
-    "4,35": {
+    "4,36": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "自定义评语",
-        "GUID": "df4840f5-d30b-429d-b7af-33482c4f803f"
+        "GUID": "550ff2a7-2a4a-4e6f-986a-27c4dca2cb38"
       }
     },
-    "4,40": {
+    "4,41": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "批改时间",
-        "GUID": "e2e6c7e4-e60f-4994-a5d4-01654d20b5ac"
+        "GUID": "e29cf4d4-14af-45c6-afeb-3cc90c89954c"
       }
     },
-    "4,44": {
+    "4,45": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "FGC_CreateDate",
-        "GUID": "2216fbda-62b7-41f9-813a-27469725ac24"
+        "GUID": "2a417dc3-ce0f-4ffd-9935-418c3a945637"
       }
     },
-    "4,48": {
+    "4,49": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "阅卷老师",
-        "GUID": "4d2b1203-1517-4016-a8c1-31135aa826a1"
+        "GUID": "c3f75cd8-f9c1-4e23-8537-243ac39ebf99"
       }
     },
     "4,53": {
@@ -581,15 +694,7 @@
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
       }
     },
-    "25,1": {
-      "CellType": {
-        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
-        "HeaderTemplate": "已选择{{COUNT}}条数据",
-        "HeaderTemplateForNoSelection": "",
-        "ListViewName": "表格1"
-      }
-    },
-    "27,20": {
+    "22,18": {
       "CellType": {
         "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
         "ListviewName": "表格1",
@@ -658,16 +763,19 @@
         "HorizontalAlignment": 4
       },
       {
+        "FontFamily": 1,
         "FontSize": 12.0,
         "Foreground": 5,
         "HorizontalAlignment": 6
       },
       {
+        "FontFamily": 1,
         "FontSize": 12.0,
         "Foreground": 5,
         "HorizontalAlignment": 7
       },
       {
+        "FontFamily": 1,
         "FontSize": 12.0
       },
       {
@@ -694,21 +802,93 @@
       "1,43": 1,
       "1,44": 1,
       "1,45": 1,
+      "3,3": 1,
+      "4,3": 1,
+      "4,32": 1,
       "7,53": 2,
       "7,54": 1,
       "7,55": 1,
       "13,53": 3,
+      "22,2": 1,
+      "22,3": 4,
+      "22,4": 1,
+      "22,5": 5,
+      "22,6": 6,
+      "22,7": 1,
+      "22,8": 1,
+      "22,9": 1,
+      "22,10": 1,
+      "22,11": 1,
+      "22,12": 1,
+      "22,13": 1,
+      "22,14": 1,
+      "22,15": 1,
+      "22,16": 1,
+      "22,17": 1,
+      "22,18": 1,
+      "22,19": 1,
+      "22,20": 1,
+      "22,21": 1,
+      "22,22": 1,
+      "22,23": 1,
+      "22,24": 1,
+      "22,25": 1,
+      "22,26": 1,
+      "22,27": 1,
+      "22,28": 1,
+      "22,29": 1,
+      "22,30": 1,
+      "22,31": 1,
+      "22,32": 1,
+      "22,33": 1,
+      "22,34": 1,
+      "22,35": 1,
+      "22,36": 1,
+      "22,37": 1,
+      "22,38": 1,
+      "22,39": 1,
+      "22,40": 1,
+      "22,41": 1,
+      "22,42": 1,
+      "23,3": 1,
+      "23,4": 1,
+      "23,5": 1,
+      "23,6": 1,
+      "23,7": 1,
+      "23,8": 1,
+      "23,9": 1,
+      "23,10": 1,
+      "23,11": 1,
+      "23,12": 1,
+      "23,13": 1,
+      "23,14": 1,
+      "23,15": 1,
+      "23,16": 1,
+      "23,17": 1,
+      "23,18": 1,
+      "23,19": 1,
+      "23,20": 1,
+      "23,21": 1,
+      "23,22": 1,
+      "23,23": 1,
+      "23,24": 1,
+      "23,25": 1,
+      "23,26": 1,
+      "23,27": 1,
+      "23,28": 1,
+      "23,29": 1,
+      "23,30": 1,
+      "23,31": 1,
+      "23,32": 1,
+      "23,33": 1,
+      "23,34": 1,
+      "23,35": 1,
+      "23,36": 1,
+      "23,37": 1,
+      "23,38": 1,
+      "23,39": 1,
       "26,53": 1,
       "26,54": 1,
-      "27,1": 4,
-      "27,3": 5,
-      "27,4": 6,
-      "27,15": 1,
-      "27,16": 1,
-      "27,17": 1,
-      "27,18": 1,
-      "27,19": 1,
-      "27,20": 1,
       "27,57": 7,
       "28,57": 7
     },
@@ -721,44 +901,43 @@
     "3,53,1,9",
     "13,53,10,9",
     "1,16,1,3",
-    "25,1,1,5",
     "4,53,3,9",
     "0,53,3,9",
-    "27,1,1,2",
     "1,43,1,3",
     "1,48,1,3",
-    "5,1,19,51",
-    "27,20,2,22",
-    "3,1,1,3",
-    "4,1,1,3",
-    "3,4,1,4",
-    "4,4,1,4",
-    "3,8,1,4",
-    "4,8,1,4",
-    "3,12,1,2",
-    "4,12,1,2",
-    "3,48,1,4",
-    "4,48,1,4",
-    "3,44,1,4",
-    "4,44,1,4",
-    "3,40,1,4",
-    "4,40,1,4",
-    "3,35,1,5",
-    "4,35,1,5",
-    "3,30,1,5",
-    "4,30,1,5",
-    "3,25,1,5",
-    "4,25,1,5",
-    "3,23,1,2",
-    "4,23,1,2",
-    "3,20,1,3",
-    "4,20,1,3",
-    "3,18,1,2",
-    "4,18,1,2",
-    "3,16,1,2",
-    "4,16,1,2",
-    "3,14,1,2",
-    "4,14,1,2"
+    "4,3,1,2",
+    "4,5,1,4",
+    "4,9,1,4",
+    "4,13,1,2",
+    "4,15,1,2",
+    "4,17,1,2",
+    "4,19,1,2",
+    "4,21,1,3",
+    "4,24,1,2",
+    "4,26,1,5",
+    "4,32,1,4",
+    "4,36,1,5",
+    "4,41,1,4",
+    "4,45,1,4",
+    "4,49,1,3",
+    "5,2,16,50",
+    "22,3,1,2",
+    "22,18,2,22",
+    "3,3,1,2",
+    "3,5,1,4",
+    "3,9,1,4",
+    "3,13,1,2",
+    "3,15,1,2",
+    "3,17,1,2",
+    "3,19,1,2",
+    "3,21,1,3",
+    "3,24,1,2",
+    "3,26,1,5",
+    "3,32,1,4",
+    "3,36,1,5",
+    "3,41,1,4",
+    "3,45,1,4",
+    "3,49,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -794,7 +973,7 @@
                 }
               }
             ],
-            "ID": "61db1a10-c8a1-44ef-911d-f372800a2aff"
+            "ID": "13f09d25-7702-44fb-8359-273f6c056a68"
           }
         ]
       }
@@ -822,4 +1001,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//drUz8FaVBLOs/+dyosoq4VjfV/CxqEM12/ZI2Unt7qmrgihZTCL9hZF8ZBZEe1waXAWlthgb/mOjhds9wwnHpEJ8n5BA5uPyCF0kJEXZ9rZfcLdPnc0z4q5gT4ayu0fJ9gN+SxRo4V8eLWTXB2EqU0gVJGXkPVJoy+wqtE3wSe5LBwBHhJxgMRlQIMU+RqC0nXVdEKcQ9JvVFRbdyO4llRCT/yIvNqZFXsrF83LTGClvbMcmm19prN2lljoWTOve68ON5UySL+wDUkolPUYSgqNLyJFtBx0XJ0WmTXbjfXbstQIY1caS0CBmCq3fqmmwwN6LQ0UGmbtWRudmowIJMTCn73jaqoHblXstawglSDje3QL4Xq7X/eTZHew6vMH7Dtk+gNJVOlCa3tmpYc51fwiVqmJOyFc/HKSuuMpg+sJho8RCJ1pYchqkVU84MZG3bg7Z8WhiMWevFGCAr4Y2l5G4IAwTIYqRBuf+YuSM9uwOHjLQd/aNem6bGSTLOzkCTzi0E81J8tS9YvqwE648YUhrB69jsWx8A9D7cIKnY7teghe6cB6JSV51HYyJMLbZSKls/L4tAsczsyD7dtCS6HH6dHnBBe/9mTAPDOqkmIvCt7BKDjArrymG7FFSkdCxTPD5PoIbYPxNQZR4eggBoYoNlRmxwMRgF8dHuMUQFImooWw7I6sDF+dI4KC537gT3FYpsEvdGtgsBav+bweCGV9Ff4WdRJVxVukhzGOUga2Ui6b/UVsbkjYVJtpFKqIY68hd9BUeElWrujV9lkn+Pak4OKyNAKGDtDn1dNQxr38/4CPJlzSHyZ3muJTMkjNETvNbodJd7sTACXkOp5pm4oxgIKdsCHAQ23sW9N7Em5+3NV6C88pfNPH1EMmV85EZ5PrNe+TbtW8X1XpdmpCOXw==|920
+}//lzxsZdmhR2jzMUscxMN4S1u3XR5nOjJhRLjZcKrwieZUCGKZqWzTcHSvSP05Tq1EyHXN6mdeVI0lNHltIpVR3P4VVnknO6wSHh4NBazb+mMr6QdL+ti9BLg5a5Jf/RoieUnut2YTeo4mAxJ3Mq+yxDt2c+SYRhfTqcAIukiSbsVXXtBxzJn9A7RPUwC5+FUzQyDZfify5k154jvolpa7Br0K5besKaI80dzL8aM3zezwGgajYwr3Pb6E+TH1GSnIVL6NjP/Sx/MKeoIoxN7artr6it9PGXZlQN0TK5fMKcUwx6dM3B/7N8qsiRl3+7UVJvVwdWElv9uEmKIzftkuShPL3w7jBxz1qT4asna40J+/YucOVVA55ArNDPinA0Czv7QX0SBowiA5rwVEHe/oLozXAWZVd7vo5jntBFURvtwb2sau+gb6rqotz+CB+1UrTabAvuvuDui8o7LTFyx04IyTPNpwm1vmWxheUjtbDATG50UEQTTaVfSz8iyLFPDlORIItIBg5yeaj2z0sYJpjSJQ2FiYJjIZOGvcOyIYFc5mx99QXEG8t4BjxeQ6aPwhFXE1L+zZqUG5eCfV9o7aVt/t/rqRcp/vknVa/TvDlPUAQeW+mwvLAm7FEzay6TcOE0DbqDWLT2qlAJzGZaia75YnoWQ6gUFYkNofE95dpMl/wnGte3or0WXCiElL8f/CYJDFFfZz6u8Oi7a+wHc/mMaSFqywwUUmXZWgw9KUPc/mRRdRV1+n9A9epYS3u7w9cEOUuiY0X1cjE4qaOvhUaOJrkP1KVMe/SD5X/53Wz2grz06g75EkS1f0Nze22Rt8u5eAKcpC8rX5M16T3Xf4bGfDh3ZWI1aZZrE1O1aLDLYsjVQjYq19zstGofkw0dbrllX1pjdd5eq5yR1fHf86RA==|920
