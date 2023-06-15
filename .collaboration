@@ -552,12 +552,12 @@
   },
   {
     "ModuleName": "PCPage/ReCircleBinAll",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-14T14:22:40.7789848+08:00",
+    "LockDateTime": "2023-06-15T14:55:05.4545715+08:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\回收站\\ReCircleBinAll.json"
@@ -595,7 +595,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-14T14:27:49.5952921+08:00",
+    "LockDateTime": "2023-06-15T14:55:05.454672+08:00",
     "ModuleType": 3,
     "ToRemoveFiles": [
       "MasterPages\\PC模板页.json"
