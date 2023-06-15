@@ -459,6 +459,15 @@
   },
   {
     "ModuleName": "PCPage/RecircleBinAll",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-15T16:02:09.4461626+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\回收站\\RecircleBinAll.json"
+    ]
   }
 ]
