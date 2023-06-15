@@ -45,9 +45,25 @@
     "Count": 29
   },
   "Cols": {
+    "RowColumnAttachedInfos": {
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 81.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      }
+    },
     "InLogicalVisibleIndexes": [
       26,
-      28,
       29,
       30,
       31,
@@ -67,25 +83,19 @@
   "Values": {
     "1,16": "查询",
     "1,49": "还原",
-    "7,53": "删除",
     "13,53": "暂无数据",
-    "26,53": 2,
     "27,1": 100,
-    "27,3": "条/页",
-    "27,53": "最近时间：",
-    "28,53": "最早时间："
+    "27,3": "条/页"
   },
   "Formulas": {
-    "28,57": "ODATA(\"阅卷表?$select=ID&$filter=批改时间 ne null&$top=1&$orderby=批改时间 asc\")",
-    "27,57": "ODATA(\"阅卷表?$select=ID&$filter=批改时间 ne null&$top=1&$orderby=批改时间 desc\")",
-    "3,53": "COUNTA(K5)"
+    "3,53": "COUNTA(F5)"
   },
   "AttachInfos": {
     "0,53": {
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "准考证图片",
-        "GUID": "f8252199-4b9e-49f0-856a-cf5ac05442c9",
+        "GUID": "4fce94ca-7be4-42b0-b33e-10378325c095",
         "IsImagePath": true
       },
       "CellType": {
@@ -188,7 +198,7 @@
               ],
               "RelationType": 1
             },
-            "ID": "93b1b6f2062647adb9d958c2d41cb0b2"
+            "ID": "24c9ee17ffa24488b906a69764156614"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -219,7 +229,7 @@
                     }
                   }
                 ],
-                "ID": "4d4dee2e-b98d-43b4-9f4a-0cf79155de73"
+                "ID": "6810110f-67f3-4043-86ba-ab3b20144bb2"
               },
               {
                 "CommandList": [
@@ -235,7 +245,7 @@
                     }
                   }
                 ],
-                "ID": "61e93768-f29a-4777-b0c9-d0ff9c312837"
+                "ID": "14b0c6a2-8594-4e50-b13e-45850dd868fd"
               }
             ]
           }
@@ -249,6 +259,22 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "GetSelectedRows",
+              "RetrunParamNames": {
+                "SelectedRows": {
+                  "SerializeProperty": "选择行索引列表"
+                },
+                "SelectedRowCount": {
+                  "SerializeProperty": "选择行个数"
+                }
+              }
+            }
+          },
+          {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
             "ConditionAndCommandPairList": [
               {
@@ -258,67 +284,130 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=RecircleBin!B26"
+                        "SerializeProperty": "=RecircleBin!选择行个数"
                       }
                     ]
                   },
-                  "value": "%Null%"
+                  "value": "0"
                 },
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "至少选择一条数据"
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "数据选择",
+                    "Message": "请至少选择一条数据！",
+                    "Type": "warning",
+                    "ConfirmButtonText": "确定",
+                    "CancelButtonText": "取消",
+                    "AdvancedSettings": {}
                   }
                 ],
-                "ID": "a0a38027-8113-4392-8771-f44346f605c6"
+                "ID": "eef67477-db50-4167-b95b-b223170743f1"
               },
               {
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "阅卷表",
-                    "ShowConfirm": true,
-                    "ConfirmText": "是否确定还原选中的数据吗？",
-                    "RowsToUpdate": 2,
-                    "RowsToUpdateListViewName": "表格1",
-                    "UpdateBindingValues": [
-                      {
-                        "BindingInfo": {
-                          "TableName": "阅卷表",
-                          "ColumnName": "状态",
-                          "GUID": "9d8e435f-019a-4504-a3b8-06c451b6632b"
-                        },
-                        "Value": "1"
-                      }
-                    ]
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "数据选择",
+                    "Message": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=\"已选择\"&RecircleBin!选择行个数&\"条数据\""
+                    },
+                    "Type": "info",
+                    "ConfirmButtonText": "确定还原？",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "确认结果",
+                    "AdvancedSettings": {}
                   },
                   {
-                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                    "ServerCommandName": "batchAddExamToJdy",
-                    "Parameters": [
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
                       {
-                        "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
-                        "ParamName": "ids",
-                        "ListviewName": "表格1",
-                        "Scope": 1,
-                        "Columns": [
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=RecircleBin!确认结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
                           {
-                            "ArrayItemName": "id",
-                            "Column": "ID"
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "阅卷表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 2,
+                            "RowsToUpdateListViewName": "表格1",
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "阅卷表",
+                                  "ColumnName": "状态",
+                                  "GUID": "d2bed523-1656-4c6c-8a7f-fd59da78028e"
+                                },
+                                "Value": "1"
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "batchAddExamToJdy",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
+                                "ParamName": "ids",
+                                "ListviewName": "表格1",
+                                "Scope": 1,
+                                "Columns": [
+                                  {
+                                    "ArrayItemName": "id",
+                                    "Column": "ID"
+                                  }
+                                ]
+                              }
+                            ],
+                            "ReturnPropertiesTo": [
+                              {
+                                "ResultPropertyName": "code"
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
+                            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                            "Message": "还原成功",
+                            "Type": "success",
+                            "Duration": 3000
+                          },
+                          {
+                            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                            "TargetPageElement": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=RecircleBin!刷新未阅卷数命令"
+                            },
+                            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                            "MethodName": "ExecuteCommand"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                            "ListviewName": "表格1",
+                            "UpdateType": 6,
+                            "UpdateListviewCommandRunTimeMethodSetting": {
+                              "MethodName": "ClearAllSelectedRows"
+                            }
                           }
-                        ]
+                        ],
+                        "ID": "d38a1f8b-dbc8-470a-9553-394a4b1b024f"
                       }
-                    ],
-                    "ReturnPropertiesTo": [
-                      {
-                        "ResultPropertyName": "code"
-                      }
-                    ],
-                    "RefreshAfterFinish": true,
-                    "CheckDataValidation": true
+                    ]
                   }
                 ],
-                "ID": "5c588f82-1a0f-4f03-8e6a-48d8d1ab1d5e"
+                "ID": "30c45a6a-f283-47cb-86ae-c3516a430c0e"
               }
             ]
           }
@@ -634,44 +723,11 @@
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "试卷",
-        "GUID": "2650a463-f1fb-4e7c-894a-679bb2997ecb",
+        "GUID": "aec7c6c0-7abb-4de3-aad2-dd96c4a29e52",
         "IsImagePath": true
       },
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
-      }
-    },
-    "7,53": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "阅卷表",
-            "UpdateType": "delete",
-            "ShowConfirm": true,
-            "ConfirmText": "您确定要删除吗？",
-            "RowsToUpdate": 2,
-            "RowsToUpdateListViewName": "表格1"
-          }
-        ],
-        "Text": "删除",
-        "TemplateKey": "样式6",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "Enabled": true,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
       }
     },
     "25,1": {
@@ -682,7 +738,7 @@
         "ListViewName": "表格1"
       }
     },
-    "27,27": {
+    "27,20": {
       "CellType": {
         "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
         "ListviewName": "表格1",
@@ -773,8 +829,17 @@
         "HorizontalAlignment": 2
       },
       {
-        "Background": 6,
-        "HorizontalAlignment": 2
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontSize": 12.0
       },
       {
         "HorizontalAlignment": 2
@@ -788,7 +853,9 @@
         "yyyy/mm/dd hh:mm:ss",
         "[AUTO]General",
         "#FF999999",
-        "#FFFFFF00"
+        "Background 1 -50",
+        "Right",
+        "Left"
       ]
     },
     "CellStyles": {
@@ -830,11 +897,19 @@
       "7,54": 1,
       "7,55": 1,
       "13,53": 8,
-      "26,53": 9,
-      "27,1": 10,
-      "27,27": 1,
-      "27,57": 10,
-      "28,57": 10
+      "26,53": 1,
+      "26,54": 1,
+      "27,1": 9,
+      "27,3": 10,
+      "27,4": 11,
+      "27,15": 1,
+      "27,16": 1,
+      "27,17": 1,
+      "27,18": 1,
+      "27,19": 1,
+      "27,20": 1,
+      "27,57": 12,
+      "28,57": 12
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -846,8 +921,6 @@
     "3,53,1,9",
     "13,53,10,9",
     "4,5,1,5",
-    "27,27,1,25",
-    "0,53,3,9",
     "4,14,1,2",
     "4,16,1,2",
     "4,21,1,2",
@@ -856,21 +929,15 @@
     "4,33,1,4",
     "1,16,1,3",
     "4,37,1,5",
-    "27,1,1,2",
-    "26,53,1,2",
-    "27,53,1,4",
-    "28,53,1,4",
-    "27,57,1,5",
-    "28,57,1,5",
-    "4,53,3,9",
     "4,10,1,4",
     "4,18,1,3",
     "4,48,1,4",
     "4,42,1,6",
-    "7,53,1,3",
     "1,49,1,3",
     "5,1,19,51",
     "25,1,1,5",
+    "4,53,3,9",
+    "0,53,3,9",
     "3,2,1,3",
     "3,5,1,5",
     "3,10,1,4",
@@ -883,7 +950,9 @@
     "3,33,1,4",
     "3,37,1,5",
     "3,42,1,6",
-    "3,48,1,4"
+    "3,48,1,4",
+    "27,20,1,22",
+    "27,1,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -919,7 +988,7 @@
                 }
               }
             ],
-            "ID": "585fb716-2566-4832-bc50-7ce934c060e0"
+            "ID": "1578ee41-780a-4183-8f9b-12097446d763"
           }
         ]
       }
@@ -947,4 +1016,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//L1p3Yba4lvfYkBC3pAN5GDQ465MajgeE2j6slJ8RTWgerB2zVgcRluplXhERbt55xm7QLCPT6h4unc9Ixb/j3aKXou0M79ouKAkjxtXtfCzQ0d3B9AgFRQ94lTyKpd894URguOoSq8LtM0RxteoxUd1ndVZptkpicuDa9TToMQF9kn1WVK1gjwSmjlG3i/89BaPuxhtZzSUV1rSlGIobjLmPmYPlnCVDsGRPJA7LVSnrlQnP9nwunulbCinN1GqbjCR/rQAaTX+vYsvX12S+WHnSjTrwZUC7sITdnjuocuWf7+sXCdtcecooOw0rIa5mTJOj/tSXyB1AE/W/BBy/6T4rxrRRAuTNxwn2A96evDark4EiHoiIftU2L9BdGhs4wdur4JwC9RIdWcKqEa8gHitqs3RBE6Ar7i502R8nMvKc6HZjEc0WD3XXobvRI93ZXE5xEkcCMTIDlDz9ZtEKUWSGlEx2zCPW/ejKxkOgmteThUHXKc8UFYz8g8NCHP9xwUv8Dh97gF3/wXUjva+CPlmTzUdU2Y8tXB+8BoDYZX9y1Um7TWHwsoMxg4A/V3M5XK6j9/bj4YMd8Ohl+5rMKKdJFAx7CLyEJNV3USBIXxy6k9p5OWBGEsKL9IfPe3DkzGqXpL89vQ6OaaVEM82mQaz/JRBY6ZYHFJWqiKBCMoaTtLmWEZ1FIljY3uNhA/tRI6SirPRRnS5ozHIGz1FF3xjOqXLXtwJO86tMHh6isBJp8BRwCkbz45s6lt8goCXqhY5/l6A0OeJ89NdsZZj5ksKfO8a2DzCwmbrgqtaFWrQffTD+MYSCE8A5NnjFA62e2GdSI+uB1ajfn12Ha4JVbqdv82z+Z8ZIP+zzUFXEbXSkl7Cl7lZX/lhbi2jNZML2gCy65z4WdVJRI2KJnnsyJA==|920
+}//bq3sqLxDchPj8HkIT9L8QsvrDjvEhXLKIBJVztsqB6PCdS7CVDGR9QavragpHvAfT5vaqh6ff82yKtyy9BkNcNySslnwqCRZUvlXDFgwsU/g41pHqswpItIYuTbde8hjcBS9bIr2Mkyaz+cAxpRgzxZpEiZp+rFKR+/7h23o+V3X8WjlN2oj3vE5K4h8gT3DHWP3QdGuIUHl/eE6CfhPQW6RUg8ARsShebzjZH+JxibVTDNrmll3RZBTTmcNSBlroVSwLQZ9NVknEuujTty8txbwx1UWFYWEOVEH58p69GoefkpirL7N//lUKQix6Mg7uHp0m93BlHlG4C1Q+8ZovVjd90ucdH4bhjlc7a7krkQaIopka0JAwb71A2bB1/p9yxr5xV6Kz/UQJcbHr+YWUYvuCzj6iI/XxnttIxgYorBCv3TdxFQWF5oULXMWzcHLGAZEBXus/J4U2c9g3ubkN1Mh7qgEBW7F8QWBy/UF8v5s1ceuqMRqsnBLRfvaulGtkQcZMBMov4rjdCMhd1CqyhEX6edogLzMcXlsbqePDTW4admp3TV4BlrN4UunaYAyUKq1wI4P3bi6cgPcLnjrmAFTU/jbNaSyiw+h1QBv6EkcIK1TtEhl4a5nSG2SGnJpaoIJ78cELicljklIWpTk/CXBUcpfN+dEZmi53w/4kB9h/MfTf93mEZ+yv+Qv9doG0F80WEM3lbqVJCV8omG/cCLpBMhpgE0rHLbpqts+sYwW44rzpO+99+BzeJKkwj5flFvL2vgMISDaTR4HYjozmhCGXrvI5C9XcGCy0kcu2p8TVVZJOxsIP01XHp/hcFLijd9Wk0bwMztWD8fj8qnYVyrhxloKaPvQMUBtBOdDwYtkRlk/oPa69y5Rg7hZTInuvnNNVo7i+vgLxXU/AFz78Q==|920

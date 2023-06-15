@@ -408,19 +408,6 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=RevisePage!Y35"
-                },
-                "Value": "1"
-              }
-            ],
-            "Disabled": true
-          },
-          {
             "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
             "PassValueBack": true,
             "ReloadData": true
@@ -555,7 +542,7 @@
                             "MessageFormula": "这是第一张试卷"
                           }
                         ],
-                        "ID": "20cbfbc0-7f6c-41bf-a578-ab4eb677fa6d"
+                        "ID": "f209538f-91fb-4a43-8219-61e7391452be"
                       },
                       {
                         "CommandList": [
@@ -565,12 +552,12 @@
                             "TargetRecord": 0
                           }
                         ],
-                        "ID": "372082ab-309f-410b-82d4-6ab1d1117124"
+                        "ID": "73fcf33f-a03d-446f-bc71-18f1c9222516"
                       }
                     ]
                   }
                 ],
-                "ID": "ec6d2208-a8c1-4fff-a44b-a32456f8b474"
+                "ID": "dd1b5c21-c1b9-4e42-b7dd-90986e675456"
               },
               {
                 "CommandList": [
@@ -599,7 +586,7 @@
                             "MessageFormula": "这是第一张已批改的试卷"
                           }
                         ],
-                        "ID": "6c504acc-4297-437b-b1b9-c5d59aae6bf6"
+                        "ID": "f4fee89e-a88a-49b0-8d0b-acd0d6acb2f7"
                       },
                       {
                         "CommandList": [
@@ -609,12 +596,12 @@
                             "TargetRecord": 0
                           }
                         ],
-                        "ID": "961ce0e1-ae87-4c90-9e2c-b46e2de68958"
+                        "ID": "e27ec469-d133-4214-b83e-5d4610c3fd01"
                       }
                     ]
                   }
                 ],
-                "ID": "4195ad84-81e6-46a3-b372-12ef99f6ed79"
+                "ID": "3cd3d3fc-c136-4852-9f6a-5049103ca3e5"
               }
             ]
           }
@@ -676,7 +663,7 @@
                             "MessageFormula": "这是最后一张试卷"
                           }
                         ],
-                        "ID": "48b5a06c-d46a-4461-ba4c-4643bfb8c4d9"
+                        "ID": "d4a292c5-15f8-42ff-b15c-6dce817c1252"
                       },
                       {
                         "CommandList": [
@@ -685,12 +672,12 @@
                             "TableName": "阅卷表"
                           }
                         ],
-                        "ID": "7408e999-7b4d-48ea-aea2-5bf5d03cb6e1"
+                        "ID": "f8f779ee-4db6-4a2d-bba4-0f3ef2e86213"
                       }
                     ]
                   }
                 ],
-                "ID": "85406402-4dac-40ce-bc7e-f1a7c585f29a"
+                "ID": "d85b983d-9d9e-429a-a69c-7d348f72c9b5"
               },
               {
                 "CommandList": [
@@ -719,7 +706,7 @@
                             "MessageFormula": "这是最后一张已批改的试卷"
                           }
                         ],
-                        "ID": "b71ae709-791a-4ae1-b38c-a51ff236a662"
+                        "ID": "9eff1b4e-9d36-4221-b164-50afd5234408"
                       },
                       {
                         "CommandList": [
@@ -728,12 +715,12 @@
                             "TableName": "阅卷表"
                           }
                         ],
-                        "ID": "243eaba0-3c5c-4cad-9b67-4429a22614bd"
+                        "ID": "84f0f35e-7fca-4b32-a05d-acc3583c041b"
                       }
                     ]
                   }
                 ],
-                "ID": "671e2cd9-b8b8-4d93-9a58-1496b53cd92e"
+                "ID": "3f21c6ee-9832-43f5-8536-bdcf997aa703"
               }
             ]
           }
@@ -1282,7 +1269,7 @@
       {
         "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
         "JavaScript": "//上一页按钮\r\nvar pre = document.querySelector('.pre');\r\npre.style.position= 'fixed';\r\npre.style.width= '60px';\r\npre.style.height= '418px';\r\npre.title = '上一张试卷'\r\n//下一页按钮\r\nvar next = document.querySelector('.next');\r\nnext.style.position= 'fixed';\r\nnext.style.width= '60px';\r\nnext.style.height= '418px';\r\nnext.title = '下一张试卷'",
-        "ID": "18e91d8c00704282b4fc3318caa7e20c"
+        "ID": "c9816d3de8164c97ab74cdfa9613b7ca"
       }
     ],
     "PermissionData": {
@@ -1322,4 +1309,4 @@
       "Formula": "RevisePage!$BX$3"
     }
   ]
-}//cSl2p18zu7cU1c6akIaT/zocoJvxyKF5ZL35CNBZsSYOo5CxTZhzsedyF8kVzcxrBLHzBnjxy7v7r7KlgzK5sG7Zik0OlBcMLGb1I2hIuqGYdjJx8TdQQ+VnMCJI71rUvUdiMjj5cnnmWFAYYCSzvtE5ByEZqlmudCGIadjwjiv3hm/pEv4hY6uh87tZvjbMXTY3KR8mtBvKtC7IWsVnpJPpswiiwXel1fpUxFYB11m3GgJfSqIFrbdyymf0ZIZSAOBjnK/4vVfnNCIf/pdM0OivtKvW6tsZ2rcKuQi9Fj+11YXsfWBXp882sA7JqOQ0i0bFGWGqJoVCu29UvakGFf36CJ0dM4AaXFBmogJgNJ1Eqv+sSJRlbplQeHzhK4T8cC23rFbul39bQeArghlnQI0yXfvu6bVXFE8QxdfOCWeC7nvAPeLDr4/Kof7Nlz/CPr6iJIz0iuqueypExgHnlnMFlVx8HX/p3MDvhcY2j+lAi15ZWzx1cAIqmBkaHr7J9ESPN27IJ5CU5+g9dXV8bRulqzwVIKZcVnSPH71CrgXOB/MIuuMmgndwOZjkfgEafmTr3f0ajGdrHK0iZzOrGYZI+ag+pXs5jf7F4l2YAjShp4o/nlZbbOJ/BVBHwIJW4Dp6difORXDi46Ejt/phFgzRYKiQIllUKdEFUF12+jEWv36lvjikiFZqvcwjYerMx/ly74FCGT4C841y9lUKQmjGBadJJKx268GLNPx2/Yk5zCbwofi4klZhwh9+ACbmyEAwaqmqwamIRqupac72PO/axWvQviGYXVyp2IKZEsJPSc4icC5RArggjT2dPurMcm/lp5qCZiKhNYVeFyD+8glM5ytqN5bEmzqh81+yXYqc4lJvMl5uK4zNPg20K89AJcxQBBSE34FYa0kFLW5HRg==|920
+}//7KSyVyKfeb5YVigcGnBKGo8aUfs3eUWXzXNieeLDstJTrGZ75yDy27fWx3JLKfUhK9Mms2mOHqL4EJ2bCu/lQBRowzxAQg8+/1pm7OSMsbVoMidrwYQVsHYFJG0f7ji72JO3GrFI3lstornjeZ/tCm5nM1krcIfSwxFHGIFFTJkWd4FS5B+3dEtK6yiJOWh/TBMnfWWUfz366WhZTM+g0nrSC9k31d5ChytcJmVxoFwroNly3g7hw/m+PCFCTEd9++bf0YlM2druuzCHVn4M1Ja8ynxr0LBKC4Td4F1VgfZ5w0xNKTQ3m7Ca805Jy45Qz81H7/q+W2Nm6vsuQjxybPMfyAW9gje+6ihY/9BsNdCf4TITjDnwnki3jbDbgKtp70HSjchkGo9xHVn1ie0LIEs+yvVoz+vS7VLvAfsVtT2KRuvQ0rmQIBxoJCdtniKe18cGyxEagadnryEGlDtoBKl2suW7GOG+4MzV9NzPhJF8sAJWjaNgdqxJRkV6FBD4qYdcQ62uimaZebR7GfmRRbXQhUl943k2guuozuVvq4tPCbckhhAWXjsu9+zV9qeT4S48zsdDBBdH+d5WLO/nmyjpn4mEHWkwMlKLVNAox+NIApTpSMmhZ5aZa/XEULj208aRh6NUqY++qBNXiAz+POy/DUXKZOSgRvLsFl0bkjGP7DS6QzJXCY7+YVYp9A0hRjW0NQBUxP1vfvt9JqsGYEc9pzOpNc0Ma+J0JjY/Rs1OiWyVx2qLepko0xJSle1RaOi7W/Gh5uoIzW+RNjll16fme/U4TKI7Sh3YzSTzsgj5A3dv6aePV7WJ5yO+YDKhmC2ECkcxc3UZfwk4eyPjb9IXogPe5OytIkdcSM3uDvluOzpGH0vjQBW9Hu2GGk+mVCg2jdptpwhDVT8qAkyS3A==|920
