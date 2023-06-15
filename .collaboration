@@ -290,20 +290,7 @@
   },
   {
     "ModuleName": "Theme",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-15T16:46:59.7320896+08:00",
-    "ModuleType": 9,
-    "ToRemoveFiles": [
-      "Theme\\CellTypeStyles",
-      "Theme\\ListViewStyles",
-      "Theme\\StyleDefaultNames",
-      "Theme\\ThemeConfig",
-      "Reports\\DefaultTheme.rdlx-theme"
-    ]
+    "ModuleType": 9
   },
   {
     "ModuleName": "image/内置图片",
@@ -439,16 +426,7 @@
   },
   {
     "ModuleName": "MasterPCPage/PC模板页",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-15T16:46:08.416234+08:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\PC模板页.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/平板模板页",
@@ -477,25 +455,10 @@
   },
   {
     "ModuleName": "PCPage/RecircleBinAll",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-15T17:04:18.5306695+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\回收站\\RecircleBinAll.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/RecircleBin",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-15T16:44:56.6473529+08:00",
     "ModuleType": 1
   }
 ]

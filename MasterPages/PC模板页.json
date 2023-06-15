@@ -453,7 +453,7 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "NavigateType": "back"
+                    "PageName": "RecircleBin"
                   }
                 ],
                 "CanVisitRoleList": [
@@ -463,9 +463,9 @@
               {
                 "Value": "所有回收站",
                 "Text": "所有回收站",
-                "IconPath": "Application/037_delete_2.svg",
                 "SelectedIconColor": "Background 1",
                 "SelectedIconColorUseItemColor": true,
+                "IconColor": null,
                 "IconColorUseItemColor": true,
                 "IsOldMenuPath": false,
                 "CommandList": [
@@ -559,7 +559,7 @@
                     ]
                   }
                 ],
-                "ID": "1a88a886-6d33-451f-9bb1-1514dc2e9908"
+                "ID": "bfc9a673-7609-40ad-9e6d-7482558f5351"
               }
             ]
           }
@@ -3106,4 +3106,4 @@
       "Formula": "PC模板页!$Z$36"
     }
   ]
-}//+2jVpXidaxx/+H96R53BbI3bsRdTbGjnoO4FqBMBU0I1YXJ8vnqlxD7D1wQ85MxqCXqUp2mIreS5t9gYJYaA1fQ8kAmjXqsvrSm49qlZCmD5DaA1+eK6aCgLLyjUjCGvURM1UxxjxoNDJrrhphfBNNOiG7G8dTxhsfk0U2FmMCm8hof8+J7fHBsNEThly5atufmDiarkBwDksOLn9gYQdnatzDi2rEBQB3aLJvlLvpNfzKFy0Iv/0VApZPMr9I8ou2SsQu24ts89FsGiROM7mDYhMU3LI5dbw7WW3eaNVALgToXIDi7uXdjVnu9XOHTFYA11fDWdf1k64tCfwl0t2umIZ1H9uVYV8cOZIWe3w671eFGGg/53/lgSCGGhsWnRFSqqjmmNho8xnSXQRwWmI2+/zlRhOMIfiCSf4HYL6J62QD24DR0HxRP5stc5KDyakW6gGiWcVqCBTwOXpiSH97U13QnUFLRwYADULiXxye4ZZvk+Zb2c5tPQfp4w4ptucaf8R/7Tyn4Xh2WSQy6bDgdr2qcvsYlC8LkyqgHszQrKuGognQnMpsGiA2W0YB//HLMfaEYtp/0KPuT7nyq6Ydav1At+X0XYhpWvM4OIQsvy1UI7Q/PutODleyNDVDnWddHChOftwD8IP7SWFYfKzf1jqZUtMmJ3vcL1JbDkm/wgB3Vd41ueAEatoY9yHeuEknCwSOZJe/bJ0iZeu9+yAzxDe5UjPIfTkZLEyQrzH4NvHWWBjkXTwqKNT0supL4B5l7/+cX25dLAXiRK+o4z5mbwbm+bQyAX3KuHkf3kv2Fc54fVwvjWOjAhWMrrSJeIN51TXfDjoagNA3lOmibmO8twWw6cT0pzRmjlrwGfUkW27mKZxr6xDwGvTi0Y6KmIUlDKtl8fgfYBQW3GGznOUg==|920
+}//Ztw0NIti/tcrV7vE6mjAMN+0px9SDfNDHR+0fMm6kfq7fmZUsbCBFeZUkMN1KweJJYV7gkMdJ8xB0+WrehA1VFpmnPEusOOVF4zhZ8369B3fDS9sApeBl6DQrIxbYkzNleKL963/7mnD7jTpVhbZt+whyx5Su2FGGTxLl5FSHoHQvg6JcSGEgnYWvMGYkd+9Ow+Q2sRFyrVvu0jVnwdoWQPPwoOmKzHlxGWhF79AUrsGJ5XBwQ9fkbBX86YPwYJMgx08jdYfuoq0DQctr1Qmr51c+xnHRP9tmgTo6IDBtK6r1cwLh0nA5SjLDzq7FTjbYE+WCftLErB6a9bEMPovwLbFF+Z6oiPtx8Pq0JKDkCok0lienHKOVbrOSzZHA1IZtSe+UExodoRQS2Q4LjTzcpwiWWkwvSGuOXppskfj5nU8cEkQ4B/Tn+WC6qUpug8o/MnTqy6qT6hRWhwc66jyYWBMMiIvnNB4ex6XAZ2RPE8p1RFQ8wQesYnOGfljBQ30t6eOE/vFkgiZhHCMASNinAThAMN8+42tvMOJarSRZ2Eea6TuUvav0Hi0MOTuc8kIJaRRCUchRavLbfXgvowCDxjCfZL7zFipG182wFJ6RQKMVQXlaUwIUIkorlQxbJTcj3Gs/T9EK0tCdf3LmPHdA3iAY+9YuIRY2OVxCa+tCebFtK/+rmVWOvRVnLtLriJK4Fl53CsdXtGVgYZf6l84H3kK+Bt6WAwKtUSXkI7YTex+XMy4MMpAN71upB7gKVgHgt5SKnGQ4aqEntIhThV6RJi+PhQHg/YGchJ8VVA6JlwKLIGq+nKn7zhpgDOfcHRt0V+f6AR2K4pxZu2qRo8nEw+f6X3ug/IDINZ5H1EeHO2QjWCjpVB2QuFI3RZjJWB/IFwEfiUgMqtrTK7Zdu0Q4A==|920
