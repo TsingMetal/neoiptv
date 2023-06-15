@@ -269,7 +269,7 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "bb8aacaa-aca1-4fff-9b08-22f5e1028210"
+                "ID": "70c30204-f2ce-48a7-9070-160568d562ec"
               },
               {
                 "CommandList": [
@@ -315,7 +315,7 @@
                                 "BindingInfo": {
                                   "TableName": "阅卷表",
                                   "ColumnName": "状态",
-                                  "GUID": "4f001b92-b14d-4bce-8973-d0c608eeee7b"
+                                  "GUID": "34d514b7-7b9a-4d55-bc31-f0c1b6fc3193"
                                 },
                                 "Value": "0"
                               }
@@ -352,7 +352,7 @@
                             "Message": "删除成功",
                             "Type": "success",
                             "Duration": 3000,
-                            "Offset": "120"
+                            "Offset": "20"
                           },
                           {
                             "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
@@ -372,12 +372,12 @@
                             }
                           }
                         ],
-                        "ID": "1eab33ed-db3a-4455-b33c-bda69f46a2d7"
+                        "ID": "f5898e82-ebbc-4c37-9b0a-767a820c6f72"
                       }
                     ]
                   }
                 ],
-                "ID": "94600ab1-114a-42c3-9dd0-9117147581c7"
+                "ID": "c6bdb90d-6374-44f8-a788-8d5b6bd20245"
               }
             ]
           }
@@ -1223,4 +1223,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//ATylFuRS9tmMUl50lhZEcT49jHa4VGBzoAkQPq41ixuKCcXDZnI/i5Bunx5qMfY0rK1fM9/JViuTMe8R6YTh8LKMeVyJamkHSFFu8QEtmXSaee/qdyaTzhc4HPnLg/tKRDq4b5iKvU8kCvMth+zqU3n43LwEkZqRGXRu1Vavp8x5iPJpIIqGYWQdwpWduva3seclbnbBW227rr6dW42BTRoHMqFznhmAl5VRp1yGS7xhlbf5k3zyxKEPfaG1JetSUwjK3oQCOV0VZf1Dcb5dtC6ZFmMwTi9kOFeYEvuD8PVKLaZJKQItqbYMEE3IIKA2e1O28Z+Cpl5xUG72ShocnJ45UzrKImdSjLrqRIkaXsSyo1pNm0EN3KBjSWndcB4EOIEUt3nZC6jHHqDQR+ZeDLvcZl2mYQ0gdQf77X4Y82/2uP9LX0ASLUeO/7EiisIHgJ/VSVP8r1vPR+o4MlpNCI8sb89zMiscABse3+1FvcIWYSIQJUyvSxDWwGmhuoNv3N/RqcYyRc1K6hkutHYQrA4AskZuZipD3P1rmHKLlF7wIExV7RZMb9bsw3GXhws96PjtXntZ3LHM+JL7+JdaXjxgJWUAFAxWZWv3f1c29ncMxiLCpyMPNZEKKWSyP3GOipl9G3VhTsbEzbT8GqTag08HLMvWH8Vrf458npg5KYfFbqwVIluMG7D5BQCcOYOfm3AHB3Qkw4mERls7FvJe6uDFOpKSeD+GsuwRNnPhNU7FS2zG5VjiEsUaSqbfNxTfawwB675G93OGQbAXVfJIfVMHHfE57t1jgmyTKA4Xq3q3T7Fuk3c72cCch906yMInn36cODEq0WeBvOEmG4LU1pZZm8f+X1ShDzJSQm/EfxefekEGA+9whKnJyvEwV15+2fIpbLBhfIxWqNhNaa7Xaw==|920
+}//RZHNrne9DLLd/SLRQ6thzg1JV8xe9RtNxLifI+PmLB03R8ciBFtBjZCY+x2rZEMH2dIE2TATQJBZEG/CthCiXM2TQQho4gCC6HYMp4mS6BW0rc+AJWJBnDAnHYSGixkJmI0zFrO4Yl9fZMI5wgVHXdUaAc0je3MTic/3wp54ejhDFrvdxppZ+9cf+8sr1tiKjNUr8v5vPF31GV03NQUxdRK4H94IBTPFmTS6zmzwEatCYQAgZSYPMEFWLDoAvzr6qqjLlBIliVRFCB00EKDRRubbV2D4lkThmcJMiTBTYrxNWPwudBdgr9mIaKbR9fdWnQoqji82v/WCkjRVbqaELSIXg+okpz88ij53SaJYs/lx/ggQUB4il/Zx5PYixDxRz/+EhjXIPW3YNw16d23i75QWEfikPp3OOzPf7Ek3DUXaC+58TFDnevEzr8qyBwYY/bGcs3dcnoSIA3cl61Nz9ALp/3lO3muZnr6IStzk77mTUKkuSsLQSAFJZQHHdVmH7kualztH/7NVXbE7bbgw+GGNPVg0WrQD2tM5X9G8a0eGEV5U+J3VoERoF3grzaxZgPmRD+TJYEi019vX3vtA8iER8JOg23GcWwosGYwjiLv8EjO0parAsHuKL67LeHLViG0SeR+cnNH55bJYK8BZ6fOqt8DDPv/f31QTQGwOOGfwWkyh1eQEF9hCvlnFrbK+5FWenkKwPmjQde4LWGMLeJ+txFb25qmrA1AUVfyUnetWXq5cqBRA5viM9Aby1gEKaEV85u6cW8KMXGIwenCXb9Ot+fy5+X2fnzdISM2IA1QN5LRJigz3j+mHTTfd9WsRVqocnQdUDab31+lmB5NktAzCpK/vp15nUCvCJZI1gezUCb3KnUVlKHOlZUxyMCEH1inK8GarFW9oVUUGDRFbZw==|920
