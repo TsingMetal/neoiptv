@@ -410,12 +410,12 @@
   },
   {
     "ModuleName": "PCPage/RecircleBin",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-15T16:27:12.7757343+08:00",
+    "LockDateTime": "2023-06-15T16:41:22.4489325+08:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\回收站\\RecircleBin.json"
@@ -439,7 +439,16 @@
   },
   {
     "ModuleName": "MasterPCPage/PC模板页",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-15T16:41:22.4490419+08:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\PC模板页.json"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/平板模板页",
