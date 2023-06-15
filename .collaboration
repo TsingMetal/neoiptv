@@ -526,5 +526,15 @@
     },
     "LockDateTime": "2023-06-14T17:16:32.3981115+08:00",
     "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/toJdyTrasaction",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-15T09:49:03.2579057+08:00",
+    "ModuleType": 15
   }
 ]
