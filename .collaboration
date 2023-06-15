@@ -290,7 +290,20 @@
   },
   {
     "ModuleName": "Theme",
-    "ModuleType": 9
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-15T15:26:28.5245364+08:00",
+    "ModuleType": 9,
+    "ToRemoveFiles": [
+      "Theme\\CellTypeStyles",
+      "Theme\\ListViewStyles",
+      "Theme\\StyleDefaultNames",
+      "Theme\\ThemeConfig",
+      "Reports\\DefaultTheme.rdlx-theme"
+    ]
   },
   {
     "ModuleName": "image/内置图片",
@@ -435,7 +448,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-15T15:21:16.3341089+08:00",
+    "LockDateTime": "2023-06-15T15:26:28.5247219+08:00",
     "ModuleType": 3,
     "ToRemoveFiles": [
       "MasterPages\\PC模板页.json"
