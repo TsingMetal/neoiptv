@@ -425,7 +425,16 @@
   },
   {
     "ModuleName": "PCPage/QuestionDetail",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-16T11:23:11.7084945+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\题库管理\\QuestionDetail.json"
+    ]
   },
   {
     "ModuleName": "PCPage/Exam4List",
