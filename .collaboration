@@ -438,7 +438,16 @@
   },
   {
     "ModuleName": "PCPage/Exam4List",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-16T11:35:41.7600762+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\上传试卷\\Exam4List.json"
+    ]
   },
   {
     "ModuleName": "Pages/学员查询",
