@@ -627,5 +627,15 @@
     },
     "LockDateTime": "2023-06-16T16:48:33.6621493+08:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "ServerCommand/getItemScoreRank",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-16T16:59:21.7886742+08:00",
+    "ModuleType": 15
   }
 ]
