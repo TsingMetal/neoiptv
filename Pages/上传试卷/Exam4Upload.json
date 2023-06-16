@@ -1090,7 +1090,7 @@
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "班级",
-                  "GUID": "f0846bc1-85bb-4502-b3ac-63aa8bb3a123"
+                  "GUID": "5fb7587d-e9f4-4ade-a487-43d42dfa99f5"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1101,7 +1101,7 @@
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "第一题",
-                  "GUID": "0ecbc6f3-95eb-4abb-afd8-803439d9adec"
+                  "GUID": "6d6f62da-5ebc-4463-b064-b597cd33fcf9"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1112,7 +1112,7 @@
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "第二题",
-                  "GUID": "fdc101cf-fa55-4226-a79f-956cc5b4651a"
+                  "GUID": "fa900bec-0257-4e23-8a11-a0734633f457"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1123,7 +1123,7 @@
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "第三题",
-                  "GUID": "a4acf235-889c-4749-95b1-ab7c4a240ec3"
+                  "GUID": "4e184d76-fabf-420d-b9a8-f714f01a5417"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1134,7 +1134,7 @@
                 "BindingInfo": {
                   "TableName": "_5题试卷上传",
                   "ColumnName": "第四题",
-                  "GUID": "85c268e7-37c4-4da3-a226-fff069bddc8f"
+                  "GUID": "d539d09d-4b81-4101-99af-0986c5551779"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1262,6 +1262,12 @@
           },
           {
             "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          },
+          {
+            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+            "Message": "试卷上传成功",
+            "Type": "success",
+            "Duration": 3000
           },
           {
             "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
@@ -1518,6 +1524,7 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "申论四题上传",
     "PermissionData": {
       "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
       "permissionResource": {
@@ -1540,4 +1547,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//hN9HviUEaBKEzf39+xckZhBizFK5jOP5bRka2wGsuYxLyibcO4tx68koWOMnsJuJoJjeF9+PV5+M5eSUl77l9xhlD8kjPzMGNHY03hYgZRZFljnr+nLs/dx7Z/75h8fjM6jpHA35wTQ2A0KWWbG3O7nDW2eeGjPtOyxIl/ENqneqBMIpodDZBcPSKyXv6KkCV4dFDwU6cRMUOzDFKJOWICG1y4CuieYeZB3IHF3oSrg/3fbE2hpxj1X7C3wqj5v24YgwxGm1bfKKtERnh5tZXkGn8mg8b0ndCaiIi/QReC8spra7Ht0ywEtDrxuXCtfmkUJGDht8zPVqwQ3YCyYcFPvQfeDbCtxB3VmyssUy8DQIoyf4Yc6HqUrajt/23Sb4Th+waJ485jW0qw8vPi7HTKj1nyj5PxDF9BGL0CNu0yYeb7E+IFiLjNbd8BDtOF233kWxt7D1b7dla22p2WQK605CPyOwBtrjij3anzueTVA/gi1ak+sc7gGInLqrKuwgm8pDs7tR5jOzP9UeTDwTGn5Qo9uLCi1n11zRcTG9bJk38N6hPaY9rqSNNRDiSJjeYXjpIkka+LATBdrt6r2m7zU/FNGtp1QHTE9F4vtbSuLkqKbKKMxz4w8jNjmvd5O3oaX1EH+FMoclRDycL+P8ejmqsqZj99g9igZtPif5EzZm2L/S7LKjb/xRnv8GwemsnVMSz+0HlXWzfg40yEJRCdXkYwwT5kwi37GGXzXVL2HIdLLxjfZMKD4ixDS0RWVoaPmZ3MwJEHLYQPBUBxpLlketsglDeNPQUo+VrhmadPxG+lbcgc+3IGEBFYYU0vifja9SDJU3Qh9nbiNcvMarUaK5TsTnSyNoUELzGfPPgzG+i+E/Jnrhz2mDrEPMuo4LGETgdxtLUhGdl66IpY+DeQ==|920
+}//yYrgFRcm/FD5VBgxVo0T2AlQGmWO9xP3gSbDwnrgHASDVaCS/5JkG+Lth1XB/pvl8QPL2B8IC7tsYeGYbBVISwNuyXSsuYvtE64aS/Pn3GyVIIwItAJtNc1c6zzh9E8cqzyuJVZRt6gFvsP0TvIdIarystgLYg6S4ZqU4PYvG+l9q7oaVbnveU5qp4xFz93ffHfoI8RJrvx/T4zcoJ4Aj2bb3wcfpRk/DbLZrYDr2yjlpUamyDKW7W7jVUOI/HeRfPwPXibqYMe2exW+p7WGd4su4tyvpEB94jVtoCYqUJpgvJjMk6tqs/Txg4dulCRYfejdMvOdnapSCzMULvTo4FYHBbZV9sTXpvwO66KE0gJ2T+ppIh1hvQpOjqOyv3GDEO1Ow9irTFtpYaOKYKWgINKDOPu6Sl7ASzR3T//ysKGcRmToCtJhMSVp6LbT3Sk53jx6RmPBL4qxEiHKXMbvhRts02N6TGxI+URwCK0nQWbhF1xrcb6hy7BYgj2l5bFEikBWotBhLtHGoOo0SF6DWCt8COZcJZPgouSol/YzgeqAWA4Eja+qKc7D2uNMvEWWzvlOdd2Gf+2XWKtr9RRSH8NCuVw48mUYnsG4AsHdSGm2Bz40ewSVm8r5Z86JzW+QM/IQfAhGxLjeg7gNXoDtEyQ6sBFJNYA/VVE6l04sI++ibzI2cDn7E103zy7IvABowRqWuLkwlMSltZJLqKoBDnPv9O+MKqJ+rjentoKsnUUfx/0YSyWSCxazhEIRP1cj/+cUR3QP+erqvj/zIiVHFlokHZ3ZWWhTGqpJOowujWNPGWp7IGUdcNVaLm50zPc/DHyPSJI4cs4XEjrZZP4b97CAO3KaDdytdNPeQmh2H2Sv7Tqu547+rdPkqDcMDFU156aL7RlEmoBFfofdoBWXLg==|920
