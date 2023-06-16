@@ -195,7 +195,16 @@
   },
   {
     "ModuleName": "PCPage/查看已阅卷明细",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-16T15:26:04.3995126+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\修改阅卷明细\\查看已阅卷明细.json"
+    ]
   },
   {
     "ModuleName": "Pages/iPad端",
