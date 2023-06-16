@@ -509,7 +509,23 @@
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "试卷",
-        "GUID": "cf20f255-35e4-4fce-9164-54392ff0ecc8"
+        "GUID": "cf20f255-35e4-4fce-9164-54392ff0ecc8",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=RecircleBin!BB5"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
       }
     },
     "4,19": {
@@ -523,7 +539,23 @@
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "准考证图片",
-        "GUID": "62bd9558-3dba-4b3b-b3a8-91df19ec3210"
+        "GUID": "62bd9558-3dba-4b3b-b3a8-91df19ec3210",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=RecircleBin!BB1"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
       }
     },
     "4,24": {
@@ -941,9 +973,7 @@
     "4,9,1,4",
     "4,13,1,2",
     "4,15,1,2",
-    "4,17,1,2",
     "4,19,1,2",
-    "4,21,1,3",
     "4,24,1,2",
     "4,26,1,5",
     "4,32,1,4",
@@ -961,16 +991,18 @@
     "3,9,1,4",
     "3,13,1,2",
     "3,15,1,2",
-    "3,17,1,2",
     "3,19,1,2",
-    "3,21,1,3",
     "3,24,1,2",
     "3,26,1,5",
     "3,32,1,4",
     "3,36,1,5",
     "3,41,1,4",
     "3,45,1,4",
-    "3,49,1,3"
+    "3,49,1,3",
+    "4,17,1,2",
+    "3,17,1,2",
+    "4,21,1,3",
+    "3,21,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1034,4 +1066,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//rqdLDUHAPjDmO+0iVONoHazGxo25X6C5IwCaV3f2TB8u6J1Bf24GvJatCTWZsI+AOsekXdc6PSEVVbHMaTnzuDOjvS85B5NWvZiWB09ET91xP2+mCfRWXAdoSEvbXJ1wHN9ne0tWExcGKGW0IKTo66TyYgHhqzc+KPhHcycLN9NKQifHRK5scCDtJUANDT7bcabKZz3rlBYW5O/t1af1N4LqzQQz+ZWi/run0UQRXG1UzBrLEZwpmJvBFTDFA88dbOWsZav3Dls0R38FlAX799F5ycWJerBwKNE/Y/WS/5TCijSHsKWybfloOPmW5s53uQ/qszrQa4qvgkjPScd3y2Y/Zmoo7DV6OUjK0iP3MCA0w5V+896fv/JNavhXVXqIMHPM3kiwTYOkgPLSAsUCye5ord4TxHl/kyw6+EH/ni/lO1zZ1fweWADNjoUZARTgziMNqHOzertD5Ui+Pf1uzzsxnraf0KCjkQY2dF00Ej7KTkrDXZ6AykA51IjkdkAENhMaD5sYa1dg/FR5YuQzos2tGnyyCgkpDCrR3Gowmaq3xD4RGZj9Pdyu1ZY6GLLlipPnKWb8H9DqFk6YOhhvenRhLq7zUm+KfsRx07cphK3K1GLo5fzbIBUG/GtiTmHg11pBaaLYiGWQN+XrBG9ChgNqECkZJBsYmyuyY2P60ZCy3eNkpC9FIr9o8i33Q3hFTUMfxrOsIsH+VPo6fLYJH4YPFcOylCVMxtCGK0BB/F4tLEPlLxxNqVl+RijyK7Qo736myAWcPq2Msh4rC3N5mth81QlNE2rcBaldUFVjzqUWtQemPIuGFbVasr6gww0QFLiPqQiW2xt4tkHIOi6ne/LpFTfH3BVj/OnwukgPcpcMrSM/Lhg16cO1kdnozX51cwc75enHK93CasUN3j/UHg==|920
+}//HkJlLmLFCvsxOwK6PLdFS03F5VQytM0pDDzF5AWIE4j2evKzoRSW+swl7PZDuvLdDtnC6SFh29RjzRzqVmUHk6vc7XPSuda4GxjDfHmIYDfnathqvf8F4rJ44Mzwbo6rNBTohN+gm9s9zU0mIdM3FOIQEB3CWT5A64E95Surj9xqhE2/jBLiePJjDq4Bw//UmExp3/iF88iSquOURgaGX/nRPyxX2hiqmXVTYfhrwEtBjo8M8SQHoJzEpvw6y7/fsm9jX9Tr8Mlw0UUETfyAAUDAscPDkJBBP9n57KDqdmRA2uOoP4u0NMZIyPRw8wggOwLAznkKdmecyJgPL9ECYXNMQuJ4+6Pv6zSkVYFHDIr6qxOwV+a0dysMdFqMqJ63C4DhWz1eINGt3yMHyL9LxGIpfxfU7tkripMM3RiiezAK5wwSSIn6U3gg8qXrSpgPnLi1eQ3HjpGtQQmHIGhDt7fRMl9ebVxLlk1mmW8fC6WvWw5D+6EVH0am+tmz1EQ5SO73uBkaTKyvU20BNHuTIjUU0pCFi9KwZESHhlEQaLVJaROoYKayOtX/fM5uvTTagiaor02Cv04L6XdPUh+UcWeKj+CBJ/O/8bwESBUe4BxBzR10FESXMwP2P0ZSCiCqgtNXKOy7ENJ0QVFw4DyKZSznFLosHe6mArnDLRdQOwUlVXycVyBiP1fCtkTYC3q0VH6/8dW4ssLIeY8ranUI870/GpiXQoqH8uwD1mxnCHYsh8kHukeWtjZOFcqdZPe+4ZR0IOPq7XNJiJwRpwE19G8D3SVD6GCVxy2TT+PokTkKH64yW1l0vcBg50Zfjx2LfojIWOVN1UV2XHIf+0TVxTO53u7SBosh7pnVGoHBkpIrwzqm/SwM7CCaJO3zM0eyWbRnwI1O1x4tgo03GU4eOA==|920

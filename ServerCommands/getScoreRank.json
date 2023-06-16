@@ -1,5 +1,6 @@
 {
   "Name": "getScoreRank",
+  "Description": "获取考试成绩排名信息",
   "Enabled": true,
   "Triggers": [
     {
@@ -23,7 +24,7 @@
       },
       "Parameters": [
         {
-          "Name": "examNumber"
+          "Name": "exam_num"
         }
       ]
     }
@@ -33,17 +34,17 @@
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
       "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
       "Params": {
-        "examNumber": {
+        "exam_num": {
           "Item1": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=examNumber"
+            "SerializeProperty": "=exam_num"
           },
           "Item2": 16
         }
       },
-      "SqlStatement": "SELECT\r\n    \"准考证号\" AS examNumber,\r\n    \"学员姓名\"\r\nFROM \"阅卷表\"\r\nWHERE \"准考证号\" = @examNumber\r\nLIMIT 2",
+      "SqlStatement": "SELECT\r\n    \"准考证号\" AS student_num,\r\n    \"学员姓名\" AS student_name,\r\n    \"学员班级\" AS student_class,\r\n    \"考试名称\" AS exam_name,\r\n    \"批改时间\" AS revise_time,\r\n    \"得分\" AS score,\r\n    \"全体考试人数\" AS all_student_cnt,\r\n    \"班级考试人数\" AS cls_student_cnt,\r\n    \"全体排名\" AS all_rank,\r\n    \"班级排名\" AS cls_rank\r\nFROM \"总分排名视图\"\r\nWHERE \"准考证号\" = @exam_num\r\nORDER BY \"批改时间\" DESC",
       "ReturnsName": "result",
-      "ID": "0a34214279734ef6bed7490df5961fb1"
+      "ID": "30b86db7e54a4d6f8d156d94a715a5a1"
     },
     {
       "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",

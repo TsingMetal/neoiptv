@@ -515,7 +515,23 @@
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "试卷",
-        "GUID": "22577c35-b486-4c1f-8318-aa47dc065a51"
+        "GUID": "22577c35-b486-4c1f-8318-aa47dc065a51",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=RecircleBinAll!BB5"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
       }
     },
     "4,19": {
@@ -529,7 +545,23 @@
       "BindingInfo": {
         "TableName": "阅卷表",
         "ColumnName": "准考证图片",
-        "GUID": "254ce5eb-179e-4c0f-b00c-a85210e87591"
+        "GUID": "254ce5eb-179e-4c0f-b00c-a85210e87591",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=RecircleBinAll!BB1"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
       }
     },
     "4,24": {
@@ -945,9 +977,7 @@
     "4,9,1,4",
     "4,13,1,2",
     "4,15,1,2",
-    "4,17,1,2",
     "4,19,1,2",
-    "4,21,1,3",
     "4,24,1,2",
     "4,26,1,5",
     "4,32,1,4",
@@ -966,21 +996,23 @@
     "3,9,1,4",
     "3,13,1,2",
     "3,15,1,2",
-    "3,17,1,2",
     "3,19,1,2",
-    "3,21,1,3",
     "3,24,1,2",
     "3,26,1,5",
     "3,32,1,4",
     "3,36,1,5",
     "3,41,1,4",
     "3,45,1,4",
-    "3,49,1,3"
+    "3,49,1,3",
+    "4,17,1,2",
+    "3,17,1,2",
+    "4,21,1,3",
+    "3,21,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "PC模板页",
-    "Title": "回收站",
+    "Title": "管理员回收站",
     "PageLoadedCommandList": [
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1039,4 +1071,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//AetYbCbY/3/6JB5OBQlzAuz5xAcYJtvRQ1WBFueondJTN9lemcxQ919qEbZECAD8AufpdkT6jVYDdtaCNGEnSgTAC6t2bMZM0TKXE2WYX4gl/MhppyoqJT6+pd9agu6VLlr9SvyI22T3wBJB/kOFjLp9+SYq0hglhr/SXoO3M8MypvKa1JnhXC5FJVsf3jeN7v736EjtrbgtJaJROZAbBo9GS1hWULbGQDtE0EnJKfiaytxKfdcdc7gWZq3IWY2s7qrKQKO4/U6ahQgT2BF2OKlzLuVW1mfsNk9arJnCNddCp3zDnyFlL1mLmM7OOY8bqCjHSo49hr1NvjEsTOI6QUDJ7kmxZorC5/Tn9c1lguMroR6NgPfU4I+KOrCCnCOTryx15skNfxfw+Cu8cNZGfSgzdEJHYbPcgstNOf0QKlJH+9wRnyoJa4z9JjwcRh1zZJto5rOUgfGKGijllXiAKmZqS9RAHL8JM44eufdGEFOSLaGI0LNWniQGiPlG2OKok13CSAkjA6Oqe6eJBvvz3Jjjlhhf1Io3GfZSNhHWnFk1D8MBQFmN/CdDSDmRIPrCuy2Z3QF+nwUbYHz8/446Xp/orFGf423+do1oXBz5hPQcWFJ7cl53Yih9fRHS3S22BSdG4iWWWOFWcnxE6JaQn5PBA3q3QxZ6i+BPfoVpSqe0lcZIHbAQNrjTm8wJ3O9CEaa8uZQ5fh8jaNA/Gw6+awRYpSDXQI4SQEt/5H7YPWUov9PgbaUSVqXVhNLn5e1MVEtKl2v7fWxNNmJoymiujObbGsVTyfKLB3xdEd9SgTAXEYt2sDpep5KQsxM7il+2qkJjERv3snDPVEa+FDDMRYhM+oQsc9TEpx5QWah5KEs+ceaRT7qkqldShJm0U1bkcIBbNWuHvtZhErP2EUZMSw==|920
+}//uFZtaQlUh8OloLh/miBDTd/tyNMgsfOO2R7B8i4P5sSPuVylIYVKjVptSQq20iZp4x/qLIwsFbfmK4eFuy7Ks+zhFU/wiErxbF6U3xzcr7nUNv6kaKvMPX9cAGxStdrTAF16JyenGytnvqEehKoGp81ES0E8SDyaXtyvKQ5/ri+cTRQ1Bm2TlS2kK7MoZbvISJU4wUzMh8ksGm2e53AhykUWGVkWnOEvZDPEy/VgZJB6ccMu4bq640ju3Jh2h2mfQvlahMvC4D9z9/6RnzHntewUPIEViQayuXnMeGBSgyfKYURBuBq3UEStas6M77nDycR7ggBews6E4uy7j8x8Ya2DQAsqTxjV4lnfv/MGK+kCWC28PiwkpSFSCRjPkSUy8pjx2OleVhWFeaVvJnPMsW561tfhe+t4PHaowQfZHRizuqkFrGDh/ZUMm4jwyxTn1f4vIYXL3qsXhnBbNyhFLbIHG610dRPqEsp2zpjLRRyMv8BEkTiLzn7xNqWrGodOI27VDnNpd/lg1n/pXT3Cp5z9aMNUVqf7RfPfnF9ULyYCG5tXoSvQvckkXIYDc2ZHLqkWGgXBVxu8sAZtes8EK7YlDheUh2LRgZhn4xEikgus9FPztzj8u5BrelU89oUUVqx9gYnO/kZSOwA48QYhddlj605ClSkoDM2DTt3SngMA20KzbrVrOJ0b7/SpsnX43dEnvWFcRPek997Agwl9LDvJS/rmTtzupVNzOScVP/9KYD6rvMdF1d7iASjhRkQ4PhYZX6/aQnlbogiDQwIS7cAhtYD6dUUAc2tS3hmG8gnrR+uGexZVdyjdtZhvd8fphukWxoyIJq3rqY58ObARSFedHDMW7WUOF7RkrnpXtIzvFEOobTwpA5K9Jjw122oQUGFrryN/aYQQtQu7w8ayTQ==|920
