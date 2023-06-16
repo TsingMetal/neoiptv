@@ -451,7 +451,16 @@
   },
   {
     "ModuleName": "ServerCommand/toJdyTrasaction",
-    "ModuleType": 15
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-16T15:51:28.9911915+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\toJdyTrasaction.json"
+    ]
   },
   {
     "ModuleName": "PCPage/RecircleBinAll",
