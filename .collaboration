@@ -575,15 +575,5 @@
     },
     "LockDateTime": "2023-06-19T14:17:15.065894+08:00",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "MasterPCPage/侧边菜单布局1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-19T16:24:12.7523466+08:00",
-    "ModuleType": 3
   }
 ]
