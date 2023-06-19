@@ -486,7 +486,16 @@
   },
   {
     "ModuleName": "PCPage/单题排名列表",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-19T09:08:10.5449289+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\单题排名列表.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/getItemScoreRank",
