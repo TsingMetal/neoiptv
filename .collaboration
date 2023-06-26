@@ -314,7 +314,16 @@
   },
   {
     "ModuleName": "ServerCommand/uploadFourExam",
-    "ModuleType": 15
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-26T17:03:25.3283701+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\uploadFourExam.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/uploadOneExam",
