@@ -167,7 +167,16 @@
   },
   {
     "ModuleName": "PCPage/请批量选择4题试卷进行上传-1",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-26T16:52:05.184805+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\上传试卷\\请批量选择4题试卷进行上传-1.json"
+    ]
   },
   {
     "ModuleName": "Pages/题库管理",
