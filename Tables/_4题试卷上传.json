@@ -1,5 +1,5 @@
 {
-  "Name": "_5题试卷上传",
+  "Name": "_4题试卷上传",
   "Columns": [
     {
       "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
@@ -107,7 +107,7 @@
       "PrimaryTable": "题库",
       "PrimaryColumn": "题号",
       "ForeignSchema": null,
-      "ForeignTable": "_5题试卷上传",
+      "ForeignTable": "_4题试卷上传",
       "ForeignColumn": "第一题",
       "RelationTypeOnDelete": 0,
       "RelationTypeOnUpdate": 0,
@@ -118,7 +118,7 @@
       "PrimaryTable": "题库",
       "PrimaryColumn": "题号",
       "ForeignSchema": null,
-      "ForeignTable": "_5题试卷上传",
+      "ForeignTable": "_4题试卷上传",
       "ForeignColumn": "第二题",
       "RelationTypeOnDelete": 0,
       "RelationTypeOnUpdate": 0,
@@ -129,7 +129,7 @@
       "PrimaryTable": "题库",
       "PrimaryColumn": "题号",
       "ForeignSchema": null,
-      "ForeignTable": "_5题试卷上传",
+      "ForeignTable": "_4题试卷上传",
       "ForeignColumn": "第三题",
       "RelationTypeOnDelete": 0,
       "RelationTypeOnUpdate": 0,
@@ -140,7 +140,7 @@
       "PrimaryTable": "题库",
       "PrimaryColumn": "题号",
       "ForeignSchema": null,
-      "ForeignTable": "_5题试卷上传",
+      "ForeignTable": "_4题试卷上传",
       "ForeignColumn": "第四题",
       "RelationTypeOnDelete": 0,
       "RelationTypeOnUpdate": 0,

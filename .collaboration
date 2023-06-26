@@ -1,122 +1,37 @@
 [
   {
     "ModuleName": "Table/题库",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8554037+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\题库.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/阅卷表",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8554003+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\阅卷表.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8554015+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\预置评语配置.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置表2",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8554023+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\预置评语配置表2.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/小测上传",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.855397+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\小测上传.json",
-      "ForguncyDB.sqlite3"
-    ],
-    "ExclusiveType": 0
-  },
-  {
-    "ModuleName": "Table/_5题试卷上传",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8549507+08:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\_5题试卷上传.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/考号档案",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8553993+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\考号档案.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/用户信息视图",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8553982+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\用户信息视图.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -221,16 +136,7 @@
   },
   {
     "ModuleName": "PCPage/index",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-19T09:07:17.0097971+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\首页\\index.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/小测上传列表",
@@ -311,19 +217,6 @@
   {
     "ModuleName": "ServerCommand/uploadFiveExam",
     "ModuleType": 15
-  },
-  {
-    "ModuleName": "ServerCommand/uploadFourExam",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T17:03:25.3283701+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\uploadFourExam.json"
-    ]
   },
   {
     "ModuleName": "ServerCommand/uploadOneExam",
@@ -461,16 +354,7 @@
   },
   {
     "ModuleName": "PCPage/Exam4Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8553915+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\上传试卷\\Exam4Upload.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/QRCode",
@@ -502,16 +386,7 @@
   },
   {
     "ModuleName": "PCPage/QuestionList",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-19T09:08:29.8307121+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\题库管理\\QuestionList.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/QuestionDetail",
@@ -519,16 +394,7 @@
   },
   {
     "ModuleName": "PCPage/Exam4List",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8552662+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\上传试卷\\Exam4List.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/学员查询",
@@ -540,42 +406,15 @@
   },
   {
     "ModuleName": "PCPage/ExamRevised",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-19T11:31:21.7617091+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\开始阅卷\\ExamRevised.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ExamToRevise",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-19T09:39:34.6984099+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\开始阅卷\\ExamToRevise.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/PC模板页",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-19T09:46:08.3311042+08:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\PC模板页.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/平板模板页",
@@ -587,31 +426,8 @@
   },
   {
     "ModuleName": "TableView/总分排名视图",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8554046+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\总分排名视图.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
-  },
-  {
-    "ModuleName": "PCPage/总分排名",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-19T09:07:50.0278896+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\总分排名.json"
-    ]
   },
   {
     "ModuleName": "ServerCommand/getScoreRank",
@@ -623,16 +439,7 @@
   },
   {
     "ModuleName": "PCPage/RecircleBin",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-19T11:38:19.588266+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\回收站\\RecircleBin.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/getStudentInfo",
@@ -640,31 +447,8 @@
   },
   {
     "ModuleName": "TableView/单题排名视图",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.8554059+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\单题排名视图.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
-  },
-  {
-    "ModuleName": "PCPage/单题排名列表",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-19T09:08:10.5449289+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\单题排名列表.json"
-    ]
   },
   {
     "ModuleName": "ServerCommand/getItemScoreRank",
@@ -672,12 +456,6 @@
   },
   {
     "ModuleName": "Table/_4题试卷上传",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-26T16:54:28.854954+08:00",
     "ModuleType": 7,
     "ExclusiveType": 0
   }

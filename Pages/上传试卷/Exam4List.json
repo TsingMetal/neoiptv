@@ -378,7 +378,7 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "b6fcecad-5597-467f-ba67-603df89bbf58"
+                "ID": "8ca39c9f-0824-40ab-bbeb-4816f8de7b63"
               },
               {
                 "CommandList": [
@@ -415,7 +415,7 @@
                         "CommandList": [
                           {
                             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                            "TableName": "_5题试卷上传",
+                            "TableName": "_4题试卷上传",
                             "UpdateType": "delete",
                             "ShowConfirm": false,
                             "RowsToUpdate": 2,
@@ -428,15 +428,16 @@
                               "SerializeProperty": "=Exam4List!选择行个数&\"条数据删除成功\""
                             },
                             "Type": "success",
-                            "Duration": 3000
+                            "Duration": 3000,
+                            "Offset": null
                           }
                         ],
-                        "ID": "04b39f08-c7b4-4938-949b-dd73888ecb9c"
+                        "ID": "962340a9-5cd6-47b7-81cc-a04c04c9ec28"
                       }
                     ]
                   }
                 ],
-                "ID": "60211e61-1517-4713-a5df-057007f62783"
+                "ID": "a4433c7f-0403-4859-a48e-dbe30924a3d9"
               }
             ]
           }
@@ -487,7 +488,7 @@
     "3,1": {
       "ListViewInfo": {
         "Name": "表格1",
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "RowIndex": 3,
         "ColumnIndex": 1,
         "RowCount": 21,
@@ -496,7 +497,7 @@
           "OrderByColumns": [
             {
               "ColumnBindingInfo": {
-                "TableName": "_5题试卷上传",
+                "TableName": "_4题试卷上传",
                 "ColumnName": "FGC_CreateDate",
                 "GUID": "85946889-e213-4495-b6ae-f4560f50c6b5"
               },
@@ -515,21 +516,21 @@
     },
     "4,2": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "班级",
         "GUID": "5c4efcff-ee81-44e9-a4b2-239f2b33dafa"
       }
     },
     "4,6": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第一题",
         "GUID": "e2ad7cd8-abb4-4d59-9c21-e4b948dcd0ad"
       }
     },
     "4,8": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第一题",
         "GUID": "c572ba77-30c8-465b-80a2-0dea25c26b67",
         "RelationBinding": {
@@ -541,21 +542,21 @@
     },
     "4,12": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "题1阅卷老师",
         "GUID": "c24d7dda-d68e-43c3-8361-819cb5f94eb5"
       }
     },
     "4,15": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第二题",
         "GUID": "107d9032-164c-46d3-8151-cce1d91013ab"
       }
     },
     "4,18": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第二题",
         "GUID": "c8288652-df24-4374-821c-6ce974158562",
         "RelationBinding": {
@@ -567,21 +568,21 @@
     },
     "4,22": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "题2阅卷老师",
         "GUID": "7ead5c1e-7231-4bfc-85d3-495b6b36e3b6"
       }
     },
     "4,25": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第三题",
         "GUID": "acf3f9e4-2796-4431-b0c6-22fd9568380d"
       }
     },
     "4,28": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第三题",
         "GUID": "0680c3fa-8efe-4305-9be6-7f35a9a4347f",
         "RelationBinding": {
@@ -593,21 +594,21 @@
     },
     "4,32": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "题3阅卷老师",
         "GUID": "526cb120-efe9-42b8-9e32-4196f16fb77a"
       }
     },
     "4,35": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第四题",
         "GUID": "a335aaae-ebe4-4b02-9eaf-91758ad62b31"
       }
     },
     "4,38": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "第四题",
         "GUID": "0ff91947-e8c9-4c88-ab25-aa13f74c9485",
         "RelationBinding": {
@@ -619,21 +620,21 @@
     },
     "4,42": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "题4阅卷老师",
         "GUID": "ba880c1b-0135-45d0-a432-8b706cf98c7b"
       }
     },
     "4,45": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "FGC_Creator",
         "GUID": "9658d151-2e5a-44ce-8b74-198be7317bea"
       }
     },
     "4,48": {
       "BindingInfo": {
-        "TableName": "_5题试卷上传",
+        "TableName": "_4题试卷上传",
         "ColumnName": "FGC_CreateDate",
         "GUID": "dc0a1221-741e-4cb3-9731-7f6a713d288a"
       }
@@ -672,7 +673,7 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "_5题试卷上传",
+                    "TableName": "_4题试卷上传",
                     "UpdateType": "delete",
                     "ShowConfirm": false
                   },
@@ -680,10 +681,11 @@
                     "$type": "ElementUI.Commands.ShowMessage, ElementUI",
                     "Message": "删除成功",
                     "Type": "info",
-                    "Duration": 3000
+                    "Duration": 3000,
+                    "Offset": null
                   }
                 ],
-                "ID": "3dc777e6-e9ae-414a-990b-eeb0cc68e5e5"
+                "ID": "4306e6fb-9ab4-41cf-aa56-5293852e3795"
               }
             ]
           }
@@ -1795,6 +1797,7 @@
     "25,1,1,5",
     "1,43,1,4",
     "4,48,1,4",
+    "4,52,1,2",
     "3,2,1,4",
     "3,6,1,2",
     "3,8,1,4",
@@ -1810,7 +1813,6 @@
     "3,42,1,3",
     "3,45,1,3",
     "3,48,1,4",
-    "4,52,1,2",
     "3,52,1,2"
   ],
   "PageInfo": {
@@ -1847,7 +1849,7 @@
                 }
               }
             ],
-            "ID": "3869555e-fd71-490d-b68e-5c120043debd"
+            "ID": "2777631f-5237-41e8-8ba8-3f20659caf41"
           }
         ]
       }
@@ -1868,11 +1870,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "_5题试卷上传",
+    "RelatedDataTableName": "_4题试卷上传",
     "PageResponsiveMode": 4
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//hzHBLFj2Y0AkhggceBO4fLp1oxhWHLekbJtNRhcCUGQcGVXeL9gAJ2AVqrwptVy5MOlR4+uEulpHDqPSn+29kH5jKipsU2v3UaFzO4GYyUsGLJVpCyvIz+zAV3BwP4xVDSYMVh0heuF5XHoG7Tz8Q5PAeeZVmW0Ocgkgav4t+/fy6JrLDjC6H1QO2NY3owalGOfcB3O6dmVDoacrJvEdLnZSw+5hshasUZaRlO4TG4eeTZvoQeOtxm3tUaHeRJ6O+1J0LKZpwfNyfUZBEMejhFL5HaoXpeuACUDoRsXNuu8KpR8mkYHM/vT+jTH0vX7qu2mDTHr/OEIVm0J4qxbHyH0OqFquKVAuxDHzaJJ4sJwBWhgETLyeV/v+Zhhq9g6DLtjjNCYcR3JdV8ocjBQPGyjnBLXYtINIg/H7WXXLV9u03C7W7/0Y/6J/1RYrP2pMGUFUqhB076udwuZbBtLgSku5ceS6log6zdkMLAIcI6wiAN/vAlThoA6HzDr3RsbuOm3xotPY1oP75rh7WZ6fI4FbT82TnRyfVs8KkhNfgrYm6DwdmyXN6iu/sYRhZJp3QurU2YNdFVFyxwXujGZrCu0arH3p/KXVCt4vnYlvVsJu7A+aPaFHGPEdrKPv1NQUAVD1u3njOB/PQ12UhFnL3HrSfewh6zAQ4AyHDOLzSHQljJ7Kv/fPedsQ35DhdOo2U9wqX0txwQxNO75tHHSeVMJ/DJYaTngu8StstQ2trWP8v6cz/q4BOYetSXaXzigHtgaM8rmiE3yxwvoEEb2ebqV1dIuqiZfVktvUUunxvBX9R50yKOEwwJ6BFSPkVKaXnm6Rtqk5M1kTGeOUId6RhVCmjw4lf20/QXCVcVDPDfU0Zy8MEs0kh71ubro88qGn6xBlwpcmU/r3UmTOGneG4A==|920
+}//qYTS+BhBW5wBhPIsYWsKwnYcfX1/0fKpFKug+6uzErVC21HxCEEu3Q/TW+DdQK6FFn7QLK6HKGuHl+9Pb1GmieXR9J28Gdh+7TV9V6NDTs3tlZdBt3z5vmn4/CCMrLFKmTp8jqyM1QVqiaoLFLrnc77/oLndaeJanUZ7UEZKmb/vjuCNgXtsmgnijwS/r8mt5X/5/5n7v7Si8GwuDmzukwXdBXZuDug4f+JfTqSNwdu3c/GCbvCkmfXJ469B9izW9+brkwm/xzf/YJ3FcWY0UzrDLr5J4vtdFLyrY3u2OMdW2LjefxTO01ha5GgSyZ25VOZDZ6v2hmSNfrBSK5Fr9BMPasRo8oWdPjn6pLuSGtQJctK6TSp6R5kWd5gF1uifn/UryqPa//r0NoKX0Ojps/klNRrXn+UC5nEe/PuE27Wsu0BSqJTQSCb80L1jZ+0CrWw7XPz96njdg3/0U0D/BPPA1JRM3/ATniLXRzJgIn0phfLXao7z6iibJVVOqGJk+NbhrN3MN7MjWw7lFvumV7fbf5PWgB3lUrEV6QOqfIEKxZJ4hmRvONomQKWsduuJcCVx5ZeFt3D8hct/pQrw+eZiw6YiavtZz/jQaNUHe5vPJ0RHcF+ydOfjoUZqqAHKyvinT5w9GEUSbPQO05XLu83a8yVzNtvC4gM5Hac0JtXVmOUs1zLEs0/H1gW6CNLIhMR8HMLlWuGpOP3TBebcp49D5PBhmX5bf/4Q7Vo8VILnDSQgUXTNYAce1QZcMqpkiRJ+F/fAxLQ4KXxdKzMkXw6Vnf1MJ5oJGxxA+3XQlv2TNR8L0HUIhyUJgs5uf5hJFBqKGJ4tJRuy02RSk4sT4AIpzetip+Gc+e/lE4TBazPYD4ke/byxBR1BTi4pI2/WbLOwfdMuKMi2hVu8kEQG3A==|920

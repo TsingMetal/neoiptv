@@ -211,7 +211,8 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "ExamToRevise"
+                    "PageName": "ExamToRevise",
+                    "DeleteCachedQuery": true
                   }
                 ],
                 "CanVisitRoleList": [
@@ -232,7 +233,8 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "ExamRevised"
+                    "PageName": "ExamRevised",
+                    "DeleteCachedQuery": true
                   }
                 ],
                 "CanVisitRoleList": [
@@ -559,7 +561,7 @@
                     ]
                   }
                 ],
-                "ID": "d412b0b6-def1-4384-9da9-5a5b26874521"
+                "ID": "64a986fd-5929-4123-b2aa-ca164d86fc3a"
               }
             ]
           }
@@ -2963,16 +2965,16 @@
       "35,34": 0,
       "35,35": 0,
       "35,36": 0,
-      "35,37": 0,
-      "35,38": 0,
-      "35,39": 0,
-      "35,40": 0,
-      "35,41": 0,
+      "35,37": 3,
+      "35,38": 8,
+      "35,39": 8,
+      "35,40": 8,
+      "35,41": 8,
       "35,42": 0,
-      "35,43": 0,
-      "35,44": 0,
-      "35,45": 0,
-      "35,46": 0,
+      "35,43": 3,
+      "35,44": 8,
+      "35,45": 8,
+      "35,46": 8,
       "35,47": 0,
       "35,48": 0,
       "35,49": 0,
@@ -3104,6 +3106,10 @@
     {
       "Name": "刷新未阅卷数命令",
       "Formula": "PC模板页!$Z$36"
+    },
+    {
+      "Name": "查询历史",
+      "Formula": "PC模板页!$AL$36"
     }
   ]
-}//1HGFaXZWuWXDdK8tUrzmRtD0JDLU76HF3TjfaSH/HN7PCD1Qp+dJBmR+wJqoBWIOCKYEz86q4SPTWkzZj24fB9UuBVxGu+POmdyWrDo1KD/ba0FpAti6GP9fZpBolD19U5+CvoSbx9mV+f11KLn4MnNS7nkWEI0bifb8SU3gSoaFlnClOXrqN6f+FMTCwR+JuZtnXCM0WJ0p2mf4OFJoa/uM1/sd4KCUTcs9DiOVbE/MQvxuFPK/1exsHW7XS/EC78jLZMicZn6IXzivPx3cgJUgl5nLSumsRPtTtQxX7lzYH983aEoBPEUf3xZWJgkDioMMjdJfLsQiG34sD594h3EchuKaEiV6mr3+Qtxv6p3Jb0Tik1Xdqe6Kww+7O+PHlSSZqMen4aecrc3IRYBrDymMmYdOm+O3oLEJjxhAYHdRNvXjB6seP709X7S4ZxX5C/FJgbJREaI4cSpCMW7pMvHNF6s/sSbhiSpkMHQLDihXbxgoCby+pDtbLTLUdWQuP9N/9H8cM7VW6guiBB0cpW8OMNLEUXaUyN0iEeQ+21IKO9u0opVWrvCMVVS7U02+WwaFY+S6R+nisqNaPzSGAqb8Z2Zwy73B8gyryaOtOsgG+gtGUOa+13HrWKYoBwZU1MnzTUteSKAbGyeWtIb+Q2jxKYJ2HiG8f6hvGXmnSWceTWAEXhebk9Y49uGOX+DXTslKpQFfsqDABGexEy3Ctwl1oDY1zV+bEM8gYKA8GBtSPsZbXBc3l2sIvxNUQLUaq7/NxfPH41a82vzOOhA+1CTyumeexfZMeHYBo6yzR4E4Ai6Qi4hPAPuIeSK6jvUiAqJxwuYvrge0KZbUG8fRcG+ak3H6RFcwM/lM6IGzqI211J3T9Y0lvLyQ2YjnigR/f5c8ALtrkWtt8+0gzJSEjg==|920
+}//rq0FhwHysmOxcxCULlVkYwJ+5iDMOeh2us4PmtRwfH8tG07NuVT4kXhsHq2bVHHrP3gf5F5B0OdGBQaW1OE5KafqmbUkYZxVE15N8hxOkmfRyPxUeLXaqx4JUCpQ4cHJr7uwFvsTyssLe1chqzB+U9lnJ+jgZnvA5oP6mQD5LsJBP4a4QulueTGYy4g4MCZ6QYZnCDJ0gx8yTO6/1r+MNhfMV1RnDtTCt8s+MkRb5OGwKW2ETev5DoTGdp/0TZld96qMEtXqGu02V2f48cgInLj+G3t0H6+0LBUouWiTti3MF+a405yzPPqQgAEoA1HputNwPq49rRCtImBgkTgsBNA9mpYsaa3MhO9ME48Jea35g66dUoJAgGcyBA+YGUouvNeOmiIJ6XF+xnKRSmw4mDsHvAzlf64Y5+60RoK8WzC5jWGWjUJqgU6enzGtBHybRuPs7pruKM838RaUmwJma7v3r3gvhEmnO588oUno5IxFJDqgJ84XrhpY1Npbm8hWIHt3OCXG8TsASQ1f9/A8BJAT0U1KCW4XikIqyxCX97FLdFyz4+rcTDGZZiSZ+GHtcBkRk05mj9n65F5KiYYfIpzt3XU5jqOeqcBTaRur/kkKsmAxqaQJpR0bVC/vVOGea4xsENAXilyALlGo4vxQpXnFjD8p6hvVllM2KQzR6eKsolX+quEx/YnCm2yje73XZU+mktJ72wAc21BVE4YMJKamzz4/xaIrKeqNO4/2AF2WLN+e5bY0GT2ExAtyygkvk3/Jn9ax75punKCflQVX+aNZyDQwM15BkSygprkBCDeq+cdIuS/WzIilCMzwZKQo8G8O2MHQgPdfFmutK4cX8+Ewd3USrfBEW/8zMSnA5t6ElP945rXWzaaRHUe8ewKKWI8rsEJUSbuqxzc/UNOFzw==|920
