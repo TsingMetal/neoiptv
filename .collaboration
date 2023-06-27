@@ -486,5 +486,15 @@
     },
     "LockDateTime": "2023-06-27T14:31:09.0893971+08:00",
     "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/批量删除确认",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-27T14:57:42.3747649+08:00",
+    "ModuleType": 36
   }
 ]
