@@ -374,7 +374,8 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "ScoreQuery"
+                    "PageName": "ScoreQuery",
+                    "DeleteCachedQuery": true
                   }
                 ],
                 "CanVisitRoleList": [
@@ -406,7 +407,8 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "修改未阅卷明细"
+                    "PageName": "修改未阅卷明细",
+                    "DeleteCachedQuery": true
                   }
                 ],
                 "CanVisitRoleList": [
@@ -423,7 +425,8 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "查看已阅卷明细"
+                    "PageName": "查看已阅卷明细",
+                    "DeleteCachedQuery": true
                   }
                 ],
                 "CanVisitRoleList": [
@@ -455,7 +458,8 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "RecircleBin"
+                    "PageName": "RecircleBin",
+                    "DeleteCachedQuery": true
                   }
                 ],
                 "CanVisitRoleList": [
@@ -473,7 +477,8 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "RecircleBinAll"
+                    "PageName": "RecircleBinAll",
+                    "DeleteCachedQuery": true
                   }
                 ],
                 "CanVisitRoleList": [
@@ -561,7 +566,7 @@
                     ]
                   }
                 ],
-                "ID": "64a986fd-5929-4123-b2aa-ca164d86fc3a"
+                "ID": "debfb04c-e2e7-4617-9a12-77c12baee343"
               }
             ]
           }
@@ -3112,4 +3117,4 @@
       "Formula": "PC模板页!$AL$36"
     }
   ]
-}//rq0FhwHysmOxcxCULlVkYwJ+5iDMOeh2us4PmtRwfH8tG07NuVT4kXhsHq2bVHHrP3gf5F5B0OdGBQaW1OE5KafqmbUkYZxVE15N8hxOkmfRyPxUeLXaqx4JUCpQ4cHJr7uwFvsTyssLe1chqzB+U9lnJ+jgZnvA5oP6mQD5LsJBP4a4QulueTGYy4g4MCZ6QYZnCDJ0gx8yTO6/1r+MNhfMV1RnDtTCt8s+MkRb5OGwKW2ETev5DoTGdp/0TZld96qMEtXqGu02V2f48cgInLj+G3t0H6+0LBUouWiTti3MF+a405yzPPqQgAEoA1HputNwPq49rRCtImBgkTgsBNA9mpYsaa3MhO9ME48Jea35g66dUoJAgGcyBA+YGUouvNeOmiIJ6XF+xnKRSmw4mDsHvAzlf64Y5+60RoK8WzC5jWGWjUJqgU6enzGtBHybRuPs7pruKM838RaUmwJma7v3r3gvhEmnO588oUno5IxFJDqgJ84XrhpY1Npbm8hWIHt3OCXG8TsASQ1f9/A8BJAT0U1KCW4XikIqyxCX97FLdFyz4+rcTDGZZiSZ+GHtcBkRk05mj9n65F5KiYYfIpzt3XU5jqOeqcBTaRur/kkKsmAxqaQJpR0bVC/vVOGea4xsENAXilyALlGo4vxQpXnFjD8p6hvVllM2KQzR6eKsolX+quEx/YnCm2yje73XZU+mktJ72wAc21BVE4YMJKamzz4/xaIrKeqNO4/2AF2WLN+e5bY0GT2ExAtyygkvk3/Jn9ax75punKCflQVX+aNZyDQwM15BkSygprkBCDeq+cdIuS/WzIilCMzwZKQo8G8O2MHQgPdfFmutK4cX8+Ewd3USrfBEW/8zMSnA5t6ElP945rXWzaaRHUe8ewKKWI8rsEJUSbuqxzc/UNOFzw==|920
+}//Gc2IfluKXPbIhvsz25y5FSI2CHZ8LU7ChVm0BwoNLJ6QdfU/6TJasymmo8HDWF3ivTFAihEJc7eKlt7rE8xgTIfXifC+LMDZ7myh3yEvmSVsrIaxktnoirMGDUO1fWOBeHpFO2LMdne4hL/o1KK20WHIqErZYEzh5lJL+jtChjAIBSh4KItVXwVDxEEVLauUwHYYPuxD/HmbAK61uM3A8RY6P/0AchvyLJ2DW5WYpDSkCZONCQehd78tdWw7EryR/LIaiKTaArBRhiW6QKw9EsQ5iaKlk3v77OT2io1vSGeAzjAvRujgpYJADke8a2q2T/5lJ3OE5Yx9DFwk8Tu5i4fH4zm9LOe/3ia2f/4Baxfeu/cB1Gk/H9oOb1FPLH1b9ooJBmNZw2T/ZWrfN8DLpIheEHy8Mf3BHazvfihUO3SWFywwiRqhxvsqEP4OHvwFS8DTPzHUiAF/3AlDDc26L3Lp2Gpuq2UBuDqiyTzm/azrZNs5AsPfOwZDYX6CBB/hMhIMY+TUFuN+enRCESY5tQR2hooENtCaRzYJLZVc5t2g6hk4Fo1RvVMFFQh56BwU7jSYpSmBhMjXjxn+C/NIbsUWzN+Inpnh/JBqc/v9WeCXemqbZW3uUg0Vf7fdU9sIucMaQ+uWNYaza4+cfMrVksWnJ2NozqxyZvqbsB8BkQUCvhfnmInNzqNUngtmKYESILvy+6xCIthFbGg2QExIdPsAaM0thGQjO87n8RCQ7j/cASPIiwVZhcgBf6ExD8HNGGFWaB9lanPh7EmM3LVVjjaLQ0aCyb53dKezkzI7Xwu7C3mgPjueIm7HG5Cd0kLVtdJTboenbU8avGqHZ/+lssJIu6o7HCheEnWfQ6vMwjCL+Ormvzh0Fbp+Ah1rLCnpd8WPBXIOZiiVdiBP6DWzHg==|920
