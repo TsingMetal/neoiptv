@@ -378,7 +378,7 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "8ca39c9f-0824-40ab-bbeb-4816f8de7b63"
+                "ID": "ad57c5aa-79cb-4717-9f32-3fa244247b36"
               },
               {
                 "CommandList": [
@@ -432,12 +432,12 @@
                             "Offset": null
                           }
                         ],
-                        "ID": "962340a9-5cd6-47b7-81cc-a04c04c9ec28"
+                        "ID": "814c3611-5467-435e-84ac-a9ab301e42be"
                       }
                     ]
                   }
                 ],
-                "ID": "a4433c7f-0403-4859-a48e-dbe30924a3d9"
+                "ID": "df4b5cab-1d95-4469-b20e-9b488dd251e7"
               }
             ]
           }
@@ -473,6 +473,62 @@
             "ShowDrawerHeader": true,
             "CloseWhenClickGrayArea": false,
             "PageName": "Exam4Upload"
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "68441817-fd50-4382-a4f0-d0e3a20ffb2a",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Exam4List!BD5"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "c4f65294-d985-40aa-9b44-8816854dd407",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Exam4List!BD5"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "81da0e53-cfb2-4b01-b2eb-53b5184517aa",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Exam4List!B5:BB24"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "eaf56485-a8a2-4f05-a8f8-a19e4394dd96",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Exam4List!BD4"
+                }
+              }
+            ]
           }
         ],
         "Text": "上传题卡",
@@ -680,12 +736,12 @@
                   {
                     "$type": "ElementUI.Commands.ShowMessage, ElementUI",
                     "Message": "删除成功",
-                    "Type": "info",
+                    "Type": "success",
                     "Duration": 3000,
                     "Offset": null
                   }
                 ],
-                "ID": "4306e6fb-9ab4-41cf-aa56-5293852e3795"
+                "ID": "30a500a1-4ccf-4494-b9cf-f0dcbb5f2ffa"
               }
             ]
           }
@@ -694,15 +750,7 @@
         "ClickMode": 1
       }
     },
-    "25,1": {
-      "CellType": {
-        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
-        "HeaderTemplate": "已选择{{COUNT}}条数据",
-        "HeaderTemplateForNoSelection": "",
-        "ListViewName": "表格1"
-      }
-    },
-    "27,27": {
+    "27,16": {
       "CellType": {
         "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
         "ListviewName": "表格1",
@@ -795,7 +843,13 @@
         "HorizontalAlignment": 3
       },
       {
+        "FontSize": 12.0,
+        "Foreground": 7,
         "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 7
       },
       {
         "WordWrap": false
@@ -809,7 +863,8 @@
         "Center",
         "yyyy/mm/dd hh:mm:ss",
         "Blue",
-        "#FF999999"
+        "#FF999999",
+        "Background 1 -50"
       ]
     },
     "CellStyles": {
@@ -1762,12 +1817,40 @@
       "21,50": 1,
       "21,51": 1,
       "27,1": 9,
+      "27,3": 10,
+      "27,4": 10,
+      "27,16": 1,
+      "27,17": 1,
+      "27,18": 1,
+      "27,19": 1,
+      "27,20": 1,
+      "27,21": 1,
+      "27,22": 1,
+      "27,23": 1,
+      "27,24": 1,
+      "27,25": 1,
+      "27,26": 1,
       "27,27": 1,
+      "27,28": 1,
+      "27,29": 1,
+      "27,30": 1,
+      "27,31": 1,
+      "27,32": 1,
+      "27,33": 1,
+      "27,34": 1,
+      "27,35": 1,
+      "27,36": 1,
+      "27,37": 1,
+      "27,38": 1,
+      "27,39": 1,
+      "27,40": 1,
+      "27,41": 1,
+      "27,42": 1,
       "28,27": 1,
       "28,28": 1
     },
     "RowStyles": {
-      "4": 10
+      "4": 11
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -1775,7 +1858,6 @@
   },
   "Spans": [
     "1,48,1,6",
-    "27,27,1,27",
     "3,55,1,8",
     "4,55,9,8",
     "27,1,1,2",
@@ -1794,10 +1876,10 @@
     "4,2,1,4",
     "4,6,1,2",
     "5,1,19,53",
-    "25,1,1,5",
     "1,43,1,4",
     "4,48,1,4",
     "4,52,1,2",
+    "27,16,1,27",
     "3,2,1,4",
     "3,6,1,2",
     "3,8,1,4",
@@ -1849,7 +1931,7 @@
                 }
               }
             ],
-            "ID": "2777631f-5237-41e8-8ba8-3f20659caf41"
+            "ID": "c3b13a34-0d2b-42ba-9cc5-37ff11c94597"
           }
         ]
       }
@@ -1877,4 +1959,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//qYTS+BhBW5wBhPIsYWsKwnYcfX1/0fKpFKug+6uzErVC21HxCEEu3Q/TW+DdQK6FFn7QLK6HKGuHl+9Pb1GmieXR9J28Gdh+7TV9V6NDTs3tlZdBt3z5vmn4/CCMrLFKmTp8jqyM1QVqiaoLFLrnc77/oLndaeJanUZ7UEZKmb/vjuCNgXtsmgnijwS/r8mt5X/5/5n7v7Si8GwuDmzukwXdBXZuDug4f+JfTqSNwdu3c/GCbvCkmfXJ469B9izW9+brkwm/xzf/YJ3FcWY0UzrDLr5J4vtdFLyrY3u2OMdW2LjefxTO01ha5GgSyZ25VOZDZ6v2hmSNfrBSK5Fr9BMPasRo8oWdPjn6pLuSGtQJctK6TSp6R5kWd5gF1uifn/UryqPa//r0NoKX0Ojps/klNRrXn+UC5nEe/PuE27Wsu0BSqJTQSCb80L1jZ+0CrWw7XPz96njdg3/0U0D/BPPA1JRM3/ATniLXRzJgIn0phfLXao7z6iibJVVOqGJk+NbhrN3MN7MjWw7lFvumV7fbf5PWgB3lUrEV6QOqfIEKxZJ4hmRvONomQKWsduuJcCVx5ZeFt3D8hct/pQrw+eZiw6YiavtZz/jQaNUHe5vPJ0RHcF+ydOfjoUZqqAHKyvinT5w9GEUSbPQO05XLu83a8yVzNtvC4gM5Hac0JtXVmOUs1zLEs0/H1gW6CNLIhMR8HMLlWuGpOP3TBebcp49D5PBhmX5bf/4Q7Vo8VILnDSQgUXTNYAce1QZcMqpkiRJ+F/fAxLQ4KXxdKzMkXw6Vnf1MJ5oJGxxA+3XQlv2TNR8L0HUIhyUJgs5uf5hJFBqKGJ4tJRuy02RSk4sT4AIpzetip+Gc+e/lE4TBazPYD4ke/byxBR1BTi4pI2/WbLOwfdMuKMi2hVu8kEQG3A==|920
+}//qJ8CZ5gnjTXugYxkjemUFa7+KNNoly5bjBAx7fLUbJlQxj9SbghxyGauRQt8KOZENv4b+wPft0CRbda0FDv1aHdckmL5UswYXqPNK5UaZEtkUYprnlP+BbnTzMuIQn9+pKcf3OFtu/FFYlwzmOq5if+IqsJQ7AhZpWsL0amuwgpBhYxNFOCtR/6u7lppFlEfoZtxcZ/Y4R0rPXtgWIU8TykLa0vL/Z+gNgzp4lQxBWS3r/THJx7wIa5RcNTGFX78rYF/r94RTBtFPYlhLdqK3f0AbaI5ODoxx3PYJtxeRX54mmlKTvvd62PTpfLMT003USOp68qkT1rtjcbSS6r4vJjaYMcu55TvCIcPrMmVpO6w797ec/9Miy2Mcs27Y8LtX3F+JkSuvlU6TGNtdVJYqbjRGJGLa+R+XXnKtMEjttxylwWn+1YmeSvpQr5D7GCYqza91TroGlfbUFGj/fj9cf+DXWg9lhzZvVjJG8QAQ5kIOO/XQHu7a5s8QR0pZR7Umn8unD7Y1uIz1og8azUaAuZ3nB1zTSXNUqJlRZ+ejhR2UKd0ilmabj73FWgawmOxSq9wsGnmFlYSXPIWMSscyduqwZbROIGr10/+7UbYx5xWfDgA65ugLezyytGTYWGwKxszRTSyUpQItVASA/nhWu5ZAMWf1kuAxtDMFF8aEgejiXUwmgixK4VoXayFvacmsq7pD6NZslt8NYzbAuzvXrvXXGERYX+i9KyHFRKydcOLKfJCotxDlL4kwCSRoPgAAUtIJoiaRgKCqUY86SLnR6qRlJFATcdRNWgB+/DYw4nTuxQ3OA6CZiOBfVsmfXoVohvNt1zeRXJlg1j5mB+yZP5v7uyaA/M7i2JN7Em1jdtyEjTdyqzTfzmgVRTRsM4rKpKymJYeUR2izN7emQTuUA==|920
