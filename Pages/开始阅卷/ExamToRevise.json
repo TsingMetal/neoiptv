@@ -844,7 +844,7 @@
         "ClickMode": 1
       }
     },
-    "27,24": {
+    "27,16": {
       "CellType": {
         "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
         "ListviewName": "未阅卷表格",
@@ -940,7 +940,13 @@
         "Underline": true
       },
       {
-        "HorizontalAlignment": 7
+        "FontSize": 12.0,
+        "Foreground": 10,
+        "HorizontalAlignment": 11
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 10
       }
     ],
     "Types": {
@@ -954,7 +960,9 @@
         "#FF999999",
         "Center",
         "yyyy/mm/dd hh:mm:ss",
-        "#FF00B050"
+        "#FF00B050",
+        "Background 1 -50",
+        "Right"
       ]
     },
     "CellStyles": {
@@ -1162,14 +1170,37 @@
       "25,7": 0,
       "25,17": 1,
       "27,1": 9,
-      "27,24": 0
+      "27,3": 10,
+      "27,4": 10,
+      "27,16": 0,
+      "27,17": 0,
+      "27,18": 0,
+      "27,19": 0,
+      "27,20": 0,
+      "27,21": 0,
+      "27,22": 0,
+      "27,23": 0,
+      "27,24": 0,
+      "27,25": 0,
+      "27,26": 0,
+      "27,27": 0,
+      "27,28": 0,
+      "27,29": 0,
+      "27,30": 0,
+      "27,31": 0,
+      "27,32": 0,
+      "27,33": 0,
+      "27,34": 0,
+      "27,35": 0,
+      "27,36": 0,
+      "27,37": 0,
+      "27,38": 0
     },
     "SheetStyle": {
       "FontFamily": 0
     }
   },
   "Spans": [
-    "27,24,1,23",
     "4,2,1,3",
     "4,5,1,5",
     "4,10,1,5",
@@ -1179,7 +1210,6 @@
     "4,43,1,4",
     "4,34,1,4",
     "4,23,1,2",
-    "27,1,1,2",
     "1,39,1,8",
     "1,34,1,4",
     "4,30,1,4",
@@ -1194,6 +1224,7 @@
     "18,52,1,5",
     "13,48,1,9",
     "1,16,1,3",
+    "1,1,1,14",
     "3,2,1,3",
     "3,5,1,5",
     "3,10,1,5",
@@ -1206,7 +1237,8 @@
     "3,34,1,4",
     "3,38,1,5",
     "3,43,1,4",
-    "1,1,1,14"
+    "27,16,1,23",
+    "27,1,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1275,4 +1307,4 @@
       "Formula": "ExamToRevise!$Q$2"
     }
   ]
-}//O+/8pOE4Osbaz0YdHPruGfDCY7TX5bcH5SrwALvzfOd31VmCgl/1D5NrdYfzz1444Bl+N6d/uf9hlXh6HhSh5BZpSUYdrUSF5Xl180C0zeGDq9wx8R/6phTcV70uCF0eO2W9qd9xOZ5qKe4RN/svLazlkWFMpmWyhdwaMGdiF4zLsXM2cZ+P9ZlWkAq5SAtR4O18oh+iAEXAaoiTPi2ch1hI3ttddz9WHdaT+Ql14YzOF+8g4OUJGjCdLCz/aZUkuz2VsFuONPHmE7k+MJd3ZnjULOp6cyNtz8a4bcyepgm17jWMoNT1AeNS2V/sPZxs/dkYL1XmpkVCpUi+pMf/xA8kno2+W5urd+XTa04KrGwvMutKCvDdtKuAGb3aRMmLLgvna8jOU07Z1LGAcpLR+jXwiyBDJ9tH/DKNwX4Aa85aZUmklcxshZy1FsCLY72eBeqEhW10VRuWQL/qjRhOcYN4PUw3VSUHKVzmYxBmY7i6f/gUk9h+YTOZWW5pEYUdTvtQPT8yBA7LrerF16CxOrxK3GEu9JgkuVLtQeEDhrIFjHm9ochLt50g70lXgnoLhGmKoJq+3ZxQ4mjEGcSP4jcGjQXVIySEMmRXzFyG9KewfJJikL6/jxZK+ViEd3ZrzcfeL3Hg6MKlu9jPeBdDwTuAGBlq/ab7vlTHaA3mBHvC+Men5PY14G39Is7X2h46ziyqZ7c422PWg+behPjQhFxJLcN4fCzOSY1yp6xSTlRcj30Izn5+F8he77D/vTJyUHp8NIabP89RBwH1PrcRYpezy2nNz5d2H0rmZu7lmG/nEPE49M31r1ZWM4FMo8WVeEtFsicgOkN+LuRTU/mHB1bmLXsXNH2IF9j9u+UtSkxhyveyvBwjXYxvRPY7jtC6uTSwqUvpPHrLebK21EBOGg==|920
+}//SHpjB8DHdZTihg0Fs+vAwVakmq5cNGb1hqY3TDYZUkY67xprOK/5vp1jgYW5e0TUJ1KD4pPXdYohiVu9l4gFjR5Z3zi0ZYduDmrZARZ6jUiOaw7ftWYthnLH78eIoZqBP9bCzxG7ZWc0LEQGRVpXhbUmv0BGhPtKS++yc8ppXKGildoslmtxKzPx1+CLR/OY2FbjqtkZXjpgvyaqgwulif9ee7EOutk7T4fBk08C7HphS97qO0/o7gJ8o4GU71wxSniwdpkC+kW0RYuP8nJ+pa3HeTrX9Cr1uVR9+O0rQIpYme3a/fY3QWvpLb0rA15+I0NYjPbPi1R1GwmCspvQzBmnMvwm/FunK2Eol5D7jr9KYhxpvsWYXmIvkdZDGRmb5TEcJdGNpxBvY/03ajprq5JIfw+mYxYw8VHIC6iEzvExiwvcmApldQp9Z9K92Jsg14mNcYlfyg4c5VLlqHX/+LNmH7Lr6WgCKFl+LBC51O/AprUdrw6Mc9zign/uBbG1mA1/ysPRb8gYecrA9zZeqQ7EhXAdVA2xaaseNiRS1tItTrdDNdjZh4zUve+w46lFUQwa6addWvzlyIzaRBtNyGk5GAZa7S0YmgYgdVNsmEaRKw7sqCDYDuyopNCMXIV9w6HUOVGjRYyVjuk8jxbWSPmi32EZM52t33w6+JS4IFYU1AW6C3S1Lqca5FObBLQAc273grD/vMOTD3PJeHnc7E58ASv6290dnIdI4q+Qet3lf5j4g7wSy4b+2KEBiw9ev51szOMLkY+YyNFxE0e7QXzyiKntPM2264bB4vbRn2Ljh6az+1QJgS02kfv8fqN+6Yn/FVG2RfiAGYNQY8boBCN1iJpQ0vj7zXSlIouTlQ46JI4Mmy+69eIUEq2nRUgrMKlJg9XuE6GKrhqoq2OFVQ==|920
