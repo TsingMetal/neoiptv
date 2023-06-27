@@ -79,13 +79,70 @@
           }
         ],
         "Text": "添加",
-        "TemplateKey": "样式6"
+        "TemplateKey": "_RS_Success1"
       }
     },
     "1,42": {
       "CellType": {
         "$type": "ElementUI.InputCellType, ElementUI",
-        "CommandList": [],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "68441817-fd50-4382-a4f0-d0e3a20ffb2a",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=QuestionList!BD6"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "c4f65294-d985-40aa-9b44-8816854dd407",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=QuestionList!BD6"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "81da0e53-cfb2-4b01-b2eb-53b5184517aa",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=QuestionList!B5:BB24"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "eaf56485-a8a2-4f05-a8f8-a19e4394dd96",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=QuestionList!BD5"
+                }
+              }
+            ]
+          }
+        ],
         "UIPermissions": [
           {
             "Scope": 2,
@@ -487,7 +544,7 @@
             }
           }
         ],
-        "ID": "cf65b1b1e472407783f8971d20d35cff"
+        "ID": "ab20e05d940641c4bde749b3462ac751"
       },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -518,7 +575,7 @@
                 }
               }
             ],
-            "ID": "bdaf3e97-e782-42d6-b881-3524cd024ddb"
+            "ID": "1379a0ab-b5c0-4d70-bcdf-57771b72f6cb"
           }
         ]
       }
@@ -545,4 +602,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//7cvlXvV5VotjRlA4cPiVcjDAgiqpF/1msJfWo+OntuOjQvDbnzEkBkyTDbcbsVnPt9xsvD4cAC87NzTaud3dc0u4hML3azxYyuWwzyj6yrEFT24LFt3l/IZfh0D4qaoMaFdqyb3Eb1BVJi69QnuUAFih8hfSTHdS5jMS9pP7koNb6Awl9fBwQ6rTSHwBKDlaXUyktvROQbHoMwLX6DZC4fxT3PwkDmIyLxQjFOKLrz9FFlgFldRBwGPUR8Xd5GEUncQ6A/UnVK8rD7+Zu6DWVJOOqmKDnqHPuA1OCX1S6vgUbYdUpTBMmlwe5Iz56svlG7d23z7RXaBhYzPK9tyZ4x1PJbF1hkVihbTL2sg6/pQEB/BGis8KTvBPx9s6ryAHYNTD5kG1RPXoVZppl0gFIS1VSlqllbi+3U0v6k8Ggi+1uqjRZglbts1v11aEfLVJv8DaDjilVxn+FaEpgVsQ9zYEyYDm/7pywhu10uQjelHIJpMjBIDCAvdPXAl3VaTOy1x/p5NOoxOIKaVfeO7Eh4hQN9Rtwze6vkiuZ5xJgVkE5WTZ+1POmzDzzeN+QN67U1ayxi9gw4se1bF84xXyczTvoqhpyYAN8hyg13hVPy1st+YpL/Mb/JhLlmbd4jw3GxUzLk+qREXaxaF4TqpspLslxt7X91aVpgKeFXkzec5cFfxV0vvt+UnLdwIwmZXIfg8v9TDSxk5nmQExQBlsua5L2FSlVnayN/9ZOfqGwRt/CHcCxo2ptkttX3RrpD8zkM2OnBEB5yV6v/47rPZYhXLYRecB6XXoGtX9Jrh3Q83xrMGbMIuCd9t3tqIQLwsCHlKRywfuuFj1Fy7vIJ83bF6edsz8P0Lr/lSxY6ktD0UBD6sqJRGYAHO6X3BlW4I/yKzmP6ASxTrpZr2i3kxUhA==|920
+}//GrTsjrhT548z0enbrRvGOr9BJZIojJ1/icSp7VR5kdrgPM/H7sBBgrlzbkk+Uk4/magc4xx948DEmUl5ydf3MUIGdqhr8HMW+RDkXSVsNXMwHh8vnxuRGjQpPzqVDEh7LDOsYtrDieNAOMCAciFPQaPklkBfpaJwiECBSLH6TJx2gM7o80eGpc+PBpYoHm+Id46gJnLml+cbxH0v5WUvND+xK9a4LWyA6EOGqMzC6c2zLKEhMoF0/mSTIQsA3IM0Y6MW+MZaEPZqpAXyUqGLsskAAPCO7ZCqwMpHAYgMv474BeDRLLIj32DKw3d9zB3cWefISYXiCuXAIa8Y9Z4k1HnzyumiVXIzO1iPiWJWD0z3VOX8BUMFMgcoBSJ8NR4nqaR3JTQoREufq3yFYy0It0692YCV0QC/LC7IH5CyQtVDFUkAU607ZCiXbk+S3KZ+gmbowCXX+xwuEdxGEOP34A2StH5To6woYTRknKf/it4wvxscgQhspS9RR2V3aJe4ZsuyIMndtQ4+PiK3O6W8Vbh1l5CJL5uKJr3Mfpj6CbRuG6PFLcJ91N7dBldsYJd1zTrC+cHQGDXR3E4aKCEGicNlHp0emA6i9JJ6TgCn7Y2Nn/ydDAAMyMAH/EgQBJDeJDGNglrDeaRfek08EiEAFTuDpjZ7q3mF7Mivq64POJ5TyT1m82l2fYP2L+0aDjoVRBrqVdZ3SLPMSm4+KJW+zIidmROVxehsCAu5s0ueGJnxMx3EbbiU3cqexF3aZZoIhq4BWpi2NjWS3kIo0gn0STx6lMIo683U4GsgyhwRvzUpmaG/w9K/RW4v6tl7smpqEu0/giEO3GAU4sY3MpwZb/HJRkt2vcL6pc4YqRvqOQP6S443tWSalp5XBmFfZ70sNxjuG7tWHZjZxm/isgeBLA==|920
