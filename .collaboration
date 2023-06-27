@@ -6,7 +6,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760852+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055944+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\题库.json",
@@ -21,7 +21,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760826+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055917+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\阅卷表.json",
@@ -36,7 +36,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760834+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055926+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\预置评语配置.json",
@@ -51,7 +51,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760843+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055935+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\预置评语配置表2.json",
@@ -66,7 +66,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760789+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055875+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\小测上传.json",
@@ -81,7 +81,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760818+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055895+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\考号档案.json",
@@ -96,7 +96,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760799+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055887+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\用户信息视图.json",
@@ -427,7 +427,18 @@
   },
   {
     "ModuleName": "Upload",
-    "ModuleType": 26
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-27T09:27:31.5060859+08:00",
+    "ModuleType": 26,
+    "ToRemoveFiles": [
+      "Upload\\45cf10c6-4316-4bf9-80d4-0de0c7aa4b8c_20230102-00059_3.png",
+      "Upload\\69b5d28d-1a46-4540-b3bb-18130415acd2_20230102-00059_3.png",
+      "Upload\\d0473552-084a-4392-a6de-9384b2a4c3e1_20230102-00059_2.png"
+    ]
   },
   {
     "ModuleName": "Image/madecard-index.png",
@@ -537,7 +548,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760861+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055954+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\总分排名视图.json",
@@ -568,7 +579,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760869+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055964+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\单题排名视图.json",
@@ -587,7 +598,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760777+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055854+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\_4题试卷上传.json",
@@ -612,7 +623,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760879+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055976+08:00",
     "ModuleType": 7,
     "ExclusiveType": 0
   },
@@ -623,7 +634,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-26T18:03:18.4760892+08:00",
+    "LockDateTime": "2023-06-27T09:27:31.5055986+08:00",
     "ModuleType": 7,
     "ExclusiveType": 0
   },
