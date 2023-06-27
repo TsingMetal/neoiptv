@@ -79,7 +79,59 @@
         ],
         "TemplateKey": "_RS_NewLittleRoundCorner",
         "IsSelectAllOnFocus": true,
-        "WaterMark": "请输入学员姓名/准考证号/班级查找数据"
+        "WaterMark": "请输入学员姓名/准考证号/班级查找数据",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "阅卷表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "学员姓名",
+                    "GUID": "91b72f9d-92da-4783-b799-c8ca6070a65d"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamRevised!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "学员班级",
+                    "GUID": "e5d799f2-0728-490c-8e0d-1a02c7c8b7d3"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamRevised!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "阅卷表",
+                    "ColumnName": "准考证号",
+                    "GUID": "2748a9bc-393e-4bb2-9c57-10a21c3eca2b"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamRevised!B2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "07b30b48a3744ceca85e0f25eba2f2a9"
+          }
+        ]
       }
     },
     "1,16": {
@@ -137,7 +189,7 @@
               ],
               "RelationType": 1
             },
-            "ID": "7bf4257ba7f9423b8fdb5353dab9be6f"
+            "ID": "9a368d3f4f35499ca7e2527a9f52d8c6"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -168,7 +220,7 @@
                     }
                   }
                 ],
-                "ID": "2b3e7850-abeb-4aad-8fce-ade838ab3057"
+                "ID": "3121c4a2-dcc7-4fa5-893c-297747510be8"
               },
               {
                 "CommandList": [
@@ -184,7 +236,7 @@
                     }
                   }
                 ],
-                "ID": "146cddb4-a18a-4b1d-a57d-56fdd2b72dc3"
+                "ID": "684c78c6-bb66-406e-9553-b2d5e4d82427"
               }
             ]
           }
@@ -759,7 +811,7 @@
                 }
               }
             ],
-            "ID": "1cff8310-a6d1-40bd-97f4-2357db151b6b"
+            "ID": "1c8d8faf-e37d-4733-afa2-a4bc3125a184"
           }
         ]
       }
@@ -793,4 +845,4 @@
       "Formula": "ExamRevised!$Q$2"
     }
   ]
-}//+ROXFGnx25HgL6sMtpw3OPv14F5AbH8A0g5pPrtmrq0M3/yK+UfPhSPRY6iKIO9zHnP9V15Oj4BOSMkfCEGresXx/WEuHQUQU1BjIixKiVzG58nypY0hWnBD5MXoC8peQIoHtJ3lhp7asr7rz5QoZZJHdjhREeXjPnCnvrpzm4uTbnhDzbBD5CM+hBaATy7SuqzwE2LfkcEmwYhToEDV1e9m9fvyUnZKA2DponCrdUjQSMNMh1xSlM1OTJypWVxL0P2cj0Gwbb2t5+npcTJx2DLAcwKv+Wck+hVOf0+78PJoGZ4hk5S1mnnUBD2I7JdJ7DmDfCdXb76GdljCfE0PToK8LP20rXDYoQA94FqyQ+wlmM8UYvBJxDxV1BuOdqor3D2CZXsM+Ek4k08Lvn6ecxmDATdbgpKu/FT6T8Y1v9TO6/gWAX6HrLmzP6qpQyvscxhSbuU3uZzhqnzFPobgVMlhVx1YFNu2puG3rILm3G4uJ34uprDElaR0yxcFTsl+WwRkzNJO8EPLU3aRd0TfFYgZRVN4oKxsRv4FxSehAVMmzg5iZ8UKFPU7y6wQGJw+N8eT62a4bOnavcahTDno2wtk649VDkyE0BSNH4WvfRtiu9NeJZEdXFVYfiATyckpUh1ChZAvarmou2QtYZ5XflPWVPdOWlOcrlf3spsiNVcpdLYo+VajDKqkkwXtodK/uALdo74gqFx//6pJrIArCtMMh8MTJu6F9XNbxHXvCEQ3CBGm0tUzaMcnM0LSc2IcPknDUlnrUn87S06nfQozgrJArqOLGezDBPwqPkyIcYGfQHyT7bgqh1aB0hJpeEpjg45HLe8XM2sRPUzhnp9/yh55/YWeq1r2aDyluYoW/lBNjTDNQsvo/JfZBr2vYaGRtm2fFZZfYVuZf9x+y797Qg==|920
+}//aAA84kp0sljTnqtqSvha1U2YZ5TeXpm/UDXhFWgCaD5+Qo72LJyCL+P5/QHmi+cGw1ZupVQmCWvG1gULUS0fJwvnRrLoAF0iYzBs8P3SnUKQpq46kXfWmIa0KyvmY8sYS9RwJM/oGaov+JdLSNJ1MohITaWVCRf/6VXA+iOCczV42URMdCLmTD6vqcW7G5aW3/+ZYj1wTofsF3hb9OUf30uhwWeGdeozIZVIDwbJa+IuKIuu8WTI1bhAZ/yAFPXiCtwVuWlfRcqx4TEJcv9VrP0Vjv9anFM5vhS0WB62aYx5ltx/xirLbk3VHRog4+r53tj2NJcYSVjqkSSMPjpJnqPdUPpKJH8/cA8XKIIklaBCYQnMnFkK1qGrDcvcwqyLd5HH+Pyy+rH2Fx/IFQRPj2QKyLQgaLraxfpfID9rkNeLZrh1LJPz3YhA/TpdDLwTbf2M+thyj3HF87cnXM71+K1QKYPGyWS2uUM3CXgZOyTaInV8nC00gRdwuwiQLQRlHrdz6CE/7iZ2gYpVL8em/fCs9EK+TjZAor6NOAiz7YXlfghLgWZ8V/a2e1GcZ9sR0eztxTB4GKDGXJ+T3huqfsfgPET6BtJgB2Te7SFiYQUsEfR5ft4zW4ccDOiY7WrZwacyimDW+UKoKzFe+6SUyxC8QMtu15dUseaFkjkCNBDBgUTz9tA8l/y87zltr8JT5ELEqrXM7aVstczmz68zF5N9ql5LT/VS31AiUx8C4JDBeDALJnA+Rz6au3SXp50x2dtY+lrzgOIEJyWoqCgN9g3oBEWSAl5ZaYeR+o7ZgoWUJHC4P6d+QOwEVD17jxWS9Z/yNFwkFwLjTwWWgLuwqtHqdrm8cRl2HtCanpFbVZYYPbiyhpEy4jERVgZq4vucJrhoXamXaUGHmRP1Mh0aeA==|920
