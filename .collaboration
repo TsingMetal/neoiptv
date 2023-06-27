@@ -376,29 +376,11 @@
   },
   {
     "ModuleName": "PCPage/QuestionList",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-27T16:40:03.4936061+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\题库管理\\QuestionList.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/QuestionDetail",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-27T16:36:27.6986637+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\题库管理\\QuestionDetail.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/Exam4List",

@@ -404,7 +404,8 @@
                       }
                     ]
                   },
-                  "value": "添加"
+                  "value": "添加",
+                  "compareType": 10
                 },
                 "CommandList": [
                   {
@@ -417,10 +418,11 @@
                     "$type": "ElementUI.Commands.ShowMessage, ElementUI",
                     "Message": "添加成功",
                     "Type": "success",
-                    "Duration": 3000
+                    "Duration": 3000,
+                    "Offset": null
                   }
                 ],
-                "ID": "9782c767-5b02-45e0-91d5-e51a2cc98d3c"
+                "ID": "a2486666-ef5b-4852-9ed9-326be8a0f72b"
               },
               {
                 "Condition": {
@@ -433,7 +435,8 @@
                       }
                     ]
                   },
-                  "value": "修改"
+                  "value": "修改",
+                  "compareType": 10
                 },
                 "CommandList": [
                   {
@@ -444,11 +447,12 @@
                   {
                     "$type": "ElementUI.Commands.ShowMessage, ElementUI",
                     "Message": "修改成功",
-                    "Type": "info",
-                    "Duration": 3000
+                    "Type": "success",
+                    "Duration": 3000,
+                    "Offset": null
                   }
                 ],
-                "ID": "26d72ef4-9a2d-4707-8071-3f286b839d65"
+                "ID": "3494fdf3-dd18-4dd4-86ef-21e90d95baab"
               },
               {
                 "Condition": {
@@ -461,7 +465,8 @@
                       }
                     ]
                   },
-                  "value": "删除"
+                  "value": "删除",
+                  "compareType": 10
                 },
                 "CommandList": [
                   {
@@ -475,7 +480,7 @@
                       "ColumnBindingInfo": {
                         "TableName": "预置评语配置",
                         "ColumnName": "题号",
-                        "GUID": "09eed14e-58e6-484a-8ffc-9d6e57e9b9c7"
+                        "GUID": "2bf22092-6028-4f5d-8189-3948611062b3"
                       },
                       "Value": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -487,8 +492,7 @@
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
                     "TableName": "题库",
                     "UpdateType": "delete",
-                    "ShowConfirm": true,
-                    "ConfirmText": "您确定要删除本题吗？"
+                    "ShowConfirm": false
                   },
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
@@ -501,7 +505,7 @@
                       "ColumnBindingInfo": {
                         "TableName": "预置评语配置表2",
                         "ColumnName": "题号",
-                        "GUID": "a3563292-aca8-4317-ab88-ed1bcffd9005"
+                        "GUID": "44899a68-ffab-45dc-bab4-b9430e6ac3eb"
                       },
                       "Value": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -512,11 +516,12 @@
                   {
                     "$type": "ElementUI.Commands.ShowMessage, ElementUI",
                     "Message": "删除成功",
-                    "Type": "info",
-                    "Duration": 3000
+                    "Type": "success",
+                    "Duration": 3000,
+                    "Offset": null
                   }
                 ],
-                "ID": "4f83bf4b-52f8-4c39-81b1-6132a3aeb2cc"
+                "ID": "36fb48c5-fbf2-474c-945c-d0e05f1d6b48"
               }
             ]
           },
@@ -527,6 +532,20 @@
         ],
         "Text": "提交",
         "TemplateKey": "样式5"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.SpecificTextRule, ServerDesignerCommon",
+            "Value": "删除",
+            "StyleInfo": {
+              "Background": "#FFFFB6C1",
+              "Foreground": "Text 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
       }
     },
     "36,17": {
@@ -915,4 +934,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//lrQBZmM6xHOn3UqYDezMKESyeCacD8M/AfUor+Ls4TVeM8Dk1pVFi6ytXAcRoio1ARrspYoJLNiyU57dvDQ8voXzpypt/mtpv7Ek+ueP9/Brr4BJDkkLEsyO/xUcNpiMjMIX0DG+ExXsU4EM3NLGAvgws+lmnBLL8TEY1e9OeombSkfdijPxeBrDr1GsMA+t00gJg+hDNFg8rr4QQkLKCkbbttATLFV2oYExzX4o7SNFNGZh3J8s4Jweuh6+UnMfT5syEljGma1h7616Sf5ffx9U8NhhhSz6li27sPBONPp+EQtYGthYpIaM83opKWP9RHxqF9atbXvMt+bZlIgL/fCxDimP7eucHgGh/fpnEwYps2/7ZCPCFwSfB6vfQCDWAdjBvtJfG0SeJ8HtbTOu6fE3no3vTTEmdlru9pKehcRvJKLsXMiD32LpnY22ZspghKLuZvs4ghkB40nMqg0hxVqHtUyYBJMxdfXmqXnvR7rCLcfFMMoEPv7jKC2+qB00B6wejm64M+LZVXlh+I7yX5uAmH1RXxNGm6INmc4F6nnpBQRZZNEB93yzcdw4XO8+rlAv+Mw80DCQb+OYci5as/6jQzgD8oI/ir1XNXZAPFzYLL5q283j7Ni/4UY5gFb7Krh7PpAgQMsnt6INtqLahBQW7T7ySko7QFRlAfEWWAPPZ32GscDI8AR4nStYdDVP4LBlRsaRd71WZTh5DFzeTOGA39OVGl1rzt/vwyR1aCxV+FaU50uXqL0pJLK0mUKN4yGD19InrgnGXIbr4zf2SZsg65vrHlwgfsBRdqu8dT+8dLA7Nn+WeJA1G2h1aiviaYXGRDfbJeZiDS1WhbXioaT/ycdwKSChkdy1nJ+b2DCW5lXaZxidaXdErVTCwFDCebWfgh5fuxtiwaC2yUfCoQ==|920
+}//f4h9vz6QqskEFOox+CxNst/qfpQsTrwi4pjZP2ub7uPwv82kgUPZhoy+NBbw37tiDZDkWmwb04yAeWZsyOV1mdLrzMserpG6Pa2oncICXhKQ8ApWb/c65RRf1DbjLX8sJAJrZwIzb6a/az+Tx3DHo+YC2nUy4Nfkwbhjqqeu4AKgbu7nA1174eStiA2bZS8BDrctzebkmSse/qmbPy6/ebOwZ3LNoTmKnD1oaqEA2Tdp+WO0Y/JoC5US8X6q9f2Pd1L/buAtRKzbchfTbDwsv/PJ/DXOW0T4lO0UkuwH12s4D3WlkHPc8VUpusr/cieumyHT/vmn8AANqQ4l0UPqATY7rCSUt2sudEXH0PGNOnVK2hd4+WW1w97WUyicpdAv1YR/Dd69eD0tct2fxLxDwz1spKSp2IxAy2tOLlm8ilRkc9pYU6zkQpU5BWwJzqQSfTWFBw6sTgthKlLmZOGFJylERpeXCm4VG/Tukj5L1tLA/e3jD48vRdB5rjOvfNXziWV35TW/AOIFpsA3Mg8U/7UjhszNCQ2ynmUlW6JxqZKZS7GhIsTQFAHytNo9/oJXt7bPtZUxdSmloYheE9RNO78wYvESuHQYmb6gGFQJz0jFaFTlM286422PWe2E3lAwDAsS16dF203S3W1qZCt0/ucOs3oIRT/4o3RqUj+u7D7wAeYC/7Dsbs01pUZI4A6XlP2MHUpizN6JM1BCw8iKrJhlCwOSoCC3TvXdI6fdaX/A6CNbtQGRa2qKo3vgaK7Vxz+3Xw69gDoSzHPpasNRomhv5raerJTTdvNUuC0VRjQtrt/uPKs3YPN+MkqS8no7yQ64qznW/pJ06ouG05fhND+YjauHbOqv1qTuRNRxNR3nXAwgeXCP/j3uHEik3QVuouvrapfuzIelZLtvmwikxg==|920
