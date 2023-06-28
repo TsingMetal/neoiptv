@@ -31,7 +31,7 @@
           "CommandList": [
             {
               "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
-              "Title": "数据选择",
+              "Title": "批量删除",
               "Message": "清至少选择一条数据",
               "Type": "warning",
               "ConfirmButtonText": "确定",
@@ -39,13 +39,13 @@
               "AdvancedSettings": {}
             }
           ],
-          "ID": "a5cd0bd2-f500-4410-b3f4-9d92e2ebdf5e"
+          "ID": "746c6093-c78e-42c4-9b9e-48fe42520162"
         },
         {
           "CommandList": [
             {
               "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
-              "Title": "数据选择",
+              "Title": "批量删除",
               "Message": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=\"已选择\"&选择行个数&\"条数据\""
@@ -85,7 +85,7 @@
                           "BindingInfo": {
                             "TableName": "阅卷表",
                             "ColumnName": "状态",
-                            "GUID": "c073961f-24fc-487e-8b49-7fd835ece669"
+                            "GUID": "fda88c79-9547-484f-a16f-82e1894e2613"
                           },
                           "Value": "0"
                         }
@@ -98,7 +98,7 @@
                         {
                           "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
                           "ParamName": "ids",
-                          "ListviewName": "未阅卷表格",
+                          "ListviewName": "表格1",
                           "Scope": 1,
                           "Columns": [
                             {
@@ -137,12 +137,12 @@
                       "MethodName": "ExecuteCommand"
                     }
                   ],
-                  "ID": "99911458-c5f4-483d-86f5-bb8e8df2934b"
+                  "ID": "a06dd746-4512-49bd-a055-98b96f23f448"
                 }
               ]
             }
           ],
-          "ID": "2a514338-41c4-48e0-8086-59ba9bfaf64e"
+          "ID": "134b54a5-3837-40c6-bc0e-f94f504c858c"
         }
       ]
     }
