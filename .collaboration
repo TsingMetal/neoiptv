@@ -427,7 +427,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-28T11:14:44.1345348+08:00",
+    "LockDateTime": "2023-06-28T11:14:57.5140089+08:00",
     "ModuleType": 3,
     "ToRemoveFiles": [
       "MasterPages\\PC模板页.json"
@@ -499,13 +499,13 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/ViewExamDetail",
+    "ModuleName": "PCPage/ViewExam",
     "State": 3,
     "LockedBy": {
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-28T11:13:34.0354946+08:00",
+    "LockDateTime": "2023-06-28T11:14:57.5139269+08:00",
     "ModuleType": 1
   }
 ]
