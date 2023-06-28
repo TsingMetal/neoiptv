@@ -360,7 +360,17 @@
   },
   {
     "ModuleName": "PCPage/ExamNoUpLoad",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T14:40:56.6048715+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\考号导入\\ExamNoUpLoad.json",
+      "UserTemplateFile\\考号导入模版4f2f66dc380c4a90a721a87332b9f023.xlsx"
+    ]
   },
   {
     "ModuleName": "PCPage/QuestionList",
