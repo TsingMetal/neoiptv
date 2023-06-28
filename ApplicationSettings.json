@@ -7,7 +7,8 @@
   "WebSitePort": 61362,
   "UserServicePort": 27919,
   "NotAllowQueryDatabaseByJsApi": false,
-  "StartPage": "订单列表",
+  "StartPage": "测试",
+  "TableSheetPageSize": 100,
   "StartDateFiscalYear": 1,
   "CellTypeSpinInfos": [
     {

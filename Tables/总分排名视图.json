@@ -1,0 +1,84 @@
+{
+  "Name": "总分排名视图",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "学员姓名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "学员班级",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "考试名称",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "准考证号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "批改时间",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "得分",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "全体考试人数",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "班级考试人数",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "全体排名",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "班级排名",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "总分排名视图",
+    "SourceViewName": "fgc77bd830042d24fa3890e0864418",
+    "CreateViewSql": "SELECT\r\n    \"学员姓名\",\r\n    \"学员班级\",\r\n    考试名称,\r\n    \"准考证号\",\r\n    批改时间,\r\n    得分,\r\n    COUNT(\"准考证号\") OVER(PARTITION BY \"考试名称\") AS 全体考试人数,\r\n    COUNT(\"准考证号\") OVER(PARTITION BY \"考试名称\", \"学员班级\") AS 班级考试人数,\r\n    DENSE_RANK() OVER(PARTITION BY 考试名称 ORDER BY 得分 DESC) AS 全体排名,\r\n    DENSE_RANK() OVER(PARTITION BY 考试名称, \"学员班级\" ORDER BY 得分 DESC) AS 班级排名\r\nFROM\r\n(\r\n    SELECT\r\n        \"学员姓名\",\r\n        \"学员班级\",\r\n        SUBSTRING(\"题目名称\", -2, -LENGTH(\"题目名称\")) AS 考试名称,\r\n        \"准考证号\",\r\n        MAX(\"批改时间\") AS 批改时间,\r\n        SUM(\"得分\") AS 得分\r\n    FROM \"阅卷表\"\r\n    WHERE \"状态\" = 1\r\n        AND (\"批改时间\" != '' OR \"批改时间\" != NULL)\r\n        AND LENGTH(TRIM(\"题目名称\")) > 0\r\n    GROUP BY \"学员姓名\", \"学员班级\", SUBSTRING(\"题目名称\", -2, -LENGTH(\"题目名称\")), \"准考证号\"\r\n) t"
+  },
+  "PrimaryKey": [
+    "准考证号"
+  ],
+  "Relations": []
+}

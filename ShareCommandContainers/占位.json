@@ -1,0 +1,73 @@
+{
+  "Name": "占位",
+  "ID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528",
+  "Params": [
+    {
+      "ID": "68441817-fd50-4382-a4f0-d0e3a20ffb2a",
+      "Name": "占位单元格"
+    },
+    {
+      "ID": "c4f65294-d985-40aa-9b44-8816854dd407",
+      "Name": "占位单元格原始位置"
+    },
+    {
+      "ID": "81da0e53-cfb2-4b01-b2eb-53b5184517aa",
+      "Name": "占位单元格占位位置"
+    },
+    {
+      "ID": "eaf56485-a8a2-4f05-a8f8-a19e4394dd96",
+      "Name": "查询记录数"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+              "cellLocations": [
+                {
+                  "SerializeProperty": "=查询记录数"
+                }
+              ]
+            },
+            "value": "0"
+          },
+          "CommandList": [
+            {
+              "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+              "SourceCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=占位单元格"
+              },
+              "CellLocation": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=占位单元格占位位置"
+              }
+            }
+          ],
+          "ID": "456f8c2d-c516-4e52-a2b4-def9780f0a1c"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+              "SourceCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=占位单元格"
+              },
+              "CellLocation": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=占位单元格原始位置"
+              }
+            }
+          ],
+          "ID": "fd905692-5307-4538-9728-5cec70f43669"
+        }
+      ]
+    }
+  ]
+}

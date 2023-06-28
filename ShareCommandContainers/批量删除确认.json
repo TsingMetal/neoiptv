@@ -1,0 +1,150 @@
+{
+  "Name": "批量删除确认",
+  "ID": "f40dfa59-6492-4972-87a0-ec7e265e7743",
+  "Params": [
+    {
+      "ID": "1c84fb07-ffdb-48e1-b69b-dc4462376461",
+      "Name": "选择行个数"
+    },
+    {
+      "ID": "c03c06a0-1c7d-45a7-9dec-29c46fd54885",
+      "Name": "命令按钮"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+              "cellLocations": [
+                {
+                  "SerializeProperty": "=选择行个数"
+                }
+              ]
+            },
+            "value": "0"
+          },
+          "CommandList": [
+            {
+              "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+              "Title": "批量删除",
+              "Message": "清至少选择一条数据",
+              "Type": "warning",
+              "ConfirmButtonText": "确定",
+              "CancelButtonText": "取消",
+              "AdvancedSettings": {}
+            }
+          ],
+          "ID": "746c6093-c78e-42c4-9b9e-48fe42520162"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+              "Title": "批量删除",
+              "Message": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=\"已选择\"&选择行个数&\"条数据\""
+              },
+              "Type": "info",
+              "ConfirmButtonText": "确认删除？",
+              "ShowCancelButton": true,
+              "CancelButtonText": "取消",
+              "DialogResult": "确认结果",
+              "AdvancedSettings": {}
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=确认结果"
+                        }
+                      ]
+                    },
+                    "value": "confirm"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                      "TableName": "阅卷表",
+                      "ShowConfirm": false,
+                      "RowsToUpdate": 2,
+                      "RowsToUpdateListViewName": "未阅卷表格",
+                      "UpdateBindingValues": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "阅卷表",
+                            "ColumnName": "状态",
+                            "GUID": "fda88c79-9547-484f-a16f-82e1894e2613"
+                          },
+                          "Value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                      "ServerCommandName": "deleteJdyExam",
+                      "Parameters": [
+                        {
+                          "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
+                          "ParamName": "ids",
+                          "ListviewName": "表格1",
+                          "Scope": 1,
+                          "Columns": [
+                            {
+                              "ArrayItemName": "id",
+                              "Column": "ID"
+                            }
+                          ]
+                        }
+                      ],
+                      "ReturnPropertiesTo": [
+                        {
+                          "ResultPropertyName": "code"
+                        }
+                      ],
+                      "RefreshAfterFinish": true,
+                      "CheckDataValidation": true,
+                      "Disabled": true
+                    },
+                    {
+                      "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                      "Message": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=选择行个数&\"条数据删除成功进入回收站\""
+                      },
+                      "Type": "success",
+                      "Duration": 3000,
+                      "Offset": "20"
+                    },
+                    {
+                      "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                      "TargetPageElement": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=命令按钮"
+                      },
+                      "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                      "MethodName": "ExecuteCommand"
+                    }
+                  ],
+                  "ID": "a06dd746-4512-49bd-a055-98b96f23f448"
+                }
+              ]
+            }
+          ],
+          "ID": "134b54a5-3837-40c6-bc0e-f94f504c858c"
+        }
+      ]
+    }
+  ]
+}

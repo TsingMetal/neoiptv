@@ -1,0 +1,88 @@
+{
+  "Name": "查询",
+  "ID": "15e126d2-6718-4645-85b4-5615256e2acc",
+  "Params": [
+    {
+      "ID": "6397d02f-b3a8-4e95-9b0b-7d9781a83f5d",
+      "Name": "查询值"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+      "TargetTableName": "阅卷表",
+      "SqlCondition": {
+        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+        "SubConditions": [
+          {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "阅卷表",
+              "ColumnName": "学员姓名",
+              "GUID": "585ad460-e808-4312-b4bc-b64d0c6da88a"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=查询值"
+            }
+          },
+          {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "阅卷表",
+              "ColumnName": "学员班级",
+              "GUID": "5189c03d-c910-4175-aa70-a6b816c022a9"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=查询值"
+            }
+          },
+          {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "阅卷表",
+              "ColumnName": "准考证号",
+              "GUID": "279361a0-81f1-4f71-b0ce-c76fbf715e53"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=查询值"
+            }
+          },
+          {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "阅卷表",
+              "ColumnName": "阅卷老师",
+              "GUID": "216a54c8-f27d-408a-ad9e-1ad7565bd627"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=查询值"
+            }
+          },
+          {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "阅卷表",
+              "ColumnName": "题号",
+              "GUID": "ca5a7b6d-c327-4fc3-a0ca-cbe9b039e381"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=查询值"
+            }
+          }
+        ],
+        "RelationType": 1
+      },
+      "ID": "c1cc6bd5e72842bd9304ba4c63754076"
+    }
+  ]
+}
