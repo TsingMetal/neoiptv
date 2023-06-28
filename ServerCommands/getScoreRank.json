@@ -1,0 +1,67 @@
+{
+  "Name": "getScoreRank",
+  "Description": "获取考试成绩排名信息",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_Anonymous",
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "exam_num"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {
+        "exam_num": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=exam_num"
+          },
+          "Item2": 16
+        }
+      },
+      "SqlStatement": "SELECT\r\n    \"准考证号\" AS student_num,\r\n    \"学员姓名\" AS student_name,\r\n    \"学员班级\" AS student_class,\r\n    \"考试名称\" AS exam_name,\r\n    \"批改时间\" AS revise_time,\r\n    \"得分\" AS score,\r\n    \"全体考试人数\" AS all_student_cnt,\r\n    \"班级考试人数\" AS cls_student_cnt,\r\n    \"全体排名\" AS all_rank,\r\n    \"班级排名\" AS cls_rank\r\nFROM \"总分排名视图\"\r\nWHERE \"准考证号\" = @exam_num\r\nORDER BY \"批改时间\" DESC",
+      "ReturnsName": "result",
+      "ID": "30b86db7e54a4d6f8d156d94a715a5a1"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "result",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=result"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "result"
+    }
+  ]
+}

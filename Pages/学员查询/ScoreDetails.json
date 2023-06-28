@@ -1,0 +1,954 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 34
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "Count": 37
+  },
+  "Values": {
+    "0,20": "准考证号:",
+    "1,20": "考试名称：",
+    "3,1": "题目名称：",
+    "5,1": "满       分：",
+    "5,10": "得       分：",
+    "7,1": "考试人数：",
+    "7,10": "排       名：",
+    "9,1": "",
+    "20,1": "批改老师：",
+    "22,1": "问       题：",
+    "25,1": "优       点：  ",
+    "28,1": "评       语："
+  },
+  "Formulas": {
+    "7,14": "RANK(O6,X14)",
+    "7,5": "COUNTA(T14)"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImageSizeMode": 2,
+        "ImagePath": "logo.png"
+      }
+    },
+    "0,19": {
+      "CellComment": {
+        "Comments": "逻辑占位区"
+      }
+    },
+    "0,25": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证号",
+        "GUID": "f65ee670-e1e2-44bc-ab14-961c252953d8"
+      }
+    },
+    "1,25": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "考试名称",
+        "GUID": "ed1d84bd-4dd5-41f1-88f9-8b9048fa3bf3"
+      }
+    },
+    "3,5": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题目名称",
+        "GUID": "2d3f438d-9470-4b66-bb80-ef849650bfc7"
+      },
+      "CellType": {
+        "$type": "Vant.CellTypes.Input, Vant",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "keyboardType": "text",
+        "enterkeyhint": "enter",
+        "placeholder": "",
+        "ReadOnly": true
+      }
+    },
+    "3,19": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "阅卷表",
+        "RowIndex": 3,
+        "ColumnIndex": 19,
+        "RowCount": 7,
+        "ColumnCount": 17,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "准考证号",
+                "GUID": "1cb9fc42-f12d-4f53-9684-2f65a6edc746"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=ScoreDetails!Z1"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试名称",
+                "GUID": "34217246-d246-46b2-84e0-697524bec713"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=ScoreDetails!Z2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "题目名称",
+                "GUID": "7f9c3dae-d23f-4918-a15b-84c0ff71573c"
+              },
+              "Value": "%Null%"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "4,19": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "准考证号",
+        "GUID": "ca6d9c19-3bb4-4f5d-8f98-2c573cf1ee05"
+      }
+    },
+    "4,23": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "考试名称",
+        "GUID": "c53693fe-a485-45d5-8c28-2eb4b41ced9c"
+      }
+    },
+    "4,27": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题目名称",
+        "GUID": "599282f4-e559-4c26-ac10-ed542fd122b2"
+      }
+    },
+    "4,31": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "得分",
+        "GUID": "81f1ac52-4691-4e18-b4a8-98a3d9ccb0fe"
+      }
+    },
+    "4,33": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "学员班级",
+        "GUID": "c8966a1a-aa23-4408-a9b5-054ec8e52f9a"
+      }
+    },
+    "5,5": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "满分",
+        "GUID": "af79f1ee-e7a7-41bc-ac06-c93d13af7307"
+      },
+      "CellType": {
+        "$type": "Vant.CellTypes.Input, Vant",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "keyboardType": "text",
+        "enterkeyhint": "enter",
+        "placeholder": "",
+        "ReadOnly": true
+      }
+    },
+    "5,14": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "得分",
+        "GUID": "f18af1cc-240d-47bc-af22-734d9ffed915"
+      },
+      "CellType": {
+        "$type": "Vant.CellTypes.Input, Vant",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "keyboardType": "text",
+        "enterkeyhint": "enter",
+        "placeholder": "",
+        "ReadOnly": true
+      }
+    },
+    "7,5": {
+      "CellType": {
+        "$type": "Vant.CellTypes.Input, Vant",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "keyboardType": "text",
+        "enterkeyhint": "enter",
+        "placeholder": "请输入",
+        "ReadOnly": true
+      }
+    },
+    "7,14": {
+      "CellType": {
+        "$type": "Vant.CellTypes.Input, Vant",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "keyboardType": "text",
+        "enterkeyhint": "enter",
+        "placeholder": "请输入",
+        "ReadOnly": true
+      }
+    },
+    "9,1": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "试卷",
+        "GUID": "ee0b9502-6e62-4451-9f5b-bdf9a4fe9473",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ScoreDetails!B10"
+            }
+          }
+        ]
+      }
+    },
+    "12,19": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "阅卷表",
+        "RowIndex": 12,
+        "ColumnIndex": 19,
+        "RowCount": 5,
+        "ColumnCount": 17,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "考试名称",
+                "GUID": "e070271f-553b-4666-b998-cb36b50f8005"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=ScoreDetails!Z2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "题目名称",
+                "GUID": "ceb7e181-2143-42d8-962d-93ead77a6a70"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=ScoreDetails!F4"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "13,19": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "题目名称",
+        "GUID": "f524ba0d-3364-46d3-97e7-a77928212f06"
+      }
+    },
+    "13,23": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "得分",
+        "GUID": "77ea2d76-3e6a-4d8c-8935-27c5f40d8f5a"
+      }
+    },
+    "20,5": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "阅卷老师",
+        "GUID": "277f6a3d-b3e4-4e95-9800-c6e8f30c8e7a"
+      },
+      "CellType": {
+        "$type": "Vant.CellTypes.Input, Vant",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "keyboardType": "text",
+        "enterkeyhint": "enter",
+        "placeholder": "",
+        "ReadOnly": true
+      }
+    },
+    "22,5": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "问题",
+        "GUID": "7c04d8c7-948a-45c2-8867-c0a56a80949e"
+      },
+      "CellType": {
+        "$type": "Vant.CellTypes.Input, Vant",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "textarea",
+        "keyboardType": "text",
+        "enterkeyhint": "enter",
+        "placeholder": "",
+        "ReadOnly": true
+      }
+    },
+    "25,5": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "优点",
+        "GUID": "18a80848-0a69-4c8b-a54c-882aeec7218a"
+      },
+      "CellType": {
+        "$type": "Vant.CellTypes.Input, Vant",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "textarea",
+        "keyboardType": "text",
+        "enterkeyhint": "enter",
+        "placeholder": "",
+        "ReadOnly": true
+      }
+    },
+    "28,5": {
+      "BindingInfo": {
+        "TableName": "阅卷表",
+        "ColumnName": "自定义评语",
+        "GUID": "c5f41946-d675-4aaa-83ba-a94df7396b61"
+      },
+      "CellType": {
+        "$type": "Vant.CellTypes.Input, Vant",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "textarea",
+        "keyboardType": "text",
+        "enterkeyhint": "enter",
+        "placeholder": "",
+        "ReadOnly": true
+      }
+    },
+    "32,0": {
+      "CellType": {
+        "$type": "Vant.CellTypes.Pagination, Vant",
+        "ListviewName": "表格1",
+        "mode": "simple",
+        "itemsPerPage": 1,
+        "prevText": "上一题",
+        "nextText": "下一题"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 2
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 3
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 4
+      },
+      {
+        "Background": 5
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0
+      },
+      {
+        "Background": 6
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "Bold",
+        "#FF00B050",
+        "#FFFF0000",
+        "Accent 1 60",
+        "Background 1 -25"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "1,20": 1,
+      "1,21": 0,
+      "1,22": 0,
+      "1,23": 0,
+      "1,25": 0,
+      "3,1": 1,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "3,5": 2,
+      "5,1": 0,
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 0,
+      "5,5": 0,
+      "5,6": 0,
+      "5,7": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 1,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 3,
+      "5,15": 0,
+      "5,16": 0,
+      "7,1": 1,
+      "7,2": 0,
+      "7,3": 0,
+      "7,4": 0,
+      "7,5": 0,
+      "7,6": 0,
+      "7,7": 0,
+      "7,8": 0,
+      "7,9": 0,
+      "7,10": 1,
+      "7,11": 0,
+      "7,12": 0,
+      "7,13": 0,
+      "7,14": 4,
+      "7,15": 0,
+      "7,16": 0,
+      "9,1": 0,
+      "11,17": 0,
+      "20,1": 0,
+      "20,2": 0,
+      "20,3": 0,
+      "20,4": 0,
+      "20,5": 0,
+      "20,6": 0,
+      "20,7": 0,
+      "20,8": 0,
+      "20,9": 0,
+      "20,10": 0,
+      "20,11": 0,
+      "20,12": 0,
+      "20,13": 0,
+      "20,14": 0,
+      "20,15": 0,
+      "20,16": 0,
+      "22,1": 1,
+      "22,2": 0,
+      "22,3": 0,
+      "22,4": 0,
+      "22,5": 0,
+      "22,6": 0,
+      "22,7": 0,
+      "22,8": 0,
+      "22,9": 0,
+      "22,10": 0,
+      "22,11": 0,
+      "22,12": 0,
+      "22,13": 0,
+      "22,14": 0,
+      "22,15": 0,
+      "22,16": 0,
+      "23,1": 0,
+      "23,2": 0,
+      "23,3": 0,
+      "23,4": 0,
+      "23,5": 0,
+      "23,6": 0,
+      "23,7": 0,
+      "23,8": 0,
+      "23,9": 0,
+      "23,10": 0,
+      "23,11": 0,
+      "23,12": 0,
+      "23,13": 0,
+      "23,14": 0,
+      "23,15": 0,
+      "23,16": 0,
+      "24,1": 0,
+      "24,2": 0,
+      "24,3": 0,
+      "24,4": 0,
+      "24,5": 0,
+      "24,6": 0,
+      "24,7": 0,
+      "24,8": 0,
+      "24,9": 0,
+      "24,10": 0,
+      "24,11": 0,
+      "24,12": 0,
+      "24,13": 0,
+      "24,14": 0,
+      "24,15": 0,
+      "24,16": 0,
+      "25,1": 1,
+      "25,2": 0,
+      "25,3": 0,
+      "25,4": 0,
+      "25,5": 0,
+      "25,6": 0,
+      "25,7": 0,
+      "25,8": 0,
+      "25,9": 0,
+      "25,10": 0,
+      "25,11": 0,
+      "25,12": 0,
+      "25,13": 0,
+      "25,14": 0,
+      "25,15": 0,
+      "25,16": 0,
+      "26,1": 0,
+      "26,2": 0,
+      "26,3": 0,
+      "26,4": 0,
+      "26,5": 0,
+      "26,6": 0,
+      "26,7": 0,
+      "26,8": 0,
+      "26,9": 0,
+      "26,10": 0,
+      "26,11": 0,
+      "26,12": 0,
+      "26,13": 0,
+      "26,14": 0,
+      "26,15": 0,
+      "26,16": 0,
+      "27,1": 0,
+      "27,2": 0,
+      "27,3": 0,
+      "27,4": 0,
+      "27,5": 0,
+      "27,6": 0,
+      "27,7": 0,
+      "27,8": 0,
+      "27,9": 0,
+      "27,10": 0,
+      "27,11": 0,
+      "27,12": 0,
+      "27,13": 0,
+      "27,14": 0,
+      "27,15": 0,
+      "27,16": 0,
+      "28,1": 1,
+      "28,2": 0,
+      "28,3": 0,
+      "28,4": 0,
+      "28,5": 0,
+      "29,1": 0,
+      "29,2": 0,
+      "29,3": 0,
+      "29,4": 0,
+      "30,1": 0,
+      "30,2": 0,
+      "30,3": 0,
+      "30,4": 0,
+      "31,0": 5,
+      "31,1": 6,
+      "31,2": 6,
+      "31,3": 6,
+      "31,4": 6,
+      "31,5": 6,
+      "31,6": 6,
+      "31,7": 6,
+      "31,8": 6,
+      "31,9": 6,
+      "31,10": 6,
+      "31,11": 6,
+      "31,12": 6,
+      "31,13": 6,
+      "31,14": 6,
+      "31,15": 6,
+      "31,16": 6,
+      "31,17": 5,
+      "32,0": 0,
+      "32,1": 0,
+      "32,2": 0,
+      "32,3": 0,
+      "32,4": 0,
+      "32,5": 0,
+      "32,6": 0,
+      "32,7": 0,
+      "32,8": 0,
+      "32,9": 0,
+      "32,10": 0,
+      "32,11": 0,
+      "32,12": 0,
+      "32,13": 0,
+      "32,14": 0,
+      "32,15": 0,
+      "32,16": 0,
+      "32,17": 0,
+      "33,0": 0,
+      "33,1": 0,
+      "33,2": 0,
+      "33,3": 0,
+      "33,4": 0,
+      "33,5": 0,
+      "33,6": 0,
+      "33,7": 0,
+      "33,8": 0,
+      "33,9": 0,
+      "33,10": 0,
+      "33,11": 0,
+      "33,12": 0,
+      "33,13": 0,
+      "33,14": 0,
+      "33,15": 0,
+      "33,16": 0,
+      "33,17": 0,
+      "33,18": 0
+    },
+    "ColStyles": {
+      "18": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,1,1,4",
+    "28,1,1,4",
+    "28,5,3,12",
+    "32,0,2,18",
+    "0,0,3,18",
+    "0,20,1,4",
+    "0,25,1,5",
+    "1,20,1,4",
+    "1,25,1,5",
+    "4,19,1,4",
+    "13,19,1,4",
+    "4,23,1,4",
+    "4,27,1,4",
+    "4,31,1,2",
+    "13,23,1,4",
+    "25,1,1,4",
+    "25,5,3,12",
+    "22,1,1,4",
+    "22,5,3,12",
+    "5,19,5,17",
+    "14,19,3,17",
+    "7,1,1,4",
+    "7,10,1,4",
+    "7,14,1,3",
+    "7,5,1,3",
+    "20,5,1,12",
+    "20,1,1,4",
+    "5,1,1,4",
+    "5,5,1,3",
+    "5,10,1,4",
+    "5,14,1,3",
+    "4,33,1,3",
+    "3,5,1,12",
+    "9,1,10,16",
+    "3,19,1,4",
+    "3,23,1,4",
+    "3,27,1,4",
+    "3,31,1,2",
+    "3,33,1,3",
+    "12,19,1,4",
+    "12,23,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true,
+    "RelatedDataTableName": "阅卷表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "6e8ce488-2a3e-41a9-8653-3c61bc345aa7.png",
+      "DisplayName": "背景图1",
+      "StyleInfo": {
+        "Fill": "Background 1 -15"
+      },
+      "IsAutomaticFill": false,
+      "Location": "360,0",
+      "Size": "20,645"
+    },
+    {
+      "Name": "BackgroundPicture5",
+      "DisplayName": "背景图12",
+      "StyleInfo": {
+        "Fill": "Background 1 0"
+      },
+      "IsAutomaticFill": false,
+      "Location": "0,120",
+      "Size": "340,20"
+    }
+  ]
+}//s4Zd+1eqLJR0cxhrbXlftEkeVYZR/zhgmv6jzzoeG6gM+i82UBD2lr9c3jYmavN61P6uV96yI19TUWTizbQdDVMXlKQWgozvjEHdaGLjdsuKKVw/1PdNHqyUOCQ3kOpeGs+dzvVpDxAFThdlN96unW6xgM5lykvpTtxWxCXTiDzHoo5zAevvRe0q1+JYzMn8PoIsTwPxNNm3jOB/lvd87AZ6LvZosLatk103y6qZz+woo40DQkrzMH2UoSeE/qR9R00K2qsqwpSQ6A98zSoQQC/k5DZS5v7i2GnH8qGqUkL1Soz40UVSbnH3uw+KeAGHu0YUbCSsLR+2UgIo3cb8HdNS3ft5fgiMWNu4h/IhK1siq2DTtSiTb4VcgudkNbR0Ljo5XIYrSrsZsmchN9+vReC4QU+AQHprItlqtRw3uaXvabBSp3M8BhDMZa1RIOXr16R2MwUuVc8nnXHBbfxNsJ51O8OkXerLA1bmhJEW1Xm7UoqBPPykO2KIUmBTwgSc9bdqcFztgD/jqkABAETKC8QXpGdzp5YwJKSShKPC5+cBtcdaamapVMjB4AV/aPWHPWGPGkA55k71BGfxF1lTYk+SM1xyxmJ5tBEBRW5BjHC3P0Ng1fiEWg0EmxYfzuge/VukoaEYURpmTq0tAHI1ocHetarQn9Yg5J95n3NTI2OoBgptSn2q44hUgbOgaYXvzdH3A7olxHmH+U0xI1H/jw0GlQ7W2B+S3DUSjxozuE99LfBXwdsh6uTlXVDe7auqSWN9pxbXYBLV89BnX0oOFLDCkJMElb/qQGgTHzAowlnWZBhi4sW/uYV8jHlf0qpPhbSvmyODs20NnctBPmp+2Bia1x/WoA+XT0f2qJ+ealM+YAEw17LrvTVfwq94HYJgguxrnfmP1oywS5QBYtb1hA==|920

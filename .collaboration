@@ -25,16 +25,6 @@
     "ExclusiveType": 0
   },
   {
-    "ModuleName": "Table/_4题试卷上传",
-    "ModuleType": 7,
-    "ExclusiveType": 0
-  },
-  {
-    "ModuleName": "Table/_5题试卷上传",
-    "ModuleType": 7,
-    "ExclusiveType": 0
-  },
-  {
     "ModuleName": "Table/考号档案",
     "ModuleType": 7,
     "ExclusiveType": 0
@@ -149,10 +139,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "Pages/上传试卷",
-    "ModuleType": 6
-  },
-  {
     "ModuleName": "PCPage/小测上传列表",
     "ModuleType": 1
   },
@@ -161,76 +147,20 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/请批量选择4题试卷进行上传-1",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/查看准考证号",
-    "ModuleType": 1
-  },
-  {
     "ModuleName": "Pages/题库管理",
     "ModuleType": 6
-  },
-  {
-    "ModuleName": "PCPage/题库管理详情",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/题库列表页面",
-    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/开始阅卷",
     "ModuleType": 6
   },
   {
-    "ModuleName": "PCPage/阅卷详情页面",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/批改试卷页面",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/未阅卷管理页面",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/已阅卷管理页面",
-    "ModuleType": 1
-  },
-  {
     "ModuleName": "Pages/考号导入",
     "ModuleType": 6
   },
   {
-    "ModuleName": "PCPage/考号导入",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "Pages/学员查询",
-    "ModuleType": 6
-  },
-  {
-    "ModuleName": "PCPage/二维码",
-    "ModuleType": 1
-  },
-  {
     "ModuleName": "Pages/修改阅卷明细",
     "ModuleType": 6
-  },
-  {
-    "ModuleName": "PCPage/查看阅卷详情",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/修改未阅卷明细",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/查看已阅卷明细",
-    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/iPad端",
@@ -269,31 +199,11 @@
     "ModuleType": 6
   },
   {
-    "ModuleName": "PCPage/所有回收站",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/回收站",
-    "ModuleType": 1
-  },
-  {
     "ModuleName": "MasterPCPage/FGC_母版页",
     "ModuleType": 3
   },
   {
-    "ModuleName": "MasterPCPage/母版页1",
-    "ModuleType": 3
-  },
-  {
-    "ModuleName": "MasterPCPage/母版页2",
-    "ModuleType": 3
-  },
-  {
     "ModuleName": "ServerCommand/uploadFiveExam",
-    "ModuleType": 15
-  },
-  {
-    "ModuleName": "ServerCommand/uploadFourExam",
     "ModuleType": 15
   },
   {
@@ -417,27 +327,138 @@
     "ModuleType": 38
   },
   {
-    "ModuleName": "MobilePage/得分详情",
-    "ModuleType": 2
-  },
-  {
-    "ModuleName": "MobilePage/成绩总览",
-    "ModuleType": 2
-  },
-  {
-    "ModuleName": "MobilePage/成绩查询",
-    "ModuleType": 2
-  },
-  {
-    "ModuleName": "PCPage/4题试卷上传列表_bak",
+    "ModuleName": "PCPage/CheckExamNo",
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/4题试卷上传",
+    "ModuleName": "PCPage/Exam4Upload",
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/请批量选择4题试卷进行上传",
+    "ModuleName": "PCPage/QRCode",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MobilePage/ScoreDetails",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/ScoreOverview",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/ScoreQuery",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "PCPage/RevisePage",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/ReviseDetail",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/ExamNoUpLoad",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/QuestionList",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/QuestionDetail",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/Exam4List",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/学员查询",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "ServerCommand/getExamCntToRevise",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "PCPage/ExamRevised",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/ExamToRevise",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MasterPCPage/PC模板页",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterPCPage/平板模板页",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "Pages/上传试卷",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "TableView/总分排名视图",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "ServerCommand/getScoreRank",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "PCPage/RecircleBinAll",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/RecircleBin",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "ServerCommand/getStudentInfo",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "TableView/单题排名视图",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "ServerCommand/getItemScoreRank",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "Table/_4题试卷上传",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "ShareCommandContainer/查询",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/占位",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/批量删除确认",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "PCPage/EditExam",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/ViewExam",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/ExamDetail",
     "ModuleType": 1
   }
 ]
