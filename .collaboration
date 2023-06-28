@@ -417,16 +417,7 @@
   },
   {
     "ModuleName": "PCPage/RecircleBin",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-28T11:22:10.781033+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\回收站\\RecircleBin.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/getStudentInfo",
@@ -460,41 +451,14 @@
   },
   {
     "ModuleName": "PCPage/EditExam",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-28T11:25:00.933384+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\修改阅卷明细\\EditExam.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ViewExam",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-28T11:25:24.0143279+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\修改阅卷明细\\ViewExam.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ExamDetail",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-28T11:27:00.4486712+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\修改阅卷明细\\ExamDetail.json"
-    ]
+    "ModuleType": 1
   }
 ]
