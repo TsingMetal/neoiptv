@@ -190,7 +190,6 @@
     "1,16": "查询",
     "1,43": "还原",
     "1,48": "彻底删除",
-    "8,53": "查询",
     "13,53": "暂无数据",
     "22,3": 100,
     "22,5": "条/页"
@@ -215,13 +214,80 @@
         "$type": "ElementUI.InputCellType, ElementUI",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
-            "TargetPageElement": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=RecircleBinAll!BB9"
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "15e126d2-6718-4645-85b4-5615256e2acc"
             },
-            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
-            "MethodName": "ExecuteCommand"
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "6397d02f-b3a8-4e95-9b0b-7d9781a83f5d",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "15e126d2-6718-4645-85b4-5615256e2acc"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RecircleBinAll!C2"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "68441817-fd50-4382-a4f0-d0e3a20ffb2a",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RecircleBinAll!BB14"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "c4f65294-d985-40aa-9b44-8816854dd407",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RecircleBinAll!BB14"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "81da0e53-cfb2-4b01-b2eb-53b5184517aa",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RecircleBinAll!C5:AZ21"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "eaf56485-a8a2-4f05-a8f8-a19e4394dd96",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RecircleBinAll!BB4"
+                }
+              }
+            ]
           }
         ],
         "UIPermissions": [
@@ -248,9 +314,9 @@
         "placeholder": "请输入学员姓名/准考证号/题号/班级/阅卷老师查找数据",
         "prefixIcon": {
           "$type": "GrapeCity.Forguncy.Plugin.ImageValue, GrapeCity.Forguncy.Plugin",
-          "Name": "Application/047_search_8.svg",
+          "Name": "Application/044_search_5.svg",
           "BuiltIn": true,
-          "Color": "black"
+          "Color": "Background 1 -35"
         },
         "resize": "none",
         "clearable": true,
@@ -262,7 +328,7 @@
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "查询",
-        "TemplateKey": "_RS_Main1"
+        "TemplateKey": "_RS_Main3"
       }
     },
     "1,43": {
@@ -312,7 +378,7 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "099a2458-4a6f-49bc-aaf4-c400285a5f5d"
+                "ID": "ff25858c-8004-42a3-8166-d518e4af0cd2"
               },
               {
                 "CommandList": [
@@ -358,7 +424,7 @@
                                 "BindingInfo": {
                                   "TableName": "阅卷表",
                                   "ColumnName": "状态",
-                                  "GUID": "78bd653d-3af6-49de-8343-842d37d5a4c7"
+                                  "GUID": "8d1bb76e-c1ca-4149-b486-4a486797f63b"
                                 },
                                 "Value": "1"
                               }
@@ -412,20 +478,76 @@
                             "UpdateListviewCommandRunTimeMethodSetting": {
                               "MethodName": "ClearAllSelectedRows"
                             }
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                            "ShareCommandContainerRefer": {
+                              "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                            },
+                            "Params": [
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "68441817-fd50-4382-a4f0-d0e3a20ffb2a",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=RecircleBinAll!BB14"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "c4f65294-d985-40aa-9b44-8816854dd407",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=RecircleBinAll!BB14"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "81da0e53-cfb2-4b01-b2eb-53b5184517aa",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=RecircleBinAll!C5:AZ21"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "eaf56485-a8a2-4f05-a8f8-a19e4394dd96",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=RecircleBinAll!BB4"
+                                }
+                              }
+                            ]
                           }
                         ],
-                        "ID": "d9b8a20f-78fc-496f-b201-3b0418d27efb"
+                        "ID": "91a55792-bb23-4507-aa58-56c8a74b17ff"
                       }
                     ]
                   }
                 ],
-                "ID": "07cbbf8f-5997-4a7d-b647-c931894f27a1"
+                "ID": "49343c63-a946-4696-9765-0dedd085dc61"
               }
             ]
           }
         ],
         "Text": "还原",
-        "TemplateKey": "样式6"
+        "TemplateKey": "_RS_Success1"
       }
     },
     "1,48": {
@@ -433,13 +555,163 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "阅卷表",
-            "UpdateType": "delete",
-            "ShowConfirm": true,
-            "ConfirmText": "您确定要删除吗？",
-            "RowsToUpdate": 2,
-            "RowsToUpdateListViewName": "表格1"
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "GetSelectedRows",
+              "RetrunParamNames": {
+                "SelectedRows": null,
+                "SelectedRowCount": {
+                  "SerializeProperty": "选择行个数"
+                }
+              }
+            }
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=RecircleBinAll!选择行个数"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "彻底删除",
+                    "Message": "请至少选择一条数据!",
+                    "Type": "warning",
+                    "ConfirmButtonText": "确定",
+                    "CancelButtonText": "取消",
+                    "AdvancedSettings": {}
+                  }
+                ],
+                "ID": "e4c6f1aa-581a-4988-ad09-935177004afa"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "彻底删除",
+                    "Message": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=\"已选则\"&RecircleBinAll!选择行个数&\"条数据，删除后将无法恢复。\""
+                    },
+                    "Type": "info",
+                    "ConfirmButtonText": "确认删除？",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "确认结果",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=RecircleBinAll!确认结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "阅卷表",
+                            "UpdateType": "delete",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 2,
+                            "RowsToUpdateListViewName": "表格1"
+                          },
+                          {
+                            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                            "Message": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=RecircleBinAll!选择行个数&\"数据删除成功\""
+                            },
+                            "Type": "success",
+                            "Duration": 3000
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                            "ShareCommandContainerRefer": {
+                              "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                            },
+                            "Params": [
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "68441817-fd50-4382-a4f0-d0e3a20ffb2a",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=RecircleBinAll!BB14"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "c4f65294-d985-40aa-9b44-8816854dd407",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=RecircleBinAll!BB14"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "81da0e53-cfb2-4b01-b2eb-53b5184517aa",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=RecircleBinAll!C5:AZ21"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "eaf56485-a8a2-4f05-a8f8-a19e4394dd96",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=RecircleBinAll!BB4"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "080bab94-7f18-4eca-83f4-6082b65db529"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "5f5136f8-2668-4d73-903d-d617c038f0e2"
+              }
+            ]
           }
         ],
         "Text": "彻底删除",
@@ -629,141 +901,6 @@
       },
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
-      }
-    },
-    "8,53": {
-      "CssName": "",
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "阅卷表",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "SubConditions": [
-                {
-                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 6,
-                  "ColumnBindingInfo": {
-                    "TableName": "阅卷表",
-                    "ColumnName": "学员姓名",
-                    "GUID": "190562ca-8d4d-448c-afdb-a6e2a5880243"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=RecircleBinAll!C2"
-                  }
-                },
-                {
-                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 6,
-                  "ColumnBindingInfo": {
-                    "TableName": "阅卷表",
-                    "ColumnName": "学员班级",
-                    "GUID": "39bc8073-f2d7-4e0b-b5a2-a1705a68fea9"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=RecircleBinAll!C2"
-                  }
-                },
-                {
-                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 6,
-                  "ColumnBindingInfo": {
-                    "TableName": "阅卷表",
-                    "ColumnName": "准考证号",
-                    "GUID": "c07d8b4a-70ea-4d55-ab9d-e0fa0a8f6a62"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=RecircleBinAll!C2"
-                  }
-                },
-                {
-                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 6,
-                  "ColumnBindingInfo": {
-                    "TableName": "阅卷表",
-                    "ColumnName": "阅卷老师",
-                    "GUID": "0f9b6d90-b919-4c91-89f9-f1d13bf21e86"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=RecircleBinAll!C2"
-                  }
-                },
-                {
-                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 6,
-                  "ColumnBindingInfo": {
-                    "TableName": "阅卷表",
-                    "ColumnName": "题号",
-                    "GUID": "d257a1d5-0a04-4998-8a93-9e93b60bf481"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=RecircleBinAll!C2"
-                  }
-                }
-              ],
-              "RelationType": 1
-            },
-            "ID": "1a1ed16888d74e23a32dde9cbc035dd2"
-          },
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=RecircleBinAll!BB4"
-                      }
-                    ]
-                  },
-                  "value": "0"
-                },
-                "CommandList": [
-                  {
-                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
-                    "SourceCell": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=RecircleBinAll!BB14"
-                    },
-                    "CellLocation": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=RecircleBinAll!C5:AZ21"
-                    }
-                  }
-                ],
-                "ID": "343a69ba-c016-4464-9ff6-b6b83cafe8c2"
-              },
-              {
-                "CommandList": [
-                  {
-                    "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
-                    "SourceCell": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=RecircleBinAll!BB14"
-                    },
-                    "CellLocation": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=RecircleBinAll!BB14"
-                    }
-                  }
-                ],
-                "ID": "8340fb23-842d-47a6-a3f7-a64ff60b56fd"
-              }
-            ]
-          }
-        ],
-        "Text": "查询",
-        "TemplateKey": "_RS_Main1"
       }
     },
     "22,18": {
@@ -989,25 +1126,24 @@
     "22,3,1,2",
     "22,18,2,22",
     "1,2,1,13",
-    "8,53,1,3",
     "1,16,1,3",
+    "4,17,1,2",
+    "4,21,1,3",
     "3,3,1,2",
     "3,5,1,4",
     "3,9,1,4",
     "3,13,1,2",
     "3,15,1,2",
+    "3,17,1,2",
     "3,19,1,2",
+    "3,21,1,3",
     "3,24,1,2",
     "3,26,1,5",
     "3,32,1,4",
     "3,36,1,5",
     "3,41,1,4",
     "3,45,1,4",
-    "3,49,1,3",
-    "4,17,1,2",
-    "3,17,1,2",
-    "4,21,1,3",
-    "3,21,1,3"
+    "3,49,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1043,7 +1179,7 @@
                 }
               }
             ],
-            "ID": "3c87bbf5-0d44-460a-8fbd-a423a2c43791"
+            "ID": "98f78da9-d501-48cf-ad42-32e3304295d9"
           }
         ]
       }
@@ -1071,4 +1207,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//uFZtaQlUh8OloLh/miBDTd/tyNMgsfOO2R7B8i4P5sSPuVylIYVKjVptSQq20iZp4x/qLIwsFbfmK4eFuy7Ks+zhFU/wiErxbF6U3xzcr7nUNv6kaKvMPX9cAGxStdrTAF16JyenGytnvqEehKoGp81ES0E8SDyaXtyvKQ5/ri+cTRQ1Bm2TlS2kK7MoZbvISJU4wUzMh8ksGm2e53AhykUWGVkWnOEvZDPEy/VgZJB6ccMu4bq640ju3Jh2h2mfQvlahMvC4D9z9/6RnzHntewUPIEViQayuXnMeGBSgyfKYURBuBq3UEStas6M77nDycR7ggBews6E4uy7j8x8Ya2DQAsqTxjV4lnfv/MGK+kCWC28PiwkpSFSCRjPkSUy8pjx2OleVhWFeaVvJnPMsW561tfhe+t4PHaowQfZHRizuqkFrGDh/ZUMm4jwyxTn1f4vIYXL3qsXhnBbNyhFLbIHG610dRPqEsp2zpjLRRyMv8BEkTiLzn7xNqWrGodOI27VDnNpd/lg1n/pXT3Cp5z9aMNUVqf7RfPfnF9ULyYCG5tXoSvQvckkXIYDc2ZHLqkWGgXBVxu8sAZtes8EK7YlDheUh2LRgZhn4xEikgus9FPztzj8u5BrelU89oUUVqx9gYnO/kZSOwA48QYhddlj605ClSkoDM2DTt3SngMA20KzbrVrOJ0b7/SpsnX43dEnvWFcRPek997Agwl9LDvJS/rmTtzupVNzOScVP/9KYD6rvMdF1d7iASjhRkQ4PhYZX6/aQnlbogiDQwIS7cAhtYD6dUUAc2tS3hmG8gnrR+uGexZVdyjdtZhvd8fphukWxoyIJq3rqY58ObARSFedHDMW7WUOF7RkrnpXtIzvFEOobTwpA5K9Jjw122oQUGFrryN/aYQQtQu7w8ayTQ==|920
+}//W4s2jlFHGzxthPVDT2iUJ4FwXY4rzaDbhy+ZdweemmMvwo53ycrP6xbxhOsBCbYo6+CeVYjZG8/N6su6LZ6xQuQFfO8fJrAnv2ONYvJE12amxv2IFxhGJ9QVrXqzvnt1Ju167FZc5ge7hW8rEeltNebRDHgRJDB5X8IUMpcLIykvy6tNauZDj7p3K+js3OThgRn6Ocyydbz3Yrmv5zoljIEr0576ksQVWzalpKobkx2pDLFJ2aCSyLgX1F+0Zaz90PoR1J1/L282xVJY2ajjpImC6N7oyNwTXzrMdxcZ7UTY96lO9cASOBGH0+U7T/rVaP5Oo8ajq7a6KslSuS/668i06CiIzeDoxguBM/gRnJUPWub0OxPfVYPEI2lzpykKRAQz/x1JwDQpwXPWq0psrig/B60vMQypHwygrPMEwKQE8T/cblx/TDArl7SIq8GywN9dd2JhiWJKdQTJS8ZHWN7E3JJy6COKaG497h7AcqmDZ+tabDt7MkuPymmeCmfvbfBnVxFZz9NOB8+XO1ZQc+75SfPK7oa7LwXsb/GtGzMZ/LXo2C7uj4n6WH6qj7nrfbG9c54p38TFPVuMpMN5ZBAjCuYXQazcTg1ry9IE0Ud1gt3/5HVeC+dI9u2jlMupabzEexqq1WtySrjXvqX9ujw75zfZi4jWV6Q63675xnIyrdGZMazrOCZK+feS+7GtzdWBl2MtlJ322zMrunBoi0aObA6TAlYrDHxH0W0y21zm+kJZJY2SzUVV4+chTuuThRPWAI6aHtKjefZfyHRmwBPwe7U2H9oG1826vPnWpjhbZSumk6g5NXp/WnG/r7cZffWoRP52tk5H5HGuZulwyLK06U5JHiSU7c9ZMgPXOGPQcBFQoPG5ZVCagdEnqML1RAl1FoThRiymRTu4mZ3JEQ==|920
