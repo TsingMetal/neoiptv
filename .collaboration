@@ -418,7 +418,16 @@
   },
   {
     "ModuleName": "PCPage/ExamToRevise",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T10:34:27.7505839+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\开始阅卷\\ExamToRevise.json"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/PC模板页",
