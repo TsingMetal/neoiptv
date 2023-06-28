@@ -111,7 +111,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!B2"
+                  "SerializeProperty": "=EditExam!B2"
                 }
               }
             ]
@@ -131,7 +131,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!BE14"
+                  "SerializeProperty": "=EditExam!BE14"
                 }
               },
               {
@@ -143,7 +143,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!BE14"
+                  "SerializeProperty": "=EditExam!BE14"
                 }
               },
               {
@@ -155,7 +155,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!B5:BC24"
+                  "SerializeProperty": "=EditExam!B5:BC24"
                 }
               },
               {
@@ -167,7 +167,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!BE4"
+                  "SerializeProperty": "=EditExam!BE4"
                 }
               }
             ]
@@ -221,7 +221,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=修改未阅卷明细!B2"
+                        "SerializeProperty": "=EditExam!B2"
                       }
                     ]
                   },
@@ -275,7 +275,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=修改未阅卷明细!选择行个数"
+                        "SerializeProperty": "=EditExam!选择行个数"
                       }
                     ]
                   },
@@ -301,7 +301,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=修改未阅卷明细!AJ2"
+                        "SerializeProperty": "=EditExam!AJ2"
                       }
                     ]
                   },
@@ -327,7 +327,7 @@
                     "Title": "更改阅卷老师",
                     "Message": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=\"已选中\"&修改未阅卷明细!选择行个数&\"条记录。确认将阅卷老师更改为[\"&修改未阅卷明细!AJ2&\"]?\""
+                      "SerializeProperty": "=\"已选中\"&EditExam!选择行个数&\"条记录。确认将阅卷老师更改为[\"&EditExam!AJ2&\"]?\""
                     },
                     "Type": "none",
                     "ConfirmButtonText": "确定",
@@ -346,7 +346,7 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=修改未阅卷明细!确认结果"
+                                "SerializeProperty": "=EditExam!确认结果"
                               }
                             ]
                           },
@@ -360,11 +360,11 @@
                               {
                                 "Column": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=修改未阅卷明细!AY5"
+                                  "SerializeProperty": "=EditExam!AY5"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=修改未阅卷明细!AJ2"
+                                  "SerializeProperty": "=EditExam!AJ2"
                                 }
                               }
                             ]
@@ -378,7 +378,7 @@
                             "$type": "ElementUI.Commands.ShowMessage, ElementUI",
                             "Message": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=\"更改成功。\"&修改未阅卷明细!选择行个数&\"条记录阅卷老师更改为：\"&修改未阅卷明细!AJ2"
+                              "SerializeProperty": "=\"更改成功。\"&EditExam!选择行个数&\"条记录阅卷老师更改为：\"&EditExam!AJ2"
                             },
                             "Type": "success",
                             "Duration": 3000,
@@ -396,7 +396,7 @@
                             "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
                             "TargetPageElement": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=修改未阅卷明细!刷新未阅卷数命令"
+                              "SerializeProperty": "=EditExam!刷新未阅卷数命令"
                             },
                             "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
                             "MethodName": "ExecuteCommand"
@@ -514,7 +514,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!B2"
+                  "SerializeProperty": "=EditExam!B2"
                 },
                 "Value": "?"
               }
@@ -545,7 +545,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=修改未阅卷明细!BE4"
+                        "SerializeProperty": "=EditExam!BE4"
                       }
                     ]
                   },
@@ -556,11 +556,11 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=修改未阅卷明细!BE14"
+                      "SerializeProperty": "=EditExam!BE14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=修改未阅卷明细!B5:BC24"
+                      "SerializeProperty": "=EditExam!B5:BC24"
                     }
                   }
                 ],
@@ -572,11 +572,11 @@
                     "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                     "SourceCell": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=修改未阅卷明细!BE14"
+                      "SerializeProperty": "=EditExam!BE14"
                     },
                     "CellLocation": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=修改未阅卷明细!BE5:BM12"
+                      "SerializeProperty": "=EditExam!BE5:BM12"
                     }
                   }
                 ],
@@ -617,7 +617,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=修改未阅卷明细!选择行个数"
+                        "SerializeProperty": "=EditExam!选择行个数"
                       }
                     ]
                   },
@@ -626,7 +626,7 @@
                 "CommandList": [
                   {
                     "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
-                    "Title": "数据选择",
+                    "Title": "批量删除",
                     "Message": "至少选择一条数据",
                     "Type": "warning",
                     "ConfirmButtonText": "确定",
@@ -634,16 +634,16 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "b9d5d7fb-a5e6-4b26-a95c-8ccb61103506"
+                "ID": "39b54155-a46a-4b6d-9ad3-97d589ca4671"
               },
               {
                 "CommandList": [
                   {
                     "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
-                    "Title": "数据选择",
+                    "Title": "批量删除",
                     "Message": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=\"已选中\"&修改未阅卷明细!选择行个数&\"条数据\""
+                      "SerializeProperty": "=\"已选中\"&EditExam!选择行个数&\"条数据\""
                     },
                     "Type": "info",
                     "ConfirmButtonText": "确认删除？",
@@ -662,7 +662,7 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=修改未阅卷明细!确认结果"
+                                "SerializeProperty": "=EditExam!确认结果"
                               }
                             ]
                           },
@@ -680,7 +680,7 @@
                                 "BindingInfo": {
                                   "TableName": "阅卷表",
                                   "ColumnName": "状态",
-                                  "GUID": "f51683ac-3be2-483d-a6f5-c16c1b3e812d"
+                                  "GUID": "6677d35d-8d68-41a0-8ead-53b77f740217"
                                 },
                                 "Value": "0"
                               }
@@ -718,7 +718,7 @@
                             "$type": "ElementUI.Commands.ShowMessage, ElementUI",
                             "Message": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=修改未阅卷明细!选择行个数&\"条数据删除成功进入回收站\""
+                              "SerializeProperty": "=EditExam!选择行个数&\"条数据删除成功进入回收站\""
                             },
                             "Type": "success",
                             "Duration": 3000,
@@ -728,7 +728,7 @@
                             "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
                             "TargetPageElement": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=修改未阅卷明细!刷新未阅卷数命令"
+                              "SerializeProperty": "=EditExam!刷新未阅卷数命令"
                             },
                             "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
                             "MethodName": "ExecuteCommand"
@@ -756,7 +756,7 @@
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=修改未阅卷明细!BE14"
+                                  "SerializeProperty": "=EditExam!BE14"
                                 }
                               },
                               {
@@ -768,7 +768,7 @@
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=修改未阅卷明细!BE14"
+                                  "SerializeProperty": "=EditExam!BE14"
                                 }
                               },
                               {
@@ -780,7 +780,7 @@
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=修改未阅卷明细!B5:BC24"
+                                  "SerializeProperty": "=EditExam!B5:BC24"
                                 }
                               },
                               {
@@ -792,18 +792,18 @@
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=修改未阅卷明细!BE4"
+                                  "SerializeProperty": "=EditExam!BE4"
                                 }
                               }
                             ]
                           }
                         ],
-                        "ID": "567dbe5c-5555-4200-a6e4-a0db8c181423"
+                        "ID": "489682dc-d96e-41d8-93e5-289db931ff71"
                       }
                     ]
                   }
                 ],
-                "ID": "80c3dfa9-9573-4873-ac2c-de1f49af4eea"
+                "ID": "e40094df-df9e-45a6-85af-ae416ae28808"
               }
             ]
           }
@@ -995,7 +995,7 @@
             "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=修改未阅卷明细!BE1"
+              "SerializeProperty": "=EditExam!BE1"
             }
           }
         ],
@@ -1113,30 +1113,30 @@
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PopupDisplayMode": 3,
             "DrawerDirection": 3,
-            "PageName": "查看阅卷详情",
+            "PageName": "ExamDetail",
             "PassValues": [
               {
                 "Source": "1",
                 "TargetCell": {
-                  "SerializeProperty": "=查看阅卷详情!I49"
+                  "SerializeProperty": "=ExamDetail!I49"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!BI28"
+                  "SerializeProperty": "=EditExam!BI28"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=查看阅卷详情!Q50"
+                  "SerializeProperty": "=ExamDetail!Q50"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!BI29"
+                  "SerializeProperty": "=EditExam!BI29"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=查看阅卷详情!AB50"
+                  "SerializeProperty": "=ExamDetail!AB50"
                 }
               }
             ],
@@ -1147,7 +1147,7 @@
         "ClickMode": 1
       }
     },
-    "27,27": {
+    "27,19": {
       "CellType": {
         "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
         "ListviewName": "表格1",
@@ -1241,6 +1241,15 @@
         "FontSize": 21.333333333333332,
         "Foreground": 6,
         "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 7,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 7
       }
     ],
     "Types": {
@@ -1251,7 +1260,8 @@
         "Center",
         "yyyy/mm/dd hh:mm:ss",
         "#FF9BC944",
-        "#FF999999"
+        "#FF999999",
+        "Background 1 -50"
       ]
     },
     "CellStyles": {
@@ -1303,8 +1313,37 @@
       "13,56": 9,
       "26,56": 0,
       "26,57": 0,
-      "27,1": 7,
+      "27,1": 10,
+      "27,3": 11,
+      "27,4": 11,
+      "27,19": 0,
+      "27,20": 0,
+      "27,21": 0,
+      "27,22": 0,
+      "27,23": 0,
+      "27,24": 0,
+      "27,25": 0,
+      "27,26": 0,
       "27,27": 0,
+      "27,28": 0,
+      "27,29": 0,
+      "27,30": 0,
+      "27,31": 0,
+      "27,32": 0,
+      "27,33": 0,
+      "27,34": 0,
+      "27,35": 0,
+      "27,36": 0,
+      "27,37": 0,
+      "27,38": 0,
+      "27,39": 0,
+      "27,40": 0,
+      "27,41": 0,
+      "27,42": 0,
+      "27,43": 0,
+      "27,44": 0,
+      "27,45": 0,
+      "27,46": 0,
       "27,60": 7,
       "28,60": 7
     },
@@ -1317,7 +1356,6 @@
     "3,56,1,9",
     "13,56,10,9",
     "4,5,1,5",
-    "27,27,1,28",
     "0,56,3,9",
     "1,51,1,4",
     "4,10,1,4",
@@ -1344,6 +1382,7 @@
     "1,35,1,4",
     "1,1,1,14",
     "1,16,1,3",
+    "27,19,1,28",
     "3,2,1,3",
     "3,5,1,5",
     "3,10,1,4",
@@ -1363,6 +1402,7 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "PC模板页",
+    "Title": "修改未阅卷明细",
     "PageLoadedCommandList": [
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1374,7 +1414,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "=修改未阅卷明细!BE4"
+                    "SerializeProperty": "=EditExam!BE4"
                   }
                 ]
               },
@@ -1385,11 +1425,11 @@
                 "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!BE14"
+                  "SerializeProperty": "=EditExam!BE14"
                 },
                 "CellLocation": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=修改未阅卷明细!B5:BC24"
+                  "SerializeProperty": "=EditExam!B5:BC24"
                 }
               }
             ],
@@ -1421,4 +1461,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//gp9306/BzWQf2cS7s9YQJviF4ZZq8Tzm/ItHrLg6nj3kmkYiRvYDX+40KD+rFsKf3siC3gJ5THypyqJ3sXesBxEgadOBPT/cgS4BdujP6VrSMbuReGaTNySfBDDown9MbBMTzTnxeHrC1NFQBvT7WXoTnQv/zlb1+AN0y3eQGJ2WS9KUl3zrQibGjrBOPJp6ZqU/2Ahc3K9yRJqjIumkTyfnKvg5qSFy2ZfEdNOc/5M9GRy0Hv2Qh27IQ9Yae48WfpkIWXoGcxN5T6+ymqmG3pBAihlECslwiZsS2tCCFyaapq7I2BGtBUKmi0xctdJLng0uHMCsIfySCR1MfPLRgSMVAbOuMf7DS/vJe1ohlbwGlXMaSBmUXoG43I/j8Uu5WWcnOOUrwOU+sfba0c7/Sr5KSubcTlx9SXNyT1emH99x2XpQT78nLau/1bXF6rvamS1I+Zc4V8tTDg7GpU+vvkJ81wgENXuUloU0d3JKe+7o8Qcwrk16fIAVvjHnVTu19t0YgyVv8Cc/mECcoqMW6BNeU6myhS78lptpKFP7Q3SoHEARMn7BmhTWyIE1KtWqL5td6GmgX3lLiofb7DIn7poAUaxcErWdnLZTjLMaf0uRmpbNPrmDvASGwfBtTvZPg2MJjdsF6kxgPutxdqmqfCUWywDuH0RI5Kp4OCQcRNRNFQMQDAdZCHWP73mBhFy0eTVkvXbFt6P8TcEcZrZUk1m+r+HGiiwl0K4wf4m7tRREZXRJx4sfc+Nu3vSQwCjV0ggpegXShC0Npr4lu63nZC3ZEK0dIbioEOC5Mhe3QEhGdmbr5vmvCYW20yR11fLeD44+lVs1Sx7edyJAUVYCE7/Uk5BVzvFLjfy4rYzAObzpz35+Xm5RSivvpRc7YzzV/6mYd1RKMrTQAA6bSox+Lg==|920
+}//s1zmmVdoYBpr9MCdMsi3JaTPFvLTlxYs6J+cohZHVMrTOM0eRukfWUB7ZqE/lJOcwf2xverZ1GJHQ5bRDK6uigszZd1J5IQmWLUX4z3R2brApGVVnpGtH+7XMIEMYCT/y54hwyfK9vbM8vlMBw4UBRwIoKDOnXzohQavpMa8MJzu0B3HWpMDkLhZAytOs8JiJp3wWwFz0JCSglUU6FNHFgkbmFnz7PH8q875saOjtVUg/hc6jqCl1p/BMOWsVeouFP2d6WIrt7WRq1OJFrMXaGnGC8VLMkBJqAmmai9ejyj+F7I5kjRTqp51/D8Oqjn6D3LsaYPCIf3uFBqvEoOG91VUxofe0yTmsuyiRYj2yjEbIIetm1USULAct4myj9WOZvqeEWic77Fc6/8KBUyjR2LGzQtVqa8jpwSdx9qHu81BEb2upYamgquW3MuAujNttHeEWM06+zB7QZBLCj8t9+ndgpnbl7fMi0fym+Vt37ERqMYvR6hhS0bityTmFcezEBFzDgpHTbRYxndLwSvuWQ/mh5dV5ftcUG9qYEAHz8yqzZhHKarW5/Yj6C25SICPPxHKHVGE641Te6wFsLf0MLRQjS7XR9SlLn5UxnTukzVoZaCSbqf0ja2FRFHTHSBoGWhGa8nQKaG5XmKBcZmvHvBqPBZOsB1H5JGOvcuQ3n5Pj+152GofbLPBdFD1QSDEQ77ZQiTIep6Mv6dOLQapZsjdk3VxQ98fKPXCqAJ1SFHD2Xq4Fzjko7ScY8z44XZI2/HYqzpS4FWKbMHHzCQslKvK/gTMbCv23Z62pFwvCZFfN3lkUUtIPH5dNZETM/DH+DOLSBxPCDO0XPNKfm/yTtUQoJZmc7gykppEuLk14e2u+j8Ed+OLgZvS3EOjCI7/jOZtqfy6xhIunavTFkLIOQ==|920

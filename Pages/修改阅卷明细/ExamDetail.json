@@ -459,7 +459,7 @@
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=查看阅卷详情!U2"
+            "SerializeProperty": "=ExamDetail!U2"
           }
         },
         "ReadOnly": true
@@ -499,7 +499,7 @@
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=查看阅卷详情!U2"
+            "SerializeProperty": "=ExamDetail!U2"
           }
         },
         "ReadOnly": true
@@ -571,7 +571,7 @@
             "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=查看阅卷详情!BY49"
+              "SerializeProperty": "=ExamDetail!BY49"
             }
           }
         ]
@@ -638,7 +638,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=查看阅卷详情!I49"
+                        "SerializeProperty": "=ExamDetail!I49"
                       }
                     ]
                   },
@@ -655,13 +655,13 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=查看阅卷详情!G50"
+                                "SerializeProperty": "=ExamDetail!G50"
                               }
                             ]
                           },
                           "value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=查看阅卷详情!Q50"
+                            "SerializeProperty": "=ExamDetail!Q50"
                           }
                         },
                         "CommandList": [
@@ -670,7 +670,7 @@
                             "MessageFormula": "这是第一张试卷"
                           }
                         ],
-                        "ID": "9df4bcdc-0e31-4dca-b5fc-45564e2e0571"
+                        "ID": "6cfc3444-a9f7-4663-b14a-0753940d3d68"
                       },
                       {
                         "CommandList": [
@@ -680,12 +680,12 @@
                             "TargetRecord": 0
                           }
                         ],
-                        "ID": "d494e846-e476-49e2-89ee-69771a0006c7"
+                        "ID": "f84e067f-b296-4859-8509-8c78bfbf96c8"
                       }
                     ]
                   }
                 ],
-                "ID": "e3d50840-cf89-4746-b594-ebdb3109481d"
+                "ID": "e588b467-07c8-4df8-bc6c-18983c5ad340"
               },
               {
                 "CommandList": [
@@ -699,13 +699,13 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=查看阅卷详情!AN50"
+                                "SerializeProperty": "=ExamDetail!AN50"
                               }
                             ]
                           },
                           "value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=查看阅卷详情!BB50"
+                            "SerializeProperty": "=ExamDetail!BB50"
                           }
                         },
                         "CommandList": [
@@ -714,7 +714,7 @@
                             "MessageFormula": "这是第一张已批改的试卷"
                           }
                         ],
-                        "ID": "b7af4610-c701-4043-b8b4-a3c0c7af3f10"
+                        "ID": "faed54b1-0ea9-402b-bef4-21d1d61265e3"
                       },
                       {
                         "CommandList": [
@@ -724,12 +724,12 @@
                             "TargetRecord": 0
                           }
                         ],
-                        "ID": "6aa4a718-ef29-43ad-9ba0-f2502a331c7e"
+                        "ID": "3f037d4e-24cd-419f-987a-f05749fa7d33"
                       }
                     ]
                   }
                 ],
-                "ID": "a4f152b0-6859-4aac-83a6-a4640279f2c3"
+                "ID": "b7ede894-c6e6-4673-a387-f09880f9ee03"
               }
             ]
           }
@@ -792,10 +792,8 @@
           "IconColor": "#FFFF0000",
           "ShapeColor": "#FFFF0000"
         },
-        "UploadSettings": {
-          "Quality": 0.8
-        },
-        "MenuBarPosition": 3
+        "MenuBarPosition": 3,
+        "Clarity": 80.0
       }
     },
     "17,82": {
@@ -813,7 +811,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=查看阅卷详情!I49"
+                        "SerializeProperty": "=ExamDetail!I49"
                       }
                     ]
                   },
@@ -830,13 +828,13 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=查看阅卷详情!G50"
+                                "SerializeProperty": "=ExamDetail!G50"
                               }
                             ]
                           },
                           "value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=查看阅卷详情!AB50"
+                            "SerializeProperty": "=ExamDetail!AB50"
                           }
                         },
                         "CommandList": [
@@ -845,7 +843,7 @@
                             "MessageFormula": "这是最后一张试卷"
                           }
                         ],
-                        "ID": "40d2e911-5257-4e13-a78c-e37d7ac28a82"
+                        "ID": "ce54990e-3855-4387-bd4a-7371289aaf52"
                       },
                       {
                         "CommandList": [
@@ -854,12 +852,12 @@
                             "TableName": "阅卷表"
                           }
                         ],
-                        "ID": "1f6c261f-49bd-437b-ab01-e745a97f4a6f"
+                        "ID": "15b00138-5191-4a5a-b132-a263728d9d3f"
                       }
                     ]
                   }
                 ],
-                "ID": "69a6f336-47c9-4537-9a8b-f97b1f75b36f"
+                "ID": "1bb1d2be-8137-4afa-8664-e93d18a471c2"
               },
               {
                 "CommandList": [
@@ -873,13 +871,13 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=查看阅卷详情!AN50"
+                                "SerializeProperty": "=ExamDetail!AN50"
                               }
                             ]
                           },
                           "value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=查看阅卷详情!BO50"
+                            "SerializeProperty": "=ExamDetail!BO50"
                           }
                         },
                         "CommandList": [
@@ -888,7 +886,7 @@
                             "MessageFormula": "这是最后一张已批改的试卷"
                           }
                         ],
-                        "ID": "e2ff0039-554b-42b8-a0ea-db7240c9ed87"
+                        "ID": "aa2ae2ed-0a12-48f1-b1cc-11294a9b92c2"
                       },
                       {
                         "CommandList": [
@@ -897,12 +895,12 @@
                             "TableName": "阅卷表"
                           }
                         ],
-                        "ID": "8077d132-726d-4163-877f-f6f2726ad7f3"
+                        "ID": "bfd345f8-2a8c-4dba-a600-c63d87935bfc"
                       }
                     ]
                   }
                 ],
-                "ID": "201dfa0c-1237-45a9-92b1-bc0644432005"
+                "ID": "131a4d70-521d-471a-a040-a2fbdbba2951"
               }
             ]
           }
@@ -2144,7 +2142,7 @@
       {
         "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
         "JavaScript": "//上一页按钮\r\nvar pre = document.querySelector('.pre');\r\npre.style.position= 'fixed';\r\npre.style.width= '60px';\r\npre.style.height= '418px';\r\npre.title = '上一张试卷'\r\n//下一页按钮\r\nvar next = document.querySelector('.next');\r\nnext.style.position= 'fixed';\r\nnext.style.width= '60px';\r\nnext.style.height= '418px';\r\nnext.title = '下一张试卷'",
-        "ID": "72c92f40efbd4a87baf8fd44bb30ea12"
+        "ID": "36bc519404674148afeabcf3db67c108"
       }
     ],
     "PermissionData": {
@@ -2173,15 +2171,15 @@
   "CustomNames": [
     {
       "Name": "id",
-      "Formula": "查看阅卷详情!$BX$2"
+      "Formula": "ExamDetail!$BX$2"
     },
     {
       "Name": "save",
-      "Formula": "查看阅卷详情!$BU$2"
+      "Formula": "ExamDetail!$BU$2"
     },
     {
       "Name": "tip",
-      "Formula": "查看阅卷详情!$CC$17"
+      "Formula": "ExamDetail!$CC$17"
     }
   ]
-}//Eb/NsXSYfFpprgmD8RGAX42yotokrOJrCTIKyi8onraUr/QlKjR/aROwQU+F98p3m3w46bRFL4O4UnMNIUYw7KUeLUu9/+o0LixpRYyAGOPExO+sXZI+8c/uOL02NHMnT+dM4L2mD5ISHbo5YqAzb0f3+TjZ1POSc3hNtc+vNPsz/zIEuYF3/+5Dp7NQi/LgZOt+gjgugypANnNpu2+aaILW1NcWaIzBxVTChJCqyPObmm6985RRq/zC6I1p70BhuOy5M38sDmrNnDB49KwoV8dzsecO2klICKlF2tz+/WiTrEjstqVK1nO6szfKwD4K/8OyvwrfEQAKnM0Qvx77aT31e2IYcUEKLlnO6K21ZoMuHKbkFkELX+rBDHP/NVs181FY/uwKkZOzNLe6Rq/ezYcqTkqakZ+Eh2U7YT+yK7brGgno1pjs6bY8/+awrJLN5afSZmlBmhXD+i+dmqNrDO88bnYrj4YV74sYvtORJh94BgKeasGOHnOrXy59VQBBJw3nc/fCQ2IbjxkyWbnor+92Sg1iHNcdO6TDO7BNQksFBsNOM+N4nMP4M5aGBRQJm5h2wWM8KcFt7gSJeX0HK161fRBCjtS1gG/WjonEz7gGA/+758gLWKajAxYkd+PmnFTT3826lXwFpDtWSn2N+LJrdR7O80MQGU0YYD83y48NpeJYo8LS+TwkrOmSMf1sn4blnWNaLlIROU+VYgH8PwucMLa7sIxltTiq8QX07AIIXUYV4d0hVDpjD4rQzkk7OdiOD8K6uDBL1XmsjdGTNWyiX2CIHWYe+Ltd68pDV4+Zho80iNuj5RD5Aw11KoRde628I1IGVtXlA9Z0sNM0tPXK9x8+LHb7Zxd5AWy4yoDaumfHrlevkFyUZtuuRIvu4rC375AKLAPf4K9n29VkVw==|920
+}//D9yZGTjjtRXdoAHOrniDJZb/b9hO++ADq8dfi5cw5AxhopZ01PEiKnL1iLcm9wNLfChAXCuac4uPQOteFDSqvpzQjXYODn+0jtOeGCix1Y2xlW5tt9SG7zI60mOpVaow+ljISdCaSJm/ggkDgvn5JFX2km32+c1xN08V15IHVE5hvhI3CZTZdbYM5oLoTkuPl/0oypRETqIAVxVpqDzZjNOyPoBTULDzzLKNBhf+oDe1tcmk/Oyo+anC+SduT/k3HYOzT/9xdNd+oiOp6KKR4h6Vr4eJyROrt1iId0fpvl2PvDJn7qBfwDKSSCDC/g8KAzJMwfAscpxnm6xrIGd+oZDyWVkMYdooXMM77mc+Up7IXcTGcSFnziGUGNM2U303jib84Pot1mlZdV2/QhMJcpt0Hfv+rXl0BKaq+SSWJV1oIZCrFdyZLfkYcrDEU+b2hYds9JlFRSDYxtqbD1JFA7dhRu+FxVyprHQ+mI6ocTl7hpDy3C10jCPIdZapV1svO2CYDwipagFvwyB3xsbf1qsikSFuQiYPrxAM7kc7J2HZVeLpFs2eFZfIExSv3YDpzyzg7o4GjcWb8dWE/QwhJRr+6Vas8lQFlSQdBg3HGtAXnmKwTTAC3JedICpaqRbP0DXa9WjbZG/urMmdBtSvwAwBAEbq1AgIlSxLR9S9lqmoHZZk+/7KAY673NPTEaNKr4CACj+lS11eoNMkS4HTzm7cPYNrZJsI9deOwpGe2p641Ei9+TMhVQnnivu2qROoQxTUe2O5DGFIJdsw35+Rlx6xIDt+yJEb7OB2GfQzLGoMU9shEsQYI5uDHgxirNrFM50Ko2KYSTzw08r/BxHhVo/o/KnlR6f6mPQLD0TVaNAfuuDDylQ7ZFdLwZJ9Ektr5p02ZGqv68i35xFOkga1hw==|920
