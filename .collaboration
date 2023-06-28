@@ -168,12 +168,12 @@
   },
   {
     "ModuleName": "PCPage/修改未阅卷明细",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-28T11:02:47.1541122+08:00",
+    "LockDateTime": "2023-06-28T11:13:10.5237028+08:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\修改阅卷明细\\修改未阅卷明细.json"
@@ -422,7 +422,16 @@
   },
   {
     "ModuleName": "MasterPCPage/PC模板页",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T11:13:10.5237923+08:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\PC模板页.json"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/平板模板页",
@@ -478,5 +487,15 @@
   {
     "ModuleName": "ShareCommandContainer/批量删除确认",
     "ModuleType": 36
+  },
+  {
+    "ModuleName": "PCPage/EditExamDetail",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T11:13:10.5237154+08:00",
+    "ModuleType": 1
   }
 ]
