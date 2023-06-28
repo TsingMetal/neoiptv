@@ -1,37 +1,107 @@
 [
   {
     "ModuleName": "Table/题库",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656836+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\题库.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/阅卷表",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.565679+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\阅卷表.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656817+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\预置评语配置.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置表2",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656826+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\预置评语配置表2.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/小测上传",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656753+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\小测上传.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/考号档案",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656781+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\考号档案.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/用户信息视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656761+08:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\用户信息视图.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -404,7 +474,17 @@
   },
   {
     "ModuleName": "TableView/总分排名视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656799+08:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\总分排名视图.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -425,7 +505,17 @@
   },
   {
     "ModuleName": "TableView/单题排名视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656807+08:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\单题排名视图.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -434,7 +524,17 @@
   },
   {
     "ModuleName": "Table/_4题试卷上传",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656742+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\_4题试卷上传.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -460,5 +560,16 @@
   {
     "ModuleName": "PCPage/ExamDetail",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Table/exam",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T15:18:22.5656692+08:00",
+    "ModuleType": 7,
+    "ExclusiveType": 0
   }
 ]
