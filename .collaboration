@@ -510,7 +510,16 @@
   },
   {
     "ModuleName": "PCPage/ViewExam",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T14:47:59.7063432+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\修改阅卷明细\\ViewExam.json"
+    ]
   },
   {
     "ModuleName": "PCPage/ExamDetail",
