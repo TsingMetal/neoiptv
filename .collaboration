@@ -274,7 +274,16 @@
   },
   {
     "ModuleName": "ServerCommand/uploadFiveExam",
-    "ModuleType": 15
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T17:41:41.2151608+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\uploadFiveExam.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/uploadOneExam",
@@ -413,7 +422,16 @@
   },
   {
     "ModuleName": "PCPage/Exam4Upload",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T17:41:41.2153651+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\上传试卷\\Exam4Upload.json"
+    ]
   },
   {
     "ModuleName": "PCPage/QRCode",
@@ -609,10 +627,20 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-28T17:33:04.013694+08:00",
+    "LockDateTime": "2023-06-28T17:41:41.2154417+08:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\上传试卷\\Exam5Upload.json"
     ]
+  },
+  {
+    "ModuleName": "ServerCommand/uploadFourExam",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-28T17:41:41.2151645+08:00",
+    "ModuleType": 15
   }
 ]
