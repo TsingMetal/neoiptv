@@ -197,9 +197,9 @@
         "placeholder": "请输入学员姓名/准考证号/题号/班级/阅卷老师查找数据",
         "prefixIcon": {
           "$type": "GrapeCity.Forguncy.Plugin.ImageValue, GrapeCity.Forguncy.Plugin",
-          "Name": "Application/044_search_5.svg",
+          "Name": "Application/047_search_8.svg",
           "BuiltIn": true,
-          "Color": "Background 1 -50"
+          "Color": "black"
         },
         "resize": "none",
         "clearable": true,
@@ -1461,4 +1461,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//dpE+ieeZflEthHsC0UKG5FXyX5n75M9UW/TWxC1pK3F/NRBdKSvaL7WmR0tYK1fJozzIGvczRZATf63Y3Y8z7o3EcZC22YisxLJYSNNZQe2QbTVmsmSuOftx4/M2gPa3DkzvchdttM//hCadECD4cJGCciPK5ydLnoOfZmDwqYf+Mu6JJtrq8KoYuZ0khE7Yq7NxAw6zCNY7xVOhIQqN+BABT1ljpJU+fsS+zBmYDZ03Aq+IwMJmT+ZstEfIWFVgLqE27HmuJ5HLzGauN5uxzuoEdmjYw5ANBOg8kvXPAdPo33v6Mf1QjyblyyLbvM5J4oluON8HKz9heFVEGCEAXOW1CTV7HnF0cTDke5bszQP6rjzuO/KC6HOJMx+TFpvg0vCU9qVQjxyHA8RtSTZGiQF6967dPqu7zy6K0DjgWm8vBwILjZSWEQpFNnaDaqMxVsHrUZMtxXv3FlYK8J4E4fMKFG+KWADNpkqZaZLNAPlGRzsUyIk6VSoSl5a2kqlWl/wjgDFV5xTddHgdZtMyZASHKKIegPYk2ZD2qGgrAt/HgTQ7z/tYMuUa0Be4LPFy8AWVWIYCV9Q8wHR9/0pNV44MIq6ZbPsL/ZorqghnpysCB4qTt8pplkeZIyBfeyt4R/R9SwSpPWxjgEFcCCXPmwYzLqqCMz5+kJ2NriXO3DB//YT2OYq4WerXeg+XqwHuvVk/uctVKyyRBdpN63YLAV1zV3/JCK22TwwIkFHOyEXg1UEjSOKkw6VBDF8n8W9VduICy0Xl16w5cVupUq/pJtJHZXYiBKLvkOM3NZbQUIlgdeN2vAW3EOrZB1DJG1fU5t7xfm2T7C4QbaSKRD6PMB/HEpJxsAEirtCvM/E1rGfkRrw4fBwGZyB8lNos7/l5tJZq2kTRxggk6B90HwawPw==|920
+}//6tkpMIHdxtADbfLItTYBZH0Dai4d4bR8SQB0zNOGfifkTcT0MQ8UTeBA+bYWXKBK352VMOM5+9CtKE/owZS9DdVD0IcZJFWpt3Qd8ZyLl8l9e8Z+40OaijyxqvpjpiJ5c+2tra8zqmobn/v9cP9h2vvH99+qvqdVZ79Xa+upe8fJEbW8PZyQWJ9ro18MjogS0cawW+To6JFPpeCgBu+Ji/PiASmZbHpkde71QIXVqWU3lgWOf10aNY7YMxWC7HQpyb8RjGw6WHTCacBNcMWIqVWwCjupJ/BbppGE/VUv4XDcBs/EnCsrZdkcj5nmvO3Fx0buPQCqQnUNpYXOfXSfkFhhK15FzGS7lMfi66992uWuQVKFtplC7geD6filch0uWbfE0k9+VIdoF7ZSHB2KA26/X8lihpcR3UAPa/Vao0it3mQ8FR8RoyYuNZG2DEF7TUd0K5CZf4Yq3gDkMy2KGCf0LonlReHb8fqgFOySncMM0Biogde+giUH+yNRWp0Z6TgNmjDnHPAvA7nvkvyuOpuHpsibJKVMbrhKiyNfd3ew1uE+gP1DiC+2l+VMou+5jppGTuWsrUxAXOxBy7S6Z3OZ25oamfl0L6do+kPsIMXRS4TFoSKVYE0MaMKI3Vyh1uaCrXvn95jOEIUXI5970YoDB/qr6aBkLB+76ziapNPtnYaJvsE+SZMRDIYJ4rjuTHZM32cXiUSPdFVhJzOPXpCmWSJDuOv6RSaKyR7s9KbySUpr222SLmZU1Mbedq7jCBZI0AJ3ZQbCWvU1XDvW1FN6gU2doBwv5cjmPfNIpr8j882hYXb+lkffjyeTYgfz4Kdpvww/w0bSavxC6ah6vb2WxnG6HXpr3V3j7i09IJqfArpH0u0Q3Ycp6UKhmEr5T91oetZ9oW3cj85V4xKTcg==|920
