@@ -128,28 +128,7 @@
         }
       }
     },
-    "InLogicalVisibleIndexes": [
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40,
-      41,
-      42,
-      43,
-      44,
-      45,
-      46,
-      47,
-      48,
-      49
-    ],
-    "Count": 50,
+    "Count": 32,
     "DefaultSize": 30.0
   },
   "Cols": {
@@ -240,10 +219,30 @@
         }
       }
     },
-    "Count": 23,
+    "InLogicalVisibleIndexes": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "Count": 38,
     "DefaultSize": 30.0
   },
   "Values": {
+    "0,24": "逻辑占位区",
+    "2,24": "上传老师",
+    "2,27": "%CurrentUser.UserName%",
     "17,1": "班级：",
     "17,14": "考试名称：",
     "19,1": "请依次选择1-5题题号：",
@@ -252,9 +251,7 @@
     "23,14": "题3阅卷老师：",
     "25,14": "题4阅卷老师：",
     "27,14": "题5阅卷老师：",
-    "30,18": "上传",
-    "31,0": "上传老师",
-    "31,3": "%CurrentUser.UserName%"
+    "30,18": "上传"
   },
   "AttachInfos": {
     "1,1": {
@@ -1203,7 +1200,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "班级",
-                  "GUID": "f56841a4-6dd4-4874-8c6a-1682f8bec644"
+                  "GUID": "1ba7dee3-a454-460b-91e6-03933d546105"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1214,7 +1211,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "第一题",
-                  "GUID": "a1378943-bf71-4547-8af5-4098d0f72ef5"
+                  "GUID": "7732779a-b5ee-4f5c-ad31-04c8bbea5387"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1225,7 +1222,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "第二题",
-                  "GUID": "5f9b0778-a2de-48bd-8f21-35d66cdecae2"
+                  "GUID": "f23f9d5f-8971-47e7-aad4-984a07b85cfe"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1236,7 +1233,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "第三题",
-                  "GUID": "e7ebe977-624a-4cdf-a4e7-5d69590f201b"
+                  "GUID": "18a4b743-cd96-4f0b-ac87-396831ebfe2e"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1247,7 +1244,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "第四题",
-                  "GUID": "3c645cc3-91f6-476d-a5d8-22c77db323a6"
+                  "GUID": "a637e44e-9520-481d-999c-62c8332537ed"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1351,7 +1348,7 @@
                 "ParamName": "userName",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ExamUpload!D32"
+                  "SerializeProperty": "=ExamUpload!AB3"
                 }
               },
               {
@@ -1374,6 +1371,118 @@
             "RefreshAfterFinish": true,
             "CheckDataValidation": true,
             "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "uploadFourExamTrasaction",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "className",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!D18"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "imgArr",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!B2"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionNumberOne",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!H20"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionTeacherOne",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!R20"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionNumberTwo",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!J23"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionTeacherTwo",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!R22"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionNumberThree",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!H24"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionTeacherThree",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!R24"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionNumberFour",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!H26"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionTeacherFour",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!R26"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "userName",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!AB3"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "examName",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamUpload!R18"
+                }
+              }
+            ],
+            "ReturnPropertiesTo": [
+              {
+                "ResultPropertyName": "result"
+              },
+              {
+                "ResultPropertyName": "currentExamID"
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
           },
           {
             "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
@@ -1411,6 +1520,9 @@
       {
         "FontFamily": 0,
         "HorizontalAlignment": 3
+      },
+      {
+        "Background": 4
       }
     ],
     "Types": {
@@ -1418,10 +1530,20 @@
         "Body",
         "#FF000000",
         "@",
-        "Center"
+        "Center",
+        "Background 1 -5"
       ]
     },
     "CellStyles": {
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
       "17,1": 0,
       "17,2": 0,
       "17,3": 0,
@@ -1486,6 +1608,9 @@
       "30,20": 0,
       "30,21": 0
     },
+    "ColStyles": {
+      "23": 4
+    },
     "SheetStyle": {
       "FontFamily": 0
     }
@@ -1497,8 +1622,6 @@
     "21,14,1,3",
     "23,14,1,3",
     "25,14,1,3",
-    "31,0,1,3",
-    "31,3,1,6",
     "17,14,1,3",
     "30,18,1,4",
     "17,3,1,10",
@@ -1514,7 +1637,9 @@
     "25,17,1,5",
     "27,14,1,3",
     "27,7,1,6",
-    "27,17,1,5"
+    "27,17,1,5",
+    "2,24,1,3",
+    "2,27,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1540,4 +1665,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//GWbnNWcrdWtjkiVHK6KcdZEj2Zfk+FN+pViJQuPT3CW3uuxKann5gHnHuC90GGDCo9TR8RXe19kYi+sd7O7U7fsPKswz1qXC+k1OUlBgwqxmMXIEb3DdFj7S9TXHsHpG29ZLIqIaEr5IdeK5ZG2z2cHGWTXlt6oTO4obg9G3/PHtt0qbxZNeta8UTsZqwETsSgOLUqvh1vSzgOsEqOshu5kAxeEEv1FDgH8OWAQORw0suaZmG72WVdtXjnEWoLBr24Ri2JbuIpH0wk+Fucphmx0edS3nE97VPr0ZOx0U+6pObiCf/gZ34LJCE71hoFMDUKYu4i/Qj4kHluNfN2k/0Ro5ip5Vuf02dwhSSFYhoHJssC+7aow0a8ZOOOWFKkOM8dPHVX/BcjNJo5dktE8YnTul3EN1ZFzyhusk3pEes2dGa+er9nGVx/gas3Kjp630eSc0PPo29Zlk1GOd0b6XAGrcBpCCUvrq4Tk93IeJnKIeiNZ7tMkL5qlAR2TrBKGyN2519DV2E5g8hSeORmZoRAYpvgSUqL0NgtffbQCBrRfxEhQQULwGTaakQjc5X9oRMIf9CgibrRCEj4I6EVnm5+oUQ7xuMP8muKumqE3cW3DQD2/KuP7nXJ+u4aZFWlFfTplT6s1jjtxVr2lqv7/9VtUiK2JSsnjAfiPB9iejGW8mRSXKfS981dxVa20K7NapDbjAps8CffUVXDcJzzLWkxEHR3rlJ+1wF1Yv/k6AjTUchmscLBZMMZxZC4OywsY0ZMBEYOAs7KBo+oAE1cJHCjv1I1Ar3rtGIDnejbLg38sQPmz9NMnuN9lvd+yeLLeqcnkhcfUpNcLUi2cQaBBxAT0O9lIAxkK6N1jIs63KAK6bqF2M1T34tbNjEM6sY/iRqErU8NW3Aj4njTtXpkDtcw==|920
+}//VY7VNCq/8ZB/Bg/Y5HgNjEtXDVseFHdCyWN3WGxMOyowWk3ybd2NbE+yXchoQhPXA1jXTMujDAXVNICBbB4TXeGmwWUBWXxjbr5Rvkhqhwdm9yoaIdLeTxVEaaldViSXu9xdmoad52TK3KEcZq4Prwt2eL5tCVxlVXwVtg70e/a037BH64sjDa4fZhzTQwo1keCcnyV76dA9OXMcUR2/0Q6LyBOpX4xjoiCJu4I6LlPZj0b6dG6e6ka5wXKxx5RxUaCX16wzyG3dinFt138tkaRYjKC5F3wtIPnu7Fr+wyW5M7er5pJYlLddgpx+3fjzOwG5BfohL6cQ8p3vSfrn4ojIAwnKxlrhSCGUlgZZ4Rl/msef042Ec/PXZpKSB6A1X3hBXAz1JsWkl51l3bb3qRThu1zcandBr9eOfW7Z2zKrcRhZW0rWCdPXZXecY8Szo4m1JbhrgCau8iRGeGL4gKBSaA+O+ZuwlMwNMjIXEi82QGRhKaA/f5YiY0ZxTnwNbf0ijozcsRCvc01RFCmvJbOEfpr7RDn7HiWJE0ztd10vLHS//PqZWB0ypS57gmboWsp/HRLqVlDkxvrTZ0E0C+2sEz1+OYUem+65fmoJaVdApwKvG/R9hkWFXZAVk36MsdsY6blpC7PXnRtWXdz+cU9OVNDXZRV6kyxYpiEUaCXKVF2F7mHi3RkAFEnIWJPnQdx1ZdQQw+r6HUN9hkW1jDV82GBJ24nyRnIq+CwtZAKe2BrAOq0ZPYT1y5pPETpmHJYaHoG8QPMQ76kGhjiG98csB9BDt9MyXKPoeB2LYzgIlkGeL2AyFNccD8DMrvNcyKj4vXhGQtdU+UmzxOFdW0InvZQnY/ykPpei2GJdUUpOrdTNlQfAzNgUs8jpU6ldX0aS/EJBPeqdX3ig2JnsSg==|920

@@ -90,7 +90,7 @@
               "BindingInfo": {
                 "TableName": "exam",
                 "ColumnName": "exam_name",
-                "GUID": "e017e98e-6512-4606-9165-732a9dc591de"
+                "GUID": "9c5e4768-7de2-4f30-b67c-f86c4e8c1b8b"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -101,7 +101,7 @@
               "BindingInfo": {
                 "TableName": "exam",
                 "ColumnName": "class_name",
-                "GUID": "fc973633-b3d1-4568-9bf8-353418b45375"
+                "GUID": "3d6bd5d5-65f8-43d3-9801-2fa9cca1fe90"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -112,7 +112,7 @@
               "BindingInfo": {
                 "TableName": "exam",
                 "ColumnName": "exam_type",
-                "GUID": "931a2b58-fe1a-46b9-92ca-b547ca27fd3e"
+                "GUID": "529b3920-5748-4098-b458-37cbf7a7a786"
               },
               "Value": "5"
             }
@@ -120,7 +120,7 @@
         },
         {
           "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-          "ParameterName": "examID",
+          "ParameterName": "currentExamID",
           "TableValue": {
             "TableName": "exam",
             "OnlyGetValue": true,
@@ -130,7 +130,7 @@
                 "BindingInfo": {
                   "TableName": "exam",
                   "ColumnName": "ID",
-                  "GUID": "8388f93c-fdd8-47eb-9fed-8ad48ff88496"
+                  "GUID": "2ff7eccd-49b7-49fa-a099-1c6b988e3864"
                 },
                 "ColumnName": "ID"
               }
@@ -142,14 +142,14 @@
                   "ColumnBindingInfo": {
                     "TableName": "exam",
                     "ColumnName": "ID",
-                    "GUID": "163df39d-427d-4760-a296-6e7abe902611"
+                    "GUID": "39fe2197-91b8-4025-8ab6-cfd5027f021d"
                   },
                   "Order": 1
                 }
               ]
             }
           },
-          "ID": "3739972a70ec468c84d5e3d0455a00bd"
+          "ID": "ffcbdf7e3aa2474c923d0730d1282db9"
         },
         {
           "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
@@ -214,13 +214,13 @@
             "currentExamID": {
               "Item1": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=examID"
+                "SerializeProperty": "=currentExamID"
               },
               "Item2": 16
             }
           },
           "SqlStatement": "INSERT INTO exam_item (exam_ID, 题目编号, 阅卷老师)\r\nVALUES\r\n(@currentExamID, @questionNumberOne, @questionTeacherOne),\r\n(@currentExamID, @questionNumberTwo, @questionTeacherTwo),\r\n(@currentExamID, @questionNumberThree, @questionTeacherThree),\r\n(@currentExamID, @questionNumberFour, @questionTeacherFour)",
-          "ID": "4a791d40842945c9b70c8c69a7f547fc"
+          "ID": "213ba41953b94924a5572d183faaa353"
         },
         {
           "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
