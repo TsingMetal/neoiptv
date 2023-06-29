@@ -1,0 +1,217 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "3,6": "ID:",
+    "5,6": "exam_ID:",
+    "7,6": "题目编号:",
+    "9,6": "阅卷老师:",
+    "11,16": "取消"
+  },
+  "AttachInfos": {
+    "3,14": {
+      "BindingInfo": {
+        "TableName": "exam_item",
+        "ColumnName": "ID",
+        "GUID": "30875412-9d3b-4853-b13f-49a09f86ff0b"
+      }
+    },
+    "5,14": {
+      "BindingInfo": {
+        "TableName": "exam_item",
+        "ColumnName": "exam_ID",
+        "GUID": "3d12692d-ea3f-4b3c-9026-817a8f904126"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,14": {
+      "BindingInfo": {
+        "TableName": "exam_item",
+        "ColumnName": "题目编号",
+        "GUID": "14b8ef00-b16f-4721-9eb0-1d9afc006cdf"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "9,14": {
+      "BindingInfo": {
+        "TableName": "exam_item",
+        "ColumnName": "阅卷老师",
+        "GUID": "1bf1084a-f991-4096-a81a-cc1788e55ba0"
+      },
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "Columns": 1,
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "11,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=exam_item_详情页面!K12"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "exam_item",
+                    "UpdateType": "add"
+                  }
+                ],
+                "ID": "7721eda2-f627-4f1b-8941-72073f797c03"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=exam_item_详情页面!K12"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "exam_item"
+                  }
+                ],
+                "ID": "975ad85c-f7b1-4f70-9abf-e8c1a0df2108"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "11,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0
+      },
+      {
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,6": 0,
+      "5,6": 0,
+      "7,6": 0,
+      "7,14": 1,
+      "9,6": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "3,14,1,6",
+    "5,14,1,6",
+    "7,14,1,6",
+    "9,14,1,6",
+    "11,10,1,4",
+    "11,16,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//mJHNzulhklo2Ms8uj2OkjoZcFDPMRisgWQY30oUKP9Qc4/6STZ9jfkpV9XgkqK703EvElWwLkcX51udW4EMjzOviXavOVzd2wc074Nbq8jbRJZeuJrVCgyAk45ka3cm67mjVBOmQ2x2U4kZTrR2lUTLefJXWX/mjv+L32BL8HNFi2UIYyasXuac9Jq8T1D5nvPNkIhCmOaRHofe3QUCjdo8DoNW4x7PNBCE6snDnLcNBoHrrQs9BJknHjY0zvaudkkTD38eDKzd17lhJQYBNl6cY9sLxRbuXCth6a4zys5BTsd4Wpxh6Ynn2AzMlYbXtiD9EHk+kIGHd7zL27VFjY8s+RcMsT9OsbyRakq6c52gXmRaZlCb4RUCUT+r5aQrCfND3VRXVViMJ3br72tjgBwYuIBr1qqByz1SNF7CU5VrpFFJRpabjPWbqRdOaF/suQA72I+cWWfpqsU01a6xy4l1PswW8ZczRriEBzzaOwRzStEaqiVami6jojXpg2D1Q3fcl775bu1D2Ou9tV17yZizD50eaUCysvXwzP4wi1NPcxglEe8BAMY6sh/7FF5iqr9X5G5+An7lChZDcxdK1ESoUxwu3LwWcgk4zaEDsYNX/1LzJhyLhELPX13QaWDNQX71OQabU/h3QkyJMmF4Wk+jTN4w4skxAcXiK75k0a9zDdHrJzn6w8FFKzWgnPFIzdJbBVbnF30hyV4UMKr7idKujCbDmY/hlZymK/OLZMZdBsBYX729BPgTVpD/lSMgRxjuaUtK6eGOIcfKhj08e85DU6swMZaZWYk4k/kSFIRlRrRwABqVUv6GTM+JU/iYMRc7tVucnRLfBgpr8QOnwgbCIuK2VzLULSWRAX/FFwf8Y2+RTvdnzZnWzsEZVHv5SMeb3koCKSK7xWNPgHnePlQ==|920

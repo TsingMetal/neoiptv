@@ -374,18 +374,7 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-29T17:14:40.4865633+08:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": [
-      "Upload\\45cf10c6-4316-4bf9-80d4-0de0c7aa4b8c_20230102-00059_3.png",
-      "Upload\\69b5d28d-1a46-4540-b3bb-18130415acd2_20230102-00059_3.png",
-      "Upload\\d0473552-084a-4392-a6de-9384b2a4c3e1_20230102-00059_2.png"
-    ]
+    "ModuleType": 26
   },
   {
     "ModuleName": "Image/madecard-index.png",
@@ -617,19 +606,6 @@
     ]
   },
   {
-    "ModuleName": "PCPage/Exam5Upload_bak",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-29T15:57:00.7890723+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\上传试卷\\Exam5Upload_bak.json"
-    ]
-  },
-  {
     "ModuleName": "PCPage/Exam5UploadTest",
     "State": 1,
     "LockedBy": {
@@ -654,42 +630,18 @@
   },
   {
     "ModuleName": "PCPage/ExamUpload",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-29T16:00:12.16097+08:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/uploadFourExamTrasaction",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-29T16:53:04.5380245+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "PCPage/exam_item_详情页面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-29T17:16:46.3009187+08:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/exam_item_列表页面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-06-29T17:16:46.3009211+08:00",
     "ModuleType": 1
   }
 ]
