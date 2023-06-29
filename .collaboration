@@ -452,7 +452,16 @@
   },
   {
     "ModuleName": "ShareCommandContainer/批量删除确认",
-    "ModuleType": 36
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-29T14:32:59.2806563+08:00",
+    "ModuleType": 36,
+    "ToRemoveFiles": [
+      "ShareCommandContainers\\批量删除确认.json"
+    ]
   },
   {
     "ModuleName": "PCPage/EditExam",
