@@ -660,5 +660,15 @@
     },
     "LockDateTime": "2023-06-29T16:13:08.163784+08:00",
     "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/uploadFourExamTrasaction",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-06-29T16:53:04.5380245+08:00",
+    "ModuleType": 15
   }
 ]
