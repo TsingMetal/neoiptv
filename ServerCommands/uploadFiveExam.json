@@ -1,5 +1,5 @@
 {
-  "Name": "uploadFourExam",
+  "Name": "uploadFiveExam",
   "Enabled": true,
   "Triggers": [
     {
@@ -57,6 +57,12 @@
         },
         {
           "Name": "examName"
+        },
+        {
+          "Name": "questionNumberFive"
+        },
+        {
+          "Name": "questionTeacherFive"
         }
       ],
       "InvokeTriggerTestData": {
@@ -162,6 +168,22 @@
               }
             },
             {
+              "Name": "questionNumberFive",
+              "DataItemType": 0,
+              "Data": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=questionNumberFive"
+              }
+            },
+            {
+              "Name": "questionTeacherFive",
+              "DataItemType": 0,
+              "Data": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=questionTeacherFive"
+              }
+            },
+            {
               "Name": "userName",
               "DataItemType": 0,
               "Data": {
@@ -172,7 +194,7 @@
           ]
         }
       },
-      "WebUrl": "http://localhost:8916/exam/addImageFour",
+      "WebUrl": "http://localhost:8916/exam/addImageFive",
       "Method": "POST",
       "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
       "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",

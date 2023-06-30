@@ -1090,7 +1090,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "班级",
-                  "GUID": "5fb7587d-e9f4-4ade-a487-43d42dfa99f5"
+                  "GUID": "21aa1117-158d-4fd9-b7d0-07ad0f661209"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1101,7 +1101,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "第一题",
-                  "GUID": "6d6f62da-5ebc-4463-b064-b597cd33fcf9"
+                  "GUID": "1cd77e95-d85d-4080-837c-dad406b3991d"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1112,7 +1112,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "第二题",
-                  "GUID": "fa900bec-0257-4e23-8a11-a0734633f457"
+                  "GUID": "5b89e1c1-716b-40b7-8d53-7d79bdc4c559"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1123,7 +1123,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "第三题",
-                  "GUID": "4e184d76-fabf-420d-b9a8-f714f01a5417"
+                  "GUID": "7600e2a8-8d59-425e-8274-1b4ecb36a304"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1134,7 +1134,7 @@
                 "BindingInfo": {
                   "TableName": "_4题试卷上传",
                   "ColumnName": "第四题",
-                  "GUID": "d539d09d-4b81-4101-99af-0986c5551779"
+                  "GUID": "3680f2f1-9ce7-43ab-a07a-dcba1c370fff"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1548,4 +1548,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//75e2XxjrUOx1oL00cYVPXFK8fe5vPVdbhtC06Pa+NMx/Dr0QzuFCrkOsUNZv7bts2XnT7IY9h0ebNODYg0swVGp+fJXhqRQFnUbLaktDdcw60MjNcler6Pn6Tn9UMcNSE7GgapvOBoQXQvwp+GNFfBUFHafImLcgUQgvXSgpz0X5N8ipSuDtDy6DCDojplFNVzr6aKZgAEQC9s+JIHtvnxN6YkyjjDxMCpm0DbIVG38Lt4jGn22LAzGHD4wIZbWDdn5kYor88WLX1YWRfrBU1K1devx7dcoCPaZOTWwRbm6mPAqLdygwXrNPOjioJmDFvoRF0JDm8v+s7rpG8iv71poxd2k7U2RbJy+ZG3nQDWQEDDMumncP32FdxGmOu8bKh9fAe4AG+Ug1QGkkIBScfXH1XSqN7KcnNHUk4kmCJalUt7ELNMJbLtjSjJkfH6NQ8U9JJxq8+f/3CiotXocGAZ1YfXbrSZCzY8wknJ6HiBP+PfI8NUxcwbHxRBnS5OMHxIrc8AUrxX5mH4BGQ0y9s+BRMOtinXtR+smoT2FqqEgRAN6oZ3xpSdeGfnI5yQCFlC1L0Mw/ykfnnQgsgbDZykqgTjZ1pACEwS6zE+yv7j3PI9YHuzRYPNPipr5m99qWBnZzP2VMeB72j5JjRXWhLyuknw+Hd9jhDm/ok5TnU4GU5MqO3JiAJSq4SHaKfR+K2XCX5WBOyD7UQ/kksSoJkMKt4nPbVJaviuyudacyKGEcPmXSXhQqDVeIcAtajQe5nnXYxRh7m7NgmINJBHI5uOoL8iAXRJo1hxCmZh3rlGchaWIJEGo0bbD4oWUd2ReBGbIHZ+KMiOJJT3kOa+bHP9IF1ZTvz8t2OpckSKbgeJrOQkfoc9rcyGc/sPFK1XFeOaEWVuD5xB5+pR9otgURnA==|920
+}//P53/2mqnqf6r/KAmqBQJ41K3aMIoofAyiLh4Re7FgKNjv7x5JVyceGGcKt+zOcYXmSweHc6n1TPKCU9cR7EZ09ndLC/fz0Y5W6D1Hs902xZ7MalF0dG0o9vUOF+Y4MghwzOv57of9yqiplPTImiHxorvs5xT8cCPa5jNVWLBfzFnQQCIPOLlhwrhPwAWQ6lKdfiVYZeWrgJFnyyqRkYp82uvnzvOtFF6WYNkoJ54iO8qCiKbpMblg8hS7OAFphA+Q1TUHsQI2FA/DDb+kmOIcAfo7g8bwcoYLIdpluLJBg+lvHFxH54exigfphNAsJPFwV12TAJ4yeph5XEqscGo8jN6bJ6H+9xRcg8kS6coDy7Hd7nBD2w9oDZZHCocvtNKWQxujiFEwnL8eGdbu61e2nFoYhtZw5Agt85sqawUe15vM24TR06plL9a/kAtBwX2egXOIqsnlqtxJIiTqCVdyrQtUR2cKGbF6s3TC5wYJN3pW82rfJMylUJ0R31yEvJclj5lfqgBAVG6VphiSOn9fc6kkbnayRstVvSG8bY2oCj1L9AUJOB3rlTrunCw+R6fTL/OZ9q032kFbof7+Ytx2hHIkJXcStKsVz1vns8zhQLiv9npcfBs6+63MEJPV3icBPQHdzn/jN+ffB0qCnvQUWbiMzL+d7XnA2LgJ4YLHZk7jGmwtnHUm2dWeg5ErQYVl2PdymXqY3XAeEqkcLVQW1spM6V+/PpBahxJWU01Xd6YEOMC8XOG7RPvnp2gNjSGcO5GvEUDqFIYmIxZnR3cjVRomXRDunny61iRSCsDuYSpXGdzQI952wsRCmn7dx3RSQlqNtALSD/j8eAXMLq6t7i1oj5alG5dYmD72w2dDYSKERETooxfMGOQPsUiJl4ggf+dFGSRRT6eWo4LBQhr3A==|920
