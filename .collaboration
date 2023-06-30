@@ -465,7 +465,16 @@
   },
   {
     "ModuleName": "ServerCommand/uploadFourExam",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-06-30T14:27:04.7298244+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\uploadFourExam.json"
+    ]
   },
   {
     "ModuleName": "PCPage/Exam5UploadTest",
