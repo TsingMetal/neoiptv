@@ -36,8 +36,10 @@
     "3,14": "exam_item 列表",
     "7,6": "添加记录",
     "9,17": "更改",
-    "9,20": "删除",
-    "22,6": "ExamUpload"
+    "9,20": "删除"
+  },
+  "Formulas": {
+    "22,6": "\"ExamUpload\""
   },
   "AttachInfos": {
     "5,16": {
@@ -146,7 +148,7 @@
     "22,6": {
       "CellType": {
         "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
-        "PageName": "exam_item_详情页面"
+        "OverflowMode": 1
       }
     }
   },
@@ -195,13 +197,13 @@
     "9,14,1,3",
     "9,17,1,3",
     "9,20,1,3",
+    "22,6,18,31",
     "8,6,1,2",
     "8,8,1,3",
     "8,11,1,3",
     "8,14,1,3",
     "8,17,1,3",
-    "8,20,1,3",
-    "22,6,18,31"
+    "8,20,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -226,4 +228,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//K0eaEmfObRo0bpTCSTK8diUp/n12RaVv6HQBi+xpFvw6vVdlt/Ijv2D65Cm6cS2pg675D56wqIuwbQTxRzJFWp+LzwEVPy6NFROGvSNtXiQk8uAmzhuDUe3mclRNwJKqoCyXHW3iXH9O/fU25qCDkZgpJmpgObxQYKNi3/N/dh9xk8QFP5pw/tlX8aP/3XPXk22dJ4eAV1pL0Bt8rmopnb1BCw0GvL9almlJKqLWAY5JzIDgZ1METNqv5sbFisgimkRRniFQjmx4LCR/idpDylxVixOOGhZycRtcjDLemVtMaS5Fb58oksxmUTqqbZs4zZqc1hT/67nwPHjncODP5u2DkwG8gV2tv69yhs7u7Iu0SLZbe/KEN8eQFaY4EGzj7iGB9fWApc5wVah/g4rtIhC+GZ3yqsY38Zgx4cLSGPYoXACgSvtXumae3AO/tJ6aidwURBIQZ7RD9Xp1qyZBoKK9qotrxm/8KrvVoLapqyGZOztttwj8M2ZSqPs/4Mfhhgkg9Xb1FheD+K9MkKKOcQWAFEGKPrflNCSJJ4oneoCSCM36k6PN6IueKTkwp7zFKTJYXOzEz738HwV7CdEerIti3hOHbQ2fCQtI/FNjv/fubCWuN8DTxuaK8lHnwp2kAclHdV5KGn1d2ORFEy/s7gvBe5V0pTbTji9pXdNwhLJtsrsCDQzVFT2lrWmIdltWkkk8R/k7d9jEar/TAq1MOtDUDDQqQrBXcZxzJWqXUoFzV+6AtIgTzVOV3KMZF9HJ98zR+yUui74vSxO+bKGBPPrB44DjRir71iSUnFCUhvQEDaztX8xwOHprs9NQV5DH2qYGincUxP0H9ddIyYT3ILQ9Bfd/1V6ifS25PHINJUy2tUsLgwmrphtxUnUvDqYVWkD9X5JDmCBRKNgJ8KiOsA==|920
+}//kkIPG0sRmI7uFcGAwAbfEHXdD4uoIIazXQZdVaGJXWUn2E1ZmNzSq4UVvE73tpQB8SHsvzYgLknG4oM9mVQZ6apkGyGf3U01xq4K+cIV1Fh+/fnnLqNg18Kfl7JVTkhQEq7mbRjSMfauElIb4Z1d0qu60otJArO54JIVwssWE7q3mNlMInlavxqg6JqzStMR/rf6nMOz/HMz6HbgoYcfwrw7+jR65QIZZXHPhYLIoHCkBGZmktozZ0L7tj96m4KmbTsu654SdF6krvot6BpDJ3StX2R//iWYgbvFRa7U3ztYsWzGPv5V0DwLNiOFdYPREe5kcIYa5hY6OnTezxxyCXOIprOTBQuhHI2kmIWzEPkx+c3rt2diehhdBUI3uAwqy6cJThclV7gb9GbQ/QMTKMzYEuk+kdWTaOJPXgze7smZlbqEVVeC3ziyzux+NP/Ux6cZxY5JxFfAxR68AguQXY8ItrlnQsHig5CSihHCN5cy3FG3feyyt+shQmQ3i3V/r9SyKc1wSspJENQA45mibtEiij1Uvd3zOaf9O1M7ZjZRnKhtgnDbZuGhK0kRNcEtWgMwBZzI1P+ttkSOgj7zGILBaRWUlTuobVK1BOxg7HBkL2FwkiH/B1q5ZJ3Hia4A9Bd2gJSPLd5NJlA7ygsPc9kCa66/Vcjhcrt1DIv1uoJTEfqQ0Z+0FZHF3drmc3TL2hBq5rQkNwtu/FqwqmAVrSXURlyTQY+wIHTd7u+5WXrtanezYuPS9TIbqrBYAdPrYLHi6ccU9nj0Rl3+q2BsmUzgt8ypWpS29Ra3yA1yz7hArl97cES4gig6VRFjKFFQXiNh7eGTEVwsxX94Xx9ddRktvWpymSsJiVWs8WTJzXxMEVS7fbZ0EnKYawaRUPUkBIbY+pSJp++aGFRaUk4AGg==|920
