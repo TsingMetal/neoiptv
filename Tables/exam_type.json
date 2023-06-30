@@ -1,5 +1,5 @@
 {
-  "Name": "exam",
+  "Name": "exam_type",
   "Columns": [
     {
       "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
@@ -13,21 +13,17 @@
     },
     {
       "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
       "DatabaseColumnType": "System.String",
-      "Name": "exam_name",
-      "Alias": "考试名称",
+      "Name": "exam_type_id",
+      "Alias": "考试类型编号",
       "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
     {
       "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
       "Required": true,
-      "DatabaseColumnType": "System.String",
-      "Name": "class_name",
-      "Alias": "班级",
-      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Unique": true,
       "Name": "exam_type",
       "Alias": "考试类型",
       "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
@@ -56,17 +52,5 @@
   "PrimaryKey": [
     "ID"
   ],
-  "Relations": [
-    {
-      "PrimarySchema": null,
-      "PrimaryTable": "exam_type",
-      "PrimaryColumn": "exam_type_id",
-      "ForeignSchema": null,
-      "ForeignTable": "exam",
-      "ForeignColumn": "exam_type",
-      "RelationTypeOnDelete": 0,
-      "RelationTypeOnUpdate": 0,
-      "IsDetailTableRelation": false
-    }
-  ]
+  "Relations": []
 }

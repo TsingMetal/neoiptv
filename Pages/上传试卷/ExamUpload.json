@@ -123,8 +123,7 @@
       },
       "31": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 30.0
         }
       }
     },
@@ -1471,14 +1470,23 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=ExamUpload!R18"
                 }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "examType"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionNumberFive"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "questionTeacherFive"
               }
             ],
             "ReturnPropertiesTo": [
               {
                 "ResultPropertyName": "result"
-              },
-              {
-                "ResultPropertyName": "currentExamID"
               }
             ],
             "RefreshAfterFinish": true,
@@ -1665,4 +1673,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//VY7VNCq/8ZB/Bg/Y5HgNjEtXDVseFHdCyWN3WGxMOyowWk3ybd2NbE+yXchoQhPXA1jXTMujDAXVNICBbB4TXeGmwWUBWXxjbr5Rvkhqhwdm9yoaIdLeTxVEaaldViSXu9xdmoad52TK3KEcZq4Prwt2eL5tCVxlVXwVtg70e/a037BH64sjDa4fZhzTQwo1keCcnyV76dA9OXMcUR2/0Q6LyBOpX4xjoiCJu4I6LlPZj0b6dG6e6ka5wXKxx5RxUaCX16wzyG3dinFt138tkaRYjKC5F3wtIPnu7Fr+wyW5M7er5pJYlLddgpx+3fjzOwG5BfohL6cQ8p3vSfrn4ojIAwnKxlrhSCGUlgZZ4Rl/msef042Ec/PXZpKSB6A1X3hBXAz1JsWkl51l3bb3qRThu1zcandBr9eOfW7Z2zKrcRhZW0rWCdPXZXecY8Szo4m1JbhrgCau8iRGeGL4gKBSaA+O+ZuwlMwNMjIXEi82QGRhKaA/f5YiY0ZxTnwNbf0ijozcsRCvc01RFCmvJbOEfpr7RDn7HiWJE0ztd10vLHS//PqZWB0ypS57gmboWsp/HRLqVlDkxvrTZ0E0C+2sEz1+OYUem+65fmoJaVdApwKvG/R9hkWFXZAVk36MsdsY6blpC7PXnRtWXdz+cU9OVNDXZRV6kyxYpiEUaCXKVF2F7mHi3RkAFEnIWJPnQdx1ZdQQw+r6HUN9hkW1jDV82GBJ24nyRnIq+CwtZAKe2BrAOq0ZPYT1y5pPETpmHJYaHoG8QPMQ76kGhjiG98csB9BDt9MyXKPoeB2LYzgIlkGeL2AyFNccD8DMrvNcyKj4vXhGQtdU+UmzxOFdW0InvZQnY/ykPpei2GJdUUpOrdTNlQfAzNgUs8jpU6ldX0aS/EJBPeqdX3ig2JnsSg==|920
+}//QQWgBgw173ev7NhBn4yJjHwzgbRtCuXSBTcD6311LnpsQ6GKogmIbm/rQJXHTcBbopaOk/9ZFoRLO29ASidxFQKm7Ppgawd78mYpyrJmtB2Fyi1mVl96Cb3MX6IjjA5fgoI58OWY2ekGgyfAQgU0DoidHcKcGjqOL55zKhc1LFWwQLdQG/Ddsz9exH8phszFQzn82HZb4oVSlLubYJSdjXeva5muRPVTLeGSojlPkECMNhlWoQVBCNn47UNdcCq4oO9nbtOMiR0OXZui7cZ01UywEbytNNAWkLa5A9eyvuD+VDx4Y+LCjt+9sbkMed1K0ZyevvrdtB2tjbIILytXawaLnY/4QGlCyh30Cr9MtdzCy2SvFc0fSMFNkL2hIgqFRBhwLy1NVWdoO1ufmJGirQTIxy5GZsTXdJiDR9I3Mr8YoO70v+ol7ZOljzE+DQqnVb5fINqmpKloabDWUVNYQJZHRNnAhDtbDce3glMsqh9XXA+b3JTYyuYYxU1q+WN7QRYx04uVsKZBPQ2CeqKy7CJJYjj++rBt76YPN/RlptyrYsAZezZb10a+MCsDhm4Sko7NxqRQX5TTEGyp8td9RlxgPcU7qZYlqqbXwhYP+kMr5XyCyfyor0mbikPMZfYPlAN2PX51eyhysoYOWyzqQqXNKjbLCaz8zcF+2nN+L9/BdoCDD6SLC3yQLg7VbGWvokBkqTwcksG2traAqvPt9eLRCpPaXBsPEPB4NqQTKqzynNL+Il8mbXRz+9DuNNMxvHhOOBpWQPCsVCO6ZTqLOrXvqS9mgSGtqOlPwIyVsRXw0WDKTvd7bV1lwgLlsTgq4nvRj2srMnGY6+QCBMpIxluCLcil84pJ+q/sGOOF6oomUkohMfZa36KHVeP3bPpejxGc8pYvxxojAsg86fx4Og==|920
