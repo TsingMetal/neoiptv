@@ -190,6 +190,11 @@
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=userName"
               }
+            },
+            {
+              "Name": "isDev",
+              "DataItemType": 0,
+              "Data": 0
             }
           ]
         }

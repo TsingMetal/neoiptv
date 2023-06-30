@@ -224,16 +224,7 @@
   },
   {
     "ModuleName": "ServerCommand/addExamToJdy",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-06-30T14:37:05.1461049+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\addExamToJdy.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/deleteJdyExam",
@@ -241,16 +232,7 @@
   },
   {
     "ModuleName": "ServerCommand/batchAddExamToJdy",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-06-30T14:37:37.4232793+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\batchAddExamToJdy.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "TaskScheduler/数据库新增数据",
@@ -483,16 +465,7 @@
   },
   {
     "ModuleName": "ServerCommand/uploadFourExam",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-06-30T14:27:04.7298244+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\uploadFourExam.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "PCPage/Exam5UploadTest",
@@ -500,16 +473,7 @@
   },
   {
     "ModuleName": "ServerCommand/uploadFiveExam",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-06-30T14:38:50.0051406+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\uploadFiveExam.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "PCPage/ExamUpload",
