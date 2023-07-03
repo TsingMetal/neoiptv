@@ -482,7 +482,7 @@
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-06-30T14:18:16.8998458+08:00",
+    "LockDateTime": "2023-07-03T10:13:32.1955613+08:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\上传试卷\\ExamUpload.json"
@@ -490,7 +490,16 @@
   },
   {
     "ModuleName": "ServerCommand/uploadFourExamTrasaction",
-    "ModuleType": 15
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-03T10:13:32.1953395+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\uploadFourExamTrasaction.json"
+    ]
   },
   {
     "ModuleName": "PCPage/exam_item_详情页面",
@@ -508,5 +517,15 @@
     "ModuleName": "Table/exam_type",
     "ModuleType": 7,
     "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "ServerCommand/uploadExamTrasaction",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-03T10:13:32.1953423+08:00",
+    "ModuleType": 15
   }
 ]
