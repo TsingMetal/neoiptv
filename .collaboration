@@ -651,7 +651,16 @@
   },
   {
     "ModuleName": "UserControlPage/五题配题",
-    "ModuleType": 31
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-03T11:13:56.2993171+08:00",
+    "ModuleType": 31,
+    "ToRemoveFiles": [
+      "UserControlPages\\五题配题.json"
+    ]
   },
   {
     "ModuleName": "Table/exam_type",
