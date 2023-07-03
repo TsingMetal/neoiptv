@@ -686,5 +686,15 @@
     },
     "LockDateTime": "2023-07-03T10:13:32.1953423+08:00",
     "ModuleType": 15
+  },
+  {
+    "ModuleName": "PCPage/ExamList",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-03T15:48:13.0424053+08:00",
+    "ModuleType": 1
   }
 ]
