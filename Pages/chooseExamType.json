@@ -1,0 +1,126 @@
+{
+  "Rows": {
+    "Count": 1
+  },
+  "Cols": {
+    "Count": 10
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "ElementUI.SelectCellType, ElementUI",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "useBinding": true,
+        "options": [
+          {
+            "value": "黄金糕",
+            "label": "黄金糕"
+          },
+          {
+            "value": "双皮奶",
+            "label": "双皮奶"
+          },
+          {
+            "value": "蚵仔煎",
+            "label": "蚵仔煎"
+          },
+          {
+            "value": "龙须面",
+            "label": "龙须面"
+          },
+          {
+            "value": "北京烤鸭",
+            "label": "北京烤鸭"
+          }
+        ],
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "exam_type",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "exam_type",
+                "ColumnName": "exam_type_id",
+                "GUID": "2c316bbb-194a-4b14-85a3-1cd158bc3848"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam_type",
+                "ColumnName": "exam_type",
+                "GUID": "39e9ab69-456e-42d5-b910-15b8a50a5b4d"
+              },
+              "ColumnName": "label"
+            }
+          ]
+        },
+        "placeholder": "请选择考试类型",
+        "noDataText": "无数据",
+        "filterInServerOptions": {
+          "matchMethod": "contains",
+          "loadingText": "加载中"
+        },
+        "noMatchText": "无匹配数据"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,0,1,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//JgRllzJYMQVLBA+DuYjzjulbgsyQlxBsWVPwA9zl9ng31Z4ZMQlcajBaDc4Qgp3vIWM+f8BpJxcLazYE/hs9WLuSkKAyLWPMz3A8yZgYfhlWRbcwwPiXF4g23nFtbcXWfIJN/22v4fdelnsCW/6VJgS7Z15BJMphGCvR4UzrgqS7/V6iIl9ZnjaVOMoaj0lnhJmV5aqJtK0i4B/46SYVHrRwy7RDRBiunB8oqug3vBfuc2BaMHergig9Sxmc/ji6SPmUTFVtsJqV2NPqKKxQ2zU9bptyzGo65bCZrqrZn1uNUX9irTL6f4rYejBDQkNKfUnYHZaq6ttUSNM07oroK2Ylt4br6xLxq5RasZzzLcG6mhFHFfApEqthWT3Ou8cDCf1gCDh63SziRZCB/Yavf2ix0+nDLWhcytQdPrrvDxn24pLKp5QbqcAfdc82TVjeGW101YFc/4FzjXy9o1wbD/BhLh+jr5jUbGF5DZaBA+9NI2YHn7amVgBKOEnfq59edEPH5DTSuqZ74OKF8GoOa91ITZp2vm3C4Jlys6yy22gN97hTPDazRvHp/w8VjGTCTvvSyNY2yw3zR1VAwuCnPKMCbhqnnRtkQF2ZDA2QIn4xrMtqkMZuuluU0KvhyMJ8V3HW/m0+CLRvZVrrzn/8MRnLB7ErMYkd4KnsYxjaELo9uuNDMEfbDrWOc7K9SLKIsVCFGVVtXEsO6fSAgM8UBbo5vnOEJozNSxCyOsqq6yFBZDkI9mG3SuPQJt66FMDHPJvLpJp36Tr6sge9CzOrZSf9j2egXWoXRCR+wc97aso9dXtXl1CZXamTGKu3ofNzMBRVBL8lHGgcB3JwSd28KopZvVqhFothqFzTwlCxEkQyR3wcptJGaxhoRSXzUsmJZBkCB2pB7p5CpVJ6ru99Bw==|920

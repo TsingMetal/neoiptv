@@ -1,0 +1,696 @@
+{
+  "Name": "uploadExamTrasaction",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser",
+                "FGC_Anonymous"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "className",
+          "TestData": "class1"
+        },
+        {
+          "Name": "imgArr",
+          "TestData": "1,2,3"
+        },
+        {
+          "Name": "questionNumberOne",
+          "TestData": "e1"
+        },
+        {
+          "Name": "questionTeacherOne",
+          "TestData": "t1"
+        },
+        {
+          "Name": "questionNumberTwo",
+          "TestData": "e2"
+        },
+        {
+          "Name": "questionTeacherTwo",
+          "TestData": "t2"
+        },
+        {
+          "Name": "questionNumberThree",
+          "TestData": "e3"
+        },
+        {
+          "Name": "questionTeacherThree",
+          "TestData": "t3"
+        },
+        {
+          "Name": "questionNumberFour",
+          "TestData": "e4"
+        },
+        {
+          "Name": "questionTeacherFour",
+          "TestData": "t4"
+        },
+        {
+          "Name": "userName",
+          "TestData": "qing"
+        },
+        {
+          "Name": "examName",
+          "TestData": "test1"
+        },
+        {
+          "Name": "examType",
+          "TestData": "1"
+        },
+        {
+          "Name": "questionNumberFive"
+        },
+        {
+          "Name": "questionTeacherFive"
+        },
+        {
+          "Name": "isDev"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "exam",
+          "UpdateType": "add",
+          "ShowConfirm": false,
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "exam_name",
+                "GUID": "591a2f4b-cd8e-4b41-b019-6914a27e06b2"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=examName"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "class_name",
+                "GUID": "f7d34c4d-55e1-4b8c-b383-88bfe1448a78"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=className"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "exam_type",
+                "GUID": "77225995-320b-4d73-b0b1-986831a11a69"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=examType"
+              }
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "currentExamID",
+          "TableValue": {
+            "TableName": "exam",
+            "OnlyGetValue": true,
+            "TableValueType": 0,
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "exam",
+                  "ColumnName": "ID",
+                  "GUID": "f9776085-968d-49b6-a2b5-72c622fba61e"
+                },
+                "ColumnName": "ID"
+              }
+            ],
+            "TopCount": "1",
+            "OrderBySqlCondition": {
+              "OrderByColumns": [
+                {
+                  "ColumnBindingInfo": {
+                    "TableName": "exam",
+                    "ColumnName": "ID",
+                    "GUID": "04eaed3d-b2a5-4566-b230-abb291ed12b1"
+                  },
+                  "Order": 1
+                }
+              ]
+            }
+          },
+          "ID": "2cafb75eb2e4404eab34b55b31fc79b0"
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=examType"
+                  }
+                },
+                "value": "5"
+              },
+              "CommandList": [
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "questionNumberOne": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberOne"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherOne": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherOne"
+                      },
+                      "Item2": 16
+                    },
+                    "questionNumberTwo": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberTwo"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherTwo": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherTwo"
+                      },
+                      "Item2": 16
+                    },
+                    "questionNumberThree": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberThree"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherThree": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherThree"
+                      },
+                      "Item2": 16
+                    },
+                    "questionNumberFour": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberFour"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherFour": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherFour"
+                      },
+                      "Item2": 16
+                    },
+                    "currentExamID": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=currentExamID"
+                      },
+                      "Item2": 16
+                    },
+                    "questionNumberFive": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberFive"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherFive": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherFive"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT INTO exam_item (exam_ID, 题目编号, 阅卷老师)\r\nVALUES\r\n(@currentExamID, @questionNumberOne, @questionTeacherOne),\r\n(@currentExamID, @questionNumberTwo, @questionTeacherTwo),\r\n(@currentExamID, @questionNumberThree, @questionTeacherThree),\r\n(@currentExamID, @questionNumberFour, @questionTeacherFour),\r\n(@currentExamID, @questionNumberFive, @questionTeacherFive)",
+                  "ID": "c4b356793a224e87851766376267d3c6"
+                },
+                {
+                  "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                  "ServerCommandName": "uploadFiveExam",
+                  "Parameters": [
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "className",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=className"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "imgArr",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=imgArr"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberOne",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberOne"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherOne",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherOne"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberTwo",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberTwo"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherTwo",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherTwo"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberThree",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberThree"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherThree",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherThree"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberFour",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberFour"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherFour",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherFour"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "userName",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=userName"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "examName",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=examName"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberFive",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberFive"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherFive",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherFive"
+                      }
+                    }
+                  ],
+                  "ResultErrorCodeTo": {
+                    "SerializeProperty": "status_code"
+                  },
+                  "ReturnPropertiesTo": [
+                    {
+                      "ResultPropertyName": "result"
+                    }
+                  ],
+                  "RefreshAfterFinish": true,
+                  "CheckDataValidation": true
+                }
+              ],
+              "Comments": "申论5题上传",
+              "ID": "4e449bdf-82dd-45c7-93d5-faba762866d5"
+            },
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=examType"
+                  }
+                },
+                "value": "4"
+              },
+              "CommandList": [
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "questionNumberOne": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberOne"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherOne": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherOne"
+                      },
+                      "Item2": 16
+                    },
+                    "questionNumberTwo": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberTwo"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherTwo": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherTwo"
+                      },
+                      "Item2": 16
+                    },
+                    "questionNumberThree": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberThree"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherThree": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherThree"
+                      },
+                      "Item2": 16
+                    },
+                    "questionNumberFour": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberFour"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherFour": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherFour"
+                      },
+                      "Item2": 16
+                    },
+                    "currentExamID": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=currentExamID"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT INTO exam_item (exam_ID, 题目编号, 阅卷老师)\r\nVALUES\r\n(@currentExamID, @questionNumberOne, @questionTeacherOne),\r\n(@currentExamID, @questionNumberTwo, @questionTeacherTwo),\r\n(@currentExamID, @questionNumberThree, @questionTeacherThree),\r\n(@currentExamID, @questionNumberFour, @questionTeacherFour)",
+                  "ID": "717c752406f24c6b8df0a94b87ee3fa5"
+                },
+                {
+                  "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                  "ServerCommandName": "uploadFourExam",
+                  "Parameters": [
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "className",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=className"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "imgArr",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=imgArr"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberOne",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberOne"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherOne",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherOne"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberTwo",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberTwo"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherTwo",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherTwo"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberThree",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberThree"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherThree",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherThree"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberFour",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberFour"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherFour",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherFour"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "userName",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=userName"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "examName",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=examName"
+                      }
+                    }
+                  ],
+                  "ResultErrorCodeTo": {
+                    "SerializeProperty": "status_code"
+                  },
+                  "ReturnPropertiesTo": [
+                    {
+                      "ResultPropertyName": "result"
+                    }
+                  ],
+                  "RefreshAfterFinish": true,
+                  "CheckDataValidation": true
+                }
+              ],
+              "Comments": "申论4题上传",
+              "ID": "8495434e-6727-487c-80ff-c89dd1540648"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "questionNumberOne": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberOne"
+                      },
+                      "Item2": 16
+                    },
+                    "questionTeacherOne": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherOne"
+                      },
+                      "Item2": 16
+                    },
+                    "currentExamID": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=currentExamID"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT INTO exam_item (exam_ID, 题目编号, 阅卷老师)\r\nVALUES\r\n(@currentExamID, @questionNumberOne, @questionTeacherOne)",
+                  "ID": "044d5f4e98ac46ea8ef4458cea0a7a02"
+                },
+                {
+                  "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                  "ServerCommandName": "uploadOneExam",
+                  "Parameters": [
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "className",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=className"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "imgArr",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=imgArr"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionNumberOne",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionNumberOne"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "questionTeacherOne",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=questionTeacherOne"
+                      }
+                    }
+                  ],
+                  "ResultErrorCodeTo": {
+                    "SerializeProperty": "status_code"
+                  },
+                  "ReturnPropertiesTo": [
+                    {
+                      "ResultPropertyName": "result"
+                    }
+                  ],
+                  "RefreshAfterFinish": true,
+                  "CheckDataValidation": true
+                }
+              ],
+              "Comments": "申论1题上传",
+              "ID": "fab64395-d632-42a3-a6a8-ef24a8a73d88"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "result"
+    }
+  ]
+}
