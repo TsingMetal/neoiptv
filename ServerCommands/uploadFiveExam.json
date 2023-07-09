@@ -194,7 +194,10 @@
             {
               "Name": "isDev",
               "DataItemType": 0,
-              "Data": 0
+              "Data": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=是否测试环境"
+              }
             }
           ]
         }
