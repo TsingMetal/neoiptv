@@ -22,7 +22,7 @@
       34,
       35
     ],
-    "Count": 36
+    "Count": 38
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -45,7 +45,14 @@
     "1,1": "考试信息",
     "1,55": "上传题卡",
     "17,1": "题目信息",
-    "29,0": "考试类型："
+    "29,0": "考试类型：",
+    "29,14": "暂无数据",
+    "29,23": "考试记录数：",
+    "30,23": "题目记录数："
+  },
+  "Formulas": {
+    "29,28": "COUNTA(B5)",
+    "30,28": "COUNTA(B21)"
   },
   "AttachInfos": {
     "1,55": {
@@ -426,13 +433,27 @@
         "FontWeight": 0
       },
       {
-        "Background": 2
+        "FontFamily": 1,
+        "FontSize": 21.333333333333332,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "WordWrap": false
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4
+      },
+      {
+        "Background": 5
       }
     ],
     "Types": {
       "Strs": [
         "Bold",
         "Body",
+        "#FF999999",
+        "Center",
+        "[AUTO]General",
         "Background 1 -25"
       ]
     },
@@ -810,11 +831,48 @@
       "24,56": 1,
       "24,57": 1,
       "24,58": 1,
-      "24,59": 1
+      "24,59": 1,
+      "29,14": 3,
+      "29,23": 1,
+      "29,24": 1,
+      "29,25": 1,
+      "29,26": 1,
+      "29,27": 1,
+      "29,28": 1,
+      "30,23": 4,
+      "30,24": 1,
+      "30,25": 1,
+      "30,26": 1,
+      "30,27": 1,
+      "30,28": 1,
+      "35,14": 1,
+      "35,15": 1,
+      "35,16": 1,
+      "35,17": 1,
+      "35,18": 1,
+      "35,19": 1,
+      "35,20": 1,
+      "35,21": 1,
+      "36,14": 1,
+      "36,15": 1,
+      "36,16": 1,
+      "36,17": 1,
+      "36,18": 1,
+      "36,19": 1,
+      "36,20": 1,
+      "36,21": 1,
+      "37,14": 1,
+      "37,15": 1,
+      "37,16": 1,
+      "37,17": 1,
+      "37,18": 1,
+      "37,19": 1,
+      "37,20": 1,
+      "37,21": 1
     },
     "RowStyles": {
-      "2": 3,
-      "18": 3
+      "2": 5,
+      "18": 5
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -841,6 +899,10 @@
     "1,55,1,5",
     "20,49,1,5",
     "20,54,1,6",
+    "1,1,1,4",
+    "29,14,6,8",
+    "29,23,1,5",
+    "30,23,1,5",
     "3,1,1,9",
     "3,10,1,8",
     "3,18,1,4",
@@ -854,12 +916,127 @@
     "19,41,1,8",
     "19,49,1,5",
     "19,54,1,6",
-    "1,1,1,4"
+    "29,28,1,6",
+    "30,28,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "PC模板页",
     "Title": "试卷列表",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+        "ShareCommandContainerRefer": {
+          "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+        },
+        "Params": [
+          {
+            "ParamReferObject": {
+              "ParamID": "68441817-fd50-4382-a4f0-d0e3a20ffb2a",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!O30"
+            }
+          },
+          {
+            "ParamReferObject": {
+              "ParamID": "c4f65294-d985-40aa-9b44-8816854dd407",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!O30"
+            }
+          },
+          {
+            "ParamReferObject": {
+              "ParamID": "81da0e53-cfb2-4b01-b2eb-53b5184517aa",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!B5:AK14"
+            }
+          },
+          {
+            "ParamReferObject": {
+              "ParamID": "eaf56485-a8a2-4f05-a8f8-a19e4394dd96",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!AC30"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+        "ShareCommandContainerRefer": {
+          "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+        },
+        "Params": [
+          {
+            "ParamReferObject": {
+              "ParamID": "68441817-fd50-4382-a4f0-d0e3a20ffb2a",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!O30"
+            }
+          },
+          {
+            "ParamReferObject": {
+              "ParamID": "c4f65294-d985-40aa-9b44-8816854dd407",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!O30"
+            }
+          },
+          {
+            "ParamReferObject": {
+              "ParamID": "81da0e53-cfb2-4b01-b2eb-53b5184517aa",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!B21:BH25"
+            }
+          },
+          {
+            "ParamReferObject": {
+              "ParamID": "eaf56485-a8a2-4f05-a8f8-a19e4394dd96",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!AC31"
+            }
+          }
+        ]
+      }
+    ],
     "PermissionData": {
       "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
       "permissionResource": {
@@ -881,4 +1058,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//Z0mPrfV5DfQU5jYe2anfu0qi84YykeJwLPJP1tSlHj0sFRwSVjs4FxvLfkOkBtfRQpgaCM2eeIZEl6Ms4Y1jQ6H+fAq/HRX8gCpVa1RWFwyhwyUwzbfn0pvnWuMnhPaL3rgQ3ozPRqwj22WUIR7khzt6zqoxm/DU8ZB9ajX2rEkOlxTgWAPZ84Ni+VTP9DYo8DWAbB/DWMsIe6JLh7Kc6m2hS1CjlDJaN2jVliPDlMztTFRdz0tQx61M7GYolmOP51dnE4oaX61v0jGnA/Rah2Fw8wPVQRME2gG9VmNBg6KZOwUhTvYEwR5TnVHDiMrgupYOLCmuk9xR0j3e0+NmC2ldHhT9d2eNigg+7itj1MUZAU7z/W/4tjT4J7qy9yB4rQ9AI0ZFRGhixoqVunBWpVIWrGrliQThfXifSsx7YAQITHG1v5+Ikb8TLsfyQsV2HNDRDRUIoXKS9vIqUhLHGgfDsgBau84FmFikGyHZC/7hLyLSlu6T7AoSHmdqbLF5nRnTM/M1rT1+RiOMW5EDM7tkFAdG86T+db6OnnQQEH+dBTxYg23Op82UOfD8G1EFuIe+AbBnmuzVviP/TqKFa+Kh9sOm8QcSGlJHQSeaddruXAoPyoXNbAQeUOf1UWcI51rkFTOGan/D8JSxo5k+yPUFboPexo1TzFs7OX8TJhe/BRjwAPpJ4b0umJgL6zQzdxYNJM30r/Uj8NLLT8wyynJhwD+WXRKv1PS2JbKdpQ9b4/vSSUB9+AkVfmaU9acFwOW7TNWwZS4uKMLssIQETEjuc1jiHK+HwfqCuNtzcTcdsxa02EfPrFejqV5fBh2KBeRgINLfRm5Nmo1vAf+hm5fVdTHvxMWrprdUASoLJYSnQLmgPAROWO+gW0ekOtB0KF2zzws4fZv/AtjPPylpKg==|920
+}//FgnspwO3tHM9btKgCa1nHzu9AU6+5W2i5rN4KMmm0YgDgSIibQFzTsv1+XR1fmvBTgRSBs/CY3Qph8B/s0XjR14BTW82kXU+VerYtUGxWyDvQRCpCcFGBo7/Ot5EA7YGAb41INAeUoW2UAT4xrMKY0ClGveCPnnuGNhVZI0UovqwrM4yQdxY0fvRZth1FkDMWr4QYS1rBM6/vYIMkU+BoGroa0Gkokd5azYY1Zq8c9Da2wO08/Kx8VrNDCsPd3mal03GEXQxzURN4LzOVRjJYMmSCJ5a1LGctmuatpaKb/HfcGgVDG2/0IuW6mwv7lPJe958czaAsA6JCymCLRePr0QPtideW0w9BthHCfEgMGarvVWYqj6aS6Jt+xBW+K7vbcVoCywxp4SDqC4enRVvTd6L18qpE/DdSM3Ik/0LVVy+P9M2yVMvZJZ7AsrnPnEn0eF4XqE/vC2QRkoLnTHWxL695GB1I0rNU22D6BPRg2rNchKHwyLDw4c/iuHhrm3Mr6wGjCWb3VoIXV9VUaHOZsoBVLldhm/GBlyBVp46PO07+EgIAD80IsBEwBYqz59+KRchOoncN6u6EOyMBp2zpb44m5ksZvLvIebILgbApaDXcs/ryqUO3ctMq+oYiXbs15TcQYxzxsazoOU8XTBDDU+Pl4SeU/6zAHEVPc8nZ02HsUusGrNgPNoBex9J73AtL6n3xO3CdaZdysKrdjzXOLE2jSQc8Fx9tlK13Tr295+KNyxXDO4ATQSrgNHUP8A8NptFtNx7fBL9wN/U1eHMepzwRLDbfqYBXiGa//I9VcwgwAtPL31r8LhNMjPb5fp4dL1evPtGUSH9IRGkUWfhEQiVFrluxLAqVx30bQGl98P8xe/k6QYJksl1gOowiRKLoEVi4NFjZRjyxfPs+CToRA==|920

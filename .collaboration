@@ -498,16 +498,7 @@
   },
   {
     "ModuleName": "PCPage/ExamList",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "TSING\\tsing",
-      "Email": "tsing_w@aliyun.com"
-    },
-    "LockDateTime": "2023-07-10T01:12:59.9797763+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\上传试卷\\ExamList.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/chooseExamType",
