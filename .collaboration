@@ -328,7 +328,16 @@
   },
   {
     "ModuleName": "PCPage/Exam4Upload",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "TSING\\tsing",
+      "Email": "tsing_w@aliyun.com"
+    },
+    "LockDateTime": "2023-07-10T00:15:09.2955126+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\上传试卷\\Exam4Upload.json"
+    ]
   },
   {
     "ModuleName": "PCPage/QRCode",
