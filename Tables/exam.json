@@ -28,8 +28,15 @@
     },
     {
       "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
       "Name": "exam_type",
       "Alias": "考试类型",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.ImageBindingColumn, ServerDesignerCommon",
+      "Name": "exam_img_list",
+      "Alias": "题卡图片",
       "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
     {

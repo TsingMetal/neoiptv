@@ -79,9 +79,6 @@
         },
         {
           "Name": "questionTeacherFive"
-        },
-        {
-          "Name": "isDev"
         }
       ],
       "InvokeTriggerTestData": {
@@ -103,7 +100,7 @@
               "BindingInfo": {
                 "TableName": "exam",
                 "ColumnName": "exam_name",
-                "GUID": "591a2f4b-cd8e-4b41-b019-6914a27e06b2"
+                "GUID": "01200ae2-c600-4f06-a1ae-3c3bc972f03e"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -114,7 +111,7 @@
               "BindingInfo": {
                 "TableName": "exam",
                 "ColumnName": "class_name",
-                "GUID": "f7d34c4d-55e1-4b8c-b383-88bfe1448a78"
+                "GUID": "be55ae63-20f5-4db6-adba-31f9978a4315"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -125,11 +122,22 @@
               "BindingInfo": {
                 "TableName": "exam",
                 "ColumnName": "exam_type",
-                "GUID": "77225995-320b-4d73-b0b1-986831a11a69"
+                "GUID": "07b66ba0-ed07-433a-be56-0ca83c2b2e84"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=examType"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "exam_img_list",
+                "GUID": "aca65cf7-75c5-4f00-a1dd-d28ea2cb8db1"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=imgArr"
               }
             }
           ]
@@ -146,7 +154,7 @@
                 "BindingInfo": {
                   "TableName": "exam",
                   "ColumnName": "ID",
-                  "GUID": "f9776085-968d-49b6-a2b5-72c622fba61e"
+                  "GUID": "645f09ed-4a6b-419e-bcdd-e68ffed8e919"
                 },
                 "ColumnName": "ID"
               }
@@ -158,14 +166,14 @@
                   "ColumnBindingInfo": {
                     "TableName": "exam",
                     "ColumnName": "ID",
-                    "GUID": "04eaed3d-b2a5-4566-b230-abb291ed12b1"
+                    "GUID": "a032b389-46d5-42a4-861f-70d8f6022a3f"
                   },
                   "Order": 1
                 }
               ]
             }
           },
-          "ID": "2cafb75eb2e4404eab34b55b31fc79b0"
+          "ID": "6d341e7792ef4268af03f8d17f01822c"
         },
         {
           "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -266,7 +274,7 @@
                     }
                   },
                   "SqlStatement": "INSERT INTO exam_item (exam_ID, 题目编号, 阅卷老师)\r\nVALUES\r\n(@currentExamID, @questionNumberOne, @questionTeacherOne),\r\n(@currentExamID, @questionNumberTwo, @questionTeacherTwo),\r\n(@currentExamID, @questionNumberThree, @questionTeacherThree),\r\n(@currentExamID, @questionNumberFour, @questionTeacherFour),\r\n(@currentExamID, @questionNumberFive, @questionTeacherFive)",
-                  "ID": "c4b356793a224e87851766376267d3c6"
+                  "ID": "9d7d33c6105d44c2b44f566bad3c27cf"
                 },
                 {
                   "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
@@ -398,7 +406,7 @@
                 }
               ],
               "Comments": "申论5题上传",
-              "ID": "4e449bdf-82dd-45c7-93d5-faba762866d5"
+              "ID": "d1b01782-9b26-4749-8d29-c0e87ebdaaec"
             },
             {
               "Condition": {
@@ -482,7 +490,7 @@
                     }
                   },
                   "SqlStatement": "INSERT INTO exam_item (exam_ID, 题目编号, 阅卷老师)\r\nVALUES\r\n(@currentExamID, @questionNumberOne, @questionTeacherOne),\r\n(@currentExamID, @questionNumberTwo, @questionTeacherTwo),\r\n(@currentExamID, @questionNumberThree, @questionTeacherThree),\r\n(@currentExamID, @questionNumberFour, @questionTeacherFour)",
-                  "ID": "717c752406f24c6b8df0a94b87ee3fa5"
+                  "ID": "77be617800ab4d8ca12f44d11e517fb9"
                 },
                 {
                   "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
@@ -598,7 +606,7 @@
                 }
               ],
               "Comments": "申论4题上传",
-              "ID": "8495434e-6727-487c-80ff-c89dd1540648"
+              "ID": "e7babcfe-7662-44db-a405-000818a1c75b"
             },
             {
               "CommandList": [
@@ -629,7 +637,7 @@
                     }
                   },
                   "SqlStatement": "INSERT INTO exam_item (exam_ID, 题目编号, 阅卷老师)\r\nVALUES\r\n(@currentExamID, @questionNumberOne, @questionTeacherOne)",
-                  "ID": "044d5f4e98ac46ea8ef4458cea0a7a02"
+                  "ID": "2ceef03457b446239085b2a7c400b70c"
                 },
                 {
                   "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
@@ -681,7 +689,7 @@
                 }
               ],
               "Comments": "申论1题上传",
-              "ID": "fab64395-d632-42a3-a6a8-ef24a8a73d88"
+              "ID": "a6f86523-3f61-45f8-b485-855ef18666b4"
             }
           ]
         }
