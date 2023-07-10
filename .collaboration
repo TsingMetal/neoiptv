@@ -614,7 +614,16 @@
   },
   {
     "ModuleName": "PCPage/ExamUpload",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-10T15:10:16.1668781+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\上传试卷\\ExamUpload.json"
+    ]
   },
   {
     "ModuleName": "Table/exam_type",
