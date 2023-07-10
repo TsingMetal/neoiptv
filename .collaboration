@@ -502,6 +502,15 @@
   },
   {
     "ModuleName": "PCPage/chooseExamType",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-10T10:55:30.2351065+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\chooseExamType.json"
+    ]
   }
 ]
