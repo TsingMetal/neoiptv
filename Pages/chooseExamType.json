@@ -6,19 +6,20 @@
           "DesignLengthInPixel": 5.0
         }
       },
-      "2": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 5.0
-        }
-      },
       "1": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
       },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
       "3": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       }
     },
@@ -56,8 +57,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
-            "PassValueBack": true,
-            "ReloadData": true
+            "PassValueBack": true
           }
         ],
         "UIPermissions": [
@@ -144,6 +144,10 @@
       },
       {
         "FontFamily": 1,
+        "FontWeight": 3
+      },
+      {
+        "FontFamily": 1,
         "FontWeight": 2
       }
     ],
@@ -151,7 +155,8 @@
       "Strs": [
         "#FFFF0000",
         "Body",
-        "Bold"
+        "Bold",
+        "Normal"
       ]
     },
     "CellStyles": {
@@ -169,15 +174,15 @@
       "0,11": 1,
       "1,0": 1,
       "1,1": 2,
-      "1,2": 2,
-      "1,3": 2,
-      "1,4": 2,
-      "1,5": 2,
-      "1,6": 2,
-      "1,7": 2,
-      "1,8": 2,
-      "1,9": 2,
-      "1,10": 2,
+      "1,2": 3,
+      "1,3": 3,
+      "1,4": 3,
+      "1,5": 3,
+      "1,6": 3,
+      "1,7": 3,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 3,
       "1,11": 1,
       "2,0": 1,
       "2,1": 1,
@@ -191,14 +196,14 @@
       "2,9": 1,
       "2,10": 1,
       "2,11": 1,
-      "3,0": 2,
+      "3,0": 3,
       "3,1": 2,
       "3,5": 2,
       "3,6": 2,
-      "3,8": 2,
-      "3,9": 2,
-      "3,10": 2,
-      "3,11": 2
+      "3,8": 3,
+      "3,9": 3,
+      "3,10": 3,
+      "3,11": 3
     },
     "SheetStyle": {
       "FontFamily": 1,
@@ -233,4 +238,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//o/WUCAXWNwhsZZotSeHbezhdRUE3Oygt1BCe64avURkT5wb/95O3pSL2zUCHEEUdXJ//nlYsI9nl/zzUQjC1Gcp2vwuPkoLHWOKexTVdkhZBuutDg2CtUEi+KOoIpalsk44/CuQq5WjGQlMrnL48HwTnr88Viw6CvIk+KfIYCuSgnkY2ttfK0oV5Nzkx5547SVuPHliQyxjvJGkvlCubnO1lZob1zZmR0g+En2MOxsKQZRfytc/Z4u9/vKJw/14MnXrkUhfJFuvjvIqGiq8BEcbQvDe6dbjxgm6gI9hQJUM1FuhyorJTbecaO+JqBgxoOmT11q+oKfGUCfLeRjBZi6ZlWc9maR+eFWe0Exhy4ELvua3do2rrJEwP4FoeISb1FCcucnrChgjYaPsUlG3W+pCbOo0d45S5XsfLyzLfgLlnJ9qY/9M91h7R/b1IxCsCdwlBFX75W+2Td0PFzerpD26FGNu/Y5fxK5Sxzw2F5esJlZjSqTL4Og6YfIsBC4BX8NyzVGSEKNObes0I2ZRNwdyr+wf4nUnExM0vU5WxFp4ie3COAFzWtk5u1FeIKsbm9JjsTt28foTSAH/6kLxWuBFOEQJ3VojuHVDqCuPiNWwe8UY5S+G3V/wSkE+5JhFbLlegXVjr63lVXsef6TzgnA1ngPDn/+lW04VbHRXQ5ck7ipwIwC+skY+2ZBSTgI61tsxrlvH1wyHaiUxzeqgTMUhAPJf0+OyphZejPI/3DH77ra/hgGBZp0zPwJX7Ondmyb3l/c7QlXVR0lMhiPjRDhvy+YpUXp3RSoh9DUfojrk4UHJI0vdFtx8bvGf6YrbFwzCV0MI9RujwT7kTi45jmuWiX20GS6JZV8Al1NYz+GKDirNR26Z5UJ/Cs0mzZpEaFD+iUwDoiAffwYwR5ATolA==|920
+}//1MZyB6T4RC55o8cZK8Fy8ZAuyuU+pz+W7qupQssdETVyCS0Ea7kQX4TpxvoTdpdhdk5miGRbbwbanFtlqWTxKuO/hZDOfYscVO7LOKBx2GutdMG6/w23xKXH/HU1QePAJOVE5TQp8TkWvU+NOcyweHD4yM9GERWOTzIT6OOxWYsz7MsO9mOFsxNk3IoqENNjhKQPbUsGwAO7NsVA5kl9YajV6P/SwMaOwxNjzYoJt7uJ/ByTaQkDrSArn8fzH8E5skmZFlFhy9+mGXAPApnAb+Ef3FZwv0uBbr0/WsduHih+jnMfqVfOV54IUcUrFHpIaauSdaUq80uUfCDTQMw9D0TMsWEL27/mbpaUOGJtowmXJsyDmcgTTcTytw8NIRUwkofbCovKVrb+IqIPz6MV4C9lOYXqDjdRtdEMmHRmNoaQPI67vZr4T9kzHc/jQwkJE6/BVN+lClhTRxrcWvyXRmlLWvo7l23mBKkMGxi7xj3x+dtxnfh2SxWXCxydHGgYuqdHhLst/n8b6+QspPCFpdNW3B5ksAnqPvD8UgSfO6Ej2kYdWJVV1PLrPcq4p0ZIdxdCIJ0BmmdqAH9aBL4CBz4aG000wR4g676LX4XOu96EMCUJMrMCzkcUjp7OVjPYQ2cp2+kch1x/4+OEYQSJINYNXXdNdALUOQnuSo1U51f1CmSSq6Kz1jpIyEN4p+LP/k2T30EiI5pEKxX5/hx9RaCXBId3xeu82TX8LuNcP7DogzqsDY/8d3Cx5koLpzOiYu0A6YiFxMfYn4kyPWspUpkuQbkvYQt/qwpq8Lg3YK/V4RyrepnNCE5SL+caQQu9q5FI1/4AIbT9wCHzcnYnFsDKv64uNl4SHKy2uExj54XvKl2bysTdaqQx4Ehln8jKlQGUT8zNCwdHIVQ07TlS1w==|920
