@@ -621,11 +621,29 @@
   },
   {
     "ModuleName": "PCPage/exam_item_详情页面",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-10T11:53:04.8398765+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\exam_item_详情页面.json"
+    ]
   },
   {
     "ModuleName": "PCPage/exam_item_列表页面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-10T11:53:04.8399602+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\exam_item_列表页面.json"
+    ]
   },
   {
     "ModuleName": "Table/exam_type",
