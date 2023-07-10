@@ -1259,7 +1259,7 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "f401d557-62c7-4940-8c35-8064d441a9b5"
+                "ID": "9dc590c7-b150-4a8b-884d-e19b35c79273"
               },
               {
                 "CommandList": [
@@ -1399,8 +1399,7 @@
                       }
                     ],
                     "RefreshAfterFinish": true,
-                    "CheckDataValidation": true,
-                    "Disabled": true
+                    "CheckDataValidation": true
                   },
                   {
                     "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1545,7 +1544,7 @@
                             "CheckDataValidation": true
                           }
                         ],
-                        "ID": "74d888d0-0ee8-4bad-9cd1-c05a1bcad9c7"
+                        "ID": "685099e0-0625-41e3-a9c6-34e6b91bd1f0"
                       },
                       {
                         "Condition": {
@@ -1671,7 +1670,7 @@
                             "CheckDataValidation": true
                           }
                         ],
-                        "ID": "09e84f71-b2b8-420c-a1ec-8199165f92d6"
+                        "ID": "981d22fe-c749-40ff-b5ba-135137ec4583"
                       },
                       {
                         "Condition": {
@@ -1733,9 +1732,10 @@
                             "CheckDataValidation": true
                           }
                         ],
-                        "ID": "2f180146-e489-4ee0-953d-198e7e300a3b"
+                        "ID": "f2cdd9ca-185c-4d9d-8617-40e449010efb"
                       }
-                    ]
+                    ],
+                    "Disabled": true
                   },
                   {
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
@@ -1752,7 +1752,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "dcc153a2-d040-42ff-adbf-27b327c99779"
+                "ID": "1208e747-5995-444b-b0d6-d3d3089ed8c5"
               }
             ]
           }
@@ -2411,4 +2411,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//nu+Xl3BlBj7jj6Q8BalLcu05/SAooSMyPUvfPg9GdXcX1Jse9XML7AewqJE+O6p98LHF5IIb2hNmjNsz03071gldvNot9ObLnesWvojqSRLyECShm74F8q92aJyARBrHv5VOzblxftZ9qZkODJ7dA89pWUq9dv+2PDtELxCv7RsR3zyQw/32X67APpBXCSPqmWSFuek90BgClGCeXrlSUvhSwSInFJRkWk2yj9yLBwebYZmv+jlKuYW52JJ/yW/69q5/Ap61JxUQdx2ApBgMSL5llSXT0yufUFQNDRfaI1dqtdBSxKRj4wR27bhSnO96S28+jxSZTHa+OyGHLEl4dzL5r4axgttB/leeOaDzG2y8P9vNZOlyOh9h6huWCW6eA5eYDipzyToJ9VKitPM/Mc1Cpnap2+gdTPm8iuS89BeJ42pi1GTHkkjKw1OIwVMJD033eSTIGtBnUwy+rgvhFaO5LPhKqYzej1xTML1f/oXetep8oo6jU2l2aKkcV0QER5a8f3IO5rN5aeANjHiPBDeXaRn9+Jge0+//T4L+oiywjjn9zcOhPnzIKEJJQVTkksbGuWRqsZPY0vAzVjljhqL05KwJssmObOe+Hq8tC/1UtZ/u32TThud/2t0rRYUkYOWR2NoFSgub99XzUKk9x/GiyRITERJqU6LOkKR7FZm429zlnVZZt9ZNiJ4UVy4gYJoBd5nq1apBNGK8vTTW7m/DXDAzvi/JKrNk4+JPDt/ckEojW5dAYvc0pfaH02ySH0yf8H2XxvSoesZr8VOBF3MHKPy/ADbaRaAryvvBUAqiqGjQjndnvJ/UJ9RPyPccOtUKPT9uZj7Q2BRdKj9qRboiXHvGz24WkaUdJcH7GqA4IT8RELmjxRYtkah0LP15Rvim/vs3qoKLzc86adT+eQ==|920
+}//jj1irvw8rTXIpJtYHN5fa4py1DQ6jdOW/MlYRShiJRyu5OBZqj2pGtyF8y4YxLrWZu8GDdfubZcXuzUnpNcNaNCZ5zm7V8UytKN4SeC/sZhoItQnTzVo0TLkjzpFEHWdBDrZAAP+vsbhZoWZbMZubbVfePgjoDvyaZc60TsuE93Id63EfOmreqWwYqoTElekj1hPTBWdNqn2NrUj6whvnzg/Bzo9qQj6yF1WnwiNrW9ddocQ6PpeUmud26dJvu5W2nrojGrRFkFBkRd9vGz4yDd6pQYA7xpVpUuRWezEGWeoay7xACeK2M9nEBhVjXzD5HPb1pUQE9dSeMac2hrrl/sQXZYD2YmUVVkVwy7HJXWeubTAbiCuY1soN+VetRj7KfTX5VRNZHkrjnyWqYBJbXyt9bkXNo5ZwECPTYWdmlxSoikPJstZA4TCgcrd1ioX4oAW0aIBjsKtFoGLddwxCLI5hR/MPMF5+VSfHyMTkdB6s6T2SB+WVtKNyLFZaUqQB6b9tv8a449PcGTCDXk0WdCZvgK7yyNCDPcC4LaW5RjRGH7EQy+e6RSvlpXSTTVqeJ6o1FQqVOQ9ZGPtDbDCLbnP0V5G36TLPa+vDiGKUKz5CsRqyYW3vKtenva2CXDiScrEHFWwMG8DUu5SfdapjEqWmRls/U/FL7VDQS9ag214mAfBsQVcR3lNKpxH/+YGULKHv/KuuAbesdcgL0a547QkolVqhseL9yJUuloIG13YDN7OgQz4LwcG4O9HTKTIhWWMqD1SD1kKwt/jrhljojhLQhr2SlHluSuJvsVxDu+PYV7QX9z2KcdkhFeSCdNRHsWJTud82mJF67oIATHQwsTiovytMeM+ghvJka1A4D12d/NlKtIXXkn1WCDQuVQ2dTJtNPhoACaYtFYpyBnjmQ==|920
