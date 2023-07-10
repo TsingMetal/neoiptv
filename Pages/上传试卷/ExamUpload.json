@@ -1127,7 +1127,7 @@
               "BindingInfo": {
                 "TableName": "题库",
                 "ColumnName": "题号",
-                "GUID": "b69e0f44-96eb-4f5d-b490-ff195072527d"
+                "GUID": "7dec46ad-df95-4983-afb8-ee75bca0e519"
               },
               "ColumnName": "value"
             },
@@ -1135,7 +1135,7 @@
               "BindingInfo": {
                 "TableName": "题库",
                 "ColumnName": "题目名称",
-                "GUID": "6d46000d-6bbe-4cf1-b774-371a19df5725"
+                "GUID": "32775bac-b3f9-4d86-a489-eceb92e5944b"
               },
               "ColumnName": "label"
             }
@@ -1202,29 +1202,19 @@
               "BindingInfo": {
                 "TableName": "用户信息视图",
                 "ColumnName": "用户名",
-                "GUID": "ff6dc3b0-3026-4df4-800b-6f6b7e02a955"
+                "GUID": "2777ae0d-c78b-4dad-b91a-0f7a56839f50"
               },
               "ColumnName": "value"
             },
             {
               "BindingInfo": {
                 "TableName": "用户信息视图",
-                "ColumnName": "用户名",
-                "GUID": "184b71d2-ef24-4628-81bc-2d3df88d9eda"
+                "ColumnName": "全名",
+                "GUID": "6905dd81-7ea8-4cd7-9d84-b9ccf614de52"
               },
               "ColumnName": "label"
             }
-          ],
-          "SqlCondition": {
-            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-            "CompareType": 6,
-            "ColumnBindingInfo": {
-              "TableName": "用户信息视图",
-              "ColumnName": "角色",
-              "GUID": "b5559fc9-5237-442e-b6f6-1a557471f91c"
-            },
-            "Value": "阅卷老师"
-          }
+          ]
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
@@ -1717,20 +1707,11 @@
       "18,5": 1,
       "18,6": 1,
       "18,7": 1,
-      "18,8": 1,
-      "18,9": 1,
-      "18,10": 1,
-      "18,11": 1,
-      "18,12": 1,
       "18,13": 1,
       "18,14": 1,
       "18,15": 1,
       "18,16": 1,
       "18,17": 1,
-      "18,18": 1,
-      "18,19": 1,
-      "18,20": 1,
-      "18,21": 1,
       "19,1": 1,
       "19,2": 1,
       "19,3": 1,
@@ -1888,12 +1869,12 @@
     "14,17,1,5",
     "16,17,1,5",
     "18,14,1,3",
-    "18,7,1,6",
-    "18,17,1,5",
     "8,1,1,2",
     "8,3,1,19",
     "2,1,5,21",
-    "21,18,1,4"
+    "21,18,1,4",
+    "18,7,1,6",
+    "18,17,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2094,4 +2075,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//xUg6s1AbhFPukiChRXwXgByxIZ8oU/M9V4NfAAwoaJ7hJ5fUTTM7hSkY0echwYXzWh7NnkEhCYHFhv22Y8vGff17grXEhujLI/dxvhw+F6Pd1q1rvB5ZptUjtMpogOr7/G66sedj/283hqPPDX1XkwpqUzbq268xrhYsjrDrN/vaJvEAPYPLf9CSnx+Krxwv4jtjJUmqts7txmHRBGuvOViqNgbSXWkzsgRdn4+vjr5lnDwKRIkFOTsuqfHqL9QAPMFX1bfkIPCpY1jEUUOq+bdTPkr/ZpHde/W4rbnnG95iLWqMXzJheOnaYaEB42xupHHbw6lJgSZKeK7QOMVtrJddmqkwPPiBCpX2klCwXr6B/P0fI6bPDDitYFL+uidhcWLYmASjLFfJOsZkXZZCZW7DQ3TWPnX2HmJeB+e32IkvUighLlqOhiY2boi7AzdHWJKW3uyGLBJMyNF7+Pxa/qVpi+jMgjXwINcEZDTmHa8UaJuZKI3bbF1vAQWei+QhLtesRTCHmLktkWfgGeMRHtuydwNqAq8k0t8NTLC/TpDbZflVc3OhMLds9Q4VndtI0us0VTLSv0f/b15YCotQe1fmPnBTa3ql6va1JKM9XJLWNf6R2IhSXWbnwyxvxSy39XyY1udGgRDsf20f47YBMAL1ViVtMfe0oGzbvFeFO66xpKoNpkK2/N/0l5w4fLoviK1NtxOeWsyFAKHjIdoPja8uvlOKegtx0sVF1X/6nzEaRjZt99yW7U3DoI9RAW7Y6gI5TtmaQ5J0KyOsS9idleBv9rLwKunOqRot37Xl5MYCxIdcSSdZgdF7wY7+jNsn3HFAgfZhVknW7vUrOkHbaKISZH7mpIWSCN0p+fnnAFUu9+LX6YPqwjnI5ujTWJ3GngKylTeI1ojzi6FZNHfi4A==|920
+}//ANyx0aSiWBtid4giaiVZgRohz7sUs2W9FzqFMxQaa0J67kW1HS88DU+jKlq0/O0/yXBGG7QpMj7q7WMyMotSXuwSt6/eOj/gg5pAjXS4SW6ptcVPHhtjOeDyEB6l0gR3mKlYvp4Gf53K4+P4/GLLdjcLaAVn5hq35zCwsLbgb80Vu1i/3+hhRbUu48305mLZgu1uNd2JyREawCqH8opYc9Ypl5Nd0UrIAkoVNmcgOA653cICgMA6vvJhDtM+qryIgpwA0H+r0H+JjEOtvOi5GfkAjnne3VXn6RH8oFN10vM8l5z4KgxmqdWat1a2YyJPbhwFOT2GtvybtuiUhGh9+PJikzhK+UrD3ibAtXeDtx4Gbytm6KyIhXIlf/kWrc0UV9QyEj5oHwhT/U3Gzwz2rci+L1cPEl91QNOVYJjCGi6bkfwyb++k1ow2BoYYn3Tua/WEndcDtPEDLFTOW8QnsWWhSJ61dyjtmkCtB8bz5MNJfT4ZAoWDcNSeZrLOmRiM2bJvmpSKGpzfoTxYHuQgBIhS7adx0CdWcO/P6n8mMum87KPBMDR+aeuK58xsDM/GHR+hei020T9DUAMc3qSn/0LYecqAsp2yWSUWLpUCC1PdnFQjZ4Vdb8avk5XMQab8VTFMH5i0CZv1E9SjByBaYLzcnVE0wTS/7xroiVv0S/jdvGcwjtGFn4RMa6jUanxMqgWCpaH8IMMAfZRPwoWE/lw13aLw7Hh7FJdrf5z2hHcfbr4oHS5l2rG7q0rkCIJL7gkKIJGESalIyo1RoUO/jo5BzDFAfhMQPcC5xoznVrnv6UlLjTQBGiYF8lkvWbp/W6YLAqqXSGqXt5fJj0LOslhPb3MDWZGM9Lf71q2snCeSY2vddUy97f9Uzqpa2sOkdQJhX55Zwx+yWK2ablu6Pg==|920
