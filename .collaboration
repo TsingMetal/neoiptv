@@ -634,12 +634,12 @@
   },
   {
     "ModuleName": "PCPage/exam_item_列表页面",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "DESKTOP-4F5HHGS\\DELL999",
       "Email": "744341534@qq.com"
     },
-    "LockDateTime": "2023-07-10T11:53:04.8399602+08:00",
+    "LockDateTime": "2023-07-10T11:53:12.1033813+08:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\exam_item_列表页面.json"
