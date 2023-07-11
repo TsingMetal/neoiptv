@@ -495,7 +495,16 @@
   },
   {
     "ModuleName": "ServerCommand/uploadExamTrasaction",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-11T11:59:20.4566337+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\uploadExamTrasaction.json"
+    ]
   },
   {
     "ModuleName": "PCPage/ExamList",
