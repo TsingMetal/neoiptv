@@ -1,37 +1,107 @@
 [
   {
     "ModuleName": "Table/题库",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305849+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\题库.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/阅卷表",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305816+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\阅卷表.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305826+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\预置评语配置.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置表2",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305839+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\预置评语配置表2.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/小测上传",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305768+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\小测上传.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/考号档案",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305805+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\考号档案.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/用户信息视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305787+08:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\用户信息视图.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -304,7 +374,54 @@
   },
   {
     "ModuleName": "Upload",
-    "ModuleType": 26
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4311882+08:00",
+    "ModuleType": 26,
+    "ToRemoveFiles": [
+      "Upload\\0f241d73-cd51-4e26-94d0-2495536dcedf_20230523-252.jpg",
+      "Upload\\0f241d73-cd51-4e26-94d0-2495536dcedf_20230523-252.medium.jpg",
+      "Upload\\0f241d73-cd51-4e26-94d0-2495536dcedf_20230523-252.small.jpg",
+      "Upload\\45af1650-db6d-429d-8e9c-5effa72dcb48_20230630-001.jpg",
+      "Upload\\45af1650-db6d-429d-8e9c-5effa72dcb48_20230630-001.medium.jpg",
+      "Upload\\45af1650-db6d-429d-8e9c-5effa72dcb48_20230630-001.small.jpg",
+      "Upload\\45cf10c6-4316-4bf9-80d4-0de0c7aa4b8c_20230102-00059_3.png",
+      "Upload\\4ba99018-74f3-4b65-bcd3-348ed49123dd_20230630-001.jpg",
+      "Upload\\4ba99018-74f3-4b65-bcd3-348ed49123dd_20230630-001.medium.jpg",
+      "Upload\\4ba99018-74f3-4b65-bcd3-348ed49123dd_20230630-001.small.jpg",
+      "Upload\\69b5d28d-1a46-4540-b3bb-18130415acd2_20230102-00059_3.png",
+      "Upload\\6aebb37c-60d1-47fa-bc15-febbfa32c9c1_20230630-001.jpg",
+      "Upload\\6aebb37c-60d1-47fa-bc15-febbfa32c9c1_20230630-001.medium.jpg",
+      "Upload\\6aebb37c-60d1-47fa-bc15-febbfa32c9c1_20230630-001.small.jpg",
+      "Upload\\7067cf36-aa08-4c96-9788-0904b6ee645f_20230630-002.jpg",
+      "Upload\\7067cf36-aa08-4c96-9788-0904b6ee645f_20230630-002.medium.jpg",
+      "Upload\\7067cf36-aa08-4c96-9788-0904b6ee645f_20230630-002.small.jpg",
+      "Upload\\7ce2b96e-5a3e-4ce5-ab01-d6b31737a26e_20230630-002.jpg",
+      "Upload\\7ce2b96e-5a3e-4ce5-ab01-d6b31737a26e_20230630-002.medium.jpg",
+      "Upload\\7ce2b96e-5a3e-4ce5-ab01-d6b31737a26e_20230630-002.small.jpg",
+      "Upload\\82b951ae-9e15-49eb-9e5b-44669c53a821_20230630-002.jpg",
+      "Upload\\82b951ae-9e15-49eb-9e5b-44669c53a821_20230630-002.medium.jpg",
+      "Upload\\82b951ae-9e15-49eb-9e5b-44669c53a821_20230630-002.small.jpg",
+      "Upload\\8d3d9db7-3b1d-470e-a2fb-31ff8d30b32a_20230630-002.jpg",
+      "Upload\\8d3d9db7-3b1d-470e-a2fb-31ff8d30b32a_20230630-002.medium.jpg",
+      "Upload\\8d3d9db7-3b1d-470e-a2fb-31ff8d30b32a_20230630-002.small.jpg",
+      "Upload\\93a433a6-4b6b-4dce-bea9-aedad9c6143e_20230630-001.jpg",
+      "Upload\\93a433a6-4b6b-4dce-bea9-aedad9c6143e_20230630-001.medium.jpg",
+      "Upload\\93a433a6-4b6b-4dce-bea9-aedad9c6143e_20230630-001.small.jpg",
+      "Upload\\c785c0f2-569a-4b64-bd4b-c7baa45afeba_20230630-001.jpg",
+      "Upload\\c785c0f2-569a-4b64-bd4b-c7baa45afeba_20230630-001.medium.jpg",
+      "Upload\\c785c0f2-569a-4b64-bd4b-c7baa45afeba_20230630-001.small.jpg",
+      "Upload\\d0473552-084a-4392-a6de-9384b2a4c3e1_20230102-00059_2.png",
+      "Upload\\ed6e0e35-1b36-49bb-8c75-9302e981e02a_20230630-002.jpg",
+      "Upload\\ed6e0e35-1b36-49bb-8c75-9302e981e02a_20230630-002.medium.jpg",
+      "Upload\\ed6e0e35-1b36-49bb-8c75-9302e981e02a_20230630-002.small.jpg",
+      "Upload\\efc562e6-2302-46e1-930b-1ee455759ce3_20230523-251.jpg",
+      "Upload\\efc562e6-2302-46e1-930b-1ee455759ce3_20230523-251.medium.jpg",
+      "Upload\\efc562e6-2302-46e1-930b-1ee455759ce3_20230523-251.small.jpg"
+    ]
   },
   {
     "ModuleName": "Image/madecard-index.png",
@@ -400,7 +517,17 @@
   },
   {
     "ModuleName": "TableView/总分排名视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305777+08:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\总分排名视图.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -421,7 +548,17 @@
   },
   {
     "ModuleName": "TableView/单题排名视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305755+08:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\单题排名视图.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -430,7 +567,17 @@
   },
   {
     "ModuleName": "Table/_4题试卷上传",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305743+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\_4题试卷上传.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -455,12 +602,32 @@
   },
   {
     "ModuleName": "Table/exam",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305385+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\exam.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/exam_item",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.4305726+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\exam_item.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -481,7 +648,17 @@
   },
   {
     "ModuleName": "Table/exam_type",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-11T15:20:37.430587+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\exam_type.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
