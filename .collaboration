@@ -136,16 +136,7 @@
   },
   {
     "ModuleName": "PCPage/index",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-10T17:58:06.3369704+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\首页\\index.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/小测上传列表",
@@ -495,54 +486,14 @@
   },
   {
     "ModuleName": "ServerCommand/uploadExamTrasaction",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-11T11:59:20.4566337+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\uploadExamTrasaction.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "PCPage/ExamList",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-10T17:55:28.4456352+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\上传试卷\\ExamList.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/chooseExamType",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-11T10:36:01.7931025+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\上传试卷\\chooseExamType.json"
-    ]
-  },
-  {
-    "ModuleName": "ServerCommand/uploadExam",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-11T11:59:41.4574742+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\uploadExam.json"
-    ]
+    "ModuleType": 1
   }
 ]
