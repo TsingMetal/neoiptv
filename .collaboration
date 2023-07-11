@@ -534,6 +534,15 @@
   },
   {
     "ModuleName": "ServerCommand/uploadExam",
-    "ModuleType": 15
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-11T11:59:41.4574742+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\uploadExam.json"
+    ]
   }
 ]
