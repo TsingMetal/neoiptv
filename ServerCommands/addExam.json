@@ -51,6 +51,9 @@
         },
         {
           "Name": "examName"
+        },
+        {
+          "Name": "examType"
         }
       ]
     }
@@ -66,7 +69,7 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "学员姓名",
-            "GUID": "0c709cac-0dee-4ad9-ba4e-a15cf6b46ff0"
+            "GUID": "dacae38b-7a68-4984-8863-69174a678748"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -77,7 +80,7 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "学员班级",
-            "GUID": "6fa4590a-b202-49b1-8858-936651b23d0d"
+            "GUID": "73b29dc5-3239-4de2-ab71-88c6c03b830a"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -88,7 +91,7 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "题号",
-            "GUID": "c382025e-ca7a-4959-9669-3056ff46ebdf"
+            "GUID": "31327588-7041-456c-8e41-38d3501b1897"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -99,7 +102,7 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "准考证号",
-            "GUID": "4be20009-204f-4518-b4c6-73bade170355"
+            "GUID": "ac04c471-6d0a-422c-99d2-a0bd21327b2a"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -110,7 +113,7 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "试卷",
-            "GUID": "d1cad5d2-25fd-4d9a-ae21-f803ee72707c"
+            "GUID": "66e31432-ef56-40ad-b2ab-1104352844fd"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -121,7 +124,7 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "阅卷老师",
-            "GUID": "adcf42f8-d227-4ca9-89e0-5f417c3fbde0"
+            "GUID": "12b0c106-2dcd-496b-a678-a557249a56ec"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -132,7 +135,7 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "准考证图片",
-            "GUID": "2457fa30-1fb8-44e2-9001-46ea13cc7624"
+            "GUID": "a702e10b-797f-4d49-bad8-54b07ee9d732"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -143,7 +146,7 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "唯一标识",
-            "GUID": "87dc4663-dc0d-4717-a100-c82337ad11bc"
+            "GUID": "4c56d7f4-5acf-421f-91d9-5e5f65cb614b"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -154,7 +157,7 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "上传老师",
-            "GUID": "87280e45-9ba6-4909-b20f-cd05358f94ee"
+            "GUID": "a4cb3125-0b32-4fcb-b94a-bdb91881a30c"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -165,11 +168,22 @@
           "BindingInfo": {
             "TableName": "阅卷表",
             "ColumnName": "考试名称",
-            "GUID": "cfed228a-1ee4-4ce3-a7cb-2c31a5dafeab"
+            "GUID": "7817b964-b995-472f-b406-037510c62556"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=examName"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "阅卷表",
+            "ColumnName": "考试类型",
+            "GUID": "86c44fff-ac79-4812-a4e4-f9647b003cac"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=examType"
           }
         }
       ],
