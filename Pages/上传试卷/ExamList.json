@@ -8,11 +8,20 @@
       },
       "18": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 5.0
+          "DesignLengthInPixel": 5.0,
+          "IsHidden": true
         }
       }
     },
     "InLogicalVisibleIndexes": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
       28,
       29,
       30,
@@ -43,7 +52,7 @@
   },
   "Values": {
     "1,1": "考试信息",
-    "3,37": "上传题卡",
+    "1,38": "上传题卡",
     "17,1": "题目信息",
     "29,0": "考试类型：",
     "29,14": "暂无数据",
@@ -55,6 +64,55 @@
     "30,28": "COUNTA(B21)"
   },
   "AttachInfos": {
+    "1,38": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamList!F30"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "Placement": {
+              "SerializeProperty": "=ExamList!AM2"
+            },
+            "PageName": "chooseExamType",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamList!F30"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=chooseExamType!F6"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true,
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "上传题卡",
+        "TemplateKey": "_RS_Main3",
+        "Icon": {
+          "Name": "Arrow/338_upload_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 12.0
+      }
+    },
     "3,1": {
       "ListViewInfo": {
         "Name": "表格1",
@@ -82,55 +140,6 @@
         "UseSimpleBar": true,
         "SelectionMode": 1,
         "ColumnOperation": 2
-      }
-    },
-    "3,37": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ExamList!F30"
-                },
-                "Value": "0"
-              }
-            ]
-          },
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PopupDisplayMode": 2,
-            "Placement": {
-              "SerializeProperty": "=ExamList!AL4"
-            },
-            "PageName": "chooseExamType",
-            "PassValues": [
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ExamList!F30"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=chooseExamType!F6"
-                }
-              }
-            ],
-            "DeleteCachedQuery": true,
-            "LoadBindingDataOption": 2
-          }
-        ],
-        "Text": "上传题卡",
-        "TemplateKey": "_RS_Main3",
-        "Icon": {
-          "Name": "Arrow/338_upload_5.svg",
-          "BuiltIn": true,
-          "Color": "Background 1",
-          "UseCellTypeForeColor": true
-        },
-        "IconSize": 64.0
       }
     },
     "4,1": {
@@ -447,7 +456,7 @@
       },
       {
         "FontFamily": 1,
-        "FontSize": 48.0
+        "FontSize": 16.0
       },
       {
         "FontFamily": 1
@@ -483,7 +492,7 @@
     },
     "CellStyles": {
       "1,1": 0,
-      "3,37": 1,
+      "1,38": 1,
       "4,10": 2,
       "4,18": 2,
       "4,22": 2,
@@ -942,7 +951,7 @@
     "19,41,1,8",
     "19,49,1,5",
     "19,54,1,6",
-    "3,37,11,23"
+    "1,38,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1083,4 +1092,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//fVkfzKBy6NlRRYPU9Np5TerC2+GwQCxdPfV2ru/Bn8ogf/IUKerJTJavfq+021QTzfMQinDSDDjgQP4cLYBRlpJ4XdkzGbZDnUwDkvRjFrwsbyri+/31E9eHWVEHkb4NoM8xWP61Gsf1NE7c3wfp+SzImNZpWFLu9tTMI+kPiMcJor2VJOyMWBUPTk5VNiH4k5uzGBMWy6q2mH9E6aL9S4vCZDSTfYYtZWpjt/a0PKBVs5P6KS6GFGRvl1RAezuN5Z/zWmjEy7/cxl6FT5KOrM4iVRBdBjNklweFV8IIVzPxQAE/Eymoju9C+9mrhh3CNUmSCqMoUBh5UXi5x4BF1iuvZjFQbALHeZ9fQmNQ5IDH33B33lQeP4jT/ixl4xJIrkXVD19Jd2I9ummsSbObXIDWUq6lAepnAf/h/reHa6o4zz/iTkRM+gDYKlNJ5r0rlQ1kLjMMxcz9rggDdf043TgnrkWn9vWbaW4RxfIvUK+WG2LCDOHCJGNnbgAV2lhhKUS7ZLFPdMvR1zKjtp5VbY4HkyATy2DxQYYJrQJl++/y7wvYkGB//VT+sEYq0tC9CcjYY0AkH1yUeEHKD0ia3CXJBQE2ouJ31cc9t7EeJNFaiDpeHVUIfOtAcRDy0m8Ui0zQQerCGtCNnfuB03kPoULmR2VDDhFZSpIpB6Q7BR5Fp0U7HzTGaqg5X4gPdWe/xB8twoEyowDzYYhtXV4Wzw3VtmzwbDXdYnF5NYSSlNyHvAWsyjUHtcS8fZZc0oOMb6PIbxEWCw3ICwS7TdQHQcPS72OzoI2fqJ8ElXqp71vsnlPVcvww71EsQgwohdN1+YnMhmhqWt3YyErPNLUWkRnXlR2Yf5qase6c7xJStn8mSBjCMQwBfk2OZqAL87yoOIpszJkOJLhmAHoVrSUYeQ==|920
+}//XoZ9gczSLGKTduH+cplvai2EI6ZD6YJwk9TkwMnnwsdHyIe2bo/g5oR+ZHdbaZD+IwmdyxiUWmruPu/bBzwloFyWAn0BfjlNSjOmTgJgctR5JnRwL5E2fRxZRmaZiddBZcmS9mnKTi2mxRWHJeJHlebwNr+h0CTktPYzXlRxJdZ7Cu7hLNoQnw7PgIiBRplMoqv+3VkF+9vN23iQ6osRWgTzbgTOVd5xrouo9i8zt3fpQqE/mPnJvY2776XEoLTWVt2Ivq08PgNBySqp5RvREdiTVcCdByiT9S5coRSzFU1JW5dCSZfQeatfZs4e5p+O0oG1JHKPW4qCqfirws1KifXhfCjdnl2nX/Tp2wcPm6DPYlT+cfpCAtJd1LmwAutdd1d14Q3yGPHQx+17QokxYJEygGlcfFLPojA7KIaffNDse0eanU3wetKt56XRfvFxkAI2J1ftuA8k7o9xU+E21Kz2Q6A+VKvU3DgPw9ytKvd8mQJT9X1m73KXliVO299Da3hVJWh/d58o/9VTS4Ws3pP2rAkj9PJodothF2HS4dw2RT60VYf/G/AIbGOJ6QKL6zbiJYMZW9xen/lOtsq+IyqaEJ403xf2PP59c/cUyh7i1OtEUFszqYL61TbYD9Q+KfnYDG+Kao21HWfaRUzFOu8uqAxViu+pmSwOeh3X6smXTxk9rxeKDjUzPg/7pIJrOwqWENy85xDw28MHySszYC54KUytwx1OQJ7hu2w/KnVeKU0Ei6uyAbWBG/WrqwYe97exeyMlaCBy0/ka3ZsWORohRnK+ifYYcfF0qs3Ea7Dze+uRzZGobbUDVH6BSVo3ORWvEORKSZ6ZDHX7GgfpRRfyIn12bjlHt82D8Mqc4EKFQO99ThCY/VFNsdp/KG8Llt1wv5qJ2luI2r/m0zr91w==|920
