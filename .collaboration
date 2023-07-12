@@ -208,7 +208,16 @@
   },
   {
     "ModuleName": "ServerCommand/addExam",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "管伟\\DELL88",
+      "Email": "1475996990@qq.com"
+    },
+    "LockDateTime": "2023-07-12T17:09:51.6374504+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\addExam.json"
+    ]
   },
   {
     "ModuleName": "ServerCommandPrivate/实时刷新数据命令",
