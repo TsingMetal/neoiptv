@@ -1,29 +1,183 @@
 {
   "Rows": {
-    "Count": 45
+    "Count": 17
   },
   "Cols": {
-    "Count": 60
+    "Count": 34
   },
   "Values": {
-    "1,2": "考试名称"
+    "1,2": "考试名称：",
+    "1,19": "考试编号："
+  },
+  "AttachInfos": {
+    "1,7": {
+      "CellType": {
+        "$type": "ElementUI.InputCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "resize": "none",
+        "ReadOnly": true
+      }
+    },
+    "1,24": {
+      "CellType": {
+        "$type": "ElementUI.InputCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "resize": "none",
+        "ReadOnly": true
+      }
+    },
+    "3,2": {
+      "CellType": {
+        "$type": "ElementUI.TableCellType, ElementUI",
+        "ElTableName": "EL表格1",
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "exam_item",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "exam_item",
+                "ColumnName": "题目编号",
+                "GUID": "814c692d-2b94-4f55-951e-5c252ea057fb"
+              },
+              "ColumnName": "题目编号"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam_item",
+                "ColumnName": "题目编号",
+                "GUID": "28a21092-0869-4e6b-a1c3-1b6dc14461a3",
+                "RelationBinding": {
+                  "RelatedTable": "题库",
+                  "RelatedColumn": "题号",
+                  "DisplayColumn": "题目名称"
+                }
+              },
+              "ColumnName": "题目名称"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam_item",
+                "ColumnName": "阅卷老师",
+                "GUID": "e69482a7-29cb-4385-96bf-953d515d1957"
+              },
+              "ColumnName": "阅卷老师"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "exam_item",
+              "ColumnName": "exam_ID",
+              "GUID": "d7f66638-65b7-4d03-9678-0d9d60676d58"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamItemList!Y2"
+            }
+          }
+        },
+        "columns": [],
+        "actionButtons": [
+          {
+            "$type": "ElementUI.ActionButton, ElementUI",
+            "type": "button",
+            "Name": "编辑",
+            "shape": "default"
+          },
+          {
+            "$type": "ElementUI.ActionButton, ElementUI",
+            "type": "button",
+            "Name": "删除",
+            "styleType": "Accent 5",
+            "shape": "default"
+          }
+        ],
+        "sumText": "合计",
+        "size": "default",
+        "emptyText": "暂无数据"
+      }
+    }
   },
   "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
     "Types": {
       "Strs": [
         "Body"
       ]
+    },
+    "CellStyles": {
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "1,14": 0,
+      "1,15": 0,
+      "1,16": 0,
+      "3,2": 0
     },
     "SheetStyle": {
       "FontFamily": 0
     }
   },
   "Spans": [
-    "1,2,1,5",
-    "1,8,1,10"
+    "3,2,13,30",
+    "1,2,1,4",
+    "1,7,1,10",
+    "1,24,1,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "题目信息",
     "PermissionData": {
       "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
       "permissionResource": {
@@ -45,4 +199,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//tedjrPGI+Jrxj/ECINhBF7JmICci1VVU/6ms9hZagLtlJh+CMDtfauvUOI03GmJjI4MypvU/ubM0BeS5BCU8ZTpIT346FnD8l/ffXQjH7LjnyyH7THAdi1NCt/xQjphKOExEtXt7b/UX50MJG3GInv9j5qSZs73ZlZ7JDhWEmTC2daavw9WFKjZ9jELL2F7hF24sswtsytLMijZvLj++kCOItfc2PzY99ocqapnTLOsSjCTFov/MeuufyKFoMhqtiFa0/vQB18PViCqhWNX1LRtAqtafhrBeYbP5JxC0GYfVefM9X1CBDPTzCKcHxc1ks8nOfr2PsFp1HDkV3Jcg7MNY/eI/6KlUE+i/DAzShLnRM+T7608V/vr2O44OM2Zr8mvHXigKOoZKIzGmex7cZj/zRJgn7yXEEWypc0Rh5J/e/pyoyr1T6E/LrUhAu2gdKzOgogYw+L1z2Fr9l9G6QW/wXdDJOFO71NU3c2cykhyyJj5ZRRcSC+vrkFbFETrVEsxz5NNoksniKpwZ766oWtk9HosrN74K6KawBKiV6Q3HXx6gkreJtweIYcFiNNMoC9/XkiRcnoYtKjiKjVs1XPzoj1oa5eTmXkPeGP/48IILdoGt1KSp+/MJfKmTXWDy+KtIWiOGB1C0LlPmr/qSsxHVNTPw5IocUYqMPzWpojGmGHpTcuC4XIZLtvNAMBsGSftxxbUQrYJ3tDG9PMk1H1ZhVfHVE4UIceG6p3Fq+AOnoRb0UYWvK/mvU1MesTh1IiLSaxKr20JESiRpU33hCqyt4u5a9cTwGk0wP+7FxN7MX+E2Tv6VVhiv5G/Iyw3x5F1ESODahitUTpFN/WxtAwVl5k9pM4VtPHaoCnKGxiDwBCip+uVCqajqexvJPTWBb168nAN2/vv66I+spYOqWw==|920
+}//Ca1rxP/LfnLO30qaWRnrH5fi9XbcLFZ88kVXFTdL4NCrSvh3jMvEKU+AWG/vQ6UgJPx+K4g94JuQcPu/ycy93I5qgz1xpld433N41wA6v5RT+5Td59jj7ryJSUdfXG4UbexcvVEufezTc+brBGld8iE/OTg4GWOV6bea/fFykGz371kFEvdgLzWorXvF5HxQguu59E1BhDIT/yvq3Duege6PvDbyg7OvrunX5iSi823dNmTmeMY5JW+6OCNPVd4QGILWrXpBuV0ampYgfIDdHEZOLH0wVa6+RL4BKr7jiSQgpoMu87jALGNMTsnxka+cn3jGxNq8FOxvBinDwdF5h1ZY94BWNR7fc/ikFRGhXB/8R4ZWR+gLtKKPZAwTzWVc0ThRuolGWEmn6JCoifqG1ZS5j7krH6cBa5ic+lcJfXvA6whtZfrDFdDmdtV0TSFSu1bU9wQbP0LDPjiDjel8AiNlyoQoZh+F0Yizo8E0OjL3jiILk8cGsI93TvnJhvrPfxy9mvaWOjdnc9bfbu8Fm7h3d6Z68OCtAgtVvfFaCEHgCuVKP3Fx7J3gUM5554CDI9HY7kpzkpA1pLP8V4vm0qtSqqM7+u7qDn/vkk1ApMdN9pab5lanubgppJJzsrFp6JmEYIf2ywU5Tq1BTwHpCFxOy9Ewz6RdZBGEaxoRuJWbDazcQCrcidmQFETNHQI5ltYMgrq5KMB8aS9MRF0KrdB2SWZ6KeYQfqgMmwlYKrKGUiA4y3pjJ1qkWecCL2PFkGC6Tl82YbS6sVBecNES6jIs1nlmUdC1R/k13rmW3Ue5HpGDqJLsQYht+2TfzYgl+eQ2PafTCqftEHf1/TK3LS5x0n2PzL09qVFGRR7OprMRch+xzeyHuvIHDTxzuyiImDoJaoHD6xMVd0B2FlCxrg==|920

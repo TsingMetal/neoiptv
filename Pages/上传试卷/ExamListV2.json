@@ -57,7 +57,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='ExamList (2)'!F30"
+                  "SerializeProperty": "=ExamListV2!F30"
                 },
                 "Value": "0"
               }
@@ -67,14 +67,14 @@
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PopupDisplayMode": 1,
             "Placement": {
-              "SerializeProperty": "='ExamList (2)'!AY1"
+              "SerializeProperty": "=ExamListV2!AY1"
             },
             "PageName": "chooseExamType",
             "PassValues": [
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='ExamList (2)'!F30"
+                  "SerializeProperty": "=ExamListV2!F30"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=chooseExamType!F6"
@@ -104,18 +104,28 @@
           "Commands": [
             {
               "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+              "PopupDisplayMode": 2,
               "Placement": {
-                "SerializeProperty": "='ExamList (2)'!考试列表"
+                "SerializeProperty": "=ExamListV2!考试列表"
               },
               "PageName": "ExamItemList",
               "PassValues": [
                 {
                   "Source": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "='ExamList (2)'!行数据.考试名称"
+                    "SerializeProperty": "=ExamListV2!行数据.考试名称"
                   },
                   "TargetCell": {
-                    "SerializeProperty": "=ExamItemList!I2"
+                    "SerializeProperty": "=ExamItemList!H2"
+                  }
+                },
+                {
+                  "Source": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamListV2!行数据.ID"
+                  },
+                  "TargetCell": {
+                    "SerializeProperty": "=ExamItemList!Y2"
                   }
                 }
               ]
@@ -220,14 +230,14 @@
                     {
                       "Cell": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                        "SerializeProperty": "='ExamList (2)'!Q30"
+                        "SerializeProperty": "=ExamListV2!Q30"
                       },
                       "PropertyName": "ID"
                     }
                   ],
                   "SourceCell": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "='ExamList (2)'!行数据"
+                    "SerializeProperty": "=ExamListV2!行数据"
                   },
                   "JsonPath": "",
                   "SampleJson": "{ \"ID\": 23, \"考试名称\": \"省考试卷一\", \"班级\": \"遵义1.28省笔刷题一期\", \"考试类型\": \"申论五题\", \"创建者\": \"管伟\", \"创建日期\": 45118.63386086805 }"
@@ -253,7 +263,7 @@
                           "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                           "cellLocations": [
                             {
-                              "SerializeProperty": "='ExamList (2)'!确认结果"
+                              "SerializeProperty": "=ExamListV2!确认结果"
                             }
                           ]
                         },
@@ -272,11 +282,30 @@
                             "ColumnBindingInfo": {
                               "TableName": "exam",
                               "ColumnName": "ID",
-                              "GUID": "c2240cb2-c261-46bc-981e-f1a6515843e8"
+                              "GUID": "428c4aa2-911b-4496-b2e5-e2e1876bb76f"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "='ExamList (2)'!Q30"
+                              "SerializeProperty": "=ExamListV2!Q30"
+                            }
+                          },
+                          "NextUpdateDataTableCommand": {
+                            "TableName": "exam_item",
+                            "UpdateType": "delete",
+                            "ShowConfirm": false,
+                            "ReloadAfterSucceed": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "exam_item",
+                                "ColumnName": "exam_ID",
+                                "GUID": "f51355e7-e5af-4e0c-bf40-b68bfee6a93f"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=ExamListV2!Q30"
+                              }
                             }
                           }
                         },
@@ -284,13 +313,14 @@
                           "$type": "ElementUI.Commands.ShowMessage, ElementUI",
                           "Message": "删除成功",
                           "Type": "success",
-                          "Duration": 3000
+                          "Duration": 3000,
+                          "Offset": null
                         },
                         {
                           "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
                           "TargetPageElement": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "='ExamList (2)'!A4"
+                            "SerializeProperty": "=ExamListV2!A4"
                           },
                           "TargetType": "ElementUI.TableCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
                           "MethodName": "ResetTable",
@@ -300,7 +330,7 @@
                           }
                         }
                       ],
-                      "ID": "09f3b9e1-2540-4fb0-b044-d80e08f7d734"
+                      "ID": "0dfb2e94-b3dd-40cd-9191-71a1352136db"
                     }
                   ]
                 }
@@ -396,7 +426,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='ExamList (2)'!F30"
+                  "SerializeProperty": "=ExamListV2!F30"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=ExamUpload!AB6"
@@ -653,7 +683,7 @@
             },
             "Value": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='ExamList (2)'!P30"
+              "SerializeProperty": "=ExamListV2!P30"
             }
           },
           {
@@ -665,7 +695,7 @@
             },
             "Value": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='ExamList (2)'!P30"
+              "SerializeProperty": "=ExamListV2!P30"
             }
           },
           {
@@ -677,7 +707,7 @@
             },
             "Value": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='ExamList (2)'!6:14"
+              "SerializeProperty": "=ExamListV2!6:14"
             }
           },
           {
@@ -689,7 +719,7 @@
             },
             "Value": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='ExamList (2)'!AD30"
+              "SerializeProperty": "=ExamListV2!AD30"
             }
           }
         ]
@@ -698,7 +728,7 @@
         "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
         "TargetPageElement": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "='ExamList (2)'!A4"
+          "SerializeProperty": "=ExamListV2!A4"
         },
         "TargetType": "ElementUI.TableCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
         "MethodName": "SetTableColumnSetting",
@@ -718,7 +748,7 @@
         "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
         "TargetPageElement": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "='ExamList (2)'!A4"
+          "SerializeProperty": "=ExamListV2!A4"
         },
         "TargetType": "ElementUI.TableCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
         "MethodName": "SetTableColumnSetting",
@@ -758,7 +788,7 @@
   "CustomNames": [
     {
       "Name": "考试列表",
-      "Formula": "'ExamList (2)'!$A$4"
+      "Formula": "ExamListV2!$A$4"
     }
   ]
-}//PW4x4Fz6g4L0zHTSoa+hGHZXPm8Hyl6802HUGb4v3kN3hKygPk7S24+30IWrUAfdIoCHWkghmb2We5xcM5RWrDW/MbmMMnxBel4dZ3bGrR3uq/o9ZxOB6V4wu7DjYg/B//vO1BFmM+rdO6SKd6TLzsGSCV1Zn5KnYgG+xoorA6IQ8bERfEBPk1EcJS2YtJhA3dGabcYdqNp8+bYizbciQ2YKLVF2Sl2h4UorC9LvN+lbjos1bk49yaHVK0JSmLalT9ekPHLbTtRVuEFnPRtX41h/7rxZnardAril9t/05CUn2f4ScFKbv4Ux4KnRj/NTY9+OG/WApzk+dKv7ZE3g3YMsHuCuBbz+/sY1q6zbQ3ExuoIdV6xbanhz7Ql6GiQ2A1qc+9lJqvIRkapg8cTvzz+DOzOl6gBhZqw0TdwOLTH44brmrPae5qfOeVlaMBbjYwjsB1P1ER0f3QaD5PVs0EwIs00vM5kdoRi/MlemWcL8mDkxqPgL1WcUysheBF3mc9aVK6k75YeuUH2YaXcTBC53Z8pzcutxVc9c0QeUQ5Du91FpCA0VxQeWN4KS+UTz/6b+HI7Laa6dbAqCBLwwuz2MNUWS63okcl1fPXjLsjFqNDkbYaRuqtKKlo2hH0YTPe2HTfGM7LygCzAIh33HROdSrYw2qioKVv9QlPgb94dGGoCEZTqdEg5NQD+WiXRiB1Uaq24SXUacViTKjiAkQXoHDjZ6Ik94Ook/L8E15j74mHzpJ3vrJp5xuXc/Rv99YEdGzGoCD3LoFotIOT+mM9z8+PBKdeSo9t10p7xFeI5kML1qtGuXC71SwAXNepyeOUY0iGQMUATUdd2oF58/lN88WU5Em9myi9JF76EdAzNadDbFIMSQOjTCycgXpvOflkgwXzhd9Bh/Lh3fdZbjRw==|920
+}//eWPqQ//oz9WrsEo9lkscrzTTRqqEvyVQLOCBtfRHPbM9166o6m8ClbqSKuEXZV/U8Kqy2Pzyg5IHxaRHEDro3afNoN3/xwb4lqWme3GU9OzOX0f937kjXTRSsQ+VPWR92rJowolCKVLw0usTrKTKbj4xBGi3iHaTpUR/iYyA+FwGh5r9PnwycCnGh4WN0FySVpzb2Fx0zPCQU0M3VnaTgkw42OnlL1664Drawg7hU9McAZL3c7bVZWU5iYIyLRJ6b89XVwK/kfAC1C9gPJUaESAj+jQrYLPbDXtKMv9ZIVNdx2hSJ0M1o/YSP/xpvcw9bzkBlEkaBM0+GjfI603/ZDwGHLlzDDbvfWnDYbsI4QZacxKJD4ZWy4fBPf30Q6bN2NmkwLZH76W3+8mMgYVRbJ4iJQa7JY09XJa9DNFHnMkTBlx9yH7utcshMbcQOH+VkUj9Tj1Hm5kgI11LDdUyo2XnDetzBb/V9k+d0RKNd7iDXnpiNb6TvYLLwZwpIvcqGePQV12iMCWBU0GKPD1+ouDJ6dta+Nc4zTGJkf/xxApwtl7f/YnSTtz7Ohu2ibRSSWdowHfh6XHtk/0aPC1ISsBV3+GdXlPHp6q9YXFDZaYQdtXBJGz88oz4WXISybV7NQ/PcYvjKyaETr+k2DC1fV3wnLT0P4auRDtfloUOB1J/soRynR0+pv/DEDXRGGhok9TvxZFnaUDURbauPOIeq99DibmLfGGeEQVKzu7dBLFQUh4Eszcp9odKwFRjnQwPq16I1Dk1FoNhq42w2uxBRw+XBfyWN0Ji83G1pgbDAZXsQEaGhDBGCTFPjaAmJ83Qtd0CcS1U/9Wankb69NPtcKi0n9v6Q/72sVd3msFH/oQttXooW08dPrpWYlj6qe4k8SaZnV+EFYdArZN/zDRzRQ==|920
