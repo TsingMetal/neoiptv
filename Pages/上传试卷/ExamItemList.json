@@ -1,0 +1,48 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,2": "考试名称"
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,2,1,5",
+    "1,8,1,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//tedjrPGI+Jrxj/ECINhBF7JmICci1VVU/6ms9hZagLtlJh+CMDtfauvUOI03GmJjI4MypvU/ubM0BeS5BCU8ZTpIT346FnD8l/ffXQjH7LjnyyH7THAdi1NCt/xQjphKOExEtXt7b/UX50MJG3GInv9j5qSZs73ZlZ7JDhWEmTC2daavw9WFKjZ9jELL2F7hF24sswtsytLMijZvLj++kCOItfc2PzY99ocqapnTLOsSjCTFov/MeuufyKFoMhqtiFa0/vQB18PViCqhWNX1LRtAqtafhrBeYbP5JxC0GYfVefM9X1CBDPTzCKcHxc1ks8nOfr2PsFp1HDkV3Jcg7MNY/eI/6KlUE+i/DAzShLnRM+T7608V/vr2O44OM2Zr8mvHXigKOoZKIzGmex7cZj/zRJgn7yXEEWypc0Rh5J/e/pyoyr1T6E/LrUhAu2gdKzOgogYw+L1z2Fr9l9G6QW/wXdDJOFO71NU3c2cykhyyJj5ZRRcSC+vrkFbFETrVEsxz5NNoksniKpwZ766oWtk9HosrN74K6KawBKiV6Q3HXx6gkreJtweIYcFiNNMoC9/XkiRcnoYtKjiKjVs1XPzoj1oa5eTmXkPeGP/48IILdoGt1KSp+/MJfKmTXWDy+KtIWiOGB1C0LlPmr/qSsxHVNTPw5IocUYqMPzWpojGmGHpTcuC4XIZLtvNAMBsGSftxxbUQrYJ3tDG9PMk1H1ZhVfHVE4UIceG6p3Fq+AOnoRb0UYWvK/mvU1MesTh1IiLSaxKr20JESiRpU33hCqyt4u5a9cTwGk0wP+7FxN7MX+E2Tv6VVhiv5G/Iyw3x5F1ESODahitUTpFN/WxtAwVl5k9pM4VtPHaoCnKGxiDwBCip+uVCqajqexvJPTWBb168nAN2/vv66I+spYOqWw==|920

@@ -1259,7 +1259,7 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "9dc590c7-b150-4a8b-884d-e19b35c79273"
+                "ID": "e9bcc82a-c2f4-449a-a5a8-16041bea7cf4"
               },
               {
                 "CommandList": [
@@ -1402,342 +1402,6 @@
                     "CheckDataValidation": true
                   },
                   {
-                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-                    "ConditionAndCommandPairList": [
-                      {
-                        "Condition": {
-                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                          "param": {
-                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                            "cellLocations": [
-                              {
-                                "SerializeProperty": "=ExamUpload!AB6"
-                              }
-                            ]
-                          },
-                          "value": "5"
-                        },
-                        "CommandList": [
-                          {
-                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                            "ServerCommandName": "uploadFiveExam",
-                            "Parameters": [
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "className",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!D9"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "imgArr",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!B3"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberOne",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H11"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherOne",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R11"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberTwo",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H13"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherTwo",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R13"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberThree",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H15"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherThree",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R15"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberFour",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H17"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherFour",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R17"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "userName",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!AB4"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "examName",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!AB10"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberFive",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H19"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherFive",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R19"
-                                }
-                              }
-                            ],
-                            "ReturnPropertiesTo": [
-                              {
-                                "ResultPropertyName": "result"
-                              }
-                            ],
-                            "RefreshAfterFinish": true,
-                            "CheckDataValidation": true
-                          }
-                        ],
-                        "ID": "685099e0-0625-41e3-a9c6-34e6b91bd1f0"
-                      },
-                      {
-                        "Condition": {
-                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                          "param": {
-                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                            "cellLocations": [
-                              {
-                                "SerializeProperty": "=ExamUpload!AB6"
-                              }
-                            ]
-                          },
-                          "value": "4"
-                        },
-                        "CommandList": [
-                          {
-                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                            "ServerCommandName": "uploadFourExam",
-                            "Parameters": [
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "className",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!D9"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "imgArr",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!B3"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberOne",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H11"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherOne",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R11"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberTwo",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H13"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherTwo",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R13"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberThree",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H15"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherThree",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R15"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberFour",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H17"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherFour",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R17"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "userName",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!AB4"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "examName",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!AB10"
-                                }
-                              }
-                            ],
-                            "ReturnPropertiesTo": [
-                              {
-                                "ResultPropertyName": "result"
-                              }
-                            ],
-                            "RefreshAfterFinish": true,
-                            "CheckDataValidation": true
-                          }
-                        ],
-                        "ID": "981d22fe-c749-40ff-b5ba-135137ec4583"
-                      },
-                      {
-                        "Condition": {
-                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                          "param": {
-                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                            "cellLocations": [
-                              {
-                                "SerializeProperty": "=ExamUpload!AB6"
-                              }
-                            ]
-                          },
-                          "value": "1"
-                        },
-                        "CommandList": [
-                          {
-                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                            "ServerCommandName": "uploadOneExam",
-                            "Parameters": [
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "className",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!D9"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "imgArr",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!B3"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionNumberOne",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!H11"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "questionTeacherOne",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=ExamUpload!R11"
-                                }
-                              }
-                            ],
-                            "ReturnPropertiesTo": [
-                              {
-                                "ResultPropertyName": "result"
-                              }
-                            ],
-                            "RefreshAfterFinish": true,
-                            "CheckDataValidation": true
-                          }
-                        ],
-                        "ID": "f2cdd9ca-185c-4d9d-8617-40e449010efb"
-                      }
-                    ],
-                    "Disabled": true
-                  },
-                  {
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   },
                   {
@@ -1748,11 +1412,37 @@
                     "Offset": null
                   },
                   {
+                    "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                    "TargetPageElement": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ExamUpload!考试列表"
+                    },
+                    "TargetType": "ElementUI.TableCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
+                    "MethodName": "ResetTable",
+                    "ParameterValues": {
+                      "clearSort": true,
+                      "clearFilter": true
+                    },
+                    "Disabled": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                    "TargetPageElement": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ExamUpload!考试列表"
+                    },
+                    "TargetType": "ElementUI.TableCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
+                    "MethodName": "SetCurrentRow",
+                    "ParameterValues": {
+                      "rowIndex": "1"
+                    }
+                  },
+                  {
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
                     "ReloadData": true
                   }
                 ],
-                "ID": "1208e747-5995-444b-b0d6-d3d3089ed8c5"
+                "ID": "fa9fce44-e023-446a-88bf-a7741a74c2fd"
               }
             ]
           }
@@ -2266,7 +1956,7 @@
                 ]
               }
             ],
-            "ID": "aaf8768f-d581-4ac1-90e8-b797e502cb8d"
+            "ID": "f4452e8c-527b-4164-a032-60d9488aaa3a"
           },
           {
             "Condition": {
@@ -2384,7 +2074,7 @@
                 ]
               }
             ],
-            "ID": "ce868480-bc1a-427a-a5d7-f4eb5d659a8a"
+            "ID": "23f0fea0-7469-4d0e-abb0-fb97d5eec264"
           }
         ]
       }
@@ -2411,4 +2101,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//jj1irvw8rTXIpJtYHN5fa4py1DQ6jdOW/MlYRShiJRyu5OBZqj2pGtyF8y4YxLrWZu8GDdfubZcXuzUnpNcNaNCZ5zm7V8UytKN4SeC/sZhoItQnTzVo0TLkjzpFEHWdBDrZAAP+vsbhZoWZbMZubbVfePgjoDvyaZc60TsuE93Id63EfOmreqWwYqoTElekj1hPTBWdNqn2NrUj6whvnzg/Bzo9qQj6yF1WnwiNrW9ddocQ6PpeUmud26dJvu5W2nrojGrRFkFBkRd9vGz4yDd6pQYA7xpVpUuRWezEGWeoay7xACeK2M9nEBhVjXzD5HPb1pUQE9dSeMac2hrrl/sQXZYD2YmUVVkVwy7HJXWeubTAbiCuY1soN+VetRj7KfTX5VRNZHkrjnyWqYBJbXyt9bkXNo5ZwECPTYWdmlxSoikPJstZA4TCgcrd1ioX4oAW0aIBjsKtFoGLddwxCLI5hR/MPMF5+VSfHyMTkdB6s6T2SB+WVtKNyLFZaUqQB6b9tv8a449PcGTCDXk0WdCZvgK7yyNCDPcC4LaW5RjRGH7EQy+e6RSvlpXSTTVqeJ6o1FQqVOQ9ZGPtDbDCLbnP0V5G36TLPa+vDiGKUKz5CsRqyYW3vKtenva2CXDiScrEHFWwMG8DUu5SfdapjEqWmRls/U/FL7VDQS9ag214mAfBsQVcR3lNKpxH/+YGULKHv/KuuAbesdcgL0a547QkolVqhseL9yJUuloIG13YDN7OgQz4LwcG4O9HTKTIhWWMqD1SD1kKwt/jrhljojhLQhr2SlHluSuJvsVxDu+PYV7QX9z2KcdkhFeSCdNRHsWJTud82mJF67oIATHQwsTiovytMeM+ghvJka1A4D12d/NlKtIXXkn1WCDQuVQ2dTJtNPhoACaYtFYpyBnjmQ==|920
+}//vGlLAQxFTzQRBqDYgvKvcK4PwJo+JOvZum9AOyEn1tEyZWgQYP8tzOQD076H7/z604MQjaQa39z1ZUgyKvA8TXnmiFvhV23etvxTVHNTLTbp8hIqzSmCzjcE/gUtMHknsuP6ZbGdkVmQCSc+2g5kbzR3ylRFewwC/Sv9BqGB7k/mGwMaNUoAbM3hUoFy8B58HAzcoEDdx85ohdEbHVEBAHeRIMOY2Ewcsj4d7JU+x23ZSrhiI1/gXfiqTWKfPJyMOMZwKlTiy+kEDsvSJOcN8sLzJAHo30t81wVLUqVcrQRUX2Qg+FgeHpJeUvykcRslaSSG6C5nwMstQnI14VlHNKP/3t4cUp21hqXKIJpjXFpXlXWphvGI70PwvtkegC7tSQXflJmh9ypABtpjo05/zkeiubqrZVvqhLOlk1y8Yf5RwRZ6zy4OJizdQq2ebtaA5D1hBAzFw8cQyKFFGgn6rtO5yyXrUARuP9vVQo4ZKFMh3IHeu4paxQPQJuPdhs6Ebd+mOJT+0N0+DHpIeRJMEVBVheMKhMhlvk+sUcN+9HqgFIEkNr8EtRDRKBMicogS7MbtXDtxd/zF6VcbM5EODZEyQ0Mh0lDhSKYQhNGjorDr3ruRYMoeeilmve0g2eqI2REsNA97vXYt4QVjZu+Wjxsrsfn4nc41SKEUY5LyZXGv/C3aU/j3KiFgm9A7ou6B3f6t6zYjtjLb4kcu/raUecNC1Rz/9j0HJ7g9NZ3UGETmcRV9Jyv72koS8HDbVC44OU47eBOGeOy4U1iIoqaabBFkmusscC7vpGC83V+ENuWmOyyy3j9Pkvxg+hZvP1UeZ4M2VJ6D+Erju603nuOVFbUcrTPeHZf4+462GRhLZPgjRPhTMz2mL+bz6dGKRJlpsfusCQPBDt3+1hZbkwyhtQ==|920
