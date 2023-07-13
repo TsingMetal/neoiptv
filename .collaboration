@@ -223,7 +223,16 @@
   },
   {
     "ModuleName": "PCPage/请批量选择小测题卡进行上传",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-13T17:54:06.2003576+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\上传试卷\\请批量选择小测题卡进行上传.json"
+    ]
   },
   {
     "ModuleName": "Pages/题库管理",
