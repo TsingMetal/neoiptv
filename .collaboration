@@ -756,5 +756,15 @@
     },
     "LockDateTime": "2023-07-13T17:38:14.1542085+08:00",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/资源 12.png",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-13T17:39:31.4020574+08:00",
+    "ModuleType": 38
   }
 ]
