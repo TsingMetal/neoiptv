@@ -714,7 +714,16 @@
   },
   {
     "ModuleName": "PCPage/ExamListV2",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-13T17:53:20.363597+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\上传试卷\\ExamListV2.json"
+    ]
   },
   {
     "ModuleName": "Image/资源 10.png",
@@ -723,5 +732,15 @@
   {
     "ModuleName": "Image/资源 12.png",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "PCPage/ExamList",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-13T17:53:20.3636099+08:00",
+    "ModuleType": 1
   }
 ]
