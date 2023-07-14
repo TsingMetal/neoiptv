@@ -238,7 +238,16 @@
   },
   {
     "ModuleName": "PCPage/iPad批改试卷页面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-14T09:09:57.2109755+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\iPad端\\iPad批改试卷页面.json"
+    ]
   },
   {
     "ModuleName": "PCPage/iPad未阅卷管理页面",
