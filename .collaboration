@@ -537,7 +537,16 @@
   },
   {
     "ModuleName": "MasterPCPage/PC模板页",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-14T09:04:17.3259521+08:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\PC模板页.json"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/平板模板页",
