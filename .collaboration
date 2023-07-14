@@ -242,7 +242,16 @@
   },
   {
     "ModuleName": "PCPage/iPad未阅卷管理页面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-14T16:43:40.1478159+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\iPad端\\iPad未阅卷管理页面.json"
+    ]
   },
   {
     "ModuleName": "PCPage/iPad已阅卷管理页面",
