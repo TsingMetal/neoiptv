@@ -336,16 +336,7 @@
   },
   {
     "ModuleName": "PCPage/RevisePage",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-17T09:49:55.0419154+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\开始阅卷\\RevisePage.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ReviseDetail",
