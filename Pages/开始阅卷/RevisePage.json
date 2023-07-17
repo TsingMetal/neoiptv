@@ -500,6 +500,7 @@
     "45,54": "进入评语和打分环节",
     "47,4": "未阅表：",
     "47,14": "已阅表：",
+    "47,45": "保存",
     "48,4": "id：",
     "48,12": "最大的id：",
     "48,23": "最小的id：",
@@ -585,7 +586,8 @@
               "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
               "TableName": "阅卷表",
               "ShowConfirm": false,
-              "CheckDataValidation": false
+              "CheckDataValidation": false,
+              "Disabled": true
             },
             {
               "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
@@ -606,7 +608,7 @@
                 {
                   "Source": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=RevisePage!是否跳转下一题"
+                    "SerializeProperty": "=RevisePage!保存并跳转下一题"
                   },
                   "TargetCell": {
                     "SerializeProperty": "=ReviseDetail!S57"
@@ -921,7 +923,7 @@
     "47,34": {
       "CellType": {
         "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
-        "Caption": "是否跳转下一题",
+        "Caption": "保存并跳转下一题",
         "Style": 1,
         "CommandList": [
           {
@@ -934,7 +936,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=RevisePage!是否跳转下一题"
+                        "SerializeProperty": "=RevisePage!保存并跳转下一题"
                       }
                     ]
                   },
@@ -949,30 +951,48 @@
                     },
                     "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
                     "MethodName": "ExecuteCommand"
-                  }
-                ],
-                "ID": "5111b139-b1e9-4a5a-b9c8-1cd64ac2e91a"
-              },
-              {
-                "CommandList": [
+                  },
+                  {
+                    "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                    "TargetPageElement": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=RevisePage!保存批改图片"
+                    },
+                    "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                    "MethodName": "ExecuteCommand"
+                  },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
                     "PropertyItemsList": [
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=RevisePage!是否跳转下一题"
+                          "SerializeProperty": "=RevisePage!保存并跳转下一题"
                         },
                         "Value": "0"
                       }
                     ]
                   }
                 ],
-                "ID": "f9fa2a7a-32aa-4f5f-9d95-f885921a08ef"
+                "ID": "57f5c8a6-8c64-44e2-b5b6-4745328e41d1"
               }
             ]
           }
         ]
+      }
+    },
+    "47,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "阅卷表",
+            "ShowConfirm": false
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "_RS_Main1"
       }
     },
     "48,6": {
@@ -1343,14 +1363,11 @@
       "47,21": 11,
       "47,33": 7,
       "47,34": 14,
-      "47,41": 7,
-      "47,42": 7,
-      "47,47": 7,
-      "47,48": 7,
-      "47,49": 7,
-      "47,50": 7,
-      "47,51": 7,
-      "47,52": 2,
+      "47,45": 7,
+      "47,46": 2,
+      "47,47": 2,
+      "47,48": 2,
+      "47,49": 2,
       "47,53": 2,
       "47,54": 7,
       "47,55": 7,
@@ -1467,7 +1484,8 @@
     "48,62,1,4",
     "48,66,1,8",
     "1,3,1,42",
-    "47,34,1,6"
+    "47,34,1,9",
+    "47,45,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1519,8 +1537,12 @@
       "Formula": "RevisePage!$CE$10"
     },
     {
-      "Name": "是否跳转下一题",
+      "Name": "保存并跳转下一题",
       "Formula": "RevisePage!$AI$48"
+    },
+    {
+      "Name": "保存批改图片",
+      "Formula": "RevisePage!$AT$48"
     }
   ]
-}//52rQpG9WO7o9rkWhHy7BEqn3/iTcBmHZqOgfK5b8vTk4k4dSuBGZMdU0LObNidn2G0a3ZAhFcTDBg3Lv1qRdEQXm3dIR4IMnrwqipT9oB7QCkHYlvArxqDq+bvCWspqkGf0nZO9WSaW1t4r78bpL84h+MghLiUVn+AFFTpuEJ65Ad9HNVAhlE9Qmm6LoJmTyyuEHBK5r+++/gNE6riQdyVtRoEXY+wRaJhsoZk7z/3z7p3+Govt6bBPZm5OBdCRkMFoq7yz6+jSB8NK+XCszJ3ZvOeE5g7Rqlet0WSXNY3/Ut+gdpBM1eA6k9m9SFZ5hVtjYgvhsgn/e4grqr+zWWP3Vh1mPpgwp3A3yhY2FdBA5yp1oIK/E/10oUUMsxXcu233y2jtaDCldPMSRYsCWcU1+M7W5UtkyutQ6A6gYFYaHVahJ/ZHNd+R0naTsH627SacDcWV0hGF7aHXzFhTmeEaeDCVw/BAmhpknjhEUdVedCWHx2vWzFTSdGNEGR93Dsa20L3XN0IAdufXec2Qy1snvSwdPxwN9EHGy69/F5C1nsvzZL/58jxhpujg3OO8JlK1UTMvh/qHAyC7DslIcRUxDnYeC4vnZjscYnawXyh4+WhS+f02t/wa/2VtCH+lTfZ+klMn2mn1ebRBW0/r1SvmqHYkCUNQZHqXr9sy4qyv4RyDkqBkXIW32Kk4XSGJ4JaKnwbcdq37CaZ5HscX7clgCgEQFmP5CjRaZDxw33ltjYAmKbaFM4tosq+diRJet9Xh/ASB2rxA9l1k5VW444+cw9cmlIA+Zjck9YqfpnJXjHABdatbqIS1pUSbE0XeRrSIIlXKZ2+7nQC0otxa0QvuHCZTsmF6Jj+mi/vQkZNKbmmGY1nQk/et4nn2z8atKyBam+Rn+iCgYAne5U9XK+w==|920
+}//i/rKly4o9d8q9vf3eIxM6qbXrrw0OzQwzEUoU7wA463oW2ld2B5ugpTV5dJfUELo14hWTpTmAXiUZE/WspbqYwbmE//wwHj3PxQ76d0ve3pVfzz6P/5AWlGsu3iyj8ycqn1czbMmN95J7P6pDbFUsaQr4SqN5afMvKIF2JOgjS1K8O0tvJtFBPPcjy+AzJhuWlND6albbWam2ExSPCeOd7QDIii6XJ5yHd66lzbXZqFHdBfuKKe6wKL2Ld23GqIojjDcgmSldjqTqygDHLngxayS9luVHcf+LjnrkKaAMdC0gMXzFgLXcXx58WQEyDQ8m3ze+UK3iHrl5koS3gGlEuglfRFtQh4rSP2afQOR73pe0vtu2wB9PP82gVE/dS8lFn6le6F+dUsx7iVxzDdvi5pBjL3fN9O+L4/dRv+c/NkU5q5kacNe1taBvolZ8EKxGLi8gppR7Lx+W8KtKTbmVHYLxF3KfE8m4Mei0mghUACdVZxyZFdq+DTc1CDf0MhUFLeOQfq9KHAwHlxwiAupluzuYGwVaAcKjj8BNh2bsEck+VNo/a3mgELiNnqdj8zj/EJU3QTKjWQgUqWHPvwMbm306m1heYTQO3mevbVCPfWAMs3YZcTlq4+3WfQ0jjqeyhH3Nt53Q7ItCleG/GRJLo9Lw1XK/sCmtu+sNAUcTtj+fw88RgOq8qfX1LhhhgvrHRV9hUz4RByhg1IGpw7g1f5BsahjYJQJEZg4GS26JelpqY1eHYeNuDkMRXSrTU7lTeeaPpkHkkYgJ1tYxBnWNPi0PUfgKA7rGt5ZCMJuaNxG19Oz3LnnQj+WRXhVrs7TgwTY/xLxhCNyNO7eh/yafUaexTKvoqq08XpPa9z2sd8VK45RXR/xypcpDzC2zYg1U81qBXdsBPWHKvR5F4iYeA==|920

@@ -164,16 +164,7 @@
   },
   {
     "ModuleName": "PCPage/iPad阅卷详情页面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-17T09:26:30.4632046+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\iPad端\\iPad阅卷详情页面.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/iPad批改试卷页面",
@@ -345,16 +336,7 @@
   },
   {
     "ModuleName": "PCPage/RevisePage",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-17T08:58:30.6585633+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\开始阅卷\\RevisePage.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ReviseDetail",
