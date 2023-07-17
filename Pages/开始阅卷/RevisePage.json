@@ -946,7 +946,7 @@
                     "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
                     "TargetPageElement": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=RevisePage!跳转下一题"
+                      "SerializeProperty": "=RevisePage!保存批改图片"
                     },
                     "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
                     "MethodName": "ExecuteCommand"
@@ -955,11 +955,10 @@
                     "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
                     "TargetPageElement": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=RevisePage!保存批改图片"
+                      "SerializeProperty": "=RevisePage!跳转下一题"
                     },
                     "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
-                    "MethodName": "ExecuteCommand",
-                    "Disabled": true
+                    "MethodName": "ExecuteCommand"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -974,7 +973,7 @@
                     ]
                   }
                 ],
-                "ID": "1c78cac0-5cd3-41e6-a426-8dc0ae800c65"
+                "ID": "6190f8c0-1975-4d86-b868-f2f49b45e7ac"
               }
             ]
           }
@@ -988,7 +987,8 @@
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
             "TableName": "阅卷表",
-            "ShowConfirm": false
+            "ShowConfirm": false,
+            "CheckDataValidation": false
           }
         ],
         "Text": "保存",
@@ -1545,4 +1545,4 @@
       "Formula": "RevisePage!$AT$48"
     }
   ]
-}//pPjjsuOuoFUH0/QWdkt0XkFe6e3/Fg8Eibfk6nWKbNSjckv5lzxSTtwCW5fYC1N3Obkxmm8Ql4+sxtGy0PQeX2p+VnsuqOapDxr85SV4LEOikPb6Z6HhyP94JnP8GWirjSvvBow7VLi4vboaDFPpvNqehHtuhxZYskqprUnFG2cxSKlGmQUNQhLaIbH7d82c0va7C4oEKWsAETMv7s5LCbpu+FTwtU0dtmgwCgXOwxykMQ66MvfX/aaT8taUjsWX+OU1M/3eQBWh7cb4xqOXkb320w0LltjQucXA+12H5PrS9YyvG1TxK8PplwQzmcTZ3isNOn0vDVaV6pXkomY/zXfxN1VT3nn3uFCYxoC52VIKlCtgeH8q2SumQyJbUD2sGe6k8khmFrAKcMKhEG6OjlSAwmQv43xC22sj5mQ2SKppTKK1huc9WkQRiwpdOFPKlblo7iAXuh9gHC7e9/Z40IwWdE+l0TsYvvUja7EngIrRESM7PirvXSxgPlA9KVwn/qvFo5Upnj65SmsbH/3R4POOA2VBAmgKSRQCVeHGJnmc189yUDXjpLqvgDOEsaWrXJ+c3MIWQy4JEtip9WYqwlMcsV2CVrB0NKyYbuWITG+GOHvuZ0UuA4D8lflNxYUa4dTI1idfrFFOWOakEZJxahdb3WPpunLrW5r1Vh7QSRIFvh9rkKRgBGIJa8BOn7XWTsdzwwMHs3dAgjXCC3NVbO64QIdBOan8lFRyvEZ9qbMu0Ya27BUNqwFgJhwh8Vf2MOFr5nXfyaoXwWRMAOVNrJSBCjibtt5vn5RRTj5pSkXyiCVX+a19DYjJRZh++4FCw/p6e7p/bg1/QC9FjYfT7+ROekMPdtYwstYTv8GGLm9on7yW+Yty/kNZi3ohOAKTzqt/S7WL8Uuh7u+iyCtI3g==|920
+}//glMqzvdjtP2Hp8j3Pl9mWxTQCeDeG//ub8PTzl3ghn81fXgDDZ1r8an8UV/jkUKv6C/dmHwLKMkihNfcyufkVzRjF7r7zuiBdkqhtOPQPcvNBPPGq4bPeK8RXms+BlL8uKLjAM6GObIPET3yWtD7vP6bO+01SK2bAjF2MTmLSp59fX408G7XxFvrmfam6ZPafH6/7lYAf3bkjdeDW1okOIp4MYPG8ODQSxrpm6gpa5geaodvw2MJt0wzPBE59+Z6V6Y108xnxptl+lZb/eItDVqRPg9c6ZYR2wBcwJYU21uSv/ze8hD4rs72SCMXs+fNNRGMgcc8ZXZjSvoJDlyGl09qzd0uh2x9RGBxjFiyHJKDBOuQh4DhuCLsqyRC66kaBRu9+cNSTXg50L7lFfNQjUeFW0q0cllom21yyiHDJ4NGqfu6k7S9RT2t70WVtDGfHKMIySW/84jqHLm23kXFx8v6TqsyhWaBbMVSfBeGOTqaAiCHNpEu9SGohs891km73w6bdGhduThFVIfb296+UvYd+/UlBb6TyWO0+Xh3UX0Neq6j3aA5xMAKAEX8/yCTKgKxYoSCgCtvVot9AVRgcg7MTRW6kXwh1+5Ibgn9ESNDTufQwN8Wnh5+37RBuoyIAf4yRj5PGhpRIse0zHAdcQfA8GWYdYzeYRDpDpTW6kpem7LsYKFIpQ9qkh659junFbj5gTzjWTZxv1wt0g4KlU9AmsR6NBP6ja8Es52m/J78Jd0s+ZQxBhxkdjnu8U05Ff8LxVGVCFSJmOrDsSifUjzGCBfsFuZFY1qXUkyRbFqmyC5ebcc4exmK57E/wIlux1AUCq9bJGfq3u3wkDu/y3rbFxYOSLaeIWo2qJBzfavfRSvY+ltkpl02qiCurtruUbbHM8lQijnkO3QuuYBNJQ==|920

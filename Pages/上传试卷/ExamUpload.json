@@ -503,6 +503,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -588,6 +589,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -663,6 +665,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -748,6 +751,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -823,6 +827,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -908,6 +913,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -983,6 +989,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -1068,6 +1075,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -1143,6 +1151,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -1218,6 +1227,7 @@
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
+        "filterable": true,
         "filterInServerOptions": {
           "matchMethod": "contains",
           "loadingText": "加载中"
@@ -1259,7 +1269,7 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "44b6460f-3292-4125-b185-45398c03c1bd"
+                "ID": "12f1f86b-61d7-4447-93d0-14bfcd1b07a5"
               },
               {
                 "CommandList": [
@@ -1416,7 +1426,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "318cc588-e352-49ff-930a-cb0f49b97827"
+                "ID": "93858699-f5c3-43f2-9bcd-5e49c6163876"
               }
             ]
           }
@@ -1930,7 +1940,7 @@
                 ]
               }
             ],
-            "ID": "a6d0e417-9c13-41cc-8846-be818e23227a"
+            "ID": "d51efb7f-f48c-4c3c-ba64-79a591516e4e"
           },
           {
             "Condition": {
@@ -2048,7 +2058,7 @@
                 ]
               }
             ],
-            "ID": "53c83cd3-1136-4d3d-a49b-5e8923f6c7e0"
+            "ID": "08d581c7-aa86-4992-9c2d-bca77ce99821"
           }
         ]
       }
@@ -2075,4 +2085,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//Sl9w4jZ0eRNmva4tuQfKszIxYhaHHN3AMCuzG12Tbsm4FA8FGWoATeFNbgkvniJH+d5w+omQa0AlKeOTfNOwgBzDjtfMl2K1WPAhDb1m2OY4kdqfA4/TaovrDis60/O7J6JmJ8QTRHo5h8eCT7saCnROSd/ykgUM3Kaho49qJ4PvUMduUIiG2EalorZdASTqBOrz7Qbsu75DSm+JIK1Gb40R4UfLuhumV2ejcemy9/1akLffDlnDAUWxmmb7zSJeM3ioahvC1vZhmSSadeZBdhdwSe0XHQ+/XH7lLJmqsGrM7vGuA5XckhIiP+UpsOh5phLK24jsM3OkNmMWC6jHKkBK9w9uoJCscemyLO38eJg9iIQOYALdFiiSZtM2EZMi2lGRKhaFUQOO0DD8leRVvN5AtE28ECDEFQD+4ybuWNNLRI74us3qTiFbfHw8Op0wIM6MnXoUDpQC1OyVzVTPxmrM9xYhTCaegfbbER8iWLOjPWpjimQm86GYncVIMm9aInYYe4ngPHaNvf2GYI2674dqnkShKGW/vqQ0l3tNiG9l2b0kra3iEq44UFKWFrdA9Ioz3MYSxVD7Znjne1ugq2qXw3YkmcXqmufXyZF2Q9c03q/CsKmilEtovoX/vI8+Q/otQnWmwJd/aZEOLpG1zrjxk7rBY+8ftDDRZSjFgXlSaleORW+q7Sl4Vyro3DAXgEG5uXmhmYTGSVIbemAl+TMfBVwlB1MraEROV12raPw8X69BnVHYZQxWHefbS8wDdTnrbhWAes+1/A3JZpkj6fz2F4oRkSDJyZYqeA9qKw10MkGZ9HgH1AVBOXPLLjqKKC799UieDaMV3pk3knxo4MwjNqbcAgszwTGWp5oztX7Txnm4neCIYaVHTEKd9HOokUoFQXUISRG6CgxQu5CMTw==|920
+}//9uBqrxw4K5S5DuDOysuuORgJddBftSUtpQdL9fTO03aGTh+t6JTtFFOsIBv+7Wj4yuRQAUqi4WAeZx8qCPCowIs1pV2zaRAQxaUpOUFshhwHr/k7c11A9Zlu6wF6TNWCN+xNg+qTXvO+g9YXlMeAXtdACVcvwgMrcCNqSFR6pOn6UmLRc0k8TzhF4UvvK7jDmFOYrnxpphyMHd2HTNjJ7lDF/+xcakZJ5/Sx202WAmuDbtn/ZG93twKyOSNVLeGVnuXipgWUEADGqGCCm1wOfPGo78cyUb4UOPNEVlKjHl2bMmeMH1Y+e8/r70u+WHlMKf7h/CiaFpCzZwOeOj6IWuO21SaqHTWBVsYU4IIoABsiIF+1PqXvhz81qwGkqptDAdhfQGtfslcY3f3QvXLJTlf60kJQEPF3zrbBMRdw4WidWum99/y4KdfVDWAlk3OCEPud/X5vD0dWEJ4J+LD17KSxFe4OM3wM8QJawYuoe4mWpwlmLAs4cUzHrF/42HojSzUpEqFW6OhqBiao/1x6MUllhep0LulOJH5LXfPyAt39KJnrFdE0iF2yeeoZSRx5Uqhv9reQXMT2UpW3oyuHeB3pC24HZ1iIsdHx32LBUjagxXjEmI864Akt3NdbOfJKVbeukvRvtic77ccaogwZw0n9gXE8FrC7KqYSrteGJyfiYAfmmTU099Xxkik9/J6wPitZvVXBwJcVOGfvRyki8M0K69XA9rc+SXlp6iqO2opRnt0Dmglm2IJoVPaZn6rby0Ffn1L3CosFZ3llstUriPv48coH/l/5tsLJUt9WU9IeBUmAQKl4sLdWR594VMo2rAcQhPFr9QW5NH8FEc6AUmrvfGYjF/C0V11zEOTgiFl2NdRNFVpH1ESRVFxxQVsRoL+KiU6EfroneX9IqJCMeA==|920
