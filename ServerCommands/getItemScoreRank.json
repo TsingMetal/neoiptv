@@ -52,9 +52,9 @@
           "Item2": 16
         }
       },
-      "SqlStatement": "SELECT\r\n    \"准考证号\" AS student_num,\r\n    \"学员姓名\" AS student_name,\r\n    \"学员班级\" AS student_class,\r\n    \"考试名称\" AS exam_name,\r\n    \"题目名称\" AS item_name,\r\n    ('http://47.108.232.167:8583/dashuzhijiao/upload/') || \"试卷\" AS item_img,\r\n    \"阅卷老师\" AS revice_teacher,\r\n    \"批改时间\" AS revise_time,\r\n    \"满分\" AS full_score,\r\n    \"得分\" AS student_score,\r\n    \"全体考试人数\" AS all_student_cnt,\r\n    \"班级考试人数\" AS cls_student_cnt,\r\n    \"全体排名\" AS all_rank,\r\n    \"班级排名\" AS cls_rank\r\nFROM \"单题排名视图\"\r\nWHERE \"准考证号\" = @exam_num\r\n    AND \"考试名称\" = @exam_name",
+      "SqlStatement": "SELECT\r\n    \"准考证号\" AS student_num,\r\n    \"学员姓名\" AS student_name,\r\n    \"学员班级\" AS student_class,\r\n    \"考试名称\" AS exam_name,\r\n    \"题目名称\" AS item_name,\r\n    ('https://wqianc.com/dashujiaoyu/upload/') || \"试卷\" AS item_img,\r\n    \"阅卷老师\" AS revice_teacher,\r\n    \"批改时间\" AS revise_time,\r\n    \"满分\" AS full_score,\r\n    \"得分\" AS student_score,\r\n    \"全体考试人数\" AS all_student_cnt,\r\n    \"班级考试人数\" AS cls_student_cnt,\r\n    \"全体排名\" AS all_rank,\r\n    \"班级排名\" AS cls_rank\r\nFROM \"单题排名视图\"\r\nWHERE \"准考证号\" = @exam_num\r\n    AND \"考试名称\" = @exam_name",
       "ReturnsName": "result",
-      "ID": "80ae33ac3a414d86bfcec9b2f3116cb5"
+      "ID": "18d00b5a179744fdb53c97d395804b1b"
     },
     {
       "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
