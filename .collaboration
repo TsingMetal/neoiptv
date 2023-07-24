@@ -410,16 +410,7 @@
   },
   {
     "ModuleName": "ServerCommand/getItemScoreRank",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-24T15:46:45.2108002+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\getItemScoreRank.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "Table/_4题试卷上传",
