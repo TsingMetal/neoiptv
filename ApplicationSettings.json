@@ -6,7 +6,7 @@
   "GlobalProperties": [
     {
       "Name": "是否测试环境",
-      "Value": "1"
+      "Value": "0"
     }
   ],
   "WebSitePort": 61362,
