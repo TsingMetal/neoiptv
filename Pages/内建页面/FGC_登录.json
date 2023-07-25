@@ -46,11 +46,7 @@
     "13,21": "账号",
     "17,21": "密码",
     "23,21": "登录",
-    "26,21": "忘记密码",
-    "28,19": "默认账号：",
-    "28,29": "Administrator",
-    "30,21": "默认密码：",
-    "30,29": 123456
+    "26,21": "忘记密码"
   },
   "AttachInfos": {
     "14,21": {
@@ -195,10 +191,6 @@
     "14,21,2,14",
     "18,21,2,14",
     "23,21,2,14",
-    "28,29,2,6",
-    "30,29,2,6",
-    "28,19,2,9",
-    "30,21,2,7",
     "26,21,1,14",
     "21,21,1,14",
     "5,21,4,14"
@@ -262,4 +254,4 @@
       "Size": "360,385"
     }
   ]
-}//ArnbUDcc4IzBcWAlVnflI5diVgheXdTmJnGtbZQHYOsxYzPZ9++WkBzDu/0FPDPGVG4VjGTYa36wt5WFjhdqdhZMb17mnUiRroBipyouB8wl6gyII13ribs5OgF2AWoQ8RwsGaujnUhq4bHbHIiQ86Sq407IdpXKIO8nP5p8L6Bu7q/6h5+b0kAHum0EyfOjXg/xFEW+jkhVvA0g4LwxKPq4OOA81DPTRK2t9P4Qb7Go+YkEjP9TZ1V/Q60+y9MALb1hJjc9HNNPvXsHMMPq7iJo8hs0tRS+kGyXVlGDoRoZcdVX1BhUvGrlOtVwnKUNd7ldW7J1Qwi+gu26oh3Dv75uJNhT2RWQowJKZEOWbH2RjWNJPsqBjf4pTSQN49VrbORbdBZohN1K4U6S7xW30UWW7g6uO+OT9h4x/Axg7/hGEDmxM2s+8dFRu36vjsZ9UC+e6h6IzeZ6te1OOgRIHmQnbYTm9w0RIc6M0ZAIkWHprTILtuf+GJdGE397JYku4wpLv67bUt5bD28hZZvxMsACHkqZiIfZIPdMDOCjMNfsJXw41gq/mTihWEXJjSjeQy2GLC8ojVdlFZdKf8Uzcv4iAsJ6jKAYqD9yXKIuaS1sIxtJLym1+VbbAMzh7WKTxtViHg6BgnyfrI5RQmLoAGp8LV81h1pLaoXIJzOxRJLfr6iQAXxpxLj2rs6lQI3740oBHA5IBsESqBRk4I1tg/cPiT6XE8mtiHh2w7RlzZSwA5e9LMDERUXjZpPKYsl7v0pS69WwqytO5tS54gU0O+O6ECx4Bcb9ajg/QVbr2LjCd23H1zo/4VL8pHhkoq5vNkOqf+fFMYhBEuiXAyOxD5pjhWRN++Cr8ULuoFTK8oySAJUHUx7dRdLugNguZoijLLsTcqqZQ9BXTNHguWwQsw==|920
+}//7xNsWjKIvL5evBkdjaR8UQnhFXr9xETAO6yVr0M1fzD8ISjxtXW/GngRwvoC6CewcZXZBsHHNuz7EQx/yJndymbZ8X/5o8an3BrvGs5RAuzbsWiodUi4Xy0gZIMpoyOtCRrWm1uXs85PEYlnjzmdX54RubyLeVGbSmXuQmUfulLj14EWJAqkLqZBUwQhXrtMbnKBjX96swY1RFtZp5bxo0lmZBujShVWurtGipVp2E7Oo2cxblHGPFAZhsSRf6zFrLqo46pkfhWYpyigUmyu6qS1Epvf3cDtlnMyZ62IKrrehv9vA1wUw0PF0Xl+sf4c73L92FdeCtr2H5gOR9Z6ZqT63i8HaeNhXEMja9NBDrQ0JdHCUmTsd1y4lZAy1fmdfedOcnTv53mZOuHTM/hKMLfENBM6MNpNzI+vZ1tnjYrxECnIOjPFMK0VyJt5DqPONum51Zx2awbDtpncCCremCFkIRHNZruCnwRt1cIFLysInvC80q8CIxgWiHjeKAtXQuezXT8JA7VMxfOm/aIVxEkpBc2HoSquAmebtcivpezKyD5sF7onukPnjHkLRwOjQr8BOJpwxpRLsfex5VQQKwGGjExxCjmhcAgvp4XPLxTZSPF3O36OnurdkNs+1l9n+xWO7mpghyxZzCVweOUkRq/kM2jCBkSuMo1OVtUznYehys4xl/lsFi0WAMppwg2nyHiYqLUk/Af7iLJrk1ZN0HO3eWrfmQkqz+qYmaNFAqhI2QOaOwJGpl97hXNHzaerNn7V2aJP8Tvc7XUtYLayNgvWOYqKSm8k9UtHHgkmAYPSkYU+dkQfgjpqtX3X0biOHwwWBDgutCLiztmy5lPdDp7bVx81DlnaCjy1R5G9alMPeF2syTwFyHkpU3zZ+EW2Y5Iti8R32R7T4FjVpBaywg==|920

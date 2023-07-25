@@ -1,0 +1,312 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      43
+    ],
+    "Count": 45
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 60
+  },
+  "Values": {
+    "43,10": "当前页面"
+  },
+  "Formulas": {
+    "0,10": "\"welcome\""
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "ElementUI.NavMenuCellType, ElementUI",
+        "SelectCommand": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+              "PropertyItemsList": [
+                {
+                  "TargetCells": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=document!K1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=document!值"
+                  }
+                }
+              ]
+            }
+          ],
+          "ParamProperties": {
+            "value": "值",
+            "label": "显示文本",
+            "parentId": "父节点值"
+          }
+        },
+        "options": [
+          {
+            "$type": "ElementUI.MenuNode, ElementUI",
+            "value": "document",
+            "label": "用户操作手册",
+            "icon": {
+              "Name": "Application/130_list_2.svg",
+              "BuiltIn": true,
+              "Color": "Background 1 -25",
+              "UseCellTypeForeColor": true
+            },
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "expend": true,
+            "children": [
+              {
+                "value": "yuejuanlaoshi",
+                "label": "阅卷老师",
+                "icon": {
+                  "Name": "Navigation/170_user_3.svg",
+                  "BuiltIn": true,
+                  "Color": "Text 1 0"
+                },
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "children": [
+                  {
+                    "value": "yj_login",
+                    "label": "登录系统",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "value": "view_exam",
+                    "label": "查看试卷",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "value": "edit_view_exam",
+                    "label": "查看/修改已阅试卷",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              },
+              {
+                "value": "kefulaoshi",
+                "label": "客服老师",
+                "icon": {
+                  "Name": "Application/015_add_user_1.svg",
+                  "BuiltIn": true,
+                  "Color": "Background 1 -25",
+                  "UseCellTypeForeColor": true
+                },
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "expend": true,
+                "children": [
+                  {
+                    "value": "kf_login",
+                    "label": "登录系统",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "value": "student_man",
+                    "label": "考号管理",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "value": "exam_upload",
+                    "label": "试卷上传",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              },
+              {
+                "value": "tikuguanliyuan",
+                "label": "题库管理员",
+                "icon": {
+                  "Name": "Navigation/169_user_2.svg",
+                  "BuiltIn": true,
+                  "Color": "Background 1 -25",
+                  "UseCellTypeForeColor": true
+                },
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "expend": true,
+                "children": [
+                  {
+                    "value": "tk_login",
+                    "label": "登录系统",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "value": "add_item",
+                    "label": "添加题库",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "value": "edit_item",
+                    "label": "修改题库信息",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "value": "del_item",
+                    "label": "删除题库信息",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              },
+              {
+                "value": "admin",
+                "label": "系统管理员",
+                "icon": {
+                  "Name": "Navigation/240_user_10.svg",
+                  "BuiltIn": true,
+                  "Color": "Text 1 0"
+                },
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "children": [
+                  {
+                    "value": "deploy",
+                    "label": "发布应用",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "value": "cloud_team_man",
+                    "label": "活字格云团队管理",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "value": "backend_man",
+                    "label": "控制台管理",
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "mode": "vertical",
+        "DefaultExpansion": "expand",
+        "menuTrigger": "hover",
+        "theme": "light",
+        "backgroundColor": "#ffffff",
+        "textColor": "#303133",
+        "activeTextColor": "Accent 1"
+      }
+    },
+    "0,10": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "OverflowMode": 0
+      }
+    },
+    "43,16": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "43,16": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "0,10,43,50",
+    "43,10,1,5",
+    "43,16,1,5",
+    "0,0,43,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "PC模板页",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "文档页面容器",
+      "Formula": "document!$K$1"
+    }
+  ]
+}//J+Aq29ai8kYKeVRkOzXcJVv8FKI9ZrECcOfkwtNgRczH83+JGH2bJE1SIi1/5GV2WzZUkCQfEAD6W66qwoLNWLawahzrIEbsCSYTLSwJ/l/UsSKZ+JcfCRGvMy6Ent7um0UL/XNBWWP5QwVAUrIBWrfPoUDD9T+59YY0e/xPV2+zWWk/3X1epAmd/qgIFt3pCAKkXyrnsLWz1w7hZ6pSShDH7UqEtSmZtzXBZvNesPDTFBMYjHxWU0o7r4PmOaYicF5MypdlFJFd5Cg7dgIWEHmKBdhehpUcuXlhTq1B3qq5jms+FvlbqrP9EdSRlsm2n+D3CQxL/H2pL8PqM0nJdlB5u5mnYJi4GUJpamf+5s5AsullRsVsuaKim/akn0JIeScsFs3AiyFdTP6gSs4aEux+/JQuMtofvB4jDggsTgJciHgKpZeNUEtO3T4YRknMdW/gim1Vi9ccwiqzRyT6cCXsLJrbRpQb++BrWXJaUg634iqI+qYtXCeGXNBXnGoiKpPZSTW61IWIdAykL1Ff17xW9NA9Msi6OiMjO9VayzUsQ26aXEw1D32q1OqC2OizgXzoiD3Ccg8zsQlJuSuOLplcGIJ9KH6R6yNppbw/8bqleH1UziIiY3isTYfUvq7HA4nTn621uGyReaqqJk4PL1QmgMyUPA6EKp+lB51WbbO/Rg2M7N8EUJhq1ljRmmv2FWCket5vkNKtKb0e591X8RQsD2HvddYS6sLddmUVA/S18OB2EEtYHYX1ox6ogrFVFnG4gY+1ZzXKEljptFvwFSDAqUHztz2gQh/sAFu+ywV2cKlyEC8pd6cvuwZo+EvCg0lpg64JiiP2f2zrWt8/aeqzf8WU09DVOBnQRNYDCECqEBqixbeSQWPMvgehmlZ+58z45pDB03iulTnrCA+wOw==|920

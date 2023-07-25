@@ -1,0 +1,61 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "11,4": "《申论阅卷系统用户操作手册》"
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontSize": 64.0,
+        "HorizontalAlignment": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,9": 0,
+      "11,4": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "11,4,10,49"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//kQ5y90+JjlA+0Okwe1uaP6BdZmaOzCGR+MzTc5Fx2AG1/oWG0tGcUB2a5o1a5tiMX8Vf9abFARSgh9vo6UH8gcE6elUSXllmBbCFgOhFNYyWFh23evTxmJXKcZOwynEpE0c59ZLLUD05uaMwnH5ktE+y22HQ5lbCU1czCyQ7Ump0Q84ZzoRNYup2Y/vhaggQVXglg1X3bhi/F/Mk2DBGUZWIyXoAgzy3ghXcrMZGzFb6GqPCJzq05LPEBwWAjAX34N6JnGTAYPD351EBqWdeXVtc85/5sA01sX/3hmskstkeKfWrGrOvm57qj89CPiN+jVOkQ3I/j0a8JdYDwfpYRzcSbagwUqpwY7fwq/4NyeOzjIahzLDEXRpuGLP+CI4Eza0PI/j+ZDhpIfSFv52ZOODFCmBZ1EETmcJvM5pEWoqeMRKda0JD7SvaQkPBzjJ4pF1nCAB+yglNmXSVJNOy6iTNBPmvVuxx+45AaZXi7BBmEvpR1pVJRKhm/huDzIeAP3DBaI0cUiIVHzEE12TRwJ9X98mUyYXCZYTYdpMxbAcZQO5XOL+1DZFcN4A4JZb3gUNvI3VVLbAdjUbcAQC30G2LFYy+KWbvqwNkuHxj3UAzqA3dNEve8eCNyJeC4Dd+8UjbJAMjXJORRKAW4zpvIbS1aC6hZMHdCABA+DZMGgsZg39/ZkVMdlF2rb0SomRaVjec1KkrdXqt4SG8KtlXWVwq1OVrTyiFTUSlf34fraRWf9Q37WoB8YirYVcAE23Zk76CLy8yz4u63K8HXHudYBvDCEAaKvzjP6VEnkXCZPwGUqGYSIoa+bmKBDDJxIUcMXfRyWtbV/4QDPBYX0IoEQGam38dI2cPeLN8Bbui75HWfE2oncupHoAtoLeDNNXQTwLRXdC2LSDQrP+YKAF6tQ==|920

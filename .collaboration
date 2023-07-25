@@ -80,16 +80,7 @@
   },
   {
     "ModuleName": "PCPage/FGC_登录",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T10:46:36.0286657+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\内建页面\\FGC_登录.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/内建手机页面",
@@ -145,16 +136,7 @@
   },
   {
     "ModuleName": "PCPage/index",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T11:33:13.5458788+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\首页\\index.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/题库管理",
@@ -390,16 +372,7 @@
   },
   {
     "ModuleName": "MasterPCPage/PC模板页",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:47:46.2783501+08:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\PC模板页.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/平板模板页",
@@ -437,16 +410,7 @@
   },
   {
     "ModuleName": "ServerCommand/getItemScoreRank",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-24T15:56:25.4329963+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\getItemScoreRank.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "Table/_4题试卷上传",
@@ -526,302 +490,122 @@
   },
   {
     "ModuleName": "PCPage/document",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T11:36:14.469645+08:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Pages/操作文档",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T12:57:41.4918863+08:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/yj_login",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:02:28.9273757+08:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/welcome",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:04:40.1570509+08:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Pages/操作文档/客服老师",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:08:02.6496393+08:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/kf_login",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:08:23.1608728+08:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/student_man",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:09:01.5671718+08:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/exam_upload",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:09:25.5113374+08:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Image/kf_login.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:19:09.6741593+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/kf_login2.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:23:13.5447456+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/student_man1.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:33:54.7864306+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/student_man2.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:36:55.7798514+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/student_man3.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:43:40.1361094+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "PCPage/scanner_setting",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:49:18.0072411+08:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Image/exam_upload1.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T13:58:54.2395061+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/exam_upload2.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:00:47.5974524+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/exam_upload3.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:02:30.2464937+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/exam_upload4.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:10:06.8949526+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanner_install1.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:16:09.4224165+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanner_install2.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:17:14.931145+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanner_install3.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:18:37.9763941+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanner_setting1.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:20:32.1961694+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanner_setting2.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:22:43.4049233+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanner_setting3.jpg",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:24:43.2769377+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanner_setting4.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:27:19.4873218+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanner_setting5.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:28:02.7097638+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanning1.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:29:43.6259999+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanning2.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:31:05.0157927+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanning3.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:32:59.6039201+08:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/scanning4.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-25T14:35:51.2579612+08:00",
     "ModuleType": 38
   }
 ]
