@@ -186,7 +186,9 @@
           {
             "Scope": 1,
             "AllowRoles": [
-              "FGC_Anonymous"
+              "Administrator",
+              "题库管理员",
+              "阅卷老师"
             ]
           }
         ]
@@ -764,4 +766,4 @@
       "Size": "220,300"
     }
   ]
-}//TPK2ziRveuvkOjAqG6xeKbiZdqd+1nBi2L2mZjtD8kMtTVaTD4b1rEE47voTQlUHBXvIL/1qsPz3UfxkhhdG312ILX19Yd//lh9OOopKidGuEyKT4119wFhPD3f0zxXoaMx5gqIq2IZB4g0zMCK8v1GmML8OYXulHmbj7310HDr4aaocYSnxvcBfBsh7wAdWu1ISmXWBr2ztAIVc69ynDRk8y6WQrgmEU3DmGpjEhYyqIG00DuyAstxNTrzRR3WphzXsoTUYehfJbnYwv3A50kNrhX5qWiq9labC/QjJiKFBtpGuLZTqZZwkjjdnKZ25/09753RF3zzDTlmSX7YyXwPcMnNSyfLK7PH0blKNL5qJDeEibOm5LcMNzTH/xlgDU3yUimH+zczfzhXfE6CS9/DiCV7TWh35eauYodGXRjAdYE7bamwDIpgcEG5ej2LkMLWTY93WmHXNy9EE1vLkhii4IwAM/CVXPRhbKzJHKZaLLkBzxRlAfIqiheVelv/NFjh9FECTBh0ZtrdTvOPv048Qkjl9NCmEyuR6j4PrUadVXbHdma6LB61+xnvMRThXWQyut7ooYK9kmpi9rXAe2jYzmJroxV9v0/aiRw55mIv0y5wAwGHlg9eKw6wGj66YNWFxMjFjojlPhh0BqWJfwwZkPfFUvhpWJeOTGuOD/n64eG3YdDwg9luVixhs+ZoNtsFactVn5k1zy57TNlLRSAiws3hIi9FmhdSI1EFJb/Yi93EyRp2EIJxoavQvYrEg0ECRlylRUkwuq++f26n3UHu/S9+x2aUzln/2hzkOh78IWJ0SXHDsvzNfufXIClIbiMcu3IhMyuVjjX111sR/Wc0yTqsbeqRhYEJsDJe7nNo6u5bNM8taiC9tlhru0nDk2XV8ZsCMeGf3ZNtUqZI3oQ==|920
+}//k8Oz+ZzsMjtj3Xjr6tRjYrKdBQDcjUz4mkJlgt10uqgbD7kUHMOjHqRN4TqH1TnArxvFn7afXfTifaTupf0o9suneTfCkh0ehxkztLzFkgeJPolrJgQM5csI3AI7xp0p0xF2YiyMuy3YMRqGoY5LwAAOL3zfdG34MMuCblNpIs3yV1oV/LFsd4jyyTEMQ5mFzMcBTPTtbhcwJE1wbTnd+WbxOXm2OTYjW/CJPseDH5zCZQ9aGT3pcgIdjaGerJ/0M9fiQQSffmFOXSJlzi2SDCJB2WWp9WlLFkSYfcJjPOEXKKftNlUV9TbljDp988UFa6L7Y+G6JdSclz+E3QL+RZ7XJQL7QONaeCbwj1HybptnaBea9xOk6OI7GtoplshssJjuds21A06SKx+2oWwHVsGX2k9bBYQ3zJ2M8te+/1NQJyGKoaQVXcukc78BWkBdZTUaOs9bSpzkA0jJMtcC4pQNx226s7hmE+oo6IQlMpfAZGimFkIGF+XvBI63+1mJjzdPucZIxdnlbAYj1d9MFnZxk/C4lCqAS6QsTw6fHXyUalHcNsig2Qiu4Fvr/+MhsEpj/R/Vrg4vi57XqaJXpxae5L2lRAzaWIFAL8kksRzAIZxzEFY+7blRkjLFh1NTqkGQSP1pkfIGj/9PRxIXKXB0AYxus3dUP9tmCgWhvfWrZBuv1l498Itl5wsaeaGQhqluCDU5RhXmrXpHNcLr3TAXto0l6V+G2jVTvatZvaWIYrJQHkPnGmn426ajARSPLDs9/mbiq2nwIH2UrP2ZK83rE6I3vXUo3Ew64d7TLLskuoXUUMKG8cEm2r9pAyBOPADoT/i+WIzMaHikkhsxAK7yo2dkVco6+AjTlZSdCm0R1t/NmJLtWxo2Z3QWfwj4Mx0LsRrMX+mMENrn6IVHkA==|920
