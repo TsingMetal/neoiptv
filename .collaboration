@@ -804,5 +804,15 @@
     },
     "LockDateTime": "2023-07-25T14:32:59.6039201+08:00",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanning4.png",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-25T14:35:51.2579612+08:00",
+    "ModuleType": 38
   }
 ]
