@@ -764,5 +764,15 @@
     },
     "LockDateTime": "2023-07-25T14:27:19.4873218+08:00",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanner_setting5.png",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-25T14:28:02.7097638+08:00",
+    "ModuleType": 38
   }
 ]
