@@ -499,7 +499,16 @@
   },
   {
     "ModuleName": "PCPage/document",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-26T09:17:52.9352306+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\操作文档\\document.json"
+    ]
   },
   {
     "ModuleName": "Pages/操作文档",
