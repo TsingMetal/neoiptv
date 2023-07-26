@@ -507,7 +507,16 @@
   },
   {
     "ModuleName": "PCPage/yj_login",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-26T09:02:54.0230508+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\操作文档\\yj_login.json"
+    ]
   },
   {
     "ModuleName": "PCPage/welcome",
