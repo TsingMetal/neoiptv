@@ -713,5 +713,15 @@
     },
     "LockDateTime": "2023-07-26T10:02:02.9804915+08:00",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/view1.png",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-26T10:07:49.8990686+08:00",
+    "ModuleType": 38
   }
 ]
