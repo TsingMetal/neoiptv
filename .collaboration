@@ -528,7 +528,16 @@
   },
   {
     "ModuleName": "PCPage/kf_login",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-26T09:15:53.5968118+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\操作文档\\客服老师\\kf_login.json"
+    ]
   },
   {
     "ModuleName": "PCPage/student_man",
