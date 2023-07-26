@@ -45,6 +45,14 @@
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=id"
               }
+            },
+            {
+              "Name": "isDev",
+              "DataItemType": 0,
+              "Data": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=是否测试环境"
+              }
             }
           ]
         }
@@ -60,6 +68,7 @@
           "Value": "application/json"
         }
       ],
+      "Timeout": 100.0,
       "Comments": "47.108.232.167"
     }
   ],

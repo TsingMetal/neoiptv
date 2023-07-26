@@ -64,17 +64,6 @@
     "8,2": {
       "CellType": {
         "$type": "Vant.CellTypes.Input, Vant",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
-            "TargetPageElement": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=ScoreQuery!P9"
-            },
-            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=9.0.3.0, Culture=neutral, PublicKeyToken=967100671921c115",
-            "MethodName": "ExecuteCommand"
-          }
-        ],
         "UIPermissions": [
           {
             "Scope": 2,
@@ -163,7 +152,7 @@
                     }
                   }
                 ],
-                "ID": "8b72d3cd-530d-4c95-b213-f1b9c1781377"
+                "ID": "86614587-f374-4603-b8c3-47875106698a"
               },
               {
                 "CommandList": [
@@ -212,7 +201,7 @@
                         }
                       }
                     },
-                    "ID": "f418607e5a69464d9279b8a69057d4f7"
+                    "ID": "2320dc325a06449690fc7bbdd3dbe949"
                   },
                   {
                     "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -269,7 +258,7 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "0bec75e7-ee3b-4f93-b2d6-8e4daa15b0f2"
+                        "ID": "685e68ad-88a5-44df-b161-5ed1f7bf1247"
                       },
                       {
                         "CommandList": [
@@ -287,12 +276,12 @@
                             }
                           }
                         ],
-                        "ID": "91f1f503-a4cd-4501-b3e9-349d073ef0bc"
+                        "ID": "ee0ff661-8de8-4ec1-b574-1178e2ba1e9c"
                       }
                     ]
                   }
                 ],
-                "ID": "d0047a46-4d48-40c2-9aba-38edbc47e92e"
+                "ID": "6122cbb4-9c20-4269-a8aa-97fbedb2a955"
               }
             ]
           }
@@ -758,4 +747,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//VgVY1LKuJ9VTsOg86ROI63RVjqOFltuGv0Hvo4QBGD/g7rhCNOpS+m4T+e1d0R+WTnbJPs4lgLUJI+8ip4eD4R2Nhdzsj9THqyQaxwnKt8UY51wpwOE91SFIow22auZJuR76mUm13ziXmVwzE451qs1qkXJ/KVM3l+uVRipo5/Z1yOEe6jUsiU0vZVEdTQMCMwB0tYLuZBNgpdaONV7Ojxmt7/aYB1MY8uRjP8Wj1zP/oVPXPD7Faf3E9eFEH5yzbCe0b2u42jafiW4Uxf7+T6I/Rab3/wMSj6vX/JJekYaaaWkVtiz3lGiMFgQf6HpNYaMZPB0vedh1o38GI6xE86Ynh6aSZ1sSlk8PCUKJKZBnzOY5XPwHdScmGH/xR9qlteGQeEcffasqI3YVRyPoN58XgItfS51iB3vlwVNOgkzq/5MnQ/ojB7r4qix0teRaxbOumYC7u8QWJE3OMFRcEBqI0XuF42BBbT5hQrR8R1xihn1IVLog3G5wZCdYpXZdDVRdNG4CTEuQx/pjrKAi6udqk8F0NU9d+UEWOzUthIPZKpJl80DVo/rQQQYYv6e0kJeQzU1vJp0pvPquNcp78DaKCC0e7w6Uf/CMp7bCrNgfEb1wjphTE5/Szo5Fs810JMXYZkecATexEqaWyyaomD5L4VurvP2kEtjp2lsaDBCgcRoIabZtsqGEC/1vtwDckVwPjwAJ0cqxogg/Fg7Yb2UHjQ1n0YItyas3yzeSxlIHeRZ0jmv0PyKRy34EgRa5SNZYGhamTTuHDv6GtKjOfe0vOPQSuHhnZ1GwCNctTnDfS7zlV3o3Qirgsz00NEW2+qDxg00ekcMIL4gSDOqvlDkTV4eG26jCRoHhbZa0+AtX9fv2lmCrdod3P8zespbFRQJDvXjwKKmCvbvzIqPzcA==|920
+}//GMDaBEDHmn0kS178xxWlko72c+8cvXyPutBp+pMPp3hc5s/XdKwTi8NE7lBFPLak664NugkHNnWSKZnwWdDD1P1TjuAwg12Ih9wnkrVJFHg42o1jYuWqm5CmAPv5ZoRWTabBmQhn+gSGBFCSMHIekV6+U4IDTQN4N86fLb/IihSnj7uUC9NsYD223J7lisoAS6IdHrBMG+dIhAAVSF+pFZg0XMGQcfsQkVIg8Kgb2bl7SvmxZ5e1GtvAoGSoRSyCaZGb4vrQpwzAsBLGFmst43XNubbVRIkTHGi0wgz3/tjjf2pFqtoBpfFMUFrqPoBBnYx78PaqnByCaVtAu4jORDJOKM+GkQvg9UA4RC9TvNQA20bbTEzuDzPv8zFCDa2LxNqqLSCKcTCEROKtu/gG6lmXJ23WCZatc/AGquAdsAEUyDAeRE4hT+u/gXNoL34TBCsqSimE+iJhT3bK2nLZdq5MzBY/0SzmUg7dczzm0F87C8Nl7Rco8Cp+i4FATlD9CqU4wp/R+e/4K4GfmiKxudc4j5Ys0TzuImjLkNECttQVb0wfCJcMvsNfE24vrz+nlGmZQaJEVXuaMIKgxrdyk6EcK9eUfkbqoMGjoBmBE0wHCVuefaM/LdNSegkDA55GUNx7+TgmffwbMTGqaWvf2lSg6er+ccUWza3t/0vzNNn3BCul1fJqkNf34YtqGBLfLrXK1NwE7Zx6oUpgnqPVj+hUikuWLY8iq57yrduAg2H1d7kDliwKGifbvHOxn68YzHXzQJg446NGxUiBU7D4GDuW+rMA9E4IwVzsLRwLHqIht/L1hI+kAUSjqa1pF0DtaZTBaCh9YAncGNSSb9eqXHsYzx+zo2LAjUl51AbnUh3mXPnjUGIJDi9gDcP0Si5tbHXtk8+dqqNhNabLntGZqw==|920

@@ -1,51 +1,19 @@
 {
   "Rows": {
-    "RowColumnAttachedInfos": {
-      "1": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "2": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "4": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "5": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      }
-    },
-    "Count": 45
+    "Count": 38
   },
   "Cols": {
     "Count": 64
   },
   "AttachInfos": {
-    "2,54": {
-      "CellType": {
-        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
-        "CellCustomValue": "%CurrentUser%",
-        "ShowCircleUserPicture": true,
-        "NavigateSettingWhenLogout": {
-          "NavigateWhenLogoutMode": 1
-        }
-      }
-    },
-    "7,0": {
+    "0,9": {
       "CellType": {
         "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
         "TemplateKey": "样式1",
         "Items": [
           {
-            "Value": "首页",
-            "Text": "首页",
+            "Value": "主页",
+            "Text": "主页",
             "IconPath": "Navigation/165_home_3.svg",
             "SelectedIconColor": "Background 1",
             "SelectedIconColorUseItemColor": true,
@@ -89,7 +57,8 @@
             "CommandList": [
               {
                 "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                "PageName": "iPad未阅卷管理页面"
+                "PageName": "iPad未阅卷管理页面",
+                "DeleteCachedQuery": true
               }
             ],
             "CanVisitRoleList": [
@@ -106,7 +75,8 @@
             "CommandList": [
               {
                 "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                "PageName": "iPad已阅卷管理页面"
+                "PageName": "iPad已阅卷管理页面",
+                "DeleteCachedQuery": true
               }
             ],
             "CanVisitRoleList": [
@@ -138,32 +108,60 @@
           {
             "FontSize": 17.333333333333332,
             "Height": 45.0,
-            "Width": 200.0,
+            "Width": 180.0,
             "IconHeight": 24.0,
             "IconWidth": 24.0
           }
         ]
       }
     },
-    "9,0": {
+    "0,54": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "2,0": {
       "IsPlaceHolderCell": true
     }
   },
   "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1
+      }
+    ],
     "Types": {
       "Strs": [
+        "#FF42A6BF",
         "Body"
       ]
     },
+    "CellStyles": {
+      "0,0": 0,
+      "0,9": 1,
+      "0,54": 2
+    },
     "SheetStyle": {
-      "FontFamily": 0
+      "FontFamily": 1
     }
   },
   "Spans": [
-    "2,54,3,10",
-    "7,0,2,64",
-    "9,0,36,64",
-    "1,1,5,10"
+    "0,9,2,45",
+    "0,54,2,10",
+    "2,0,36,64",
+    "0,0,2,9"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
@@ -175,33 +173,29 @@
   },
   "Pictures": [
     {
-      "Name": "e85aab8b-ddf8-4f18-9650-aadf236b9a62.png",
+      "Name": "7a4364e1-ebe4-430b-ade3-9e35d71a1ba2.png",
       "ForguncyPictureName": "微信图片_20210128110953.png",
       "ForguncyPictureSourceType": 0,
       "Stretch": 2,
-      "Location": "20,20",
-      "Size": "200,59"
+      "PictureCommands": [
+        {
+          "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+          "PageName": "iPadIndex"
+        }
+      ],
+      "Location": "2,4",
+      "Size": "134,31"
     }
   ],
   "BackgroundPictures": [
     {
-      "FitToBrowserWidth": true,
-      "FitToBrowserHeight": true,
-      "Repeat": true,
-      "Name": "515397b3-ef9b-4f31-a45b-aa3c3ce18665",
-      "DisplayName": "背景图1",
-      "ForguncyPictureName": "PCMasterBackground",
-      "ForguncyPictureSourceType": 2,
-      "Stretch": 2,
-      "Size": "200,210"
-    },
-    {
-      "Name": "d7fb6181-e71a-4167-8b3d-6a2865f62b2a",
-      "DisplayName": "背景图2",
-      "ForguncyPictureName": "PCMasterBanner",
-      "ForguncyPictureSourceType": 2,
-      "Stretch": 3,
-      "Size": "1280,100"
+      "Name": "f498a222-50ea-498b-9d4e-7cb26d4ac44c.png",
+      "DisplayName": "背景图3",
+      "StyleInfo": {
+        "Fill": "Accent 1 -25"
+      },
+      "IsAutomaticFill": false,
+      "Size": "1280,0"
     }
   ]
-}//SFBoiXScxGSE1NQFlsjWM6NlZKUm8NyDx7+QJZe2EDsQtuam+Bcgd/AWLzurmO+dwHfUsf/8hqGrIT+FTcUum0lsHcZLtuX01rd7RMMhdeWChWc+CO1y5WpyXDFakrpXkzpRb7vQgo+i65GfbGMmlV4lQVS21/XRqDRF4fMU/j9c2K33612fFgvsy+SYBnKZZk6G7td39xXOp7iDh+lIbQm9xyhtsdf2E7mbwQum3DHoO6MCjMU9mAqkWgwDZkvq06R31Sx++yN/tWQmG14lqBfYrpaxpw8XTgZegCCi3OfbOh6E990FOKFKMgTTdLPGXMagfgqfqr2j59Qw9JDE0WCHyD+7rt6RXYbjCyIQ3RL3Z8pLI4hx4zjV7/BDJRoc5tD7WrujuAM3juLKpTXLZiN0iUAkqfAtjx6kB7xzMBO+pQH0aCpbXRU0jPpelxAxqEUWUyT0mo/Ys6eVQfYYJLUbFasiNEh8Rm9N5NSzsQpGqp79lIC5NeopvGDsUHXYSh+yS4w9buL4wS0pjqtjia6CURQEj+oF1bDCdwDmQGY5P6xxfd8iZQjma5oH4PMKyV8/tJFKZTJxwSj6tlvHt96X+gAPm0LVUD5F5OUZkC5dCeAVBGdLOWk6qFf5C4eDpWCZgD9IS8OWEqETmjyZNSD/J2clQlb5p/5JFXlUmq+UmPjID5qrs3K6cM0XGET1eR6jnqNMtTTOuFxfqIK5f3tUnHmxg8ElHiFuAGrn94mrEj++xWnkScK5ClD6B+giCLWg2wKxpKIqB2yH/Vb5jQjGGY5go8bNbH3qh2g9HRSxcDRsueOkrzNmYIUtd52T2ExtgC3xf9A+Qdx9IP0lOmGczxJ9JHwx461bL8feKgS1sfHTJNUZYfIftajbWK+O/HuQY9OEL7+O7K9b5qpwdw==|920
+}//TXUEcHMdeghPhbuCgQnd5k4BMNTKbSv1kBO/Hda/XnbKvxjjOEtudNl/HwA4qjANm9tCyxuNFtfRDrCUonuGqvBHQ5fd06s0wXzVR4ldoCGXjVBKyio4FB3nBdijXkv4RjUKn283iIkkLvoOLrIosg/fXcRKpGz3ovToUU4Kp0BJDTiXOJDLJRCOJGAMsipWneG7nARVHy/Yrn1IfzOMngg6iQoueex/CzKHITx9mpqfCqr7p0i1ZrRrBe/FhXz4IcSo0jPVVV0Ufr9PLIriwn2nFY8cX89jLErdo8vqTB3SHYi6x/Tv1S2gcYoMzTJ4vYcW61KED35l3YzyA8LODe0LRgXSMaisa9CCnQWKMhjTqrA1DYpxFQLoF/X/zf0W54/2SPnBg7jPzrcbJOYHOj7/CalwLtPw9CgAUATUqWDuy+YHowvc1Ta84FCIiOmDzGbsskUbWxiOH/ME3p86RNDj5sOE+cCyn9WbflJvapnvHBCsLs7Kng+Pr7t4aMokaOl8E5RCrw0CaCXE2Aq3iJDdU4P/oaSf1j/L0PPGuzrAeMoAxyw7icnjPnYM8RStmY4PsmW/Iq8QG4ibDUzPQz/s/khZzoiolPJGrrnQXx1RN+Zb/IQtiUpR0VtFpq1YNIRD+/WVZ2M80cy0mUCJCsiIexqcFfQMH3YzruZ77CGgVY7e1kd/ssMuMomE6UuMqQfzSkWAX3/+SZTXhv3qlwC0qIB3BlE51REz9VPKGjzEkqSNpHMwRfAPRyRZzBG0mr17dsiRIv/imIBQYpLDZN69LqZY7OmLRJMocTN0spJl44u9KPvL2Y/OjqlCvJKNghv2saZA5HyiKsJ8m74Sun6DyaebsCKzcjyJqbtFP+d0Air5FJP6ulXVcwqWLUqtg9QhYUpaf136Gd5/S+wqrA==|920

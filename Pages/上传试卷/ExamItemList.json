@@ -1,0 +1,210 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      }
+    },
+    "Count": 10
+  },
+  "Cols": {
+    "Count": 34
+  },
+  "Values": {
+    "1,2": "考试名称：",
+    "1,19": "考试编号："
+  },
+  "AttachInfos": {
+    "1,7": {
+      "CellType": {
+        "$type": "ElementUI.InputCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "resize": "none",
+        "ReadOnly": true
+      }
+    },
+    "1,24": {
+      "CellType": {
+        "$type": "ElementUI.InputCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "type": "text",
+        "resize": "none",
+        "ReadOnly": true
+      }
+    },
+    "3,2": {
+      "CellType": {
+        "$type": "ElementUI.TableCellType, ElementUI",
+        "ElTableName": "EL表格1",
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "exam_item",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "exam_item",
+                "ColumnName": "题目编号",
+                "GUID": "814c692d-2b94-4f55-951e-5c252ea057fb"
+              },
+              "ColumnName": "题目编号"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam_item",
+                "ColumnName": "题目编号",
+                "GUID": "28a21092-0869-4e6b-a1c3-1b6dc14461a3",
+                "RelationBinding": {
+                  "RelatedTable": "题库",
+                  "RelatedColumn": "题号",
+                  "DisplayColumn": "题目名称"
+                }
+              },
+              "ColumnName": "题目名称"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam_item",
+                "ColumnName": "阅卷老师",
+                "GUID": "e69482a7-29cb-4385-96bf-953d515d1957"
+              },
+              "ColumnName": "阅卷老师"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "exam_item",
+              "ColumnName": "exam_ID",
+              "GUID": "d7f66638-65b7-4d03-9678-0d9d60676d58"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamItemList!Y2"
+            }
+          }
+        },
+        "columns": [],
+        "actionButtons": [
+          {
+            "$type": "ElementUI.ActionButton, ElementUI",
+            "type": "button",
+            "Name": "编辑",
+            "shape": "default"
+          },
+          {
+            "$type": "ElementUI.ActionButton, ElementUI",
+            "type": "button",
+            "Name": "删除",
+            "styleType": "Accent 5",
+            "shape": "default"
+          }
+        ],
+        "sumText": "合计",
+        "size": "default",
+        "emptyText": "暂无数据"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "1,14": 0,
+      "1,15": 0,
+      "1,16": 0,
+      "3,2": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,2,1,4",
+    "1,7,1,10",
+    "1,24,1,8",
+    "3,2,6,30"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "题目信息",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//T6PK1K84x2OMzPhDUPn98WkYPrdiE1IAfTRqyU1lvVlprzGaN99s1uFNwYJKaa9fbS/6driTsGUWfGXuZbKzRVyCw+zOlxnbCkYZFO/jt1LKqfDkDf1PIXX4RBS6hqcKnQsZCsUIYSEtD1i/84FbfLbYWDFKFPpGf646hlYiizrcxwNBiopTWhsiw8IAhPMV9auUwAKZ03emJpWoHzCmEGm+YYmxcfPN1wFFTTZ+9LLKMedLD3tvkv/gLmmm7cO4Ug0Q4E3MBhaLxe8J/hZusNmfjMo81wfjss/0CZ3YUy/n5RVA8hpOH3Or2aOaR6eDbguIJeNHVhhM2ujUMtZbYNy7fNK245/gU2C5ZaQG4q5A5tx2Xswzxj+MkrfBZO/dU4WeT/i7spD4WQJ3spB7gwKaxdJnpGGyyEQTRltP5BRjmVhqqDENTywFIGjQfqTF9IeYoAPvIIiYD47dG0S6u2S0Cj0caMF0Ed49drSqbUQjyYgb5H9yOTSmoshq0Jwj+RsI4rSz3Rm5cUmqLuYzcnt2glQfViRSg55gZyCCcVUHtPF3ehe4PsDf5VnYa5w06i8LxSSvhhl2iEB6hLli6vKUwCtzFve6AAWuilCHSQsfqwZhG5NSEETh4XsmkJrYkE2OXmEVpNjb5mq59/athPW9TSODtzDVaQpQJFAVxJhnZTFPkTria8L6gDOtQEWtPE4W0RrrFwfAzd0gBxsrxpXltyLNN0VPMZUOeyOTyN+or/acKCyvh7lsgAosmIO5d8J6bSmLWqEZPMkvfRnnjHm0XygRr10cqbolLd5KTP2eu3g6majQ7amEqu3ncHqa2dMiwPvB029GDQooV00DgaVmkMhuGFTU5cOh8Q95Vwm+L4wvztNGpQNmW6LKt4UQq1lGyY1wfWS+cPrjcA/Dmg==|920

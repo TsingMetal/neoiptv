@@ -180,7 +180,7 @@
               ],
               "RelationType": 1
             },
-            "ID": "3ebfa69591104db4b4e7e111f60d6852"
+            "ID": "5e74972dcaa94070bd25d428dfd176b1"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -211,7 +211,7 @@
                     }
                   }
                 ],
-                "ID": "50a02ed0-cd37-4f02-b4b3-355393064203"
+                "ID": "73589a06-852b-4cba-a583-3ea6091ade39"
               },
               {
                 "CommandList": [
@@ -227,7 +227,7 @@
                     }
                   }
                 ],
-                "ID": "b1814d61-bc6e-42a7-b077-75729c983cba"
+                "ID": "86333976-7bde-4348-9f4b-3be0fa7e6a36"
               }
             ]
           }
@@ -262,7 +262,7 @@
                     "MessageFormula": "至少选择一条数据"
                   }
                 ],
-                "ID": "4d009cf6-5076-4243-9918-5adc1a4a349c"
+                "ID": "279a150d-4b28-41a8-8122-fcbe8c7b5ec1"
               },
               {
                 "CommandList": [
@@ -308,7 +308,7 @@
                     "CheckDataValidation": true
                   }
                 ],
-                "ID": "b68b9230-afb2-4714-bc04-08a5f3519276"
+                "ID": "63ae6513-eabf-4fd3-82e8-1d0063fb68bb"
               }
             ]
           }
@@ -351,6 +351,15 @@
                 "GUID": "c1bd2297-2dc4-46aa-9090-18dcd33f0c58"
               },
               "Value": "%Null%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "阅卷表",
+                "ColumnName": "状态",
+                "GUID": "a3a498ca-71ae-4cba-8fee-172d91593dd8"
+              },
+              "Value": "1"
             }
           ]
         },
@@ -919,7 +928,7 @@
                 }
               }
             ],
-            "ID": "a5bb4c98-8019-4f49-9754-b417a1dba9f5"
+            "ID": "e06a21c8-358a-43fc-8fb9-74ada45f23b9"
           }
         ]
       }
@@ -946,4 +955,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//bWMVb3UDoDCdpHBT7VIl7Qbjr4cthYPH8Uxgzm23k34omAHre7Fkv9KJ6/wLVEJnX2olDpP/9SxMLMRkUmWckss24XljTLiM0Uv7Oto42hGfRHJ7pS/QWZDSWAHpxBIGySdSQ96XeJzEXiQzIBsx6ooX5rsbNN//JMI5P8dQjsOWBFnJICH5pvTUZqrHX/GOvImtCxRiJE7kYyBdc9kpdQzgsNlk8d9fWqScmmXtBdzXOAM0Ic2jbFljhqUhUagw88fp1ZXJC5KPpsgyIoRtY2SY+2YoR0mHHZsOQG3ErydNvHPaxbxtzfyGJXrTVh9iY5YWdElCqvPuSHrnS2rg8Fjw8hw/mPPxG7X04lHS8foeMgG+OapS8zSxpRrpwPpx6blr5K8Z8DDCb8EWjMNcUfEbZGxBP+1NwCbmOKkyI4jFFJ52N84z6MH2oKeqp1OLf7Qy33fPVgdMH1SAS3zbtPer+sbZfEGH+JaRz229/4QS+53VabI/7CpOvOhAU61HAqNVWfcACzTBZFSrV2Oium5duhXti8pyD1Je0vU7CEo84YsiwFmwdWxtM4b3IqYzkKayO4/1nbA1DoaQz9NIDdg6xGPE5btsRmPzqhiyDrAazphAlXQtOLdaFPeNQZlQP9wYxkkyPEhKkxSMDuSwP4ShBXZcZK/ecCSiWCFdGQehEGHfvCNATMQUpMPYT1ygb9cgI31pjG/7xC1/eGYyW8gZtMB77QDEB/6wDqPmw1K8o1vQKWjcgEFfrkjP2JB4uHWbXf+y/cXICeaWKFxPRNhj2axsTjI+8B02ZfyanHVD3gCrNwTe8kTEdBxVm4MW3jpUCAQ2t+SlU9QkhBoo5GGyWsBsqLFwxGuEZf9jE75kxrgV2BvDxgyUVo+3ja6HgPMo0NKV5fcn4yMZSLoi9Q==|920
+}//FEUVYrTzwTM2G1J9yIJkQCvEfGl7Da5/kuMKhL9RpsJc1MhrBMuEUqOrb1EaBYOLt1Al5AYhQuW8qfV0/xiwcPh1oP8EbuWVDbDtztp8bHVIqgxPdnkOwiXtH+euSMdN1D168B/35ieNja+ewmugfyAZjZo+Cx9kRa8zvXBZsRzFmhekGfRmzFaQ1mJjl26jBstKq6tRKiaapF5ZjPqEMM78sU4zSbVN2Kmb387Z5V4nZ2TDB6a4vivGKcJ57d1z+hKj+Yc3eA4SV2MHcZMtfjPJkqJ8OpKbV5ftNaW8DdnQKU05R5f+cg9SahLFGJLS2bJ00lZ4t3AOVW1waz5ncNkRzy0A3z28dEh//9WsIqXhhExkgirTroTd83HDQppYCFP21Bz9cHcyLIk+4oYy93YSRysWMOmbIAVINcBRQvXzoV2R+PlQBsrVPr2lm3WLUwgpVvJXYKN05x4e0gyP2NdWUw0GvqvclkYM9076xVdI2cHpgGbJT/7KKXPDWrDAguE/EV0knpD+TEC1SiT+uTJUnnzp1BSPdNdLi3jVqxz6cAziMbJCH1MZF0qDPXxXvOV9yEFm+woJ1nbfT81X/EdL/wiJY6JXLAZRLkOv92+LimletS2CxzWerfJvsEbBE9mim349D8QmQIgtPds8ZCJu76ROWCAXfEbx9zzLP9GnLSyy+jP07R8FnHRoyjrBaxi6bGs3HdOiSQRnlHa5wsPYckH1Wsxry8HoolZfoSBF9/jUE/0ybJzxGlQZGZzDi/PUvVGh/TLds0GeRMJh0hU71JBdccSAWb2EGDumiwH2PD0pDPQI71GOhKHr01HVibkIQtw0Wc2MVNTEtMxKfDkx/kQyHDEGe+1aoMKIlIrxYShBrtv+nsgNmvsGvUC3CnH++lCasFDzYSw9lzTpww==|920

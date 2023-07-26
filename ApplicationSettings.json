@@ -3,11 +3,16 @@
     "Password": "hQd@jC9dM1o7"
   },
   "ListviewLoadingIndicatorSettings": {},
-  "GlobalProperties": [],
+  "GlobalProperties": [
+    {
+      "Name": "是否测试环境",
+      "Value": "0"
+    }
+  ],
   "WebSitePort": 61362,
   "UserServicePort": 27919,
   "NotAllowQueryDatabaseByJsApi": false,
-  "StartPage": "测试",
+  "StartPage": "index",
   "TableSheetPageSize": 100,
   "StartDateFiscalYear": 1,
   "CellTypeSpinInfos": [

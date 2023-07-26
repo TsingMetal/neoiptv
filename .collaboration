@@ -139,14 +139,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/小测上传列表",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/请批量选择小测题卡进行上传",
-    "ModuleType": 1
-  },
-  {
     "ModuleName": "Pages/题库管理",
     "ModuleType": 6
   },
@@ -201,10 +193,6 @@
   {
     "ModuleName": "MasterPCPage/FGC_母版页",
     "ModuleType": 3
-  },
-  {
-    "ModuleName": "ServerCommand/uploadFiveExam",
-    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/uploadOneExam",
@@ -331,10 +319,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/Exam4Upload",
-    "ModuleType": 1
-  },
-  {
     "ModuleName": "PCPage/QRCode",
     "ModuleType": 1
   },
@@ -368,10 +352,6 @@
   },
   {
     "ModuleName": "PCPage/QuestionDetail",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/Exam4List",
     "ModuleType": 1
   },
   {
@@ -446,10 +426,6 @@
     "ModuleType": 36
   },
   {
-    "ModuleName": "ShareCommandContainer/批量删除确认",
-    "ModuleType": 36
-  },
-  {
     "ModuleName": "PCPage/EditExam",
     "ModuleType": 1
   },
@@ -460,5 +436,272 @@
   {
     "ModuleName": "PCPage/ExamDetail",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Table/exam",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/exam_item",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "ServerCommand/uploadFourExam",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/uploadFiveExam",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "PCPage/ExamUpload",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Table/exam_type",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "ServerCommand/uploadExamTrasaction",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "PCPage/chooseExamType",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/ExamItemList",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Image/资源 10.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/资源 12.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "PCPage/ExamList",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/document",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/操作文档",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/yj_login",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/welcome",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/操作文档/客服老师",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/kf_login",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/student_man",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/exam_upload",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Image/kf_login.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/kf_login2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/student_man1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/student_man2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/student_man3.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "PCPage/scanner_setting",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Image/exam_upload1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/exam_upload2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/exam_upload3.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/exam_upload4.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanner_install1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanner_install2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanner_install3.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanner_setting1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanner_setting2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanner_setting3.jpg",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanner_setting4.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanner_setting5.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanning1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanning2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanning3.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/scanning4.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Pages/操作文档/阅卷老师",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "Image/yj_login2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "PCPage/revise_exam",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Image/revise1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/revise2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/revise3.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/revise4.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/view1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "PCPage/student_query",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Image/query1-1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/r_arrow.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/query1-2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/query2-1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/query2-2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/query3-1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/query3-2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Pages/操作文档/题库管理员",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/tk_login",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/add_item",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Image/item_man1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/itme_add1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/itme_add2.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/item_edit1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/item_del1.png",
+    "ModuleType": 38
   }
 ]

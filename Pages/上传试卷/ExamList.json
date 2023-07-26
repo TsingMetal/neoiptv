@@ -1,0 +1,838 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 3.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      29
+    ],
+    "Count": 30
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 60
+  },
+  "Values": {
+    "0,50": "上传题卡",
+    "29,0": "考试类型：",
+    "29,9": "选择行考试ID：",
+    "29,20": "删除行考试ID：",
+    "29,27": "-1"
+  },
+  "AttachInfos": {
+    "0,50": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamList!F30"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "Placement": {
+              "SerializeProperty": "=ExamList!AY1"
+            },
+            "PageName": "chooseExamType",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamList!F30"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=chooseExamType!F6"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true,
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "上传题卡",
+        "TemplateKey": "_RS_Minor1",
+        "Icon": {
+          "Name": "Arrow/338_upload_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,0": {
+      "CellType": {
+        "$type": "ElementUI.TableCellType, ElementUI",
+        "ElTableName": "EL表格1",
+        "RowClickCommand": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+              "PopupDisplayMode": 2,
+              "Placement": {
+                "SerializeProperty": "=ExamList!考试列表"
+              },
+              "PageName": "ExamItemList",
+              "PassValues": [
+                {
+                  "Source": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamList!行数据.考试名称"
+                  },
+                  "TargetCell": {
+                    "SerializeProperty": "=ExamItemList!H2"
+                  }
+                },
+                {
+                  "Source": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamList!行数据.ID"
+                  },
+                  "TargetCell": {
+                    "SerializeProperty": "=ExamItemList!Y2"
+                  }
+                }
+              ]
+            }
+          ],
+          "ParamProperties": {
+            "dataRow": "行数据",
+            "ID0": "行数据.ID",
+            "考试名称1": "行数据.考试名称",
+            "班级2": "行数据.班级",
+            "考试类型3": "行数据.考试类型",
+            "创建者4": "行数据.创建者",
+            "创建日期5": "行数据.创建日期"
+          }
+        },
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "exam",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "ID",
+                "GUID": "466cc0b3-e5ee-4dbd-b0d4-443056f6ade2"
+              },
+              "ColumnName": "ID"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "exam_name",
+                "GUID": "4d7d6f97-1940-447a-b4da-51287a802071"
+              },
+              "ColumnName": "考试名称"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "class_name",
+                "GUID": "2f19ceed-c53f-4790-9a7c-6d7957608a2b"
+              },
+              "ColumnName": "班级"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "exam_type",
+                "GUID": "41b3dc98-5690-4edb-8fc0-d0cc69f3bb96",
+                "RelationBinding": {
+                  "RelatedTable": "exam_type",
+                  "RelatedColumn": "exam_type_id",
+                  "DisplayColumn": "exam_type"
+                }
+              },
+              "ColumnName": "考试类型"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "FGC_Creator",
+                "GUID": "38afcc5b-0c26-457e-bce6-b014a91aaebf"
+              },
+              "ColumnName": "创建者"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "exam",
+                "ColumnName": "FGC_CreateDate",
+                "GUID": "369a6729-cca6-43b9-81aa-ab289c9cdc5e"
+              },
+              "ColumnName": "创建日期"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 1,
+            "ColumnBindingInfo": {
+              "TableName": "exam",
+              "ColumnName": "ID",
+              "GUID": "50866c73-40f9-4302-9113-d886e224a278"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!AB30"
+            }
+          },
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "exam",
+                  "ColumnName": "ID",
+                  "GUID": "831f90b2-ead4-4adc-aec4-e0104febf00b"
+                },
+                "Order": 1
+              }
+            ]
+          }
+        },
+        "columns": [],
+        "showActionButtons": true,
+        "actionButtons": [
+          {
+            "$type": "ElementUI.ActionButton, ElementUI",
+            "type": "button",
+            "Name": "删除",
+            "styleType": "Accent 3 60",
+            "shape": "default",
+            "Commands": {
+              "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+              "Commands": [
+                {
+                  "$type": "JsonDataSource.SetJsonDataToCellCommand, JsonDataSource",
+                  "CellInfos": [
+                    {
+                      "Cell": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ExamList!Q30"
+                      },
+                      "PropertyName": "ID"
+                    }
+                  ],
+                  "SourceCell": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ExamList!行数据"
+                  },
+                  "JsonPath": "",
+                  "SampleJson": "{ \"ID\": 23, \"考试名称\": \"省考试卷一\", \"班级\": \"遵义1.28省笔刷题一期\", \"考试类型\": \"申论五题\", \"创建者\": \"管伟\", \"创建日期\": 45118.63386086805 }"
+                },
+                {
+                  "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                  "Title": "删除",
+                  "Message": "确认删除？",
+                  "Type": "none",
+                  "ConfirmButtonText": "确定",
+                  "ShowCancelButton": true,
+                  "CancelButtonText": "取消",
+                  "DialogResult": "确认结果",
+                  "AdvancedSettings": {}
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=ExamList!确认结果"
+                            }
+                          ]
+                        },
+                        "value": "confirm"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "exam",
+                          "UpdateType": "delete",
+                          "ShowConfirm": false,
+                          "ReloadAfterSucceed": false,
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "exam",
+                              "ColumnName": "ID",
+                              "GUID": "c6667fa5-5cea-4ee9-ae0a-4bce77b16b39"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=ExamList!Q30"
+                            }
+                          },
+                          "NextUpdateDataTableCommand": {
+                            "TableName": "exam_item",
+                            "UpdateType": "delete",
+                            "ShowConfirm": false,
+                            "ReloadAfterSucceed": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "exam_item",
+                                "ColumnName": "exam_ID",
+                                "GUID": "6551dde7-9e31-4c65-83fe-58124b1cfcf2"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=ExamList!Q30"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                          "Message": "删除成功",
+                          "Type": "success",
+                          "Duration": 3000,
+                          "Offset": null
+                        },
+                        {
+                          "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                          "TargetPageElement": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=ExamList!A4"
+                          },
+                          "TargetType": "ElementUI.TableCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
+                          "MethodName": "ResetTable",
+                          "ParameterValues": {
+                            "clearSort": true,
+                            "clearFilter": true
+                          },
+                          "Disabled": true
+                        },
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=ExamList!AB30"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=ExamList!Q30"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "807c7334-1707-48a8-9968-4e6ebc08a962"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "dataRow": "行数据"
+              }
+            }
+          }
+        ],
+        "sumText": "合计",
+        "size": "large",
+        "emptyText": "暂无数据",
+        "highlightCurrentRow": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.DateOccurringRule, ServerDesignerCommon",
+            "StyleInfo": {
+              "Foreground": "#FF00B050",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.DateOccurringRule, ServerDesignerCommon",
+            "StyleInfo": {
+              "Background": "#FF90EE90",
+              "Foreground": "#FF006400"
+            }
+          }
+        ]
+      }
+    },
+    "26,0": {
+      "CellType": {
+        "$type": "ElementUI.CellTypes.PaginationCellType, ElementUI",
+        "AttachElementTable": true,
+        "ElementTableName": "EL表格1",
+        "pagerCount": 7,
+        "layout": [
+          {
+            "layoutItem": "prev"
+          },
+          {
+            "layoutItem": "pager"
+          },
+          {
+            "layoutItem": "next"
+          },
+          {
+            "layoutItem": "jumper"
+          },
+          {
+            "layoutItem": "->"
+          },
+          {
+            "layoutItem": "total"
+          }
+        ],
+        "pageSizes": [
+          {},
+          {
+            "value": 20
+          },
+          {
+            "value": 30
+          },
+          {
+            "value": 40
+          },
+          {
+            "value": 50
+          },
+          {
+            "value": 100
+          }
+        ]
+      }
+    },
+    "29,5": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 3,
+            "DrawerDirection": 3,
+            "PageName": "ExamUpload",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExamList!F30"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=ExamUpload!AB6"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "29,27": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CellDefaultValue": "-1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0
+      },
+      {
+        "FontWeight": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "@",
+        "Background 1 -5"
+      ]
+    },
+    "CellStyles": {
+      "0,50": 0,
+      "1,1": 1,
+      "26,0": 2,
+      "26,1": 2,
+      "26,2": 2,
+      "26,3": 2,
+      "26,4": 2,
+      "26,5": 2,
+      "26,6": 2,
+      "26,7": 2,
+      "26,8": 2,
+      "26,9": 2,
+      "26,10": 2,
+      "26,11": 2,
+      "26,12": 2,
+      "26,13": 2,
+      "26,14": 2,
+      "26,15": 2,
+      "26,16": 2,
+      "26,17": 2,
+      "26,18": 2,
+      "26,19": 2,
+      "26,20": 2,
+      "26,21": 2,
+      "26,22": 2,
+      "26,23": 2,
+      "26,24": 2,
+      "26,25": 2,
+      "26,26": 2,
+      "26,27": 2,
+      "26,28": 2,
+      "26,29": 2,
+      "26,30": 2,
+      "26,31": 2,
+      "26,32": 2,
+      "26,33": 2,
+      "26,34": 2,
+      "26,35": 2,
+      "26,36": 2,
+      "26,37": 2,
+      "26,38": 2,
+      "26,39": 2,
+      "26,40": 2,
+      "26,41": 2,
+      "26,42": 2,
+      "26,43": 2,
+      "26,44": 2,
+      "26,45": 2,
+      "26,46": 2,
+      "26,47": 2,
+      "26,48": 2,
+      "26,49": 2,
+      "26,50": 2,
+      "26,51": 2,
+      "26,52": 2,
+      "26,53": 2,
+      "26,54": 2,
+      "26,55": 2,
+      "26,56": 2,
+      "26,57": 2,
+      "26,58": 2,
+      "26,59": 2,
+      "27,0": 2,
+      "27,1": 2,
+      "27,2": 2,
+      "27,3": 2,
+      "27,4": 2,
+      "27,5": 2,
+      "27,6": 2,
+      "27,7": 2,
+      "27,8": 2,
+      "27,9": 2,
+      "27,10": 2,
+      "27,11": 2,
+      "27,12": 2,
+      "27,13": 2,
+      "27,14": 2,
+      "27,15": 2,
+      "27,16": 2,
+      "27,17": 2,
+      "27,18": 2,
+      "27,19": 2,
+      "27,20": 2,
+      "27,21": 2,
+      "27,22": 2,
+      "27,23": 2,
+      "27,24": 2,
+      "27,25": 2,
+      "27,26": 2,
+      "27,27": 2,
+      "27,28": 2,
+      "27,29": 2,
+      "27,30": 2,
+      "27,31": 2,
+      "27,32": 2,
+      "27,33": 2,
+      "27,34": 2,
+      "27,35": 2,
+      "27,36": 2,
+      "27,37": 2,
+      "27,38": 2,
+      "27,39": 2,
+      "27,40": 2,
+      "27,41": 2,
+      "27,42": 2,
+      "27,43": 2,
+      "27,44": 2,
+      "27,45": 2,
+      "27,46": 2,
+      "27,47": 2,
+      "27,48": 2,
+      "27,49": 2,
+      "27,50": 2,
+      "27,51": 2,
+      "27,52": 2,
+      "27,53": 2,
+      "27,54": 2,
+      "27,55": 2,
+      "27,56": 2,
+      "27,57": 2,
+      "27,58": 2,
+      "27,59": 2,
+      "28,14": 2,
+      "28,15": 2,
+      "28,16": 2,
+      "28,17": 2,
+      "28,18": 2,
+      "28,19": 2,
+      "28,20": 2,
+      "28,21": 2,
+      "29,0": 2,
+      "29,1": 2,
+      "29,2": 2,
+      "29,3": 2,
+      "29,4": 2,
+      "29,5": 2,
+      "29,6": 2,
+      "29,7": 2,
+      "29,8": 2,
+      "29,9": 2,
+      "29,15": 2,
+      "29,16": 2,
+      "29,18": 2,
+      "29,19": 2,
+      "29,20": 2,
+      "29,26": 2,
+      "29,27": 3,
+      "29,29": 2,
+      "29,30": 2,
+      "29,31": 2,
+      "29,32": 2,
+      "29,33": 2,
+      "29,34": 2,
+      "29,35": 2,
+      "29,36": 2,
+      "29,37": 2,
+      "29,38": 2,
+      "29,39": 2,
+      "29,40": 2,
+      "29,41": 2,
+      "29,42": 2,
+      "29,43": 2,
+      "29,44": 2,
+      "29,45": 2,
+      "29,46": 2,
+      "29,47": 2,
+      "29,48": 2,
+      "29,49": 2,
+      "29,50": 2,
+      "29,51": 2,
+      "29,52": 2,
+      "29,53": 2,
+      "29,54": 2,
+      "29,55": 2,
+      "29,56": 2,
+      "29,57": 2,
+      "29,58": 2,
+      "29,59": 2
+    },
+    "RowStyles": {
+      "2": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,50,2,9",
+    "29,0,1,4",
+    "29,5,1,2",
+    "26,0,2,60",
+    "3,0,22,60",
+    "29,9,1,6",
+    "29,16,1,2",
+    "29,20,1,6",
+    "29,27,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "PC模板页",
+    "Title": "试卷列表",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+        "ShareCommandContainerRefer": {
+          "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+        },
+        "Params": [
+          {
+            "ParamReferObject": {
+              "ParamID": "68441817-fd50-4382-a4f0-d0e3a20ffb2a",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!P30"
+            }
+          },
+          {
+            "ParamReferObject": {
+              "ParamID": "c4f65294-d985-40aa-9b44-8816854dd407",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!P30"
+            }
+          },
+          {
+            "ParamReferObject": {
+              "ParamID": "81da0e53-cfb2-4b01-b2eb-53b5184517aa",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!6:14"
+            }
+          },
+          {
+            "ParamReferObject": {
+              "ParamID": "eaf56485-a8a2-4f05-a8f8-a19e4394dd96",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "924fe2f9-0eb4-4cd0-9e1d-368e28902528"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExamList!AD30"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+        "TargetPageElement": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=ExamList!A4"
+        },
+        "TargetType": "ElementUI.TableCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
+        "MethodName": "SetTableColumnSetting",
+        "ParameterValues": {
+          "dataColumnName": "创建日期",
+          "columnSetting": {
+            "$type": "ElementUI.ColumnSettingBase, ElementUI",
+            "formatStr": "yyyy/MM/dd",
+            "align": "left",
+            "headerAlign": "center",
+            "key": "f9b94b96-4953-4aa4-8c9a-25afc0600f66"
+          }
+        },
+        "Comments": "格式化时间展示"
+      },
+      {
+        "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+        "TargetPageElement": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=ExamList!A4"
+        },
+        "TargetType": "ElementUI.TableCellType, ElementUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e50995ee76bfe560",
+        "MethodName": "SetTableColumnSetting",
+        "ParameterValues": {
+          "dataColumnName": "ID",
+          "columnSetting": {
+            "$type": "ElementUI.ColumnSettingBase, ElementUI",
+            "label": "考试编号",
+            "align": "left",
+            "headerAlign": "center",
+            "key": "41cd490b-35f0-40ce-bbc2-7db6b49ee90e"
+          }
+        }
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "考试列表",
+      "Formula": "ExamList!$A$4"
+    }
+  ]
+}//7veYbIjwSFRMYjKu7wEuf7hMMoLOloCXlbC6pm1FgpNqzpujrP9dnrfM3Hq66kx82MxwW4KrlMVLNUw48hhXRGUiEzr9wiDhkcrKyMbzrt9zIJg406oXkl2DMbAClv8+tj+UrUj3ovkq5kKJ9EX9YHL7lHPH+4f6kfNDdSggGzAu+UAZWt3DdB1t9PC06l0V978zWOfgvBnht/jRKFEWK2UF/2zsusqSjZWQdSClnlGe+IkPR4W5aVr6T9jCe79AVM9XTsvBOPIhErZEQOfg+A+kv1pD+Ff1G8PLnWEShojx/xqwhmYvXw+TtAm41sVLkyAl3qdldQYrQR1KK5o9l5E6H07e9+uy9ExymI6Ftu7LPgGMExngcnb2y0C+i3odPtnwpIfY36ixQ2fJXb+srTOhSAwA5d7WW1wv4rrTcqfGtMEUzi+Yh3p3u9LMA4IbSSYZFn1ZTEZoYSw4VQkfTusGlE3dGTEk803dy/xgDDUMOjgX1YPeurMlNayAQe8JJP1QYtpqQKMhoHI3sdP43F6OWqz8zwr7pI5UIjgpn+ezmww8rs/VL3fxjazOSlJLQqHjdpntYSyGFT4uDjo0G4hGCcHCYOK8rM2ldz9c6EICbyaVA7sggrvZiWqxq37o5iWEZbiMDGafReHruG43aPuMZhIk1IrZd8RJVJkOoLt6qYdneKQb1LoMLEf3nBeaT3wjDR3IW9Sl0tL9UUyw64ucY6vdlcsqev1XLcbkMqd2zCXS15xPgHnJhO5qPoxWbxtOdlfYUxHZxNyUW2d7YSyV7K1TV5F/1KlVGxqGHDyBepq2VzvdxW9cSCO2js0TMZjg8K6RqFm14nNEbp0A2dxcffIqKici5rfblMGLgcGRC/Y2Pi3tTWoW61vVpkeJiPp1Np+9cbR9gnqd32ReyQ==|920

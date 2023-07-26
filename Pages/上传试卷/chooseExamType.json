@@ -1,0 +1,218 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 3.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      5
+    ],
+    "Count": 6,
+    "DefaultSize": 5.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 10
+  },
+  "Values": {
+    "1,1": "选择考试类型：",
+    "5,1": "考试类型："
+  },
+  "Formulas": {
+    "5,5": "B4"
+  },
+  "AttachInfos": {
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 3,
+        "PrimaryColor": "#FF00B050",
+        "SecondaryColor": "#FF92D050",
+        "LayoutMode": 1,
+        "ItemSpace": 5,
+        "IsBounding": true,
+        "DataSource": "exam_type",
+        "ValueColumnBindingInfo": {
+          "TableName": "exam_type",
+          "ColumnName": "exam_type_id",
+          "GUID": "cb857599-1ee3-4dbd-bbc1-88a6a402546a"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "exam_type",
+          "ColumnName": "exam_type",
+          "GUID": "ce2f7cef-1707-4b71-ac26-8a6b40d1af94"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ]
+      },
+      "DataValidationInfo": {}
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontWeight": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "FontWeight": 3,
+        "Foreground": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontWeight": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontWeight": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -5",
+        "Body",
+        "Bold",
+        "Normal",
+        "Background 1 -50"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,9": 1,
+      "1,1": 2,
+      "1,9": 3,
+      "2,1": 4,
+      "2,2": 4,
+      "2,3": 4,
+      "2,4": 4,
+      "2,5": 4,
+      "2,6": 4,
+      "2,7": 4,
+      "2,8": 4,
+      "2,9": 3,
+      "3,0": 3,
+      "3,1": 4,
+      "3,9": 3,
+      "4,0": 3,
+      "4,1": 3,
+      "4,2": 3,
+      "4,3": 3,
+      "4,4": 3,
+      "4,5": 3,
+      "4,6": 3,
+      "4,7": 3,
+      "4,8": 3,
+      "4,9": 3,
+      "5,0": 3,
+      "5,5": 4,
+      "5,7": 3,
+      "5,8": 3,
+      "5,9": 3
+    },
+    "RowStyles": {
+      "0": 0,
+      "2": 0,
+      "4": 0
+    },
+    "ColStyles": {
+      "0": 0,
+      "9": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontWeight": 2
+    }
+  },
+  "Spans": [
+    "3,1,1,8",
+    "5,5,1,2",
+    "5,1,1,4",
+    "1,1,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//4+BFSNAX698cOp/rh8Xdqge+CdUzKpT3wUIJA2KW9u2ecxfYVTCUnY2PC4StovyQujkY3VgnYaxS7oQKk2/QOm/OQA/pkl5BI+QqOkIimEF/MTHUsjAyxmrW+x2PBsx0qK2E5ZWOmqdPZWP6DpAjjY0h7OihfycapkEEZFyTKcpNRYjDR9bQih3+ZIr8EL/tgeqfk89FOqt57MNewSJk9PLs9GwV92JN2M7q949kUgoEtELRxX0hvsm8TXHJhsBjZRyyW/NZF2beNcNUanofk8HpFdWGn1ibQCT9yg/0BZmXBanVianpgf1ciU2WPwPWquOF3ZfBAAq7s2P0BnbdFSE5Ct9SQ6O23FNQK2t37qBu29HQoC2+L/1HUuXszjEA9y2mX2AsE8HQwnqvgAD9SzcqJ46Kg5/bXUbzov2myBQewjp8ZrxpnHPIkODwjjmJvoijrmEQtyRK6LXS4uVNlE8ixMTUFbA0fJhySa2ISjfx4IcpL9/lSG5//x/DcMo++wIwC7dcCvj8Goh1hJlYUDZ1R9EzRo0VqaF1JQw7SmJFrH3kMw/PScTV6uLzQpuz1txcPlGu6/Yi/d/dxMyWo7SFasCx+L9APZgkks++Qp10VW9KEHD0hxRqET9rmry2FCaUJjPJDjDmC4zilQPGb347HfzmLYRQmejFWNeNJow6AoDoMJq32t2riqRhMYAV9RzVkt9GlaTmXK+TXr66MibrjNZP1Syeak7HAJu8MkBA6PcRC/5Tuyu5kReQQrEYi6g6jz3BmGJnrMjRGKYzAUXr/Qln7yDPzrAkx2FWv9cX8Ukoxo6fI3EdPyxqDrswbwhdoI46D3XCCpo5vwTiQ01udP4+gKPFayZvaiyfOYIqPgd3dp4j5mmuSdQ/XwI0tzX8C418cn3ps2kT+kDwHQ==|920

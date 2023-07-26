@@ -51,6 +51,14 @@
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=ids"
               }
+            },
+            {
+              "Name": "isDev",
+              "DataItemType": 0,
+              "Data": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=是否测试环境"
+              }
             }
           ]
         }
@@ -65,7 +73,8 @@
           "Type": "Content-Type",
           "Value": "application/json"
         }
-      ]
+      ],
+      "Timeout": 100.0
     }
   ],
   "ReturnProperties": [

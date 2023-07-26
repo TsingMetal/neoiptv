@@ -1,0 +1,112 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 200.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 200.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 41
+  },
+  "Cols": {
+    "Count": 61
+  },
+  "Values": {
+    "1,1": "客服老师负责学员考号的录入以及题卡上传。",
+    "2,1": "入口网址：https://wqianc.com/dashujiaoyu。",
+    "3,1": "输入账号、密码（账号和初始密码由账号管理员创建、提供）：",
+    "12,1": "登录成功进入到系统的首页页面："
+  },
+  "AttachInfos": {
+    "5,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImageSizeMode": 2,
+        "ImagePath": "kf_login.png"
+      }
+    },
+    "14,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "kf_login2.png"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "[AUTO]General",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "2,1": 0,
+      "3,1": 0,
+      "4,1": 0,
+      "5,1": 1,
+      "12,1": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "14,1,23,47",
+    "5,1,6,18"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//UL5M9xh1TVt3xN7QHeHonfbDt4ORz36AMaTR6hX8xO0REuyS0TY8xAgJvEv1+h9/1yVuXPwJLPwYSteQVh8A7qlmj3Bpewo5yDyNA+VHPB33ri8xzP7TOBE1Y06wDRnCy2QJJ0fqC5TziGO801WH7pzx0nsCBrBAe8ey5rwcYDJhzTzD+nsAQH2uewkPlroPHH7hGdPUVpU0lje3UZKhkut/saqiHIExFE+Bnz+cJ03cOv11VwGyNpB4/eXpxw6Z4phj7AQJCbJNI6s4HTsq2Bw21d1Y+x2ggSaSFWexo+xU93fIunYu7cM1UlKkfhdOJ3olnqRYrjsuPPA3LUP918lqfunxR/1g3HgufBp2YzFkAVunkgfHopxE+W2C2e0hFW8TPsg+ZXjceVLS8sO/hQ88wIlH9Uk2VBbCrXFwOMxDcZgq3rz4SKQsnFybZQvEXlozuF5tEri+XD0jfZaHdnnjnJ4Mb2RiNzVsjMPfHEK0InTVXsp2jDbuEya3pzGx24rRztEkTTMP0PGzPKBvknulHF9A2MH6KFeZ9j84wVny0XDqYc1Zrk6PJte06a03BSo5fXxfHtuCLaN7sEno6IFEgAff/shqCukG+GDDp7Ojuier/jOJDQOsBV5IbFeOCHUN3HmqX8RUCAkijqoc1nf7BKsk4syvZIZEkAo1UF5ce6aNj/QJ+YHeF9aWV9AbW9E+As10/xa29Z7pEXaDj2FUT26WgKAyb97jJGbW+Q30IooqFCAyGBcc3EAipMI3u9cID2Q4ix2xs5T36EaQhUfTkLiDrkbqHd1E1ceTZPYta/mBHqMdF8AJSOOPHcVKxvPQ5gxI0jtw/YlPy9ZuG7vGoOHeC7k/c8linMgPnuidXMDBt0deF0Nh8cTrjRsl7jUu3ot7gn5nTDWi05X66g==|920
