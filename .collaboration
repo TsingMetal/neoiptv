@@ -803,5 +803,15 @@
     },
     "LockDateTime": "2023-07-26T10:23:51.5039554+08:00",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "Pages/操作文档/题库管理员",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-26T10:31:46.6158897+08:00",
+    "ModuleType": 6
   }
 ]
