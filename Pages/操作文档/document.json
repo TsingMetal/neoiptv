@@ -93,15 +93,15 @@
                     ]
                   },
                   {
-                    "value": "view_exam",
-                    "label": "查看试卷",
+                    "value": "revise_exam",
+                    "label": "批改试卷",
                     "CanVisitRoleList": [
                       "FGC_Anonymous"
                     ]
                   },
                   {
-                    "value": "edit_view_exam",
-                    "label": "查看/修改已阅试卷",
+                    "value": "student_query",
+                    "label": "学员成绩查询指导",
                     "CanVisitRoleList": [
                       "FGC_Anonymous"
                     ]
@@ -120,7 +120,6 @@
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ],
-                "expend": true,
                 "children": [
                   {
                     "value": "kf_login",
@@ -157,7 +156,6 @@
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ],
-                "expend": true,
                 "children": [
                   {
                     "value": "tk_login",
@@ -168,21 +166,7 @@
                   },
                   {
                     "value": "add_item",
-                    "label": "添加题库",
-                    "CanVisitRoleList": [
-                      "FGC_Anonymous"
-                    ]
-                  },
-                  {
-                    "value": "edit_item",
-                    "label": "修改题库信息",
-                    "CanVisitRoleList": [
-                      "FGC_Anonymous"
-                    ]
-                  },
-                  {
-                    "value": "del_item",
-                    "label": "删除题库信息",
+                    "label": "题库管理",
                     "CanVisitRoleList": [
                       "FGC_Anonymous"
                     ]
@@ -198,7 +182,7 @@
                   "Color": "Text 1 0"
                 },
                 "CanVisitRoleList": [
-                  "FGC_Anonymous"
+                  "Administrator"
                 ],
                 "children": [
                   {
@@ -309,4 +293,4 @@
       "Formula": "document!$K$1"
     }
   ]
-}//J+Aq29ai8kYKeVRkOzXcJVv8FKI9ZrECcOfkwtNgRczH83+JGH2bJE1SIi1/5GV2WzZUkCQfEAD6W66qwoLNWLawahzrIEbsCSYTLSwJ/l/UsSKZ+JcfCRGvMy6Ent7um0UL/XNBWWP5QwVAUrIBWrfPoUDD9T+59YY0e/xPV2+zWWk/3X1epAmd/qgIFt3pCAKkXyrnsLWz1w7hZ6pSShDH7UqEtSmZtzXBZvNesPDTFBMYjHxWU0o7r4PmOaYicF5MypdlFJFd5Cg7dgIWEHmKBdhehpUcuXlhTq1B3qq5jms+FvlbqrP9EdSRlsm2n+D3CQxL/H2pL8PqM0nJdlB5u5mnYJi4GUJpamf+5s5AsullRsVsuaKim/akn0JIeScsFs3AiyFdTP6gSs4aEux+/JQuMtofvB4jDggsTgJciHgKpZeNUEtO3T4YRknMdW/gim1Vi9ccwiqzRyT6cCXsLJrbRpQb++BrWXJaUg634iqI+qYtXCeGXNBXnGoiKpPZSTW61IWIdAykL1Ff17xW9NA9Msi6OiMjO9VayzUsQ26aXEw1D32q1OqC2OizgXzoiD3Ccg8zsQlJuSuOLplcGIJ9KH6R6yNppbw/8bqleH1UziIiY3isTYfUvq7HA4nTn621uGyReaqqJk4PL1QmgMyUPA6EKp+lB51WbbO/Rg2M7N8EUJhq1ljRmmv2FWCket5vkNKtKb0e591X8RQsD2HvddYS6sLddmUVA/S18OB2EEtYHYX1ox6ogrFVFnG4gY+1ZzXKEljptFvwFSDAqUHztz2gQh/sAFu+ywV2cKlyEC8pd6cvuwZo+EvCg0lpg64JiiP2f2zrWt8/aeqzf8WU09DVOBnQRNYDCECqEBqixbeSQWPMvgehmlZ+58z45pDB03iulTnrCA+wOw==|920
+}//5jiXyF5fUhyIEz/jGSY/IZ01ofA6201JGBEWsCLUEJBGJerC1B8U/OV/rvfvyke0oJy/Wjbes+vPc+p0fwMQ/Jw96noGydITl/t4fe4TW88jzM9oz20oD20x6cupgORQWnl6zy9BSas8uOEG63zbXGL+KCbvNC16fte5nR7OyQ61zToL4+Qm/qEZS2iv/bpsd+3bs4iFtm2S3OQDHuAjADywab5ho1OB5VZosOFKyd+NfCaHY66eO0YKiOL6YLn+Ks3LxkAVdW3vp1TcQfnNNngsUafP/NQfYF/2O8czCJsPBdNTcE4639fRtHzYMXHMuV0LRUsmQINNV87kJxxkL/SORDG7SwWxJNejvIWlSTJQ8/b/ET29a365CTUGsXMrQLglblK82R9xz5i6Zs/ReoyXggbs9Y3v5VeKMU2pIQqMcgzE/4eGq5OrXuE4DKvHgTetyStuQp8P1yHe6QX/pREa8ngE2p3x0BdWntXttdEE+mk3xdCTUR0pw0MA6ePN+WYxNbRiVqojlsENVTCcD4pDdYXMWLaDRwFe0JgiDA3izVSf2/MZ7/mugYwA+NFf4xQhBW3ri6b+SOjDffKuBosoLbsBOU3ijWBu30f9nV7mv30HsCS4tmIFpJ4lsNUM8sOkJG/Pl76vqcWqEYKnGNobrPf02krBlV9gkQhdT9K3HjuF37kyw3RyXapjvWBz2oQEVTocIXnZmotXCzafKIzjGa+gA3T4Q977Qyg2TCCAbWWH+DVcLz9ipco4PEv2nW9bNGKnnrQOCIOFS09iD9ir6Nb+pphOrUtzhcXy7aQ3T62Pu9qOqZcJV65oh/fXFJij2mLgPyqiACw/NO4dFmUvzlunZpoTXGz2jqiczW08ioS5DiAhJgf49wQcWlEG0aD8qDYyhxlOGjmG31nwpw==|920

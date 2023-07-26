@@ -1,22 +1,22 @@
 {
   "Rows": {
     "RowColumnAttachedInfos": {
-      "5": {
+      "9": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 200.0
         }
       },
-      "6": {
+      "10": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 200.0
         }
       },
-      "7": {
+      "11": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
       },
-      "20": {
+      "24": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "Mode": 2,
@@ -29,7 +29,7 @@
         }
       }
     },
-    "Count": 48
+    "Count": 41
   },
   "Cols": {
     "Count": 61
@@ -38,16 +38,17 @@
     "1,1": "客服老师负责学员考号的录入以及题卡上传。",
     "2,1": "入口网址：https://wqianc.com/dashujiaoyu。",
     "3,1": "输入账号、密码（账号和初始密码由账号管理员创建、提供）：",
-    "8,1": "登录成功进入到系统的首页页面："
+    "12,1": "登录成功进入到系统的首页页面："
   },
   "AttachInfos": {
     "5,1": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImageSizeMode": 2,
         "ImagePath": "kf_login.png"
       }
     },
-    "10,1": {
+    "14,1": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "ImagePath": "kf_login2.png"
@@ -58,6 +59,9 @@
     "Styles": [
       {
         "Formatter": 0
+      },
+      {
+        "FontFamily": 1
       }
     ],
     "Types": {
@@ -71,15 +75,16 @@
       "2,1": 0,
       "3,1": 0,
       "4,1": 0,
-      "8,1": 0
+      "5,1": 1,
+      "12,1": 0
     },
     "SheetStyle": {
       "FontFamily": 1
     }
   },
   "Spans": [
-    "5,1,2,22",
-    "10,1,23,47"
+    "14,1,23,47",
+    "5,1,6,18"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -104,4 +109,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//8QxdL+6Nk+ILKMcOxPYj9jr/gCogWvTzXNIAk3Oxj4HywHGsyJ83/HZ1yyfT6Rwg/jIxo9En5Eiv2yebShUlZNj7H3db7c3inRFwIyJAib/bwMOTqetrNcuEgCbMgvCiG78UOZ3JbAcxHktK3+F/2DgY3K6uZQu9yKiv8rQRHAxsZ1XcDyTAdoYpWJavxs7qSYlwpG84gqZCTN0J9yd9TFCMx9YBYvkDIUszN3jKvQmTpuYWERV0XmkdtfXVkRdlyu9Lxom7mxkzADpJOP/+y/Y8yU2X9up79RKlS5Dv1NyXEbAfVH3OAPLj43tZYTCkH3L85JFyUvn653O2xrvGlJlu20VF3AtZUsJKTFtSYL/5cnTDAPsiyct3Z22VI8Y/RQ7pCF3WipI20GGPOLyAWs7qVWqiIuZ/tQQdFjUMpP6BikvK0QWxdSwpUbJ5h25mr72+uX3ozk9Jd9fqZmndsEwWNFuyrQIbnDasL2c15VuRwW8vhIyZVHGfHeyCzpt+jD/9M2vVp9Q6gf1yTyc9LK0fhKg2KA/RIBIYmrn2c4u5Nj0+94WjqvSu6nSOe80JZFH7s3WJniNK3OYu+ZdEDU3YXsTQzK9WpNhwiVEHdIWjjp9M2hSg3SD8qbW7UroKJ8BLQ7TfFWJd7GIn8MOw4m9+nwcfnwx41TIuQwlyikjHFkOdZ5lzyZjK0fSxpxuYb1Nve/GTOGH4WJWu7RIm9Zhmrg8g+7/j903DnLhg34p96g0sA9WEbTRhg5qDUZHvg/USt0w72VLLSpONjy0RwZZ1RCUWcTehzxQjsr3R+t2iuFcZ2LVLdAas99dMyZJdMbZEj347ZWFuHK6k0LXRdOdv90G7EGZK70Mpq3YSONA5/0ISuPLKDWxBAecLvTdzKcdnMroY1hnSEODu0ETHRA==|920
+}//UL5M9xh1TVt3xN7QHeHonfbDt4ORz36AMaTR6hX8xO0REuyS0TY8xAgJvEv1+h9/1yVuXPwJLPwYSteQVh8A7qlmj3Bpewo5yDyNA+VHPB33ri8xzP7TOBE1Y06wDRnCy2QJJ0fqC5TziGO801WH7pzx0nsCBrBAe8ey5rwcYDJhzTzD+nsAQH2uewkPlroPHH7hGdPUVpU0lje3UZKhkut/saqiHIExFE+Bnz+cJ03cOv11VwGyNpB4/eXpxw6Z4phj7AQJCbJNI6s4HTsq2Bw21d1Y+x2ggSaSFWexo+xU93fIunYu7cM1UlKkfhdOJ3olnqRYrjsuPPA3LUP918lqfunxR/1g3HgufBp2YzFkAVunkgfHopxE+W2C2e0hFW8TPsg+ZXjceVLS8sO/hQ88wIlH9Uk2VBbCrXFwOMxDcZgq3rz4SKQsnFybZQvEXlozuF5tEri+XD0jfZaHdnnjnJ4Mb2RiNzVsjMPfHEK0InTVXsp2jDbuEya3pzGx24rRztEkTTMP0PGzPKBvknulHF9A2MH6KFeZ9j84wVny0XDqYc1Zrk6PJte06a03BSo5fXxfHtuCLaN7sEno6IFEgAff/shqCukG+GDDp7Ojuier/jOJDQOsBV5IbFeOCHUN3HmqX8RUCAkijqoc1nf7BKsk4syvZIZEkAo1UF5ce6aNj/QJ+YHeF9aWV9AbW9E+As10/xa29Z7pEXaDj2FUT26WgKAyb97jJGbW+Q30IooqFCAyGBcc3EAipMI3u9cID2Q4ix2xs5T36EaQhUfTkLiDrkbqHd1E1ceTZPYta/mBHqMdF8AJSOOPHcVKxvPQ5gxI0jtw/YlPy9ZuG7vGoOHeC7k/c8linMgPnuidXMDBt0deF0Nh8cTrjRsl7jUu3ot7gn5nTDWi05X66g==|920
