@@ -844,15 +844,5 @@
     "LockDateTime": "2023-07-27T14:47:00.9488008+08:00",
     "ModuleType": 23,
     "ExclusiveType": 0
-  },
-  {
-    "ModuleName": "ServerCommand/getComments",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-07-27T15:13:25.9908892+08:00",
-    "ModuleType": 15
   }
 ]
