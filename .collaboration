@@ -706,6 +706,15 @@
   },
   {
     "ModuleName": "ServerCommand/getComments",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-07-27T18:22:05.6998093+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\getComments.json"
+    ]
   }
 ]
