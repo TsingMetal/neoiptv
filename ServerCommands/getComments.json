@@ -27,9 +27,9 @@
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
       "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
       "Params": {},
-      "SqlStatement": "SELECT\r\n    t2.题型 AS item_type,\r\n    t1.item_name,\r\n    t1.score,\r\n    t1.shortcoming,\r\n    t1.merit,\r\n    t1.comment\r\nFROM\r\n(\r\n    SELECT\r\n        题号,\r\n        题目名称 AS item_name,\r\n        得分 AS score\r\n        问题 AS shortcoming,\r\n        优点 AS merit,\r\n        自定义评语 AS comment\r\n    FROM \"阅卷表\"\r\n    WHERE 状态 = 1\r\n        AND 批改时间 != ''\r\n        AND 准考证号 != ''\r\n        AND 题目名称 != ''\r\n) t1\r\nLEFT JOIN 题库 t2\r\nON t1.题号 = t2.题号",
+      "SqlStatement": "SELECT\r\n    t2.题型 AS item_type,\r\n    t1.item_name,\r\n    t1.score,\r\n    t1.shortcoming,\r\n    t1.merit,\r\n    t1.comment\r\nFROM\r\n(\r\n    SELECT\r\n        题号,\r\n        题目名称 AS item_name,\r\n        得分 AS score,\r\n        问题 AS shortcoming,\r\n        优点 AS merit,\r\n        自定义评语 AS comment\r\n    FROM \"阅卷表\"\r\n    WHERE 状态 = 1\r\n        AND 批改时间 != ''\r\n        AND 准考证号 != ''\r\n        AND 题目名称 != ''\r\n) t1\r\nLEFT JOIN 题库 t2\r\nON t1.题号 = t2.题号",
       "ReturnsName": "result",
-      "ID": "0b0e37be8d954a458f1efe9fdf6fb3b2"
+      "ID": "9b026de922824b19b6aa5675c56acf77"
     },
     {
       "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
