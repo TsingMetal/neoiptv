@@ -1,37 +1,107 @@
 [
   {
     "ModuleName": "Table/题库",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117722+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\题库.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/阅卷表",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117661+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\阅卷表.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117701+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\预置评语配置.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置表2",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117712+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\预置评语配置表2.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/小测上传",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117547+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\小测上传.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/考号档案",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117646+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\考号档案.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/用户信息视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117627+08:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\用户信息视图.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -384,7 +454,17 @@
   },
   {
     "ModuleName": "TableView/总分排名视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117679+08:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\总分排名视图.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -405,7 +485,17 @@
   },
   {
     "ModuleName": "TableView/单题排名视图",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.411769+08:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\单题排名视图.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -414,7 +504,17 @@
   },
   {
     "ModuleName": "Table/_4题试卷上传",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117504+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\_4题试卷上传.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -448,12 +548,32 @@
   },
   {
     "ModuleName": "Table/exam",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117756+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\exam.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/exam_item",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117767+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\exam_item.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -470,7 +590,17 @@
   },
   {
     "ModuleName": "Table/exam_type",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4117779+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\exam_type.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -725,5 +855,16 @@
   {
     "ModuleName": "ServerCommand/getComments",
     "ModuleType": 15
+  },
+  {
+    "ModuleName": "TableView/test_split",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:13:09.4116532+08:00",
+    "ModuleType": 23,
+    "ExclusiveType": 0
   }
 ]
