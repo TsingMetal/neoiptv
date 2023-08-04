@@ -855,5 +855,15 @@
   {
     "ModuleName": "ServerCommand/getComments",
     "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/addStudent",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-04T18:42:30.4525813+08:00",
+    "ModuleType": 15
   }
 ]
