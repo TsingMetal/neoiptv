@@ -6,7 +6,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008725+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066503+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\题库.json",
@@ -21,7 +21,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008666+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066241+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\阅卷表.json",
@@ -36,7 +36,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008682+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066262+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\预置评语配置.json",
@@ -51,7 +51,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008699+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066283+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\预置评语配置表2.json",
@@ -66,7 +66,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008602+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066152+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\小测上传.json",
@@ -81,7 +81,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008649+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.306622+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\考号档案.json",
@@ -96,7 +96,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008632+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066191+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\用户信息视图.json",
@@ -560,7 +560,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008617+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066172+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\总分排名视图.json",
@@ -591,7 +591,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008586+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066129+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\单题排名视图.json",
@@ -610,7 +610,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.700857+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.306611+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\_4题试卷上传.json",
@@ -645,7 +645,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008514+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066033+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\exam.json",
@@ -660,7 +660,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008537+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066065+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\exam_item.json",
@@ -687,7 +687,7 @@
       "UserName": "TSING\\tsing",
       "Email": "tsing_w@aliyun.com"
     },
-    "LockDateTime": "2023-08-06T22:13:08.7008554+08:00",
+    "LockDateTime": "2023-08-06T23:11:05.3066091+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\exam_type.json",
@@ -982,36 +982,5 @@
     },
     "LockDateTime": "2023-08-06T22:02:16.0446591+08:00",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "Table/FGC_商品记录表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "TSING\\tsing",
-      "Email": "tsing_w@aliyun.com"
-    },
-    "LockDateTime": "2023-08-06T22:13:08.7008421+08:00",
-    "ModuleType": 7,
-    "ExclusiveType": 0
-  },
-  {
-    "ModuleName": "Tables/FGC_页面模板文件夹",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "TSING\\tsing",
-      "Email": "tsing_w@aliyun.com"
-    },
-    "LockDateTime": "2023-08-06T22:13:08.700845+08:00",
-    "ModuleType": 22
-  },
-  {
-    "ModuleName": "Tables/FGC_页面模板文件夹/筛选统计列表页",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "TSING\\tsing",
-      "Email": "tsing_w@aliyun.com"
-    },
-    "LockDateTime": "2023-08-06T22:13:08.7008466+08:00",
-    "ModuleType": 22
   }
 ]
