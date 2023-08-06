@@ -974,26 +974,6 @@
     "ModuleType": 24
   },
   {
-    "ModuleName": "PCPage/FGC_筛选统计列表页",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "TSING\\tsing",
-      "Email": "tsing_w@aliyun.com"
-    },
-    "LockDateTime": "2023-08-06T21:57:52.4771587+08:00",
-    "ModuleType": 1
-  },
-  {
-    "ModuleName": "Pages/FGC_页面模板文件夹",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "TSING\\tsing",
-      "Email": "tsing_w@aliyun.com"
-    },
-    "LockDateTime": "2023-08-06T21:36:03.8908042+08:00",
-    "ModuleType": 6
-  },
-  {
     "ModuleName": "PCPage/成绩统计总览",
     "State": 3,
     "LockedBy": {
