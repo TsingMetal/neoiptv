@@ -41,9 +41,9 @@
           "Item2": 16
         }
       },
-      "SqlStatement": "SELECT\r\n    \"学员姓名\" AS student_name,\r\n    \"手机\" AS student_phone_num,\r\n    \"准考证号\" AS sdudent_num,\r\n    \"班级\" AS sdudent_class\r\nFROM \"考号档案\"\r\nWHERE \"手机\" = @phone_num",
+      "SqlStatement": "SELECT\r\n    \"学员姓名\" AS student_name,\r\n    \"手机\" AS student_phone_num,\r\n    \"准考证号\" AS student_num,\r\n    \"班级\" AS student_class\r\nFROM \"考号档案\"\r\nWHERE \"手机\" = @phone_num",
       "ReturnsName": "result",
-      "ID": "534ce21c9a384942ac2221a3e0d1d9bc"
+      "ID": "f3e01bc2244f43a4b8b8222b1d2391c9"
     },
     {
       "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
