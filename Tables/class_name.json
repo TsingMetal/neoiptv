@@ -1,0 +1,25 @@
+{
+  "Name": "class_name",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "学员班级",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "考试名称",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "class_name",
+    "SourceViewName": "fgc716f84943afd4de1810bc6b1bbe",
+    "CreateViewSql": "SELECT\r\n    \"学员班级\",\r\n    \"考试名称\"\r\nFROM \"总分排名视图\"\r\nGROUP BY \"学员班级\", \"考试名称\""
+  },
+  "Relations": []
+}

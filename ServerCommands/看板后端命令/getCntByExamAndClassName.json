@@ -1,0 +1,90 @@
+{
+  "Name": "getCntByExamAndClassName",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "examName"
+        },
+        {
+          "Name": "className"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "userCnt",
+      "TableValue": {
+        "TableName": "总分排名视图",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "总分排名视图",
+                "ColumnName": "考试名称",
+                "GUID": "34e6c222-d074-4a67-bb69-3e534b935bf4"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=examName"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "总分排名视图",
+                "ColumnName": "学员班级",
+                "GUID": "6685e6d0-9a37-401d-82d0-f8e5f10712bb"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=className"
+              }
+            }
+          ]
+        }
+      },
+      "ID": "b26cf429700c4f60843e6ec2d2d1bf59"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "userCnt",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=userCnt"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "userCnt"
+    }
+  ]
+}

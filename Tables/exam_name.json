@@ -1,0 +1,18 @@
+{
+  "Name": "exam_name",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "考试名称",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "exam_name",
+    "SourceViewName": "fgc8bfa42ee85374976876ff23feaa",
+    "CreateViewSql": "SELECT\r\n    DISTINCT \"考试名称\"\r\nFROM \"总分排名视图\""
+  },
+  "Relations": []
+}

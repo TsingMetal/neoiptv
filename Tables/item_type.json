@@ -1,0 +1,19 @@
+{
+  "Name": "item_type",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "题型",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "item_type",
+    "SourceViewName": "fgcca24a3297db241f0a9feafc14fd",
+    "CreateViewSql": "SELECT\r\n    DISTINCT \"题型\"\r\nFROM\r\n\"题库\""
+  },
+  "Relations": []
+}

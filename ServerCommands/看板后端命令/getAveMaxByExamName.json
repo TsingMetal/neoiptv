@@ -1,0 +1,55 @@
+{
+  "Name": "getAveMaxByExamName",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "examName"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {
+        "examName": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=examName"
+          },
+          "Item2": 16
+        }
+      },
+      "SqlStatement": "SELECT\r\n    AVERAGE(\"得分\") AS aveScore,\r\n    MAX(\"得分\") AS maxScore\r\nFROM \"总分排名视图\"\r\nWHERE \"考试名称\" = @examName",
+      "ID": "64a71839c84c4b7b9d4c92355c2982a4"
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "aveScore"
+    },
+    {
+      "Name": "maxScore"
+    }
+  ]
+}

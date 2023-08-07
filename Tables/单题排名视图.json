@@ -3,6 +3,14 @@
   "Columns": [
     {
       "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "题型",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
       "DatabaseColumnType": "System.String",
       "MaxLength": -1,
       "Name": "准考证号",
@@ -124,7 +132,7 @@
   "BuiltInViewInfo": {
     "ViewName": "单题排名视图",
     "SourceViewName": "fgcc40bcda3302b4c29b9536ee69e6",
-    "CreateViewSql": "SELECT\r\n    \"准考证号\",\r\n    \"学员姓名\",\r\n    \"学员班级\",\r\n    IIF(\r\n            INSTR(\"题目名称\", '-') > 0,\r\n            SUBSTRING(\"题目名称\", 0, INSTR(\"题目名称\", '-')),\r\n            SUBSTRING(\"题目名称\", -2, -LENGTH(\"题目名称\"))\r\n    ) AS 考试名称,\r\n    \"题目名称\",\r\n    \"试卷\",\r\n    \"阅卷老师\",\r\n    \"批改时间\",\r\n    \"满分\",\r\n    \"得分\",\r\n    \"问题\",\r\n    \"优点\",\r\n    \"自定义评语\",\r\n    COUNT(\"准考证号\") OVER(PARTITION BY \"题目名称\") AS 全体考试人数,\r\n    COUNT(\"准考证号\") OVER(PARTITION BY \"题目名称\", \"学员班级\") AS 班级考试人数,\r\n    DENSE_RANK() OVER(PARTITION BY \"题目名称\" ORDER BY 得分 DESC) AS 全体排名,\r\n    DENSE_RANK() OVER(PARTITION BY \"题目名称\", \"学员班级\" ORDER BY 得分 DESC) AS 班级排名\r\nFROM \"阅卷表\"\r\nWHERE \"状态\" = 1\r\n    AND (\"批改时间\" != '' OR \"批改时间\" != NULL)\r\n    AND LENGTH(TRIM(\"题目名称\")) > 0"
+    "CreateViewSql": "SELECT\r\n    t2.题型,\r\n    t1.准考证号,\r\n    t1.学员姓名,\r\n    t1.学员班级,\r\n    t1.考试名称,\r\n    t1.题目名称,\r\n    t1.试卷,\r\n    t1.阅卷老师,\r\n    t1.批改时间,\r\n    t1.满分,\r\n    t1.得分,\r\n    t1.问题,\r\n    t1.优点,\r\n    t1.自定义评语,\r\n    t1.全体考试人数,\r\n    t1.班级考试人数,\r\n    t1.全体排名,\r\n    t1.班级排名\r\nFROM\r\n(\r\n    SELECT\r\n        \"题号\",\r\n        \"准考证号\",\r\n        \"学员姓名\",\r\n        \"学员班级\",\r\n        IIF(\r\n            INSTR(\"题目名称\", '-') > 0,\r\n            SUBSTRING(\"题目名称\", 0, INSTR(\"题目名称\", '-')),\r\n            SUBSTRING(\"题目名称\", -2, -LENGTH(\"题目名称\"))\r\n        ) AS 考试名称,\r\n        \"题目名称\",\r\n        \"试卷\",\r\n        \"阅卷老师\",\r\n        \"批改时间\",\r\n        \"满分\",\r\n        \"得分\",\r\n        \"问题\",\r\n        \"优点\",\r\n        \"自定义评语\",\r\n        COUNT(\"准考证号\") OVER(PARTITION BY \"题目名称\") AS 全体考试人数,\r\n        COUNT(\"准考证号\") OVER(PARTITION BY \"题目名称\", \"学员班级\") AS 班级考试人数,\r\n        DENSE_RANK() OVER(PARTITION BY \"题目名称\" ORDER BY 得分 DESC) AS 全体排名,\r\n        DENSE_RANK() OVER(PARTITION BY \"题目名称\", \"学员班级\" ORDER BY 得分 DESC) AS 班级排名\r\n    FROM \"阅卷表\"\r\n    WHERE \"状态\" = 1\r\n        AND (\"批改时间\" != '' OR \"批改时间\" != NULL)\r\n        AND LENGTH(TRIM(\"题目名称\")) > 0\r\n) t1\r\nLEFT JOIN \"题库\" t2\r\nON t1.题号 = t2.题号"
   },
   "Relations": []
 }
