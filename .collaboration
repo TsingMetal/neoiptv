@@ -734,29 +734,7 @@
   },
   {
     "ModuleName": "PCPage/scoreRank",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-08-07T16:25:10.4616599+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\学业分析\\scoreRank.json"
-    ]
-  },
-  {
-    "ModuleName": "PCPage/itemRank",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-08-07T16:26:30.8302799+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\学业分析\\itemRank.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "TableView/item_type",
@@ -775,12 +753,6 @@
   },
   {
     "ModuleName": "PCPage/itemScoreRank",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-4F5HHGS\\DELL999",
-      "Email": "744341534@qq.com"
-    },
-    "LockDateTime": "2023-08-07T16:26:30.8302931+08:00",
     "ModuleType": 1
   }
 ]

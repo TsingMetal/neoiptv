@@ -476,7 +476,9 @@
           "TableName": "exam_name",
           "ColumnName": "考试名称",
           "GUID": "e955221e-7438-451d-99a4-d662df4266e2"
-        }
+        },
+        "AddNullItemWhenBinding": true,
+        "NoneItemText": "所有考试"
       }
     },
     "7,22": {
@@ -509,7 +511,9 @@
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=scoreRank!O8"
           }
-        }
+        },
+        "AddNullItemWhenBinding": true,
+        "NoneItemText": "所有班级"
       }
     },
     "7,30": {
@@ -1535,4 +1539,4 @@
       "Size": "56,56"
     }
   ]
-}//GDJxDK4FTqUglVKec24p/CRhrit3AB1wNTs02DeueM2w+5fbD8ryqyy3XKRR48UsHk/G4SKpLE6iS+lX6ZDM77M3haH3gHevR3ghFLTf3k7l9gN/N1nTVh38Jg9wdVRquXl1gtZ093m+2GWqiLTHCUQ0UUTtZdnCC1jhc036giPkLW2lDLn00Z2oMx4guS9UGTD8scFg5F59h8MTUzO2jy10i8kYJ3Thht5KmsL+Vp7jsMXlnrkHd0DvIuSiiK673xSTB77FPbVKoj7jpt3hEsT7pM2WZ20O9pwfpWwbJZ5d+6Q3H5n5/9sSfOsmqecBXRuaPc2xaWvTbbrWPWqe8zjneGYOY9pQhqCgM1RuHdYVqsmzd+6JklQXu/FiYXjjCvIF3l6zFurcHnJvPG/bApjC7b7CWAWtQzwifCQKqYjyXEcRY747SkQVnj9ULC8Mo1vSFyWbFXMVR7F/iKmUQc1RWhYBZFjznYEhqaDUjSmTfLAeTIOVz3tfooTRQcYEtUoLR0lZs0fBzt51uE8z3MhRrAtqIYN228wnJrOgeyfCmE5ZcWK2VvnQ7RfHv9QhTR+NR0bGJmdfpJI/wBhHBy+os+GuCaDzy/A/CZJzrAZqQtd5VE1OwsWNI01SBU7toBXKP6HIxmUpwAh+n2xKpJd/PvhaecaTNEGO5oT0t8WMThunq8ebTSSdq9Isc1DnJbhu9tjIMFBAaHvuWW/gDGfDosHGAXED6xpHeQ/a1jwdq54fD2xwHVjAni4iAONxHkHfXJbeqHw0isFsQQDD9mEXPDogqaGgxYi2hgVRuTODhzAX14gNmX+fFmvXpMnReCaJVMhLOAyBHvdnlozkYlEq4mV1Vhal/7y+Vh4DJHgDyDICxG9euiLQlXpUAK/Lx9p2LvJ06SOzSy3P3d6OFA==|920
+}//Gsjj6AnHTFp6hADvrZXqLDUgHFRMOGy1kcASLIHow5dvR6Tvw+gdLm66a3b2XvtMdpdN4s+0t1xF5mmEGUIgXYnG0MAIr9vwIToce5O1FblASQuXa0ojJsU8AHhHbWgElMIfxKTxuowCgeGhadrQZUTMRMZIywHFGrp15CJCPGnr0Zy+7hLPnqqD+8RVn3sabPmrY3drt3ITiUUO7oWlhvwn02FxdSdi/wR0PHq9BJvsfMKw8FZ+YSe+335mdW4pOVrH24Ed0SOQQsxSId2ZsYqRgFV8Wxj+Pw+P3FHhj9Byyp65Ne5Zza7FtkGJoGYBiNj8vsD94BX7Srk0+AIukBM27plKczFebT3Lt8z1bm1CMiWFDuKW/QqHWgTXucebBEfJeP6QsOyK2m1LIgW/P1jDHFACCvkB1dCnjcS96Unn7LEw8RI8XmqqxHApSrZmY5T9UD+popRqaV+JiBe6JgDx9iq8sEmw3GA/+15J8xoBVxpa3qsD4F4bpS+GZmp8Z2JSVqO4IjsKOaqcQWT/ivkhyJLmDJQxUt/AfJI5fq/tfOR0XUybbH1hHs3lAR7OGwn54CACR9mkRLrNxRUg21GJiFQgwjxqu3BaiFe43y6QaED2MxvS9Tryrq6nJZj50R+OpF81flHVcMZrNJqxRQ8iPt3lMnPrlUm7YwNkbFld8iASh3oHhZfSIEof+BmdtpH1NAvy4vZpfKPptUtyu2Wt+sMEkFLgV92wmou+JtG/5wKT+UJzRrYJ/BuN263PuTPg/TEqgf+Rw+MJTptPO9StPK89FpPe3gs6kRtWPru14QcxyNtcRD2iqz1odq8IdqDt19xCeR1mD8LJFv33I9D1G/uJunRxTplFZGEoCCbnhKaC8bcLlkO5pQ6PIsXX6g8PYyP/m8+efQCCTjcbXQ==|920
