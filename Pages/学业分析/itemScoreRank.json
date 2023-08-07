@@ -692,16 +692,8 @@
             {
               "ColumnBindingInfo": {
                 "TableName": "单题排名视图",
-                "ColumnName": "批改时间",
-                "GUID": "c03fff56-7894-436f-9f9a-dde0ca5f4803"
-              },
-              "Order": 1
-            },
-            {
-              "ColumnBindingInfo": {
-                "TableName": "单题排名视图",
                 "ColumnName": "考试名称",
-                "GUID": "67926a9b-c6f2-40b2-bbb6-8f42f3a46d9b"
+                "GUID": "138a8b54-0d94-40d5-b6a4-d06facb34969"
               },
               "Order": 0
             },
@@ -709,7 +701,7 @@
               "ColumnBindingInfo": {
                 "TableName": "单题排名视图",
                 "ColumnName": "得分",
-                "GUID": "b5b3be02-621f-4340-abea-ededff00d386"
+                "GUID": "d6f72fab-e637-41d7-b929-321b753401be"
               },
               "Order": 1
             }
@@ -1706,4 +1698,4 @@
       "Size": "56,56"
     }
   ]
-}//0ZdqDpfgTGRYHwhJVKWvE1mi0iIqERldGqKCxSYCi2GLiuNP337nDNDLIG4Q/bvPM/vWzJXNwgbO11RDDmO6esWTSG+GRsDkLRIDdprKyfBrMALqd3+xjhfSLA/iHrw+x3IoLtCuphGJIeT3FGkCiCNkA6FqtuVrwnK2ZKdWsSFGvWEkSN7Btz01iib3WVHpS/9K9k5hj4dm5JFVt7PZD9wBlp62gcIkBoDmqyfX5TbVwKQ774xJXfY2FCAbZ51Xy83nfoYjfwpZCQ0VU6aVNF018SbK0ViDCh41o2gQZk8DXrqCXzBM8VlPL/87tVyekgB4vHmc4o8gP8iWeYIAijLAsdMZPYq+WGTxRnutUC3IwhDkV3juvTxp+RnXW9nSzwp0IVgwVnIiAsgB/Q1ZDF16BVnm3Q+IT5yTiyVnjEUeLIr+duMz4fM7AEWkTzKEk5m8qrhSsYA0RiSSkvQAlTvBuU1gdY+yOjjN0TV0r+rKP2fNfm4rtK5mXcfFGpdXIPuHu2zKfeDJdM+kmhCcJ6d2c5WRZqwReHjy6QUnuMACIR58PSOqW/E8Cr9tZ2kKSV1x3QSc1SWlFxRR03DKy0e7ZvkF0whTywnFXCBcLy7KyXkzxrJI5jSUh65AZUD5EwIkcZ/Jxwer1pdzqqTSfgJ2NK2aVOTX7R47EDxwd1ExFHEGkuK6kFf45Cu3jlYlULEKCwLJN3B3n2xMW6KzWYNLkpGrW0sMG0yb7gKDBBlk/Aq33vUvsuvdZbOfxx0wBUNvP1ouk7fLl3eKB70mqMWzFwyskCKP6kyFEiVPiJQHkz1XUR7edknSEqPrn6KeWBENiXjTDvwQp/0FGEMb5+06fyXHuw46QZ1FK0t4tEdDkxNFd7j6X9+fw8IBKuaUrOMC+ipXozEDvl/6ad+1tg==|920
+}//W5R5GF5yrJzpQ83rhZZHgeRbLBnKJ35EPwcH8xNIZZVuiq32a0tVq5ThHEyx9c/ouU9D6dlUYAMhnbwpppPHkdFGF9Hzej9RH9boTkYsiYi8JPRCojbSVRuT2D/RaCMlrJ42kBHwlTjb4B6BO4IwrPvTfdiiJMlwBWxprBS9QGvJmyl/qg4zMLu+M5oXmQpJEpbsbPa8/m24Eo9jol8yZFzI3m1duI8r9fTFgKSQLlM2MAeC2GYDk1IPOa3lzZGDUY6Ly6YrU6xbMw+KLO3FccPj7ggP0MGewxu9AYJzMbLXWClxQ+xMzaH3PZcHQ53UMfdNSQCJUVuN7yQ+ZFRwfoA9BMiOZz3+3kcu0etXQt3rmIHKjAnnnuEdZpOkNPhmX5T4ERRRm7D5z9K3Ovv9rJX0fj1CNyS9rEUaH6nhZbN1kiHRKR7kzyFyPcGSK0b/MAz1MABqS2ikVJjSxmxgGcGF0PgZRyNZ2tk2xC6fxLVJnuCxHarW6D1DIVuRhLbEtnVLcskGbg5hpMnbRIijH+nLkwQQbTLq/biy/W/aGNmkE1COdIPwQLH63LPdvUi1JFPN8jwDMkA3ff+yNzmg4mbWcAoMLnAOcEqv9w48eu8ADv32y955dF2bpupFgi/Jbbka3KNWAzfDOLmRFzysuzVTn60hQMeGydc8WlCEwqPiIWYWuAMVt/hRZXKQy4RsgCPOHX78IF42jSP7F6GZJoIMP/fMqkm99EuT7Yqi5+D+WDUZet57zTNIn38rRZMrzXj4wvi5ae5OOLkZfS30B+Wa6UJ8CH9mvS/7ay8vsQPQk+mdg1Y6KZU+0fVOzZfDLdApToERawh6CVQKN5MFRpWpHfwfV2Bjm82b1GqqO0bFCCtj3m+VzF0EdGiW0ljs0Ybs6MkAJ6grtzD9FscVEQ==|920
