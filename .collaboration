@@ -1058,5 +1058,15 @@
     },
     "LockDateTime": "2023-08-07T10:30:33.2218097+08:00",
     "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/getCntByExamName",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-07T10:34:33.4205127+08:00",
+    "ModuleType": 15
   }
 ]
