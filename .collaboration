@@ -1012,11 +1012,29 @@
   },
   {
     "ModuleName": "MasterPCPage/FGC_页面模板_母版页",
-    "ModuleType": 3
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-07T10:15:47.4725727+08:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\FGC_页面模板文件夹\\FGC_页面模板_母版页.json"
+    ]
   },
   {
     "ModuleName": "MasterPages/FGC_页面模板文件夹",
-    "ModuleType": 24
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-4F5HHGS\\DELL999",
+      "Email": "744341534@qq.com"
+    },
+    "LockDateTime": "2023-08-07T10:15:47.4724802+08:00",
+    "ModuleType": 24,
+    "ToRemoveFiles": [
+      "MasterPages\\FGC_页面模板文件夹"
+    ]
   },
   {
     "ModuleName": "PCPage/成绩统计总览",
