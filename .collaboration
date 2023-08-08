@@ -1,107 +1,37 @@
 [
   {
     "ModuleName": "Table/题库",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504292+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\题库.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/阅卷表",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504263+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\阅卷表.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504273+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\预置评语配置.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/预置评语配置表2",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504283+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\预置评语配置表2.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/小测上传",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.250422+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\小测上传.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/考号档案",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504252+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\考号档案.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/用户信息视图",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504242+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\用户信息视图.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -366,171 +296,7 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.251478+08:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": [
-      "Upload\\0440af92-8824-4897-b7bd-e87c3d01f0a5_20230630-001_1.png",
-      "Upload\\08ea27c7-7484-47a2-815c-5d7ba6a4fafd_20230630-001.jpg",
-      "Upload\\08ea27c7-7484-47a2-815c-5d7ba6a4fafd_20230630-001.medium.jpg",
-      "Upload\\08ea27c7-7484-47a2-815c-5d7ba6a4fafd_20230630-001.small.jpg",
-      "Upload\\0cde94b5-a0fb-437a-93b4-dc0496e62032_20230630-002.jpg",
-      "Upload\\0cde94b5-a0fb-437a-93b4-dc0496e62032_20230630-002.medium.jpg",
-      "Upload\\0cde94b5-a0fb-437a-93b4-dc0496e62032_20230630-002.small.jpg",
-      "Upload\\0f241d73-cd51-4e26-94d0-2495536dcedf_20230523-252.jpg",
-      "Upload\\0f241d73-cd51-4e26-94d0-2495536dcedf_20230523-252.medium.jpg",
-      "Upload\\0f241d73-cd51-4e26-94d0-2495536dcedf_20230523-252.small.jpg",
-      "Upload\\16e6cd5c-0b2b-49e3-a3d7-517c16bf14ae_5.medium.png",
-      "Upload\\16e6cd5c-0b2b-49e3-a3d7-517c16bf14ae_5.png",
-      "Upload\\16e6cd5c-0b2b-49e3-a3d7-517c16bf14ae_5.small.png",
-      "Upload\\17963617-153e-4c10-9276-92ca18fddb94_20230630-001.jpg",
-      "Upload\\17963617-153e-4c10-9276-92ca18fddb94_20230630-001.medium.jpg",
-      "Upload\\17963617-153e-4c10-9276-92ca18fddb94_20230630-001.small.jpg",
-      "Upload\\1bf0dfcb-0b06-420c-a3eb-c07526bd32c8_20230630-002.jpg",
-      "Upload\\1bf0dfcb-0b06-420c-a3eb-c07526bd32c8_20230630-002.medium.jpg",
-      "Upload\\1bf0dfcb-0b06-420c-a3eb-c07526bd32c8_20230630-002.small.jpg",
-      "Upload\\24ff687b-6836-482a-8ab3-1af093064585_4.medium.png",
-      "Upload\\24ff687b-6836-482a-8ab3-1af093064585_4.png",
-      "Upload\\24ff687b-6836-482a-8ab3-1af093064585_4.small.png",
-      "Upload\\2824fab1-bae7-4d8f-98c4-fc823b2c08d7_20230630-001_1.png",
-      "Upload\\3ad828fb-ce56-4923-ae9f-944aa75bdbb1_20230630-001 - 副本.jpg",
-      "Upload\\3ad828fb-ce56-4923-ae9f-944aa75bdbb1_20230630-001 - 副本.medium.jpg",
-      "Upload\\3ad828fb-ce56-4923-ae9f-944aa75bdbb1_20230630-001 - 副本.small.jpg",
-      "Upload\\45af1650-db6d-429d-8e9c-5effa72dcb48_20230630-001.jpg",
-      "Upload\\45af1650-db6d-429d-8e9c-5effa72dcb48_20230630-001.medium.jpg",
-      "Upload\\45af1650-db6d-429d-8e9c-5effa72dcb48_20230630-001.small.jpg",
-      "Upload\\45cf10c6-4316-4bf9-80d4-0de0c7aa4b8c_20230102-00059_3.png",
-      "Upload\\48d41d34-abe7-47d3-90e5-581cc47e1731_4.medium.png",
-      "Upload\\48d41d34-abe7-47d3-90e5-581cc47e1731_4.png",
-      "Upload\\48d41d34-abe7-47d3-90e5-581cc47e1731_4.small.png",
-      "Upload\\4ba99018-74f3-4b65-bcd3-348ed49123dd_20230630-001.jpg",
-      "Upload\\4ba99018-74f3-4b65-bcd3-348ed49123dd_20230630-001.medium.jpg",
-      "Upload\\4ba99018-74f3-4b65-bcd3-348ed49123dd_20230630-001.small.jpg",
-      "Upload\\52d9ae96-ea95-46d8-9939-d7aa78a679b5_微信截图_20221228141311.medium.png",
-      "Upload\\52d9ae96-ea95-46d8-9939-d7aa78a679b5_微信截图_20221228141311.png",
-      "Upload\\52d9ae96-ea95-46d8-9939-d7aa78a679b5_微信截图_20221228141311.small.png",
-      "Upload\\5d95c8c1-701e-4ff9-9938-de69855412bc_微信截图_20221228141219.medium.png",
-      "Upload\\5d95c8c1-701e-4ff9-9938-de69855412bc_微信截图_20221228141219.png",
-      "Upload\\5d95c8c1-701e-4ff9-9938-de69855412bc_微信截图_20221228141219.small.png",
-      "Upload\\6625237d-e160-4210-8c64-ca8c312e15d6_1.medium.png",
-      "Upload\\6625237d-e160-4210-8c64-ca8c312e15d6_1.png",
-      "Upload\\6625237d-e160-4210-8c64-ca8c312e15d6_1.small.png",
-      "Upload\\69b5d28d-1a46-4540-b3bb-18130415acd2_20230102-00059_3.png",
-      "Upload\\6aebb37c-60d1-47fa-bc15-febbfa32c9c1_20230630-001.jpg",
-      "Upload\\6aebb37c-60d1-47fa-bc15-febbfa32c9c1_20230630-001.medium.jpg",
-      "Upload\\6aebb37c-60d1-47fa-bc15-febbfa32c9c1_20230630-001.small.jpg",
-      "Upload\\6b1f8dbc-30aa-4d9a-afed-d86d269a5bf2_7.png",
-      "Upload\\6b1f8dbc-30aa-4d9a-afed-d86d269a5bf2_7.small.png",
-      "Upload\\7067cf36-aa08-4c96-9788-0904b6ee645f_20230630-002.jpg",
-      "Upload\\7067cf36-aa08-4c96-9788-0904b6ee645f_20230630-002.medium.jpg",
-      "Upload\\7067cf36-aa08-4c96-9788-0904b6ee645f_20230630-002.small.jpg",
-      "Upload\\72b1106e-7e9f-47cf-8515-32784e27ad8c_20230630-001_1.png",
-      "Upload\\75c7accc-b366-4088-b88e-10eb4cd08ad3_微信截图_20221228140917.medium.png",
-      "Upload\\75c7accc-b366-4088-b88e-10eb4cd08ad3_微信截图_20221228140917.png",
-      "Upload\\75c7accc-b366-4088-b88e-10eb4cd08ad3_微信截图_20221228140917.small.png",
-      "Upload\\75c93770-d3d8-4fe9-bccc-ef98276cc72f_20230630-001.jpg",
-      "Upload\\75c93770-d3d8-4fe9-bccc-ef98276cc72f_20230630-001.medium.jpg",
-      "Upload\\75c93770-d3d8-4fe9-bccc-ef98276cc72f_20230630-001.small.jpg",
-      "Upload\\766e5e79-c9d3-47df-819e-0b8355915925_20230630-002.jpg",
-      "Upload\\766e5e79-c9d3-47df-819e-0b8355915925_20230630-002.medium.jpg",
-      "Upload\\766e5e79-c9d3-47df-819e-0b8355915925_20230630-002.small.jpg",
-      "Upload\\7963ac4b-ba4f-43ef-8632-94d534ec1e79_2.medium.png",
-      "Upload\\7963ac4b-ba4f-43ef-8632-94d534ec1e79_2.png",
-      "Upload\\7963ac4b-ba4f-43ef-8632-94d534ec1e79_2.small.png",
-      "Upload\\7ce2b96e-5a3e-4ce5-ab01-d6b31737a26e_20230630-002.jpg",
-      "Upload\\7ce2b96e-5a3e-4ce5-ab01-d6b31737a26e_20230630-002.medium.jpg",
-      "Upload\\7ce2b96e-5a3e-4ce5-ab01-d6b31737a26e_20230630-002.small.jpg",
-      "Upload\\80f10cff-053b-450b-9a55-3ea4ab352a70_6.medium.png",
-      "Upload\\80f10cff-053b-450b-9a55-3ea4ab352a70_6.png",
-      "Upload\\80f10cff-053b-450b-9a55-3ea4ab352a70_6.small.png",
-      "Upload\\82b951ae-9e15-49eb-9e5b-44669c53a821_20230630-002.jpg",
-      "Upload\\82b951ae-9e15-49eb-9e5b-44669c53a821_20230630-002.medium.jpg",
-      "Upload\\82b951ae-9e15-49eb-9e5b-44669c53a821_20230630-002.small.jpg",
-      "Upload\\8d3d9db7-3b1d-470e-a2fb-31ff8d30b32a_20230630-002.jpg",
-      "Upload\\8d3d9db7-3b1d-470e-a2fb-31ff8d30b32a_20230630-002.medium.jpg",
-      "Upload\\8d3d9db7-3b1d-470e-a2fb-31ff8d30b32a_20230630-002.small.jpg",
-      "Upload\\8fb26cf6-9ecc-4d1a-ba84-1363680f6a41_2.medium.png",
-      "Upload\\8fb26cf6-9ecc-4d1a-ba84-1363680f6a41_2.png",
-      "Upload\\8fb26cf6-9ecc-4d1a-ba84-1363680f6a41_2.small.png",
-      "Upload\\9093a5f5-7390-4253-a541-d0823008dac8_20230630-001.jpg",
-      "Upload\\9093a5f5-7390-4253-a541-d0823008dac8_20230630-001.medium.jpg",
-      "Upload\\9093a5f5-7390-4253-a541-d0823008dac8_20230630-001.small.jpg",
-      "Upload\\916e1b3d-0d47-41af-acd1-bcf5db6e7a96_20230630-002.jpg",
-      "Upload\\916e1b3d-0d47-41af-acd1-bcf5db6e7a96_20230630-002.medium.jpg",
-      "Upload\\916e1b3d-0d47-41af-acd1-bcf5db6e7a96_20230630-002.small.jpg",
-      "Upload\\925910d6-460c-427d-bd13-e7906e45673e_5.medium.png",
-      "Upload\\925910d6-460c-427d-bd13-e7906e45673e_5.png",
-      "Upload\\925910d6-460c-427d-bd13-e7906e45673e_5.small.png",
-      "Upload\\93a433a6-4b6b-4dce-bea9-aedad9c6143e_20230630-001.jpg",
-      "Upload\\93a433a6-4b6b-4dce-bea9-aedad9c6143e_20230630-001.medium.jpg",
-      "Upload\\93a433a6-4b6b-4dce-bea9-aedad9c6143e_20230630-001.small.jpg",
-      "Upload\\99ace81b-194c-4954-87b1-eb73baec0915_20230630-001.jpg",
-      "Upload\\99ace81b-194c-4954-87b1-eb73baec0915_20230630-001.medium.jpg",
-      "Upload\\99ace81b-194c-4954-87b1-eb73baec0915_20230630-001.small.jpg",
-      "Upload\\9bdf8a9d-54fa-45d4-a7b6-05ada6c044bf_20230630-001_1.png",
-      "Upload\\9cbb6b48-e0d0-46e7-9309-cb46221311b9_微信截图_20221228141247.medium.png",
-      "Upload\\9cbb6b48-e0d0-46e7-9309-cb46221311b9_微信截图_20221228141247.png",
-      "Upload\\9cbb6b48-e0d0-46e7-9309-cb46221311b9_微信截图_20221228141247.small.png",
-      "Upload\\a7d5d9a4-5571-45a2-b481-632c7bb96298_3.medium.png",
-      "Upload\\a7d5d9a4-5571-45a2-b481-632c7bb96298_3.png",
-      "Upload\\a7d5d9a4-5571-45a2-b481-632c7bb96298_3.small.png",
-      "Upload\\abc572ec-e4a0-41ec-893f-cd4c624b7858_微信截图_20221228141152.medium.png",
-      "Upload\\abc572ec-e4a0-41ec-893f-cd4c624b7858_微信截图_20221228141152.png",
-      "Upload\\abc572ec-e4a0-41ec-893f-cd4c624b7858_微信截图_20221228141152.small.png",
-      "Upload\\ad74dd63-e525-4483-8be1-36fab672f080_微信截图_20221228141027.medium.png",
-      "Upload\\ad74dd63-e525-4483-8be1-36fab672f080_微信截图_20221228141027.png",
-      "Upload\\ad74dd63-e525-4483-8be1-36fab672f080_微信截图_20221228141027.small.png",
-      "Upload\\b1bceebf-ca56-4f31-a7fa-83aaa1432213_1.medium.png",
-      "Upload\\b1bceebf-ca56-4f31-a7fa-83aaa1432213_1.png",
-      "Upload\\b1bceebf-ca56-4f31-a7fa-83aaa1432213_1.small.png",
-      "Upload\\be696d1c-4f6b-498a-92ca-ef5197b74992_20230630-001_1.png",
-      "Upload\\c345b89f-9a6d-444e-8578-5cd8541d756b_20230630-001.jpg",
-      "Upload\\c345b89f-9a6d-444e-8578-5cd8541d756b_20230630-001.medium.jpg",
-      "Upload\\c345b89f-9a6d-444e-8578-5cd8541d756b_20230630-001.small.jpg",
-      "Upload\\c36ede15-31f4-40d5-9b7d-1d80b80f7135_6.medium.png",
-      "Upload\\c36ede15-31f4-40d5-9b7d-1d80b80f7135_6.png",
-      "Upload\\c36ede15-31f4-40d5-9b7d-1d80b80f7135_6.small.png",
-      "Upload\\c62ad6ee-dc20-4415-9179-3199ef16c0c5_6.medium.png",
-      "Upload\\c62ad6ee-dc20-4415-9179-3199ef16c0c5_6.png",
-      "Upload\\c62ad6ee-dc20-4415-9179-3199ef16c0c5_6.small.png",
-      "Upload\\c785c0f2-569a-4b64-bd4b-c7baa45afeba_20230630-001.jpg",
-      "Upload\\c785c0f2-569a-4b64-bd4b-c7baa45afeba_20230630-001.medium.jpg",
-      "Upload\\c785c0f2-569a-4b64-bd4b-c7baa45afeba_20230630-001.small.jpg",
-      "Upload\\d0473552-084a-4392-a6de-9384b2a4c3e1_20230102-00059_2.png",
-      "Upload\\d0e62b28-b564-4e33-9a80-ae13d5acce12_20230630-001_1.png",
-      "Upload\\d1485a13-c1b8-406a-8606-9c4f1118c530_7.png",
-      "Upload\\d1485a13-c1b8-406a-8606-9c4f1118c530_7.small.png",
-      "Upload\\d187cbbf-2a56-448c-9d13-9239381c0196_20230630-001.jpg",
-      "Upload\\d187cbbf-2a56-448c-9d13-9239381c0196_20230630-001.medium.jpg",
-      "Upload\\d187cbbf-2a56-448c-9d13-9239381c0196_20230630-001.small.jpg",
-      "Upload\\d71d20e1-c5c8-4e2f-88a5-9950a5cccd82_20230630-001_2.png",
-      "Upload\\d8b24640-0228-4f25-9109-53861c797dca_3.medium.png",
-      "Upload\\d8b24640-0228-4f25-9109-53861c797dca_3.png",
-      "Upload\\d8b24640-0228-4f25-9109-53861c797dca_3.small.png",
-      "Upload\\d8de5670-2c86-4256-8095-f820c56b6ecb_微信截图_20221228141116.png",
-      "Upload\\d8de5670-2c86-4256-8095-f820c56b6ecb_微信截图_20221228141116.small.png",
-      "Upload\\d99facb9-c20b-4749-a7c8-f9a93896ab76_20230630-002_4.png",
-      "Upload\\e66e72c5-0a74-4b2a-b5e5-858af02fe7de_20230630-001_1.png",
-      "Upload\\e84ac885-840f-4715-ba04-78f15fb63616_20230630-002.jpg",
-      "Upload\\e84ac885-840f-4715-ba04-78f15fb63616_20230630-002.medium.jpg",
-      "Upload\\e84ac885-840f-4715-ba04-78f15fb63616_20230630-002.small.jpg",
-      "Upload\\ece70569-02be-41a1-b1da-214a4d742ad5_20230630-001_3.png",
-      "Upload\\ed6e0e35-1b36-49bb-8c75-9302e981e02a_20230630-002.jpg",
-      "Upload\\ed6e0e35-1b36-49bb-8c75-9302e981e02a_20230630-002.medium.jpg",
-      "Upload\\ed6e0e35-1b36-49bb-8c75-9302e981e02a_20230630-002.small.jpg",
-      "Upload\\efc562e6-2302-46e1-930b-1ee455759ce3_20230523-251.jpg",
-      "Upload\\efc562e6-2302-46e1-930b-1ee455759ce3_20230523-251.medium.jpg",
-      "Upload\\efc562e6-2302-46e1-930b-1ee455759ce3_20230523-251.small.jpg",
-      "Upload\\f10802b3-00de-4229-96cb-eab124525863_20230630-002_5.png",
-      "Upload\\fa10ddba-fcb0-4f40-86ff-2a6c6ea32dcb_20230630-001_1.png",
-      "Upload\\fc498927-e1b1-4049-8cbe-a46ee91af003_20230630-002.jpg",
-      "Upload\\fc498927-e1b1-4049-8cbe-a46ee91af003_20230630-002.medium.jpg",
-      "Upload\\fc498927-e1b1-4049-8cbe-a46ee91af003_20230630-002.small.jpg"
-    ]
+    "ModuleType": 26
   },
   {
     "ModuleName": "Image/madecard-index.png",
@@ -618,17 +384,7 @@
   },
   {
     "ModuleName": "TableView/总分排名视图",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504234+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\总分排名视图.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -649,17 +405,7 @@
   },
   {
     "ModuleName": "TableView/单题排名视图",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504206+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\单题排名视图.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -668,17 +414,7 @@
   },
   {
     "ModuleName": "Table/_4题试卷上传",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504187+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\_4题试卷上传.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -703,32 +439,12 @@
   },
   {
     "ModuleName": "Table/exam",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2503847+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\exam.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/exam_item",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504169+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\exam_item.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -754,17 +470,7 @@
   },
   {
     "ModuleName": "Table/exam_type",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504311+08:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\exam_type.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -1041,47 +747,17 @@
   },
   {
     "ModuleName": "TableView/item_type",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504343+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\item_type.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/exam_name",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504332+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\exam_name.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/class_name",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "管伟\\DELL88",
-      "Email": "1475996990@qq.com"
-    },
-    "LockDateTime": "2023-08-07T17:45:39.2504323+08:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\class_name.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
