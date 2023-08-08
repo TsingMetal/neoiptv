@@ -703,5 +703,56 @@
   {
     "ModuleName": "Image/item_del1.png",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "ServerCommand/getComments",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/addStudent",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "Pages/学业分析",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "ServerCommands/看板后端命令",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/getCntByExamName",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/getCntByExamAndClassName",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/getAveMaxByExamName",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "PCPage/scoreRank",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "TableView/item_type",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/exam_name",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/class_name",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "PCPage/itemScoreRank",
+    "ModuleType": 1
   }
 ]

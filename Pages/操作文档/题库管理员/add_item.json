@@ -37,8 +37,8 @@
     "2,1": "1、通过菜单栏【题库管理】或首页快捷入口【题库管理】，进入管理页面，",
     "22,1": "2、录入材料、题目名称、题干、参考答案等信息，追加、修改预置评语。",
     "23,2": "【重要】为方便后续数据统计和成绩查询，题目名称请按照以下规范命名：",
-    "24,3": "年份 + 标准考试名称 + 2位数字编号，如：",
-    "25,3": "2023省考刷题班试卷01",
+    "24,3": "考试轮次：标准考试名称-2位数字编号-题型，如：",
+    "25,3": "试卷1：国考19地市-01-概括",
     "46,1": "修改题库信息",
     "47,1": "点击题库列表右面【修改信息或预置评语】，可对当前行的题库信息进行修改。",
     "68,1": "删除题库信息",
@@ -1914,4 +1914,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//gktrIq+9+hXQ8AWR3Qi4qwcLp22k95fQQQfyxiieH9k9psCoJKHatwDm8kbat2Ie0l1gPcD4BnKPBDnAAeF87paNCNsKAKPHKO/ZuuYCcN7RUv8EDgON694ZPjI4lH3wvHdu+/J5g020pA1FswmXe69zIlZejfk8gTFeDiWWahXv/dAtt5SkcWP8IPz+KZ8M4PrL+PHFrpqPPWF8Q3wAQv8zh2KrXMVkJjtr70GvqNGPf6jqpnW3whYZJFNvTy1k6PGgqA/9i0OisQ3Ln7bAK0j+TaFdzX3TjYQewf7M1Q0X6hESSZAQcTOU7Vt/jfAYCBcpP49SyIiEfOgShy+I37NTSsm+r/aRZF/RZeoh0AIODCfF229yVq+verIt1juLd2sRw+aXaWd2bxn0Zj0ZmiuBn9A04y95lpW86GJdBeE+6hPJobKAMv3lzy4sSEhoAWGOhO5IG/80RwDmhJV+expfSOFcaKhKhzpKDJTkIsy4ObAAW2PIRbg0Q/tfUIdVSCXaWPJ1e6dk7bndVm9Gn5YboUGbISwyuEHysYeIdPRJoOL0Bn1+GY/Nlp7aGbtB2yW8cGeHqFtVXY6iwaJXskzukK3aNWd/zqgwq971fzkCxz6CMIK03qzS07/txXsqwO6IbxBKQu09Iei6xJqKEKfSahEsiq1+YtJbGYBPweOWdPiD1jqDjAox1kGQqV+LHgYvCG9ZDpTHuaff0QrwBL/3eFy4gHZ1kiszQeImCUyJbwtCvi2DRRdAXDxZXmcYetBiaq7ruFNjaQSvVAX8qdpDOB3shD4/pHzLyUBdlVHyAIvPba7vWWXUeJ0btKBStbggwiEF5R+xLOJocGHdwG04Yz6WD/BX9Vkibsg3cok7p/usq/GUS3nu2drrakP/ITbuH1cEXjMqYxaC3LAJ6g==|920
+}//BeIr0ki5w5mSnlEIq2bbG91lyYEoGe7PDrPjfxe9vP2rK9maY2jup17jLqfiCVsG3JHt3ZGBphHfrlC+BjzQlaMrjT279OWk/xmFMThqLmrMPAiP9SneUV4JVEeKQEDWKf9Hy1GXWhaTeaf7Vw6wzXQzKi01tf5QT7po3eQsvfJykFzDdWTxRg1u2fj963ztxlXfVoWhN05EdNNI4SvxUiWkoIic4bvWDCxdGxbQZNNgs+q9nzTbbYJCKzGvz/hCxZbk0/Cee3/i/snB/qBi33SdTILjqqTZgaWTja9Q25lLD6JRIkv+5Z2LIPdeOX9EwFXj3FUYsOG05pPf+foybn1ExWtMacAoc7IszQsdcDT86jRtn1A+ogVP6F/Go0VeTLKg7NkT99UpP30o68Df6suKEm2ekFUT2fMkAZHzuWbbZrU7ZV5AlUlm/leG+NRZIh7l9yMw7FAtkLOA2UabC1SH2ItWEORoLBrQY1VIRSjogCOBml93y9alQ21DkTlXYan/YEJaoDHwwHTht1LqD6NSq+xDVejkvtR20dNB5xAHzMPznDEuD7+BAbyvckzayYkzyNwvo3SPN2hOtN3LsMn9aQLjQfS7ybvJoQWfsHLRMJVpCarbwE69/8tuF2H52r4xRBHEdJRKSePokYPB/v7XOOtXNt+TFDMkdn9MP/LbC0yTHVR8nGv1HeI/CAVWyQQ5e7KdHJm8rXQeX0813032oPp/SitnqMjafJISaOr4ltj8gYaG7ArZbRsep2uvfdnRHaYp7C8Pb7mwSW7S8GD1BqIE5+4lZemlrGA0IeiWjQvpbvzMy/1KmxYapBd2m6dsXzXKP9lNNUT5nRr0x14KEYIbewS4qB0WmNSQE0VaHg6Z0eBSE5t3u2scwBFhw6jTi5kWKeZoajg+23/BPA==|920

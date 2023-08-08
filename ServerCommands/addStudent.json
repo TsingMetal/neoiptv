@@ -1,0 +1,100 @@
+{
+  "Name": "addStudent",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser",
+                "FGC_Anonymous"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "studentName"
+        },
+        {
+          "Name": "className"
+        },
+        {
+          "Name": "examNumber"
+        },
+        {
+          "Name": "studentPhone"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "考号档案",
+      "UpdateType": "add",
+      "ShowConfirm": false,
+      "UpdateBindingValues": [
+        {
+          "BindingInfo": {
+            "TableName": "考号档案",
+            "ColumnName": "学员姓名",
+            "GUID": "2604cd42-f71a-44f1-af0c-a90b80fc450b"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=studentName"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "考号档案",
+            "ColumnName": "手机",
+            "GUID": "63a02748-2efd-4f96-b048-9280357647dd"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=studentPhone"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "考号档案",
+            "ColumnName": "准考证号",
+            "GUID": "5272bb1b-648a-4617-af1a-bebc8f1df087"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=examNumber"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "考号档案",
+            "ColumnName": "班级",
+            "GUID": "2c5c192b-1e34-4e48-a46b-7536bbd8f085"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=className"
+          }
+        }
+      ],
+      "ParamNameToSaveNewRowValue": "result"
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "code"
+    }
+  ]
+}

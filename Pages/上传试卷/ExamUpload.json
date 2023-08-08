@@ -253,7 +253,7 @@
   },
   "Formulas": {
     "7,27": "ODATA(\"题库?$select=题目名称&$filter=题号 eq \"&IF(ISBLANK(H11),\"null\",\"'\"&H11&\"'\")&\"&$top=1\")",
-    "9,27": "LEFT(AB8,LEN(AB8)-2)"
+    "9,27": "IF(ISERR(FIND(\"-\",AB8)),LEFT(AB8,LEN(AB8)-2),LEFT(AB8,FIND(\"-\",AB8)-1))"
   },
   "AttachInfos": {
     "1,1": {
@@ -387,8 +387,8 @@
               {
                 "ColumnBindingInfo": {
                   "TableName": "考号档案",
-                  "ColumnName": "班级",
-                  "GUID": "46ff4f3d-3db3-42a4-b160-1b6840e5e503"
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "1c856704-b0e3-4c1c-a6ff-b517feacc525"
                 },
                 "Order": 1
               }
@@ -499,7 +499,19 @@
               },
               "ColumnName": "label"
             }
-          ]
+          ],
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "题库",
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "00194e35-a0dd-4ec2-8fa0-d11142dc9d1b"
+                },
+                "Order": 1
+              }
+            ]
+          }
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
@@ -661,7 +673,19 @@
               },
               "ColumnName": "label"
             }
-          ]
+          ],
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "题库",
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "958392f3-9e1b-44dc-93bd-3c8b9a3529fa"
+                },
+                "Order": 1
+              }
+            ]
+          }
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
@@ -823,7 +847,19 @@
               },
               "ColumnName": "label"
             }
-          ]
+          ],
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "题库",
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "669dbbeb-992a-4f3b-8cf7-5fa516472a1e"
+                },
+                "Order": 1
+              }
+            ]
+          }
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
@@ -985,7 +1021,19 @@
               },
               "ColumnName": "label"
             }
-          ]
+          ],
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "题库",
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "88e80e9c-a3d2-41f3-a75b-83a49e46b7f2"
+                },
+                "Order": 1
+              }
+            ]
+          }
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
@@ -1269,7 +1317,7 @@
                     "AdvancedSettings": {}
                   }
                 ],
-                "ID": "12f1f86b-61d7-4447-93d0-14bfcd1b07a5"
+                "ID": "3ee41566-b46a-416d-9d4f-fbf0574ac2a1"
               },
               {
                 "CommandList": [
@@ -1426,7 +1474,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "93858699-f5c3-43f2-9bcd-5e49c6163876"
+                "ID": "2b69feee-68b2-4dc2-a636-2adb910cadb6"
               }
             ]
           }
@@ -1584,6 +1632,11 @@
       "11,19": 1,
       "11,20": 1,
       "11,21": 1,
+      "11,27": 3,
+      "11,28": 1,
+      "11,29": 1,
+      "11,30": 1,
+      "11,31": 1,
       "12,1": 1,
       "12,2": 1,
       "12,3": 1,
@@ -1749,7 +1802,7 @@
       "20,4": 1,
       "20,5": 1,
       "20,6": 1,
-      "20,7": 1,
+      "20,7": 3,
       "20,8": 1,
       "20,9": 1,
       "20,10": 1,
@@ -1940,7 +1993,7 @@
                 ]
               }
             ],
-            "ID": "d51efb7f-f48c-4c3c-ba64-79a591516e4e"
+            "ID": "c0e09259-e9ae-4de1-b270-c31ef768dff6"
           },
           {
             "Condition": {
@@ -2058,7 +2111,7 @@
                 ]
               }
             ],
-            "ID": "08d581c7-aa86-4992-9c2d-bca77ce99821"
+            "ID": "2cd29187-d904-41b0-a93d-c14ac51958dd"
           }
         ]
       }
@@ -2085,4 +2138,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//9uBqrxw4K5S5DuDOysuuORgJddBftSUtpQdL9fTO03aGTh+t6JTtFFOsIBv+7Wj4yuRQAUqi4WAeZx8qCPCowIs1pV2zaRAQxaUpOUFshhwHr/k7c11A9Zlu6wF6TNWCN+xNg+qTXvO+g9YXlMeAXtdACVcvwgMrcCNqSFR6pOn6UmLRc0k8TzhF4UvvK7jDmFOYrnxpphyMHd2HTNjJ7lDF/+xcakZJ5/Sx202WAmuDbtn/ZG93twKyOSNVLeGVnuXipgWUEADGqGCCm1wOfPGo78cyUb4UOPNEVlKjHl2bMmeMH1Y+e8/r70u+WHlMKf7h/CiaFpCzZwOeOj6IWuO21SaqHTWBVsYU4IIoABsiIF+1PqXvhz81qwGkqptDAdhfQGtfslcY3f3QvXLJTlf60kJQEPF3zrbBMRdw4WidWum99/y4KdfVDWAlk3OCEPud/X5vD0dWEJ4J+LD17KSxFe4OM3wM8QJawYuoe4mWpwlmLAs4cUzHrF/42HojSzUpEqFW6OhqBiao/1x6MUllhep0LulOJH5LXfPyAt39KJnrFdE0iF2yeeoZSRx5Uqhv9reQXMT2UpW3oyuHeB3pC24HZ1iIsdHx32LBUjagxXjEmI864Akt3NdbOfJKVbeukvRvtic77ccaogwZw0n9gXE8FrC7KqYSrteGJyfiYAfmmTU099Xxkik9/J6wPitZvVXBwJcVOGfvRyki8M0K69XA9rc+SXlp6iqO2opRnt0Dmglm2IJoVPaZn6rby0Ffn1L3CosFZ3llstUriPv48coH/l/5tsLJUt9WU9IeBUmAQKl4sLdWR594VMo2rAcQhPFr9QW5NH8FEc6AUmrvfGYjF/C0V11zEOTgiFl2NdRNFVpH1ESRVFxxQVsRoL+KiU6EfroneX9IqJCMeA==|920
+}//43x26bCZWE95ZIpJ/q6oonTT1S0lYLOwoiO59uWrjhiMRFUSiT/9P2ErMq4uxG31GwxXq+QttjDKkqxcW6xCmNHc0NsaJwZLTPt5ZXcCmkwBvZwR7oy8hc0oYcIv1eoJgqiKF7djtBOHGS6rM24q2RGyxvTjDpuwFm9ZzLJdOunT1TlSkxkT0k3E1nvIC8wkrt+cm0m0VQMcGnmS9NEMfAr/O0mce9q9vAJ/avNT7wRtdilOe4bhwH8/ylMBNyDZg4hbWBUdYKtWfN8N13LbjcahCeFqGA/C0jOdhRlAlo2R53XQikC+gBIuBlyd+JI40J+AGZlbRDT6aW55zMQwqJeRINFvmyRrpGTmwEgZ+pPu9zz8myNpZE4r0fgxYU3Lp/E4EqzTKQubVuqdPkxxk37HEUp7TbDZmolaaeYSBMsWIK2YFJ33L4nn7geikKwXcPNMRMvAo6zCSTsY1CNFV7jZTvZjSYBGSMTT4aXtO4PQ7usTOEYEv88RoHIRhfH7c+dZ/OlyZPXtBwh4vmFjpEvKzAElNBAT0ZiFVLWRKd3OdpZUfwjx2i7Qv0/IkD4OGNA8gyJltXL8JQA6ZzlnCQOJSZW7F8Vta/R9f2c9xgUpMZzeFtDaBP749WIKZTaJQHe9FICJjnPd3NgIYjAwqlmL5rZQc4lviNRMxhgX9DRLtiygSl4RU2mDFoQt+UmROudheeEDfoX/xZrcm7iymxrFPttoAjU4cfpSs5TR/b0Wequ/7OuMQFtJ9qlek5sD8+cFKR581dazTfBGEI7jqmdOt7jqipJsjeKYqvhSG4Sud4TsQED3KZRwLpEXQglfY0DkalCsacaP9IvrlbxQfLGnARy3gAMixpK+5Z93OHbSaXC+5ZG3ca3iI9hjhq1hNHErkUKr179IPBSAW41Nxw==|920
