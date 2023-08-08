@@ -387,8 +387,8 @@
               {
                 "ColumnBindingInfo": {
                   "TableName": "考号档案",
-                  "ColumnName": "班级",
-                  "GUID": "46ff4f3d-3db3-42a4-b160-1b6840e5e503"
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "1c856704-b0e3-4c1c-a6ff-b517feacc525"
                 },
                 "Order": 1
               }
@@ -499,7 +499,19 @@
               },
               "ColumnName": "label"
             }
-          ]
+          ],
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "题库",
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "00194e35-a0dd-4ec2-8fa0-d11142dc9d1b"
+                },
+                "Order": 1
+              }
+            ]
+          }
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
@@ -661,7 +673,19 @@
               },
               "ColumnName": "label"
             }
-          ]
+          ],
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "题库",
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "958392f3-9e1b-44dc-93bd-3c8b9a3529fa"
+                },
+                "Order": 1
+              }
+            ]
+          }
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
@@ -823,7 +847,19 @@
               },
               "ColumnName": "label"
             }
-          ]
+          ],
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "题库",
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "669dbbeb-992a-4f3b-8cf7-5fa516472a1e"
+                },
+                "Order": 1
+              }
+            ]
+          }
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
@@ -985,7 +1021,19 @@
               },
               "ColumnName": "label"
             }
-          ]
+          ],
+          "OrderBySqlCondition": {
+            "OrderByColumns": [
+              {
+                "ColumnBindingInfo": {
+                  "TableName": "题库",
+                  "ColumnName": "FGC_CreateDate",
+                  "GUID": "88e80e9c-a3d2-41f3-a75b-83a49e46b7f2"
+                },
+                "Order": 1
+              }
+            ]
+          }
         },
         "placeholder": "请选择",
         "noDataText": "无数据",
@@ -2090,4 +2138,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//zm8xxvohRtHrTu/gjFMPqqfYrsePsNID62V33/95WrwRbij8IJO6UO0xyUS8dTD6ujd6u9KIDOSCAyKirjI3qy5cGZuOMQCaKcTae4MwDUbYY1Ut6P6eUKk2xCVq30SDJiAeU4v0JWAeGtro19/uUeIMvetj6H/f3pUPVEDKqboW7zuRUhFrfZhm8LJAL1HjjHfSQgIXZC18sDgNMHsD8YBidn6gQZmwhhS86awMVpceIsFJk2TZqJA6pl8nGFsQkC8Xokj3X1W8NGyVoQiqPeCBfVNhf064t3zNR7w6yZj7OxYbpXDFUPD9SPXZ3s0zAjTehV4MLl804TKu8IDN02n3wRJswGjHWH1QedXu0X24fppyB76aCJdICU6Ia0kWnYpkqk71mxmKqReU6GnQLHI32MlkLcXzjpjh3knrbRyoSA6lpgYbV/Kolr0Mc+3GVknhapHg/a+66vRjAUtKwACDai5Xa1BU54GixRUuWZ7niHKOmd6acTvdEIdjZEVU9isuwbJUbIhldlJhL+uRL5B2NzBcH/pa0gUtpwdzAHWqx4AIFUdOjc8xYPevhFrOdkJmIr+87ssW+Heyz8TMN1TYuCUDYLPYC3UXHDJUzoK8tG8sZecaeEzthDShHmMqTk9/1owbV+77OzcpUYWXYOnbVPyO9y+v0iKJL/CnX2zCRVbqQo0fhyXhwCzMTPZisxKR93ENZt32H7JX0ffOUhCUP/9KMyMbWJkfa9X/KJUeAxTjvapidUYmCX4PW5jeF/fCuLemM7xr6bncD4pZJTMfFZYeedBbWUgjvfwwO6eWNz50SvC80m0xMMslSZ6njw2IuATXkEBxQXK8bRzWRuFHcXOrg7LUz46ZSgkHugGgUw2ZIoI90ZXxD9GMUBvAMn705kZXJ5oDkL+69Lm5Mg==|920
+}//43x26bCZWE95ZIpJ/q6oonTT1S0lYLOwoiO59uWrjhiMRFUSiT/9P2ErMq4uxG31GwxXq+QttjDKkqxcW6xCmNHc0NsaJwZLTPt5ZXcCmkwBvZwR7oy8hc0oYcIv1eoJgqiKF7djtBOHGS6rM24q2RGyxvTjDpuwFm9ZzLJdOunT1TlSkxkT0k3E1nvIC8wkrt+cm0m0VQMcGnmS9NEMfAr/O0mce9q9vAJ/avNT7wRtdilOe4bhwH8/ylMBNyDZg4hbWBUdYKtWfN8N13LbjcahCeFqGA/C0jOdhRlAlo2R53XQikC+gBIuBlyd+JI40J+AGZlbRDT6aW55zMQwqJeRINFvmyRrpGTmwEgZ+pPu9zz8myNpZE4r0fgxYU3Lp/E4EqzTKQubVuqdPkxxk37HEUp7TbDZmolaaeYSBMsWIK2YFJ33L4nn7geikKwXcPNMRMvAo6zCSTsY1CNFV7jZTvZjSYBGSMTT4aXtO4PQ7usTOEYEv88RoHIRhfH7c+dZ/OlyZPXtBwh4vmFjpEvKzAElNBAT0ZiFVLWRKd3OdpZUfwjx2i7Qv0/IkD4OGNA8gyJltXL8JQA6ZzlnCQOJSZW7F8Vta/R9f2c9xgUpMZzeFtDaBP749WIKZTaJQHe9FICJjnPd3NgIYjAwqlmL5rZQc4lviNRMxhgX9DRLtiygSl4RU2mDFoQt+UmROudheeEDfoX/xZrcm7iymxrFPttoAjU4cfpSs5TR/b0Wequ/7OuMQFtJ9qlek5sD8+cFKR581dazTfBGEI7jqmdOt7jqipJsjeKYqvhSG4Sud4TsQED3KZRwLpEXQglfY0DkalCsacaP9IvrlbxQfLGnARy3gAMixpK+5Z93OHbSaXC+5ZG3ca3iI9hjhq1hNHErkUKr179IPBSAW41Nxw==|920
