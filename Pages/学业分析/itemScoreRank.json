@@ -507,6 +507,18 @@
           "ColumnName": "考试名称",
           "GUID": "c1e59239-8f23-4f0d-9e99-0bb8e641e2a9"
         },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "exam_name",
+                "ColumnName": "批改时间",
+                "GUID": "ad83f13f-c60d-4252-9c09-47fb56d3229a"
+              },
+              "Order": 1
+            }
+          ]
+        },
         "AddNullItemWhenBinding": true,
         "NoneItemText": "全部考试"
       }
@@ -598,7 +610,7 @@
             "$type": "Forguncy.Model.ColumnOptionsCommand, ServerDesignerCommon",
             "ListviewName": "表格1",
             "Columns": [],
-            "ID": "5f12d090246745279ff0940061f44e31"
+            "ID": "2719f539e1714c44aebb01978a2813ae"
           }
         ],
         "ImagePath": "Application/053_settings_4.svg",
@@ -1561,6 +1573,8 @@
     "7,30,1,5",
     "10,26,1,4",
     "10,30,1,4",
+    "10,34,1,4",
+    "10,38,1,2",
     "9,2,1,3",
     "9,5,1,4",
     "9,9,1,3",
@@ -1572,14 +1586,12 @@
     "9,24,1,2",
     "9,26,1,4",
     "9,30,1,4",
+    "9,34,1,4",
+    "9,38,1,2",
     "9,40,1,3",
     "9,43,1,3",
     "9,46,1,2",
-    "9,48,1,2",
-    "10,34,1,4",
-    "9,34,1,4",
-    "10,38,1,2",
-    "9,38,1,2"
+    "9,48,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1698,4 +1710,4 @@
       "Size": "56,56"
     }
   ]
-}//W5R5GF5yrJzpQ83rhZZHgeRbLBnKJ35EPwcH8xNIZZVuiq32a0tVq5ThHEyx9c/ouU9D6dlUYAMhnbwpppPHkdFGF9Hzej9RH9boTkYsiYi8JPRCojbSVRuT2D/RaCMlrJ42kBHwlTjb4B6BO4IwrPvTfdiiJMlwBWxprBS9QGvJmyl/qg4zMLu+M5oXmQpJEpbsbPa8/m24Eo9jol8yZFzI3m1duI8r9fTFgKSQLlM2MAeC2GYDk1IPOa3lzZGDUY6Ly6YrU6xbMw+KLO3FccPj7ggP0MGewxu9AYJzMbLXWClxQ+xMzaH3PZcHQ53UMfdNSQCJUVuN7yQ+ZFRwfoA9BMiOZz3+3kcu0etXQt3rmIHKjAnnnuEdZpOkNPhmX5T4ERRRm7D5z9K3Ovv9rJX0fj1CNyS9rEUaH6nhZbN1kiHRKR7kzyFyPcGSK0b/MAz1MABqS2ikVJjSxmxgGcGF0PgZRyNZ2tk2xC6fxLVJnuCxHarW6D1DIVuRhLbEtnVLcskGbg5hpMnbRIijH+nLkwQQbTLq/biy/W/aGNmkE1COdIPwQLH63LPdvUi1JFPN8jwDMkA3ff+yNzmg4mbWcAoMLnAOcEqv9w48eu8ADv32y955dF2bpupFgi/Jbbka3KNWAzfDOLmRFzysuzVTn60hQMeGydc8WlCEwqPiIWYWuAMVt/hRZXKQy4RsgCPOHX78IF42jSP7F6GZJoIMP/fMqkm99EuT7Yqi5+D+WDUZet57zTNIn38rRZMrzXj4wvi5ae5OOLkZfS30B+Wa6UJ8CH9mvS/7ay8vsQPQk+mdg1Y6KZU+0fVOzZfDLdApToERawh6CVQKN5MFRpWpHfwfV2Bjm82b1GqqO0bFCCtj3m+VzF0EdGiW0ljs0Ybs6MkAJ6grtzD9FscVEQ==|920
+}//NG/YeuubDCJPXtSC2DOSADU8NJuKOtT4E2RPveEhpa5QXrsEhwnf20loFlZ6TWBWH0r8oechbIst9x58tPX6MZuePm7G9Eaz9aCL2KHN6XbH5FynWZclmQitbC86Z3bJr2fL75jFr5EvNC/6JJ9clJjeULFvWfxi0pSd5CJpN4d7anJv+dMlkbYK5XmTnKdjJSCqbJp+zPA45oPpPWuJeHAqmdJ4um2c2VlHsvwNfVKH09w6F6G9hU1cC2kab/9kVDqSMzMMfi1is28fS7tKo9nKMH4dgNRThSMk7H/k699dOohhoL9Bwv8JLJL7DW/9o/TAuEQltxo1Ws6pCoBulLyBRRrA1LyrZvkwK4s+a8LSngZNczBBndxFSjox1ZFBbLSS9lKFBwMS8XUuaFqVtJxNV49gcfvj4q0s4Op8kWDpX3OnJPOV3iKaqA3IW4HRNfpqiIZaHkFi0OYnbQv2sReY48M/EzTd/U/bUUsZTq7Iks6EkCz3jOh7Ki52LIDj0S7CZ+pis4ILKfrB3MLMqOlJLgFZzHU3uFF07dKXbebpxmXtK+UE4niHudiC7N371KbEFJ4JjPB7bENyY0VICruM9c8Vz6oJFtbXWTZKi7OTcTxv/oZktDODlPd7yTr89RRGA4I1dTI5HNMawKI/OR5Adv9GjTzVexPRHph2KCj0INLeSADSpnOOgWFypYYkSfAEDH+fFUUgb0qLyIqIpVNUZ/LUs+kxCJkZRVW0pZ7ZOMuXBSgvdmq7MoJjm7iUxJVT2oUE0pdn7C8HhldaIe9IPwKJg2vxgcpVUCTpCvPC+i4YO+rYcVQCLk6reUPhrhn2UnXLuIPu81pCYdJTnCy12FiMlYspp/kh+S8Y/ujln3yr9sVG6TdKXjDatguselghe9d0FephIl9LyjdPlA==|920

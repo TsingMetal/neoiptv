@@ -477,6 +477,18 @@
           "ColumnName": "考试名称",
           "GUID": "e955221e-7438-451d-99a4-d662df4266e2"
         },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "exam_name",
+                "ColumnName": "批改时间",
+                "GUID": "d85a4e82-8c41-4b92-b2a4-ad7ebd37c6ca"
+              },
+              "Order": 1
+            }
+          ]
+        },
         "AddNullItemWhenBinding": true,
         "NoneItemText": "所有考试"
       }
@@ -546,7 +558,7 @@
             "$type": "Forguncy.Model.ColumnOptionsCommand, ServerDesignerCommon",
             "ListviewName": "表格1",
             "Columns": [],
-            "ID": "22ee744e4b7545e885074c350c09587d"
+            "ID": "07355489285b48d99c58890b708c3b69"
           }
         ],
         "ImagePath": "Application/053_settings_4.svg",
@@ -1539,4 +1551,4 @@
       "Size": "56,56"
     }
   ]
-}//Lu8fYT5BFmx44c9mA2iyzsZX7+PYIbUrvx2Vf0tKZvytUsFdPhoriXmA6cZJRxw9qY+UGcGIjc1lEOuEmdv6eD+EldrFSZrSsGUiccL4k+jOXIhMpWNgwN9che4f4asl3uBPZno7UM4aPBABv2q5IgzBUi026xiaHzu4s6KaFxgSMca4P7+KPYo/g+Dn/IZWPV3pQynBElSM3KGpKIMSGHJ7AkSP0LgQGQsegZelSL4l/6G0bLxNDw3o2cpRyZka2romPSVTVPIKu0ASxT0pHaCC9gtFXltD5MXFOHx6rjYVhT5XUGSU2RXIcTq/ff0kzWcD+hRkcY4bsuhP6IZ5txLE495SpGSunI/bEhFJGwW/sJx7m04oafXVJV+w52QAYwcYqalpHCTwTKDcTIMeoLSY9lNrGzVMIvCeMZ8DOcu3FKZ7JJV+Q6FtdUWT70pKoAzRaYa2OhKDD1/t/lLDXdBii68BHfZUXR+JE+Dg3/219sGg7G9tWCcJpJmDMqg5RUkVb9j7pdjodlqIYYRGQf8vTfGG/WcPbOF7Hyq6aZlRMpzFbJnvXIr0oFOv/Pi7yh4RXH4La1/rYwewG99LOKOMI+MLYwDjh9gW+Gq5+W4u4dAzrhZfvjjWDDC4MVLvXyVRLfZ9y/YJPAD9f5mK2BlIK94TKKVn+8lxyIP8ySy0FszaRW584T3E61BFbZ+lmOmP97sf5ao2XL3Yzu7tbbu/eTVg22uh7b2az+TBmWaQf5mhhr+BUn8egABe+/hwa51k4U3C8vDivFp8W9Z9P1P7CIw3HvBTPTWTDF4gH5OpwlgklP+xDc3o5bfOZqZwqYUq/EsLQWkQ1n5VazF+MaUMvtYwIYEQjXEf8wNiin5uu3qJmtfVt7WzoGBhqTusZW5lbUsip9q36epPjZOgcg==|920
+}//R5oa/eyzG7HBGX9/tq43IyS14ag05kbFugIn/+rXhg5la+6XHej6yPA70Xh614CjgqEE8Xyzbvf0lgf4l8V4R/iU24PNl1bJZJpMPhqL3e3ycF411rE13/uxpFCi2chMsJ9cxhlZbzKBuNNtRFRcubCgT4xEaVZzYNq6kt77ctEBgGvrsS69FgEerxDDFQn0TG1LsSysnJT2CsKRbfZ2svJirbBBeKtMFepO3yYJwVubgK4QelUeN6J2NdransEPfgJbHxpHW9yLmnraJ2Y6NnFcF0V1xV+rNFGLyQO8W2RUEQhuwl1TLLIM0mAqU9vfy8pJrP1X2YHJ/TkOlvBRnP/6pUGvV85DDORZU1NQGJG00b1cdKtL9kye1vC0B0V8WVGwTujfgzA7tZUHChDPxaB3N+eyRrztEKVH2l7p2TXXOsDztvrDSmbsfLpjByc7WHpD+HLqTKkuZVtG6IwXHkgocsw9+pZ+BCbCkTHidTbaEmYalMbktimF6v/fM4exZexaBfGoQ9KlBY73tOF+M6oLDgI8IiC4SCn9/wcVs/PNrYcmUUWGjWfn5NlVDX6vg9IYTNdttfAraSZ9lQdVe0N4u0LKqhUPsb+ItGbMHpll8q6/0wFLBFty2Xc+aPZfGPspX35yE9YiqcmEhXbXGJjk4StEjEyz4JsRAHZNfLnI+6la0FK//MBK+UfBhdH3w3/RwUpSst3LZHAovuS+TIn1BokxmQ0mn+Dt7T9t17YsiDoDPvOkJD42AMshCmEQSawjOeSdC6PN2uSDaLpsDL6M+AR8Bliiy9BluB6A30KL3A7RHgwbuBVplPgTEXCLPOGloWGL+bvzXBiUR5OjppZcgyxcYuxvu4yUEmoC/mUrjFBFQWcw2oMT9nquZtawe8V/StvS6CisNerEyjr/0Q==|920
